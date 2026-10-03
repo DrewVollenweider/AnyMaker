@@ -22,6 +22,7 @@
 | [15 Plate 渲染与选边](15_PLATES.md) | 法线支撑偏移、任意顺序选梁、闭环共面与自交校验及未完成的厚度/边框 |
 | [16 原生结构岛](16_NATIVE_ISLANDS.md) | 游戏拆岛崩溃定位、梁/面板遍历、通用导出防护、回归与验证边界 |
 | [17 Google 云盘存档](17_GOOGLE_DRIVE_ARCHIVES.md) | 本地覆盖、Google 登录配置、云端上传更新、列表与按需下载、权限及验证边界 |
+| [18 Anymaker 技术参考](18_ANYMAKER_TECHNICAL_REFERENCE.md) | Anymaker 专用机制手册：游戏描述、原生存档、组件定义、已验证规则和待确认问题 |
 | [资源研究记录](RESOURCE_ANALYSIS.md) | 扫描方法、Mesh 支持范围、Stormworks 方法参考 |
 | [审计报告](evidence/asset-audit.json) | ROM 计数、EXE/定义/Mesh SHA-256、解析成功和失败记录 |
 | [原生子网格变换证据](evidence/native-grid-transform.json) | 游戏 GCL 函数与常量、安装偏移、四个车门把手回归坐标 |
