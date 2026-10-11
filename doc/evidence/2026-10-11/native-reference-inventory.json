@@ -1,0 +1,856 @@
+{
+  "source": "allofthem.data",
+  "sha256": "ca67d835f3b4f24a6d1b8bcd62331ad93ba7c028c293a4338362f4b05da70fd7",
+  "validation_scope": "saved-snapshot inventory only",
+  "vehicles": [
+    {
+      "id": 217,
+      "grids": 1,
+      "components": 49,
+      "nodes": 9,
+      "edges": 8,
+      "plates": 0,
+      "links": {
+        "electric_links": 2,
+        "mechanical_links": 6,
+        "liquid_links": 7,
+        "gas_links": 0,
+        "belt_links": 5,
+        "data_links": 0
+      },
+      "controllers": [],
+      "saved_state": [
+        {
+          "id": 2,
+          "definition": "jet_compressor_a",
+          "fields": {
+            "content_lubricant": {
+              "oil": 0.6270686731563485,
+              "pollutant": 0.005033562724183925,
+              "temp": 65.47190495775459
+            }
+          }
+        },
+        {
+          "id": 16,
+          "definition": "radiator",
+          "fields": {
+            "content": {
+              "oil": 10.776440772384742,
+              "pollutant": 0.08574924095755228,
+              "temp": 62.91186358864107
+            }
+          }
+        },
+        {
+          "id": 18,
+          "definition": "liquid_pump",
+          "fields": {
+            "content_0": {
+              "petrol": 0.5574836492372325,
+              "temp": 19.154568803057934
+            },
+            "content_1": {
+              "petrol": 0.05,
+              "temp": 19.154568803058048
+            }
+          }
+        },
+        {
+          "id": 19,
+          "definition": "liquid_pump",
+          "fields": {
+            "content_0": {
+              "oil": 0.04960120400039299,
+              "pollutant": 0.0003987959996067269,
+              "temp": 80.8821533925669
+            },
+            "content_1": {
+              "oil": 1.1140924848394984,
+              "pollutant": 0.008959437736115109,
+              "temp": 80.8693258849236
+            }
+          }
+        },
+        {
+          "id": 37,
+          "definition": "battery_b",
+          "fields": {
+            "acc": {
+              "item": {
+                "_type": "battery_b",
+                "id": 12941,
+                "energy": 3997558.972879276
+              }
+            }
+          }
+        },
+        {
+          "id": 69,
+          "definition": "jet_engine_a",
+          "fields": {
+            "content_lubricant": {
+              "oil": 0.7996314041142507,
+              "pollutant": 0.006467642339271354,
+              "temp": 80.57258291635624
+            }
+          }
+        },
+        {
+          "id": 82,
+          "definition": "liquid_tank",
+          "fields": {
+            "content": {
+              "petrol": 2.7569106479152743,
+              "temp": 19.140429831079643
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 218,
+      "grids": 1,
+      "components": 86,
+      "nodes": 15,
+      "edges": 19,
+      "plates": 1,
+      "links": {
+        "electric_links": 5,
+        "mechanical_links": 12,
+        "liquid_links": 8,
+        "gas_links": 8,
+        "belt_links": 6,
+        "data_links": 2
+      },
+      "controllers": [
+        {
+          "id": 106,
+          "script": "on_tick\n{\n\tif (out EngineTemp.temperature > 20.0)\n\t{\n\t\tin EngineFan.input = 1.0\n\t}\n\telse\n\t{\n\t\tin EngineFan.input = 0.0\n\t}\n}\n"
+        }
+      ],
+      "saved_state": [
+        {
+          "id": 3,
+          "definition": "v_engine",
+          "fields": {
+            "content_lubricant": {
+              "oil": 6.847819439322924,
+              "pollutant": 0.008298474184486232,
+              "temp": 13.162071818970837
+            },
+            "content_coolant": {
+              "water": 4.421372781351972,
+              "temp": 13.162071818970837
+            }
+          }
+        },
+        {
+          "id": 41,
+          "definition": "liquid_tank",
+          "fields": {
+            "content": {
+              "petrol": 18.559618826677614,
+              "temp": 19.09640803876548
+            }
+          }
+        },
+        {
+          "id": 46,
+          "definition": "liquid_pump",
+          "fields": {
+            "content_0": {
+              "water": 0.2690000769350283,
+              "temp": 13.045669675262362
+            },
+            "content_1": {
+              "water": 0.26850512752658284,
+              "temp": 12.5091234069332
+            }
+          }
+        },
+        {
+          "id": 49,
+          "definition": "battery_b",
+          "fields": {
+            "acc": {
+              "item": {
+                "_type": "battery_b",
+                "id": 12942,
+                "energy": 7052327.764974125
+              }
+            }
+          }
+        },
+        {
+          "id": 58,
+          "definition": "liquid_pump",
+          "fields": {
+            "content_0": {
+              "oil": 0.9879814118228154,
+              "pollutant": 0.0009892215205499213,
+              "temp": 13.080653707009102
+            },
+            "content_1": {
+              "oil": 0.9884001352582098,
+              "pollutant": 7.554867725704395e-05,
+              "temp": 13.057266996384383
+            }
+          }
+        },
+        {
+          "id": 62,
+          "definition": "oil_filter",
+          "fields": {
+            "content_0": {
+              "oil": 0.7626262180303143,
+              "pollutant": 1.7200464239574198e-19,
+              "temp": 13.059042160215716
+            },
+            "content_1": {
+              "oil": 0.7626262180303143,
+              "pollutant": 1.7200464239574198e-19,
+              "temp": 13.059042160215716
+            },
+            "acc": {
+              "item": {
+                "_type": "oil_filter",
+                "id": 12943,
+                "condition": 0.9996950294754836
+              }
+            }
+          }
+        },
+        {
+          "id": 66,
+          "definition": "liquid_tank",
+          "fields": {
+            "content": {
+              "oil": 6.773714007584913,
+              "pollutant": 0.0067473295423840386,
+              "temp": 19.097242374392824
+            }
+          }
+        },
+        {
+          "id": 87,
+          "definition": "radiator",
+          "fields": {
+            "content": {
+              "water": 12.974015782869223,
+              "temp": 19.096515689403514
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 219,
+      "grids": 2,
+      "components": 105,
+      "nodes": 40,
+      "edges": 47,
+      "plates": 3,
+      "links": {
+        "electric_links": 6,
+        "mechanical_links": 14,
+        "liquid_links": 1,
+        "gas_links": 0,
+        "belt_links": 6,
+        "data_links": 17
+      },
+      "controllers": [
+        {
+          "id": 87,
+          "script": "define var bool onFlg\ndefine var fractional TOut\ndefine var fractional COut\ndefine var fractional BOut\non_tick\n{\n\tif (out Key.value == 0.0)\n\t{\n\t\tin Light.is_illuminated = false\n\t\tin RPS.is_illuminated = false\n\t\tvar TOut = 0.0\n\t\tvar onFlg = false\n\t}\n\telse\n\t{\n\t\tin Light.is_illuminated = true\n\t\tin RPS.is_illuminated = true\n\t\tvar onFlg = true\n\t}\n\tin RPS.display_value = (out Engine.rps / 50.0) - 1.0\n\tif (var onFlg)\n\t{\n\t\tvar TOut = 0.1\n\t\tvar COut = 1.0\n\t\tvar BOut = 0.0\n\t\tif (out Key.value == 1.0)\n\t\t{\n\t\t\tvar TOut = 0.5\n\t\t}\n\t\telseif (out HB.is_on == true)\n\t\t{\n\t\t\tvar COut = 1.0\n\t\t\tvar BOut = 1.0\n\t\t}\n\t\telseif ((out WH.rps < -0.1) && (out Steering_Wheel.right_pedal > 0.0))\n\t\t{\n\t\t\tvar BOut = 0.1\n\t\t\tvar COut = 1.0\n\t\t}\n\t\telseif ((out WH.rps > 0.1) && (out Steering_Wheel.left_pedal > 0.0))\n\t\t{\n\t\t\tvar BOut = 0.1\n\t\t\tvar COut = 1.0\n\t\t}\n\t\telseif (out GB.is_reverse && (out Steering_Wheel.left_pedal > 0.0))\n\t\t{\n\t\t\tvar TOut = 0.3\n\t\t\tvar COut = 0.0\n\t\t}\n\t\telseif (out Steering_Wheel.right_pedal > 0.0)\n\t\t{\n\t\t\tvar TOut = 0.5\n\t\t\tvar COut = 0.0\n\t\t}\n\t}\n\tin TH.input = var TOut\n\tin Clutch.input = var COut\n\tin Break.input = var BOut\n\tin BP.display_value = var BOut\n\tin THM.display_value = (var TOut * 2.0) - 1.0\n\tif (out Engine.temperature > 60.0)\n\t{\n\t\tin FAN.input = 1.0\n\t}\n\telse\n\t{\n\t\tin FAN.input = 0.0\n\t}\n\tif (out GB.current_gear == -1)\n\t{\n\t\tin GPI.display_value = to_fractional (out GB.current_gear)\n\t\tin GPI.is_illuminated = true\n\t\tin GR.is_illuminated = true\n\t}\n\telse\n\t{\n\t\tin GPI.display_value = to_fractional (out GB.current_gear)\n\t\tin GPI.is_illuminated = true\n\t\tin GR.is_illuminated = false\n\t}\n}\n"
+        }
+      ],
+      "saved_state": [
+        {
+          "id": 7,
+          "definition": "engine",
+          "fields": {
+            "content_lubricant": {
+              "oil": 1.083774119286071,
+              "pollutant": 9.20512763909582e-05,
+              "temp": 45.43991588575567
+            },
+            "content_coolant": {
+              "water": 2.8992740586060517,
+              "temp": 45.43991588575567
+            }
+          }
+        },
+        {
+          "id": 9,
+          "definition": "liquid_pump",
+          "fields": {
+            "content_0": {
+              "oil": 0.025318007187096495,
+              "pollutant": 5.4232276884522315e-08,
+              "temp": 37.196076859188395
+            },
+            "content_1": {
+              "oil": 0.025578983940868067,
+              "pollutant": 4.401191135277349e-07,
+              "temp": 43.34355641613133
+            }
+          }
+        },
+        {
+          "id": 13,
+          "definition": "liquid_pump",
+          "fields": {
+            "content_0": {
+              "water": 0.7908245454761642,
+              "temp": 64.37810704182044
+            },
+            "content_1": {
+              "water": 0.05,
+              "temp": 14.557082141694703
+            }
+          }
+        },
+        {
+          "id": 14,
+          "definition": "liquid_pump",
+          "fields": {
+            "content_0": {
+              "petrol": 0.050322529720191064,
+              "temp": 18.71827192161508
+            },
+            "content_1": {
+              "petrol": 0.030989234772924916,
+              "temp": 19.101258829678713
+            }
+          }
+        },
+        {
+          "id": 20,
+          "definition": "radiator",
+          "fields": {
+            "content": {
+              "oil": 2.9720955414546015,
+              "pollutant": 5.966186571947206e-06,
+              "temp": 19.10303883942223
+            }
+          }
+        },
+        {
+          "id": 25,
+          "definition": "oil_filter",
+          "fields": {
+            "content_0": {
+              "oil": 0.03046997283394812,
+              "pollutant": 8.957154403795523e-21,
+              "temp": 46.911447209327704
+            },
+            "content_1": {
+              "oil": 0.03046997283394812,
+              "pollutant": 8.957154403795523e-21,
+              "temp": 46.911447209327704
+            },
+            "acc": {
+              "item": {
+                "_type": "oil_filter",
+                "id": 12944,
+                "condition": 0.8750845415542223
+              }
+            }
+          }
+        },
+        {
+          "id": 36,
+          "definition": "radiator",
+          "fields": {
+            "content": {
+              "water": 5.659007658104909,
+              "temp": 19.103026623564627
+            }
+          }
+        },
+        {
+          "id": 41,
+          "definition": "battery_a",
+          "fields": {
+            "acc": {
+              "item": {
+                "_type": "battery_a",
+                "id": 12945,
+                "energy": 13626045.33546969
+              }
+            }
+          }
+        },
+        {
+          "id": 58,
+          "definition": "liquid_tank",
+          "fields": {
+            "content": {
+              "petrol": 7.912864472570277,
+              "temp": 19.103022085485946
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 220,
+      "grids": 1,
+      "components": 73,
+      "nodes": 26,
+      "edges": 28,
+      "plates": 0,
+      "links": {
+        "electric_links": 6,
+        "mechanical_links": 10,
+        "liquid_links": 8,
+        "gas_links": 5,
+        "belt_links": 6,
+        "data_links": 0
+      },
+      "controllers": [],
+      "saved_state": [
+        {
+          "id": 1,
+          "definition": "engine",
+          "fields": {
+            "content_lubricant": {
+              "oil": 3.9257356422747276,
+              "pollutant": 0.04593969847092861,
+              "temp": 26.93499296887216
+            },
+            "content_coolant": {
+              "water": 4.096159535595333,
+              "temp": 26.93499296887216
+            }
+          }
+        },
+        {
+          "id": 2,
+          "definition": "liquid_tank",
+          "fields": {
+            "content": {
+              "oil": 9.133885323829649,
+              "pollutant": 0.1062595969748284,
+              "temp": 26.793248759349876
+            }
+          }
+        },
+        {
+          "id": 5,
+          "definition": "liquid_pump",
+          "fields": {
+            "content_0": {
+              "oil": 0.03827820062725671,
+              "pollutant": 0.00044771621216099685,
+              "temp": 26.94481112989736
+            },
+            "content_1": {
+              "oil": 0.4514321458697983,
+              "pollutant": 0.005280119939927845,
+              "temp": 26.94481112989736
+            }
+          }
+        },
+        {
+          "id": 14,
+          "definition": "liquid_tank",
+          "fields": {
+            "content": {
+              "petrol": 18.846459365513272,
+              "temp": 19.09633276340785
+            }
+          }
+        },
+        {
+          "id": 16,
+          "definition": "radiator",
+          "fields": {
+            "content": {
+              "water": 3.6197944029779983,
+              "temp": 26.884483381737144
+            }
+          }
+        },
+        {
+          "id": 21,
+          "definition": "battery_a",
+          "fields": {
+            "acc": {
+              "item": {
+                "_type": "battery_a",
+                "id": 12950,
+                "energy": 14341949.390057918
+              }
+            }
+          }
+        },
+        {
+          "id": 49,
+          "definition": "air_filter",
+          "fields": {
+            "acc": {
+              "item": {
+                "_type": "air_filter",
+                "id": 12951
+              }
+            }
+          }
+        },
+        {
+          "id": 51,
+          "definition": "liquid_tank",
+          "fields": {
+            "content": {
+              "water": 13.801597500235566,
+              "temp": 26.720288610626355
+            }
+          }
+        },
+        {
+          "id": 52,
+          "definition": "liquid_pump",
+          "fields": {
+            "content_0": {
+              "water": 0.05,
+              "temp": 26.99258503181142
+            },
+            "content_1": {
+              "water": 3.898146174601198,
+              "temp": 26.992277155802995
+            }
+          }
+        },
+        {
+          "id": 61,
+          "definition": "oil_filter",
+          "fields": {
+            "content_0": {
+              "oil": 0.04126124022320857,
+              "pollutant": 0.0004827700639433982,
+              "temp": 26.93642320699519
+            },
+            "content_1": {
+              "oil": 0.04126124022320857,
+              "pollutant": 0.0004827700639433982,
+              "temp": 26.93642320699519
+            },
+            "acc": {
+              "item": {
+                "_type": "oil_filter",
+                "id": 12952,
+                "condition": 0.9927912030842565
+              }
+            }
+          }
+        },
+        {
+          "id": 69,
+          "definition": "liquid_pump",
+          "fields": {
+            "content_0": {
+              "oil": 0.03828251618051649,
+              "pollutant": 0.0004434006589013319,
+              "temp": 26.924482824413676
+            },
+            "content_1": {
+              "oil": 4.174402712943459,
+              "pollutant": 0.04834930140722179,
+              "temp": 26.924482824413676
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 221,
+      "grids": 2,
+      "components": 121,
+      "nodes": 50,
+      "edges": 55,
+      "plates": 1,
+      "links": {
+        "electric_links": 3,
+        "mechanical_links": 15,
+        "liquid_links": 18,
+        "gas_links": 34,
+        "belt_links": 12,
+        "data_links": 0
+      },
+      "controllers": [
+        {
+          "id": 437,
+          "script": "on_tick\n{\n}\n"
+        }
+      ],
+      "saved_state": [
+        {
+          "id": 213,
+          "definition": "v_engine",
+          "fields": {
+            "content_lubricant": {
+              "oil": 8.916530543266584,
+              "pollutant": 1.4980134691103841,
+              "temp": 32.73655994492188
+            },
+            "content_coolant": {
+              "water": 8.281064710882404,
+              "temp": 32.73655994492188
+            }
+          }
+        },
+        {
+          "id": 438,
+          "definition": "liquid_pump",
+          "fields": {
+            "content_0": {
+              "water": 1.1323950151026754,
+              "temp": 14.076274320011308
+            },
+            "content_1": {
+              "water": 1.132102348920807,
+              "temp": 33.13895431471161
+            }
+          }
+        },
+        {
+          "id": 453,
+          "definition": "liquid_pump",
+          "fields": {
+            "content_0": {
+              "petrol": 0.10586601033854597,
+              "temp": 6.027292723297517
+            },
+            "content_1": {
+              "petrol": 0.12293257984950283,
+              "temp": 7.352506582457434
+            }
+          }
+        },
+        {
+          "id": 471,
+          "definition": "battery_b",
+          "fields": {
+            "acc": {
+              "item": {
+                "_type": "battery_b",
+                "id": 12954,
+                "energy": 5346538.557563124
+              }
+            }
+          }
+        },
+        {
+          "id": 476,
+          "definition": "liquid_tank",
+          "fields": {
+            "content": {
+              "oil": 13.544236033516206,
+              "pollutant": 1.8325281417636652,
+              "temp": 19.0990735924119
+            }
+          }
+        },
+        {
+          "id": 486,
+          "definition": "liquid_tank",
+          "fields": {
+            "content": {
+              "petrol": 54.63860792364611,
+              "temp": 19.099046001998037
+            }
+          }
+        },
+        {
+          "id": 524,
+          "definition": "liquid_pump",
+          "fields": {
+            "content_0": {
+              "petrol": 0.10635937038526949,
+              "temp": 6.080870589646709
+            },
+            "content_1": {
+              "petrol": 0.12397021788789936,
+              "temp": 6.485764107532779
+            }
+          }
+        },
+        {
+          "id": 551,
+          "definition": "liquid_pump",
+          "fields": {
+            "content_0": {
+              "oil": 2.6605734900236553,
+              "pollutant": 0.44391874923904434,
+              "temp": 34.27786016156789
+            },
+            "content_1": {
+              "oil": 2.7495468181747507,
+              "pollutant": 0.3546527549065655,
+              "temp": 15.497265196102862
+            }
+          }
+        },
+        {
+          "id": 570,
+          "definition": "radiator",
+          "fields": {
+            "content": {
+              "water": 27.919842273038682,
+              "temp": 19.099070667031683
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 222,
+      "grids": 1,
+      "components": 64,
+      "nodes": 17,
+      "edges": 17,
+      "plates": 0,
+      "links": {
+        "electric_links": 7,
+        "mechanical_links": 2,
+        "liquid_links": 6,
+        "gas_links": 2,
+        "belt_links": 5,
+        "data_links": 0
+      },
+      "controllers": [],
+      "saved_state": [
+        {
+          "id": 24,
+          "definition": "engine",
+          "fields": {
+            "content_lubricant": {
+              "oil": 0.8356293224616679,
+              "pollutant": 1.5627113839622617,
+              "temp": 24.05554877354271
+            },
+            "content_coolant": {
+              "water": 2.224541821430658,
+              "temp": 24.05554877354271
+            }
+          }
+        },
+        {
+          "id": 33,
+          "definition": "liquid_tank",
+          "fields": {
+            "content": {
+              "oil": 3.993774905803815,
+              "pollutant": 0.001009540679171041,
+              "temp": 19.077130260254577
+            }
+          }
+        },
+        {
+          "id": 35,
+          "definition": "oil_filter",
+          "fields": {
+            "content_0": {
+              "oil": 0.06348896936854662,
+              "pollutant": 2.5438315667244882e-20,
+              "temp": 18.774415505468475
+            },
+            "content_1": {
+              "oil": 0.06348896936854662,
+              "pollutant": 2.5438315667244882e-20,
+              "temp": 18.774415505468475
+            },
+            "acc": {
+              "item": {
+                "_type": "oil_filter",
+                "id": 12955,
+                "condition": 0.9999981765531442
+              }
+            }
+          }
+        },
+        {
+          "id": 46,
+          "definition": "air_filter",
+          "fields": {
+            "acc": {
+              "item": {
+                "_type": "air_filter",
+                "id": 12956
+              }
+            }
+          }
+        },
+        {
+          "id": 47,
+          "definition": "radiator",
+          "fields": {
+            "content": {
+              "water": 9.51210710208394,
+              "temp": 19.10480335099555
+            }
+          }
+        },
+        {
+          "id": 56,
+          "definition": "battery_a",
+          "fields": {
+            "acc": {
+              "item": {
+                "_type": "battery_a",
+                "id": 12957,
+                "energy": 13294740.56240138
+              }
+            }
+          }
+        },
+        {
+          "id": 76,
+          "definition": "liquid_tank",
+          "fields": {
+            "content": {
+              "petrol": 16.91646134796417,
+              "temp": 19.074566793889066
+            }
+          }
+        },
+        {
+          "id": 81,
+          "definition": "liquid_pump",
+          "fields": {
+            "content_0": {
+              "temp": 24.120412433922237
+            },
+            "content_1": {
+              "temp": 24.120412433922237
+            }
+          }
+        },
+        {
+          "id": 94,
+          "definition": "liquid_tank",
+          "fields": {
+            "content": {
+              "water": 6.223643267645732,
+              "temp": 19.103479863304145
+            }
+          }
+        },
+        {
+          "id": 110,
+          "definition": "liquid_pump",
+          "fields": {
+            "content_0": {
+              "temp": 14.928967175232467
+            },
+            "content_1": {
+              "petrol": 0.09999999999999996,
+              "temp": 15.442481648220433
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
