@@ -1,0 +1,17 @@
+{
+  "signature": "() server_scene.vehicle_gas_node.container.create_node (server_scene.vehicle_gas_node.container, server_scene.vehicle_gas_node, server_scene.vehicle_component, const ptr<server_scene.vehicle_component>, const s32, const ptr<server_scene.vehicle_gas_content>)",
+  "offset": 58602737,
+  "size": 632,
+  "allocation": 704,
+  "references": {
+    "00000278": "(s32) vehicle_component_definition.get_logic_node_index (const vehicle_component_definition, const vehicle_component_definition.e_logic_node_type, const s32)",
+    "00000280": "() $string_ctor_cstr (string, const uptr)",
+    "00000288": "() $string_ctor (string)",
+    "00000290": "() $string_assign_s32 (string, const s32)",
+    "00000298": "() $string_add (string, const string, const string)",
+    "000002a0": "() log (const string)",
+    "000002a8": "() $string_dtor (string)",
+    "000002b0": "(ptr<ptr<server_scene.vehicle_gas_node>>) vector<ptr<server_scene.vehicle_gas_node>>.push_back (vector<ptr<server_scene.vehicle_gas_node>>)",
+    "000002b8": "() server_scene.vehicle_gas_node.container.rebuild (server_scene.vehicle_gas_node.container)"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-16",
+  "offline_unit_tests": {
+    "run": 26,
+    "passed": 25,
+    "skipped": 1,
+    "skip_reason": "Optional downloaded Workshop corpus is not included"
+  },
+  "reference_creation_audits": [
+    {
+      "file": "doc/knowledge/archive/toolset/output/pedestal-engine-test-01/Petrol_Pedestal_Test_01.data",
+      "components": 60,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "doc/knowledge/archive/toolset/output/compact-petrol-engine-01-complete/Compact_Petrol_Engine_01.data",
+      "components": 60,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "doc/knowledge/archive/toolset/output/compact-petrol-engine-01-complete/running-result/CPE1Running.data",
+      "components": 60,
+      "errors": 0,
+      "warnings": 0
+    },
+    {
+      "file": "doc/knowledge/archive/toolset/output/shift-repair/20261016-100456/Giant_Engine_Test_Vehicle_01.data",
+      "components": 103,
+      "errors": 0,
+      "warnings": 1
+    }
+  ],
+  "final_vehicle_static_attachment_islands": 1,
+  "published_catalog_fallback": "verified with isolated repository-shaped fixture",
+  "markdown_relative_links": "verified new knowledge subtree; two existing Oct11 docs verified separately through GitHub",
+  "json_parse_and_manifest_hashes": "passed",
+  "original_sources": "untouched; source hashes verified by preparation script",
+  "limits": "No new game run or browser-editor build/test performed for this archival upload. Historical user tests retain their own evidence and scope."
+}

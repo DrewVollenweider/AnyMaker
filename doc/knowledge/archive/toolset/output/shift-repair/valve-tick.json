@@ -1,0 +1,18 @@
+{
+  "signature": "() server_scene.vehicle_component.gas_valve_t.tick (server_scene.vehicle_component.gas_valve_t, server_scene.vehicle, server_scene)",
+  "offset": 54915417,
+  "size": 1112,
+  "allocation": 1192,
+  "references": {
+    "00000458": "(ptr<const f64>) replication.master.property_type_simple<f64>.get (const replication.master.property_type_simple<f64>)",
+    "00000460": "g_server_delta_time",
+    "00000468": "(f64) math.max (const f64, const f64)",
+    "00000470": "() replication.master.property_f64.set (replication.master.property_f64, const f64)",
+    "00000478": "(f64) server_scene.vehicle_mechanical_node_in.read (const server_scene.vehicle_mechanical_node_in)",
+    "00000480": "(bool) vehicle_util.thresholded_input (bool, const f64)",
+    "00000488": "(f64) server_scene.vehicle_gas_island_group.get_pressure (server_scene.vehicle_gas_island_group)",
+    "00000490": "(f64) math.abs (const f64)",
+    "00000498": "() server_scene.vehicle_gas_node.container.rebuild (server_scene.vehicle_gas_node.container)",
+    "000004a0": "() server_scene.vehicle_component.push_event_component_ability (server_scene.vehicle_component, const s32)"
+  }
+}

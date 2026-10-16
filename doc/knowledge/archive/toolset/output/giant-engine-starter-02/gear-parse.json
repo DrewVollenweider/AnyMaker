@@ -1,0 +1,14 @@
+{
+  "signature": "() server_scene.vehicle_component.gearbox_fixed_ratio.parse_save_data (server_scene.vehicle_component.gearbox_fixed_ratio, server_scene.save_data.parser)",
+  "offset": 55045558,
+  "size": 904,
+  "allocation": 952,
+  "references": {
+    "00000388": "() server_scene.vehicle_component.parse_save_data (server_scene.vehicle_component, server_scene.save_data.parser)",
+    "00000390": "() $string_ctor_cstr (string, const uptr)",
+    "00000398": "() server_scene.save_data.parser.parse_value (server_scene.save_data.parser, const string, string, const string)",
+    "000003a0": "() $string_dtor (string)",
+    "000003a8": "() server_scene.save_data.parser.parse_value (server_scene.save_data.parser, const string, s32, const s32)",
+    "000003b0": "() server_scene.save_data.parser.parse_value (server_scene.save_data.parser, const string, bool, const bool)"
+  }
+}

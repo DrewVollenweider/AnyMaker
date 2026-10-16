@@ -1,0 +1,12 @@
+{
+  "signature": "() server_scene.vehicle_component.short_shifter.tick (server_scene.vehicle_component.short_shifter, server_scene.vehicle, server_scene)",
+  "offset": 57539528,
+  "size": 552,
+  "allocation": 584,
+  "references": {
+    "00000228": "(ptr<const s32>) replication.master.property_type_simple<s32>.get (const replication.master.property_type_simple<s32>)",
+    "00000230": "() server_scene.vehicle_component.push_event_component_ability (server_scene.vehicle_component, const s32)",
+    "00000238": "() replication.master.property_type_simple<s32>.set (replication.master.property_type_simple<s32>, const s32)",
+    "00000240": "() server_scene.vehicle_mechanical_node_out.write (server_scene.vehicle_mechanical_node_out, const f64)"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "retrieval_date": "2026-10-14",
+  "repository": "DrewVollenweider/AnyMaker",
+  "files": {
+    "repo-native-grid-evidence.json": {
+      "url": "https://github.com/DrewVollenweider/AnyMaker/blob/main/doc/evidence/native-grid-transform.json",
+      "git_blob_sha": "1ce1ef15b3049127ebe7370fd3790886d99b6f68"
+    },
+    "repo-grid-frame.js": {
+      "url": "https://github.com/DrewVollenweider/AnyMaker/blob/main/src/native/grid-frame.js",
+      "git_blob_sha": "3ca59bd8d2fdeb28c8414c03341c67cac100b93f"
+    },
+    "repo-native-format.md": {
+      "url": "https://github.com/DrewVollenweider/AnyMaker/blob/main/doc/03_XML_AND_NATIVE_FORMAT.md",
+      "git_blob_sha": "c2c7a2d9f44da785cc210cac651ef6714b15cfc4"
+    },
+    "repo-inclined-placement.md": {
+      "url": "https://github.com/DrewVollenweider/AnyMaker/blob/main/doc/12_INCLINED_PLACEMENT.md",
+      "git_blob_sha": "0d3f1f1cc2138f6b775d3b2d6fbd52eedb0f7e25"
+    }
+  }
+}

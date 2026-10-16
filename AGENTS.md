@@ -148,3 +148,8 @@ Anymaker Builder 是桌面优先的载具建造研究原型，使用 **Vite 7、
 - 用户授权读取指定 Anymaker 文件并创建项目诊断工具；修改原始游戏文件、删除、覆盖不可替代文件、补丁、注入、内存修改或安装模组仍须明确批准。授权不会提供本会话没有的本机访问工具。
 - 对创建和开发文件的重大修改先备份；公共仓库只保存必要证据，省略个人路径和账户信息。
 
+
+## Accumulated engineering knowledge / 累积工程知识（2026-10-16）
+
+Read [doc/knowledge/README.md](doc/knowledge/README.md) and [doc/knowledge/CURRENT-FACTS.md](doc/knowledge/CURRENT-FACTS.md) before engine, vehicle or microcontroller work. This archive includes October 11–16 work, especially the accepted compact inline-four CPE1Running, large-engine fluid-direction correction and positive-only pneumatic selectors. Latest verified findings supersede explicitly marked historical assumptions. Preserve the existing browser-editor acceptance boundaries.
+

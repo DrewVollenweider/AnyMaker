@@ -1,0 +1,1 @@
+This folder contains selected reference evidence. New generated outputs remain local; see the knowledge hub for acceptance and scope. Historical intermediate repair scripts are not the final configuration.

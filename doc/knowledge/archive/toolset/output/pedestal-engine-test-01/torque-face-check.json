@@ -1,0 +1,50 @@
+{
+  "convention": "Native column-major rotations; inherited axis codes; these geometry matches are static checks, not physics tests.",
+  "pairs": [
+    {
+      "source": 1,
+      "driven": 2,
+      "matched_face_center_cells": [
+        0.0,
+        14.0,
+        7.5
+      ]
+    },
+    {
+      "source": 6,
+      "driven": 10,
+      "matched_face_center_cells": [
+        4.0,
+        14.0,
+        7.5
+      ]
+    },
+    {
+      "source": 7,
+      "driven": 13,
+      "matched_face_center_cells": [
+        -4.0,
+        14.0,
+        7.5
+      ]
+    },
+    {
+      "source": 8,
+      "driven": 12,
+      "matched_face_center_cells": [
+        -4.0,
+        10.0,
+        7.5
+      ]
+    },
+    {
+      "source": 9,
+      "driven": 11,
+      "matched_face_center_cells": [
+        4.0,
+        10.0,
+        7.5
+      ]
+    }
+  ]
+}

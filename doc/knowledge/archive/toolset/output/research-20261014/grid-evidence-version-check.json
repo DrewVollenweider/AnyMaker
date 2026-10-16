@@ -1,0 +1,60 @@
+{
+  "prior_source": {
+    "path": "bin/game.gcl",
+    "bytes": 81871194,
+    "sha256": "32c1389e6bbc49aeae5a7eff93f2f580fed78ec453a69e6a491c014253e4ae09"
+  },
+  "current_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "(mat34) vehicle_util.grid_origin_dir.get_transform (const vehicle_util.grid_origin_dir)",
+      "code_offset": "0x3c4e8ec",
+      "code_size": "0x500",
+      "prior_code_sha256": "afe42e812ce3deabb754e7514f07316799db1ccdef1e7be441c683bf7a8031b8",
+      "current_code_sha256_at_prior_offset": "1e7af2faafee8903d2e2e9659e7f3962c5fc8c9f348bb212f6b42b9f7cecb2cb"
+    },
+    {
+      "signature": "(mat33) vehicle_util.grid_origin_dir.get_orientation (const vehicle_util.grid_origin_dir)",
+      "code_offset": "0x3c4e16f",
+      "code_size": "0x130",
+      "prior_code_sha256": "b84ca98ce3e1c29e6799436c66f6e11b417b53000ca2fc3efa404cc99d85a886",
+      "current_code_sha256_at_prior_offset": "474af5d1815d4a1ae75faba77c2ddb7e2ad4845402cdcc248afe9f1b2c8afbb4"
+    },
+    {
+      "signature": "() vehicle_grid_util.get_grid_axis_normals (const vec3_s32, vec3, vec3, vec3)",
+      "code_offset": "0x3bd9834",
+      "code_size": "0x348",
+      "prior_code_sha256": "c62315e12a109423a6811a7f0c6176469e00b7c78f230f9ef0a239c2e41dbdd2",
+      "current_code_sha256_at_prior_offset": "d8ae6874d44f93c5d6e91b5ad3b7dc01a3fe86f3b4fa6aca212fd05c632527c5"
+    },
+    {
+      "signature": "(vec3) vehicle_plate_util.get_plate_node_surface_offset (const vec3_s32, const vec3, const s32)",
+      "code_offset": "0x3c198c9",
+      "code_size": "0x900",
+      "prior_code_sha256": "1f12684393a9ddeb4b7ee459cadd85a455e2e49daed1fa364ca2fab2f3cb5f4f",
+      "current_code_sha256_at_prior_offset": "b14935a6dd20e5d8223cc3297fcc564066eab1034431c580786c7bb1812a9dd8"
+    },
+    {
+      "signature": "(bool) vehicle_util.grid_origin_dir.get_is_base_grid (const vehicle_util.grid_origin_dir)",
+      "code_offset": "0x3c4dbb3",
+      "code_size": "0x160",
+      "prior_code_sha256": "3da50d5a0c8521de4faff85ef7dc64eaf4c28869dad64ca71e50d3c91418a18f",
+      "current_code_sha256_at_prior_offset": "e8bf0c28b28a4954fd0ddbdab2bf0ff2d11e16b03939d3e4a51c41b2c3af06bd"
+    },
+    {
+      "signature": "() vehicle_util.grid_origin_dir.parse_json (vehicle_util.grid_origin_dir, json.parser, json.node)",
+      "code_offset": "0x3c4f332",
+      "code_size": "0x230",
+      "prior_code_sha256": "872fb737531783375e5ead3edeee8494dce3746f654c6fea5d8f149eebb8b603",
+      "current_code_sha256_at_prior_offset": "de693a236ff7b1649409b54e8978836035d2c94dd8ab094b644392265904aa3d"
+    },
+    {
+      "signature": "() vehicle_plate_util._g_plate_node_corners.$ctor ()",
+      "code_offset": "0x3be0721",
+      "code_size": "0x280",
+      "prior_code_sha256": "0dd89a475fa9433733b60548a95f1a941dbb19d34f9f8fd977d362e7e934185a",
+      "current_code_sha256_at_prior_offset": "8c90dbcfd2d8e17d55a6d9a42014af874ffc54cd1e420545a8bc2a0d79ca316b"
+    }
+  ],
+  "meaning": "Mismatched offsets are stale; this does not establish changed mechanics."
+}

@@ -1,0 +1,20 @@
+{
+  "signature": "() client_scene.vehicle_component.short_shifter.tick (client_scene.vehicle_component.short_shifter, client, client_scene.vehicle, client_scene, const f64)",
+  "offset": 18507450,
+  "size": 904,
+  "allocation": 1000,
+  "references": {
+    "00000388": "(ptr<const s32>) replication.slave.property_type_simple<s32>.get (const replication.slave.property_type_simple<s32>)",
+    "00000390": "(f64) math.min (const f64, const f64)",
+    "00000398": "(f64) math.clamp (const f64, const f64, const f64)",
+    "000003a0": "() ctor (mat34)",
+    "000003a8": "(mat34) client_scene.vehicle_component.get_world_transform (const client_scene.vehicle_component)",
+    "000003b0": "() ctor (vec3, const vec3)",
+    "000003b8": "() dtor (mat34)",
+    "000003c0": "() ctor (vec3)",
+    "000003c8": "(vec3) physics.object.get_point_velocity (const physics.object, const vec3)",
+    "000003d0": "g_audio_manager",
+    "000003d8": "() audio_manager.play (audio_manager, const e_audio_effect, const e_audio_group, const vec3, const vec3)",
+    "000003e0": "() dtor (vec3)"
+  }
+}

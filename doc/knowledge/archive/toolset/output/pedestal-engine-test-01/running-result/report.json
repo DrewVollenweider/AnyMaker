@@ -1,0 +1,591 @@
+{
+  "captured_utc": "2026-10-14T13:44:31.947233+00:00",
+  "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\Petrol_Pedestal_Test_01.data",
+  "source_sha256": "38c60f3524d6378a55b898770509821551eb58f437a6331c6e09844d93dfd3cc",
+  "source_mtime_utc": "2026-10-14T13:41:43.541302+00:00",
+  "test_evidence": "User reported success, supplied screenshot and exported the running creation.",
+  "component_geometry_unchanged": true,
+  "frame_geometry_unchanged": true,
+  "links_unchanged": true,
+  "saved_vehicle_id": 214,
+  "original_vehicle_id": 261,
+  "engine": {
+    "rps": 133.31295410918918,
+    "rpm": 7998.777246551351,
+    "temperature_C": 25.656767565029703,
+    "damage_factor": 0.0011453457051063972,
+    "damage_factor_times_100": 0.11453457051063971,
+    "oil_L": 3.901880740090892,
+    "water_L": 4.899925233014526
+  },
+  "controls": {
+    "run": true,
+    "throttle_slider": 1.0,
+    "run_relay_on": true,
+    "starter_relay_saved_fields": {
+      "def": 26,
+      "id": 71,
+      "colors": [
+        79,
+        79,
+        79,
+        79,
+        79,
+        79,
+        79,
+        79,
+        79,
+        79
+      ],
+      "pos": [
+        6,
+        12,
+        -4
+      ],
+      "user_defined_alias": "Starter_Relay",
+      "definition": "electric_relay"
+    }
+  },
+  "petrol_remaining_L": 7.941748990062735,
+  "battery_energy_J": 14378861.759070445,
+  "battery_fraction_of_4kWh": 0.9985320666021142,
+  "fluid_distribution": {
+    "1": {
+      "definition": "engine",
+      "state": {
+        "content_lubricant": {
+          "oil": 3.901880740090892,
+          "pollutant": 0.004973297714247287,
+          "temp": 25.65677412921286
+        },
+        "content_coolant": {
+          "water": 4.899925233014526,
+          "temp": 25.65677412921286
+        }
+      }
+    },
+    "8": {
+      "definition": "liquid_pump",
+      "state": {
+        "content_0": {
+          "temp": 25.636795643790915
+        },
+        "content_1": {
+          "oil": 0.02850030673110244,
+          "pollutant": 3.6074343279621357e-05,
+          "temp": 25.636795643790915
+        }
+      }
+    },
+    "9": {
+      "definition": "liquid_pump",
+      "state": {
+        "content_0": {
+          "water": 3.75007476698547,
+          "temp": 25.25703897031205
+        },
+        "content_1": {
+          "water": 0.05,
+          "temp": 25.25703897031205
+        }
+      }
+    },
+    "26": {
+      "definition": "liquid_tank",
+      "state": {
+        "content": {
+          "temp": 25.635486802856615
+        }
+      }
+    },
+    "32": {
+      "definition": "oil_filter",
+      "state": {
+        "content_0": {
+          "oil": 2.59690945315819,
+          "temp": 24.595569172585236
+        },
+        "content_1": {
+          "oil": 2.59690945315819,
+          "temp": 24.595569172585236
+        }
+      }
+    },
+    "35": {
+      "definition": "radiator",
+      "state": {
+        "content": {
+          "temp": 25.63916674471885
+        }
+      }
+    },
+    "42": {
+      "definition": "liquid_tank",
+      "state": {
+        "content": {
+          "petrol": 7.941748990062735,
+          "temp": 19.432164690749257
+        }
+      }
+    }
+  },
+  "concern": "Radiator 35 content has temperature only and no water field; oil reservoir 26 likewise has no oil field. Under the observed omission of zero-valued fluid quantities, this indicates empty stores. Fluid moved into engine/filter/pump chambers, but sustained closed-loop cooling is not demonstrated.",
+  "screenshot_readings": {
+    "speed_Hz": 10.1,
+    "temperature_C": 20.7,
+    "throttle_percent": 15,
+    "power_kW": 2.4,
+    "oil_L": 3.4,
+    "coolant_L": 3.4,
+    "oil_quality_percent": 100
+  },
+  "limits": [
+    "Screenshot and exported save represent different moments; saved throttle is now 100%.",
+    "No measured run duration, time-series thermal test, loaded output test or alternator charging measurement.",
+    "Nonzero damage cause is not established.",
+    "Native re-export reordered definition indexes, remapped body/item IDs and omitted several defaults; identity comparison avoids false geometry changes."
+  ],
+  "audit": {
+    "issues": [],
+    "vehicles": [
+      {
+        "id": 214,
+        "components": 60,
+        "component_types": {
+          "engine": 1,
+          "engine_wheel": 1,
+          "electric_motor_a": 1,
+          "alternator_motor": 1,
+          "liquid_pump": 2,
+          "pulley_wheel": 4,
+          "air_manifold_2": 1,
+          "fuel_manifold": 1,
+          "oil_manifold": 2,
+          "coolant_manifold": 2,
+          "exhaust_manifold_angle": 4,
+          "air_filter": 1,
+          "gas_vent": 2,
+          "liquid_tank": 2,
+          "liquid_fill_port": 3,
+          "liquid_port_straight": 11,
+          "oil_filter": 1,
+          "radiator": 1,
+          "radiator_fan_b": 1,
+          "gas_port_angle": 1,
+          "switch": 1,
+          "slider": 1,
+          "button_push_round": 1,
+          "mechanical_junction_min": 1,
+          "battery_a": 1,
+          "electric_port_straight": 10,
+          "electric_relay": 2
+        },
+        "nodes": 93,
+        "edges": 119,
+        "plates": 4,
+        "frame_groups": [
+          [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93
+          ]
+        ],
+        "links": {
+          "electric_links": 5,
+          "mechanical_links": 5,
+          "liquid_links": 8,
+          "gas_links": 6,
+          "belt_links": 5,
+          "data_links": 0
+        }
+      }
+    ],
+    "limits": [
+      "Offline checks do not prove game loadability or successful physics.",
+      "Frame graph groups exclude component attachment and welded geometry.",
+      "Logic node indexes use the observed zero-based endpoint convention; omitted definition fields remain unknown.",
+      "No collision, watertightness, torque continuity, or spatial mating certification is performed."
+    ],
+    "ok": true,
+    "counts": {}
+  },
+  "component_state_changes_by_id": {
+    "1": [
+      {
+        "path": "/content_coolant/temp",
+        "before": 20.0,
+        "after": 25.65677412921286
+      },
+      {
+        "path": "/content_coolant/water",
+        "before": 1.0,
+        "after": 4.899925233014526
+      },
+      {
+        "path": "/content_lubricant/oil",
+        "before": 0.75,
+        "after": 3.901880740090892
+      },
+      {
+        "path": "/content_lubricant/pollutant",
+        "added": 0.004973297714247287
+      },
+      {
+        "path": "/content_lubricant/temp",
+        "before": 20.0,
+        "after": 25.65677412921286
+      },
+      {
+        "path": "/damage_factor",
+        "before": 0.0,
+        "after": 0.0011453457051063972
+      },
+      {
+        "path": "/rps",
+        "before": 0.0,
+        "after": 133.31295410918918
+      },
+      {
+        "path": "/temperature",
+        "before": 20.0,
+        "after": 25.656767565029703
+      }
+    ],
+    "6": [
+      {
+        "path": "/is_reverse",
+        "removed": false
+      },
+      {
+        "path": "/power_factor",
+        "removed": 1.0
+      },
+      {
+        "path": "/target_rps",
+        "removed": 30.0
+      }
+    ],
+    "8": [
+      {
+        "path": "/content_0/oil",
+        "removed": 0.1
+      },
+      {
+        "path": "/content_0/temp",
+        "before": 20.0,
+        "after": 25.636795643790915
+      },
+      {
+        "path": "/content_1/oil",
+        "before": 0.1,
+        "after": 0.02850030673110244
+      },
+      {
+        "path": "/content_1/pollutant",
+        "added": 3.6074343279621357e-05
+      },
+      {
+        "path": "/content_1/temp",
+        "before": 20.0,
+        "after": 25.636795643790915
+      },
+      {
+        "path": "/is_reverse",
+        "removed": false
+      }
+    ],
+    "9": [
+      {
+        "path": "/content_0/temp",
+        "before": 20.0,
+        "after": 25.25703897031205
+      },
+      {
+        "path": "/content_0/water",
+        "before": 0.1,
+        "after": 3.75007476698547
+      },
+      {
+        "path": "/content_1/temp",
+        "before": 20.0,
+        "after": 25.25703897031205
+      },
+      {
+        "path": "/content_1/water",
+        "before": 0.1,
+        "after": 0.05
+      },
+      {
+        "path": "/is_reverse",
+        "removed": false
+      }
+    ],
+    "14": [
+      {
+        "path": "/gas",
+        "added": {
+          "air": 3.045196756110698,
+          "exhaust": 0.006102598709640677,
+          "temp": null
+        }
+      }
+    ],
+    "15": [
+      {
+        "path": "/liquid/petrol",
+        "before": 0.05,
+        "after": 0.0499
+      },
+      {
+        "path": "/liquid/temp",
+        "before": 20.0,
+        "after": 19.56417799214663
+      }
+    ],
+    "24": [
+      {
+        "path": "/acc/item/id",
+        "before": 8010,
+        "after": 13454
+      },
+      {
+        "path": "/gas",
+        "added": {
+          "air": 10.446920490689507,
+          "exhaust": 0.0209357124061914
+        }
+      }
+    ],
+    "25": [
+      {
+        "path": "/gas",
+        "added": {
+          "air": 0.2495,
+          "exhaust": 0.0007177879102809741,
+          "temp": null
+        }
+      }
+    ],
+    "26": [
+      {
+        "path": "/content/oil",
+        "removed": 8.0
+      },
+      {
+        "path": "/content/temp",
+        "before": 20.0,
+        "after": 25.635486802856615
+      }
+    ],
+    "32": [
+      {
+        "path": "/acc/item/condition",
+        "before": 1.0,
+        "after": 0.9979209325195866
+      },
+      {
+        "path": "/acc/item/id",
+        "before": 8011,
+        "after": 13455
+      },
+      {
+        "path": "/content_0/oil",
+        "before": 0.1,
+        "after": 2.59690945315819
+      },
+      {
+        "path": "/content_0/temp",
+        "before": 20.0,
+        "after": 24.595569172585236
+      },
+      {
+        "path": "/content_1/oil",
+        "before": 0.1,
+        "after": 2.59690945315819
+      },
+      {
+        "path": "/content_1/temp",
+        "before": 20.0,
+        "after": 24.595569172585236
+      }
+    ],
+    "35": [
+      {
+        "path": "/content/temp",
+        "before": 20.0,
+        "after": 25.63916674471885
+      },
+      {
+        "path": "/content/water",
+        "removed": 7.5
+      }
+    ],
+    "42": [
+      {
+        "path": "/content/petrol",
+        "before": 8.0,
+        "after": 7.941748990062735
+      },
+      {
+        "path": "/content/temp",
+        "before": 20.0,
+        "after": 19.432164690749257
+      }
+    ],
+    "46": [
+      {
+        "path": "/gas",
+        "added": {
+          "air": 0.2495,
+          "exhaust": 0.0004999999999999999
+        }
+      }
+    ],
+    "51": [
+      {
+        "path": "/value",
+        "before": false,
+        "after": true
+      }
+    ],
+    "52": [
+      {
+        "path": "/value",
+        "before": 0.15,
+        "after": 1.0
+      }
+    ],
+    "53": [],
+    "59": [
+      {
+        "path": "/user_defined_alias",
+        "removed": "Run_Throttle_Gate"
+      }
+    ],
+    "67": [
+      {
+        "path": "/acc/item/energy",
+        "before": 14400000.0,
+        "after": 14378861.759070445
+      },
+      {
+        "path": "/acc/item/id",
+        "before": 8012,
+        "after": 13456
+      }
+    ],
+    "68": [],
+    "69": [],
+    "70": [],
+    "71": [
+      {
+        "path": "/is_on",
+        "removed": false
+      }
+    ],
+    "72": [
+      {
+        "path": "/is_on",
+        "before": false,
+        "after": true
+      }
+    ],
+    "73": [],
+    "74": [],
+    "75": [],
+    "76": [],
+    "77": [],
+    "78": [],
+    "80": []
+  }
+}

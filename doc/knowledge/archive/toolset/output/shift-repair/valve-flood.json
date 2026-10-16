@@ -1,0 +1,9 @@
+{
+  "signature": "() server_scene.vehicle_component.gas_valve_t.get_gas_flood_nodes (server_scene.vehicle_component.gas_valve_t, vector<ptr<server_scene.vehicle_gas_node>>)",
+  "offset": 54906191,
+  "size": 240,
+  "allocation": 248,
+  "references": {
+    "000000f0": "(ptr<ptr<server_scene.vehicle_gas_node>>) vector<ptr<server_scene.vehicle_gas_node>>.push_back (vector<ptr<server_scene.vehicle_gas_node>>)"
+  }
+}

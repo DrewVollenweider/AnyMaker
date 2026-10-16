@@ -1,0 +1,112 @@
+{
+  "source_sha256": "6e7e1d221a1fdee898fc0879d38053e1cac7a8bb1ae70842302937f8521b50f2",
+  "engine_rps": 16.77425288141974,
+  "pump_shaft_rps": 111.96813798347678,
+  "pump_direction_derivation": [
+    "engine.tick reads engine-wheel torque rps with a negative sign.",
+    "Belt flood propagation uses positive radius ratios for all these unreversed belt components.",
+    "Mated pulley-to-pump torque faces negate rps again, so pump shafts turn positively while this engine runs positively.",
+    "Pump reverse=true therefore moves chamber_1 to chamber_0; reverse=false moves chamber_0 to chamber_1.",
+    "Pump port-pair sorts fitted ports by component ID: lower ID=chamber_0; higher ID=chamber_1."
+  ],
+  "circuits": [
+    {
+      "system": "oil",
+      "pump": 17,
+      "port_0": 35,
+      "port_0_path": [
+        35,
+        33,
+        61,
+        42
+      ],
+      "port_1": 36,
+      "port_1_path": [
+        36,
+        34,
+        37,
+        11,
+        1
+      ],
+      "reverse": true,
+      "current_flow": "engine -> pump -> oil tank",
+      "passive_path": [
+        42,
+        60,
+        12,
+        1
+      ],
+      "correction_reverse": false
+    },
+    {
+      "system": "coolant",
+      "pump": 20,
+      "port_0": 31,
+      "port_0_path": [
+        31,
+        30,
+        4,
+        1
+      ],
+      "port_1": 32,
+      "port_1_path": [
+        32,
+        29,
+        15,
+        14
+      ],
+      "reverse": false,
+      "current_flow": "engine -> pump -> radiator",
+      "passive_path": [
+        14,
+        16,
+        5,
+        1
+      ],
+      "correction_reverse": true
+    },
+    {
+      "system": "fuel",
+      "pumps": [
+        84,
+        85
+      ],
+      "port_0_paths": [
+        [
+          86,
+          90,
+          100,
+          1
+        ],
+        [
+          88,
+          91,
+          101,
+          1
+        ]
+      ],
+      "port_1_paths": [
+        [
+          87,
+          92,
+          48,
+          43
+        ],
+        [
+          89,
+          93,
+          49,
+          43
+        ]
+      ],
+      "reverse": [
+        true,
+        true
+      ],
+      "current_flow": "tank -> pumps -> fuel manifolds",
+      "correction": "none"
+    }
+  ],
+  "file_modified": false,
+  "test_status": "Static trace; reversing the two pump flags has not been game-tested."
+}

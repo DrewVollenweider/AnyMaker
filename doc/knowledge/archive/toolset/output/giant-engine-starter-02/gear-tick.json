@@ -1,0 +1,10 @@
+{
+  "signature": "() server_scene.vehicle_component.gearbox_fixed_ratio.tick (server_scene.vehicle_component.gearbox_fixed_ratio, server_scene.vehicle, server_scene)",
+  "offset": 55048811,
+  "size": 320,
+  "allocation": 336,
+  "references": {
+    "00000140": "(ptr<server_scene.vehicle_torque_link>) operator_aa (const array<server_scene.vehicle_torque_link>, const s32)",
+    "00000148": "() server_scene.vehicle_torque_node_container.rebuild (server_scene.vehicle_torque_node_container)"
+  }
+}

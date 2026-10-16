@@ -1,0 +1,11 @@
+{
+  "signature": "(f64) server_scene.vehicle_gas_content.get_pressure (const server_scene.vehicle_gas_content)",
+  "offset": 58574484,
+  "size": 264,
+  "allocation": 288,
+  "references": {
+    "00000108": "() $string_ctor_cstr (string, const uptr)",
+    "00000110": "() log (const string)",
+    "00000118": "() $string_dtor (string)"
+  }
+}

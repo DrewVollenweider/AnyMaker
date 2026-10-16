@@ -1,0 +1,7 @@
+{
+  "replace": [
+    {"path": "/vehicles/vehicles/0/grids/0/components/10/is_on", "value": false},
+    {"path": "/vehicles/vehicles/0/grids/0/components/10/value", "value": 0}
+  ]
+}
+

@@ -1,0 +1,12 @@
+{
+  "signature": "() server_scene.vehicle_gas_node_group_pair._create (server_scene.vehicle_gas_node_group_pair, server_scene.vehicle, server_scene.vehicle_gas_content, server_scene.vehicle_gas_content)",
+  "offset": 58637451,
+  "size": 1080,
+  "allocation": 1112,
+  "references": {
+    "00000438": "(s32) vector<ptr<server_scene.vehicle_gas_node>>.size (const vector<ptr<server_scene.vehicle_gas_node>>)",
+    "00000440": "(ptr<ptr<server_scene.vehicle_gas_node>>) operator_aa (const vector<ptr<server_scene.vehicle_gas_node>>, const s32)",
+    "00000448": "() swap<ptr<server_scene.vehicle_gas_node>> (ptr<server_scene.vehicle_gas_node>, ptr<server_scene.vehicle_gas_node>)",
+    "00000450": "() server_scene.vehicle_gas_node.container.create_node (server_scene.vehicle_gas_node.container, server_scene.vehicle_gas_node, server_scene.vehicle_component, const ptr<server_scene.vehicle_component>, const s32, const ptr<server_scene.vehicle_gas_content>)"
+  }
+}

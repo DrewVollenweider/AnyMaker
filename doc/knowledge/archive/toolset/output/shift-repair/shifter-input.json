@@ -1,0 +1,9 @@
+{
+  "signature": "() server_scene.vehicle_component.short_shifter.apply_seat_input (server_scene.vehicle_component.short_shifter, server_peer.seat_input, const f64)",
+  "offset": 57521779,
+  "size": 584,
+  "allocation": 592,
+  "references": {
+    "00000248": "(bool) server_peer.seat_input.get_digital (server_peer.seat_input, s32)"
+  }
+}

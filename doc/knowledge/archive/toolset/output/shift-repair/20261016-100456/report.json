@@ -1,0 +1,1964 @@
+{
+  "before_sha256": "8273d5fa8babc50d54cc669d982dc0f29862347304609b82dcc2beda0dccd8d3",
+  "live_trace": {
+    "SawBothValves": false,
+    "Ticks": 1973.0,
+    "SawPositive": true,
+    "SawNegative": true,
+    "SawUpValve": true,
+    "SawDownValve": true,
+    "SawTarget": true,
+    "SawGear": true
+  },
+  "removed_diagnostic_ports": [
+    140,
+    141,
+    142
+  ],
+  "parts": 103,
+  "audit": {
+    "issues": [
+      {
+        "severity": "warning",
+        "code": "frame_groups",
+        "path": "/vehicles/vehicles/0",
+        "message": "6 disconnected frame-only groups; component bridges are not evaluated"
+      }
+    ],
+    "vehicles": [
+      {
+        "id": 228,
+        "components": 103,
+        "component_types": {
+          "opposed_engine_c": 1,
+          "air_manifold_2": 2,
+          "coolant_manifold_b": 2,
+          "exhaust_manifold_angle_b": 2,
+          "oil_manifold_b": 2,
+          "radiator_b": 1,
+          "liquid_port_2_angle": 4,
+          "liquid_pump": 4,
+          "liquid_fill_port": 3,
+          "liquid_straight_reducer_a_b": 8,
+          "liquid_port_angle": 4,
+          "liquid_bracket_b": 1,
+          "gas_vent_b": 2,
+          "liquid_tank": 2,
+          "gas_vent": 4,
+          "liquid_port_2_straight": 2,
+          "electric_motor_b": 1,
+          "pulley_wheel": 5,
+          "battery_a": 1,
+          "air_filter_b": 2,
+          "electric_port_straight": 5,
+          "electric_relay": 1,
+          "liquid_port_straight": 6,
+          "fuel_manifold_b": 2,
+          "engine_wheel_c": 1,
+          "gearbox_fixed_ratio": 1,
+          "oil_filter": 1,
+          "gearbox_c": 1,
+          "gear_track": 1,
+          "drive_shaft_c": 3,
+          "differential_gearbox_a": 1,
+          "wheel": 4,
+          "high_back_car_seat": 1,
+          "steering_wheel": 1,
+          "short_shifter": 1,
+          "handbrake": 1,
+          "mechanical_junction_max": 4,
+          "gas_port_straight": 3,
+          "junction_t_gas_pipe_a": 1,
+          "slider": 1,
+          "key_switch": 1,
+          "mechanical_junction_invert": 1,
+          "gas_tank_a": 1,
+          "gas_valve_t": 2,
+          "microcontroller": 1,
+          "data_port_straight": 2,
+          "7_segment_lcd_display_backlight_1": 1,
+          "light_indicator_round_b": 1
+        },
+        "nodes": 170,
+        "edges": 225,
+        "plates": 17,
+        "frame_groups": [
+          [
+            1,
+            2,
+            3,
+            4,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161,
+            162,
+            163,
+            164,
+            165,
+            166,
+            167,
+            168,
+            169,
+            170,
+            171,
+            172,
+            173,
+            174,
+            175,
+            176,
+            177,
+            178,
+            179,
+            180,
+            181,
+            182,
+            183,
+            184,
+            185,
+            186,
+            187,
+            188,
+            189,
+            190,
+            191,
+            192,
+            193,
+            194,
+            195,
+            196,
+            197,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203,
+            204,
+            205,
+            206,
+            207,
+            208,
+            209,
+            210,
+            211,
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219,
+            220,
+            221,
+            222,
+            223,
+            224,
+            225,
+            226,
+            227,
+            228,
+            229,
+            230,
+            231,
+            232,
+            233,
+            234,
+            235,
+            236,
+            237,
+            238,
+            239,
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258
+          ],
+          [
+            9,
+            11,
+            19,
+            20,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143
+          ],
+          [
+            13,
+            18
+          ],
+          [
+            15,
+            17
+          ],
+          [
+            41,
+            42,
+            43,
+            44,
+            45,
+            54,
+            55,
+            57,
+            58,
+            60,
+            67,
+            72,
+            80,
+            81
+          ],
+          [
+            47,
+            48,
+            49,
+            50,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            82,
+            83
+          ]
+        ],
+        "links": {
+          "electric_links": 3,
+          "mechanical_links": 19,
+          "liquid_links": 20,
+          "gas_links": 11,
+          "belt_links": 6,
+          "data_links": 3
+        }
+      }
+    ],
+    "limits": [
+      "Offline checks do not prove game loadability or successful physics.",
+      "Frame graph groups exclude component attachment and welded geometry.",
+      "Logic node indexes use the observed zero-based endpoint convention; omitted definition fields remain unknown.",
+      "No collision, watertightness, torque continuity, or spatial mating certification is performed."
+    ],
+    "ok": true,
+    "counts": {
+      "warning": 1
+    }
+  },
+  "physical_audit": {
+    "islands": [
+      {
+        "components": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          11,
+          12,
+          14,
+          15,
+          16,
+          17,
+          20,
+          23,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          42,
+          43,
+          44,
+          45,
+          48,
+          49,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          67,
+          69,
+          70,
+          75,
+          77,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          97,
+          98,
+          100,
+          101,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136,
+          137,
+          138,
+          139,
+          143,
+          144
+        ],
+        "nodes": 170
+      }
+    ],
+    "disconnected_components": [],
+    "contacts": {
+      "1": [
+        {
+          "component": 2,
+          "surface": 2
+        },
+        {
+          "component": 3,
+          "surface": 4
+        },
+        {
+          "component": 4,
+          "surface": 12
+        },
+        {
+          "component": 5,
+          "surface": 13
+        },
+        {
+          "component": 6,
+          "surface": 4
+        },
+        {
+          "component": 7,
+          "surface": 2
+        },
+        {
+          "component": 11,
+          "surface": 12
+        },
+        {
+          "component": 12,
+          "surface": 13
+        },
+        {
+          "component": 17,
+          "surface": 13
+        },
+        {
+          "component": 20,
+          "surface": 12
+        },
+        {
+          "component": 29,
+          "surface": 12
+        },
+        {
+          "component": 30,
+          "surface": 12
+        },
+        {
+          "component": 33,
+          "surface": 13
+        },
+        {
+          "component": 34,
+          "surface": 13
+        },
+        {
+          "component": 37,
+          "surface": 12
+        },
+        {
+          "component": 67,
+          "surface": 3
+        },
+        {
+          "component": 69,
+          "surface": 4
+        },
+        {
+          "component": 70,
+          "surface": 2
+        },
+        {
+          "component": 79,
+          "surface": 2
+        },
+        {
+          "component": 84,
+          "surface": 3
+        },
+        {
+          "component": 85,
+          "surface": 3
+        },
+        {
+          "component": 90,
+          "surface": 3
+        },
+        {
+          "component": 91,
+          "surface": 3
+        },
+        {
+          "component": 92,
+          "surface": 12
+        },
+        {
+          "component": 93,
+          "surface": 13
+        },
+        {
+          "component": 100,
+          "surface": 2
+        },
+        {
+          "component": 101,
+          "surface": 4
+        },
+        {
+          "component": 103,
+          "surface": 1
+        },
+        {
+          "component": 105,
+          "surface": 13
+        },
+        {
+          "component": 108,
+          "surface": 0
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "surface": 11
+        },
+        {
+          "edge": [
+            2,
+            3
+          ],
+          "surface": 9
+        },
+        {
+          "edge": [
+            3,
+            4
+          ],
+          "surface": 10
+        },
+        {
+          "edge": [
+            4,
+            1
+          ],
+          "surface": 9
+        },
+        {
+          "edge": [
+            17,
+            15
+          ],
+          "surface": 7
+        },
+        {
+          "edge": [
+            18,
+            13
+          ],
+          "surface": 8
+        },
+        {
+          "edge": [
+            19,
+            11
+          ],
+          "surface": 8
+        },
+        {
+          "edge": [
+            20,
+            9
+          ],
+          "surface": 7
+        },
+        {
+          "edge": [
+            45,
+            54
+          ],
+          "surface": 6
+        },
+        {
+          "edge": [
+            57,
+            58
+          ],
+          "surface": 4
+        },
+        {
+          "edge": [
+            55,
+            57
+          ],
+          "surface": 4
+        },
+        {
+          "edge": [
+            54,
+            72
+          ],
+          "surface": 6
+        },
+        {
+          "edge": [
+            72,
+            57
+          ],
+          "surface": 4
+        },
+        {
+          "edge": [
+            47,
+            75
+          ],
+          "surface": 5
+        },
+        {
+          "edge": [
+            76,
+            77
+          ],
+          "surface": 2
+        },
+        {
+          "edge": [
+            75,
+            78
+          ],
+          "surface": 5
+        },
+        {
+          "edge": [
+            78,
+            77
+          ],
+          "surface": 2
+        },
+        {
+          "edge": [
+            58,
+            67
+          ],
+          "surface": 13
+        },
+        {
+          "edge": [
+            67,
+            81
+          ],
+          "surface": 13
+        },
+        {
+          "edge": [
+            54,
+            81
+          ],
+          "surface": 6
+        },
+        {
+          "edge": [
+            74,
+            82
+          ],
+          "surface": 12
+        },
+        {
+          "edge": [
+            77,
+            82
+          ],
+          "surface": 2
+        },
+        {
+          "edge": [
+            74,
+            83
+          ],
+          "surface": 12
+        },
+        {
+          "edge": [
+            75,
+            83
+          ],
+          "surface": 5
+        },
+        {
+          "edge": [
+            1,
+            98
+          ],
+          "surface": 11
+        },
+        {
+          "edge": [
+            4,
+            99
+          ],
+          "surface": 10
+        },
+        {
+          "edge": [
+            11,
+            138
+          ],
+          "surface": 8
+        },
+        {
+          "edge": [
+            9,
+            139
+          ],
+          "surface": 7
+        },
+        {
+          "edge": [
+            4,
+            147
+          ],
+          "surface": 10
+        },
+        {
+          "edge": [
+            3,
+            149
+          ],
+          "surface": 10
+        },
+        {
+          "edge": [
+            1,
+            157
+          ],
+          "surface": 11
+        },
+        {
+          "edge": [
+            2,
+            159
+          ],
+          "surface": 11
+        }
+      ],
+      "2": [
+        {
+          "component": 1
+        }
+      ],
+      "3": [
+        {
+          "component": 1
+        }
+      ],
+      "4": [
+        {
+          "component": 1
+        }
+      ],
+      "5": [
+        {
+          "component": 1
+        }
+      ],
+      "6": [
+        {
+          "component": 1
+        }
+      ],
+      "7": [
+        {
+          "component": 1
+        }
+      ],
+      "11": [
+        {
+          "component": 1
+        }
+      ],
+      "12": [
+        {
+          "component": 1
+        }
+      ],
+      "17": [
+        {
+          "component": 1
+        },
+        {
+          "component": 35,
+          "surface": 6
+        },
+        {
+          "component": 36,
+          "surface": 3
+        },
+        {
+          "component": 65,
+          "surface": 0
+        }
+      ],
+      "20": [
+        {
+          "component": 1
+        },
+        {
+          "component": 31,
+          "surface": 6
+        },
+        {
+          "component": 32,
+          "surface": 1
+        },
+        {
+          "component": 63,
+          "surface": 0
+        }
+      ],
+      "29": [
+        {
+          "component": 1
+        }
+      ],
+      "30": [
+        {
+          "component": 1
+        }
+      ],
+      "33": [
+        {
+          "component": 1
+        }
+      ],
+      "34": [
+        {
+          "component": 1
+        }
+      ],
+      "37": [
+        {
+          "component": 1
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "surface": 0
+        }
+      ],
+      "67": [
+        {
+          "component": 1
+        },
+        {
+          "component": 82,
+          "surface": 4
+        }
+      ],
+      "69": [
+        {
+          "component": 1
+        }
+      ],
+      "70": [
+        {
+          "component": 1
+        }
+      ],
+      "79": [
+        {
+          "component": 1
+        },
+        {
+          "component": 80,
+          "surface": 4
+        },
+        {
+          "component": 81,
+          "surface": 3
+        }
+      ],
+      "84": [
+        {
+          "component": 1
+        },
+        {
+          "component": 86,
+          "surface": 1
+        },
+        {
+          "component": 87,
+          "surface": 2
+        },
+        {
+          "component": 97,
+          "surface": 0
+        }
+      ],
+      "85": [
+        {
+          "component": 1
+        },
+        {
+          "component": 88,
+          "surface": 3
+        },
+        {
+          "component": 89,
+          "surface": 4
+        },
+        {
+          "component": 98,
+          "surface": 0
+        }
+      ],
+      "90": [
+        {
+          "component": 1
+        }
+      ],
+      "91": [
+        {
+          "component": 1
+        }
+      ],
+      "92": [
+        {
+          "component": 1
+        },
+        {
+          "edge": [
+            1,
+            2
+          ],
+          "surface": 1
+        }
+      ],
+      "93": [
+        {
+          "component": 1
+        },
+        {
+          "edge": [
+            3,
+            4
+          ],
+          "surface": 1
+        }
+      ],
+      "100": [
+        {
+          "component": 1
+        }
+      ],
+      "101": [
+        {
+          "component": 1
+        }
+      ],
+      "103": [
+        {
+          "component": 1
+        }
+      ],
+      "105": [
+        {
+          "component": 1
+        },
+        {
+          "component": 106,
+          "surface": 0
+        },
+        {
+          "component": 107,
+          "surface": 1
+        }
+      ],
+      "108": [
+        {
+          "component": 1
+        },
+        {
+          "component": 109,
+          "surface": 5
+        },
+        {
+          "component": 125,
+          "surface": 2
+        },
+        {
+          "component": 126,
+          "surface": 1
+        },
+        {
+          "component": 137,
+          "surface": 3
+        }
+      ],
+      "14": [
+        {
+          "component": 15,
+          "surface": 3
+        },
+        {
+          "component": 16,
+          "surface": 9
+        },
+        {
+          "component": 23,
+          "surface": 2
+        },
+        {
+          "edge": [
+            17,
+            15
+          ],
+          "surface": 0
+        },
+        {
+          "edge": [
+            18,
+            13
+          ],
+          "surface": 1
+        },
+        {
+          "edge": [
+            19,
+            11
+          ],
+          "surface": 1
+        },
+        {
+          "edge": [
+            20,
+            9
+          ],
+          "surface": 0
+        }
+      ],
+      "15": [
+        {
+          "component": 14
+        }
+      ],
+      "16": [
+        {
+          "component": 14
+        }
+      ],
+      "23": [
+        {
+          "component": 14
+        }
+      ],
+      "35": [
+        {
+          "component": 17
+        }
+      ],
+      "36": [
+        {
+          "component": 17
+        }
+      ],
+      "65": [
+        {
+          "component": 17
+        }
+      ],
+      "31": [
+        {
+          "component": 20
+        }
+      ],
+      "32": [
+        {
+          "component": 20
+        }
+      ],
+      "63": [
+        {
+          "component": 20
+        }
+      ],
+      "38": [
+        {
+          "edge": [
+            47,
+            48
+          ],
+          "surface": 0
+        },
+        {
+          "edge": [
+            48,
+            49
+          ],
+          "surface": 1
+        },
+        {
+          "edge": [
+            49,
+            50
+          ],
+          "surface": 3
+        },
+        {
+          "edge": [
+            47,
+            50
+          ],
+          "surface": 2
+        }
+      ],
+      "39": [
+        {
+          "edge": [
+            45,
+            41
+          ],
+          "surface": 1
+        },
+        {
+          "edge": [
+            41,
+            42
+          ],
+          "surface": 1
+        },
+        {
+          "edge": [
+            44,
+            43
+          ],
+          "surface": 2
+        },
+        {
+          "edge": [
+            44,
+            45
+          ],
+          "surface": 0
+        },
+        {
+          "edge": [
+            42,
+            43
+          ],
+          "surface": 3
+        }
+      ],
+      "42": [
+        {
+          "component": 43,
+          "surface": 1
+        },
+        {
+          "component": 44,
+          "surface": 4
+        },
+        {
+          "component": 59,
+          "surface": 4
+        },
+        {
+          "component": 60,
+          "surface": 0
+        },
+        {
+          "component": 61,
+          "surface": 0
+        },
+        {
+          "edge": [
+            96,
+            97
+          ],
+          "surface": 3
+        },
+        {
+          "edge": [
+            100,
+            101
+          ],
+          "surface": 3
+        },
+        {
+          "edge": [
+            102,
+            103
+          ],
+          "surface": 3
+        }
+      ],
+      "43": [
+        {
+          "component": 42
+        },
+        {
+          "component": 45,
+          "surface": 4
+        },
+        {
+          "component": 48,
+          "surface": 2
+        },
+        {
+          "component": 49,
+          "surface": 0
+        },
+        {
+          "component": 58,
+          "surface": 4
+        },
+        {
+          "edge": [
+            148,
+            158
+          ],
+          "surface": 5
+        },
+        {
+          "plate": 13,
+          "surface": 5
+        }
+      ],
+      "44": [
+        {
+          "component": 42
+        },
+        {
+          "edge": [
+            98,
+            99
+          ],
+          "surface": 3
+        }
+      ],
+      "59": [
+        {
+          "component": 42
+        }
+      ],
+      "60": [
+        {
+          "component": 42
+        }
+      ],
+      "61": [
+        {
+          "component": 42
+        }
+      ],
+      "45": [
+        {
+          "component": 43
+        }
+      ],
+      "48": [
+        {
+          "component": 43
+        }
+      ],
+      "49": [
+        {
+          "component": 43
+        }
+      ],
+      "58": [
+        {
+          "component": 43
+        }
+      ],
+      "62": [
+        {
+          "component": 77,
+          "surface": 4
+        },
+        {
+          "component": 104,
+          "surface": 6
+        },
+        {
+          "edge": [
+            140,
+            142
+          ],
+          "surface": 3
+        }
+      ],
+      "77": [
+        {
+          "component": 62
+        }
+      ],
+      "104": [
+        {
+          "component": 62
+        },
+        {
+          "component": 64
+        },
+        {
+          "edge": [
+            142,
+            143
+          ],
+          "surface": 4
+        }
+      ],
+      "64": [
+        {
+          "component": 104,
+          "surface": 0
+        }
+      ],
+      "82": [
+        {
+          "component": 67
+        }
+      ],
+      "80": [
+        {
+          "component": 79
+        }
+      ],
+      "81": [
+        {
+          "component": 79
+        }
+      ],
+      "86": [
+        {
+          "component": 84
+        }
+      ],
+      "87": [
+        {
+          "component": 84
+        }
+      ],
+      "97": [
+        {
+          "component": 84
+        }
+      ],
+      "88": [
+        {
+          "component": 85
+        }
+      ],
+      "89": [
+        {
+          "component": 85
+        }
+      ],
+      "98": [
+        {
+          "component": 85
+        }
+      ],
+      "106": [
+        {
+          "component": 105
+        }
+      ],
+      "107": [
+        {
+          "component": 105
+        }
+      ],
+      "109": [
+        {
+          "component": 108
+        },
+        {
+          "component": 110,
+          "surface": 6
+        },
+        {
+          "edge": [
+            222,
+            223
+          ],
+          "surface": 0
+        }
+      ],
+      "125": [
+        {
+          "component": 108
+        }
+      ],
+      "126": [
+        {
+          "component": 108
+        }
+      ],
+      "137": [
+        {
+          "component": 108
+        }
+      ],
+      "110": [
+        {
+          "component": 109
+        },
+        {
+          "component": 111,
+          "surface": 1
+        }
+      ],
+      "111": [
+        {
+          "component": 110
+        },
+        {
+          "component": 112,
+          "surface": 4
+        },
+        {
+          "component": 113,
+          "surface": 3
+        },
+        {
+          "edge": [
+            204,
+            205
+          ],
+          "surface": 0
+        }
+      ],
+      "112": [
+        {
+          "component": 111
+        },
+        {
+          "component": 116,
+          "surface": 1
+        }
+      ],
+      "113": [
+        {
+          "component": 111
+        },
+        {
+          "component": 117,
+          "surface": 1
+        }
+      ],
+      "116": [
+        {
+          "component": 112
+        },
+        {
+          "edge": [
+            186,
+            187
+          ],
+          "surface": 0
+        }
+      ],
+      "117": [
+        {
+          "component": 113
+        },
+        {
+          "edge": [
+            198,
+            199
+          ],
+          "surface": 0
+        }
+      ],
+      "114": [
+        {
+          "edge": [
+            180,
+            181
+          ],
+          "surface": 0
+        }
+      ],
+      "115": [
+        {
+          "edge": [
+            192,
+            193
+          ],
+          "surface": 0
+        }
+      ],
+      "118": [
+        {
+          "component": 119,
+          "surface": 1
+        },
+        {
+          "component": 120,
+          "surface": 5
+        },
+        {
+          "component": 121,
+          "surface": 6
+        },
+        {
+          "edge": [
+            231,
+            232
+          ],
+          "surface": 0
+        },
+        {
+          "plate": 14,
+          "surface": 0
+        }
+      ],
+      "119": [
+        {
+          "component": 118
+        },
+        {
+          "edge": [
+            244,
+            216
+          ],
+          "surface": 0
+        },
+        {
+          "edge": [
+            214,
+            217
+          ],
+          "surface": 0
+        },
+        {
+          "edge": [
+            257,
+            258
+          ],
+          "surface": 0
+        },
+        {
+          "plate": 14,
+          "surface": 0
+        }
+      ],
+      "120": [
+        {
+          "component": 118
+        },
+        {
+          "edge": [
+            231,
+            232
+          ],
+          "surface": 4
+        },
+        {
+          "plate": 14,
+          "surface": 4
+        }
+      ],
+      "121": [
+        {
+          "component": 118
+        },
+        {
+          "edge": [
+            231,
+            232
+          ],
+          "surface": 2
+        },
+        {
+          "plate": 14,
+          "surface": 2
+        }
+      ],
+      "122": [
+        {
+          "edge": [
+            210,
+            211
+          ],
+          "surface": 5
+        },
+        {
+          "edge": [
+            217,
+            219
+          ],
+          "surface": 2
+        },
+        {
+          "edge": [
+            217,
+            211
+          ],
+          "surface": 0
+        },
+        {
+          "edge": [
+            257,
+            258
+          ],
+          "surface": 2
+        },
+        {
+          "plate": 14,
+          "surface": 2
+        }
+      ],
+      "123": [
+        {
+          "edge": [
+            210,
+            211
+          ],
+          "surface": 5
+        },
+        {
+          "edge": [
+            217,
+            219
+          ],
+          "surface": 2
+        },
+        {
+          "edge": [
+            219,
+            210
+          ],
+          "surface": 1
+        },
+        {
+          "edge": [
+            257,
+            258
+          ],
+          "surface": 2
+        },
+        {
+          "plate": 14,
+          "surface": 2
+        }
+      ],
+      "129": [
+        {
+          "edge": [
+            151,
+            224
+          ],
+          "surface": 0
+        },
+        {
+          "plate": 16,
+          "surface": 0
+        }
+      ],
+      "75": [
+        {
+          "edge": [
+            227,
+            228
+          ],
+          "surface": 0
+        },
+        {
+          "edge": [
+            228,
+            229
+          ],
+          "surface": 0
+        },
+        {
+          "plate": 15,
+          "surface": 0
+        }
+      ],
+      "83": [
+        {
+          "edge": [
+            226,
+            227
+          ],
+          "surface": 0
+        },
+        {
+          "edge": [
+            227,
+            228
+          ],
+          "surface": 0
+        },
+        {
+          "plate": 15,
+          "surface": 0
+        }
+      ],
+      "124": [
+        {
+          "edge": [
+            230,
+            231
+          ],
+          "surface": 2
+        },
+        {
+          "edge": [
+            231,
+            232
+          ],
+          "surface": 2
+        },
+        {
+          "plate": 14,
+          "surface": 2
+        }
+      ],
+      "127": [
+        {
+          "component": 128,
+          "surface": 0
+        },
+        {
+          "edge": [
+            233,
+            234
+          ],
+          "surface": 5
+        },
+        {
+          "edge": [
+            234,
+            235
+          ],
+          "surface": 5
+        },
+        {
+          "plate": 16,
+          "surface": 5
+        }
+      ],
+      "128": [
+        {
+          "component": 127
+        }
+      ],
+      "130": [
+        {
+          "edge": [
+            237,
+            238
+          ],
+          "surface": 1
+        },
+        {
+          "edge": [
+            238,
+            239
+          ],
+          "surface": 1
+        },
+        {
+          "plate": 16,
+          "surface": 1
+        }
+      ],
+      "131": [
+        {
+          "edge": [
+            241,
+            242
+          ],
+          "surface": 1
+        },
+        {
+          "edge": [
+            242,
+            243
+          ],
+          "surface": 1
+        },
+        {
+          "plate": 16,
+          "surface": 1
+        }
+      ],
+      "132": [
+        {
+          "edge": [
+            236,
+            237
+          ],
+          "surface": 2
+        },
+        {
+          "edge": [
+            237,
+            238
+          ],
+          "surface": 2
+        },
+        {
+          "plate": 16,
+          "surface": 2
+        }
+      ],
+      "133": [
+        {
+          "edge": [
+            240,
+            241
+          ],
+          "surface": 2
+        },
+        {
+          "edge": [
+            241,
+            242
+          ],
+          "surface": 2
+        },
+        {
+          "plate": 16,
+          "surface": 2
+        }
+      ],
+      "134": [
+        {
+          "component": 135,
+          "surface": 1
+        },
+        {
+          "component": 136,
+          "surface": 2
+        },
+        {
+          "edge": [
+            212,
+            244
+          ],
+          "surface": 0
+        },
+        {
+          "edge": [
+            244,
+            216
+          ],
+          "surface": 0
+        },
+        {
+          "plate": 14,
+          "surface": 0
+        }
+      ],
+      "135": [
+        {
+          "component": 134
+        }
+      ],
+      "136": [
+        {
+          "component": 134
+        }
+      ],
+      "138": [
+        {
+          "edge": [
+            247,
+            253
+          ],
+          "surface": 0
+        },
+        {
+          "edge": [
+            253,
+            254
+          ],
+          "surface": 0
+        },
+        {
+          "plate": 17,
+          "surface": 0
+        }
+      ],
+      "139": [
+        {
+          "edge": [
+            253,
+            254
+          ],
+          "surface": 0
+        },
+        {
+          "edge": [
+            254,
+            251
+          ],
+          "surface": 0
+        },
+        {
+          "plate": 17,
+          "surface": 0
+        }
+      ],
+      "143": [
+        {
+          "edge": [
+            256,
+            257
+          ],
+          "surface": 2
+        },
+        {
+          "edge": [
+            257,
+            258
+          ],
+          "surface": 2
+        },
+        {
+          "plate": 14,
+          "surface": 2
+        }
+      ],
+      "144": [
+        {
+          "edge": [
+            255,
+            256
+          ],
+          "surface": 2
+        },
+        {
+          "edge": [
+            256,
+            257
+          ],
+          "surface": 2
+        },
+        {
+          "plate": 14,
+          "surface": 2
+        }
+      ]
+    },
+    "status": "Conservative static base-grid audit; not a runtime physics test."
+  },
+  "status": "User verified gear engagement, gear/reverse indication, and vehicle movement with handbrake released. Temporary diagnostic hardware removed in installed cleanup.",
+  "user_acceptance": {
+    "shifting": "User confirmed gear 1 and 2 engage.",
+    "reverse_indicator": "User confirmed reverse lamp operates.",
+    "movement": "User confirmed vehicle moves after releasing handbrake with key 1.",
+    "date_local": "2026-10-16",
+    "limits": "No sustained-driving, handling or endurance acceptance."
+  }
+}

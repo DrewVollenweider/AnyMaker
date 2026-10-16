@@ -1,0 +1,12 @@
+{
+  "signature": "() server_scene.vehicle_component.short_shifter.add_mating_component (server_scene.vehicle_component.short_shifter, server_scene.vehicle, const s32, server_scene.vehicle_component, const s32)",
+  "offset": 57520535,
+  "size": 376,
+  "allocation": 408,
+  "references": {
+    "00000178": "(ptr<server_scene.vehicle_component.data_port>) server_scene.vehicle_component.get_type<data_port> (server_scene.vehicle_component)",
+    "00000180": "() server_scene.vehicle_data_node_group.push (server_scene.vehicle_data_node_group, server_scene.vehicle, server_scene.vehicle_data_node, server_scene.vehicle_component, const ptr<server_scene.vehicle_component>, const bool)",
+    "00000188": "(ptr<server_scene.vehicle_component.seat>) server_scene.vehicle_component.get_type<seat> (server_scene.vehicle_component)",
+    "00000190": "(ptr<ptr<server_scene.vehicle_component.seat>>) vector<ptr<server_scene.vehicle_component.seat>>.push_back (vector<ptr<server_scene.vehicle_component.seat>>)"
+  }
+}

@@ -1,0 +1,711 @@
+{
+  "created": "2026-10-16",
+  "coverage": "Accumulated October 11–16 project knowledge, including compact I4/CPE1Running",
+  "source_records": [
+    {
+      "source": "TOOLSET.md",
+      "archive_path": "archive/TOOLSET.md",
+      "source_sha256": "d37b99cdb7d51436ccfb1d424ff200fe17b35cdac91c0725343f01e77e70a320",
+      "uploaded_sha256": "aae69411107949afa4d159138b5008f6bbf7e9877fd8c6460c737bddc03b04d1"
+    },
+    {
+      "source": "exploration/game-knowledge.md",
+      "archive_path": "archive/exploration/game-knowledge.md",
+      "source_sha256": "e377b4a18dcb4c295688248413aa007ce9df91a322af045cbd69dd5f0453b2df",
+      "uploaded_sha256": "29ad1a28c6e8e584fc55f9b14cd7226eab79ef416712db0fee5e8e249a14ee1d"
+    },
+    {
+      "source": "exploration/research-20261014.md",
+      "archive_path": "archive/exploration/research-20261014.md",
+      "source_sha256": "6f7c22d322969a0852c6ac13749f2e710e946fc4b370e362bb406aff03fb7233",
+      "uploaded_sha256": "a0b905457721e3b3b2028b124a1548382582f19285c18b10f32dbc2f426eaeac"
+    },
+    {
+      "source": "exploration/report.md",
+      "archive_path": "archive/exploration/report.md",
+      "source_sha256": "11ce9c1ae06b8dce241b35e022ca59fa30690fd7da2e216b5a679652a76fe15e",
+      "uploaded_sha256": "acae800c537f85d9c0314c1d6270de03e87a1ce2c9b3287527d91992528e9d9a"
+    },
+    {
+      "source": "exploration/component-map.json",
+      "archive_path": "archive/exploration/component-map.json",
+      "source_sha256": "2c9a1254a8cd188d0ea1c805b77fdd55ad1f632fc91b745cd3e7c3aa7d3b7d36",
+      "uploaded_sha256": "e00ef0247c9d6817dc033f24251ffbb45d88c474d5f0a0fab7e847f0de590e6e"
+    },
+    {
+      "source": "exploration/baseline/steercart.data",
+      "archive_path": "archive/exploration/baseline/steercart.data",
+      "source_sha256": "d9fbde7e260364a0d4243390f2dc12ce37f25d7991edbaa4d3aff8d71f8655ff",
+      "uploaded_sha256": "d9fbde7e260364a0d4243390f2dc12ce37f25d7991edbaa4d3aff8d71f8655ff"
+    },
+    {
+      "source": "toolset/anymaker.py",
+      "archive_path": "archive/toolset/anymaker.py",
+      "source_sha256": "04ed32ad0d04c4d4cc9aa216d5837320dbfaf6bffafc3aa533f9fccbe61ae854",
+      "uploaded_sha256": "126cf356e8f473f02b399b162c6da9e02028616eb5b10a3ee8234c7d00754193"
+    },
+    {
+      "source": "toolset/build_giant_test_vehicle.py",
+      "archive_path": "archive/toolset/build_giant_test_vehicle.py",
+      "source_sha256": "6dc116a4d08fc2c837634c13f9a4e7cab253b273fecd93ea2609190f443c176c",
+      "uploaded_sha256": "c9d1e48ae0821f645eb19de1564969e8b78c46ac9d478665b2ead89377919fdb"
+    },
+    {
+      "source": "toolset/build_pedestal_engine.py",
+      "archive_path": "archive/toolset/build_pedestal_engine.py",
+      "source_sha256": "683f21cc60c8ba88d31806e6d312104c71774296c158b4fea7bcde2387ad8948",
+      "uploaded_sha256": "88ee3bdc4e87ee265eeddcf8dae7a6970b997d531afe103394b2a26af40f97aa"
+    },
+    {
+      "source": "toolset/compact_engine.py",
+      "archive_path": "archive/toolset/compact_engine.py",
+      "source_sha256": "58367a866fd8f510fb9b4e24d093e992ef5981a2f14717cdf9d67ae9d574f85e",
+      "uploaded_sha256": "c16c0dbc76bcd2c8232a1b2ab6d6bf8728d912c4eaba582d27bdb65f072a35f5"
+    },
+    {
+      "source": "toolset/correct_shift_mapping.py",
+      "archive_path": "archive/toolset/correct_shift_mapping.py",
+      "source_sha256": "0b71cfc684fa281803c9f0dfe0a3caffb66dc3cd58a7d32f25480d5f9a6995ef",
+      "uploaded_sha256": "bfb3581f001ebb2119d13d1469c791b3ff7134c7a470b1009ff67f2ef597dd8f"
+    },
+    {
+      "source": "toolset/DECOMPILATION.md",
+      "archive_path": "archive/toolset/DECOMPILATION.md",
+      "source_sha256": "1d6fad9b4021e3c71adf089db8b40de6b51a145d5382eb4191bc2c0e25d27d9e",
+      "uploaded_sha256": "d904742ba5e6259ed7bd136e37705c4bf5ffb0b90e3409ed9c1d08349fb0528f"
+    },
+    {
+      "source": "toolset/example-plan.json",
+      "archive_path": "archive/toolset/example-plan.json",
+      "source_sha256": "495a88dc311b810f6235b3e18712785c7c83c54b85173d4349e003d16fc652a9",
+      "uploaded_sha256": "199ae94e0ded3fca48a2e5bbf2faa290751905a388edd8eb3d8143826944017c"
+    },
+    {
+      "source": "toolset/ExportAnymaker.java",
+      "archive_path": "archive/toolset/ExportAnymaker.java",
+      "source_sha256": "868c7371b19463dbccf5a96f23ddcf1cc9bc3aee34411148ae2665e7a98d33d0",
+      "uploaded_sha256": "8dba923949c6982c7e098164b8305e580dff21d9410c64abafbbf6a346e79340"
+    },
+    {
+      "source": "toolset/extract_gcl_samples.py",
+      "archive_path": "archive/toolset/extract_gcl_samples.py",
+      "source_sha256": "f28a878b56fb99a601c68ba0341ccf002a163c97df8a808ed8388f38fc9fe053",
+      "uploaded_sha256": "5e74091ef0c934dda7d698c0fdd9291d7ec20c0f6970d1ce832561da81dd8a4c"
+    },
+    {
+      "source": "toolset/fill_giant_engine.py",
+      "archive_path": "archive/toolset/fill_giant_engine.py",
+      "source_sha256": "3e294f1e222c66b2f72cdee92756f6675e8fcac06d165386a9e523e709dc5111",
+      "uploaded_sha256": "05f247d80dd560ce6bdfc471972dab5680643ad34de03bbe255876cbd36ce2d9"
+    },
+    {
+      "source": "toolset/finish_vehicle_diagnostics.py",
+      "archive_path": "archive/toolset/finish_vehicle_diagnostics.py",
+      "source_sha256": "c7ad028946854965a715412fabafd8d34b163a92923025e13315b3ea5ca72cac",
+      "uploaded_sha256": "dfb4060caa621145faa1857856288e3b99494aa6bfe93bfb84f5eeb8f2acd046"
+    },
+    {
+      "source": "toolset/index_decompiled.py",
+      "archive_path": "archive/toolset/index_decompiled.py",
+      "source_sha256": "a4bfa1becbec874ddb13a2dd6d6627fb4a59a2eb79f394ed278a3085579ce559",
+      "uploaded_sha256": "8f9157cb31e3d345dfa76a274e9da9c89c0cad57ee6df460d9e6ebda9c5a702d"
+    },
+    {
+      "source": "toolset/inspect_gcl.py",
+      "archive_path": "archive/toolset/inspect_gcl.py",
+      "source_sha256": "2b1998fa78ae6442ffcfecd866168beeb4cae3587b79312f552268950a95cf9c",
+      "uploaded_sha256": "63ae528dc3069daaf180a6d96d458d3ccdfe8b41fdec3e91a1bae49d54274458"
+    },
+    {
+      "source": "toolset/LIVE-VALIDATION.md",
+      "archive_path": "archive/toolset/LIVE-VALIDATION.md",
+      "source_sha256": "a69d0d6c47827aee3998c65780c48d1aab4038878464ae1de59e5f4c8c5b3ed5",
+      "uploaded_sha256": "fb443c3c9fdb4dea178b9cb4a13b2661091debef6ac136991e6df7755125bb8e"
+    },
+    {
+      "source": "toolset/observe_files.py",
+      "archive_path": "archive/toolset/observe_files.py",
+      "source_sha256": "6d0ec579de168ae9d19637de8a7f2b9096d9e8f5b39b5e719b93d84d07346f8f",
+      "uploaded_sha256": "f2e32c6edba0154a6f247e61139d74543999fc42cdbdd012e156f7e9fceeeca9"
+    },
+    {
+      "source": "toolset/README.md",
+      "archive_path": "archive/toolset/README.md",
+      "source_sha256": "cdd9a26509487e4453741f38be4d89bed412553bda82928e02e175b85b352c78",
+      "uploaded_sha256": "b8a88a66bfbbdd0edd6085333375788495192a64f94835298a70ea5435358e25"
+    },
+    {
+      "source": "toolset/read_binaries.py",
+      "archive_path": "archive/toolset/read_binaries.py",
+      "source_sha256": "a0268916f6513465171452e37493a1894cb0f2d14a6904cb9c4a418b131fa504",
+      "uploaded_sha256": "05cd4bfcc7e7cda0361d8d20188beb953c21ae4b9cb9a44f21a7817d0b9a4359"
+    },
+    {
+      "source": "toolset/repair_giant_vehicle_mounts.py",
+      "archive_path": "archive/toolset/repair_giant_vehicle_mounts.py",
+      "source_sha256": "7ed4424a1aa967be30323a1a6c2f9923fdad5acb95b78b7087eb828e087bf521",
+      "uploaded_sha256": "4bf3d06e0bd602235b0b5298cd516a727b3f1145fe1d9b08a4e8e887839dc9ae"
+    },
+    {
+      "source": "toolset/repair_shift_and_add_indicator.py",
+      "archive_path": "archive/toolset/repair_shift_and_add_indicator.py",
+      "source_sha256": "8b944ec2fcd4443d970cf92ce5bcd6455cbdbc195cc0d951e55e36c0a094531f",
+      "uploaded_sha256": "48be35328010221bfc81c3a845ec160e6ebe878b7aa44e24428add4fec80f2c5"
+    },
+    {
+      "source": "toolset/research_install.py",
+      "archive_path": "archive/toolset/research_install.py",
+      "source_sha256": "34950ab6f4b44db14521918708ecd51ba178ce9e4b577165a9eb0413d8a9b563",
+      "uploaded_sha256": "958fa7e4c88837c59b144e3b75f0d03f5b57e493c911da9ce63cc165d1488d71"
+    },
+    {
+      "source": "toolset/run_headless.ps1",
+      "archive_path": "archive/toolset/run_headless.ps1",
+      "source_sha256": "d8f4b598acd23e9ae4ae1d762254120711ba6850908bf18b7c55165ed6e5cd37",
+      "uploaded_sha256": "a1f9041e0834d47b87426a5bf14cf927b93a2d818557795015f0f290d750803d"
+    },
+    {
+      "source": "toolset/SetupSample.java",
+      "archive_path": "archive/toolset/SetupSample.java",
+      "source_sha256": "b3f10923285a2094c319879e793a90d3391da2352727fb881fdc24c1809e604a",
+      "uploaded_sha256": "39434a7f77e3668e418c8647bfc12f9fbea2dfd437d87638d1bcaf6cf0fad95e"
+    },
+    {
+      "source": "toolset/setup_decompiler.ps1",
+      "archive_path": "archive/toolset/setup_decompiler.ps1",
+      "source_sha256": "1897aec95c2831b317a8b7422bd58546619c8da4439c1a14cebea89554d0b21b",
+      "uploaded_sha256": "bc6e6f43894bf2cfb9a9236171bc43f6436f08f99441f2db82e4d034e825687b"
+    },
+    {
+      "source": "toolset/structural_mounts.py",
+      "archive_path": "archive/toolset/structural_mounts.py",
+      "source_sha256": "726a5fe7a9bde439b958ddf4604e57cc20d9e7119739cd544f46805930a5543b",
+      "uploaded_sha256": "bf2719d4851f7ddfc57fcae57aca53862d68470bdc3e62fb90fe5861026b9365"
+    },
+    {
+      "source": "toolset/upgrade_giant_starter.py",
+      "archive_path": "archive/toolset/upgrade_giant_starter.py",
+      "source_sha256": "74f5cb8233d567e7d9b83a324a994e18c31cb9544350a43ab100b9d810603bee",
+      "uploaded_sha256": "cc499aee8686167da0ebbb649e4cb3e7bab78eefe977330e52b45d53ac23e965"
+    },
+    {
+      "source": "toolset/VALIDATION.md",
+      "archive_path": "archive/toolset/VALIDATION.md",
+      "source_sha256": "6dd351bd53409b85b74ce6852778b5f4e6785a08b29f3e4801720774a4e2f9b6",
+      "uploaded_sha256": "786cc950105a8a248d95eca232224335e4f8a8b9db4d5233d818edca8b4b3bc3"
+    },
+    {
+      "source": "toolset/VEHICLE-DESIGN.md",
+      "archive_path": "archive/toolset/VEHICLE-DESIGN.md",
+      "source_sha256": "b8b40ca37c52531848189d435adff33b3a15c147c98ce5965678123bbfa7cd8c",
+      "uploaded_sha256": "f53557eaee5ef14e6dd067e1cbd21ca10f1621e68ea9c27d232a6e7809f88383"
+    },
+    {
+      "source": "toolset/vehicle_rules.json",
+      "archive_path": "archive/toolset/vehicle_rules.json",
+      "source_sha256": "ebf737cb6aa925f76946d0ee798194eeb9315f6edd5327487b5d2c69ad5ad6a6",
+      "uploaded_sha256": "bfa8ae73936dd698bb635371cc79bb490c40ed902a9b95d099127cddee589d7c"
+    },
+    {
+      "source": "toolset/WORKSHOP.md",
+      "archive_path": "archive/toolset/WORKSHOP.md",
+      "source_sha256": "cf241a49608e7b7fce6cf089298f8e4ccdb36aba767f980a064729c2bd76e730",
+      "uploaded_sha256": "5272cb3e1b9c8bb9b08bf8c7f8e0f3e1f6a852f4fa6dc442c1882df89c8e24d6"
+    },
+    {
+      "source": "toolset/workshop_index.py",
+      "archive_path": "archive/toolset/workshop_index.py",
+      "source_sha256": "930d2b0ea9e2590230cd2ceda9145c16c0deff77d83c1d7f83f4d4cd3c33d421",
+      "uploaded_sha256": "f0de057e033449b7cbe2589d93d1beb89987e985721b98dec58ada4a549270ed"
+    },
+    {
+      "source": "toolset/tests/test_anymaker.py",
+      "archive_path": "archive/toolset/tests/test_anymaker.py",
+      "source_sha256": "dcc6b3a310a777d2dc3208fc0c0179794143faa7c7541844bbe318c0e2c33283",
+      "uploaded_sha256": "cd5cd7deaea1f07f5b852c5ab17eee2dab34ebd2d61bc88c1c3b10afeb555487"
+    },
+    {
+      "source": "toolset/tests/test_systems.py",
+      "archive_path": "archive/toolset/tests/test_systems.py",
+      "source_sha256": "52e02d341b5589e9985074f688fd60399b1c58edec72c8a24898976f7ee76f21",
+      "uploaded_sha256": "b0b90f988192817ae043ac2d4c5f735656d70c134545d2831143a5061d8a03ce"
+    },
+    {
+      "source": "toolset/tests/test_workshop.py",
+      "archive_path": "archive/toolset/tests/test_workshop.py",
+      "source_sha256": "22effb0c0039d2b0c50a9201441db7062e37f984e586a13bcd66f7540bf3db75",
+      "uploaded_sha256": "9995ed8baeaf9b5f6ab299372b6f049de341bfb7167101f42b43106f0fdb41a0"
+    },
+    {
+      "source": "toolset/output/pedestal-engine-test-01/README.md",
+      "archive_path": "archive/toolset/output/pedestal-engine-test-01/README.md",
+      "source_sha256": "0fcdcc99acb02d96286099fc49026074498ed4696370a51e39b9732519c1c001",
+      "uploaded_sha256": "bdea201d5e282ca6185995ed617733fd2a80edb1b0eb243cf792ea702c8be154"
+    },
+    {
+      "source": "toolset/output/pedestal-engine-test-01/LIVE-RESULT.md",
+      "archive_path": "archive/toolset/output/pedestal-engine-test-01/LIVE-RESULT.md",
+      "source_sha256": "53aca0c02b27c996087358941f69c885f76f402f4a818a0465bd5771025941dc",
+      "uploaded_sha256": "0952f2f5c223680ce31ec7c2a36a1b464fef56591781f725239cbfc304df9ce1"
+    },
+    {
+      "source": "toolset/output/pedestal-engine-test-01/Petrol_Pedestal_Test_01.data",
+      "archive_path": "archive/toolset/output/pedestal-engine-test-01/Petrol_Pedestal_Test_01.data",
+      "source_sha256": "b148338b9f13f95bb0624a4a096b5e5af2fbd17c90a2f8cc4db1150c529c456b",
+      "uploaded_sha256": "b148338b9f13f95bb0624a4a096b5e5af2fbd17c90a2f8cc4db1150c529c456b"
+    },
+    {
+      "source": "toolset/output/pedestal-engine-test-01/Petrol_Pedestal_Test_01.meta",
+      "archive_path": "archive/toolset/output/pedestal-engine-test-01/Petrol_Pedestal_Test_01.meta",
+      "source_sha256": "22d9014716933380df89a05fc6c91ce725cab342d7734ff1f76e70cd85a53912",
+      "uploaded_sha256": "22d9014716933380df89a05fc6c91ce725cab342d7734ff1f76e70cd85a53912"
+    },
+    {
+      "source": "toolset/output/pedestal-engine-test-01/Petrol_Pedestal_Test_01.png",
+      "archive_path": "archive/toolset/output/pedestal-engine-test-01/Petrol_Pedestal_Test_01.png",
+      "source_sha256": "23555cfb7604d31b57adc6469d381eb3ee11f490c32e4269fa289a5f4c411f65",
+      "uploaded_sha256": "23555cfb7604d31b57adc6469d381eb3ee11f490c32e4269fa289a5f4c411f65"
+    },
+    {
+      "source": "toolset/output/pedestal-engine-test-01/validation.json",
+      "archive_path": "archive/toolset/output/pedestal-engine-test-01/validation.json",
+      "source_sha256": "9207522d90f2bdcc804e400d7ec9770d528d8469472d2340db39c47257d73fad",
+      "uploaded_sha256": "f5af50081d267a78babdd8e88e09a66a9983bfb2fca4fad5957f6d162e56c00c"
+    },
+    {
+      "source": "toolset/output/pedestal-engine-test-01/mount-face-check.json",
+      "archive_path": "archive/toolset/output/pedestal-engine-test-01/mount-face-check.json",
+      "source_sha256": "1448494af54d19c9c9ab06b9b11ed5972389e51a3cf57fe4edf214455d39d71e",
+      "uploaded_sha256": "17e6aae8609c0c59a73e5a0e96e4ab279ab371fab960effab2cf3a1c2cd3b53c"
+    },
+    {
+      "source": "toolset/output/pedestal-engine-test-01/torque-face-check.json",
+      "archive_path": "archive/toolset/output/pedestal-engine-test-01/torque-face-check.json",
+      "source_sha256": "c7d939ce24dc1eb1b97c9607a49c2acbfac1110757028af3a8906d6cbca68762",
+      "uploaded_sha256": "7f498e3bb7d0aca9d8ba1499bd0e90b6aaa0a87d47cdbb69789d497b610c41d1"
+    },
+    {
+      "source": "toolset/output/pedestal-engine-test-01/check_mounts.py",
+      "archive_path": "archive/toolset/output/pedestal-engine-test-01/check_mounts.py",
+      "source_sha256": "5bc1fccc29e29a95866d307d8774ba62ab12f29a8a6c4c460997ee578f09e930",
+      "uploaded_sha256": "9f36a15196c2fce840c896cdfc339e2c67d03621521d37ee15f8af5f7b581154"
+    },
+    {
+      "source": "toolset/output/pedestal-engine-test-01/capture_running_result.py",
+      "archive_path": "archive/toolset/output/pedestal-engine-test-01/capture_running_result.py",
+      "source_sha256": "e25370d2d23317aa4266906762847800671afd6f546a597eee83fba45ba75bd5",
+      "uploaded_sha256": "aaffb8dea0967cc0b63638a424ee55cf01e6d5a137fb47c79b94c3f15a34b850"
+    },
+    {
+      "source": "toolset/output/pedestal-engine-test-01/running-result/running.data",
+      "archive_path": "archive/toolset/output/pedestal-engine-test-01/running-result/running.data",
+      "source_sha256": "38c60f3524d6378a55b898770509821551eb58f437a6331c6e09844d93dfd3cc",
+      "uploaded_sha256": "38c60f3524d6378a55b898770509821551eb58f437a6331c6e09844d93dfd3cc"
+    },
+    {
+      "source": "toolset/output/pedestal-engine-test-01/running-result/running.meta",
+      "archive_path": "archive/toolset/output/pedestal-engine-test-01/running-result/running.meta",
+      "source_sha256": "8af2096704cb1c5e9b06d57eab13d0aea724ab65ed2b3892d9da7b7743cff5b3",
+      "uploaded_sha256": "8af2096704cb1c5e9b06d57eab13d0aea724ab65ed2b3892d9da7b7743cff5b3"
+    },
+    {
+      "source": "toolset/output/pedestal-engine-test-01/running-result/report.json",
+      "archive_path": "archive/toolset/output/pedestal-engine-test-01/running-result/report.json",
+      "source_sha256": "d776c30cea83535b320640c97985e96530b7279411303ceadcb2620fb653750a",
+      "uploaded_sha256": "180262fae6ff3807373e6c6bfb8b0ef2a3f97ab5f9e25d0434ea167e743cc528"
+    },
+    {
+      "source": "toolset/output/compact-petrol-engine-01-complete/README.md",
+      "archive_path": "archive/toolset/output/compact-petrol-engine-01-complete/README.md",
+      "source_sha256": "dcbe50288b280925e629d90a8fbfac5a942210803f2767d8dad65cd674698ff2",
+      "uploaded_sha256": "7bf28310240e01e51e49f377d3ce5b4ab7b779c555cacd5a7318ee7ced9857f8"
+    },
+    {
+      "source": "toolset/output/compact-petrol-engine-01-complete/LIVE-RESULT.md",
+      "archive_path": "archive/toolset/output/compact-petrol-engine-01-complete/LIVE-RESULT.md",
+      "source_sha256": "d40bac20e6997bf841a5296a46ef28a3717ac2458bdf9b5226f96d297e611be6",
+      "uploaded_sha256": "5df313c8fcb9808a4495b7bbbc7681246ce892a1141f99d5b8a4584b45d29f31"
+    },
+    {
+      "source": "toolset/output/compact-petrol-engine-01-complete/Compact_Petrol_Engine_01.data",
+      "archive_path": "archive/toolset/output/compact-petrol-engine-01-complete/Compact_Petrol_Engine_01.data",
+      "source_sha256": "af095a43c7bb76f276a06b4e085e982d3d1ca0ecfd6b829383e3eacc47a96bd1",
+      "uploaded_sha256": "af095a43c7bb76f276a06b4e085e982d3d1ca0ecfd6b829383e3eacc47a96bd1"
+    },
+    {
+      "source": "toolset/output/compact-petrol-engine-01-complete/Compact_Petrol_Engine_01.meta",
+      "archive_path": "archive/toolset/output/compact-petrol-engine-01-complete/Compact_Petrol_Engine_01.meta",
+      "source_sha256": "52991976668a176b9d6f356523bc399dc68de11e4df46e39e33790cfd884f97e",
+      "uploaded_sha256": "52991976668a176b9d6f356523bc399dc68de11e4df46e39e33790cfd884f97e"
+    },
+    {
+      "source": "toolset/output/compact-petrol-engine-01-complete/Compact_Petrol_Engine_01.png",
+      "archive_path": "archive/toolset/output/compact-petrol-engine-01-complete/Compact_Petrol_Engine_01.png",
+      "source_sha256": "776f61b820267089413b59bfeb7bb9e15d9e86cb0ab6dd0fca13c6b220df8b11",
+      "uploaded_sha256": "776f61b820267089413b59bfeb7bb9e15d9e86cb0ab6dd0fca13c6b220df8b11"
+    },
+    {
+      "source": "toolset/output/compact-petrol-engine-01-complete/final-checks.json",
+      "archive_path": "archive/toolset/output/compact-petrol-engine-01-complete/final-checks.json",
+      "source_sha256": "4f474dac3766d45a5d0e3af1b0c904b5e7238c8c5055a4ecd43cb8f34f0d6733",
+      "uploaded_sha256": "f52330b7f91f848699eec26c8b0b674d0a9bae799e8015f75d90bd254045e089"
+    },
+    {
+      "source": "toolset/output/compact-petrol-engine-01-complete/mount-face-check.json",
+      "archive_path": "archive/toolset/output/compact-petrol-engine-01-complete/mount-face-check.json",
+      "source_sha256": "50dee7b0c1d3ece80953300a26da3fa4a8a68f950a0bdcc31a9cef4e1cd94ad4",
+      "uploaded_sha256": "5fdbdcf5591150e2aac69bda9409864d6e39909a9b6907e864d6bcf9ab12667d"
+    },
+    {
+      "source": "toolset/output/compact-petrol-engine-01-complete/validation.json",
+      "archive_path": "archive/toolset/output/compact-petrol-engine-01-complete/validation.json",
+      "source_sha256": "b972ad5e4fbd6c17603ce1ae601850c8f479877f5b463cb79e60df8d9d0e96be",
+      "uploaded_sha256": "5ebcd6aafb85e8be5523cc2459d8990218354813df5c27251c3339c11a660258"
+    },
+    {
+      "source": "toolset/output/compact-petrol-engine-01-complete/check_mounts.py",
+      "archive_path": "archive/toolset/output/compact-petrol-engine-01-complete/check_mounts.py",
+      "source_sha256": "f0806c376a2fcc23c20a629166cc33eea9f7fbdcd9863c1e3597eafc2c02df08",
+      "uploaded_sha256": "93e3304c23960ca4e5267313b27772b7a1bc8f08b656a22bb633aeb200f22d9d"
+    },
+    {
+      "source": "toolset/output/compact-petrol-engine-01-complete/capture_running.py",
+      "archive_path": "archive/toolset/output/compact-petrol-engine-01-complete/capture_running.py",
+      "source_sha256": "27a8c8917a9ad32b3f3f4f84570fd93daa748e2ee02bf9e4522bb5d3dba787cc",
+      "uploaded_sha256": "a49a115653d660a0888044bfc88198cdb1c4fdd8a586601e59d665010f62efc0"
+    },
+    {
+      "source": "toolset/output/compact-petrol-engine-01-complete/verify.py",
+      "archive_path": "archive/toolset/output/compact-petrol-engine-01-complete/verify.py",
+      "source_sha256": "f2d6693d3067eda2224ed61005dd1d9ab32201988a41366232c3e5a11d4fd7f9",
+      "uploaded_sha256": "0f7d37f0b2e9e4ae12aa1ba6fdb0aead31f33e032a2f06d666d66b809c96259a"
+    },
+    {
+      "source": "toolset/output/compact-petrol-engine-01-complete/running-result/CPE1Running.data",
+      "archive_path": "archive/toolset/output/compact-petrol-engine-01-complete/running-result/CPE1Running.data",
+      "source_sha256": "65a2cfc700ffa32c9244ac3452b4640af7496e1ed5c75a8383ef2711c6c4a7ed",
+      "uploaded_sha256": "65a2cfc700ffa32c9244ac3452b4640af7496e1ed5c75a8383ef2711c6c4a7ed"
+    },
+    {
+      "source": "toolset/output/compact-petrol-engine-01-complete/running-result/CPE1Running.meta",
+      "archive_path": "archive/toolset/output/compact-petrol-engine-01-complete/running-result/CPE1Running.meta",
+      "source_sha256": "e6b227b26a214d83f11b762380381eafa7064330e0d2092698192fdf003993a2",
+      "uploaded_sha256": "e6b227b26a214d83f11b762380381eafa7064330e0d2092698192fdf003993a2"
+    },
+    {
+      "source": "toolset/output/compact-petrol-engine-01-complete/running-result/CPE1Running.png",
+      "archive_path": "archive/toolset/output/compact-petrol-engine-01-complete/running-result/CPE1Running.png",
+      "source_sha256": "3926fa4bda6675d3a951e9c984494033f07bb80b98c53b24f7137c2e0d9f12e7",
+      "uploaded_sha256": "3926fa4bda6675d3a951e9c984494033f07bb80b98c53b24f7137c2e0d9f12e7"
+    },
+    {
+      "source": "toolset/output/compact-petrol-engine-01-complete/running-result/report.json",
+      "archive_path": "archive/toolset/output/compact-petrol-engine-01-complete/running-result/report.json",
+      "source_sha256": "72eeacb7588e6a8f05a4f914927ccf09d512311b986da7f55e87283f5bf4b70b",
+      "uploaded_sha256": "422412fe1627abfced478488461c1aa0aef0f669ecb8987f6e3495cdd748a100"
+    },
+    {
+      "source": "toolset/output/giant-engine-circulation-03/LIVE-RESULT.md",
+      "archive_path": "archive/toolset/output/giant-engine-circulation-03/LIVE-RESULT.md",
+      "source_sha256": "86eb39cc98b79a58181820c4065bed2fe6a3dba3b2fc9c3e94d37dc9f2f9e417",
+      "uploaded_sha256": "9430a9f22b0d4441b8fd6966b848fd6bf708df931b91f5c8a18431b67ee3a960"
+    },
+    {
+      "source": "toolset/output/giant-engine-circulation-03/color-coded-direction-report.json",
+      "archive_path": "archive/toolset/output/giant-engine-circulation-03/color-coded-direction-report.json",
+      "source_sha256": "573e5d01733b0abba5ee30588efd9921ed7df2069889d27f41d5b38bc00a9ddb",
+      "uploaded_sha256": "5eef828ab8e259fbd81432a7b7059a1fd720e5853d4f544faee8cbdadb3b867e"
+    },
+    {
+      "source": "toolset/output/giant-engine-circulation-03/color-coded-snapshot.data",
+      "archive_path": "archive/toolset/output/giant-engine-circulation-03/color-coded-snapshot.data",
+      "source_sha256": "6e7e1d221a1fdee898fc0879d38053e1cac7a8bb1ae70842302937f8521b50f2",
+      "uploaded_sha256": "6e7e1d221a1fdee898fc0879d38053e1cac7a8bb1ae70842302937f8521b50f2"
+    },
+    {
+      "source": "toolset/output/research-20261014/report.json",
+      "archive_path": "archive/toolset/output/research-20261014/report.json",
+      "source_sha256": "13709c4c0114ae745a579f294bfb652ee4470b0ecf759679ecaf70072dc78d95",
+      "uploaded_sha256": "11a611e4fd49a52eaf3a86d38e80c0e3e543a55cd6fd0d3ef0ab17b0b70f35fa"
+    },
+    {
+      "source": "toolset/output/research-20261014/grid-evidence-version-check.json",
+      "archive_path": "archive/toolset/output/research-20261014/grid-evidence-version-check.json",
+      "source_sha256": "9a066733afb77be44a31eef899cf4124159a103b86e9804d0473885409a20137",
+      "uploaded_sha256": "028a6befece714e2c28a0be836c909fd2b0636a2bfbd93e652eb3cec67fdbe43"
+    },
+    {
+      "source": "toolset/output/research-20261014/repository-provenance.json",
+      "archive_path": "archive/toolset/output/research-20261014/repository-provenance.json",
+      "source_sha256": "53abd07e1a7a75f090217db4fa9572b1e2f5b54cdcdb328017cf3fc09d7bb1f5",
+      "uploaded_sha256": "badd3b94513d00d97e1af9a1384bab9c5f3d9bd465eb32ac9cc6606f643c2654"
+    },
+    {
+      "source": "toolset/output/research-20261014/saved-scripts.json",
+      "archive_path": "archive/toolset/output/research-20261014/saved-scripts.json",
+      "source_sha256": "ad1d3ec6fdf1ae99b929b5e606a8700e6c7e09c3c7273282defdce87b2fcfbbc",
+      "uploaded_sha256": "472ebe641a3be612af4382f375d3bdd4db82dc295cdc31a42075947211585682"
+    },
+    {
+      "source": "toolset/output/shift-repair/20261016-100456/Giant_Engine_Test_Vehicle_01.data",
+      "archive_path": "archive/toolset/output/shift-repair/20261016-100456/Giant_Engine_Test_Vehicle_01.data",
+      "source_sha256": "57de2fed038bb63d74541bba79ef8b11a33c3560c79cec02cc7c68da93052744",
+      "uploaded_sha256": "57de2fed038bb63d74541bba79ef8b11a33c3560c79cec02cc7c68da93052744"
+    },
+    {
+      "source": "toolset/output/shift-repair/20261016-100456/Giant_Engine_Test_Vehicle_01.meta",
+      "archive_path": "archive/toolset/output/shift-repair/20261016-100456/Giant_Engine_Test_Vehicle_01.meta",
+      "source_sha256": "46afe315b4e925f4c073baa83bcea291bd474f1ec5063607090599d851ecf95e",
+      "uploaded_sha256": "46afe315b4e925f4c073baa83bcea291bd474f1ec5063607090599d851ecf95e"
+    },
+    {
+      "source": "toolset/output/shift-repair/20261016-100456/Giant_Engine_Test_Vehicle_01.png",
+      "archive_path": "archive/toolset/output/shift-repair/20261016-100456/Giant_Engine_Test_Vehicle_01.png",
+      "source_sha256": "c8c265b8c54dfa555512a13fb6312154c7bb06612e4df3364184b8cc550eab87",
+      "uploaded_sha256": "c8c265b8c54dfa555512a13fb6312154c7bb06612e4df3364184b8cc550eab87"
+    },
+    {
+      "source": "toolset/output/shift-repair/20261016-100456/report.json",
+      "archive_path": "archive/toolset/output/shift-repair/20261016-100456/report.json",
+      "source_sha256": "ab158e2c005afb8f8d42d046c2cdc58154f54e2ce7384846e002f144c2c8ba99",
+      "uploaded_sha256": "9d9846fc13532a1d60c6d1b234ff4f7e4d080d400867c366754bf606388d8b29"
+    },
+    {
+      "source": "toolset/output/shift-repair/20261016-100456/CONTROL-GUIDE.md",
+      "archive_path": "archive/toolset/output/shift-repair/20261016-100456/CONTROL-GUIDE.md",
+      "source_sha256": "b7e7b733508580bbccb55b6fe3e6c45c53e8b4acc90beff2a66260d02b40bf26",
+      "uploaded_sha256": "fd529bf0706a751156af046faa70ee1e319e47e2c95928d6b071dce2eeebc13e"
+    },
+    {
+      "source": "toolset/output/shift-repair/shifting-success-no-drive.data",
+      "archive_path": "archive/toolset/output/shift-repair/shifting-success-no-drive.data",
+      "source_sha256": "8273d5fa8babc50d54cc669d982dc0f29862347304609b82dcc2beda0dccd8d3",
+      "uploaded_sha256": "8273d5fa8babc50d54cc669d982dc0f29862347304609b82dcc2beda0dccd8d3"
+    },
+    {
+      "source": "toolset/output/giant-engine-diagnosis/engine-create-record.json",
+      "archive_path": "archive/toolset/output/giant-engine-diagnosis/engine-create-record.json",
+      "source_sha256": "ab14f96a515f06923db20a2fb394383b5c90837e447cb200d1aebbd01b08d00a",
+      "uploaded_sha256": "a890555aa6727993baed98b1a6166c39d815a385edca5959a5f40c584a2d9183"
+    },
+    {
+      "source": "toolset/output/giant-engine-diagnosis/engine-tick-record.json",
+      "archive_path": "archive/toolset/output/giant-engine-diagnosis/engine-tick-record.json",
+      "source_sha256": "554563bffce4c0313ca5d0bdf5e2712d742e8c44dccd6991320d7f26caf3ffa3",
+      "uploaded_sha256": "1657077a0e9ea34c0af62deb549420ddcb909f88cd12f0ee97867de828a81c20"
+    },
+    {
+      "source": "toolset/output/giant-engine-diagnosis/liquid-create-record.json",
+      "archive_path": "archive/toolset/output/giant-engine-diagnosis/liquid-create-record.json",
+      "source_sha256": "b4e9a3fed86dbe151e63db0a90b54acf3fc047072269370375071fd79c11847b",
+      "uploaded_sha256": "0b71974aa5dadd5f24e247a7b73bd89565d8aa3e6a5d55b4c8597666fed2fe0a"
+    },
+    {
+      "source": "toolset/output/giant-engine-starter-02/gear-create.json",
+      "archive_path": "archive/toolset/output/giant-engine-starter-02/gear-create.json",
+      "source_sha256": "e45997f2e3c0511a8d40a32865b7d95aa90172e99f69437a211adbef2f6b84dd",
+      "uploaded_sha256": "97e79c66e40bc1ffeaa669de2d5f646ca250eb0d0be80f4b484665d566c3d6af"
+    },
+    {
+      "source": "toolset/output/giant-engine-starter-02/gear-parse.json",
+      "archive_path": "archive/toolset/output/giant-engine-starter-02/gear-parse.json",
+      "source_sha256": "3b5a06e48d96a5d5feb0ef688c8f91094320b59be65564ee70a3faff5ff6aa10",
+      "uploaded_sha256": "66faf840e45ba1a7dc9f24b398b2f6e150a8d872c517b1a6fbe174c1a648cfba"
+    },
+    {
+      "source": "toolset/output/giant-engine-starter-02/gear-tick.json",
+      "archive_path": "archive/toolset/output/giant-engine-starter-02/gear-tick.json",
+      "source_sha256": "c8702f6ba6582a00ba9576a9983215e679f6d86242c79cf382e0341a56fe6000",
+      "uploaded_sha256": "3b00da4e9dbcd84d645f5ce275cf8fc7f5c276ac004f232bb6fa62749b7dfd93"
+    },
+    {
+      "source": "toolset/output/giant-engine-starter-02/torque-flood.json",
+      "archive_path": "archive/toolset/output/giant-engine-starter-02/torque-flood.json",
+      "source_sha256": "45138c066c04ae34d302c07ce04ea9210ace75e9b2113dfb878cb5d4189520c4",
+      "uploaded_sha256": "26cd1438c57e35d4bd39f56556477aeef8648a077886fbf6796db52c37529d65"
+    },
+    {
+      "source": "toolset/output/giant-engine-circulation-03/engine-mates.json",
+      "archive_path": "archive/toolset/output/giant-engine-circulation-03/engine-mates.json",
+      "source_sha256": "6534e9c4bb1385861d0acec6b67c8249288e050ba0989c9981a46c83721d2bc8",
+      "uploaded_sha256": "0638b4a5081291f56c353b540cbcfd8297bf4add847bcea6721ffdb118399d7c"
+    },
+    {
+      "source": "toolset/output/giant-engine-circulation-03/pair-create.json",
+      "archive_path": "archive/toolset/output/giant-engine-circulation-03/pair-create.json",
+      "source_sha256": "c7d3a801e79ee4e51e0f9662176651573dec426235b198d0b34df2317137ede2",
+      "uploaded_sha256": "b5589f3261519110125650e0b887d9d4510289f7535c47b91779b92f8c9072d5"
+    },
+    {
+      "source": "toolset/output/giant-engine-circulation-03/pair-push.json",
+      "archive_path": "archive/toolset/output/giant-engine-circulation-03/pair-push.json",
+      "source_sha256": "ab3367f903cb063f0d9bdd2dc6059051dfd88bcb3a32151bb7c8ee9d485e53f3",
+      "uploaded_sha256": "cdb9c79d18198bc6f47ed7e1001edc2232ec43b09ea8196e03fc007d9f4d885e"
+    },
+    {
+      "source": "toolset/output/giant-engine-circulation-03/pulley-belt.json",
+      "archive_path": "archive/toolset/output/giant-engine-circulation-03/pulley-belt.json",
+      "source_sha256": "5590f43d1c74405b98d8ff5343dedf2be0fb105ea5d3f57709de87a8e93347df",
+      "uploaded_sha256": "5ad6ee9edf123f37f59df2c3d303587e7ac0f2ea3fb813fb198a1be79698f7f7"
+    },
+    {
+      "source": "toolset/output/giant-engine-circulation-03/pump-mates.json",
+      "archive_path": "archive/toolset/output/giant-engine-circulation-03/pump-mates.json",
+      "source_sha256": "004c3d979fe09c52925a34a02e4b9a71b9a77a68a71bc9ab6b427ce20d88c14f",
+      "uploaded_sha256": "179b1a51c375d159c261e8b81525f4d97516c620941a11acd77c7712ff0c3d5f"
+    },
+    {
+      "source": "toolset/output/giant-engine-circulation-03/pump-parse.json",
+      "archive_path": "archive/toolset/output/giant-engine-circulation-03/pump-parse.json",
+      "source_sha256": "2df977c69666b3bb832182c89bf69e6e29612b22e8ade66515263de68716a264",
+      "uploaded_sha256": "935172721916b557578884fde8bb4e4cf67670b1e2a7b51d1968278852236a5b"
+    },
+    {
+      "source": "toolset/output/giant-engine-circulation-03/pump-tick.json",
+      "archive_path": "archive/toolset/output/giant-engine-circulation-03/pump-tick.json",
+      "source_sha256": "31b0240cfe5d45fc52c5961f2f438dfb40e2acfacb7756626a5fe6d92fa83528",
+      "uploaded_sha256": "242c52e3a8dd9b748229499e5d4803e511569a3baada6f0e367fdd032bf5dc7e"
+    },
+    {
+      "source": "toolset/output/giant-engine-circulation-03/volume-tick.json",
+      "archive_path": "archive/toolset/output/giant-engine-circulation-03/volume-tick.json",
+      "source_sha256": "7c9df3061812bd3d49bf269fe3c835202e10ff3bb0762a166f3a84ff8b5e323b",
+      "uploaded_sha256": "c204bb0f150c58745c4ff6a1b99a200b6f908b90695af1a6541eb7397b4e839c"
+    },
+    {
+      "source": "toolset/output/giant-engine-circulation-03/wheel-belt.json",
+      "archive_path": "archive/toolset/output/giant-engine-circulation-03/wheel-belt.json",
+      "source_sha256": "6ed1e3adb44e290d74b7017e140285283b8c73bd6d368a6a459378aa1368ef4a",
+      "uploaded_sha256": "c6a7fe5fc761e66ff6a0c1840ec5abe1b57fc6871fb0a2073a89f85ea2e86685"
+    },
+    {
+      "source": "toolset/output/shift-repair/gas-content-create.json",
+      "archive_path": "archive/toolset/output/shift-repair/gas-content-create.json",
+      "source_sha256": "698984025462681143c8392ec4a635b7c4b3190f312db20405d5dec4a3fa02d8",
+      "uploaded_sha256": "be954fd3fbf6fae4d7730af3bdd4a106c84342b596a3a8b9f606cad863ce5699"
+    },
+    {
+      "source": "toolset/output/shift-repair/gas-node-create.json",
+      "archive_path": "archive/toolset/output/shift-repair/gas-node-create.json",
+      "source_sha256": "768a2fe82be5e8739a9cf9c37d241f4983949a02f32c6475f9080c9d68f58247",
+      "uploaded_sha256": "eca872de479f0a3d767354558d986c98881c7df2961dc09ed7b68a3502800d7c"
+    },
+    {
+      "source": "toolset/output/shift-repair/gas-pair-create.json",
+      "archive_path": "archive/toolset/output/shift-repair/gas-pair-create.json",
+      "source_sha256": "c791f8768af97a5cf06be220f77a744c6aef58806ea6d5e04239edd7946c04ff",
+      "uploaded_sha256": "cf0a776bab22af030fc0354b24e9dd2a563bde070760587df5511a526e1427c5"
+    },
+    {
+      "source": "toolset/output/shift-repair/gas-pressure.json",
+      "archive_path": "archive/toolset/output/shift-repair/gas-pressure.json",
+      "source_sha256": "93fd3aee7bcac83e3a6c0cac6d1ef65a2eeded9df3038c81c797f71bcbd42469",
+      "uploaded_sha256": "2611b669668c69d18562a286268849c537df5e375bd15ccd783981b28f941a2c"
+    },
+    {
+      "source": "toolset/output/shift-repair/gas-tank-create.json",
+      "archive_path": "archive/toolset/output/shift-repair/gas-tank-create.json",
+      "source_sha256": "37f1f7a3387aeeb9ce090c9c7ecf3a3b3f0ab3d2e9a945e7d225ad4d273b224c",
+      "uploaded_sha256": "ac00366e596a5252b17fadd05bbfeb17338fee0781db8e1f6f934624242b59c8"
+    },
+    {
+      "source": "toolset/output/shift-repair/gear-count.json",
+      "archive_path": "archive/toolset/output/shift-repair/gear-count.json",
+      "source_sha256": "dcd1be0805fe4ec02e73f09e574943e0a25a9321043d162e7c0af21bfda80612",
+      "uploaded_sha256": "8feb99988132a79d13b2c993719f2a92a53bdf2dfb55e23ea019373ef95d95a9"
+    },
+    {
+      "source": "toolset/output/shift-repair/gearbox-port.json",
+      "archive_path": "archive/toolset/output/shift-repair/gearbox-port.json",
+      "source_sha256": "80ce52ed103b9abaaf964b3241f2fc137480ce42a79aabe713ad231033ecb3e1",
+      "uploaded_sha256": "e7c38380641ff3f103b6194d01b3d5af9e4802c5bc1d1e2c452c7a7a387e64fa"
+    },
+    {
+      "source": "toolset/output/shift-repair/mc-mate.json",
+      "archive_path": "archive/toolset/output/shift-repair/mc-mate.json",
+      "source_sha256": "5eae44b64a7e5da79235df2cd55ece4e39a4640fd4965acc891d2a860c0c7819",
+      "uploaded_sha256": "0c151412da287e67d7e7dc53d92561b395c5d1f6d40cd7c0190cc1a9a0f04efc"
+    },
+    {
+      "source": "toolset/output/shift-repair/mc-tick.json",
+      "archive_path": "archive/toolset/output/shift-repair/mc-tick.json",
+      "source_sha256": "782c371576f61f90a4b87d9636d4ea963f1ac38e44bf444e739c47eecfb0314f",
+      "uploaded_sha256": "d0107dd020bf5ce5e71da9458aeb1878654716641a6f948b470b30a298be165a"
+    },
+    {
+      "source": "toolset/output/shift-repair/shifter-client-tick.json",
+      "archive_path": "archive/toolset/output/shift-repair/shifter-client-tick.json",
+      "source_sha256": "b5584007d20421f2d198ecd15e1d5bcebf652afe8bf8e86f6682818e42900ee4",
+      "uploaded_sha256": "7eba3e39192bd2c2439cbb4c391380155067422f407ecf53d8b5603ecdecdb0b"
+    },
+    {
+      "source": "toolset/output/shift-repair/shifter-create.json",
+      "archive_path": "archive/toolset/output/shift-repair/shifter-create.json",
+      "source_sha256": "65408a90bf1aa3e724ae0f37fbe8c3b0dc15b1effa4ddf0e30c9a2c1e3b2f815",
+      "uploaded_sha256": "46a0b93ce5171b761c431943bbe08244dceff2bf709519d87d431b8390bfd94f"
+    },
+    {
+      "source": "toolset/output/shift-repair/shifter-input.json",
+      "archive_path": "archive/toolset/output/shift-repair/shifter-input.json",
+      "source_sha256": "ec2f8c72747346f6a43d4033183b4ecf7e8037eb29a022bbf8760ca6b8628a28",
+      "uploaded_sha256": "7ca660889dbf7a7312eecabf07f6a3bc9553103295d0775f509d07c25c307707"
+    },
+    {
+      "source": "toolset/output/shift-repair/shifter-mate.json",
+      "archive_path": "archive/toolset/output/shift-repair/shifter-mate.json",
+      "source_sha256": "3e6e4a7106f474d9ce0e5bbce6d3c1da207daa6a3c34fe6cc6aac671a162a8d1",
+      "uploaded_sha256": "cc262644b91d23a7b0aabcb9fb6a824c45549ec1dc1bb344e363bac70f99b958"
+    },
+    {
+      "source": "toolset/output/shift-repair/shifter-parse.json",
+      "archive_path": "archive/toolset/output/shift-repair/shifter-parse.json",
+      "source_sha256": "e8cd58b708c5f5541fc410acf142f12b21d17ca8f6fcca92b206ed27005a5448",
+      "uploaded_sha256": "67b21ed32c4f4c7fb023d8210df543192563ccc6058113adfbe3f318f7ef1cf0"
+    },
+    {
+      "source": "toolset/output/shift-repair/shifter-tick.json",
+      "archive_path": "archive/toolset/output/shift-repair/shifter-tick.json",
+      "source_sha256": "a3199174597d6620461ecabc5fd5252ef968ae214f5c94518609101ad2c0db02",
+      "uploaded_sha256": "6397762ccf87c7dae93ecf75d7541b1dd4892fee6cfa2958a0260a6783fae6a0"
+    },
+    {
+      "source": "toolset/output/shift-repair/threshold-input.json",
+      "archive_path": "archive/toolset/output/shift-repair/threshold-input.json",
+      "source_sha256": "6ec517fae29e8a061dcd241bab9ecc822e9862914aef4750422bf5395400d0f6",
+      "uploaded_sha256": "ab276f96f23c56c695715e749cfda636ff137fb309d9ebc8479a4073273ca56d"
+    },
+    {
+      "source": "toolset/output/shift-repair/valve-create.json",
+      "archive_path": "archive/toolset/output/shift-repair/valve-create.json",
+      "source_sha256": "a9103ac8a8044b4cde52feb4d86840c7b2fe64fb5819842238be47c19e4e6261",
+      "uploaded_sha256": "fa945ef5781d6f8d9a3b501184813d390d74cfb34ccdda1d1660e0518b9bfd09"
+    },
+    {
+      "source": "toolset/output/shift-repair/valve-flood.json",
+      "archive_path": "archive/toolset/output/shift-repair/valve-flood.json",
+      "source_sha256": "5e09033f125cb9288546ed5fdd3ce7c1bc70890ba55abc5232ffc02344f036ee",
+      "uploaded_sha256": "c2fe984266e99a004a6bc85a543197694e07cd54bb3f3e2488539c13880c5cc1"
+    },
+    {
+      "source": "toolset/output/shift-repair/valve-tick.json",
+      "archive_path": "archive/toolset/output/shift-repair/valve-tick.json",
+      "source_sha256": "79b2f6bcb2c28e462aa98534db5d843b8f6513b32392b956de8dec75fd0dfc23",
+      "uploaded_sha256": "d3e9863c20e3c6af54fb9afe569ac283b40536f38f4c31898872c3231639add3"
+    },
+    {
+      "source": "toolset/output/mount-repair/original-attachment-audit.json",
+      "archive_path": "archive/toolset/output/mount-repair/original-attachment-audit.json",
+      "source_sha256": "a32cf207c2cb20eea3d1afe120e486279c302fce02744c2828e496c471faaf86",
+      "uploaded_sha256": "c2ba9dc3a6ad8b20869e9a470cda08f2519dedae0af7f2d82e0206a0d8097e27"
+    },
+    {
+      "source": "toolset/output/mount-repair/attach-test.json",
+      "archive_path": "archive/toolset/output/mount-repair/attach-test.json",
+      "source_sha256": "8319557e78b34d0f236d0f2db7018c6c3fda848e0ef2d69aebf89c9ca33a46bc",
+      "uploaded_sha256": "3b1622d28268a98d8940066945a2b405f780c73854344a0a4419d5abe5921093"
+    }
+  ],
+  "selected_component_definitions": 64,
+  "excluded": "Game binaries, full decompilation/ROM caches, personal account/world snapshots, downloaded third-party runtimes and Workshop corpus; their knowledge is summarized in notes.",
+  "notes": "Personal paths generalized; portable Python loader/path helpers added to copied sources. Source SHA identifies original local bytes; uploaded SHA identifies the staged copy."
+}

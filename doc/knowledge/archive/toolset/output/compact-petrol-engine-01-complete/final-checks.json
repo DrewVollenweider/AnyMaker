@@ -1,0 +1,708 @@
+{
+  "torque_mounts": [
+    {
+      "mounted_component": 2,
+      "receiving_component": 1,
+      "type": "torque_engine",
+      "face_center_cells": [
+        0.0,
+        4.0,
+        7.5
+      ]
+    },
+    {
+      "mounted_component": 10,
+      "receiving_component": 6,
+      "type": "torque",
+      "face_center_cells": [
+        3.0,
+        4.0,
+        7.5
+      ]
+    },
+    {
+      "mounted_component": 13,
+      "receiving_component": 7,
+      "type": "torque",
+      "face_center_cells": [
+        -3.0,
+        4.0,
+        7.5
+      ]
+    },
+    {
+      "mounted_component": 12,
+      "receiving_component": 8,
+      "type": "torque",
+      "face_center_cells": [
+        -3.0,
+        1.0,
+        7.5
+      ]
+    },
+    {
+      "mounted_component": 11,
+      "receiving_component": 9,
+      "type": "torque",
+      "face_center_cells": [
+        3.0,
+        1.0,
+        7.5
+      ]
+    }
+  ],
+  "primary_frame_contacts": [
+    {
+      "component": 1,
+      "matching_frame_cells": [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        [
+          0,
+          2,
+          5
+        ],
+        [
+          0,
+          2,
+          6
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ]
+    },
+    {
+      "component": 6,
+      "matching_frame_cells": [
+        [
+          4,
+          4,
+          6
+        ],
+        [
+          4,
+          4,
+          7
+        ]
+      ]
+    },
+    {
+      "component": 7,
+      "matching_frame_cells": [
+        [
+          -4,
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "component": 8,
+      "matching_frame_cells": [
+        [
+          -4,
+          1,
+          6
+        ],
+        [
+          -3,
+          0,
+          6
+        ]
+      ]
+    },
+    {
+      "component": 9,
+      "matching_frame_cells": [
+        [
+          3,
+          0,
+          6
+        ],
+        [
+          3,
+          0,
+          7
+        ]
+      ]
+    },
+    {
+      "component": 24,
+      "matching_frame_cells": [
+        [
+          6,
+          6,
+          3
+        ]
+      ]
+    },
+    {
+      "component": 25,
+      "matching_frame_cells": [
+        [
+          -3,
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "component": 26,
+      "matching_frame_cells": [
+        [
+          -6,
+          1,
+          0
+        ],
+        [
+          -6,
+          1,
+          4
+        ],
+        [
+          -6,
+          2,
+          0
+        ],
+        [
+          -6,
+          2,
+          1
+        ],
+        [
+          -6,
+          2,
+          2
+        ],
+        [
+          -6,
+          2,
+          3
+        ],
+        [
+          -6,
+          2,
+          4
+        ],
+        [
+          -5,
+          0,
+          0
+        ],
+        [
+          -5,
+          0,
+          1
+        ],
+        [
+          -5,
+          0,
+          2
+        ],
+        [
+          -5,
+          0,
+          3
+        ],
+        [
+          -5,
+          0,
+          4
+        ],
+        [
+          -5,
+          0,
+          5
+        ],
+        [
+          -4,
+          0,
+          0
+        ],
+        [
+          -4,
+          0,
+          3
+        ],
+        [
+          -4,
+          1,
+          6
+        ],
+        [
+          -4,
+          2,
+          6
+        ],
+        [
+          -3,
+          1,
+          3
+        ],
+        [
+          -3,
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "component": 32,
+      "matching_frame_cells": [
+        [
+          -5,
+          3,
+          7
+        ]
+      ]
+    },
+    {
+      "component": 35,
+      "matching_frame_cells": [
+        [
+          -6,
+          2,
+          0
+        ],
+        [
+          -6,
+          2,
+          1
+        ],
+        [
+          -6,
+          2,
+          2
+        ],
+        [
+          -6,
+          2,
+          3
+        ],
+        [
+          -6,
+          2,
+          4
+        ]
+      ]
+    },
+    {
+      "component": 42,
+      "matching_frame_cells": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          2
+        ],
+        [
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          1,
+          -1
+        ],
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          4,
+          1,
+          -1
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          1
+        ],
+        [
+          5,
+          0,
+          2
+        ],
+        [
+          5,
+          0,
+          3
+        ],
+        [
+          5,
+          1,
+          -1
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          6,
+          1,
+          -1
+        ],
+        [
+          7,
+          1,
+          2
+        ],
+        [
+          7,
+          2,
+          2
+        ],
+        [
+          7,
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "component": 46,
+      "matching_frame_cells": [
+        [
+          7,
+          5,
+          2
+        ]
+      ]
+    },
+    {
+      "component": 51,
+      "matching_frame_cells": [
+        [
+          3,
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "component": 52,
+      "matching_frame_cells": [
+        [
+          4,
+          1,
+          -2
+        ],
+        [
+          4,
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "component": 53,
+      "matching_frame_cells": [
+        [
+          6,
+          1,
+          -1
+        ]
+      ]
+    },
+    {
+      "component": 59,
+      "matching_frame_cells": [
+        [
+          2,
+          0,
+          4
+        ],
+        [
+          2,
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "component": 67,
+      "matching_frame_cells": [
+        [
+          4,
+          1,
+          5
+        ],
+        [
+          5,
+          0,
+          4
+        ],
+        [
+          5,
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "component": 71,
+      "matching_frame_cells": [
+        [
+          7,
+          5,
+          0
+        ]
+      ]
+    },
+    {
+      "component": 72,
+      "matching_frame_cells": [
+        [
+          7,
+          5,
+          2
+        ]
+      ]
+    }
+  ],
+  "mount_face_checks": 36,
+  "component_overlaps": 0,
+  "component_frame_intersections": 0,
+  "route_component_penetrations": 0,
+  "unrelated_shared_route_cells": 0,
+  "necessary_terminal_branches": [
+    {
+      "cell": [
+        -4,
+        9,
+        2
+      ],
+      "routes": [
+        [
+          "gas_links",
+          1
+        ],
+        [
+          "gas_links",
+          2
+        ]
+      ],
+      "common_terminal": [
+        [
+          "gas_links",
+          25,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        -4,
+        9,
+        3
+      ],
+      "routes": [
+        [
+          "gas_links",
+          1
+        ],
+        [
+          "gas_links",
+          2
+        ]
+      ],
+      "common_terminal": [
+        [
+          "gas_links",
+          25,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        -4,
+        9,
+        3
+      ],
+      "routes": [
+        [
+          "gas_links",
+          2
+        ],
+        [
+          "gas_links",
+          3
+        ]
+      ],
+      "common_terminal": [
+        [
+          "gas_links",
+          25,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        -4,
+        9,
+        4
+      ],
+      "routes": [
+        [
+          "gas_links",
+          3
+        ],
+        [
+          "gas_links",
+          4
+        ]
+      ],
+      "common_terminal": [
+        [
+          "gas_links",
+          25,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        -4,
+        9,
+        3
+      ],
+      "routes": [
+        [
+          "gas_links",
+          3
+        ],
+        [
+          "gas_links",
+          4
+        ]
+      ],
+      "common_terminal": [
+        [
+          "gas_links",
+          25,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        3,
+        1,
+        -1
+      ],
+      "routes": [
+        [
+          "mechanical_links",
+          0
+        ],
+        [
+          "mechanical_links",
+          3
+        ]
+      ],
+      "common_terminal": [
+        [
+          "mechanical_links",
+          51,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        2,
+        1,
+        -1
+      ],
+      "routes": [
+        [
+          "mechanical_links",
+          0
+        ],
+        [
+          "mechanical_links",
+          3
+        ]
+      ],
+      "common_terminal": [
+        [
+          "mechanical_links",
+          51,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        1,
+        1,
+        -1
+      ],
+      "routes": [
+        [
+          "mechanical_links",
+          0
+        ],
+        [
+          "mechanical_links",
+          3
+        ]
+      ],
+      "common_terminal": [
+        [
+          "mechanical_links",
+          51,
+          0
+        ]
+      ]
+    }
+  ],
+  "connection_graph_preserved": true,
+  "routing_count": 24,
+  "limit": "Native zone/surface static checks; fresh in-game fit, body grouping and operation remain unverified."
+}

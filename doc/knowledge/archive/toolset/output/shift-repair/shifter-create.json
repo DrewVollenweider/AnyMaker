@@ -1,0 +1,10 @@
+{
+  "signature": "() server_scene.vehicle_component.short_shifter.create (server_scene.vehicle_component.short_shifter, server_scene.vehicle)",
+  "offset": 57525293,
+  "size": 152,
+  "allocation": 168,
+  "references": {
+    "00000098": "() server_scene.vehicle_component.create (server_scene.vehicle_component, server_scene.vehicle)",
+    "000000a0": "() server_scene.vehicle_logic_node.mechanical.container.create_node_out (server_scene.vehicle_logic_node.mechanical.container, server_scene.vehicle_mechanical_node_out, server_scene.vehicle_component, const s32)"
+  }
+}

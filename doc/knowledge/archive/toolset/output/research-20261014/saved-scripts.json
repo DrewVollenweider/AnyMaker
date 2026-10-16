@@ -1,0 +1,6 @@
+[
+  {
+    "file": "buttontoggle.txt",
+    "text": "define var fractional DIR\nvar DIR = 1.0\ndefine var bool RELEASED\non_tick\n{\n\tif (out DIRSWITCH.is_pressed && var RELEASED)\n\t{\n\t\tvar DIR = var DIR * -1.0\n\t}\n\tin Right.input = (var DIR + 1.0) / 2.0\n\tin Left.input = (1.0 - var DIR) / 2.0\n\tvar RELEASED = ! (out DIRSWITCH.is_pressed)\n}\n"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "signature": "() server_scene.vehicle_liquid_node_group_pair.push (server_scene.vehicle_liquid_node_group_pair, server_scene.vehicle, server_scene.vehicle_liquid_content_volume, server_scene.vehicle_liquid_content_volume, server_scene.vehicle_liquid_node, server_scene.vehicle_component, const bool)",
+  "offset": 58850021,
+  "size": 528,
+  "allocation": 600,
+  "references": {
+    "00000210": "(uptr) vector<ptr<server_scene.vehicle_liquid_node>>.begin (const vector<ptr<server_scene.vehicle_liquid_node>>)",
+    "00000218": "(uptr) vector<ptr<server_scene.vehicle_liquid_node>>.end (const vector<ptr<server_scene.vehicle_liquid_node>>)",
+    "00000220": "(ptr<ptr<server_scene.vehicle_liquid_node>>) vector<ptr<server_scene.vehicle_liquid_node>>.value (const vector<ptr<server_scene.vehicle_liquid_node>>, const uptr)",
+    "00000228": "(uptr) vector<ptr<server_scene.vehicle_liquid_node>>.next (const vector<ptr<server_scene.vehicle_liquid_node>>, const uptr)",
+    "00000230": "(uptr) vector<ptr<server_scene.vehicle_liquid_node>>.erase (vector<ptr<server_scene.vehicle_liquid_node>>, const uptr)",
+    "00000238": "() server_scene.vehicle_liquid_node_group_pair._release (server_scene.vehicle_liquid_node_group_pair, server_scene.vehicle)",
+    "00000240": "(ptr<ptr<server_scene.vehicle_liquid_node>>) vector<ptr<server_scene.vehicle_liquid_node>>.push_back (vector<ptr<server_scene.vehicle_liquid_node>>)",
+    "00000248": "() server_scene.vehicle_liquid_node_group_pair._create (server_scene.vehicle_liquid_node_group_pair, server_scene.vehicle, server_scene.vehicle_liquid_content_volume, server_scene.vehicle_liquid_content_volume, const bool)"
+  }
+}

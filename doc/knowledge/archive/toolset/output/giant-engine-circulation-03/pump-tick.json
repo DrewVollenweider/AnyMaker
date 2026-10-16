@@ -1,0 +1,25 @@
+{
+  "signature": "() server_scene.vehicle_component.liquid_pump.tick (server_scene.vehicle_component.liquid_pump, server_scene.vehicle, server_scene)",
+  "offset": 56368934,
+  "size": 3016,
+  "allocation": 3152,
+  "references": {
+    "00000bc8": "(ptr<server_scene.vehicle_liquid_node>) server_scene.vehicle_liquid_node_group_pair.get_0 (server_scene.vehicle_liquid_node_group_pair)",
+    "00000bd0": "(ptr<server_scene.vehicle_liquid_node>) server_scene.vehicle_liquid_node_group_pair.get_1 (server_scene.vehicle_liquid_node_group_pair)",
+    "00000bd8": "(ptr<server_scene.vehicle_torque_node>) operator_aa (const array<server_scene.vehicle_torque_node>, const s32)",
+    "00000be0": "(f64) server_scene.vehicle_torque_node.get_rps (const server_scene.vehicle_torque_node)",
+    "00000be8": "(f64) math.abs (const f64)",
+    "00000bf0": "(f64) server_scene.vehicle_liquid_content.get_pressure (const server_scene.vehicle_liquid_content)",
+    "00000bf8": "(f64) math.max (const f64, const f64)",
+    "00000c00": "(f64) math.clamp (const f64, const f64, const f64)",
+    "00000c08": "g_server_delta_time",
+    "00000c10": "(f64) math.min (const f64, const f64)",
+    "00000c18": "g_standard_acceleration_of_gravity",
+    "00000c20": "g_torque_system_newtons_per_joule",
+    "00000c28": "(f64) math.sign (const f64)",
+    "00000c30": "() server_scene.vehicle_torque_node.apply_torque (server_scene.vehicle_torque_node, const f64)",
+    "00000c38": "() server_scene.vehicle_liquid_node.set_static_pressure (server_scene.vehicle_liquid_node, const f64)",
+    "00000c40": "(f64) server_scene.vehicle_liquid_content.move_content (server_scene.vehicle_liquid_content, server_scene.vehicle_liquid_content, const f64)",
+    "00000c48": "() server_scene.vehicle_liquid_content_volume.tick (server_scene.vehicle_liquid_content_volume, server_scene.vehicle, const f64)"
+  }
+}

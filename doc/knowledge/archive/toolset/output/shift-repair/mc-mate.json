@@ -1,0 +1,12 @@
+{
+  "signature": "() server_scene.vehicle_component.microcontroller.add_mating_component (server_scene.vehicle_component.microcontroller, server_scene.vehicle, const s32, server_scene.vehicle_component, const s32)",
+  "offset": 56635546,
+  "size": 440,
+  "allocation": 472,
+  "references": {
+    "000001b8": "(ptr<server_scene.vehicle_component.data_port>) server_scene.vehicle_component.get_type<data_port> (server_scene.vehicle_component)",
+    "000001c0": "() server_scene.vehicle_data_node_group.push (server_scene.vehicle_data_node_group, server_scene.vehicle, server_scene.vehicle_data_node, server_scene.vehicle_component, const ptr<server_scene.vehicle_component>, const bool)",
+    "000001c8": "(ptr<server_scene.vehicle_component.electric_port>) server_scene.vehicle_component.get_type<electric_port> (server_scene.vehicle_component)",
+    "000001d0": "() server_scene.vehicle_electric_node_group.push (server_scene.vehicle_electric_node_group, server_scene.vehicle, server_scene.vehicle_electric_node, server_scene.vehicle_component, const ptr<server_scene.vehicle_electric_content>, const ptr<server_scene.vehicle_component>)"
+  }
+}

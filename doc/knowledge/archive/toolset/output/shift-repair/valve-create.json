@@ -1,0 +1,11 @@
+{
+  "signature": "() server_scene.vehicle_component.gas_valve_t.create (server_scene.vehicle_component.gas_valve_t, server_scene.vehicle)",
+  "offset": 54902921,
+  "size": 536,
+  "allocation": 560,
+  "references": {
+    "00000218": "() server_scene.vehicle_component.create (server_scene.vehicle_component, server_scene.vehicle)",
+    "00000220": "() server_scene.vehicle_logic_node.mechanical.container.create_node_in (server_scene.vehicle_logic_node.mechanical.container, server_scene.vehicle_mechanical_node_in, server_scene.vehicle_component, const s32)",
+    "00000228": "() server_scene.vehicle_gas_node.container.create_node (server_scene.vehicle_gas_node.container, server_scene.vehicle_gas_node, server_scene.vehicle_component, const ptr<server_scene.vehicle_component>, const s32, const ptr<server_scene.vehicle_gas_content>)"
+  }
+}

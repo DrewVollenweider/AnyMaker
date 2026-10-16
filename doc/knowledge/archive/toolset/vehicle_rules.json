@@ -1,0 +1,60 @@
+{
+  "electric_motor_a": [
+    "Verify a fitted electric port and energized electrical supply.",
+    "Verify a continuous torque path to the intended driven load; mechanical control links do not carry drive torque.",
+    "Review the documented 30 rps default and property/data speed or power control before driving."
+  ],
+  "electric_motor_b": [
+    "Verify a fitted electric port and energized electrical supply.",
+    "Verify a continuous torque path to the intended driven load; mechanical control links do not carry drive torque.",
+    "Review the documented 30 rps default and property/data speed or power control before driving."
+  ],
+  "electric_motor_c": [
+    "Verify a fitted electric port and energized electrical supply.",
+    "Verify a continuous torque path to the intended driven load; mechanical control links do not carry drive torque.",
+    "Review the documented 30 rps default and property/data speed or power control before driving."
+  ],
+  "battery_a": [
+    "Verify a matching battery item is fitted and has energy.",
+    "Verify the electric port and electrical supply path to consumers."
+  ],
+  "battery_b": [
+    "Verify a matching battery item is fitted and has energy.",
+    "Verify the electric port and electrical supply path to consumers."
+  ],
+  "microcontroller": [
+    "Verify its electric port and supply for the documented 10 W consumption.",
+    "Verify controlled components share its data network and the script uses the intended input/output channels."
+  ],
+  "wheel": [
+    "Verify the fitted wheel item; for a driven wheel, verify its torque-face drive connection.",
+    "Verify steering and braking through their separate mechanical control paths; steering reaches 32 degrees and braking accepts 0 to 1."
+  ],
+  "wheel_c": [
+    "Verify the fitted truck wheel item; for a driven wheel, verify its torque-face drive connection.",
+    "Verify hydraulic steering through two liquid nodes, up to 40 degrees.",
+    "Verify pneumatic spring-brake release: starts above 39.2 kPa, fully released at 58.8 kPa."
+  ],
+  "steering_wheel": [
+    "Verify attachment to the seat's main control face and upright orientation.",
+    "Verify control destinations use steering -1 to +1 and pedal values 0 to 1."
+  ],
+  "high_back_car_seat": [
+    "Verify control attachment faces and matching upright orientation; backward-facing controls are inverted."
+  ],
+  "handbrake": [
+    "Verify its 0/1 mechanical control path and configured interaction or seat button.",
+    "Review saved is_on/value fields separately from current in-game brake state."
+  ],
+  "gearbox_b": [
+    "Verify compatibility with the medium engine and the two gas-port shift controls.",
+    "Verify shift pulses exceed 29.4 kPa and reset below 19.6 kPa; first placed port shifts up."
+  ],
+  "gearbox_c": [
+    "Verify compatibility with the large engine and the two gas-port shift controls.",
+    "Verify shift pulses exceed 29.4 kPa and reset below 19.6 kPa; first placed port shifts up."
+  ],
+  "gearbox_fixed_ratio": [
+    "Verify torque-face alignment and ratio settings; input/output settings each range from 1 to 8."
+  ]
+}

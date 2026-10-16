@@ -1,0 +1,31 @@
+# Running-save validation — 11 October 2026
+
+Revisited the running Anymaker v0.1.24 sandbox after static decompilation. An OpenJDK Windows firewall permission dialog covered the game. Alt+Tab and activating the returned game window did not remove it. No construction, component manipulation, or new game-input experiment was performed while the permission prompt blocked the workspace. The Computer Use guidance prohibits acting on security/privacy permission requests, so the dialog was left unanswered.
+
+A read-only disk observation ran from 15:22:48 to 15:25:05 EDT and was stopped after the next checkpoint. It captured 114 metadata events, including a working-scene rewrite and autosave activity. The checkpoint's file timestamp was **300.0003762 seconds** after the baseline checkpoint at approximately 15:19:22. The autosaves directory contained **24 folders**. This agrees with the recovered static initialization values of 300 and 24; it does not establish every retention/pruning rule.
+
+All creation-folder files retained their baseline hashes. The original `game.exe`, `steam_api64.dll`, and `bin/game.gcl` also retained their pre-analysis hashes. Vehicle and entity counters remained 190 and 2030. The game continued writing its own checkpoint files while the prompt was present; no original files were written by the observer.
+
+The before/after scene JSON differed only at `/version`, which increased by 18,000. That is consistent with 60 increments per second over the measured interval, but the meaning of this field has not been verified, so it is not treated as a direct tick-rate measurement.
+
+Evidence: result and integrity checks (local evidence not uploaded), file events (local evidence not uploaded), scene comparison (local evidence not uploaded), and before/after scene copies in the same folder. `observe_files.py` is the reusable bounded observer. This observation ended early after sufficient checkpoint evidence; the watcher is no longer running.
+
+Next live test once the permission overlay is dismissed: use N/free-move to approach an existing structure, open a component's properties/inspection panel, record one reversible value change, restore it, and compare separately captured checkpoints. Sustained keyboard input and controller automation remain unverified. No live external telemetry bridge was established.
+
+## Home session and edge demonstration
+
+The overlay was gone when the user returned. With user-assisted positioning at the green building, the Properties Tool successfully opened inspection panels for Wall and Door; both showed “no properties.” Automated edge drags changed the camera but produced no visible edge. The user then demonstrated holding the left mouse button throughout a drag and releasing it. A short edge with blue endpoint/line markers was visible on the wall afterward. This is a user-created edge, not a successful automated placement.
+
+Read-only checkpoint copies under `output/home-session-20261011/working-door-before` and `working-after-demonstration` show the static tile `tile_101_125_0_static.json` changing one frame from zero nodes/edges to **two nodes and one edge**; vehicle count stayed three in that tile. This connects the visible demonstration to saved geometry. It does not establish exact save latency or reliable automated hold input. The bounded ten-minute observer completed with 164 metadata events and unchanged creation-folder hashes.
+
+On the user's next “try,” an upward automated drag showed no additional edge. After toggling N, a horizontal drag from viewport center (2048,576) to (2300,576) produced a second small, foreshortened edge above the user's original edge. It remained visible in a subsequent observation after release. This is one visually successful automated placement; its dimensions, saved geometry, and repeatability still require verification. N changed the camera/player mode before success, but that does not alone prove why earlier attempts failed.
+
+Follow-up verification supersedes the dimension uncertainty above: a second automated drag from (2048,576) to (2210,650) produced another short edge. The 21:29:24 UTC checkpoint shows building body 125 with six frame nodes and three edges: the user edge is ten grid units (80 cm using the documented 8 cm grid), and each automated edge is one grid unit (8 cm). The three edges share no frame-node IDs, although they belong to the same existing building body. These placements establish that automation can create an edge, but not controlled length, a connected frame, or a working vehicle. The visual appearance was short geometry, not merely foreshortening. Exact mouse timing/camera interaction remains unverified. Selecting the prior empty slot with Z left all three solid edges visible without the tool's blue markers.
+
+Evidence is preserved in `output/edge-repeat-20261011/verified-static-tile.json` and `edge-geometry.json`; `integrity-after.json` compares creation-folder hashes. The observer was stopped after the relevant checkpoint.
+
+## Reversible door input test
+
+With an empty toolbar slot selected, camera drags aligned the crosshair with the green building's door. The UI identified “Door” and offered “F Open.” An automated F press changed the prompt to “F Close”; a later observation showed the door fully swung open and the interior corridor visible. Retargeting the thin open door panel required several smaller camera drags until “Door” and “F Close” appeared again. A second automated F press closed the door and restored “F Open.” This verifies one complete open/close cycle through keyboard automation. It does not establish button behavior, controller input, or saved door-state timing; no separate open-state disk checkpoint was captured.
+
+Several aiming attempts were rejected because the helper detected intervening user input. Re-observation allowed subsequent inputs. Immediate post-input screenshots can show a door still moving; wait for a later observation before assessing geometry. For future interactions, require the target label and context action prompt before pressing F, then verify the resulting state. Camera aiming should use an empty tool slot to avoid creating accidental geometry. The door was returned to its initial closed state; no additional edges or component edits were attempted during this test.

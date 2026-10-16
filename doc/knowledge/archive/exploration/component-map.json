@@ -1,0 +1,3461 @@
+[
+  {
+    "id": "engine_wheel",
+    "name": "Engine Wheel",
+    "surfaces": [
+      {
+        "id": "torque",
+        "dir": 4,
+        "gender": 2,
+        "type": "torque_engine"
+      }
+    ],
+    "data_descriptors": [],
+    "logic_nodes": [
+      {
+        "direction": 5,
+        "type": "belt"
+      }
+    ]
+  },
+  {
+    "id": "wheel",
+    "name": "Wheel",
+    "surfaces": [
+      {
+        "pos": [
+          0,
+          3,
+          0
+        ],
+        "size": [
+          1,
+          3
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "id": "torque",
+        "dir": 4,
+        "type": "torque"
+      },
+      {
+        "pos": [
+          0,
+          2,
+          0
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "mechanical"
+      },
+      {
+        "pos": [
+          2,
+          0,
+          0
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "mechanical"
+      },
+      {
+        "pos": [
+          -2,
+          0,
+          0
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "mechanical"
+      },
+      {
+        "pos": [
+          0,
+          1,
+          0
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "brake_factor"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "id": "steering_pos",
+        "pos": [
+          -2,
+          0,
+          0
+        ],
+        "direction": 4,
+        "type": "mechanical_in"
+      },
+      {
+        "id": "steering_neg",
+        "pos": [
+          2,
+          0,
+          0
+        ],
+        "direction": 4,
+        "type": "mechanical_in"
+      },
+      {
+        "id": "brake",
+        "pos": [
+          0,
+          2,
+          0
+        ],
+        "direction": 4,
+        "type": "mechanical_in"
+      }
+    ]
+  },
+  {
+    "id": "battery_a",
+    "name": "Battery",
+    "surfaces": [
+      {
+        "size": [
+          2,
+          2
+        ],
+        "dir": 2,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "size": [
+          2,
+          1
+        ],
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          1,
+          0,
+          0
+        ],
+        "size": [
+          2,
+          1
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "size": [
+          2,
+          1
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          0,
+          1
+        ],
+        "size": [
+          2,
+          1
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "energy_capacity"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "energy_store"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "electric_consumption"
+      }
+    ],
+    "logic_nodes": []
+  },
+  {
+    "id": "bench_seat",
+    "name": "Seat",
+    "surfaces": [
+      {
+        "pos": [
+          -3,
+          -1,
+          -3
+        ],
+        "size": [
+          7,
+          7
+        ],
+        "dir": 2,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          -1,
+          3
+        ],
+        "dir": 5,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control_main"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          2
+        ],
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          1
+        ],
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          0
+        ],
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          3
+        ],
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          3,
+          -1,
+          3
+        ],
+        "dir": 1,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          3,
+          -1,
+          2
+        ],
+        "dir": 1,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          3,
+          -1,
+          1
+        ],
+        "dir": 1,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          3,
+          -1,
+          0
+        ],
+        "dir": 1,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          3,
+          -1,
+          -3
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          -3
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          -3
+        ],
+        "size": [
+          7,
+          1
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          1,
+          -1,
+          3
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          3
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [],
+    "logic_nodes": []
+  },
+  {
+    "id": "steering_wheel",
+    "name": "Steering Wheel",
+    "surfaces": [
+      {
+        "pos": [
+          0,
+          -3,
+          -4
+        ],
+        "size": [
+          1,
+          7
+        ],
+        "dir": 2,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          -2,
+          -3,
+          3
+        ],
+        "size": [
+          5,
+          2
+        ],
+        "dir": 2,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          -2,
+          -3,
+          4
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          3,
+          -2
+        ],
+        "dir": 3
+      },
+      {
+        "pos": [
+          0,
+          -3,
+          -4
+        ],
+        "dir": 4,
+        "rot_mode": 1,
+        "gender": 1,
+        "type": "control_main"
+      },
+      {
+        "pos": [
+          0,
+          2,
+          0
+        ],
+        "dir": 5,
+        "gender": 1,
+        "type": "mechanical"
+      },
+      {
+        "pos": [
+          -1,
+          -3,
+          4
+        ],
+        "dir": 5,
+        "gender": 1,
+        "type": "mechanical"
+      },
+      {
+        "pos": [
+          0,
+          -3,
+          4
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          1,
+          -3,
+          4
+        ],
+        "dir": 5,
+        "gender": 1,
+        "type": "mechanical"
+      },
+      {
+        "pos": [
+          2,
+          -3,
+          4
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          -2,
+          0
+        ],
+        "size": [
+          1,
+          4
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          -3,
+          1
+        ],
+        "size": [
+          1,
+          2
+        ],
+        "dir": 3,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          -2,
+          0
+        ],
+        "size": [
+          1,
+          4
+        ],
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          -2,
+          0
+        ],
+        "size": [
+          1,
+          4
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "left_pedal"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "right_pedal"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "steering"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "id": "wheel",
+        "pos": [
+          0,
+          2,
+          0
+        ],
+        "direction": 5
+      },
+      {
+        "id": "pedal_l",
+        "pos": [
+          -1,
+          -3,
+          4
+        ],
+        "direction": 5
+      },
+      {
+        "id": "pedal_r",
+        "pos": [
+          1,
+          -3,
+          4
+        ],
+        "direction": 5
+      }
+    ]
+  },
+  {
+    "id": "high_back_car_seat",
+    "name": "Seat",
+    "surfaces": [
+      {
+        "pos": [
+          -3,
+          -1,
+          -3
+        ],
+        "size": [
+          7,
+          7
+        ],
+        "dir": 2,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          -1,
+          3
+        ],
+        "dir": 5,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control_main"
+      },
+      {
+        "pos": [
+          3,
+          -1,
+          3
+        ],
+        "dir": 1,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          3,
+          -1,
+          2
+        ],
+        "dir": 1,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          3,
+          -1,
+          1
+        ],
+        "dir": 1,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          3,
+          -1,
+          0
+        ],
+        "dir": 1,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          0
+        ],
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          1
+        ],
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          2
+        ],
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          3
+        ],
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          -3
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          3,
+          -1,
+          -3
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          -3
+        ],
+        "size": [
+          7,
+          1
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          1,
+          -1,
+          3
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          3
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [],
+    "logic_nodes": []
+  },
+  {
+    "id": "low_back_car_seat",
+    "name": "Seat",
+    "surfaces": [
+      {
+        "pos": [
+          -3,
+          -1,
+          -3
+        ],
+        "size": [
+          7,
+          7
+        ],
+        "dir": 2,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          -1,
+          3
+        ],
+        "dir": 5,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control_main"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          3
+        ],
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          2
+        ],
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          1
+        ],
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          0
+        ],
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          3,
+          -1,
+          3
+        ],
+        "dir": 1,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          3,
+          -1,
+          2
+        ],
+        "dir": 1,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          3,
+          -1,
+          1
+        ],
+        "dir": 1,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          3,
+          -1,
+          0
+        ],
+        "dir": 1,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          -3
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          3,
+          -1,
+          -3
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          -3
+        ],
+        "size": [
+          7,
+          1
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          1,
+          -1,
+          3
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "pos"
+      },
+      {
+        "pos": [
+          -3,
+          -1,
+          3
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [],
+    "logic_nodes": []
+  },
+  {
+    "id": "flight_seat",
+    "name": "Seat",
+    "surfaces": [
+      {
+        "pos": [
+          -3,
+          -1,
+          -3
+        ],
+        "size": [
+          7,
+          7
+        ],
+        "dir": 2,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          -1,
+          3
+        ],
+        "dir": 5,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control_main"
+      },
+      {
+        "pos": [
+          -3,
+          0,
+          0
+        ],
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          -3,
+          0,
+          1
+        ],
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          -3,
+          0,
+          2
+        ],
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          -3,
+          0,
+          3
+        ],
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          3,
+          0,
+          0
+        ],
+        "dir": 1,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          3,
+          0,
+          1
+        ],
+        "dir": 1,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          3,
+          0,
+          2
+        ],
+        "dir": 1,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          3,
+          0,
+          3
+        ],
+        "dir": 1,
+        "rot_mode": 1,
+        "gender": 2,
+        "type": "control"
+      },
+      {
+        "pos": [
+          1,
+          -1,
+          3
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          -1,
+          -1,
+          3
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          -3,
+          0,
+          3
+        ],
+        "size": [
+          7,
+          1
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          -3,
+          0,
+          -2
+        ],
+        "size": [
+          2,
+          1
+        ],
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          3,
+          0,
+          -2
+        ],
+        "size": [
+          2,
+          1
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [],
+    "logic_nodes": []
+  },
+  {
+    "id": "7_segment_lcd_display_1",
+    "name": "7 Segment LCD Display",
+    "surfaces": [
+      {
+        "dir": 2
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_input",
+        "name": "display_value"
+      },
+      {
+        "name": "is_illuminated"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "direction": 2,
+        "type": "data"
+      }
+    ]
+  },
+  {
+    "id": "7_segment_lcd_display_3",
+    "name": "7 Segment LCD Display",
+    "surfaces": [
+      {
+        "size": [
+          2,
+          1
+        ],
+        "dir": 2
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_input",
+        "name": "display_value"
+      },
+      {
+        "name": "is_illuminated"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "direction": 2,
+        "type": "data"
+      }
+    ]
+  },
+  {
+    "id": "7_segment_lcd_display_7",
+    "name": "7 Segment LCD Display",
+    "surfaces": [
+      {
+        "pos": [
+          -1,
+          0,
+          0
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "dir": 2
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_input",
+        "name": "display_value"
+      },
+      {
+        "name": "is_illuminated"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "direction": 2,
+        "type": "data"
+      }
+    ]
+  },
+  {
+    "id": "7_segment_lcd_display_backlight_1",
+    "name": "7 Segment LCD Display",
+    "surfaces": [
+      {
+        "dir": 2
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_input",
+        "name": "display_value"
+      },
+      {
+        "name": "is_illuminated"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "direction": 2,
+        "type": "data"
+      }
+    ]
+  },
+  {
+    "id": "7_segment_lcd_display_backlight_3",
+    "name": "7 Segment LCD Display",
+    "surfaces": [
+      {
+        "size": [
+          2,
+          1
+        ],
+        "dir": 2
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_input",
+        "name": "display_value"
+      },
+      {
+        "name": "is_illuminated"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "direction": 2,
+        "type": "data"
+      }
+    ]
+  },
+  {
+    "id": "7_segment_lcd_display_backlight_7",
+    "name": "7 Segment LCD Display",
+    "surfaces": [
+      {
+        "pos": [
+          -1,
+          0,
+          0
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "dir": 2
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_input",
+        "name": "display_value"
+      },
+      {
+        "name": "is_illuminated"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "direction": 2,
+        "type": "data"
+      }
+    ]
+  },
+  {
+    "id": "switch",
+    "name": "Switch",
+    "surfaces": [
+      {
+        "dir": 2
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_bool_output",
+        "name": "is_pressed"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "direction": 2
+      },
+      {
+        "direction": 2,
+        "type": "data"
+      }
+    ]
+  },
+  {
+    "id": "key_switch",
+    "name": "Switch",
+    "surfaces": [
+      {
+        "dir": 2
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "value"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "direction": 2
+      },
+      {
+        "direction": 2,
+        "type": "data"
+      }
+    ]
+  },
+  {
+    "id": "toggle_switch",
+    "name": "Switch",
+    "surfaces": [
+      {
+        "dir": 2
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_bool_output",
+        "name": "is_pressed"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "direction": 2
+      },
+      {
+        "direction": 2,
+        "type": "data"
+      }
+    ]
+  },
+  {
+    "id": "toggle_switch_cover",
+    "name": "Covered Switch",
+    "surfaces": [
+      {
+        "dir": 2
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_bool_output",
+        "name": "is_pressed"
+      },
+      {
+        "type": "type_bool_output",
+        "name": "is_covered"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "direction": 2
+      },
+      {
+        "direction": 2,
+        "type": "data"
+      }
+    ]
+  },
+  {
+    "id": "alternator_motor",
+    "name": "Alternator",
+    "surfaces": [
+      {
+        "id": "torque",
+        "pos": [
+          0,
+          0,
+          1
+        ],
+        "dir": 5,
+        "type": "torque"
+      },
+      {
+        "pos": [
+          0,
+          0,
+          -1
+        ],
+        "size": [
+          2,
+          3
+        ],
+        "dir": 2,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          0,
+          -1
+        ],
+        "size": [
+          3,
+          2
+        ],
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          1,
+          -1
+        ],
+        "size": [
+          2,
+          3
+        ],
+        "dir": 3,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          1,
+          0,
+          -1
+        ],
+        "size": [
+          3,
+          2
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          0,
+          -1
+        ],
+        "size": [
+          2,
+          2
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          1,
+          0,
+          1
+        ],
+        "size": [
+          1,
+          2
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          1,
+          1
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "power"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "energy_capacity"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "energy_store"
+      }
+    ],
+    "logic_nodes": []
+  },
+  {
+    "id": "actuator_stepper_motor",
+    "name": "Actuator Stepper Motor",
+    "surfaces": [
+      {
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "dir": 3,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "dir": 2,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "dir": 5,
+        "gender": 1,
+        "type": "mechanical"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_input",
+        "name": "input"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "direction": 5
+      }
+    ]
+  },
+  {
+    "id": "electric_motor_a",
+    "name": "Electric Motor",
+    "surfaces": [
+      {
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "size": [
+          1,
+          2
+        ],
+        "dir": 2,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "size": [
+          2,
+          1
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "size": [
+          2,
+          1
+        ],
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "size": [
+          1,
+          2
+        ],
+        "dir": 3,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "id": "torque",
+        "pos": [
+          0,
+          0,
+          1
+        ],
+        "dir": 5,
+        "type": "torque"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "name": "is_reverse"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "electric_consumption"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      },
+      {
+        "type": "type_f64_input",
+        "name": "target_rps"
+      },
+      {
+        "type": "type_f64_input",
+        "name": "power_factor"
+      }
+    ],
+    "logic_nodes": []
+  },
+  {
+    "id": "electric_motor_b",
+    "name": "Electric Motor",
+    "surfaces": [
+      {
+        "pos": [
+          0,
+          0,
+          -1
+        ],
+        "size": [
+          3,
+          2
+        ],
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          1,
+          0,
+          -1
+        ],
+        "size": [
+          3,
+          2
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          1,
+          -1
+        ],
+        "size": [
+          2,
+          3
+        ],
+        "dir": 3,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          0,
+          -1
+        ],
+        "size": [
+          2,
+          3
+        ],
+        "dir": 2,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          0,
+          -1
+        ],
+        "size": [
+          2,
+          2
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          1,
+          0,
+          1
+        ],
+        "size": [
+          1,
+          2
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          1,
+          1
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "id": "torque",
+        "pos": [
+          0,
+          0,
+          1
+        ],
+        "dir": 5,
+        "type": "torque"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "name": "is_reverse"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "electric_consumption"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      },
+      {
+        "type": "type_f64_input",
+        "name": "target_rps"
+      },
+      {
+        "type": "type_f64_input",
+        "name": "power_factor"
+      }
+    ],
+    "logic_nodes": []
+  },
+  {
+    "id": "electric_motor_c",
+    "name": "Electric Motor",
+    "surfaces": [
+      {
+        "pos": [
+          -1,
+          0,
+          -1
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          1,
+          -1
+        ],
+        "size": [
+          1,
+          3
+        ],
+        "dir": 3,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          1,
+          0,
+          -1
+        ],
+        "size": [
+          3,
+          1
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          -1,
+          -1
+        ],
+        "size": [
+          1,
+          3
+        ],
+        "dir": 2,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          1,
+          1
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          -1,
+          1
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          -1,
+          -1,
+          1
+        ],
+        "size": [
+          1,
+          3
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          -1,
+          -1,
+          -1
+        ],
+        "size": [
+          3,
+          3
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "id": "torque",
+        "pos": [
+          0,
+          0,
+          1
+        ],
+        "dir": 5,
+        "type": "torque"
+      },
+      {
+        "pos": [
+          1,
+          -1,
+          1
+        ],
+        "size": [
+          1,
+          3
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "name": "is_reverse"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "electric_consumption"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      },
+      {
+        "type": "type_f64_input",
+        "name": "target_rps"
+      },
+      {
+        "type": "type_f64_input",
+        "name": "power_factor"
+      }
+    ],
+    "logic_nodes": []
+  },
+  {
+    "id": "pulley_wheel",
+    "name": "Pulley Wheel",
+    "surfaces": [
+      {
+        "id": "torque",
+        "dir": 4,
+        "type": "torque"
+      }
+    ],
+    "data_descriptors": [],
+    "logic_nodes": [
+      {
+        "direction": 5,
+        "type": "belt"
+      }
+    ]
+  },
+  {
+    "id": "battery_b",
+    "name": "Battery",
+    "surfaces": [
+      {
+        "size": [
+          2,
+          1
+        ],
+        "dir": 2,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          1,
+          0,
+          0
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "size": [
+          2,
+          1
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "size": [
+          2,
+          1
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "energy_capacity"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "energy_store"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "electric_consumption"
+      }
+    ],
+    "logic_nodes": []
+  },
+  {
+    "id": "wheel_b",
+    "name": "Wheel",
+    "surfaces": [
+      {
+        "id": "torque",
+        "pos": [
+          0,
+          0,
+          -1
+        ],
+        "dir": 4,
+        "type": "torque"
+      },
+      {
+        "pos": [
+          -1,
+          0,
+          -1
+        ],
+        "size": [
+          1,
+          7
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          1,
+          0,
+          -1
+        ],
+        "size": [
+          1,
+          7
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          -1,
+          7,
+          -1
+        ],
+        "size": [
+          3,
+          11
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          -1,
+          -3,
+          -1
+        ],
+        "size": [
+          3,
+          3
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          6,
+          -1
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "mechanical"
+      },
+      {
+        "pos": [
+          0,
+          1,
+          -1
+        ],
+        "size": [
+          1,
+          5
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          -6,
+          0,
+          -1
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "mechanical"
+      },
+      {
+        "pos": [
+          6,
+          0,
+          -1
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "mechanical"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "brake_factor"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "id": "steering_pos",
+        "pos": [
+          -6,
+          0,
+          -1
+        ],
+        "direction": 4,
+        "type": "mechanical_in"
+      },
+      {
+        "id": "steering_neg",
+        "pos": [
+          6,
+          0,
+          -1
+        ],
+        "direction": 4,
+        "type": "mechanical_in"
+      },
+      {
+        "id": "brake",
+        "pos": [
+          0,
+          6,
+          -1
+        ],
+        "direction": 4,
+        "type": "mechanical_in"
+      }
+    ]
+  },
+  {
+    "id": "roller_wheel_fixed_a",
+    "name": "Roller Wheel Fixed",
+    "surfaces": [
+      {
+        "id": "torque",
+        "dir": 5,
+        "type": "torque"
+      },
+      {
+        "size": [
+          1,
+          2
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "direction": 5,
+        "type": "belt_track_narrow"
+      }
+    ]
+  },
+  {
+    "id": "roller_wheel_fixed_b",
+    "name": "Roller Wheel Fixed",
+    "surfaces": [
+      {
+        "id": "torque",
+        "dir": 5,
+        "type": "torque"
+      },
+      {
+        "size": [
+          1,
+          2
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "direction": 5,
+        "type": "belt_track_narrow"
+      }
+    ]
+  },
+  {
+    "id": "roller_wheel_fixed_c",
+    "name": "Roller Wheel Fixed",
+    "surfaces": [
+      {
+        "id": "torque",
+        "pos": [
+          0,
+          0,
+          -1
+        ],
+        "dir": 5,
+        "type": "torque"
+      },
+      {
+        "pos": [
+          0,
+          0,
+          -1
+        ],
+        "size": [
+          1,
+          2
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "pos": [
+          0,
+          0,
+          -1
+        ],
+        "direction": 5,
+        "type": "belt_track"
+      }
+    ]
+  },
+  {
+    "id": "roller_wheel_fixed_d",
+    "name": "Roller Wheel Fixed",
+    "surfaces": [
+      {
+        "id": "torque",
+        "pos": [
+          0,
+          0,
+          -1
+        ],
+        "dir": 5,
+        "type": "torque"
+      },
+      {
+        "pos": [
+          0,
+          0,
+          -1
+        ],
+        "size": [
+          1,
+          2
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "pos": [
+          0,
+          0,
+          -1
+        ],
+        "direction": 5,
+        "type": "belt_track"
+      }
+    ]
+  },
+  {
+    "id": "roller_wheel_fixed_e",
+    "name": "Roller Wheel Fixed",
+    "surfaces": [
+      {
+        "id": "torque",
+        "pos": [
+          0,
+          0,
+          -3
+        ],
+        "dir": 5,
+        "type": "torque"
+      },
+      {
+        "pos": [
+          0,
+          0,
+          -3
+        ],
+        "size": [
+          1,
+          2
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "pos": [
+          0,
+          0,
+          -3
+        ],
+        "direction": 5,
+        "type": "belt_track_wide"
+      }
+    ]
+  },
+  {
+    "id": "roller_wheel_fixed_f",
+    "name": "Roller Wheel Fixed",
+    "surfaces": [
+      {
+        "id": "torque",
+        "pos": [
+          0,
+          0,
+          -3
+        ],
+        "dir": 5,
+        "type": "torque"
+      },
+      {
+        "pos": [
+          0,
+          0,
+          -3
+        ],
+        "size": [
+          1,
+          2
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "pos": [
+          0,
+          0,
+          -3
+        ],
+        "direction": 5,
+        "type": "belt_track_wide"
+      }
+    ]
+  },
+  {
+    "id": "roller_wheel_suspension_a",
+    "name": "Wheel",
+    "surfaces": [
+      {
+        "pos": [
+          1,
+          0,
+          1
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          1,
+          0,
+          0
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "id": "torque",
+        "pos": [
+          1,
+          0,
+          0
+        ],
+        "dir": 5,
+        "type": "torque"
+      },
+      {
+        "pos": [
+          1,
+          0,
+          0
+        ],
+        "size": [
+          2,
+          1
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "pos": [
+          1,
+          0,
+          0
+        ],
+        "direction": 5,
+        "type": "belt_track_narrow"
+      }
+    ]
+  },
+  {
+    "id": "roller_wheel_suspension_b",
+    "name": "Wheel",
+    "surfaces": [
+      {
+        "pos": [
+          1,
+          0,
+          0
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          1,
+          0,
+          1
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "id": "torque",
+        "pos": [
+          1,
+          0,
+          0
+        ],
+        "dir": 5,
+        "type": "torque"
+      },
+      {
+        "pos": [
+          1,
+          0,
+          0
+        ],
+        "size": [
+          2,
+          1
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "pos": [
+          1,
+          0,
+          0
+        ],
+        "direction": 5,
+        "type": "belt_track_narrow"
+      }
+    ]
+  },
+  {
+    "id": "roller_wheel_suspension_c",
+    "name": "Wheel",
+    "surfaces": [
+      {
+        "pos": [
+          2,
+          0,
+          -1
+        ],
+        "size": [
+          2,
+          2
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          2,
+          0,
+          2
+        ],
+        "size": [
+          2,
+          2
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "id": "torque",
+        "pos": [
+          3,
+          1,
+          -1
+        ],
+        "dir": 5,
+        "type": "torque"
+      },
+      {
+        "pos": [
+          3,
+          0,
+          -1
+        ],
+        "size": [
+          4,
+          2
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          3,
+          1,
+          -1
+        ],
+        "size": [
+          1,
+          4
+        ],
+        "dir": 3,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "pos": [
+          3,
+          1,
+          -1
+        ],
+        "direction": 5,
+        "type": "belt_track"
+      }
+    ]
+  },
+  {
+    "id": "roller_wheel_suspension_d",
+    "name": "Wheel",
+    "surfaces": [
+      {
+        "pos": [
+          2,
+          0,
+          -1
+        ],
+        "size": [
+          2,
+          3
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          2,
+          0,
+          2
+        ],
+        "size": [
+          2,
+          3
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "id": "torque",
+        "pos": [
+          3,
+          2,
+          -1
+        ],
+        "dir": 5,
+        "type": "torque"
+      },
+      {
+        "pos": [
+          3,
+          0,
+          -1
+        ],
+        "size": [
+          4,
+          3
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          3,
+          2,
+          -1
+        ],
+        "size": [
+          1,
+          4
+        ],
+        "dir": 3,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "pos": [
+          3,
+          2,
+          -1
+        ],
+        "direction": 5,
+        "type": "belt_track"
+      }
+    ]
+  },
+  {
+    "id": "roller_wheel_suspension_e",
+    "name": "Wheel",
+    "surfaces": [
+      {
+        "pos": [
+          2,
+          0,
+          -3
+        ],
+        "size": [
+          2,
+          2
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          2,
+          0,
+          4
+        ],
+        "size": [
+          2,
+          2
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "id": "torque",
+        "pos": [
+          3,
+          1,
+          -3
+        ],
+        "dir": 5,
+        "type": "torque"
+      },
+      {
+        "pos": [
+          3,
+          0,
+          -3
+        ],
+        "size": [
+          8,
+          2
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          3,
+          1,
+          -3
+        ],
+        "size": [
+          1,
+          8
+        ],
+        "dir": 3,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "pos": [
+          3,
+          1,
+          -3
+        ],
+        "direction": 5,
+        "type": "belt_track_wide"
+      }
+    ]
+  },
+  {
+    "id": "roller_wheel_suspension_f",
+    "name": "Wheel",
+    "surfaces": [
+      {
+        "pos": [
+          3,
+          0,
+          -3
+        ],
+        "size": [
+          2,
+          3
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          3,
+          0,
+          4
+        ],
+        "size": [
+          2,
+          3
+        ],
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "id": "torque",
+        "pos": [
+          4,
+          2,
+          -3
+        ],
+        "dir": 5,
+        "type": "torque"
+      },
+      {
+        "pos": [
+          4,
+          0,
+          -3
+        ],
+        "size": [
+          8,
+          3
+        ],
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          4,
+          2,
+          -3
+        ],
+        "size": [
+          1,
+          8
+        ],
+        "dir": 3,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "pos": [
+          4,
+          2,
+          -3
+        ],
+        "direction": 5,
+        "type": "belt_track_wide"
+      }
+    ]
+  },
+  {
+    "id": "waiting_seats_a",
+    "name": "Seats",
+    "surfaces": [
+      {
+        "pos": [
+          0,
+          0,
+          1
+        ],
+        "dir": 2
+      },
+      {
+        "pos": [
+          0,
+          0,
+          6
+        ],
+        "dir": 2
+      },
+      {
+        "pos": [
+          23,
+          0,
+          1
+        ],
+        "dir": 2
+      },
+      {
+        "pos": [
+          23,
+          0,
+          6
+        ],
+        "dir": 2
+      }
+    ],
+    "data_descriptors": [],
+    "logic_nodes": []
+  },
+  {
+    "id": "wheelchair_a",
+    "name": "Wheelchair",
+    "surfaces": [
+      {
+        "pos": [
+          1,
+          0,
+          1
+        ],
+        "size": [
+          1,
+          2
+        ],
+        "dir": 2
+      },
+      {
+        "pos": [
+          1,
+          0,
+          7
+        ],
+        "dir": 2
+      },
+      {
+        "pos": [
+          7,
+          0,
+          7
+        ],
+        "dir": 2
+      },
+      {
+        "pos": [
+          7,
+          0,
+          1
+        ],
+        "size": [
+          1,
+          2
+        ],
+        "dir": 2
+      }
+    ],
+    "data_descriptors": [],
+    "logic_nodes": []
+  },
+  {
+    "id": "microcontroller",
+    "name": "Microcontroller",
+    "surfaces": [
+      {
+        "dir": 2,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "dir": 1,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "dir": 5,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [],
+    "logic_nodes": []
+  },
+  {
+    "id": "microphone",
+    "name": "Microphone",
+    "surfaces": [
+      {
+        "dir": 2
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_analogue_output",
+        "name": "signal"
+      },
+      {
+        "name": "is_recording"
+      },
+      {
+        "type": "type_bool_output",
+        "name": "is_recording"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "direction": 2,
+        "type": "data"
+      }
+    ]
+  },
+  {
+    "id": "engine_wheel_b",
+    "name": "Engine Wheel",
+    "surfaces": [
+      {
+        "id": "torque",
+        "dir": 4,
+        "gender": 2,
+        "type": "torque_engine_b"
+      }
+    ],
+    "data_descriptors": [],
+    "logic_nodes": [
+      {
+        "direction": 5,
+        "type": "belt"
+      }
+    ]
+  },
+  {
+    "id": "engine_wheel_c",
+    "name": "Engine Wheel",
+    "surfaces": [
+      {
+        "id": "torque",
+        "dir": 4,
+        "gender": 2,
+        "type": "torque_engine_c"
+      }
+    ],
+    "data_descriptors": [],
+    "logic_nodes": [
+      {
+        "direction": 5,
+        "type": "belt"
+      }
+    ]
+  },
+  {
+    "id": "wheel_c",
+    "name": "Wheel Medium",
+    "surfaces": [
+      {
+        "id": "torque",
+        "dir": 4,
+        "type": "torque"
+      },
+      {
+        "pos": [
+          0,
+          1,
+          0
+        ],
+        "size": [
+          1,
+          2
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      },
+      {
+        "pos": [
+          0,
+          4,
+          0
+        ],
+        "size": [
+          1,
+          5
+        ],
+        "dir": 4,
+        "gender": 2,
+        "type": "port"
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_f64_output",
+        "name": "brake_factor"
+      },
+      {
+        "type": "type_f64_output",
+        "name": "rps"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "id": "steering_pos",
+        "pos": [
+          -3,
+          0,
+          0
+        ],
+        "direction": 4,
+        "type": "liquid"
+      },
+      {
+        "id": "steering_neg",
+        "pos": [
+          3,
+          0,
+          0
+        ],
+        "direction": 4,
+        "type": "liquid"
+      },
+      {
+        "id": "brake",
+        "pos": [
+          0,
+          3,
+          0
+        ],
+        "direction": 4,
+        "type": "gas"
+      }
+    ]
+  },
+  {
+    "id": "lever_switch_curve_a",
+    "name": "Lever Switch Curve",
+    "surfaces": [
+      {
+        "pos": [
+          -1,
+          0,
+          -1
+        ],
+        "size": [
+          3,
+          3
+        ],
+        "dir": 2
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_bool_output",
+        "name": "is_pressed"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "pos": [
+          -1,
+          0,
+          0
+        ],
+        "direction": 2
+      },
+      {
+        "pos": [
+          -1,
+          0,
+          0
+        ],
+        "direction": 2,
+        "type": "data"
+      }
+    ]
+  },
+  {
+    "id": "lever_switch_a",
+    "name": "Lever Switch",
+    "surfaces": [
+      {
+        "pos": [
+          0,
+          0,
+          -1
+        ],
+        "size": [
+          2,
+          3
+        ],
+        "dir": 2
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_bool_output",
+        "name": "is_pressed"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "direction": 2
+      },
+      {
+        "direction": 2,
+        "type": "data"
+      }
+    ]
+  },
+  {
+    "id": "lever_switch_b",
+    "name": "Lever Switch",
+    "surfaces": [
+      {
+        "pos": [
+          -1,
+          0,
+          -2
+        ],
+        "size": [
+          4,
+          5
+        ],
+        "dir": 2
+      },
+      {
+        "pos": [
+          -1,
+          0,
+          -2
+        ],
+        "size": [
+          5,
+          1
+        ]
+      },
+      {
+        "pos": [
+          -1,
+          0,
+          2
+        ],
+        "size": [
+          4,
+          1
+        ],
+        "dir": 5
+      },
+      {
+        "pos": [
+          2,
+          0,
+          -2
+        ],
+        "size": [
+          5,
+          1
+        ],
+        "dir": 1
+      },
+      {
+        "pos": [
+          -1,
+          0,
+          -2
+        ],
+        "size": [
+          4,
+          1
+        ],
+        "dir": 4
+      }
+    ],
+    "data_descriptors": [
+      {
+        "type": "type_bool_output",
+        "name": "is_pressed"
+      }
+    ],
+    "logic_nodes": [
+      {
+        "direction": 2
+      },
+      {
+        "direction": 2,
+        "type": "data"
+      }
+    ]
+  },
+  {
+    "id": "ammo_belt_motor_40mm",
+    "name": "Ammo Motor 40mm",
+    "surfaces": [
+      {
+        "id": "in",
+        "pos": [
+          -2,
+          0,
+          0
+        ],
+        "dir": 4,
+        "rot": 1,
+        "rot_mode": 1,
+        "type": "ammo_belt_40mm"
+      },
+      {
+        "id": "out",
+        "pos": [
+          -2,
+          0,
+          0
+        ],
+        "dir": 5,
+        "rot": 3,
+        "rot_mode": 1,
+        "type": "ammo_belt_40mm"
+      },
+      {
+        "pos": [
+          -2,
+          0,
+          0
+        ],
+        "size": [
+          6,
+          1
+        ],
+        "dir": 2
+      },
+      {
+        "pos": [
+          -2,
+          1,
+          0
+        ],
+        "dir": 3
+      },
+      {
+        "pos": [
+          -2,
+          1,
+          0
+        ],
+        "dir": 4
+      },
+      {
+        "pos": [
+          -2,
+          1,
+          0
+        ],
+        "dir": 5
+      },
+      {
+        "pos": [
+          3,
+          0,
+          0
+        ],
+        "dir": 1
+      },
+      {
+        "pos": [
+          -2,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "torque",
+        "pos": [
+          -2,
+          1,
+          0
+        ],
+        "type": "torque"
+      },
+      {
+        "pos": [
+          -2,
+          1,
+          0
+        ],
+        "dir": 1
+      }
+    ],
+    "data_descriptors": [],
+    "logic_nodes": []
+  }
+]

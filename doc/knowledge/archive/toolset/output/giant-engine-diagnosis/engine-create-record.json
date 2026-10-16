@@ -1,0 +1,12 @@
+{
+  "signature": "() server_scene.vehicle_component.engine.create (server_scene.vehicle_component.engine, server_scene.vehicle)",
+  "offset": 54469900,
+  "size": 416,
+  "allocation": 448,
+  "references": [
+    "() server_scene.vehicle_component.create (server_scene.vehicle_component, server_scene.vehicle)",
+    "(s32) server_scene.vehicle_component.get_volume (const server_scene.vehicle_component)",
+    "(ptr<const vehicle_util.grid_origin_dir>) replication.master.property_grid_origin_dir.get (const replication.master.property_grid_origin_dir)",
+    "() server_scene.vehicle_liquid_content_volume.create (server_scene.vehicle_liquid_content_volume, server_scene.vehicle, server_scene.vehicle_component, const vehicle_util.grid_origin_dir, const s32, const f64)"
+  ]
+}

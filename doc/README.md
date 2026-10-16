@@ -42,3 +42,8 @@
 - [19 当日实验与证据边界](19_EXPERIMENTS_2026-10-11.md)
 - [原生样本盘点](evidence/2026-10-11/native-reference-inventory.json)
 
+
+## 2026-10-11 至 16 累积工程知识
+
+[工程知识总入口 / Engineering knowledge hub](knowledge/README.md)：包含台架发动机、紧凑直列四缸 CPE1Running、巨型发动机及测试载具的完整研究脉络、已验证结论、失败修正、工具与选定原生样本。先读当前结论，再查历史记录；独立工具的游戏运行验收不等于浏览器编辑器通用导出验收。
+

@@ -1,0 +1,9 @@
+{
+  "signature": "() server_scene.vehicle_component.engine_wheel.get_belt_data (const server_scene.vehicle_component.engine_wheel, f64, bool)",
+  "offset": 54540463,
+  "size": 136,
+  "allocation": 144,
+  "references": {
+    "00000088": "(ptr<const bool>) replication.master.property_type_simple<bool>.get (const replication.master.property_type_simple<bool>)"
+  }
+}

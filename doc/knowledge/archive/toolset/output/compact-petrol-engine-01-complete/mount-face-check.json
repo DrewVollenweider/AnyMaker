@@ -1,0 +1,369 @@
+{
+  "checks": [
+    {
+      "mounted_component": 14,
+      "receiving_component": 1,
+      "type": "port",
+      "face_center_cells": [
+        -1.0,
+        8.5,
+        2.0
+      ]
+    },
+    {
+      "mounted_component": 15,
+      "receiving_component": 1,
+      "type": "port",
+      "face_center_cells": [
+        1.5,
+        8.0,
+        3.0
+      ]
+    },
+    {
+      "mounted_component": 16,
+      "receiving_component": 1,
+      "type": "port",
+      "face_center_cells": [
+        1.5,
+        4.0,
+        0.0
+      ]
+    },
+    {
+      "mounted_component": 17,
+      "receiving_component": 1,
+      "type": "port",
+      "face_center_cells": [
+        -1.5,
+        7.0,
+        7.0
+      ]
+    },
+    {
+      "mounted_component": 18,
+      "receiving_component": 1,
+      "type": "port",
+      "face_center_cells": [
+        1.5,
+        7.0,
+        7.0
+      ]
+    },
+    {
+      "mounted_component": 19,
+      "receiving_component": 1,
+      "type": "port",
+      "face_center_cells": [
+        -1.5,
+        8.0,
+        7.0
+      ]
+    },
+    {
+      "mounted_component": 20,
+      "receiving_component": 1,
+      "type": "port",
+      "face_center_cells": [
+        -1.5,
+        8.0,
+        0.0
+      ]
+    },
+    {
+      "mounted_component": 21,
+      "receiving_component": 1,
+      "type": "port",
+      "face_center_cells": [
+        -1.5,
+        8.0,
+        2.0
+      ]
+    },
+    {
+      "mounted_component": 22,
+      "receiving_component": 1,
+      "type": "port",
+      "face_center_cells": [
+        -1.5,
+        8.0,
+        4.0
+      ]
+    },
+    {
+      "mounted_component": 23,
+      "receiving_component": 1,
+      "type": "port",
+      "face_center_cells": [
+        -1.5,
+        8.0,
+        6.0
+      ]
+    },
+    {
+      "mounted_component": 27,
+      "receiving_component": 26,
+      "type": "port",
+      "face_center_cells": [
+        -5.0,
+        2.5,
+        1.0
+      ]
+    },
+    {
+      "mounted_component": 28,
+      "receiving_component": 26,
+      "type": "port",
+      "face_center_cells": [
+        -3.5,
+        2.0,
+        4.0
+      ]
+    },
+    {
+      "mounted_component": 29,
+      "receiving_component": 26,
+      "type": "port",
+      "face_center_cells": [
+        -3.5,
+        2.0,
+        0.0
+      ]
+    },
+    {
+      "mounted_component": 30,
+      "receiving_component": 8,
+      "type": "port",
+      "face_center_cells": [
+        -3.0,
+        1.5,
+        6.0
+      ]
+    },
+    {
+      "mounted_component": 31,
+      "receiving_component": 8,
+      "type": "port",
+      "face_center_cells": [
+        -3.0,
+        1.5,
+        7.0
+      ]
+    },
+    {
+      "mounted_component": 33,
+      "receiving_component": 32,
+      "type": "port",
+      "face_center_cells": [
+        -5.0,
+        4.0,
+        7.5
+      ]
+    },
+    {
+      "mounted_component": 34,
+      "receiving_component": 32,
+      "type": "port",
+      "face_center_cells": [
+        -5.0,
+        4.0,
+        6.5
+      ]
+    },
+    {
+      "mounted_component": 37,
+      "receiving_component": 35,
+      "type": "port",
+      "face_center_cells": [
+        -6.0,
+        7.5,
+        2.0
+      ]
+    },
+    {
+      "mounted_component": 38,
+      "receiving_component": 35,
+      "type": "port",
+      "face_center_cells": [
+        -6.0,
+        7.5,
+        4.0
+      ]
+    },
+    {
+      "mounted_component": 39,
+      "receiving_component": 35,
+      "type": "port",
+      "face_center_cells": [
+        -6.0,
+        7.5,
+        0.0
+      ]
+    },
+    {
+      "mounted_component": 40,
+      "receiving_component": 9,
+      "type": "port",
+      "face_center_cells": [
+        3.0,
+        1.5,
+        6.0
+      ]
+    },
+    {
+      "mounted_component": 41,
+      "receiving_component": 9,
+      "type": "port",
+      "face_center_cells": [
+        3.0,
+        1.5,
+        7.0
+      ]
+    },
+    {
+      "mounted_component": 43,
+      "receiving_component": 42,
+      "type": "port",
+      "face_center_cells": [
+        6.0,
+        3.5,
+        3.0
+      ]
+    },
+    {
+      "mounted_component": 45,
+      "receiving_component": 42,
+      "type": "port",
+      "face_center_cells": [
+        5.0,
+        3.5,
+        3.0
+      ]
+    },
+    {
+      "mounted_component": 81,
+      "receiving_component": 42,
+      "type": "port",
+      "face_center_cells": [
+        6.5,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "mounted_component": 68,
+      "receiving_component": 67,
+      "type": "port",
+      "face_center_cells": [
+        6.5,
+        1.0,
+        4.0
+      ]
+    },
+    {
+      "mounted_component": 69,
+      "receiving_component": 67,
+      "type": "port",
+      "face_center_cells": [
+        6.5,
+        1.0,
+        5.0
+      ]
+    },
+    {
+      "mounted_component": 70,
+      "receiving_component": 67,
+      "type": "port",
+      "face_center_cells": [
+        5.0,
+        1.0,
+        5.5
+      ]
+    },
+    {
+      "mounted_component": 73,
+      "receiving_component": 71,
+      "type": "port",
+      "face_center_cells": [
+        7.0,
+        6.0,
+        -0.5
+      ]
+    },
+    {
+      "mounted_component": 74,
+      "receiving_component": 71,
+      "type": "port",
+      "face_center_cells": [
+        7.5,
+        6.0,
+        0.0
+      ]
+    },
+    {
+      "mounted_component": 75,
+      "receiving_component": 72,
+      "type": "port",
+      "face_center_cells": [
+        7.0,
+        6.0,
+        2.5
+      ]
+    },
+    {
+      "mounted_component": 76,
+      "receiving_component": 72,
+      "type": "port",
+      "face_center_cells": [
+        7.5,
+        6.0,
+        2.0
+      ]
+    },
+    {
+      "mounted_component": 77,
+      "receiving_component": 6,
+      "type": "port",
+      "face_center_cells": [
+        3.0,
+        4.5,
+        6.0
+      ]
+    },
+    {
+      "mounted_component": 78,
+      "receiving_component": 7,
+      "type": "port",
+      "face_center_cells": [
+        -3.0,
+        5.5,
+        6.0
+      ]
+    },
+    {
+      "mounted_component": 80,
+      "receiving_component": 36,
+      "type": "port",
+      "face_center_cells": [
+        -7.0,
+        5.0,
+        4.5
+      ]
+    },
+    {
+      "mounted_component": 36,
+      "receiving_component": 35,
+      "type": "radiator_fan",
+      "face_center_cells": [
+        -6.5,
+        3.0,
+        3.0
+      ]
+    }
+  ],
+  "limits": [
+    "Geometric face checks under inherited direction/column-major conventions.",
+    "Surface overlap only, not complete footprint coverage; receiver sizes extended along native stretch axes.",
+    "Semantic fluid inlet roles and game attachment are not certified."
+  ]
+}

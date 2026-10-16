@@ -1,0 +1,10 @@
+{
+  "signature": "() server_scene.vehicle_component.gas_tank.create (server_scene.vehicle_component.gas_tank, server_scene.vehicle)",
+  "offset": 54858156,
+  "size": 128,
+  "allocation": 144,
+  "references": {
+    "00000080": "() server_scene.vehicle_component.create (server_scene.vehicle_component, server_scene.vehicle)",
+    "00000088": "() server_scene.vehicle_gas_content.create (server_scene.vehicle_gas_content, server_scene.vehicle, const server_scene.vehicle_component, const s32, const f64)"
+  }
+}

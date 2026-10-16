@@ -1,0 +1,14 @@
+{
+  "signature": "() server_scene.vehicle_component.short_shifter.parse_save_data (server_scene.vehicle_component.short_shifter, server_scene.save_data.parser)",
+  "offset": 57533727,
+  "size": 944,
+  "allocation": 992,
+  "references": {
+    "000003b0": "() server_scene.vehicle_component.parse_save_data (server_scene.vehicle_component, server_scene.save_data.parser)",
+    "000003b8": "() $string_ctor_cstr (string, const uptr)",
+    "000003c0": "() server_scene.save_data.parser.parse_value (server_scene.save_data.parser, const string, string, const string)",
+    "000003c8": "() $string_dtor (string)",
+    "000003d0": "() server_scene.save_data.parser.parse_value (server_scene.save_data.parser, const string, replication.master.property_s32, const s32)",
+    "000003d8": "() server_scene.save_data.parser.parse_value (server_scene.save_data.parser, const string, s32, const s32)"
+  }
+}

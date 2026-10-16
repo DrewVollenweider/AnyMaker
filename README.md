@@ -4,6 +4,10 @@ Anymaker Builder is a desktop-first, browser-based vehicle-building prototype fo
 
 The project combines an editable vehicle scene, a published component catalog, structural topology tools, and ongoing research into Anymaker's native data formats. It is a research prototype, not an official editor.
 
+## Engineering knowledge and accepted creations
+
+Start with the [Anymaker engineering knowledge hub](doc/knowledge/README.md) for the October 11–16 research, **compact inline-four / CPE1Running**, pedestal engine, giant-engine circulation, and working test vehicle. It includes reusable offline tools, selected native reference creations, measured results, and corrected failed assumptions. This separate procedural-build acceptance does not certify the browser editor’s general export path.
+
 ## Current status
 
 The editor currently provides:
@@ -126,3 +130,4 @@ The documentation distinguishes verified evidence, current implementation, desig
 `npm run build` writes the deployable site to `docs/`. The Vite base defaults to a relative path for static hosting and can be overridden with `VITE_BASE`, for example when deploying under a repository subpath.
 
 The repository is intended for static hosting. It has no backend, account system, database, runtime proxy, or dependency on a running copy of the game.
+

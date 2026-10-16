@@ -1,0 +1,17 @@
+{
+  "signature": "() server_scene.vehicle_component.gearbox_c.add_mating_component (server_scene.vehicle_component.gearbox_c, server_scene.vehicle, const s32, server_scene.vehicle_component, const s32)",
+  "offset": 55031010,
+  "size": 856,
+  "allocation": 928,
+  "references": {
+    "00000358": "() server_scene.vehicle_torque_data.connect_node (server_scene.vehicle_torque_data, const server_scene.vehicle, const s32, server_scene.vehicle_component, const s32)",
+    "00000360": "(ptr<server_scene.vehicle_component.gas_port>) server_scene.vehicle_component.get_type<gas_port> (server_scene.vehicle_component)",
+    "00000368": "() server_scene.vehicle_gas_node_group_pair.push (server_scene.vehicle_gas_node_group_pair, server_scene.vehicle, server_scene.vehicle_gas_content, server_scene.vehicle_gas_content, server_scene.vehicle_gas_node, server_scene.vehicle_component)",
+    "00000370": "(ptr<server_scene.vehicle_component.data_port>) server_scene.vehicle_component.get_type<data_port> (server_scene.vehicle_component)",
+    "00000378": "() server_scene.vehicle_data_node_group.push (server_scene.vehicle_data_node_group, server_scene.vehicle, server_scene.vehicle_data_node, server_scene.vehicle_component, const ptr<server_scene.vehicle_component>, const bool)",
+    "00000380": "(ptr<vehicle_component_definition.surface>) operator_aa (const vector<vehicle_component_definition.surface>, const s32)",
+    "00000388": "() $string_ctor_cstr (string, const uptr)",
+    "00000390": "() $string_comparison_equal (bool, const string, const string)",
+    "00000398": "() $string_dtor (string)"
+  }
+}

@@ -1,0 +1,690 @@
+{
+  "captured_utc": "2026-10-14T13:20:08.783352+00:00",
+  "installation": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker",
+  "definitions": [
+    {
+      "name": "vehicle_component_definitions",
+      "definition_count": 598,
+      "changes": [
+        {
+          "path": "/definitions/237/description",
+          "before": "Fires one 120 570mm shell at 1600 m/s. Fit gas port on the breech: above 4.9 kPa the breech opens to load a shell by hand, vent to close. Fires when closed and trigger mechanical link is above 0.75.",
+          "after": "Fires one 120 570mm shell at 1600 m/s. Fit gas port on the breech: above 29.4 kPa the breech opens to load a shell by hand, below 19.6 kPa it closes. Fires when closed and trigger mechanical link is above 0.75."
+        }
+      ]
+    },
+    {
+      "name": "inventory_definitions",
+      "definition_count": 372,
+      "changes": []
+    }
+  ],
+  "prior_reference_hash_comparison": [
+    {
+      "file": "creature_definitions.json",
+      "before_sha256": "cbc4ea4df37ccc90a82235050b2f4947b143a3ed39a2f1f371eb690bec2f26e2",
+      "after_sha256": "cbc4ea4df37ccc90a82235050b2f4947b143a3ed39a2f1f371eb690bec2f26e2",
+      "same_as_prior": true
+    },
+    {
+      "file": "dungeon_tile_definitions.json",
+      "before_sha256": "ce5cef7d30de791af8efef156aa44f5ab837f13e9aed2a082ba365a2ea3a920f",
+      "after_sha256": "ce5cef7d30de791af8efef156aa44f5ab837f13e9aed2a082ba365a2ea3a920f",
+      "same_as_prior": true
+    },
+    {
+      "file": "inventory_definitions.json",
+      "before_sha256": "ffd71351aca64f982513e9f3f3661206487d9962a41f694cc4c1a9a298cd7b8b",
+      "after_sha256": "ffd71351aca64f982513e9f3f3661206487d9962a41f694cc4c1a9a298cd7b8b",
+      "same_as_prior": true
+    },
+    {
+      "file": "prop_definitions.json",
+      "before_sha256": "970bf2699dd0489654b1a59146f797a7f530a7da719297edb3400086c68e5057",
+      "after_sha256": "970bf2699dd0489654b1a59146f797a7f530a7da719297edb3400086c68e5057",
+      "same_as_prior": true
+    },
+    {
+      "file": "tile_definitions.json",
+      "before_sha256": "f6b874e4a2267ff1ea6d7afdc95acb321631995e8fa546e007efdd7d9ae4aa0c",
+      "after_sha256": "f6b874e4a2267ff1ea6d7afdc95acb321631995e8fa546e007efdd7d9ae4aa0c",
+      "same_as_prior": true
+    },
+    {
+      "file": "tile_junction_definitions.json",
+      "before_sha256": "ec4e19e8a9d5e45fe9705057866cb5c137e72d2b13a7aec1fc6a2ce5a8b9ee2b",
+      "after_sha256": "ec4e19e8a9d5e45fe9705057866cb5c137e72d2b13a7aec1fc6a2ce5a8b9ee2b",
+      "same_as_prior": true
+    },
+    {
+      "file": "vehicle_component_definitions.json",
+      "before_sha256": "38ffdd167ca4181eaf97af67e9908382dffc315e088d3d2f2853ce3b5d925491",
+      "after_sha256": "611a02ff87a3aca3139110f9e21ffb6130e10069f9e331d0450c4bac8534400d",
+      "same_as_prior": false
+    },
+    {
+      "file": "zombie_definitions.json",
+      "before_sha256": "396f3502b805408d6274345af399a91ed31385971db5198f06d233de11bcd47e",
+      "after_sha256": "396f3502b805408d6274345af399a91ed31385971db5198f06d233de11bcd47e",
+      "same_as_prior": true
+    }
+  ],
+  "gcl_symbol_changes": {
+    "source_paths": {
+      "before_count": 1172,
+      "after_count": 1172,
+      "added": [
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/gc/scene.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/gc/studio_logo.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/gc/ui.combo_enum.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/gc/ui.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/gc/ui_metrics.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/gc/ui_text_editor.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/application.audio.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/application.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/application.graphics.camera.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/application.graphics.e_shader_data_type.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/application.graphics.frustum.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/application.graphics.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/application.http.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/application.input.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/application.metrics.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/application.network.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/application.profiler.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/application.steam.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/array.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/async.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/base.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/binary.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/bitset.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/bitwise.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/collision.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/color8.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/file.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/json.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/map.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/mat33.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/mat33_s32.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/mat34.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/mat44.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/math.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/parse.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/physics.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/quat.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/string.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/vec2.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/vec2_s32.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/vec3.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/vec3_s32.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/vec4.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/anymaker/mm6/geocode-language/lib/vector.gc"
+      ],
+      "removed": [
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/gc/scene.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/gc/studio_logo.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/gc/ui.combo_enum.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/gc/ui.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/gc/ui_metrics.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/gc/ui_text_editor.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/application.audio.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/application.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/application.graphics.camera.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/application.graphics.e_shader_data_type.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/application.graphics.frustum.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/application.graphics.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/application.http.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/application.input.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/application.metrics.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/application.network.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/application.profiler.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/application.steam.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/array.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/async.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/base.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/binary.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/bitset.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/bitwise.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/collision.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/color8.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/file.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/json.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/map.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/mat33.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/mat33_s32.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/mat34.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/mat44.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/math.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/parse.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/physics.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/quat.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/string.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/vec2.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/vec2_s32.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/vec3.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/vec3_s32.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/vec4.gc",
+        "D:/geometacouk_v2_service/service/work/ci/win32/mm6/geocode-language/lib/vector.gc"
+      ]
+    },
+    "global_names_and_types": {
+      "before_count": 931,
+      "after_count": 931,
+      "added": [],
+      "removed": []
+    }
+  },
+  "creation_count": 34,
+  "script_count": 12,
+  "integrity": {
+    "all_sources_unchanged": true,
+    "before": [
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\creature_definitions.json",
+        "bytes": 42409,
+        "sha256": "cbc4ea4df37ccc90a82235050b2f4947b143a3ed39a2f1f371eb690bec2f26e2"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\dungeon_tile_definitions.json",
+        "bytes": 588847,
+        "sha256": "ce5cef7d30de791af8efef156aa44f5ab837f13e9aed2a082ba365a2ea3a920f"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\inventory_definitions.json",
+        "bytes": 2480023,
+        "sha256": "ffd71351aca64f982513e9f3f3661206487d9962a41f694cc4c1a9a298cd7b8b"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\manual.json",
+        "bytes": 21658,
+        "sha256": "285c32cea3e71cde294e8163220b2feeca5adca4e9b60f8adadcbcb635eecbfe"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\prop_definitions.json",
+        "bytes": 146241,
+        "sha256": "970bf2699dd0489654b1a59146f797a7f530a7da719297edb3400086c68e5057"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\tile_definitions.json",
+        "bytes": 196963,
+        "sha256": "f6b874e4a2267ff1ea6d7afdc95acb321631995e8fa546e007efdd7d9ae4aa0c"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\tile_junction_definitions.json",
+        "bytes": 451945,
+        "sha256": "ec4e19e8a9d5e45fe9705057866cb5c137e72d2b13a7aec1fc6a2ce5a8b9ee2b"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\tile_scene.json",
+        "bytes": 24779,
+        "sha256": "05cce12e751e478e3930ab39bfc85f9f6c853b32f7c228726ccca610809da033"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\vehicle_component_definitions.json",
+        "bytes": 2396943,
+        "sha256": "611a02ff87a3aca3139110f9e21ffb6130e10069f9e331d0450c4bac8534400d"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\zombie_definitions.json",
+        "bytes": 13093,
+        "sha256": "396f3502b805408d6274345af399a91ed31385971db5198f06d233de11bcd47e"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\game.exe",
+        "bytes": 6636544,
+        "sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\steam_api64.dll",
+        "bytes": 319584,
+        "sha256": "670d654aa3255c5061cf0236a1cdbb2f5076cbd5ae44f613b6f4921558e83e2d"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\bin\\game.gcl",
+        "bytes": 82528301,
+        "sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\languages.tsv",
+        "bytes": 891010,
+        "sha256": "73cb79e233ea848945a32d16b8d74678c561de3911e2bfe2db2e32f00450cc32"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\textures\\color_palette.txtr",
+        "bytes": 1048,
+        "sha256": "b403c6f1dc8033aff92d26553847958e0f8bea7e1c9cc06eb52d0f9d4a2daa3d"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\120mmgunexample.data",
+        "bytes": 7385,
+        "sha256": "51dcd3bee08a6b31ef0e7d16bba9e59bcb40ddef4147b13c7e0f1bd9464b944d"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\4wdchassisengine.data",
+        "bytes": 20909,
+        "sha256": "d2d9be409f5a6b1705b34d83c785ac9ed9a3a748d890edd4a4e393afefbe783d"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\allofthem.data",
+        "bytes": 92105,
+        "sha256": "ca67d835f3b4f24a6d1b8bcd62331ad93ba7c028c293a4338362f4b05da70fd7"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\buildcart.data",
+        "bytes": 3703,
+        "sha256": "ff5fd455b03c3307991218324db79613bba66c697ee5366d38023729a921ff8d"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\building.data",
+        "bytes": 21431,
+        "sha256": "dddb3890ba4c52315f1dcc32520bf17e7b29a10f5c0808e009b8bdb497c21fc1"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\cata.data",
+        "bytes": 10374,
+        "sha256": "dd0e29936ff27f2a266bd82834e9fa9db0fd7f534db03e98e840faa7c3665212"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\DeLorean_v3_assembled.data",
+        "bytes": 17243,
+        "sha256": "259e23ab75aaf7d8873a104907f0914476da1dd2c728b4655b06c051856c638f"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\DeLorean_v5_frame.data",
+        "bytes": 11678,
+        "sha256": "6ffc48bd69a9d972d1f6f42f1a6588a3564135d19cc0f9a7133acb2af1e89873"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\DeLorean_v5_shell.data",
+        "bytes": 19121,
+        "sha256": "670409bf6b49eda77846e0872d4391a89c0e94580efb6edef2a9fd83bc0731b0"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\deloreanchop.data",
+        "bytes": 14071,
+        "sha256": "e62a22440f3aaeec41bd7fb07a9c100bea4e1b951249ca9f15993668aa904876"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\electric_build_cart.data",
+        "bytes": 115997,
+        "sha256": "d1ad12f5496ca30123c3fc0401500b66dee3a6c96073128c031f40c497e84489"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\electric_test_cart.data",
+        "bytes": 11706,
+        "sha256": "e30d1c0b8661a75e7275b91c0d91b66145541a4f62ede1fbae5a38b3841d1b1b"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\engine.data",
+        "bytes": 18573,
+        "sha256": "5ad6efb0f0cf2958c22700c9e34c58ca1193562bbf8fe7ffedec9166201087d8"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\helihull.data",
+        "bytes": 23108,
+        "sha256": "fcf3838f18084c2c2e20812885ac6bb311d759a2199840817f300d9e4062d148"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\hydraulicsnew.data",
+        "bytes": 14522,
+        "sha256": "cd1cdb227cd0206f503de698cf93f395ba62ac8137fa1e0fd5fe6009ef5f88ce"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\jetengine.data",
+        "bytes": 11704,
+        "sha256": "c23902c7924fd14c77c21cfa5f0e3db6acd8f8dad2ace565ab3d039101b627ac"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\jetexample.data",
+        "bytes": 9048,
+        "sha256": "695916f2a9a59f0e545c01c2c17beea42689c50aac10d782d3ff472d55715c0e"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\mywtc.data",
+        "bytes": 1964,
+        "sha256": "9cc61482a24265ff9ec17c62062b66d1fc551476b838317ef97489d9054b43a4"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\Pedestal_Inline4.data",
+        "bytes": 19545,
+        "sha256": "eb893fd68487a4e7724dc4cd4393c4a74328e907d6c159df7521d89697f4e3e0"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\Pedestal_Inline4_v3.data",
+        "bytes": 19597,
+        "sha256": "acc2f436187443480198cefba33210aa4d9705ab4c01db28167ac4b753b8d1e9"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\shop.data",
+        "bytes": 3278,
+        "sha256": "93b7e2aebbbeb2e8bce10781e2cfe7c56176b9e018a65bc3a030cf2fd930b237"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\smallengine.data",
+        "bytes": 11066,
+        "sha256": "749d3cffd24be093594fc91eae4117cef10806dcad75738667fe3541030d9e09"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\smalli3.data",
+        "bytes": 13208,
+        "sha256": "c954e36bf6d376dae4d934953e7eea11c7c2e796eab4c449837a279f60489867"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\smallinline.data",
+        "bytes": 11142,
+        "sha256": "75b4e1a22cde9f0e6d0b33f806c7c70eb5883bb83035cd4c4c2e3d837d48fe6e"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\starter.data",
+        "bytes": 21431,
+        "sha256": "dddb3890ba4c52315f1dcc32520bf17e7b29a10f5c0808e009b8bdb497c21fc1"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\steercart.data",
+        "bytes": 4288,
+        "sha256": "d9fbde7e260364a0d4243390f2dc12ce37f25d7991edbaa4d3aff8d71f8655ff"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\torquereverse.data",
+        "bytes": 6750,
+        "sha256": "078ecee3eee834a5acd6901b15d2f55e07e15f27ab6fb1a99ecf76faa544f430"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\trailerwithwinch.data",
+        "bytes": 21972,
+        "sha256": "ec127904c9a671662302cb3156630c037c3d41b3392103405849af9185e7b361"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\v12.data",
+        "bytes": 15155,
+        "sha256": "9e6731fb40de5a0c1ffe330a0ba825d9a69b4c0fa89e03b41ea2f1c8eeb84840"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\v12_2.data",
+        "bytes": 25044,
+        "sha256": "c521c0e1620a012aaa7f1bb9d2a7c8e02722a639d96b96aca20a98deac3c44a2"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\WTC1_edge_frame.data",
+        "bytes": 36380564,
+        "sha256": "a17e3f48f4c6911a0cacce6ad2df816b15d2e5584cf0147a69011f0ff6756daf"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\WTC1_one_floor.data",
+        "bytes": 405543,
+        "sha256": "d43f15aeade4bf598bd1fb6e1211dda4a80b310942b7f7657f078cda9f5cdf20"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\WTC1_one_floor_plated.data",
+        "bytes": 191053,
+        "sha256": "630012634964b8e53a85dec4b708756a68c739575c02b2fb3f40f07e443838be"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\WTC1_one_floor_v2.data",
+        "bytes": 282663,
+        "sha256": "630f2c5e3f5fd0b6e4d4730bde3863e41ccb21f77fcc5d5f1a4b395ddf84aff4"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\scripts\\buttontoggle.txt",
+        "bytes": 281,
+        "sha256": "44270042704633284ea608ee9e2ddb411e596dff39d738dc3f3a1bc0f357e202"
+      }
+    ],
+    "after": [
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\creature_definitions.json",
+        "bytes": 42409,
+        "sha256": "cbc4ea4df37ccc90a82235050b2f4947b143a3ed39a2f1f371eb690bec2f26e2"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\dungeon_tile_definitions.json",
+        "bytes": 588847,
+        "sha256": "ce5cef7d30de791af8efef156aa44f5ab837f13e9aed2a082ba365a2ea3a920f"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\inventory_definitions.json",
+        "bytes": 2480023,
+        "sha256": "ffd71351aca64f982513e9f3f3661206487d9962a41f694cc4c1a9a298cd7b8b"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\manual.json",
+        "bytes": 21658,
+        "sha256": "285c32cea3e71cde294e8163220b2feeca5adca4e9b60f8adadcbcb635eecbfe"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\prop_definitions.json",
+        "bytes": 146241,
+        "sha256": "970bf2699dd0489654b1a59146f797a7f530a7da719297edb3400086c68e5057"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\tile_definitions.json",
+        "bytes": 196963,
+        "sha256": "f6b874e4a2267ff1ea6d7afdc95acb321631995e8fa546e007efdd7d9ae4aa0c"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\tile_junction_definitions.json",
+        "bytes": 451945,
+        "sha256": "ec4e19e8a9d5e45fe9705057866cb5c137e72d2b13a7aec1fc6a2ce5a8b9ee2b"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\tile_scene.json",
+        "bytes": 24779,
+        "sha256": "05cce12e751e478e3930ab39bfc85f9f6c853b32f7c228726ccca610809da033"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\vehicle_component_definitions.json",
+        "bytes": 2396943,
+        "sha256": "611a02ff87a3aca3139110f9e21ffb6130e10069f9e331d0450c4bac8534400d"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\data\\zombie_definitions.json",
+        "bytes": 13093,
+        "sha256": "396f3502b805408d6274345af399a91ed31385971db5198f06d233de11bcd47e"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\game.exe",
+        "bytes": 6636544,
+        "sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\steam_api64.dll",
+        "bytes": 319584,
+        "sha256": "670d654aa3255c5061cf0236a1cdbb2f5076cbd5ae44f613b6f4921558e83e2d"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\bin\\game.gcl",
+        "bytes": 82528301,
+        "sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\languages.tsv",
+        "bytes": 891010,
+        "sha256": "73cb79e233ea848945a32d16b8d74678c561de3911e2bfe2db2e32f00450cc32"
+      },
+      {
+        "source": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Anymaker\\rom\\textures\\color_palette.txtr",
+        "bytes": 1048,
+        "sha256": "b403c6f1dc8033aff92d26553847958e0f8bea7e1c9cc06eb52d0f9d4a2daa3d"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\120mmgunexample.data",
+        "bytes": 7385,
+        "sha256": "51dcd3bee08a6b31ef0e7d16bba9e59bcb40ddef4147b13c7e0f1bd9464b944d"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\4wdchassisengine.data",
+        "bytes": 20909,
+        "sha256": "d2d9be409f5a6b1705b34d83c785ac9ed9a3a748d890edd4a4e393afefbe783d"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\allofthem.data",
+        "bytes": 92105,
+        "sha256": "ca67d835f3b4f24a6d1b8bcd62331ad93ba7c028c293a4338362f4b05da70fd7"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\buildcart.data",
+        "bytes": 3703,
+        "sha256": "ff5fd455b03c3307991218324db79613bba66c697ee5366d38023729a921ff8d"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\building.data",
+        "bytes": 21431,
+        "sha256": "dddb3890ba4c52315f1dcc32520bf17e7b29a10f5c0808e009b8bdb497c21fc1"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\cata.data",
+        "bytes": 10374,
+        "sha256": "dd0e29936ff27f2a266bd82834e9fa9db0fd7f534db03e98e840faa7c3665212"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\DeLorean_v3_assembled.data",
+        "bytes": 17243,
+        "sha256": "259e23ab75aaf7d8873a104907f0914476da1dd2c728b4655b06c051856c638f"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\DeLorean_v5_frame.data",
+        "bytes": 11678,
+        "sha256": "6ffc48bd69a9d972d1f6f42f1a6588a3564135d19cc0f9a7133acb2af1e89873"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\DeLorean_v5_shell.data",
+        "bytes": 19121,
+        "sha256": "670409bf6b49eda77846e0872d4391a89c0e94580efb6edef2a9fd83bc0731b0"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\deloreanchop.data",
+        "bytes": 14071,
+        "sha256": "e62a22440f3aaeec41bd7fb07a9c100bea4e1b951249ca9f15993668aa904876"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\electric_build_cart.data",
+        "bytes": 115997,
+        "sha256": "d1ad12f5496ca30123c3fc0401500b66dee3a6c96073128c031f40c497e84489"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\electric_test_cart.data",
+        "bytes": 11706,
+        "sha256": "e30d1c0b8661a75e7275b91c0d91b66145541a4f62ede1fbae5a38b3841d1b1b"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\engine.data",
+        "bytes": 18573,
+        "sha256": "5ad6efb0f0cf2958c22700c9e34c58ca1193562bbf8fe7ffedec9166201087d8"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\helihull.data",
+        "bytes": 23108,
+        "sha256": "fcf3838f18084c2c2e20812885ac6bb311d759a2199840817f300d9e4062d148"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\hydraulicsnew.data",
+        "bytes": 14522,
+        "sha256": "cd1cdb227cd0206f503de698cf93f395ba62ac8137fa1e0fd5fe6009ef5f88ce"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\jetengine.data",
+        "bytes": 11704,
+        "sha256": "c23902c7924fd14c77c21cfa5f0e3db6acd8f8dad2ace565ab3d039101b627ac"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\jetexample.data",
+        "bytes": 9048,
+        "sha256": "695916f2a9a59f0e545c01c2c17beea42689c50aac10d782d3ff472d55715c0e"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\mywtc.data",
+        "bytes": 1964,
+        "sha256": "9cc61482a24265ff9ec17c62062b66d1fc551476b838317ef97489d9054b43a4"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\Pedestal_Inline4.data",
+        "bytes": 19545,
+        "sha256": "eb893fd68487a4e7724dc4cd4393c4a74328e907d6c159df7521d89697f4e3e0"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\Pedestal_Inline4_v3.data",
+        "bytes": 19597,
+        "sha256": "acc2f436187443480198cefba33210aa4d9705ab4c01db28167ac4b753b8d1e9"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\shop.data",
+        "bytes": 3278,
+        "sha256": "93b7e2aebbbeb2e8bce10781e2cfe7c56176b9e018a65bc3a030cf2fd930b237"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\smallengine.data",
+        "bytes": 11066,
+        "sha256": "749d3cffd24be093594fc91eae4117cef10806dcad75738667fe3541030d9e09"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\smalli3.data",
+        "bytes": 13208,
+        "sha256": "c954e36bf6d376dae4d934953e7eea11c7c2e796eab4c449837a279f60489867"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\smallinline.data",
+        "bytes": 11142,
+        "sha256": "75b4e1a22cde9f0e6d0b33f806c7c70eb5883bb83035cd4c4c2e3d837d48fe6e"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\starter.data",
+        "bytes": 21431,
+        "sha256": "dddb3890ba4c52315f1dcc32520bf17e7b29a10f5c0808e009b8bdb497c21fc1"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\steercart.data",
+        "bytes": 4288,
+        "sha256": "d9fbde7e260364a0d4243390f2dc12ce37f25d7991edbaa4d3aff8d71f8655ff"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\torquereverse.data",
+        "bytes": 6750,
+        "sha256": "078ecee3eee834a5acd6901b15d2f55e07e15f27ab6fb1a99ecf76faa544f430"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\trailerwithwinch.data",
+        "bytes": 21972,
+        "sha256": "ec127904c9a671662302cb3156630c037c3d41b3392103405849af9185e7b361"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\v12.data",
+        "bytes": 15155,
+        "sha256": "9e6731fb40de5a0c1ffe330a0ba825d9a69b4c0fa89e03b41ea2f1c8eeb84840"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\v12_2.data",
+        "bytes": 25044,
+        "sha256": "c521c0e1620a012aaa7f1bb9d2a7c8e02722a639d96b96aca20a98deac3c44a2"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\WTC1_edge_frame.data",
+        "bytes": 36380564,
+        "sha256": "a17e3f48f4c6911a0cacce6ad2df816b15d2e5584cf0147a69011f0ff6756daf"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\WTC1_one_floor.data",
+        "bytes": 405543,
+        "sha256": "d43f15aeade4bf598bd1fb6e1211dda4a80b310942b7f7657f078cda9f5cdf20"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\WTC1_one_floor_plated.data",
+        "bytes": 191053,
+        "sha256": "630012634964b8e53a85dec4b708756a68c739575c02b2fb3f40f07e443838be"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\creations\\WTC1_one_floor_v2.data",
+        "bytes": 282663,
+        "sha256": "630f2c5e3f5fd0b6e4d4730bde3863e41ccb21f77fcc5d5f1a4b395ddf84aff4"
+      },
+      {
+        "source": "C:\\Users\\PLAYER\\AppData\\Roaming\\Anymaker\\scripts\\buttontoggle.txt",
+        "bytes": 281,
+        "sha256": "44270042704633284ea608ee9e2ddb411e596dff39d738dc3f3a1bc0f357e202"
+      }
+    ]
+  },
+  "limits": [
+    "Read-only file research; no game load or physics test.",
+    "Prior executable decompilation addresses must not be reused without matching hashes.",
+    "Surface dir/gender codes and omitted defaults remain raw, not inferred."
+  ]
+}

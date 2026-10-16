@@ -1,0 +1,7 @@
+{
+  "signature": "(bool) vehicle_util.thresholded_input (bool, const f64)",
+  "offset": 63711329,
+  "size": 288,
+  "allocation": 288,
+  "references": {}
+}

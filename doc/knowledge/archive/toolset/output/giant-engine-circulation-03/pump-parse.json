@@ -1,0 +1,14 @@
+{
+  "signature": "() server_scene.vehicle_component.liquid_pump.parse_save_data (server_scene.vehicle_component.liquid_pump, server_scene.save_data.parser)",
+  "size": 1104,
+  "offset": 56363657,
+  "references": {
+    "00000450": "() server_scene.vehicle_component.parse_save_data (server_scene.vehicle_component, server_scene.save_data.parser)",
+    "00000458": "() $string_ctor_cstr (string, const uptr)",
+    "00000460": "() server_scene.save_data.parser.parse_value (server_scene.save_data.parser, const string, string, const string)",
+    "00000468": "() $string_dtor (string)",
+    "00000470": "() server_scene.save_data.parser.parse_object<server_scene.vehicle_liquid_content_volume> (server_scene.save_data.parser, const string, server_scene.vehicle_liquid_content_volume)",
+    "00000478": "() server_scene.save_data.parser.parse_value (server_scene.save_data.parser, const string, bool, const bool)",
+    "00000480": "() server_scene.save_data.parser.parse_value (server_scene.save_data.parser, const string, f64, const f64)"
+  }
+}

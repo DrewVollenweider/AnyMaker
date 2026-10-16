@@ -1,0 +1,25 @@
+{
+  "signature": "() server_scene.vehicle_component.engine.add_mating_component (server_scene.vehicle_component.engine, server_scene.vehicle, const s32, server_scene.vehicle_component, const s32)",
+  "offset": 54454733,
+  "size": 1680,
+  "allocation": 1816,
+  "references": {
+    "00000690": "(ptr<server_scene.vehicle_component.gearbox>) server_scene.vehicle_component.get_type<gearbox> (server_scene.vehicle_component)",
+    "00000698": "(ptr<ptr<server_scene.vehicle_component.gearbox>>) vector<ptr<server_scene.vehicle_component.gearbox>>.push_back (vector<ptr<server_scene.vehicle_component.gearbox>>)",
+    "000006a0": "(ptr<server_scene.vehicle_component.gearbox_b>) server_scene.vehicle_component.get_type<gearbox_b> (server_scene.vehicle_component)",
+    "000006a8": "(ptr<ptr<server_scene.vehicle_component.gearbox_b>>) vector<ptr<server_scene.vehicle_component.gearbox_b>>.push_back (vector<ptr<server_scene.vehicle_component.gearbox_b>>)",
+    "000006b0": "(ptr<server_scene.vehicle_component.engine_wheel>) server_scene.vehicle_component.get_type<engine_wheel> (server_scene.vehicle_component)",
+    "000006b8": "(ptr<ptr<server_scene.vehicle_component.engine_wheel>>) vector<ptr<server_scene.vehicle_component.engine_wheel>>.push_back (vector<ptr<server_scene.vehicle_component.engine_wheel>>)",
+    "000006c0": "(ptr<server_scene.vehicle_component.air_manifold>) server_scene.vehicle_component.get_type<air_manifold> (server_scene.vehicle_component)",
+    "000006c8": "(ptr<ptr<server_scene.vehicle_component.air_manifold>>) vector<ptr<server_scene.vehicle_component.air_manifold>>.push_back (vector<ptr<server_scene.vehicle_component.air_manifold>>)",
+    "000006d0": "(ptr<server_scene.vehicle_component.fuel_manifold>) server_scene.vehicle_component.get_type<fuel_manifold> (server_scene.vehicle_component)",
+    "000006d8": "(ptr<ptr<server_scene.vehicle_component.fuel_manifold>>) vector<ptr<server_scene.vehicle_component.fuel_manifold>>.push_back (vector<ptr<server_scene.vehicle_component.fuel_manifold>>)",
+    "000006e0": "(ptr<server_scene.vehicle_component.exhaust_manifold>) server_scene.vehicle_component.get_type<exhaust_manifold> (server_scene.vehicle_component)",
+    "000006e8": "(ptr<ptr<server_scene.vehicle_component.exhaust_manifold>>) vector<ptr<server_scene.vehicle_component.exhaust_manifold>>.push_back (vector<ptr<server_scene.vehicle_component.exhaust_manifold>>)",
+    "000006f0": "(ptr<server_scene.vehicle_component.oil_manifold>) server_scene.vehicle_component.get_type<oil_manifold> (server_scene.vehicle_component)",
+    "000006f8": "() server_scene.vehicle_liquid_node.container.create_node (server_scene.vehicle_liquid_node.container, server_scene.vehicle_liquid_node, server_scene.vehicle_component, const ptr<server_scene.vehicle_component>, const s32, const ptr<server_scene.vehicle_liquid_content_volume>, const bool)",
+    "00000700": "(ptr<server_scene.vehicle_component.coolant_manifold>) server_scene.vehicle_component.get_type<coolant_manifold> (server_scene.vehicle_component)",
+    "00000708": "(ptr<server_scene.vehicle_component.data_port>) server_scene.vehicle_component.get_type<data_port> (server_scene.vehicle_component)",
+    "00000710": "() server_scene.vehicle_data_node_group.push (server_scene.vehicle_data_node_group, server_scene.vehicle, server_scene.vehicle_data_node, server_scene.vehicle_component, const ptr<server_scene.vehicle_component>, const bool)"
+  }
+}

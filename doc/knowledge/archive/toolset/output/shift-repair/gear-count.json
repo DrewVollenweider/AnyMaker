@@ -1,0 +1,10 @@
+{
+  "signature": "(s32) server_scene.vehicle_component.gearbox_b.get_gear_count (const server_scene.vehicle_component.gearbox_b)",
+  "offset": 55006260,
+  "size": 168,
+  "allocation": 184,
+  "references": {
+    "000000a8": "(ptr<const vec3_s32>) replication.master.property_type_simple<vec3_s32>.get (const replication.master.property_type_simple<vec3_s32>)",
+    "000000b0": "(s32) math.clamp (const s32, const s32, const s32)"
+  }
+}
