@@ -1,8 +1,8 @@
-# Anymaker 资源与载具架构
+# Anymaker resource and vehicle architecture
 
-本文区分资源中已观察到的字段与尚未验证的运行语义。Stormworks 分析目录提供扫描和反编译方法，不能替代 Anymaker 的格式证据。
+This document separates observed resource fields from unverified runtime semantics. Stormworks analysis directories offer scanning/decompilation methods, not evidence of Anymaker's formats.
 
-## 已验证资源布局
+## Verified resource layout
 
 ```text
 Anymaker/
@@ -17,52 +17,51 @@ Anymaker/
     languages_components.tsv
 ```
 
-在当前安装版本中，`rom` 有 10,713 个文件，其中包括 598 条组件定义、3,333 个 `.mesh`、115 个 `.txtr`、204 个 `.data` 和 204 个 `.meta`。完整哈希和扫描结果在 [审计报告](evidence/asset-audit.json)。
+The installation version audited here has 10,713 ROM files, including 598 component definitions, 3,333 `.mesh`, 115 `.txtr`, 204 `.data`, and 204 `.meta`. Full hashes/scan results: [asset audit](evidence/asset-audit.json).
 
-## 组件定义
+## Component definitions
 
-`vehicle_component_definitions.json` 顶层是 `definitions` 数组。编辑器需要保留以下字段：
+`vehicle_component_definitions.json` has a top-level `definitions` array. The editor must retain:
 
-| 字段 | 用途 |
+| Fields | Purpose |
 | --- | --- |
-| `id`, `name`, `class`, `category` | 稳定识别、搜索、分类和显示 |
-| `mesh_static.mesh_path` | 静态 Mesh 资源引用 |
-| `meshes_dynamic[]` | 动态子 Mesh、位置和预览旋转；当前只记录，尚未自动装配 |
-| `zones`、`interval`、`mode_x/y/z` | 占用区候选、间隔及 tile/stretch 模式；单位、默认值和确切建造规则待验证 |
-| `surfaces` | 结构、机械、扭矩、流体等连接面；包含 `pos/dir/gender/type` |
-| `logic_nodes`、`data_descriptors` | 逻辑端口和数据输入输出 |
-| `density`、`tech_tier`、`spawn_probability` | 质量估算、科技等级和游戏逻辑参数 |
+| `id`, `name`, `class`, `category` | Stable identity, search, categorization, display |
+| `mesh_static.mesh_path` | Static Mesh reference |
+| `meshes_dynamic[]` | Dynamic sub-Meshes, positions, preview rotations; recorded here but not yet automatically assembled at this stage |
+| `zones`, `interval`, `mode_x/y/z` | Candidate occupied regions, spacing, tile/stretch modes; units/defaults/exact building rules need verification |
+| `surfaces` | Structural, mechanical, torque, fluid, and other connection surfaces, including `pos/dir/gender/type` |
+| `logic_nodes`, `data_descriptors` | Logic ports and data inputs/outputs |
+| `density`, `tech_tier`, `spawn_probability` | Mass estimation, technology tier, game-logic parameters |
 
-组件定义是数据驱动的。页面不能根据组件名称猜尺寸，也不能把 Mesh 的视觉包围盒当成建造占用区。
+Definitions are data-driven. Do not guess dimensions from names or equate visual Mesh bounds with building occupancy.
 
-## 原生载具结构
+## Native vehicle structure
 
-`data/buildings/starter_vehicle.data` 的扩展名虽然是 `.data`，文件内容是 JSON。当前样本包含：
+Despite its extension, `data/buildings/starter_vehicle.data` is JSON. Observed fields:
 
-- `definitions.components`：该载具使用的定义列表；
-- `vehicles.vehicles[]`：载具实例；
-- `transform`：3×3 矩阵 `m` 和平移 `t`；
-- `nodes`、`edges`：载具结构节点和梁；
-- `plates`、`plate_paint`：面板多边形及逐格涂装；
-- `grids[].components[]`：组件实例、定义索引、格点位置、旋转矩阵和组件状态；
-- `electric_links`、`mechanical_links`、`liquid_links`、`gas_links`、`belt_links`、`data_links`：不同网络的连接；
+- `definitions.components`: definitions used by the vehicle.
+- `vehicles.vehicles[]`: vehicle instances.
+- `transform`: 3×3 matrix `m` and translation `t`.
+- `nodes`, `edges`: structural nodes/beams.
+- `plates`, `plate_paint`: plate polygons and per-cell paint.
+- `grids[].components[]`: instances, definition indexes, grid positions, rotation matrices, component state.
+- `electric_links`, `mechanical_links`, `liquid_links`, `gas_links`, `belt_links`, `data_links`: distinct network connections.
+- `buoyancy_fill`, `loot_locations`, `creature_locations`: runtime or scene-associated data.
 
-`src/native/anymaker-data.js` 已将上述只读结构转换为独立领域模型：车辆级节点/梁/面板/连接只挂到第一个网格，避免因组件网格分组而重复拓扑；组件定义索引、旋转矩阵、颜色槽、状态和未知字段均保存在 `extras.native`，原始 JSON 保存在项目级 `extras.native.raw`。这一步只证明字段可被安全读取，不证明编辑后的模型可以直接写回游戏。
+`src/native/anymaker-data.js` maps these read-only structures to an independent domain model. Vehicle-level nodes/beams/plates/links attach only to the first grid in the editor projection, avoiding duplicated topology from component-grid grouping. Definition indexes, rotation matrices, color slots, states, and unknown fields remain in `extras.native`; original JSON is in project `extras.native.raw`. Safe reading does not establish game-compatible write-back after editing.
 
-已观察到梁使用 `edges[].col`，面板使用 `plates[].col_front`，部分面板另有 `col_back`；组件使用 `grids[].components[].colors` 色槽数组。编辑器涂色使用独立的 Hex RGB 工程字段 `color`、`color_front`、`color_back`；导入的原生编号仍保留并仅作后备诊断预览。完整原生色表、组件槽映射、`plate_paint` 和游戏着色器仍待验证。
-旋转矩阵会同时保留原始 3×3 数组，并在浏览器编辑投影中转换为 XYZ 弧度；矩阵约定仍需与游戏截图/回读样本做最终验证。
-- `buoyancy_fill`、`loot_locations`、`creature_locations`：运行时或场景附加数据。
+Observed colors: beams use `edges[].col`; plates use `plates[].col_front`, sometimes `col_back`; components use `grids[].components[].colors` slot arrays. Editor painting uses separate Hex RGB fields `color`, `color_front`, `color_back`. Imported native indexes remain preserved as fallback diagnostic previews. The full native palette, component-slot mapping, `plate_paint`, and shaders need verification. Rotation matrices retain their original 3×3 arrays and convert to XYZ radians in the browser projection; matrix conventions still require game screenshot/read-back validation.
 
-当前样本包含 1 个载具、112 个节点、181 条梁、27 个面板、2 个网格、39 个组件。`.meta` 保存同一载具的变换和 bounds 摘要。
+The sample has one vehicle, 112 nodes, 181 beams, 27 plates, two grids, and 39 components. `.meta` contains matching transform/bounds summaries.
 
-因此，载具模型不是“组件列表 + XYZ”这么简单。原生导入/导出必须同时处理矩阵、格点、结构梁、面板涂装和多种网络；在证据完成前，项目只输出中间工程 XML。
+A vehicle is therefore more than components plus XYZ. Native import/export must handle matrices, grid coordinates, beams, plate paint, and multiple networks. Until evidence is complete, intermediate project XML remains explicitly incompatible with game saves.
 
-## 编辑器连接投影
+## Editor connection projection
 
-原生的 `electric_links`、`mechanical_links`、`liquid_links`、`gas_links`、`belt_links`、`data_links` 已映射为工程 `topology.links`。编辑器端点使用 `{ componentId, port? }`，路径点使用世界格坐标；导入时原生 `p0/p1.comp` 映射到组件实例 ID，`pos` 保留为端口索引，`points` 按 0.08 世界单位换算。当前可视化与撤销操作已覆盖六类连接，但端口兼容矩阵、皮带/管线专用约束和游戏回写仍未由样本证实。
+The six native link arrays map to project `topology.links`. Editor endpoints use `{ componentId, port? }`; path points use world grid coordinates. Import maps `p0/p1.comp` to instance IDs, retains `pos` as port index, and converts `points` using 0.08 world units. Visualization/undo cover all six kinds, but port compatibility, belt/pipe-specific constraints, and game write-back are not established by this sample.
 
-## Mesh v5 观察
+## Mesh v5 observations
 
-已对 ROM 中的组件 Mesh 做二进制验证：文件以 `mesh` 魔数开头，版本为 5，包含一个或多个命名子网格。已确认三种顶点布局（16、28、36 字节步长），其后是三角形索引缓冲区和 8 字节零结束标记。解析器会检查截断、顶点缓冲区、索引边界和未知尾部；不符合已验证布局的文件会明确失败。
+Binary checks of component Meshes confirmed `mesh` magic, version 5, one or more named submeshes, three vertex strides (16/28/36 bytes), triangle index buffers, and an eight-byte zero terminator. The parser checks truncation, vertex buffers, index bounds, and unknown trailing content, explicitly failing unsupported layouts.
 
-这不等于完整的游戏渲染还原：顶点中的 packed color、材质槽、`.txtr` 压缩格式、动态 Mesh 装配、骨骼/动画和游戏 Shader 尚未全部逆向。当前浏览器使用真实静态几何加中性诊断材质。
+This is not complete rendering recovery. Packed vertex colors, material slots, `.txtr` compression, dynamic assembly, skeletons/animation, and game shaders remain partly unknown. The browser currently uses real static geometry with neutral diagnostic materials.

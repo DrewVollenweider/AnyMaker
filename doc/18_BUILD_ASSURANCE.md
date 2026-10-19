@@ -1,36 +1,34 @@
-# 载具交付标准
+# Vehicle delivery standard
 
-2026-10-11，来源：用户提供的建造失败记录与本次开发授权。
+2026-10-11. Source: user-provided build failures and development authorization.
 
-## 工作流程
+## Workflow
 
-需求 → 系统链 → 部件/接口证据 → 几何 → 结构/网络审计 → 静态检查 → 游戏加载 → 运行/故障测试。
+Requirements -> system chains -> component/interface evidence -> geometry -> structure/network audit -> static validation -> game loading -> operation/failure testing.
 
-1. 每条功能链写明来源、消费者、中间接口、方向和控制状态。
-2. 部件尺寸、端口和行为必须有来源。未知项单列，不能静默套用现实工程或 Stormworks 规则。
-3. 默认一个刚性底盘；关节和运动部件可以有多个物理体。安装 grid 与物理体分开记录，不能按 grid 数直接判失败。
-4. 独立检查结构安装与系统连接。检查全部电气、扭矩、机械控制、数据、液体、气体路径。
-5. 微控制器仅在需要时加入；记录名称绑定、输入输出、线路、消费者及启动默认值。
-6. 检查轮子、轴、带、悬挂、门、绞盘的运动范围；禁止轴穿过框架。
-7. 电机旋转不能证明轮子或绞盘获得扭矩。明确负载响应与传动断点。
-8. 记录 OFF/中立/前进/倒车/失电状态；未知结构强度采用保守方案，但不编造数值。
-9. 有意义的修改先备份；逐步从最小功能样本扩展。
+1. For each function record source, consumer, intermediate interfaces, direction, control state.
+2. Cite component dimensions/ports/behavior. List unknowns; never silently substitute real-world/Stormworks rules.
+3. Default to one rigid chassis; joints/moving parts may require multiple bodies. Record mounting grids separately; grid count alone is not failure.
+4. Audit mounting separately from systems. Trace all electrical/torque/mechanical-control/data/liquid/gas paths.
+5. Add microcontrollers only when needed, with name bindings, I/O, lines, consumers, startup defaults.
+6. Check wheel/shaft/belt/suspension/door/winch clearances; no shafts through frames.
+7. Motor rotation does not prove torque reaches wheels/winch. Identify load response/transmission breaks.
+8. Record OFF/neutral/forward/reverse/power-loss states. Be conservative about unknown strength without inventing numbers.
+9. Back up meaningful changes; expand gradually from minimal working examples.
 
-## 交付记录
+## Delivery record
 
-| 项目 | 状态与证据 |
+| Item | Status/evidence |
 | --- | --- |
-| 几何 | PASS / FAIL / UNKNOWN，附视图与检查范围 |
-| 结构安装 | 同上；不能由系统连线推导 |
-| 接口/网络 | 同上；按路径列出来源与负载 |
-| 静态校验 | 同上；列明工具版本、实际检查范围 |
-| 游戏加载 | 未执行则 NOT TESTED |
-| 运行与故障测试 | 未执行则 NOT TESTED |
+| Geometry | PASS / FAIL / UNKNOWN, views and scope |
+| Mounting | Same; cannot infer from system lines |
+| Interfaces/networks | Same; trace sources/loads |
+| Static checks | Same; tool versions and actual scope |
+| Game loading | NOT TESTED if unperformed |
+| Operation/failure | NOT TESTED if unperformed |
 
-## 工具与能力边界
+## Tool boundaries
 
-运行 `python3 scripts/inspect-native-reference.py PATH.data > inventory.json` 可盘点车辆、grid、组件、结构、六类链接、脚本和已保存状态。
-这是只读快照盘点，不是连接、物理、碰撞或游戏兼容性验证器。保留未知原生字段；不可根据简单字段计数宣称运行成功。
+`python3 scripts/inspect-native-reference.py PATH.data > inventory.json` inventories vehicles/grids/components/structure/six link kinds/scripts/saved state. This is a read-only snapshot inventory, not connectivity/physics/collision/compatibility validation. Preserve unknown fields; field counts do not prove operation.
 
-本地观察方案尚待验证：分别在未运行、启动、生成、操作、保存、移除后记录文件时间/哈希和差异。只有实际变化与操作相对应，才能判断保存字段是否可作为遥测。原生 API、日志接口、自动生成/复位、键盘控制均未证明可用。不得把示例命令当作已经实现的 bridge。
-
+Proposed local observation remains unverified: compare timestamps/hashes/diffs before running, startup, spawning, operation, saving, removal. Only observed changes correlated to actions can establish saved fields as telemetry. Native APIs/log interfaces/automatic spawn-reset/keyboard control are not established. Example commands are not an implemented bridge.

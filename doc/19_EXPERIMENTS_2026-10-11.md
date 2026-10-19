@@ -1,10 +1,10 @@
-# 2026-10-11 实验资料与证据边界
+# 2026-10-11 experiments and evidence boundaries
 
-## 本次直接复核
+## Direct review in this session
 
-输入：用户上传的 allofthem.data / allofthem.meta，原样归档在 evidence/2026-10-11/。只读盘点由 scripts/inspect-native-reference.py 生成 native-reference-inventory.json，含 SHA-256、脚本与状态字段。
+Inputs: user-uploaded `allofthem.data / allofthem.meta`, archived unchanged under `evidence/2026-10-11/`. Read-only `scripts/inspect-native-reference.py` produced `native-reference-inventory.json`, including SHA-256/scripts/state.
 
-| Vehicle ID | 组件 | grid | 电气/机械/液体/气体/皮带/数据链接 |
+| Vehicle ID | Components | Grids | Electric/mechanical/liquid/gas/belt/data links |
 | --- | ---: | ---: | --- |
 | 217 | 49 | 1 | 2 / 6 / 7 / 0 / 5 / 0 |
 | 218 | 86 | 1 | 5 / 12 / 8 / 8 / 6 / 2 |
@@ -13,33 +13,32 @@
 | 221 | 121 | 2 | 3 / 15 / 18 / 34 / 12 / 0 |
 | 222 | 64 | 1 | 7 / 2 / 6 / 2 / 5 / 0 |
 
-合计六辆、八个 grid、五块 plate。多个 grid 可属于同一 vehicle；不能把 grid 计数当作刚体计数。样本具备温度、液体数量、润滑污染和电池 energy 等保存状态，不能因此证明文件持续更新或包含轮轴实时 RPM。
+Total: six vehicles/eight grids/five plates. Multiple grids may share one vehicle; counts are not body counts. Saved temperature/fluid quantities/lubricant contamination/battery energy do not prove continuously updated files or live axle RPM.
 
-脚本直接证据：218 的控制器按 EngineTemp.temperature > 20 控制 EngineFan.input；219 的脚本读取点火、踏板、手刹、轮速、档位与温度并写节流、离合、制动及显示；221 的 script 仅空 on_tick。脚本使用 Anymaker on_tick、out 读取、in 写入语法，不应直接替换为 Stormworks Lua。阈值属于参考样本，并非通用设计推荐。
+Direct script evidence: 218 controls EngineFan.input from EngineTemp.temperature > 20; 219 reads ignition/pedals/handbrake/wheel speed/gears/temperature and writes throttle/clutch/brake/displays; 221 has empty on_tick. Anymaker uses on_tick, out reads, in writes, not interchangeable Stormworks Lua. Thresholds belong to examples, not universal recommendations.
 
-## 今日早先分析：恢复的记录，非本次完整复核
+## Earlier analysis recovered from records, not fully rechecked here
 
-早先分析将 217/218/219/220/221/222 分别识别为 Jet、V12、4WD、inline-3、V12 2、inline。报告了机械 junction 自动化、独立燃油/油/冷却路径与跨 grid 连接。120mmgunexample.data 据早先分析含可读脚本及四条数据链接。微控制器拖放项有四张用户截图。
+Earlier chat identified 217/218/219/220/221/222 as Jet/V12/4WD/inline-3/V12 2/inline and reported mechanical-junction automation, separate fuel/oil/cooling, cross-grid links. `120mmgunexample.data` reportedly has readable script/four data links; four user screenshots show microcontroller drag-and-drop items.
 
-这些名称与早先分析来自聊天记录；本次未取得并逐个核验所有独立示例及四张逻辑截图，不把缺失内容补造为组件目录。端口行为、名称绑定完整性、跨 grid 电气规则与运行能力仍需按具体连接或游戏测试核验。
+These names/findings came from chat records. This session did not obtain/recheck every individual example/four logic screenshots. Do not fabricate missing catalog entries. Port behavior, complete name binding, cross-grid electrical rules, runtime capability need specific connections/tests.
 
-## 未取得的午餐期间实验结果
+## Missing lunch-session results
 
-用户授权 PC 上只读观察游戏、截图、创建文件及日志，并已有沙盒存档。但当前云端工作区没有 Windows 文件系统或本机游戏控制能力；未找到可复核的午餐期间运行日志、遥测记录或测试报告。此前的 RPM/扭矩/自动测试示例是方案说明，不是采集结果。
+The user authorized PC read-only observation/screenshots/creation/log reading and had a sandbox save. That historical cloud workspace lacked Windows filesystem/local game controls. No reviewable lunch runtime/telemetry/test reports were found. Earlier RPM/torque/automation examples were proposals, not collected results.
 
-## 能力评估（工程判断，不是成功率统计）
+## Capability assessment (engineering judgment, not success rates)
 
-| 目标 | 当前判断 |
+| Goal | Assessment |
 | --- | --- |
-| 框架、外壳、简单静态结构 | 较强；仍需检查厚度、性能与游戏加载 |
-| 基于参考样本的单系统改造 | 中等；应小步修改并测试 |
-| 新建完整汽车/发动机/绞盘 | 有能力制作候选文件；首次运行可靠性尚不足 |
-| 微控制器 | 可研究和改写已验证脚本；完整绑定和运行尚需测试 |
-| 自动物理测试/持续游戏遥测 | 当前未实现、未验证 |
+| Frames/shells/simple static structures | Relatively strong; check thickness/performance/game loading |
+| Reference-based single-system modification | Moderate; small changes/tests |
+| New complete car/engine/winch | Candidate files possible; first-run reliability insufficient |
+| Microcontrollers | Research/edit evidenced scripts; full binding/runtime still needs tests |
+| Automatic physics tests/continuous telemetry | Unimplemented/unverified |
 
-最有价值的下一步是最小电动车测试：加载、结构安装、电气供电、扭矩到轮、转向、制动、正反向逐项记录。获得运行证据后再扩大复杂度。
+Next valuable step: minimal electric vehicle, separately recording loading/mounting/power/torque/steering/braking/forward/reverse, expanding only after runtime evidence.
 
-## 传感器试验（用户指定下一步）
+## Sensor experiment (user-selected next step)
 
-逐个记录定义/型号、端口/字段、单位、范围、更新率、局部/世界坐标、朝向、静止基线、已知输入下响应、断电/断线值及数据名称绑定。用最小测试架，一次改变一个条件，保留创建文件、截图和带时间的读数。尚未执行；不能预设可测物理量或外部遥测能力。
-
+For each sensor record definition/model, ports/fields, units/range/rate, local/world coordinates/orientation, stationary baseline, known-input response, disconnected/unpowered values, name bindings. Minimal rig, one variable at a time, creations/screenshots/timestamped readings retained. Unperformed; do not presume measurable quantities/external telemetry capabilities.

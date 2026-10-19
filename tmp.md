@@ -1,4 +1,3 @@
-增加一个2d参考图片功能，在子网格sidebar中可选择导入图片，选择对应平面，调整大小和位置放置，方便作为参考
+Add a 2D reference-image feature in the subgrid sidebar: import an image, choose its plane, adjust size/position, and place it as a building reference.
 
-优化整体编辑过程中的性能体验，尤其是在移动、旋转、调整自定义组件拓展大小、放置梁和平面时会有卡顿
-同时在编辑器参数中增加渲染质量的各个详细参数
+Improve editing performance, particularly moving, rotating, changing custom component extension dimensions, and placing beams/plates, which can stutter. Add detailed render-quality controls to editor settings.

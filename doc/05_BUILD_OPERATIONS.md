@@ -1,158 +1,157 @@
-# 镜像与子网格操作设计
+# Mirror and subgrid operation design
 
-状态：需求与设计为主；组件级操作与基础拓扑编辑原型已实现，完整 P2–P4 验收仍待完成。实施依赖见 TODO 的 P2–P4。
+Status: primarily requirements/design. Component operations/basic topology prototypes exist; complete P2–P4 acceptance remains unfinished. Dependencies are in TODO P2–P4. Later sections record implemented extensions, including some superseded rendering approaches.
 
-## 三种“子”的区别
+## Three distinct subdivisions
 
-| 概念 | 含义 | 编辑行为 |
+| Concept | Meaning | Editing behavior |
 | --- | --- | --- |
-| Mesh part / 渲染 submesh | 一个模型里的几何/材质片段 | 保留 part 边界，不是独立车辆或网格 |
-| dynamic mesh | meshes_dynamic 引用的轮毂、活塞等可动几何 | 跟随组件定义装配，不随意拆为独立组件 |
-| 载具 Grid / 建造子网格 | 一组组件所处的建造坐标系；原生样本有 origin/dir | 本文拆分、复制、移动、合并的对象 |
+| Mesh part / render submesh | Geometry/material fragment in a model | Preserve boundaries; not a vehicle/grid |
+| Dynamic mesh | Moving geometry referenced by meshes_dynamic, e.g. hubs/pistons | Assemble by definition; do not arbitrarily split into components |
+| Vehicle Grid / building subgrid | Building coordinate system for components; native origin/dir | Target of planned split/copy/move/merge operations |
 
-节点、梁、面板在已知原生样本中位于 vehicle 层级，而非各 grid 数组内。因此编辑器要显式维护操作涉及的结构集合，再由原生适配器映射，不能假定结构天然归属于一个 grid。关节约束和跨 grid 连通性的具体游戏语义仍需验证。
+Known native nodes/beams/plates live at vehicle level, not within each grid array. Explicitly maintain structural operation sets and let native adapters map them. Do not assume intrinsic grid ownership. Exact joint/cross-grid game semantics still need verification. Later physical-subgrid conventions below distinguish mounting grids from bodies.
 
-## 统一命令协议
+## Common command protocol
 
-命令接受选中实体、源/目标坐标系、pivot 和边界策略；输出预览、错误、ID 映射与变更集。
+Commands accept selected entities, source/target frames, pivot, boundary policy; return preview, errors, ID map, change set.
 
-1. 读取领域模型；计算实体、内部连接、外部连接和受影响面板。
-2. 创建只读预览，显示新增/删除、断连、重接、冲突。
-3. 验证数值、格点、定义兼容、约束、重复占用和完整引用。
-4. 一次提交事务；失败保持原项目，取消仅移除预览。
-5. 一条撤销记录复原 ID、归属、坐标、涂装和连接。
+1. Read domain data; compute entities, internal/external links, affected plates.
+2. Build read-only previews of additions/removals/disconnections/reconnections/conflicts.
+3. Validate numbers, lattice, definitions, constraints, duplicate occupancy, references.
+4. Commit once atomically; failure preserves project, cancel removes preview only.
+5. One undo restores IDs, membership, coordinates, paint, links.
 
-Three.js 负责展示结果，不能作为连接拓扑或 ID 的唯一来源。
+Three.js displays results but is not the sole source of topology/IDs.
 
-## 镜像
+## Mirroring
 
-用户选择世界或网格局部平面，指定 X/Y/Z 法向、平面偏移和一次性/持续模式。平面单位法向为 n、偏移为 d 时，点的反射为：
+Choose world/grid-local plane, X/Y/Z normal, offset, one-shot/continuous mode. With unit normal n and offset d:
 
 p′ = p − 2n(n · p − d)
 
-反射矩阵的行列式为 −1，不是普通旋转，不能直接作为合法组件旋转或仅存负缩放。非手性对称模型、存在左右配对定义的模型、没有镜像定义的模型必须分别处理。
+Reflection determinant is −1, not ordinary rotation. Neither a rotation alone nor stored negative scale represents valid component semantics. Treat non-mirror-symmetric geometry, left/right paired definitions, and missing mirrored definitions separately.
 
-- 镜面上的实体去重；多平面组合用稳定映射去重。
-- 镜像复制分配新实例 ID，内部 Link 端点跟随映射，外部 Link 交由边界策略处理。
-- 三角绕序、法线、面板正反面和 paint UV/像素方向必须一致。
-- 组件端口位置、方向、配对性、关节轴、限位和动态部件 pivot 同步变换。
-- 持续模式保存对应关系，使后续删除/移动/涂装也作为一个命令作用于对应实体。
-- 缺少手性配对或导出无法表达时，预览显示具体对象并拒绝兼容提交。
+- Deduplicate on-plane entities and multiplane combinations with stable maps.
+- Copies allocate IDs, remap internal Links, and apply boundary policy externally.
+- Keep triangle winding, normals, plate front/back, paint UV/pixel orientation consistent.
+- Transform port positions/directions/genders, joint axes/limits, dynamic pivots.
+- Continuous mode retains correspondence so delete/move/paint acts as one command.
+- Missing handedness mappings/unrepresentable export must identify objects and reject compatible commit.
 
-## 子网格拆分
+## Splitting subgrids
 
-选中组件与明确指定的结构集合，创建新 gridId。设源网格世界变换为 Ws、目标网格世界变换为 Wt、实体原局部变换为 L，保持世界姿态时：
+Create new gridId for selected components/explicit structures. For source/target world frames Ws/Wt and local transform L, preserve world pose with:
 
 L′ = inverse(Wt) × Ws × L
 
-跨边界梁/面板不能只删除节点引用。预览列出边界节点和依赖，提供包含完整结构、复制边界节点或取消的合法策略；不支持部分切面时拒绝切割而非自动补面。连续结构拆分是否产生多个 vehicle 是独立游戏语义，需单独验证。
+Do not cut boundary beams/plates by deleting references. Preview dependencies and offer valid complete-structure, copied-boundary-node, or cancel strategies. Reject unsupported partial cuts instead of inventing caps. Whether continuous-structure splitting creates vehicles is separate game behavior to verify.
 
-## 子网格复制
+## Copying subgrids
 
-复制选中 grid 或完整子树，保留内部相对变换、结构、涂装和属性。节点、面板、组件、grid 与 Link 中需要唯一 ID 的实体均重新分配；内部引用指向副本。外部连接默认不复制，展示可重接端点。禁止复用可变属性对象，副本修改不能影响源对象。
+Copy grid/subtree with relative transforms, structure, paint, properties. Allocate all unique node/plate/component/grid/Link IDs; internal references target copies. Default to no external links, showing reconnectable endpoints. Mutable property objects cannot be shared.
 
-## 子网格移动
+## Moving subgrids
 
-区分整体变换、修改 pivot 和重新指定归属：
+Distinguish:
 
-- 整体移动改变网格变换，组件局部布局不变。
-- 修改 pivot 需补偿局部坐标，实体世界姿态不变。
-- 转移至另一父级/车辆使用坐标变换公式，重算结构、连接和约束归属。
+- Whole transforms change grid frame, preserving local layout.
+- Pivot edits compensate local positions, preserving world poses.
+- Reparenting/vehicle transfer uses frame conversion and recalculates structure/link/constraint membership.
 
-原生旋转/格点不能表示的结果标为无效。不把可动约束两端一起合并，也不通过缩放绕过约束。
+Reject results unrepresentable by native lattice/rotations. Do not merge moving-joint endpoints or bypass constraints through scaling.
 
-## 子网格合并
+## Merging subgrids
 
-指定目标网格；先将源实体转换到目标坐标系，再检查 ID、占用、连通性和约束。
+Choose destination, transform sources into it, validate IDs/occupancy/connectivity/constraints. Distinguish:
 
-合并需明确区分：
+- **Membership merge**: common grid, unchanged world positions.
+- **Structural welding**: merge nodes/edges under verified rules, changing connectivity.
+- **Render batching**: draw-call optimization without domain changes.
 
-- **归属合并**：实体进入同一网格，保持世界位置。
-- **结构焊接**：满足规则的节点/边合并，修改物理连通性。
-- **渲染合批**：只优化 draw calls，不改变编辑模型。
+Set deduplication tolerance from unit/lattice evidence. Report paint/material conflicts, incompatible genders, overlaps, joint conflicts; never silently discard source information.
 
-节点去重容差由单位和格点证据确定。颜色/材质不同、端口性别不兼容、结构重叠或关节约束冲突时列出诊断，禁止静默删除源信息。
+## Acceptance matrix
 
-## 验收矩阵
-
-| 操作 | 必测情形 | 不变量 |
+| Operation | Cases | Invariants |
 | --- | --- | --- |
-| 镜像 | 偏移/局部平面、手性组件、多平面、镜面共点 | 法线/端口/涂装对应，ID 无冲突 |
-| 拆分 | 旋转源网格、跨边界梁/面板、跨网格 Link | 世界姿态保持，引用完整 |
-| 复制 | 动态部件、多网格子树、内部/外部 Link | 副本独立，内部连接仅指向副本 |
-| 移动 | 世界/局部轴、pivot 修改、跨父级、受限关节 | 相对结构正确，约束合法 |
-| 合并 | 不同原点/方向、ID 冲突、格点不对齐、涂装冲突 | 不丢实体/字段，无悬空端点 |
-| 组合 | 拆分→复制→移动→合并→保存→加载→撤销/重做 | 事务完整且结果可复现 |
+| Mirror | Offset/local planes, handed parts, multiple planes, on-plane coincidence | Correct normals/ports/paint; unique IDs |
+| Split | Rotated source, boundary beams/plates, cross-grid Links | World pose/reference integrity |
+| Copy | Dynamic parts, multigrid subtrees, internal/external Links | Independent copies; internal references target copies |
+| Move | World/local axes, pivot, reparenting, limited joints | Relative structure/valid constraints |
+| Merge | Different frames, ID conflicts, off-grid points, paint conflicts | No lost entities/fields/dangling endpoints |
+| Combined | Split -> copy -> move -> merge -> save -> load -> undo/redo | Atomic, reproducible results |
 
-变换误差阈值、格点单位、原生映射未验证前不指定虚假精度承诺。编辑器测试与游戏内行为验证分开记录。
-## 界面偏好和本地恢复
+Do not promise fabricated precision before verifying tolerances/lattice/native mapping. Record editor tests separately from game tests.
 
-- `selection-filter-toolbar` 在“可选择对象”下方提供可折叠的“按类型隐藏”列表。勾选隐藏、取消勾选恢复，支持组件、节点、梁、面板和连接；“结构对象”统一隐藏节点、梁和面板。连接过滤同时覆盖普通线路、液压缸、皮带及履带派生显示，并与既有“显示连接”的网络类型设置叠加。
-- 按类型隐藏属于显示偏好，保存在设置的 `hiddenKinds` 中，不改写工程对象的 `hidden` 字段、不生成历史记录、不省略导出内容。单独隐藏的对象在取消类型过滤后仍保持隐藏；新建/导入及撤销重做继续使用当前类型过滤。列表支持中英文，选择开关独立；移动工具仍可按可选择设置拾取已隐藏辅助标记的逻辑节点。
-- 左上角切换 English / 中文，首次默认英文；工具提示、计数、目录名称及属性面板随语言即时更新，原始 ID 和工程内容不翻译。
-- 编辑工具独立为 topbar 下方、workspace 上方的单行悬浮工具条；左右面板用画布两侧中部竖向把手展开/收起。左面板支持拖动宽度和视口 Tab 快捷键。
-- XYZ 指示器随相机方向更新；点击 ±X/±Y/±Z 切换对应六个视角，等距与聚焦入口也在指示器内。此处是透视相机的标准轴向视角，不宣称已经实现正交投影模式。
-- 网格颜色、透明度、实线/虚线立即作用于 Three.js 材质；吸附步长、网格/节点显隐、面板宽度与开关、抽屉展开、目录筛选与搜索、当前工具和相机位置/观察目标分离存储在 `localStorage`，不写入工程 schema。
-- 存储键按站点 origin 和应用 pathname 隔离，设置与工程记录分别版本化。运行在 localhost 时只写当前浏览器，不需要远端数据库；换端口、浏览器或路径不会共享记录。
-- 启动先加载组件目录、校验并恢复本地工程，再每 60 秒保存已提交的完整组件/拓扑快照；页面隐藏或离开时额外尝试保存。未提交的梁草稿、TransformControls 拖拽中间态、用户选择的文件和本地资源 bytes 不写入备份。
-- 保留上一份有效备份；损坏记录先尝试恢复上一份，全部失败时保持原记录并暂停自动覆盖。多标签页检测到另一个标签保存后也暂停覆盖，由用户明确选择当前工程后继续。存储禁用或额度不足会显示错误，不清空工程或假报成功。
-- 浏览器清理站点数据会删除本地备份；自动保存不是外部备份或真正游戏存档，仍需定期下载工程 JSON。浏览器崩溃前尚未到达一次保存周期的改动可能丢失。
+## UI preferences and local recovery
 
-## 当前实现状态
+- `selection-filter-toolbar` has a collapsible Hide by type list below Selectable objects. Check to hide components/nodes/beams/plates/links; Structures groups nodes/beams/plates. Link filtering covers ordinary lines, cylinders, belts/tracks and combines with network visibility settings.
+- Type hiding is `hiddenKinds` display preference, not object `hidden`, history, or export omission. Individually hidden objects stay hidden when filters clear. New/imported/undo-restored content uses current filters. Localization and selectability remain independent; Move can pick logical nodes even with helpers hidden.
+- Top-left language switch offers English/optional Chinese; first use defaults English. Tooltips/counts/catalog/Inspector update immediately; IDs/project content are not translated.
+- Editing tools form a single floating row below topbar/above workspace. Mid-side vertical handles toggle panels; left width is draggable, viewport Tab toggles it.
+- XYZ indicator follows camera; ±X/±Y/±Z choose six views, with isometric/focus controls. These are perspective-camera axial views, not implemented orthographic projection.
+- Grid color/alpha/solid-dash apply immediately. Snap step, grid/node visibility, panel sizes/toggles, drawers, filters/search, tool, camera/target persist separately in `localStorage`, outside schema.
+- Keys isolate site origin/pathname and version settings/project separately. Localhost writes only current browser; ports/browsers/paths do not share records.
+- Startup loads definitions, validates/recovers project, then saves committed component/topology snapshots every 60 seconds and attempts additional saves on hiding/leaving. Beam drafts, intermediate TransformControls states, File objects, local bytes are excluded.
+- Keep previous valid backup; recover it on corruption. If both fail, retain originals and stop overwrites. Another tab's save also pauses overwrites until explicit project choice. Disabled/full storage reports failure without clearing projects or claiming success.
+- Clearing site data deletes recovery. Autosave is not an external backup/game save; periodically download project JSON. Changes since last interval may be lost on crash.
 
-`src/editor/operations.js` 已提供与渲染无关的复制、移动、镜像复制、子网格拆分和子网格合并原语。它们返回新快照、分配的新 ID 和映射结果，不直接修改输入数组；`validateDocument` 会校验 `gridId` 与显式 `mirror` 元数据。顶部工具栏已接入单选组件的复制、X 平面镜像、拆分和合并命令，每个命令通过一次 `restore + History.commit` 形成单条撤销记录。持续镜像模式使用世界 X/Y/Z 平面和整数格偏移；现有配对组件的拖动、旋转及 Inspector 数值编辑会同步另一侧，节点移动会同步对应节点，并以单条历史记录提交。配对依据是当前平面、位置与组件镜像元数据，切换平面后不会自动重配旧对象。
+## Implemented state
 
-`src/editor/topology.js` 已提供节点去重创建、完整状态的移动并共点合并、节点/梁/面板删除、梁创建/分割、面板共面校验和扇形三角化。命令会拒绝未知节点、重复梁、零长度梁、共线或非共面面板；其中完整节点编辑流程已接入 Three.js 视口，批量/约束交互仍待补齐。
+`src/editor/operations.js` supplies rendering-independent copy/move/mirror-copy/grid-split/merge primitives returning new snapshots/IDs/maps without mutating input. `validateDocument` checks `gridId` and explicit `mirror`. Toolbar single-component copy/X-mirror/split/merge use one `restore + History.commit`. Continuous mirroring supports world X/Y/Z integer-offset planes. Paired component drag/rotation/Inspector edits and corresponding node moves update both sides in one history commit. Pairing uses current plane/position/metadata; switching planes does not automatically rematch old objects.
 
-当前页面已接入 `node`、`edge`、`plate` 三个顶部工具：节点工具点击已有节点高亮选择；再次点击其他节点合并，点击空白位置会在选中节点的冻结相机平面上移动并吸附，落到共点时自动合并，Delete 删除节点及其直接关联；梁工具直接点击起点和终点，自动创建或复用逻辑端点，不需要预先创建节点；面板与玻璃工具连续选择已有梁，使用蓝色中心粗线显示已选梁，选择形成单一闭合环后自动创建，Esc 取消草稿。删除工具可删除命中的可见节点、实体梁或面板。选择、删除和涂色工具都会显示悬停目标；梁使用中心粗线高亮，面板使用实际内嵌顶点顺序连成的边界高亮，组件使用对象范围高亮。涂色重叠命中固定为面板、梁、组件：面板即使与支撑梁相交也优先上色，梁仅在没有命中面板时优先于组件。组件选择支持 Shift 点击加减选，并将复制、镜像、子网格拆分及删除作为一条批量历史记录；组件及结构的多选变换和框选已接入，梁/面板整体变换与手动镜像规则见下一节。拓扑统计随工程保存，组件与拓扑作为同一个工程快照原子撤销/重做。
+`src/editor/topology.js` supplies node deduplication, atomic move/merge, node/beam/plate deletion, beam creation/split, coplanarity and initially fan triangulation (later replaced as documented in Plate review). Reject unknown nodes, duplicate/zero-length beams, collinear/nonplanar plates. Full node editing is wired to viewport; batch/constraint interactions were initially incomplete.
 
-面板和窗的选梁草稿按集合处理：允许任意点击顺序、共线分段和不同梁宽，不限制为四条梁，不在选取中检查凸性或要求连续延伸。再次点击可取消单条梁，Esc 清空。选中集合形成单一闭环后，才校验所有边界节点共面、同一子网格以及非自交的有效边界；随后按闭环顺序创建面并保留中间共线节点。详细行为与游戏静态证据的区别见 [Plate 渲染与选边](15_PLATES.md)。
+Topbar `node`, `edge`, `plate`: Node selects a node, clicking another merges; blank clicks move on its frozen camera plane with snapping/coincidence merge; Delete removes it/direct dependencies. Beam clicks start/end, automatically creating/reusing nodes. Plate/window drafts select beams with blue center-line highlight and commit upon a single closed loop; Esc cancels. Delete picks visible nodes/solid beams/plates. Selection/delete/paint share hover highlighting: thick beam center, actual inset plate boundary, component bounds. Paint priority is plate, beam, component even at support intersections. Shift component selection supports batch copy/mirror/split/delete in one undo. Mixed structural transforms/box selection are implemented below. Topology and components save/undo atomically.
 
-### 梁、面板及混合选择的整体变换
+Plate/window drafts are sets: arbitrary order, collinear segments, mixed widths, no four-beam cap or preliminary convexity/continuity filter. Reclick removes one; Esc clears. On a single closed loop, validate coplanarity, ownership, non-self-intersection; order boundary while retaining collinear nodes. See [Plate selection](15_PLATES.md) for distinction from game rules.
 
-`src/editor/selection-transform.js` 提供纯数据的选择展开、整体变换和手动镜像事务。Shift 点击可以混合选择组件、节点、梁和面板。选中梁或面板后，平移/旋转工具显示共同手柄，Inspector 提供相对 XYZ 位移（格）和相对 XYZ 旋转（90°）输入。隐藏节点不会禁用梁或面板的整体变换；显式节点编辑仍保留原有单点移动流程。
+### Whole transforms of beams, plates, and mixed selections
 
-- 选择展开包含所选梁的两端、所选面的全部边界节点，以及两端组件都已选中的内部连接；选面不会自动选其外围梁。需要梁随面一起移动时，应同时选中它们。
-- 手柄和 Inspector 的整体旋转沿用选择范围中心的最近整格点；手动旋转使用当前选择范围的实际中心，不对中心取整。按统一矩阵变换节点，共用节点只处理一次。平移为整格位移，旋转为 90° 步长；保留原生投影的小数坐标，不逐点取整破坏结构形状。
-- 与未选梁/面共用的节点先复制，所选结构重映射到新节点；未选结构保持位置与引用。保留归属、颜色、玻璃类型、面厚度偏移，并旋转 `surfaceDirection`。普通组件可与结构一起变换，内部连接路径随变换更新。
-- 拖动仅替换预览，释放后提交一次历史；Esc、指针取消和无效变换回滚。无变化不拆节点、不增加历史，撤销/重做及工程保存包含完整拓扑快照。
-- 镜像模式按当前平面识别同子网格内完整的对应梁/面，联动另一侧；仅坐标相符的孤立节点不会将无关梁/面加入变换。跨镜面结构若无法同时保持刚性和对称，则提示关闭镜像模式；不会靠改变梁长或面形状满足对称。
+`src/editor/selection-transform.js` provides pure-data expansion/whole transforms/manual mirror transactions. Shift mixes components/nodes/beams/plates. Beam/plate selections receive shared move/rotate handles and relative XYZ cell/90° Inspector inputs. Hidden node helpers do not disable whole transforms; explicit single-node editing retains its own workflow.
 
-`rotate-toolbar` 将**手动旋转**和**镜像**分区显示，旋转工具或连续镜像模式开启时可见。手动旋转可选 XY / XZ / YZ 平面和 90° / 180° / 270°（默认 90°），分别绕世界正 Z / Y / X 轴及当前选择中心旋转，支持组件、梁、面板和混合选择。半格中心的合法 180° 旋转保留中心；若旋转使普通结构节点落到非整格，明确拒绝并保留原工程，不偏移中心或逐点取整。一次应用形成一条历史记录。
+- Expand selected beam endpoints, plate boundary nodes, and internal links whose components are both selected. Selecting a plate does not automatically select boundary beams; select both to move both.
+- Handle/Inspector rotation uses nearest whole-cell point to selection-bounds center; manual rotation uses actual unrounded center. One matrix transforms shared nodes once. Whole-cell displacement/90° steps retain fractional native projection, without per-node rounding.
+- Clone nodes shared with unselected structures, remap selected references, preserve untouched structure. Retain membership/colors/glass/offset, rotate `surfaceDirection`. Components may transform with structures; internal paths follow.
+- Drag replaces preview only; release commits once. Esc/pointer cancellation/invalid transforms roll back. No-op does not split nodes/add history. Undo/redo/save include full topology.
+- Continuous mirror identifies complete matching same-subgrid beams/plates. Coincident isolated nodes do not pull unrelated structures into selection. If crossing-plane structure cannot stay rigid/symmetric, request disabling mirror, never stretch beams/plates to fake symmetry.
 
-镜像区包含连续镜像开关、当前世界 X/Y/Z 镜像平面及偏移，以及 **手动镜像 / Mirror selection** 按钮。手动镜像无需开启连续镜像，执行**镜像复制并保留原件**。新副本成为当前选择，整次操作可单步撤销。组件保持正缩放和显式反射元数据；梁/面引用重新映射的节点，面顶点绕序反转、朝向反射，正反面颜色保留。镜面共点节点及已有对应结构复用，重复点击不叠加副本。内部连接端点重新指向副本，未选外部组件的连接不复制。组件去重比较朝向、尺寸与原生伸缩参数，不因原点位于镜面就跳过非对称几何。
+`rotate-toolbar` separates Manual rotation and Mirror, visible for rotate tool/continuous mirror. Manual XY/XZ/YZ with 90°/180°/270° (default 90°) rotates around world +Z/+Y/+X and current center, supporting mixed selections. Valid half-cell-center 180° rotations retain center. Reject off-lattice ordinary nodes without changing center/rounding vertices. One history record per application.
 
-单元用例 `tests/selection-transform.test.js` 覆盖共享节点分离、刚性与方向、X/Y/Z 偏移镜像、去重、共面点、组件几何与内部连接、原生结构往返和历史。`tests/browser/editor.spec.js` 中的 `structural selection` 用例覆盖真实拾取、手柄拖动、属性输入、取消、撤销/重做、混合镜像和工程保存。当前仅验证编辑器行为；没有新增游戏加载验收。带 `surfaceMount` 的斜面安装组件允许整体平移，整体旋转/镜像会明确拒绝，避免生成无法表达的原生安装网格；任意结构角度、任意局部镜像平面、全部关节/左右手性语义仍未实现。
+Mirror section: continuous toggle, world X/Y/Z plane/offset, Mirror selection. Manual mirror does not require continuous mode: **copy reflected selection and retain originals**. Select copies; undo once. Components keep positive scale/explicit reflection metadata; remapped structural nodes, reversed winding/reflected directions, preserved front/back colors. Reuse on-plane nodes/existing counterparts; repeated clicks do not stack duplicates. Internal endpoints remap, external unselected links are excluded. Component deduplication checks orientation/dimensions/native stretch, not origin-on-plane alone for asymmetric geometry.
 
-### 子网格结构完整性检查
+`tests/selection-transform.test.js`: shared-node separation, rigidity/direction, X/Y/Z offset mirrors, deduplication, on-plane points, component geometry/internal links, native structural round trips/history. `tests/browser/editor.spec.js` `structural selection` cases cover real picking, drag, Inspector, cancel, undo/redo, mixed mirrors/save. Editor-only validation, no new game acceptance. `surfaceMount` components may translate; whole rotation/mirroring explicitly rejects unrepresentable native grids. Arbitrary structure angles/local mirror planes/all joint/handedness mappings remain unfinished.
 
-面向玩家统一使用“子网格”描述可独立运动的物理结构。原生同一 `vehicle` 内的 `grids[]` 是安装坐标系，导入时组件和结构归入该物理载具的同一编辑器子网格；实例 ID 仍保留原始安装网格标识，安装位置、方向和斜面元数据不变。机械配合的原生分组规则见 [自动机械配合与原生多体连接](10_MECHANICAL_MATES.md)。
+### Subgrid structural integrity
 
-`src/editor/subgrid-connectivity.js` 的 `analyzeSubgridIntegrity` 按定义安装面和节点/梁/面板连接识别连通分组。它复用原生单元坐标、X 反射、旋转、伸缩和半格支撑偏移，检查安装面与梁中部、面板内部的接触；不会仅因把手离面板角节点较远而将其拆出。组件的专用接口面也参与几何挂接判定，例如拖车钩上的机械把手与发动机上的滑轮。信号线、软管、皮带和液压缸不作为刚性连接；明确机械配合的两端以及已分属关节两侧子网格的偶然面接触不焊接。此几何检查不代替各类网络协议或端口兼容性校验。没有定义的旧调用仍可使用占用区/包围盒诊断，编辑器按钮直接传入完整定义，不用可视 Mesh 包围盒推导归属。
+Player-facing subgrid means an independently moving physical structure. Native `grids[]` inside one vehicle are mounting frames, grouped into one editor subgrid while IDs retain source grid and mounting transforms/metadata. See [mechanical mates](10_MECHANICAL_MATES.md).
 
-“子网格检查”按钮在分析有效时调用 `src/editor/subgrid-partition.js`，实际更新组件、节点、梁和面板的 `gridId`，连通部分合并归属、断开的部分分离。每个旧网格的最大片段优先保留原 ID，其余片段分配无冲突 ID；保留手动创建的空网格。位置、旋转、涂装、实例 ID、可见性组和连接端点不改变，跨组线路保留。整个操作是一条可撤销历史；重复检查无变化时不新增历史。缺失引用、分析覆盖不完整或跨组切断结构引用时拒绝分离，保留原工程。
+`analyzeSubgridIntegrity` in `src/editor/subgrid-connectivity.js` derives connected sets from mounting surfaces/nodes/beams/plates, using native units, X reflection, rotations, stretch, half-cell support offsets. It checks beam-interior/plate-interior contact, avoiding orphan handles merely distant from corners. Dedicated surfaces also participate, e.g. tow-hitch mechanical handles/engine pulleys. Signal lines/hoses/belts/cylinders do not create rigidity. Explicit mate endpoints and incidental contact across known joint-side subgrids do not weld. Geometry does not replace network/port validation. Legacy calls without definitions may use occupancy/bounds diagnostics; UI supplies full definitions rather than render bounds.
 
-结构遍历已按 2026-09-28 核对的游戏函数修正：梁通过共享端点相连，面板只沿实际边界梁引用连接，不能把面板所有角节点上的任意梁直接焊接。节点归属取自相连梁；无梁面板角节点、面板跨岛引用、重复 ID、退化/重复梁及非法面板报告错误。缺少部分边界梁、未被梁/面板引用的孤立节点和跨网格结构保留诊断，多个独立子网格本身不构成错误。检查失败不应用划分；节点定位使用独立的节点 ID 列表，避免原生面板与节点编号相同时标错位置。
+When valid, Subgrid check calls `src/editor/subgrid-partition.js` to update component/node/beam/plate `gridId`, merge connected sets/split disconnected ones. Largest fragment preferentially retains each old ID; others get unique IDs; manual empty grids persist. Positions/rotations/paint/instance IDs/visibility groups/endpoints stay unchanged; cross-group lines remain. One undo transaction; repeat no-op adds no history. Missing refs/incomplete coverage/cut structural refs reject partition and preserve project.
 
-没有直接接触组件的有效结构外壳本身不构成错误。`tests/subgrids.test.js` 使用真实 `test-vehicle/vehicle.data` 验证 159 个组件分为 4 个物理组，门把手、拖钩把手和滑轮不落单；合成用例覆盖安装面、独立结构分离、稳定 ID、失败原子性和快照撤销。`tests/native-export.test.js` 补充无梁节点、真实边界梁、跨岛拒绝和通用导出修复回归。浏览器用例覆盖实际归属、定位、中英文、保存重载和撤销/重做。可复核的 GCL 指纹、遍历规则和崩溃指令见 [原生结构岛](16_NATIVE_ISLANDS.md)；组件接触登记仍为静态近似，此实现尚未完成 1:1 游戏物理划分或游戏加载验收。
+Traversal follows game checks dated 2026-09-28: beams connect through shared endpoints; plates through actual boundary-beam references, never arbitrary beams at every corner. Node membership comes from beams. Beamless corners, cross-island plates, duplicate IDs, degenerate/duplicate beams, invalid plates are errors. Partial missing boundaries, unused orphan nodes, cross-grid structures remain diagnostics; multiple independent subgrids are not inherently errors. Failure applies no partition. Independent node-ID lists prevent confusing equal plate/node IDs during location.
 
-### 投影建梁与节点辅助显示
+Valid component-free shells are not errors. `tests/subgrids.test.js` splits 159 components in real `test-vehicle/vehicle.data` into four physical groups without orphaning door/tow handles/pulleys. Synthetic tests cover mounting surfaces, independent shells, stable IDs, atomic failure/history. `tests/native-export.test.js` adds beamless-node, real-boundary, cross-island rejection/general-repair coverage. Browser checks ownership/location/localization/save/reload/undo. See [islands](16_NATIVE_ISLANDS.md) for fingerprints/traversal/crash instructions. Contact registration is still approximate, not accepted 1:1 game partition/loading.
 
-- 屏幕坐标仅确定相机射线；无既有端点时与经过相机观察目标的相机朝向平面求交。首击以起点固定平面方向和深度，后续旋转相机不会改变这一条梁的建造平面；前视、顶视、斜视均支持。
-- 全局空间晶格固定为 `1 格 = 8 cm = 0.08` 世界单位；组件原点、节点、梁端点、面板引用的节点、镜像偏移和组件复制/移动位移均为世界 X/Y/Z 的整数格。工程、自动保存和中间 XML 导出都会拒绝非格点数据；只规范化浮点残差，不静默四舍五入真实非格点工程。缩放仍是无量纲比例，不能当作格数。
-- 默认自由模式优先吸附已有逻辑节点（隐藏时仍有效）；命中组件、梁或面板表面时，按一格节点立方体的边界沿表面外法线放置端点，再量化到全局 XYZ 整数格。未命中场景时才使用建造平面或工作平面；量化点可轻微偏离平面。已有节点可连接不同深度的端点。
-- 视口“轴向吸附”按钮或建梁时按 `A` 切换单轴模式，偏好持久化，默认关闭。开启后以起点为原点，自动选择最接近鼠标射线的世界 X/Y/Z 轴，仅该轴产生整数格位移；同轴已有节点优先并保留原坐标，非同轴节点不覆盖约束。近乎正对相机的轴不参与自动选择，以避免深度退化。
-- 第一次点击只生成起点草稿；鼠标移动显示透明实体梁，第二次点击一次性提交端点和梁。`src/editor/edge-ruler.js` 显示 XYZ 整数格分量及厘米换算，零分量也保留数值，随相机和视口尺寸更新；预览、标尺、提交共用终点解析。辅助 SVG/DOM 不参与拾取、历史、工程导出或自动备份。
-- Esc、切换工具、指针取消或恢复工程会清除草稿和标尺，不留下孤立节点；指针离开画布隐藏预览，返回后继续；同点、重复梁、非法或非格点坐标不会提交。
-- `src/editor/construction-view.js` 与显示网格共用尺寸常量：`20 / 250 = 0.08` 世界单位为一格。当前梁在两个端点各生成边长一格且与世界 XYZ 平行的节点立方块，连接点严格取自每个节点块原有的八个角点。单轴梁选择迎向另一端的一个面的四角；双轴梁选择两个方向面投影轮廓上的四个真实边缘角；一般三轴梁保留方向投影形成的全部六个真实轮廓角，并对应生成六个梁身侧面。因而斜梁截面宽度由节点立方体的边或对角线自然决定，允许大于一格，不再缩放截面、创建面内插值点或把三轴六边轮廓强制简化成四边形。该截图对照规则仍不代表游戏原始实现：`bin/game.gcl` 的定向反编译已定位 `vehicle_edge_util.add_static_geometry`、`vehicle_plates_edges_builder.add_edge_quad`、`vehicle_plates_edges_builder.add_edge_triangle` 及按非零端点轴分支的客户端调试几何。证据已经排除八边形/通用圆柱假设，但静态渲染器的精确分支和面片顺序仍待继续还原。连接保留原始路径点，使用实体圆柱段并在内部折点增加球形融合件；不同连接类型仅有编辑器诊断性的截面尺寸差异。梁和面默认浅灰色 `#cccccc`，正式面板使用不透明诊断材质。旧 `{id,a,b}` 梁无需 schema 升级即可显示。
-- 面板不再由节点中心统一沿法线平移。创建面板或玻璃时，以闭环绕序计算法线，并用 `normalOffset` 的正负号保存当时朝向镜头的一侧；渲染时在每个边长一格、世界轴平行的节点方块上先筛选该侧角点，再用前后相邻梁的局部内向半平面选择闭环内部角点，最后按闭环顺序三角化。镜头旋转不会令已创建面板跳到另一侧，旧面板仍按已有绕序和 `normalOffset` 兼容显示。该规则是截图对照的编辑器投影，不代表游戏面板精确拓扑已经还原。
-- Alt 点击实体梁时沿射线求中心线最近点，再从整数格向量的最大公约数导出的合法内部候选中选择最近点；没有内部整格时拒绝分割。
-- 节点是拓扑逻辑而非目录组件。可见状态下每个节点都有随相机投影的 DOM ID 标签；当前选择使用标签和球标记双重高亮。节点球和连接端口使用独立的固定颜色覆盖层，关闭深度测试并置于 Mesh 绘制层之上，因此组件涂色和子网格视图不会覆盖节点本身；子网格视图只改变组件、梁和面板颜色。标签仅从拓扑派生，不能进入工程 JSON、组件计数或撤销快照。右上角“隐藏节点 / 显示节点”同时控制标签和辅助球；不删除节点，不改变梁或面板，不进入工程快照和撤销历史。隐藏辅助标记时，移动工具仍按可选择勾选拾取逻辑节点；节点工具仍需显示辅助标记。建梁、吸附端点、分割或删除梁不受辅助标记显示影响。
-- 节点首次选择时锁定经过该节点的相机朝向建造平面；空白点击在该平面内吸附后移动节点。若目标与另一节点共点，`moveNodeAndMerge` 以单个候选状态重写梁/面板引用、消除自环或重复梁并校验后提交；失败不修改原状态。
-- 移动工具（G）按逻辑节点位置拾取，是否显示节点辅助标记不影响选择；只要“可选择对象”中的“结构对象”和“节点”勾选，关闭“显示节点”后仍可点击节点位置并拖动移动手柄。切换辅助标记显示不会清除当前节点选择或手柄；取消节点或结构对象的可选择勾选才会清除节点选择并禁止拾取。节点自身经隐藏工具隐藏或处于参考预览时仍不参与移动拾取。先选择单个节点再按 G 也进入同一节点操作。拖动保留原节点及其结构引用，关联梁端点和面板顶点随之更新，整次移动可撤销/重做。移动工具的悬停与点击共用屏幕容差，即使节点被粗梁或车身面板遮挡仍可选中；关闭梁选择不会关闭节点选择，点击梁身仍支持梁的整体移动。建梁保持原来的实体遮挡检查。节点工具（N）的点击移动和共点合并入口继续保留。
-- 移动/节点工具在远景下不因相机距离超过辅助层阈值而隐藏节点，切换工具立即更新；仍尊重“隐藏节点”、节点自身隐藏及参考预览。其他工具和网格辅助保留原有距离规则。`tests/browser/editor.spec.js` 的 `node movement`、`node overlay` 和 `node editing` 用例覆盖选择入口、粗梁/面板遮挡、远景、显式隐藏、共享引用、合并和历史。`native node overlays` 默认使用合成原生存档，也可设置 `ANYMAKER_NODE_SAMPLE` 为不含扩展名的配套存档路径，只读复测真实载具，测试中不覆盖原文件。
-- 工程恢复和拓扑命令在校验完整候选、准备显示几何后才替换场景；加载不含拓扑字段的旧工程会清空当前结构。聚焦支持只有节点/梁/面板的工程。
+### Projected beam construction and node helpers
 
-镜像预览由 `src/assets/geometry-ops.js` 对每个 Mesh 几何复制后反射位置、法线和三角形绕序，组件对象保持正缩放；因此预览不会依赖负缩放隐藏绕序问题。端口、关节和左右手性映射仍由原生定义适配器负责。
+- Screen position determines camera ray. Without an existing endpoint, intersect camera-facing plane through camera target. First click freezes plane direction/depth at start; later camera rotation does not change that beam's plane. Front/top/oblique views work.
+- Global lattice is one 8 cm/0.08 cell. Ordinary component/node/beam-end/plate-node positions, mirror offsets, copy/move displacements are integer world XYZ cells. Project/autosave/XML reject real off-grid data, normalizing floating error only. Scale is dimensionless. Native projection exceptions are documented in the format guide.
+- Free mode prioritizes logical nodes even hidden. Surface hits use one-cell node-cube boundary along outward normal, then global integer XYZ quantization. Only empty-space hits use construction/work planes; quantized positions may slightly leave plane. Existing nodes can connect different depths.
+- Axis snap button or `A` toggles persistent single-axis mode, default off. From start choose world X/Y/Z nearest the ray, with integer displacement on that axis only. Collinear nodes retain coordinates and priority; off-axis nodes do not override. Exclude nearly camera-aligned axes to avoid depth degeneracy.
+- First click creates draft only; movement previews transparent solid beam; second click atomically commits endpoints/beam. `src/editor/edge-ruler.js` shows XYZ whole-cell and cm components, including zeros, following camera/viewport. Preview/ruler/commit share endpoint resolution. SVG/DOM helpers are excluded from picking/history/export/recovery.
+- Esc/tool switch/pointer cancel/project restore clears draft/ruler without orphan nodes. Leaving canvas hides preview, returning resumes. Coincident/duplicate/invalid/off-grid beams do not commit.
+- `src/editor/construction-view.js` shares grid sizing `20 / 250 = 0.08`. Each end has a world-aligned one-cell cube; connections use its eight real corners. One-axis beams use four facing-face corners; two-axis beams use four real projected silhouette corners; general three-axis beams use all six silhouette corners and six side faces. Width follows cube edge/diagonal and may exceed one cell; no rescaled cross-sections, interpolated face points, forced four-corner reduction. This screenshot-derived rule is not full game implementation: targeted `bin/game.gcl` decompilation located `vehicle_edge_util.add_static_geometry`, `vehicle_plates_edges_builder.add_edge_quad` and `vehicle_plates_edges_builder.add_edge_triangle`, and axis-count branches in debug geometry. Evidence rejects octagonal/generic-cylinder assumptions; exact static-render branches/face order remain open. Connections retain original path points and render cylinder segments with spheres at bends; dimensions differ diagnostically by kind. Default beams/plates are `#cccccc`, plates opaque diagnostic material. Old `{id,a,b}` beams need no migration.
+- Historical plate projection selected camera-facing corners on each axis-aligned node cube, then inward half-planes of adjacent beams, triangulating in loop order. `normalOffset` sign retained creation side so camera motion did not flip it. This screenshot-derived method was not exact native topology; later uniform normal-support rendering in [Plate review](15_PLATES.md) supersedes it.
+- Alt-click beam chooses closest center-line point among legal interior lattice candidates derived from integer-vector GCD; reject if none.
+- Nodes are topology, not catalog components. Visible nodes have projected DOM ID labels and selected labels/spheres. Node spheres/ports use fixed-color overlays above Meshes without depth testing; paint/subgrid view cannot recolor them. Labels are derived, excluded from JSON/count/history. Hide/Show nodes toggles labels/spheres only, outside history. Move still picks logical nodes by selectability with helpers hidden; Node tool needs helpers visible. Beam creation/snap/split/delete is independent of helpers.
+- Initial node selection freezes a camera-facing plane through it. Blank click snaps/moves on that plane. Coincidence invokes `moveNodeAndMerge` atomically to rewrite references/remove self-loops/duplicates/validate; failure preserves state.
+- Move (`G`) picks logical positions regardless of helper display if Structures/Nodes selectability is enabled. Toggling helpers preserves selection/handle; disabling selectability clears it. Individually hidden/reference-preview nodes are excluded. Selecting one node then G uses same operation. Drag retains IDs/references, updates beams/plates, undoable. Hover/click share screen tolerance and permit node picking through thick beams/body plates. Beam selectability is independent; beam-body clicks still move whole beams. Beam construction retains solid occlusion checks. Node (`N`) click movement/merge remains.
+- Move/Node tools keep nodes visible at long camera distances, updating immediately on tool switch while honoring explicit hiding/reference preview. Other tools/grid helpers retain distance thresholds. Browser `node movement`, `node overlay`, `node editing` cover entry, beam/plate occlusion, distance, explicit hiding, shared refs/merge/history. `native node overlays` uses synthetic saves by default; `ANYMAKER_NODE_SAMPLE` may point to paired basename for read-only real-sample tests, never overwriting originals.
+- Restore/topology commands validate complete candidates and prepare geometry before replacing scene. Legacy no-topology loads clear current structure. Focus supports structure-only projects.
 
-该版本仍是编辑器原型：已配对组件、节点及完整梁/面板支持相应的镜像变换联动，内部连接支持复制后的引用重映射；端口、动态关节及左右手性定义仍未完成全部镜像语义映射。镜像结果保留操作元数据并在 Three.js 预览中显示反射，未经过游戏加载验收，不宣称任意镜像结果可直接导出为游戏语义。
+Mirror previews clone each geometry in `src/assets/geometry-ops.js`, reflecting positions/normals/winding while keeping positive object scale. Native definition adapters remain responsible for port/joint/handedness mappings.
+
+This remains a prototype. Paired components/nodes/complete beams/plates support corresponding mirrored transforms and copied internal references, but all port/dynamic-joint/left-right semantics are incomplete. Metadata and reflected Three.js previews do not establish that arbitrary mirrored results export valid game semantics. No game-loading acceptance.

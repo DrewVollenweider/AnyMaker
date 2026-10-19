@@ -1,61 +1,61 @@
-# 履带导入、渲染与导出
+# Track import, rendering, and export
 
-## 范围与来源
+## Scope and sources
 
-本轮只读研究当前本机游戏的 `bin/game.gcl` 和 ROM：链轮、固定滚轮、悬挂滚轮各 6 种，共 18 种组件；窄、标准、宽履带使用 3 种真实履带片 Mesh。游戏版本指纹、函数签名/代码偏移及哈希、常量地址、定义与 Mesh 指纹见 [证据摘要](evidence/tracks.json)。
+Read-only research covered the then-current local `bin/game.gcl` and ROM: six each of sprockets, fixed rollers, suspension rollers (18 definitions), and three real link Meshes for narrow/standard/wide tracks. Version fingerprints, function signatures/offsets/hashes, constant addresses, and definition/Mesh fingerprints: [evidence](evidence/tracks.json).
 
-已读取游戏的履带连接解析、轮心/半径查询、网络遍历、32 方向切线搜索、路径重建及实例变换函数。没有找到含链轮/滚轮的真实载具样本，因此本轮测试使用基于真实组件定义和原生字段的合成载具，不能视为游戏加载或画面 1:1 验收。
+Inspected paths include track-link parsing, wheel-center/radius queries, network traversal, 32-direction tangent search, path rebuilding, and instance transforms. No real vehicle sample containing track wheels was found. Tests use synthetic native-format vehicles based on real definitions, not game-loading or 1:1 visual acceptance.
 
-## 原生格式与网络
+## Native format and networks
 
-- 履带复用 `vehicles[].belt_links`。每条边保存 `p0 / p1`，每个端点为组件 ID `comp` 和原始 `logic_nodes` 索引 `pos`；索引 0 可省略。
-- 端口类型 `belt_track_narrow / belt_track / belt_track_wide` 决定宽度。编辑器把它们归入已有 `belt` 网络；不能与普通传动皮带或不同宽度的履带相连。
-- 两个轮子之间一条连接即可生成完整闭环；三个及以上轮子必须首尾相连、没有分叉。按连接顺序绕轮，不用凸包代替内凹托轮。
-- 工程仍使用 v1 `topology.links`；履带片是派生渲染数据，不写入工程，也不写成原生组件。履带边导出只包含原生端点，不输出路径采样点或诊断涂色。
-- 组件 ID 在导出时重映射，保留原始端口索引；普通皮带沿用原有行为。未闭合的多轮连接可保存，暂不显示实体履带。
+- Tracks reuse `vehicles[].belt_links`. Each edge has `p0 / p1`; endpoints contain component ID `comp` and original `logic_nodes` index `pos` (0 may be omitted).
+- `belt_track_narrow / belt_track / belt_track_wide` determine width. Editor uses the existing `belt` network but rejects mixing with drive belts or different track widths.
+- One edge between two wheels produces a closed loop. Three or more require a branch-free closed sequence. Follow connection order, preserving concave rollers rather than substituting a convex hull.
+- Project v1 `topology.links` is unchanged. Links are derived render data, not project/native components. Native edges contain endpoints only, without sampled paths or diagnostic paint.
+- Export remaps component IDs while preserving port indexes. Ordinary belts retain their behavior. Valid open multiwheel connections can be saved without solid track rendering.
 
-## 几何规则
+## Geometry
 
-| 组件尺寸后缀 | 原始轮径半径 | 履带片节距 |
+| Component suffix | Original radius | Link pitch |
 | --- | ---: | ---: |
 | small_narrow / large_narrow | 0.08 / 0.16 | 0.08 × π / 4 |
 | small / large | 0.18 / 0.34 | 0.16 × π / 4 |
 | small_wide / large_wide | 0.23 / 0.43 | 0.24 × π / 4 |
 
-以上为世界单位（1 格 = 0.08）。按游戏将半径量化到 `pitch / (2π)`，分别为 0.01 / 0.02 / 0.03；例如宽轮的 0.23、0.43 变为 0.24、0.42。切线使用 32 个方向；弧段与直段分别计算整片数量，按游戏调整直段分配长度，闭合后逐片采样。凹节点的入/出角收敛到角平分线，不生成额外整圈。
+Values are world units (one cell = 0.08). Game radius quantization uses `pitch / (2π)`: 0.01/0.02/0.03; wide radii 0.23/0.43 become 0.24/0.42. Tangents use 32 directions. Arc/straight sections calculate whole-link counts separately; straight allocated length is adjusted before sampling the closed path. Concave entry/exit angles converge to their bisector without an extra revolution.
 
-链轮轮心在组件原点；固定轮取第一个动态 Mesh 的 `pos`；悬挂轮取第二个动态 Mesh 的 `pos`。逻辑端口位置不是轮心。当前使用静态建造姿态，悬挂运行时位移和履带运动相位均为 0。
+Sprocket centers are component origins; fixed rollers use first dynamic Mesh `pos`; suspension rollers use second dynamic Mesh `pos`. Logic ports are not wheel centers. This is the static building pose with suspension displacement and track phase both zero.
 
-游戏的变换生成按节距采样直到实际分配路径末端；混合半径下，最后不足一节距的区间仍可生成一片，所以渲染数量可能比重建时四舍五入的名义数量多 1。编辑器保留此行为，并对实际实例数量执行上限检查。
+Game transforms sample by pitch to the actual allocated path end. With mixed radii, a final interval shorter than one pitch can still generate a link, yielding one more rendered instance than the rounded nominal rebuild count. The editor preserves this and caps actual instance counts.
 
-Mesh 的 X 沿履带，Y 沿半径，Z 沿轮轴；保留原生轴向偏移。每环每 Mesh part 一个 `InstancedMesh`，资源按需加载，编辑、撤销和删除走现有原子替换与 GPU 释放流程。负行列式坐标变换通过克隆并反射顶点/法线/绕序消除，不给实例矩阵使用负缩放。
+Mesh X follows track, Y radius, Z axle, preserving native axial offset. Use one `InstancedMesh` per loop/part, lazy resources, atomic replacement, and GPU disposal on edits/undo/deletion. Negative-determinant transforms clone and reflect vertices/normals/winding instead of applying negative instance scale.
 
-## 编辑器行为与边界
+## Editor behavior and limits
 
-- 连接工具选择“皮带 / Belt”，点击同宽度的履带轮端口。轮轴须同向、轮心须共面，暂不支持缩放的履带轮。
-- 移动任意轮子都会使整环缓存失效，包括不与第一条边相邻的轮子；撤销/重做恢复整个连接和形状。
-- 显示连接中的皮带开关控制编辑视图中的实体；原生参考预览保持履带实体可见。
-- 未闭合、分叉、宽度/平面不匹配、无有效切线或超出上限时，不伪造实体；已有合法引用的连接保留为诊断连线。资源与校验面板给出中英文原因。
-- 切线搜索最多 64 次，整场景最多生成 8192 片。这是编辑器分配限制，不是游戏限制。
-- 中性材质、静态轮心和固定相位不代表游戏材质、履带动力学、压力/张紧、碰撞、磨损或动态悬挂模拟。
+- Choose Belt and click same-width track-wheel ports. Axles must point the same way and centers be coplanar; scaled track wheels are unsupported.
+- Any wheel move invalidates the whole loop cache, including wheels not adjacent to its first edge. Undo/redo restores full connections/shape.
+- Belt visibility controls solids in editing; native-reference previews retain solids.
+- Open/branched/mismatched-width/nonplanar/no-tangent/oversized networks do not produce invented solids. Valid references remain diagnostic lines; localized resource/validation diagnostics explain failure.
+- Tangent search caps at 64 iterations; scene cap is 8192 links. These are editor allocation limits, not game limits.
+- Neutral materials, fixed centers/phase do not simulate game materials, dynamics, pressure/tension, collision, wear, or dynamic suspension.
 
-## 实现与验证
+## Implementation and validation
 
-- `src/editor/track-profiles.js`：组件、半径、轮心、节距与资源映射。
-- `src/editor/track-path.js`：纯数据网络与几何，不依赖 DOM/Three.js。
-- `src/editor/track-view.js`：真实 Mesh 实例化与坐标反射。
-- `tests/tracks.test.js`、`tests/track-fixtures.js`：三种宽度、18 定义、闭环、凹轮、混合轮径、异常网络、旋转、Mesh、端点及历史往返。
-- `tests/browser/editor.spec.js`：原生导入、实体、非相邻轮编辑、撤销/重做、显隐、参考预览、导出回读、连接工具和双语诊断。
+- `src/editor/track-profiles.js`: component/radius/center/pitch/resource mapping.
+- `src/editor/track-path.js`: pure-data network/geometry without DOM/Three.js.
+- `src/editor/track-view.js`: real Mesh instancing/coordinate reflection.
+- `tests/tracks.test.js`, `tests/track-fixtures.js`: three widths, 18 definitions, loops, concavity, mixed radii, invalid networks, rotation, Meshes, endpoints, history round trips.
+- `tests/browser/editor.spec.js`: native import, solids, nonadjacent wheel edits, undo/redo, visibility/reference preview, export/reimport, tool use, localized diagnostics.
 
-只读证据复核：
+Read-only evidence check:
 
     node scripts/check-track-evidence.mjs <game.gcl> <Anymaker/rom>
 
-仅更新 3 种履带片发布资源、保留其余 manifest 条目的离线命令：
+Offline update of only three track-link assets, preserving other manifest entries:
 
     node scripts/build-published-assets.mjs <Anymaker/rom> --tracks-only
     npm run check:assets
 
-前端运行不读取本机游戏目录。发布资源总数现为 868，其中 1 个既有 opaque 原生变体保持原状。
+Frontend never reads the local installation. Published resources total 868, including one unchanged opaque native variant.
 
-2026-09-28 实际验证：`npm run check` 通过 183 项单元测试及生产构建；编辑器浏览器回归 67 项通过，末端采样修正后又通过 3 项履带专用浏览器流程；`check:assets` 通过（800 个引用、868 个条目），游戏证据脚本核对 22 个函数、13 个常量、3 组源/产物 Mesh 哈希及 18 个定义。已人工查看四轮正视与三宽度斜视截图。生产构建已恢复为相对 base；没有运行游戏加载验收。
+Actual 2026-09-28 validation: `npm run check` passed 183 unit tests/build; 67 editor browser cases passed, then three track-specific workflows passed again after terminal-sampling correction. Asset checks passed (800 references, 868 entries). Evidence checks covered 22 functions, 13 constants, three source/output Mesh hash pairs, 18 definitions. Four-wheel frontal and three-width angled screenshots were visually inspected. Production relative base was restored. No game-loading acceptance.

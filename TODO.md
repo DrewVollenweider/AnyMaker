@@ -1,235 +1,226 @@
-# Anymaker Web Builder 阶段性 TODO
+# Anymaker Web Builder phased TODO
 
-更新日期：2026-09-28。先完成本清单和 doc/ 设计，再按依赖顺序实施。勾选只表示下述明确范围完成，不代表已经达到最终游戏兼容或视觉 1:1。
+Updated 2026-09-28. Complete requirements/design before dependent implementation. Checkmarks mean only the stated scope, never final game compatibility/1:1 visuals. This is a historical roadmap: later documents supersede older implementation descriptions where explicitly evidenced; unchecked items are not silently promoted by translation.
 
-## 范围与优先级
+## Scope and priorities
 
-- Google 云盘存档实现与配置见 [17 Google 云盘存档](doc/17_GOOGLE_DRIVE_ARCHIVES.md)。真实 OAuth 项目和账号的登录、上传、下载验收待完成；模拟 API 测试不代表真实服务验收。
+- Drive implementation/configuration: [Drive archives](doc/17_GOOGLE_DRIVE_ARCHIVES.md). Real OAuth/account login/upload/download acceptance remains open; mocks are not service acceptance.
+- Goal: Three.js desktop Web builder, real game Meshes, ultimately verified vehicle exports, static GitHub Pages hosting.
+- Mouse/keyboard desktop only this phase; touch/phone/tablet/mobile layouts/tests deferred.
+- Final exports are paired native `.data/.meta`, not XML. XML is development interchange; experimental write-back is not formal export. Do not implement/claim final compatibility without complete mapping/reference/game-loading evidence.
+- Current work is resource research/editor prototype. Complete materials/dynamic assembly/topology/subgrid editing/native export remain unfinished.
+- Production must be independently static: no installation/game files/game.exe dependency; ship all supported definitions/Meshes/materials/conversion manifests.
+- Lossless or validated lossy compression may save space, with auditable topology/coordinates/normals/UVs/material slots/bounds. Lazy loading must not sacrifice completeness.
+- All 794 component references are published: 793 decoded v5 static layouts, one blurred native variant retained as complete raw bytes/opaque pending decoder/render support.
+- Mirror/split/copy/move/merge are core requirements, not just Three.js Groups/negative scale.
+- Entry: [documentation](doc/README.md).
 
-- 目标：Three.js 纯 Web 桌面建造工具、真实游戏 Mesh、最终可验证的载具文件导出、GitHub Pages 静态部署。
-- 本期面向鼠标键盘和桌面浏览器。触屏手势、手机、平板、移动端布局与测试暂缓，不作为本期验收条件。
-- 最终导出目标明确为游戏原生配套 `.data` 与 `.meta`，不是 XML。现有 XML 仅作开发调试交换；原生回写试验不是正式导出。参考样本或完整映射与游戏加载证据不足时，不实现或宣称最终兼容导出。
-- 当前完成的是资源研究与编辑器原型。材质、动态装配、结构拓扑、子网格编辑和原生导出尚未完成。
-- 发布包必须是完整独立前端：运行时不读取游戏安装目录、不要求用户提供游戏文件、不依赖 game.exe；所有已支持组件定义、Mesh、材质和转换 manifest 必须随 GitHub Pages 静态资源发布。
-- Mesh 允许使用无损或经验证的有损压缩节省体积，但压缩前后的拓扑、坐标、法线、UV、材质槽和包围盒必须可审计；页面只对组件 Mesh 做 lazy loading，不牺牲资源完整性。
-- 当前发布资产已覆盖全部 794 个组件引用；其中 793 个按 v5 静态布局完成几何解析，1 个 blurred 原生变体以完整 raw bytes 入库并标记 opaque，待专门布局解析完成后再启用真实渲染。
-- 镜像、子网格拆分、复制、移动、合并是核心建造需求；不能仅用场景 Group 或负缩放代替。
-- 文档统一入口：[doc/README.md](doc/README.md)。
+## P0 · Requirements and documentation baseline
 
-## P0 · 需求与文档基线（先完成）
+- [x] Desktop-first; remove touch/mobile scope.
+- [x] Current/target module boundaries: [architecture](doc/01_SYSTEM_ARCHITECTURE.md).
+- [x] Definitions/topology/resources/unknowns: [Anymaker architecture](doc/02_ANYMAKER_ARCHITECTURE.md).
+- [x] Separate JSON/XML/native: [formats](doc/03_XML_AND_NATIVE_FORMAT.md).
+- [x] Per-component/multi-Mesh/lazy conventions: [split plan](doc/04_COMPONENT_MESH_SPLIT.md).
+- [x] Mirror/subgrid semantics, boundaries, undo, acceptance: [operations](doc/05_BUILD_OPERATIONS.md).
+- [x] Move old docs/reports from docs/ to doc/, update output paths/links.
+- [x] Extend .gitignore for Node/Vite/Playwright, local resources/research outputs while retaining lockfiles/fixtures/selected evidence.
+- [ ] Manual game baseline: version string, export entry, same-vehicle reference screenshots. At this roadmap date only EXE hash/static ROM evidence existed.
 
-- [x] 明确桌面优先，移出触屏/移动端适配。
-- [x] 记录系统现状和目标模块边界：[系统架构](doc/01_SYSTEM_ARCHITECTURE.md)。
-- [x] 记录 Anymaker 定义、载具拓扑、资源与已知不确定性：[Anymaker 架构](doc/02_ANYMAKER_ARCHITECTURE.md)。
-- [x] 区分工程 JSON、中间 XML 和原生文件：[XML 与原生格式](doc/03_XML_AND_NATIVE_FORMAT.md)。
-- [x] 确定单组件、多 Mesh 文件和按需加载约定：[拆分方案](doc/04_COMPONENT_MESH_SPLIT.md)。
-- [x] 明确镜像和子网格操作的语义、边界、撤销与验收：[建造操作设计](doc/05_BUILD_OPERATIONS.md)。
-- [x] 将原 docs/ 文档和扫描报告迁入 doc/，更新脚本输出路径与全部有效文档引用。
-- [x] 按 Node/Vite/Playwright、本地游戏资源和逆向产物补全 .gitignore，保留锁文件、测试 fixture 和选定证据报告。
-- [ ] 人工游戏对照基线：记录游戏版本字符串、导出入口、同一载具的参考截图；现阶段只有 EXE 哈希和 ROM 静态证据。
+Acceptance: every implementation traces to fields/design/checks; no guessed completion.
 
-验收：每项后续实现均能追溯到输入字段、设计与检查方法；未知项不能以猜测标记完成。
+## P1 · Prototype and resource research
 
-## P1 · 已实现原型与资源研究
+- [x] Drive belts: pulley/three engine wheels, mixed radii/reverse idlers, continuous 56 mm × 12 mm surface, real texture, tools/whole-loop refresh, real six-wheel sample. [Belts](doc/14_BELTS.md). Dynamic speed/phase, matched-camera visuals/game loading unaccepted.
+- [x] Automatic hinge/latch/mounting/rail/ballscrew/tow recalculation on commits; export multivehicle membership/references. Read-only 981.1 export/reimport: [mates](doc/10_MECHANICAL_MATES.md).
+- [ ] Actual game loading/dynamics, complex rigid attachment/cross-body network acceptance.
+- [x] Vite/Three.js, static build; Pages workflow was recorded as configured but not published at this historical stage. Inspect current workflow existence before use.
+- [x] 598 real definitions with optional Chinese-name search, original fields/hashes; compact square cards, 22 local SVG category icons/localized filters.
+- [ ] Local `.mesh` is development/audit only; paired `.data/.meta` import also must not become production prerequisite.
+- [x] Mesh v5 16/28/36-byte multipart decoding retaining vertices/normals/UVs/packed bytes/indexes.
+- [x] ROM audit: 3230/3333 Meshes parse; 793/794 component references supported, none missing.
+- [x] Explicit unsupported/truncated/out-of-bounds/trailing-data errors.
+- [ ] Neutral real-static-Mesh preview and explicit missing-model diagnostic markers (development).
+- [x] Select/place/delete/move/rotate/scale, Inspector, focus/grid.
+- [x] Inclined plate snapping through native normal/canonical origin, local cells, preview/click/J/K/L 90° consistency, fractional world coordinates, whole-cell moves/history/native frames. Based on five gauges/GCL, no unsupported arbitrary angles. Inclined mirroring/all collisions/game loading open: [placement](doc/12_INCLINED_PLACEMENT.md).
+- [x] Project JSON validation/history/XML download; JSON internal recovery, top Save/Open paired-native workflow.
+- [x] Paired starter_vehicle JSON validation; require one same-name data/meta, import components while domain retains topology not yet fully displayed at this initial stage.
+- [x] Read-only native-domain mapping with raw/unknown retention and diagnostic experimental JSON write-back, no game round-trip claim.
+- [x] Historical 37 unit/20 browser tests passed: editing/localization/XYZ/grid/node preferences, component/topology recovery, corruption/quota/multitab guards, 8 cm lattice in persistence, planar oblique beam orientation, rulers/axis snapping, closed plates/colors, pairing, real-reference fingerprints/full structure/black-background helper-free screenshot. Not visual parity. Routine `npm run check`, affected browser/assets, pre-release `npm run check:full`. Environment bulk-delete protection required temporary Vite `emptyOutDir: false`, restored afterward; clean-output rebuild was not verified.
+- [ ] Add real-Mesh render/handle-camera interaction regressions; existing tests do not establish game materials/visuals.
 
-- [x] 普通传动皮带：滑轮与三种发动机轮、混合轮径/反向惰轮、连续 56 mm × 12 mm 带面、原始纹理、连接工具和整环编辑刷新；真实六轮回路及证据见 [普通皮带](doc/14_BELTS.md)。动态转速/相位、同机位游戏画面对照及实际游戏加载仍未验收。
+## P2 · File separation, domain model, commands
 
-- [x] 自动机械配合：铰链、锁扣、安装销、导轨/丝杠滑块及拖钩在编辑提交后重算；原生导出按结构归属生成多 vehicle 与配合引用。981.1 样本已做只读导出/重导入回归，详见 [配合说明](doc/10_MECHANICAL_MATES.md)。
-- [ ] 上述配合的实际游戏载入、动力学行为、复杂刚性附着与跨刚体网络接口验收。
+Depends on P0; precedes mirror/subgrid business logic.
 
-- [x] Vite + Three.js 工程、静态生产构建；Pages 工作流已配置，尚未实际发布。
-- [x] 598 条真实组件定义及中文名称可搜索，保留原始定义字段和来源哈希；目录使用紧凑正方形网格卡片、22 类本地 SVG 分类图标和中文分类筛选。
-- [ ] 本地 `.mesh` 文件导入仅作为开发/资产审计工具；本地载具读取使用配套 `.data/.meta`，二者均不得成为最终发布路径的依赖。
-- [x] Mesh v5 三种布局（16/28/36 字节）和多 part 解码；保留顶点、法线、UV、packed 字节和索引。
-- [x] ROM 全量审计：3333 个 Mesh 中 3230 个通过当前解析器；794 个组件引用中 793 个支持、无缺失引用。
-- [x] 未支持布局、截断、越界索引和未知尾部明确报错。
-- [ ] 真实静态 Mesh 的中性材质预览；缺失模型显示明确的诊断标记（开发阶段）。
-- [x] 选择、工作平面放置、删除、移动/旋转/缩放控件、Inspector 数值编辑、相机聚焦、网格。
-- [x] 斜向结构面板吸附：按游戏安装网格法线及规范原点计算局部整格位置，预览/点击和 J/K/L 局部 90° 旋转一致；保留小数世界坐标、整格位移、工程历史及原生安装网格往返。依据 `test-vehicle/vehicle.data` 的 5 个仪表和 GCL 函数，不增加缺乏证据的任意角度面板；镜像斜面安装、全部碰撞规则及游戏加载仍未验收。见 [斜面吸附](doc/12_INCLINED_PLACEMENT.md)。
-- [x] 工程 JSON 校验、快照撤销/重做和中间 XML 下载；工程 JSON 仅用于内部自动恢复，顶部保存/打开改为配套 `.data/.meta` 载具流程。
-- [x] 同名配套 starter_vehicle.data/.meta 的 JSON 结构检查入口；页面仅在同时选择一份 `.data` 和 `.meta` 后允许确认导入，组件可导入场景，节点/梁/面板/连接拓扑仍保留在领域模型中，尚未完整绘制到场景。
-- [x] 原生 `.data` 只读映射到领域模型，保留 raw/unknown 字段；提供带诊断的 JSON 回写试验入口，尚未宣称游戏 round-trip 兼容。
-- [x] 37 项 Node 单元测试与 20 项浏览器流程测试通过，覆盖原有编辑流程、中英文界面、XYZ 视角、网格样式、节点颜色/大小/透明度设置刷新恢复、组件与结构自动备份、损坏/容量/多标签页保护、所有编辑器持久化位置的 8 cm 整数格约束、坐标平面内斜梁的稳定面朝向、XYZ 标尺和单轴吸附、闭合梁环面板与梁/面板颜色编号、同名 `.data/.meta` 配对导入，以及真实参考载具输入指纹、主载具完整结构导入和黑底辅助层关闭截图；这些检查不代表参考图渲染已匹配。日常验证使用 `npm run check`，按改动范围补跑指定浏览器或资产检查，发布前使用 `npm run check:full`。本次浏览器回归和构建因环境批量删除保护，临时使用 Vite `emptyOutDir: false` 保留旧产物，验证后已恢复配置；未完成清空输出目录后的重建验证。
-- [ ] 补充真实 Mesh 浏览器渲染回归、各变换控件拖拽与相机干扰测试；现有测试不能证明游戏材质/视觉一致。
+- [x] Lightweight component-index.json + definitions/<component-id>.json; no full data/vertices in index.
+- [x] Stable `index.json` with schema/resource version/manifest; legacy migration input retained.
+- [x] Separate bindings/<component-id>.json; one shared resource per original Mesh.
+- [x] Publish static/dynamic conversions in public/assets/meshes with hash/size/parts/compression/coordinates/bounds; `npm run check:assets` verifies.
+- [ ] Complete materials/textures in public/assets/materials, no online local-txtr prerequisite.
+- [x] Index/UI first; lazy details/bindings/gzip Meshes by component/visibility; published manifest, development local fallback.
+- [ ] Draco/Meshopt/KTX2/equivalent compression with hashes/vertex/image error/bounds/browser checks; reject unproven loss/error tolerance.
+- [ ] Special assembly modules per component, category indexes only; no giant switch/factory/vertex file.
+- [x] Separate reading/parsing/Three.js geometry/disposal.
+- [x] Separate dynamic assembly/published loader/disposal; materials open.
+- [ ] Split main.js composition/viewport/selection/tools/Inspector/I/O/native diagnostics.
+- [x] Three.js-independent Project/Vehicle/Grid/Component/Node/Edge/Plate/Link, separate native fields/adapters.
+- [x] Domain classes/migrations: known v0 retained, unknown versions rejected, native unknown fields preserved.
+- [x] Explicit gridId/local/parent frames, units/evidence; interval is not component size.
+- [ ] Full command transactions: validation/single undo/batch component actions implemented, atomic beam drafts/prepared restores and mixed transforms implemented; generic previews/all failure rollback still incomplete.
+- [x] ID allocator/basic whole-graph mapping shared by copy/mirror; complete port/reference mapping pending domain work at this stage.
 
-## P2 · 文件拆分、数据模型与命令系统
+Acceptance: cached deployed Pages needs no installation, index-first lazy assets/materials, resource disposal on delete/project switch, lossless fields/parsing across split.
 
-依赖 P0；应先于镜像和子网格业务实现。
+## P3 · Building tools and structural topology
 
-- [x] 将组件目录拆为轻量 component-index.json + definitions/<component-id>.json；索引只含搜索/分类/详情路径，不嵌入完整定义和顶点。
-- [x] 将组件索引同步为稳定的 `index.json`，补充 schema、资源版本和 Mesh manifest 引用；保留旧文件作为迁移兼容输入。
-- [x] 每个组件的 Mesh 绑定清单独立为 bindings/<component-id>.json；每个原始 Mesh 单独资源条目，共享 Mesh 只存一次。
-- [x] 将全部静态和动态 Mesh 转换后随仓库发布到 public/assets/meshes/，建立每个 Mesh 的 hash、大小、part、压缩、坐标系和包围盒 manifest；`npm run check:assets` 校验引用、文件和 hash。
-- [ ] 将完整材质/纹理转换结果随仓库发布到 public/assets/materials/；不能把本地 .txtr 选择作为线上运行依赖。
-- [x] 首屏只加载 index 与界面资源；组件详情、binding 和 gzip Mesh 按组件/可见性 lazy loading，运行时使用发布 manifest，开发期本地 Mesh 仅作 fallback。
-- [ ] 用 Draco/Meshopt/KTX2 或等效方案压缩资产，记录压缩前后 hash、顶点误差、图像误差、包围盒和浏览器兼容性；无法证明无损/可接受误差的资产不发布。
-- [ ] 每个需要特殊装配的组件一个模块；类别文件只作索引，禁止再次把所有组件的 switch/工厂/顶点挤进单文件。
-- [x] 拆分资产读取、Mesh 解析、Three.js 几何创建和资源释放模块。
-- [x] 拆分动态组件装配、发布资产加载和资源释放模块；材质解析仍待实现。
-- [ ] 拆分 main.js：页面组合、视口、选择、工具、Inspector、导入导出、原生检查分别管理。
-- [x] 新增领域模型 Project / Vehicle / Grid / Component / Node / Edge / Plate / Link；模型不依赖 Three.js，字段与原生适配器分离。
-- [x] 引入领域类型类和 schema 版本迁移；保留已知 v0 工程，拒绝不支持版本，原生未知字段在适配层保留。
-- [x] gridId + 局部变换 + 父级变换显式建模；保存单位/坐标依据，不把 interval 当成组件尺寸。
-- [ ] 命令事务化：完整工程校验、一次提交/撤销、多选组件复制/镜像/拆分/删除已接入；梁支持无持久化草稿、实体预览和端点原子提交，工程恢复及拓扑操作在候选显示准备后替换；梁/面板及混合选择的整体变换已接入，通用命令预览与全部异常回滚策略仍待补齐。
-- [x] 新增 ID 分配与基础全图 ID 映射器，供当前复制、镜像操作共用；端口/连接引用重映射待领域模型完成。
+- [x] 3D parsing sidebar: GLB/OBJ/STL, background envelopes/filtering, 13 targets 30–250 emphasizing 70–250, quad preference, optional centered X/Y/Z symmetry, scale/grid footprint/counts/wireframe, beams/optional normal plates, one undo. [Model import](doc/07_MODEL_IMPORT.md), not game acceptance.
+- [ ] Preserve deep concavity/separate pieces optionally, error controls/more real samples; compressed GLB/complex concavity/skinning unsupported.
 
-验收：断网打开已部署 Pages 后，除浏览器首次缓存外不需要游戏目录；启动只请求索引；选中组件按需加载已发布详情/绑定/Mesh/材质；删除或切换工程释放资源；拆分前后定义字段和解析结果无损。
+Implemented: component placement/delete/transform; Shift batch copy/mirror/split/delete; merge prototype; node tools/beam create/split/delete/plate overlays; mixed whole-cell move/90° rotation/manual mirror. Components/topology share atomic snapshots; full native round trip unaccepted. Depends on P2; nodes/beams/plates must be modeled alongside components.
 
-## P3 · Anymaker 建造工具与结构拓扑
+- [x] Node create/select/move/delete/snap/merge/IDs: independent topology, accessible projected labels/highlight, frozen-plane movement, atomic merge/reference cleanup, helper visibility/delete/save/history verified.
+- [ ] Full beam tool: point/continuous building, insert/split, length constraints, dependent-plate prompts. Implemented two-click camera-plane beams, automatic endpoints, one-cell 8 cm/0.08 cross-section, half-cell visual extension, axis-aligned faces/light-gray solids/transparent preview, integer-cell/cm rulers, persistent A-axis snap, cancel/atomic undo, legal interior Alt splits, hidden-node building.
+- [ ] Complete plate rendering/validity. Historical ordered-chain/early coplanar-convex-size-membership implementation later relaxed per [Plate review](doc/15_PLATES.md). Occlusion, closure/history, normal offsets, intersections/deduplication/concave triangulation fixed; thickness/outer/glass frames/game acceptance remain.
+- [ ] Full paint: component slots/beam/front-back/per-cell, original indexes/defaults. At this historical stage beam col/plate `col_front`/`col_back` diagnostic painting existed; full palette/material semantics incomplete.
+- [ ] Placement: surfaces/ports, axis locks, preview rotation, continuous placement, occupancy diagnostics.
+- [ ] Selection: single/add/remove/box, vehicle/grid/type filters, lock/hide/isolate. Shift components implemented.
+- [ ] Editing: batch delete/copy/cut/paste/repeat/arrays/local-world/pivot/measure. Batch delete/copy/X-mirror/split implemented.
+- [ ] Weld/cut with explicit structure/grid/vehicle semantics, never just Three.js merging.
+- [ ] Network tools for pairing/path/reconnect/delete and electric/mechanical/liquid/gas/belt/data views.
+- [x] Cylinders: three base/rod sizes, raw indexes, size/occupancy/length validation, diagnostics/delete/history, code-derived native references. Read-only Workshop 3809467608 round trip: 22 liquid lines/four steering circuits. [Hydraulics](doc/11_HYDRAULIC_CONNECTIONS.md).
+- [ ] Cylinder game loading/dynamics/arbitrary pose/pressure-flow/Mesh-material acceptance.
+- [x] Track endpoints/static rendering: 18 wheels, three real widths, two-wheel edge/multiwheel loops, cache/localized diagnostics; code/synthetic evidence [tracks](doc/13_TRACKS.md).
+- [ ] Real track saves/game loading/dynamic suspension/motion/collision/material comparison.
 
-- [x] 3D 模型解析：右侧资源与校验导入 GLB/OBJ/STL；后台外壳包络与细节滤波、13 档 30–250 顶点目标（重点为 70–250）、四边面优先、可选 X/Y/Z 中心对称、等比缩放、格点占地/结构计数和线框预览；确认生成梁及可选法向面板，支持整次撤销。支持范围与验证见 [07 3D 模型解析](doc/07_MODEL_IMPORT.md)；不代表游戏加载验收。
-- [ ] 模型外壳增加深凹槽/分离部件保留选项、误差控制与更多真实模型回归；压缩 GLB、复杂凹多边形及骨骼模型仍待支持。
+Acceptance: minimal node-beam-plate frame editable/saveable without dangling references; cancel/history restores fully.
 
-当前已落地组件级放置、删除、变换，以及 Shift 加减选后的批量复制、镜像、拆分和删除；还包括子网格合并原型、完整节点工具、梁创建/分割/删除、面板与拓扑覆盖层。梁、面板和组件混合选择支持整格平移、90° 整体旋转和按当前平面手动镜像复制。组件与拓扑采用同一工程快照原子撤销重做，完整 native round-trip 仍待验收。
+Implemented structural tools: separate Split beam (I)/Alt inserts affected plate nodes; Glass (J) uses closed beam rings/native-observed `type: "window"`; six networks retain endpoints/optional ports/grid paths/render/delete/history/native import. Inner faces use normal support/depth bias; thickness/outer edges unfinished. Duplicate plates/windows on one loop rejected. Port compatibility/glass damage/full write-back require game evidence.
 
-依赖 P2。Anymaker 的节点、梁、面板必须与组件放置一起建模。
+## P4 · Mirror and subgrid core operations
 
-- [x] 节点工具：创建、选择、移动、删除、吸附、共点合并；显示节点 ID。（节点为独立拓扑逻辑；ID 以随相机投影的可访问视口标签显示，选择有高亮，移动使用冻结相机平面及面内吸附，移动到共点会原子合并并清理重复引用；辅助显隐、删除、保存加载和撤销重做均已验证）
-- [ ] 梁工具：点到点连线、连续建造、插点/分割、长度约束、删除及关联面板提示。（支持相机平面直接两击建梁、自动创建/复用端点、一小格截面边长（8 cm / 0.08 世界单位）、视觉延长半格以完整覆盖起止格、世界轴向梁面与 XYZ 平面对齐、浅灰实体与透明预览、仅显示整数格与厘米的 XYZ 标尺、可持久化单轴吸附（A 切换）、取消与原子撤销；Alt 点击实体梁仅在合法内部整格分割，隐藏节点仍可建造）
-- [ ] 面板工具：完整游戏渲染和合法性校验。（已按当前 GCL 静态证据修正为从有序梁链两端续选，提前检查共面/凸性、尺寸和归属；悬停及点击尊重前景遮挡，闭合创建并支持撤销。内部面按法线支撑偏移，自交校验、重复边界去重和旧凹面三角化已修复。完整厚度、外沿、玻璃内框及真实游戏验收仍待完成，见 [Plate 复核](doc/15_PLATES.md)。）
-- [ ] 涂装工具：组件色槽、梁色、面板正反面、逐格 paint；保留原始颜色索引与默认规则。（当前梁 `col`、面板 `col_front`/`col_back` 可由涂色工具设置，使用诊断色预览；组件色槽、逐格 paint、完整调色板和游戏材质逻辑未验证）
-- [ ] 放置工具：射线表面吸附、连接面/端口吸附、轴锁定、预览旋转、连续放置、占用冲突提示。
-- [ ] 选择工具：单选、加减选、框选、按车辆/网格/类型过滤；锁定、隐藏与孤立显示。（Shift 点击组件加减选已接入）
-- [ ] 编辑工具：批量删除、复制/剪切/粘贴、重复、数组排列、局部/世界轴、pivot 设置、测量。（批量删除、复制、X 平面镜像和拆分已接入）
-- [ ] 焊接与切割工具：明确结构连接、网格归属与载具归属变化；不能把 Three.js 对象合并当成游戏焊接。
-- [ ] 接线工具：端口配对、折点、重接、删除，按 electric/mechanical/liquid/gas/belt/data 分网显示。
-- [x] 液压缸连接工具：三尺寸底座/杆端、原始端口索引、尺寸与占用校验、长度参数、诊断显示、删除和撤销/重做；按游戏代码保存/恢复双向原生引用。Workshop 3809467608 的 22 条液体管线及 4 条车轮转向油路已做只读往返复核，详见 [液压连接](doc/11_HYDRAULIC_CONNECTIONS.md)。
-- [ ] 液压缸的真实游戏加载、动力学、任意仿真姿态、压力/流量及游戏 Mesh/材质对照验收。
-- [x] 履带端点导入/导出与静态渲染：18 种链轮/滚轮、三宽度真实履带片 Mesh、两轮单边/多轮闭环、整环缓存刷新及双语诊断。游戏代码证据与合成样本验证见 [履带](doc/13_TRACKS.md)。
-- [ ] 使用真实履带载具存档复核，并完成游戏加载、动态悬挂、履带运动、碰撞和材质对照验收。
+Depends on P2/P3 topology/remapping; includes components/nodes/beams/plates/links.
 
-验收：最小节点—梁—面板框架可编辑并往返保存；删除和批量修改不会留下悬空引用；取消及撤销能完整复原。
+### P4.1 Mirror
 
-已实现的结构连接工具：梁工具支持独立“切分梁”（I）与 Alt 快捷切分，并把新节点插入受影响面板边界；玻璃工具（J）沿用面板的闭合梁环选择，并创建原生样本观察到的 `type: "window"` 面板；连接工具支持 electric、mechanical、liquid、gas、belt、data 六类网络，保存端点、可选端口与格点路径，支持渲染、删除、撤销和原生样本导入。结构内部面按法线计算统一节点支撑偏移，并保留渲染深度偏置；完整厚度和外沿仍未实现；同一闭合梁环禁止重复叠放面板或玻璃。端口兼容性、玻璃受击状态与完整游戏回写仍需真实游戏证据，当前不宣称兼容。
+Manual mirror copies selected components/nodes/beams/plates/internal links across world X/Y/Z integer-offset plane, retaining originals/selecting copies. Continuous supports placement/delete/paint/paired-component transforms/node moves/complete paired structures. Local/multiplane/handed/port semantics unfinished.
 
-## P4 · 镜像与子网格操作（核心需求）
+- [x] Whole beam/plate transforms/manual mirror: pure transactions, shared-node splitting, shape/front-back retention, endpoint mapping, handles/Inspector/cancel/single undo/deduplication. [Operations](doc/05_BUILD_OPERATIONS.md#whole-transforms-of-beams-plates-and-mixed-selections). 90° structure steps; inclined component whole rotation/mirror/game loading unaccepted.
+- [ ] X/Y/Z/combined world/local planes/offsets.
+- [ ] One-shot and continuous building fully; current placement/delete/paired moves/rotation/paint work, relationship preview/complex topology open.
+- [ ] Synchronized pivots/axes/normals/winding/front-back paint/ports.
+- [ ] Handed door/bracket/joint maps; reject unsupported equivalents.
+- [ ] Cross-grid links/dynamic constraints, not scale.x=-1.
+- [ ] On-plane/multiplane deduplication without merging different structures/ports by position alone.
+- [ ] Persist settings; one undo per mirror transaction.
 
-依赖 P2 + P3 的拓扑和引用重映射；每项包括组件、节点、梁、面板和相关连接。
+### P4.2 Split
 
-### P4.1 镜像
+Prototype single/Shift component new-grid membership saves/undoes; boundary structures/links open.
 
-镜像模式的“手动镜像”按钮将当前选中的组件、节点、梁、面板及内部连接按世界 X/Y/Z 平面和整数格偏移复制，保留原件并选中新副本。持续模式支持放置、删除、涂色、配对组件变换、对应节点移动，以及完整配对梁/面板的整体变换。局部坐标、多平面组合、手性组件映射和端口语义同步仍未完成。
+- [x] Connectivity check repartitions all entities with world pose/cross-links/stable IDs/history, mounting-frame handles in physical subgrids; partial cuts/game physics open.
+- [ ] Selected split with new origin/pivot/world-pose preservation.
+- [ ] Whole versus partial topology; explicit keep/copy-boundary/cancel policy.
+- [ ] Explicit network keep/reconnect/disconnect; list changed endpoints/constraints.
+- [ ] Valid IDs/ports/nodes/references; no accidental dynamic-Mesh splitting into game grids.
 
-- [x] 梁/面板整体变换及手动镜像：纯数据事务、共享节点分离、保持形状与正反面颜色、连接端点重映射、视口手柄/属性输入、拖动取消、单步撤销及重复镜像去重。见 [操作说明](doc/05_BUILD_OPERATIONS.md#梁面板及混合选择的整体变换)；结构旋转为 90° 步长，斜面安装组件整体旋转/镜像和游戏加载仍未验收。
+### P4.3 Copy
 
-- [ ] X/Y/Z 单平面与组合平面镜像；可指定世界/网格局部坐标及平面偏移。
-- [ ] 支持一次镜像复制和持续对称建造；持续模式已覆盖放置、删除、已配对组件及节点的移动、组件旋转和涂装，对应关系预览与复杂拓扑同步仍待完成。
-- [ ] 原点/pivot、轴向、法线、面板绕序、正反面涂装和端口朝向同步变换。
-- [ ] 定义具有左右手性的组件映射（如门、支架、关节）；没有等价定义时阻止提交并显示原因。
-- [ ] 镜像跨网格连接与动态约束；不能仅对 Three.js 设置 scale.x = -1。
-- [ ] 平面上的实体去重，多平面重复结果合并；仅位置相同不能合并不同结构/端口。
-- [ ] 保存镜像设置；一次镜像事务一条撤销记录。
+Prototype independent IDs/offset/one undo for component selections; full subtree/internal/external candidate support open.
 
-### P4.2 子网格拆分
+- [ ] Complete grid/subtree transforms/nodes/beams/plates/paint/links.
+- [ ] New IDs/remapped internal refs; external excluded by default with reconnection candidates.
+- [ ] Preview/snap/repeat/whole undo, independent mutable copies.
 
-当前原型已支持将单选或 Shift 多选组件写入新的 `gridId`，并可保存/撤销；跨边界节点、面板和连接策略仍未完成。
+### P4.4 Move
 
-- [x] 子网格检查按完整连通组实际更新组件/节点/梁/面板归属，保留世界姿态、跨组线路与稳定 ID，支持单步撤销/重做；原生安装帧中的把手归入所属物理子网格。局部切割与游戏物理验收仍未完成。
+Prototype single-component transforms; reparent/pivot/joints open.
 
-- [ ] 将选中集合从源网格拆到新网格，选择新 origin/pivot，并保持世界空间位置/方向。
-- [ ] 区分整体子网格与局部拓扑：边/面跨切割边界必须提示，并提供明确的保留、复制边界节点或取消策略。
-- [ ] 跨网格电气/机械/流体/数据连接明确保留、重接或断开；列出会改变的端点与约束。
-- [ ] 拆分后的 gridId、实例 ID、端口、结构节点和依赖引用有效；动态部件不被误拆为游戏子网格。
+- [ ] Whole translation/rotation/pivot, local/world/numeric/grid/port snap.
+- [ ] Reparent/vehicle conversion with preserved world pose and previewed constraints/links.
+- [ ] Joint freedoms/ranges; no scaling bypass.
 
-### P4.3 子网格复制
+### P4.5 Merge
 
-当前原型已支持单选或 Shift 多选组件的独立 ID、位置偏移和一次撤销复制；完整子树、内部连接和外部连接候选仍未完成。
+Prototype membership-ID merge retains components; deduplication/compatibility/welding/conflicts open.
 
-- [ ] 复制完整网格或选中子树，内部相对变换/节点/梁/面板/涂装/连接保持一致。
-- [ ] 所有复制实例分配新 ID；内部引用映射到新实例，外部连接默认不复制并列出候选重接目标。
-- [ ] 复制预览、吸附放置、重复复制和整次撤销；复制体后续修改不影响源对象。
+- [ ] Destination-frame conversion and lattice/rotation/port validation.
+- [ ] ID remapping and explicit node/beam/plate tolerances/property conflicts.
+- [ ] Precommit occupancy/paint/boundary/joint diagnostics; no silent loss.
+- [ ] Rebuild all references without welding hinge/suspension endpoints.
+- [ ] Split/move/copy/merge save/load/history topology consistency.
 
-### P4.4 子网格移动
+Acceptance: same test vehicle, unique IDs/full references/transform tolerances/normals/ports/paint, unsupported combinations rejected before modification.
 
-当前原型的变换工具支持单组件移动；跨父级坐标、pivot 和关节约束仍未完成。
+## P5 · Component types and real visuals
 
-- [ ] 整体平移/旋转及 pivot 编辑；支持本地轴/世界轴、数值输入、网格/端口吸附。
-- [ ] 移动到另一个父级/车辆时转换局部坐标并保持世界姿态，预览约束与跨网格连接变化。
-- [ ] 移动带关节网格时检测允许自由度/运动范围；禁止通过随意缩放绕过约束。
+Depends on P2, may proceed modularly with P3/P4.
 
-### P4.5 子网格合并
-
-当前原型已支持将已有 `gridId` 合并到目标 ID，并保留组件实体；节点去重、端口兼容、结构焊接和冲突报告仍未完成。
-
-- [ ] 指定目标网格，源实体转换到目标坐标系；先验证格点、旋转表示和端口兼容性。
-- [ ] ID 冲突重映射；节点/梁/面板去重需有显式容差和属性冲突规则。
-- [ ] 占用重叠、不同涂装、结构边界和跨网格关节冲突在提交前列出；不静默丢弃数据。
-- [ ] 合并后重建内部与外部引用；不把作为铰链/悬挂两端的网格强行焊死。
-- [ ] 拆分→移动→复制→合并操作链保存/加载和撤销/重做均保持拓扑一致。
-
-验收：对同一测试载具运行上述操作，检查 ID 唯一、引用完整、世界变换误差阈值、法线/端口方向和涂装；任何不支持的组合在修改工程前报错。
-
-## P5 · 各类型组件与真实视觉
-
-依赖 P2；与 P3/P4 可分模块推进。
-
-| 分组 | 组件类别/代表 | 专用任务 |
+| Group | Classes/examples | Special work |
 | --- | --- | --- |
-| 结构与装饰 | building、furniture、weight_block、节点/梁/面板 | zones、各轴 tile/stretch、厚度、孔洞、正反面 |
-| 动力传动 | engine、gearbox、torque、motor | 轴向、长度变体、扭矩端口、静态/动态装配 |
-| 行走与航空 | wheel、履带、landing gear、aircraft | 悬挂、轮毂、转子、舵面、可动 pivot |
-| 流体与液压 | gas、liquid、hydraulic | 容器、泵、阀、歧管、活塞、端口类型 |
-| 电气与逻辑 | electric、data、sensor、interface | 电气端口、信号类型、参数 schema、微控制器 |
-| 操作与连接 | control、mechanical、connector | 关节、滑轨、门闩、座椅、操作机构 |
-| 通用设备 | storage、light、sound、radio、weapon | 库存、灯光、音频/无线端口、弹链与安装约束 |
+| Structure/decor | building/furniture/weight_block/nodes/beams/plates | zones/tile/stretch/thickness/holes/front-back |
+| Powertrain | engine/gearbox/torque/motor | Axes/lengths/ports/static-dynamic assembly |
+| Ground/air | wheel/tracks/landing gear/aircraft | Suspension/hubs/rotors/control surfaces/pivots |
+| Fluid/hydraulic | gas/liquid/hydraulic | Tanks/pumps/valves/manifolds/pistons/ports |
+| Electric/logic | electric/data/sensor/interface | Ports/types/property schemas/controllers |
+| Controls/mates | control/mechanical/connector | Joints/rails/latches/seats/mechanisms |
+| Equipment | storage/light/sound/radio/weapon | Inventory/light/audio-radio/ammo/mounting |
 
-- [ ] 为每类逐个记录已接入定义、真实 Mesh、动态部件、占用和端口覆盖率，不能只以目录中“可搜索”算完成。
-- [ ] 支持 meshes_dynamic 的位置/preview_rot、层级与 pivot；验证矩阵存储顺序及坐标单位。
-- [ ] 分析唯一未支持的组件引用 Mesh（当前以完整 raw bytes 入库并标记 opaque），扩展布局时添加最小 fixture；骨骼/动画尾部单独处理。
-- [ ] 解析 .txtr、材质槽、packed color、调色板和游戏着色器；中性材质预览不能作为最终结果。
-- [ ] 按单 Mesh 输出 GLB/压缩 glTF，保留 part 名称与材质边界；共享纹理/几何去重；所有运行时依赖进入发布资产清单。
-- [ ] 真实坐标与双面/透明/发光/阴影校验；不靠 DoubleSide 隐藏绕序问题。
-- [ ] 游戏同机位截图、顶点/索引/bounds/材质统计形成 1:1 验收表；每项差异有原因与修复状态。
-- [ ] 按需加载、缓存上限与回收、缩略图、实例化、LOD、剖切/线框，记录桌面性能基准；lazy loading 只改变加载时机，不减少已入库组件覆盖率。
+- [ ] Per-class coverage of definitions/Meshes/dynamic parts/occupancy/ports, not searchable-catalog counts alone.
+- [ ] Dynamic pos/preview_rot/hierarchy/pivots, matrix order/units.
+- [ ] Decode the one opaque component Mesh with minimal fixture; skeleton/animation tails separately.
+- [ ] txtr/material slots/packed colors/palette/shaders; neutral preview is not final.
+- [ ] Per-Mesh GLB/compressed glTF retaining names/material boundaries/shared deduplication/full dependency manifest (original proposal; current gzip implementation documented separately).
+- [ ] Coordinates/two-sided/alpha/emissive/shadows; no DoubleSide masking winding errors.
+- [ ] Matched-camera screenshots/vertices/indexes/bounds/material comparison table with explained differences.
+- [ ] Lazy cache limits/disposal/thumbnails/instancing/LOD/cutaway/wireframe/desktop benchmarks without reducing asset coverage.
 
-### 指定参考载具渲染基准
+### Designated reference rendering
 
-- [x] 登记 `test-vehicle/vehicle.data`、`vehicle.meta` 和游戏默认渲染 `vehicle.png`，文件指纹与结构计数见 `doc/evidence/vehicle-reference.json`。这是独立的多载具样本，不是 starter_vehicle：48 定义、4 载具、9 网格、159 组件、271 节点、493 梁、138 面板；参考图为 512×512。
-- [ ] 加载完成后，以此红色车身参考图为默认渲染对照目标。主载具 553 现已解决多载具组件 ID 冲突、8 cm 单位、真实面板前三点共线及三角化，并保留组件/梁/面板颜色编号、玻璃标识；导入后自动进入黑底参考预览，隐藏编辑辅助并输出浏览器回归截图。车辆/网格父变换的完整语义、同机位相机、光照、游戏调色板/材质、轮廓和动态装配仍待证据，尚不能将像素对比标为通过。
-- [ ] 标定同机位相机/投影、光照、曝光、背景与资源版本；关闭节点/网格辅助层，按基准截图记录几何误差和图像差异。相机与容差未知时不得把人为挑选的角度/像素阈值称为通过。
-- [ ] 基准必须使用真实载具数据构建 3D 模型；不能贴参考截图到画布冒充渲染还原。
+- [x] Register `test-vehicle/vehicle.data`, `vehicle.meta`, `vehicle.png`; [fingerprints/counts](doc/evidence/vehicle-reference.json). Distinct from starter: 48 definitions/four vehicles/nine grids/159 components/271 nodes/493 beams/138 plates, 512×512 reference.
+- [ ] Use red-body reference as visual target. Vehicle 553 resolves cross-vehicle ID conflicts/8 cm/initial collinear plate nodes/triangulation, retains native colors/glass. Automatic black helper-free preview/screenshots exist. Full parent transforms/matched camera/light/materials/outlines/dynamic assembly remain unproven; no pixel pass.
+- [ ] Calibrate camera/projection/light/exposure/background/resource version, helpers off, record geometry/image error; no handpicked angle/tolerance acceptance without evidence.
+- [ ] Real 3D reconstruction from native data, never reference-image-on-canvas substitution.
 
-验收：实际几何、动态装配和材质同时匹配游戏，才标记对应组件视觉完成。
+Acceptance: geometry/dynamic assembly/materials all match before component visual completion.
 
-## P6 · 原生 .data / .meta 配套导出
+## P6 · Native paired .data/.meta export
 
-当前新增 `src/native/anymaker-data.js`：可将 `.data` JSON 的车辆 transform、grid origin/dir、组件 definition/pos/rot、节点、梁、面板和六类连接映射到领域模型，并保留原始未知字段。它是只读导入和证据层，尚未声称可写回游戏存档。
+`src/native/anymaker-data.js` maps vehicle transform/grid origin-dir/component definition-pos-rot/structure/six networks into domain data, retaining unknowns. Initially read-only evidence, no compatibility claim. Depends on stable P2–P5 model/[formats](doc/03_XML_AND_NATIVE_FORMAT.md).
 
-依赖 P2–P5 的稳定领域模型；基于 [格式文档](doc/03_XML_AND_NATIVE_FORMAT.md) 实现。
+- [x] Starter root/JSON counts: 112 nodes/181 beams/27 plates/two grids/39 components.
+- [x] Native-only nonplanar cleanup shared by normal/subgrid import, retaining valid entities/rejecting other errors. Real 981.1 browser removed 11 plates/save-reimported; originals untouched/no game acceptance. [Cleanup](doc/03_XML_AND_NATIVE_FORMAT.md#removing-nonplanar-plates-on-native-import).
+- [ ] Complete origin/dir/m/t/pos/rot/ext/definition-index/omitted-default mapping.
+- [ ] Paint/endpoints/constraints/state, unknown fields/array order preserved.
+- [ ] Confirm paired schema/generation/loading from samples, not other games or XML delivery.
+- [ ] Formal edited-project export with IDs/indexes/structures/networks/frames/units/colors/state/unknowns/defaults/meta bounds. Historical requirement only: incomplete mapping/no loading evidence must not become fake-compatible export.
+- [ ] Import/edit/export round trip, independent validator/field diffs, game loading for at least three vehicle classes.
+- [ ] Extend project/XML domain data with migrations/unknown-field policy.
+- [ ] Reject unsupported mirror/rotation/scale/grid relationships with entity diagnostics.
 
-- [x] 读取 starter_vehicle.data 的根结构与计数；确认 JSON 内容（112 节点、181 梁、27 面板、2 网格、39 组件）。
-- [x] 原生导入自动删除不共面面板并显示数量；普通导入与子网格导入共用，保留节点、梁和有效面板，其他非法数据仍报错。`981.1` 实际浏览器验证删除 11 面后加载及保存重导入成功；原始文件未修改，未执行游戏加载验收。见 [导入清理规则](doc/03_XML_AND_NATIVE_FORMAT.md#原生导入时清理不共面面板)。
-- [ ] 解析 grids.origin/dir、transform.m/t、components.pos/rot/ext、definition 索引和默认省略值。
-- [ ] 解析板件 paint、连接端点、约束、状态；原始未知字段和数组顺序在适配层保留。
-- [ ] 按原生配套样本确认 `.data` 与 `.meta` 字段、生成规则和读取入口；记录证据，不套用其他游戏 schema，不再把 XML 路径作为交付目标。
-- [ ] 正式导出当前已编辑工程的配套 `.data` / `.meta`：同步原生 ID/定义索引、结构与连接、父变换/单位、颜色/状态、未知字段/省略值和 metadata bounds。当前已有文件参考，但映射不完整且没有游戏加载验收，本轮仅登记需求，不实现伪兼容导出。
-- [ ] 原生导入→编辑→导出 round-trip、独立校验器、字段级差异报告；游戏加载至少三类载具回归。
-- [ ] 扩展工程/中间 XML 到车辆、网格、结构、连接、颜色等领域数据，定义版本迁移与未知字段策略。
-- [ ] 原生格式不支持的镜像/旋转/缩放/网格关系阻止兼容导出，给出实体级诊断。
+Acceptance: game-compatible means actual game-loading evidence, not downloaded/parseable XML.
 
-验收：有实际游戏加载证据的文件才称“游戏兼容”。成功下载 XML 或通过 XML 语法解析不能代替此项。
+## P7 · Advanced desktop and publication
 
-## P7 · 桌面高级能力与发布
+- [ ] Blueprints/templates/selection sets/tree/hide-lock/parameters/command palette/shortcut settings.
+- [x] 60-second committed-snapshot recovery, hidden/leaving saves, previous backup, corruption/disabled/quota/multitab protection; subinterval crash loss possible.
+- [x] Versioned settings for language/grid/node/snap/panels/drawers/search/tool/camera/target.
+- [x] English default/optional Chinese switch, floating toolbar/middle-side handles.
+- [x] Camera-following XYZ/six axes/isometric/focus; perspective at this historical stage, orthographic separate.
+- [ ] Complete migration/missing-resource diagnostics/formal export checklist.
+- [ ] Three-axis orthographic/measure/cutaway/mass-center estimates; evidenced buoyancy/thrust formulas only.
+- [ ] Keyboard accessibility/recovery/WebGL2 fallback; no mobile.
+- [x] Relative Pages base/subpath browser tests.
+- [ ] Reproducible local prebuild unit/browser/assets/budget guide; Pages hosts committed `main /docs`, no Actions build.
+- [ ] Complete manifests/reachable references/hashes/size/lazy checks; never publish partial assets after failure.
+- [ ] Desktop Chrome/Edge/Firefox/low-GPU benchmarks.
+- [ ] Actual Pages/root/subpath acceptance; no online URL record at this roadmap date.
+- [ ] Clear import/formats/asset version/visual/native acceptance status.
 
-- [ ] 蓝图/模板、选择集、结构树、隐藏/锁定、实例参数、命令面板、快捷键配置。
-- [x] 本地工程每 60 秒自动备份并在下次启动校验恢复；额外处理页面隐藏/离开、上一份有效备份、存储损坏/禁用/额度不足、多标签页覆盖冲突。只保存已提交快照，不能保证崩溃前不足一次周期的改动不丢失。
-- [x] 设置使用版本化 localStorage 保存：语言、网格颜色/透明度/实虚线/显隐、节点显隐、吸附、面板宽度和开关、抽屉、目录筛选/搜索、工具、相机位置和观察目标。
-- [x] 默认英文、左上角中文/英文即时切换；工具栏独立悬浮，左右中部竖向把手折叠面板。
-- [x] 随相机旋转的 XYZ 方向指示器，整合六个轴向视角、等距和聚焦；仍使用透视相机，正交投影模式另列。
-- [ ] 完整项目版本迁移策略、资源缺失诊断、正式游戏导出检查清单。
-- [ ] 三轴正交投影、测量、剖切、质心与质量估算；浮力/推力等数值只采用有证据的公式。
-- [ ] 桌面键盘无障碍、错误恢复、WebGL2 降级页面；不加入触屏/移动端工作。
-- [x] Pages 相对 base 和项目子路径浏览器测试已建立。
-- [ ] 为本地预构建发布补充可重复的单元、浏览器、资产完整性与预算检查说明；GitHub Pages 直接托管已提交的 `main /docs`，不在 Actions 中执行构建。
-- [ ] Pages 构建检查完整 Mesh/材质 manifest、每个引用可访问、压缩 hash、总大小和 lazy loading 路径；构建失败时不得发布缺失资产的半套前端。
-- [ ] 桌面 Chrome/Edge/Firefox 回归与低性能 GPU 基准。
-- [ ] Pages 实际发布、根路径/仓库子路径资源检查；当前没有线上 URL 验收记录。
-- [ ] 清楚展示本地资产导入流程、支持格式、资产版本、视觉与原生导出的验证状态。
+## Implementation order and gates
 
-## 实施顺序与交付门槛
-
-1. 本轮完成 P0 文档与忽略规则。
-2. 后续优先 P2：每组件详情/绑定拆分、单 Mesh 分文件、领域模型与命令事务。
-3. P3 结构工具 → P4 镜像与子网格完整操作链。
-4. P5 真实视觉、P6 原生格式研究按证据推进，解决后才宣布“1:1 / 游戏可加载”。
-5. P7 桌面发布验收；移动端/触屏仍在本期范围外。
+1. P0 documentation/ignore baseline.
+2. P2 per-component details/bindings/Meshes/domain/transactions.
+3. P3 structure -> complete P4 operation chains.
+4. Evidence-led P5/P6 before declaring 1:1 or game-loadable.
+5. P7 desktop publication acceptance; mobile/touch remain outside scope.

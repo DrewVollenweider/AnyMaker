@@ -1,0 +1,232 @@
+{
+  "date": "2026-10-19",
+  "research_base": "9530285e8721a02eea9abea8c0dcdc9c11ec3956",
+  "main_base": "bcfea8e9b94604020d8957e456493c744a89e2e0",
+  "scope": "English documentation and instruction correction; optional application localization unchanged",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "original_blob_sha1": "c09ecce7423c284f9f7c56423ad83442a5e30aca",
+      "original_sha256": "36c16a0c8a2905a884d2a8e7449a7bd4b32f7cc742a738aef9cc4e7f93bfe4d1",
+      "english_sha256": "732237e61bdb565f3fa09307c905636089abd56b49c18e29227788c9321abf24",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/01_SYSTEM_ARCHITECTURE.md",
+      "original_blob_sha1": "34887d7f7dedd02175c4068e47d0831e1e56ee2e",
+      "original_sha256": "d5d2187347747718d31cb708b297dbcc21a76362a94582b5a908c05cd0145ec5",
+      "english_sha256": "0d8176e9fcff5133115de1e9191f81b2eb70d42f9e07f993a858368bc20a672b",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/02_ANYMAKER_ARCHITECTURE.md",
+      "original_blob_sha1": "2f5e89723b94abbe156afaf55beb989cbcb03782",
+      "original_sha256": "45b9cb5d970a01739aa6069cdac226328a9812dba81793e078bfa3a94c5f34a6",
+      "english_sha256": "3090c217673b8ce7dba80cf27c9f60c6746a7718169d010f80a82337475cf19b",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/03_XML_AND_NATIVE_FORMAT.md",
+      "original_blob_sha1": "c2c7a2d9f44da785cc210cac651ef6714b15cfc4",
+      "original_sha256": "05c140e71af35a9ea024d71c52d0273b323283556473b74951db7ae154e49f69",
+      "english_sha256": "982930d03bffa1277a76330206215af827ce6b7f6428c85ee9fa556c8d9f4397",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/04_COMPONENT_MESH_SPLIT.md",
+      "original_blob_sha1": "1e88f88b030187285eb31375466c68290d781678",
+      "original_sha256": "d67c8a36e259aaa466405645d604492014156e779b7ff4f5e22222a472ab4255",
+      "english_sha256": "e57bdcce99f961eed6c97189683844d380d1cc2569901b039bbd708b410387a2",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/05_BUILD_OPERATIONS.md",
+      "original_blob_sha1": "00fedf0c58c50329733c326ec983e431318e5a7c",
+      "original_sha256": "8022b9f7c71a937d51d59c89efbbe46a1d5252a3e7bff9e12ee32ef946936daa",
+      "english_sha256": "f861d55849c58b01b1abfc2c3dd5784ac25ab6ef64faaf9fd0ffed8a68d55a80",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/06_REVERSE_ENGINEERING.md",
+      "original_blob_sha1": "72558d6e4fd3283552aaac4de8ae0670c4cdece0",
+      "original_sha256": "00d98aef36e50ff9fde6ee66b919be09b561cbdb34bc179fd4f2178ac4f9fe56",
+      "english_sha256": "9f995c9d2feee3af858d51e1b679f608071976fae5cc5d32ad665a1fed81929b",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/07_MODEL_IMPORT.md",
+      "original_blob_sha1": "b218139db3cd336b081bacbbc9c44deed3468d76",
+      "original_sha256": "4218223f903c3a03b2bb723d733f8029745c3c400c84cbff93abb2268bc38613",
+      "english_sha256": "0dd46b7336c5dae41a818f056a5ac7f767dba0ef937818480bcb67c2baf043bc",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/08_EDITOR_PERFORMANCE.md",
+      "original_blob_sha1": "445d1087e24051891c0b5ddb0cc6ca86e135d73a",
+      "original_sha256": "90dc1e99d041ce79b440868c276b0a512b5d36a909a248e65138d080db1d8455",
+      "english_sha256": "92b479ff85f2fcf8b895ca0247a9ee30486c89fcb9b29236b2a34a1d521ad736",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/09_INTERFACE_COLORS.md",
+      "original_blob_sha1": "36c67c01846da8c7bbc2497ebf9bc013f78b14f7",
+      "original_sha256": "7a4797ec290be30d206ae27a11634c6094767dba6d7ebfb6d53ccbce6afef450",
+      "english_sha256": "02a609d7ec3bf6c0084dd4b941fedbb514e378b4f62388ef0da7fb58a9156fbd",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/10_MECHANICAL_MATES.md",
+      "original_blob_sha1": "ed9b0d3eaf74c5e8bca901cb50e6ecbc631820eb",
+      "original_sha256": "786ce3e3f6a8ad7bfd15b6ebafca8f82bc8008402695941cd280127d8fe47975",
+      "english_sha256": "b8eff2bdb60a72a1ac40e4ab739ec997374ec6fa9435493d9a157a90fbdbd2de",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/11_HYDRAULIC_CONNECTIONS.md",
+      "original_blob_sha1": "9ac3e383fbba1ddb3f88c621a4f942726270a77c",
+      "original_sha256": "282a586590c894e5c565ee21e18c7243b5d654937389f6ef266a32906989370b",
+      "english_sha256": "128b41aa59dcc240b984a9a95f939cde390e25ffad2fa8de3ea3c3662dc57c71",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/12_INCLINED_PLACEMENT.md",
+      "original_blob_sha1": "0d3f1f1cc2138f6b775d3b2d6fbd52eedb0f7e25",
+      "original_sha256": "427e0477c8c72f94da8bcda27b09d44f93b0a642454572cd222b6ed769052ec0",
+      "english_sha256": "ba7ce824130e56aa8295ffb4d6dc36f6026baa39e6ce4cea29f5cc0ca3991f36",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/13_TRACKS.md",
+      "original_blob_sha1": "f1e106627bc7a2a6bb7f0a391b1b085f7bd5c35a",
+      "original_sha256": "f6465cb02790a775e0305e55ff137fff722c93dff2a6c61aa6596461ff39bec9",
+      "english_sha256": "f9edf56aed3eeedff5cb32e98ac3f87b27afdd5a095d035112950b7000a6fce6",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/14_BELTS.md",
+      "original_blob_sha1": "cf75515b1529df4c098c2b3082cf336885918052",
+      "original_sha256": "f80b849c7d6ea118a3e5ddf5bb7d4087efca5ada54aba218504d23ebfc574d4a",
+      "english_sha256": "1d581841abbe272f2323ea0d9dd3e41751b537079ad61dda2f8ff222f7e11563",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/15_PLATES.md",
+      "original_blob_sha1": "7651f2fc150b50c2ce3183c3651eff5be69c5612",
+      "original_sha256": "d7ae3b9fafecd0bb6fbf7f01322f96442f8f682956665118b6efcbb1cc1e69f3",
+      "english_sha256": "86e15cf6f0eeab0993caa882af8059726d83f88a06de2fc06159bd9b7c88c605",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/16_NATIVE_ISLANDS.md",
+      "original_blob_sha1": "e946499d4f8e2f4aa11b2658a20171ed3071e10a",
+      "original_sha256": "9fc9809f421dc31a08c4a999042d09a0682559ed02b7d658162d8772a703041a",
+      "english_sha256": "cff63d5c521d127a9f833ba3b79026db1bbfbc4ef70e5d1b323bf523d010e337",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/17_GOOGLE_DRIVE_ARCHIVES.md",
+      "original_blob_sha1": "29a95fdcdd5541a1fc1ce4df048dcdfe0da8d52d",
+      "original_sha256": "993f5d04891a86f18c6fb47305160a2cbb121f2f8f595d66df1b008fea7d3d6b",
+      "english_sha256": "a67fd8b80eb731c68ee171f8d72bdd1b0df140514ae8fd396458ebdc57686962",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/18_BUILD_ASSURANCE.md",
+      "original_blob_sha1": "051db63c1608b37e1804089ad953336742a6d68a",
+      "original_sha256": "503957de2b3eaae0636386d8db1adf3efcac4055dc7a013f0543c316dc210ce4",
+      "english_sha256": "83479ab093cace23c1b367109ead1c1ba43e24bb80086c540a159a9975a8d33c",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/19_EXPERIMENTS_2026-10-11.md",
+      "original_blob_sha1": "c69ccab49a8d2a43c95d5b754337898025004454",
+      "original_sha256": "726b68dc83cb3ae1533640575828243bd63151378f59c6360fc31601278bddcc",
+      "english_sha256": "ddf27a739cf7e3cd8be1e2eca474381a6d7934d665069bea4cb9d69c1010d1c4",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/knowledge/research/COVERAGE.md",
+      "original_blob_sha1": "f8e9d4e4f2ce0c7a184e7475ba933382e84f6b8d",
+      "original_sha256": "5ded6bcfa113fdbffcc740ba273eccab6bcfd86230146305ffb5890e2e4f0265",
+      "english_sha256": "1863a094a574bb5ca9c00aede7f2d1a1597769609f0a551ab129e4726bcb5963",
+      "present_on_main": false
+    },
+    {
+      "path": "doc/knowledge/research/EXPERIMENTS.md",
+      "original_blob_sha1": "5eb9092f2fd1e85bb293e49adf1edfc50ca76474",
+      "original_sha256": "e480ef96940e9bfacc910189bc54afa358a84355e1198310c19c2fe50f3dd62d",
+      "english_sha256": "9127f100f634c4dc36f5e7b170f97123b77cf2f470d36ba61e590c2415fee3b9",
+      "present_on_main": false
+    },
+    {
+      "path": "doc/knowledge/research/HANDOFF.md",
+      "original_blob_sha1": "86a8a433223ead03b4dab6581e7687338c86db82",
+      "original_sha256": "7d1567372f673d7adf21c4e35131e34d4d0e764a2d1b7409edd812455b53f44d",
+      "english_sha256": "7178e356d450198034ff314a402e73ac516a73d187f176bb34488ec5c4477f70",
+      "present_on_main": false
+    },
+    {
+      "path": "doc/knowledge/research/README.md",
+      "original_blob_sha1": "524e8ffe70c7ad52699dd0df430de67e731d4d5e",
+      "original_sha256": "ecbebb9ecd8ba3ed084c5ecc34d68567423e6ff92ad9fb037b9261a3b08febe5",
+      "english_sha256": "9a8b11aa81b2a0940d5c524ea85bd7a195ec0b5c05ce70c72eb1256157db9582",
+      "present_on_main": false
+    },
+    {
+      "path": "doc/knowledge/research/SEALING.md",
+      "original_blob_sha1": "feb89eecda1c79a5c9bdc29e1cf31acdfe99022f",
+      "original_sha256": "1712da9a7de6a2a5e34261e03605f9ae80957d318d8048c4d52e5953e8e74e97",
+      "english_sha256": "b4ab391c4d12b6360d3fb664b7f0c3ab484cf731e1b56b0732f51b0f9a05f4d3",
+      "present_on_main": false
+    },
+    {
+      "path": "doc/knowledge/research/TOOLS.md",
+      "original_blob_sha1": "8400f9509af7194af86a5d18fe993bdfb57a768e",
+      "original_sha256": "933e986bb9aa0e286e50d667bb2387b5cee41d6af82f64f97cf703c73f131f84",
+      "english_sha256": "3be53be8987192a351b0011c08943c2ab7ed920030a495a232ef7eeccb0605fe",
+      "present_on_main": false
+    },
+    {
+      "path": "doc/knowledge/research/VERSIONS.md",
+      "original_blob_sha1": "ee4d335bb285b62de094a1c4e102a641b9b58414",
+      "original_sha256": "85470007cdd133e1e3266b8e9575614a3297634863a9ef0ff9cbca1b43797fb8",
+      "english_sha256": "d8db2783d3f28b2a9f3eeedc75cc3a86311e01b9182731fa634c25c9a3ec3d44",
+      "present_on_main": false
+    },
+    {
+      "path": "doc/README.md",
+      "original_blob_sha1": "b17f6a55c10474223fc42f12d448c92c05ec68aa",
+      "original_sha256": "4b49a0f68fcd6d4d0fec7ae421d60b24c989e9f0d3eab25c9371a8aaf4f962dc",
+      "english_sha256": "d819a9596d0bd3964bb01e06d76d6ed4c181c8ea93a7f4c84ab8aeff970b7f37",
+      "present_on_main": true
+    },
+    {
+      "path": "doc/RESOURCE_ANALYSIS.md",
+      "original_blob_sha1": "59d71365ad5b99fa97ed9ac6d376eaff28e8c5e0",
+      "original_sha256": "3528349c6664bca16c3f0ffb48250bc849cc17cc4bf3e38d5b15a9a62b6d945c",
+      "english_sha256": "883bff901497dddda2b823df4ed0128b168179ce57e4ba4aec5b2f530c7af596",
+      "present_on_main": true
+    },
+    {
+      "path": "README.md",
+      "original_blob_sha1": "f2d51068322ade7603d5a32afb7895c30fe38f74",
+      "original_sha256": "d995c0e7ad576c61db2425f752c7861ad4ff559ddeb9617b409bb7eeee581077",
+      "english_sha256": "edd029beb77c858f86c2603e62d7f34585cd6b0310766e73950b35bd17f82afa",
+      "present_on_main": true
+    },
+    {
+      "path": "tmp.md",
+      "original_blob_sha1": "779391e857ccf981ad24780028e15c5b07ae2870",
+      "original_sha256": "1f256c1c75ba0d8bc931dca9391f786f33a53b86d264ce0fe59d8194c57bd1ad",
+      "english_sha256": "95a0d08651fe3ca4b0e3ea2890d21f47ae78d3c822e35abcc2d5688a77c71c33",
+      "present_on_main": true
+    },
+    {
+      "path": "TODO.md",
+      "original_blob_sha1": "840c36bbab0f54e3232fa231068968edf9821b17",
+      "original_sha256": "834793987fc3f1e95ff6d211f16a48d55222f142ba198faa54b42b9cc24a4e20",
+      "english_sha256": "501e5d72d1d640b822dcc2b594e04f959f466422debb3bae77a25204153aeaa0",
+      "present_on_main": true
+    }
+  ]
+}
