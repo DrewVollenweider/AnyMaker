@@ -1,35 +1,37 @@
-# 交接与重启
+# Handoff and restart
 
-状态：阶段 1（基线/现有研究评估/系统地图）完成；阶段 2 的首批必要检索与局部原生分析能力已交付。阶段 2 的完整容器/类型恢复仍未完成，阶段 3 的逐系统深入解释正在开始。不要将这个检查点标记为整个任务完成。
+Status: phase 1 (baseline/existing-work assessment/system map) is complete. The first necessary search and local native-analysis capabilities of phase 2 are delivered. Complete container/type recovery in phase 2 remains unfinished; phase 3's per-system explanations are beginning. Do not mark the whole assignment complete at this checkpoint.
 
-## 重启顺序
+## Restart sequence
 
-1. 阅读上级 AGENTS、知识 hub、CURRENT-FACTS 和本目录 README/COVERAGE/VERSIONS。
-2. 找到独立研究目录。当前机器的精确位置在工作区 `RESEARCH-HANDOFF.md`；公共仓库只存相对路径和哈希。没有本地输入时，按 TOOLS 重新采集匹配版本，不能请求或提交个人密钥。
-3. 用 source SHA 确认 `gcl/index.sqlite`。查询目标签名和引用，读取本地原始字节/受限导出，不加载整个反编译文件到上下文。
-4. 先查看本轮 `historical-check.json`。96 个旧地址均失效，必须使用迁移后的地址；66 个相同代码哈希不等于全数据/调用环境不变。
-5. 检查安装更新；新 build 或任一输入哈希改变时另建版本目录并运行比较。
-6. 继续独立静态研究，不操纵正在运行的游戏。实验协议为 planned，不能写进结果列。
+1. Read parent AGENTS, the knowledge hub, CURRENT-FACTS, and this directory's README/COVERAGE/VERSIONS.
+2. Locate the separate research directory. Exact machine paths are in workspace `RESEARCH-HANDOFF.md`; the public repository stores only relative paths and hashes. Without local inputs, recollect the matching version using TOOLS; never request or commit private keys.
+3. Confirm `gcl/index.sqlite` by source SHA. Query the target signature/references and read local original bytes/limited exports. Do not load the entire decompilation into context.
+4. Read this checkpoint's `historical-check.json` first. All 96 historical addresses are invalid; use relocated addresses. The 66 identical code hashes do not establish unchanged data/caller environments.
+5. Check for installation updates. A new build or any changed input hash requires a separate version directory and comparison.
+6. Continue independent static analysis without controlling the running game. Planned experiment protocols are not results.
 
-## 下一步（按顺序）
+## Next steps, in order
 
-1. 补完 `vehicle_buoyancy.create` 对 Opening/Hatch 初始标志的赋值、碰撞 builder 及玩家通行路径；核对 hatch manager 调用方和与物理/浮力更新的顺序。SEA-01 运行前准备原生一次性测试装配及可用测量方式。
-2. 补齐 GCL loader 对 flags、allocation +8、kind 1/5/6、尾部 debug/unwind 和类型表的实际读取规则。现有扫描器已满足检索；仅在明确限制阻塞问题时扩展，不为工具本身造通用反编译器。
-3. 从系统地图选定每类代表组件，先追 parse/default → create/post_load → tick → inspect/save；列出未核查尺寸和变体。优先电力、脚本执行/调度、流体单位，再扩展 AI/世界/多人。
-4. 复用已有 Mesh parser 与审计工具，对当前构建全部相关格式复核；`.anim` 的 mesh v5 容器不能直接等同于动画逻辑。vegetation `.bin` 仍需布局和消费方双向验证。
-5. 跨系统解释完成后请求独立运行研究时段；先交付明确创建、初态、控制变量、测量和恢复方案。继续保持当前游戏/存档不受干扰。
+1. Finish Opening/Hatch initial-flag assignments in `vehicle_buoyancy.create`, collision builders, and player-passage paths. Check hatch-manager callers and ordering against physics/buoyancy updates. Prepare a native disposable assembly and available measurement methods before SEA-01.
+2. Complete actual GCL-loader rules for flags, allocation +8, kind 1/5/6, trailing debug/unwind data, and type tables. The existing scanner already supports search. Extend only when a demonstrated limitation blocks a question; do not build a general decompiler for its own sake.
+3. Select representative components from every system-map category. Trace parse/default -> create/post_load -> tick -> inspect/save, listing unchecked sizes/variants. Prioritize electricity, script execution/scheduling, and fluid units, then expand AI/world/multiplayer.
+4. Reuse Mesh parsers/audits to review all relevant current-build formats. A `.anim` mesh v5 container is not automatically animation logic. Validate vegetation `.bin` layouts against consumers as well as bytes.
+5. Request a separate runtime research session after cross-system explanations are prepared. First deliver exact creations, initial states, controls, measurements, and restoration plans. Keep current gameplay/saves undisturbed.
 
-## 运行记录
+## Progress log
 
-| 日期（本地） | 进展 | 证据/边界 |
+| Local date | Progress | Evidence/limits |
 | --- | --- | --- |
-| 2026-10-18 | 查到安装及 Steam build；清单/副本全哈希验证 | 最终 baseline 1.1.0；相对路径清单无账户字段 |
-| 2026-10-18 | 现有归档、接受原生创建、Ghidra 工具、六组历史代码证据复核 | 旧记录保留；没有把历史 user-tested 当成本轮测试 |
-| 2026-10-18 | 37,082 GCL 记录、定义数据库与 15 主题系统地图 | 本地完整索引；未恢复类型与完整容器 |
-| 2026-10-18 | 96 历史范围重定位；66 代码哈希保留 | 旧偏移 0 匹配 |
-| 2026-10-18 | Opening/Hatch 几何匹配、seal 写入、水流读取链 | 18 个函数局部导出、6,599 指令字节核对；非运行验收 |
-| 2026-10-18 | 15 新工具测试、25 归档测试通过，另 1 可选 corpus 跳过 | runner 1 函数实际 smoke-test；不计为额外唯一函数 |
+| 2026-10-18 | Located installation/Steam build; verified full inventory/copy hashes | Final baseline 1.1.0; relative-path inventory excludes account fields |
+| 2026-10-18 | Reviewed archives, accepted native creations, Ghidra tools, six historical code-evidence groups | Historical records retained; historical user tests are not new tests |
+| 2026-10-18 | 37,082 GCL records, definition database, 15-topic system map | Complete local indexes; types/full container unrecovered |
+| 2026-10-18 | Relocated 96 historical ranges; 66 code hashes retained | No old offsets matched |
+| 2026-10-18 | Opening/Hatch geometry match, seal write, water-flow read path | Partial exports of 18 functions; 6,599 instruction-byte checks; no runtime acceptance |
+| 2026-10-18 | 15 new-tool and 25 archived tests passed; one optional corpus skipped | Actual one-function runner smoke test; not an additional unique function |
 
-Git 默认传输在本轮环境反复停滞，已终止。独立 sparse checkout 通过 GitHub API 对象与已有 archive blobs 恢复并逐对象 SHA-1 核对，基点 `bcfea8e9b94604020d8957e456493c744a89e2e0`，49 个 tree、133 个匹配 blob。应用相关未取回 blob 保持稀疏缺省，不能据此运行前端测试。没有读取/改写其他 checkout 的本地改动或提交。
+Default Git transfers repeatedly stalled in this environment and were terminated. A separate sparse checkout was recovered through GitHub API objects and existing archive blobs, checking every object's SHA-1: base `bcfea8e9b94604020d8957e456493c744a89e2e0`, 49 trees, 133 matching blobs. Unretrieved application blobs remain absent under sparse checkout; this is not a usable frontend-test checkout. Other checkouts' local changes/commits were neither read nor rewritten.
 
-本轮修改仅研究代码/文档/索引；不合并 main、不部署、不发布 release。推送状态和实际提交号以最终 Git 结果及本地交接记录为准，不能仅凭此计划段落宣称已推送。退出前应无后台分析任务；如保留任务必须明确 PID、日志、资源上限和停止方法。
+The original checkpoint changed only research code/docs/indexes, with no main merge, deployment, or release. Publication status and actual commit IDs must come from final Git results and local handoff, not this planned paragraph. Leave no background analysis jobs at session end; explicitly record PID, logs, resource cap, and stop method for any retained job.
+
+Language correction: the user rejected the historical Chinese-documentation instruction and explicitly authorized English documentation/instruction corrections on both the research branch and main. That authorization does not extend to deployments, releases, or application behavior changes. Preserve the original checkpoint's evidence and completion boundaries when translating it.

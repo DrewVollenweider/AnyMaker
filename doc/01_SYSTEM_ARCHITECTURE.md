@@ -1,92 +1,92 @@
-# Anymaker Builder 系统架构
+# Anymaker Builder system architecture
 
-## 目标和边界
+## Goals and boundaries
 
-项目是一个静态前端应用，构建产物可以直接部署到 GitHub Pages。正式发布的运行时不依赖后端、游戏进程、游戏安装目录或用户选择的资源文件；组件定义、已解析并转换的完整 Mesh、材质、纹理和 manifest 都随静态站点发布。浏览器本地文件选择仅保留为开发和资产审计工具。
+The project is a static frontend whose build output can be deployed directly to GitHub Pages. The production runtime must not depend on a backend, game process, game installation, or user-selected resource files. Component definitions, completely parsed/converted Meshes, materials, textures, and manifests are intended to ship with the static site. Browser file selection remains a development/asset-audit tool only.
 
-当前产品边界分成三层：
+There are three product layers:
 
-1. **编辑器层**：Three.js 场景、相机、网格、工具、选择状态、Inspector、撤销/重做。
-2. **发布资产层**：从 Anymaker ROM 离线提取、验证、转换和压缩后的组件定义、连接面、逻辑节点、静态/动态 Mesh、材质和纹理。
-3. **交换格式层**：浏览器工程 JSON 和带 `game-compatible="false"` 标记的中间 XML。只有经过原生存档逆向和游戏回归后，才允许新增游戏兼容导出器。
+1. **Editor**: Three.js scene, camera, grids, tools, selection, Inspector, undo/redo.
+2. **Published assets**: component definitions, connection surfaces, logic nodes, static/dynamic Meshes, materials, and textures extracted, validated, converted, and compressed offline from Anymaker ROM.
+3. **Exchange formats**: browser project JSON and intermediate XML marked `game-compatible="false"`. A game-compatible exporter requires native-save research and game regression evidence first.
 
-## 目录职责
+## Directory responsibilities
 
 ```text
 src/
-  main.js                 页面组合、事件协调、Three.js 场景生命周期
+  main.js                 Page composition, events, Three.js scene lifecycle
   assets/
-    mesh.js               Anymaker .mesh v5 二进制解析器
-    library.js            开发阶段本地 File 对象、解析缓存、Three.js 几何实例化
-    published/            正式发布资产 manifest、lazy loader、解压和缓存
+    mesh.js               Anymaker .mesh v5 binary parser
+    library.js            Development File objects, parse cache, Three.js geometry
+    published/            Planned production manifest, lazy loader, decompression/cache
   editor/
-    document.js           工程 schema、输入校验、XML 中间格式、历史快照
-    model.js              Project/Vehicle/Grid/Component/Node/Edge/Plate/Link 领域模型与适配
-    operations.js         组件复制、镜像、移动、子网格拆分/合并纯数据命令
-    topology.js           节点、梁、面板创建、分割、合并与几何校验
-  components/             目标目录，尚未实现：每组件装配、端口和 Mesh 绑定模块
+    document.js           Project schema, validation, intermediate XML, history
+    model.js              Project/Vehicle/Grid/Component/Node/Edge/Plate/Link and adapters
+    operations.js         Pure-data copy/mirror/move/grid split/merge commands
+    topology.js           Nodes/beams/plates: creation, split, merge, geometry checks
+  components/             Proposed, unimplemented per-component assembly/port/Mesh modules
 public/data/
-  index.json               稳定组件索引、schema/resourceVersion 与 Mesh manifest 引用
-  component-index.json    轻量搜索索引
-  definitions/            每组件独立详情
-  bindings/               每组件独立 Mesh 绑定
+  index.json              Stable index, schema/resourceVersion, Mesh manifest reference
+  component-index.json    Lightweight search index
+  definitions/            Separate per-component details
+  bindings/               Separate per-component Mesh bindings
 public/assets/
-  manifests/              发布资产完整性与压缩清单
-  meshes/                 每原始 Mesh 一个独立转换资产
-  materials/              纹理、材质和压缩产物
+  manifests/              Published integrity/compression manifests
+  meshes/                 One converted asset per original Mesh
+  materials/              Textures, materials, compressed products
 scripts/
-  extract-catalog.mjs     生成组件清单
-  audit-assets.mjs        统计 ROM、验证 Mesh、记录 starter_vehicle.data
-doc/                      架构、格式、逆向证据和阶段性设计文档
+  extract-catalog.mjs     Generate component catalog
+  audit-assets.mjs        Scan ROM, validate Mesh, record starter_vehicle.data
+doc/                      Architecture, formats, reverse-engineering evidence, designs
 tests/
-  unit.test.js            解析器、工程校验、历史和 XML 单元测试
-  browser/                GitHub Pages 子路径下的 Playwright 工作流测试
+  unit.test.js            Parser, project validation, history, XML tests
+  browser/                Playwright workflows under GitHub Pages subpath
 ```
 
-## 运行时数据流
+## Runtime data flow
 
 ```mermaid
 flowchart LR
-  ROM[Anymaker ROM] --> BUILD[离线解析/转换/压缩]
-  BUILD --> INDEX[组件索引与独立详情]
-  BUILD --> MANIFEST[Mesh/材质 manifest]
-  BUILD --> ASSETS[发布 Mesh 与材质]
+  ROM[Anymaker ROM] --> BUILD[Offline parse/convert/compress]
+  BUILD --> INDEX[Component index and separate details]
+  BUILD --> MANIFEST[Mesh/material manifests]
+  BUILD --> ASSETS[Published Meshes and materials]
   INDEX --> UI[Catalog + Inspector]
   MANIFEST --> LOADER[Published asset lazy loader]
   ASSETS --> LOADER
   LOADER --> GEO[Three.js BufferGeometry]
   UI --> DOC[Validated editor document]
   GEO --> SCENE[Three.js scene]
-  DOC --> JSON[工程 JSON]
-  DOC --> XML[中间 XML]
+  DOC --> JSON[Project JSON]
+  DOC --> XML[Intermediate XML]
 ```
 
-组件索引只负责搜索和资源引用，不承载 Three.js 运行对象或巨型模型数据。正式 `PublishedAssetLoader` 仅在组件被选中、放置或可见时请求对应的发布资产，检查 manifest 的 hash/版本，再解压和实例化；未使用资源不会进入内存。浏览器本地 `AssetLibrary` 不在发布链路中。
+The component index handles search/resource references, not Three.js runtime objects or huge model payloads. The production `PublishedAssetLoader` is intended to request corresponding assets when components are selected, placed, or visible, check manifest hash/version, then decompress and instantiate. Unused assets should stay out of memory. Local browser `AssetLibrary` is outside the publishing path. These are architecture requirements; hash-field comparison alone is not downloaded-byte verification (see AGENTS).
 
-## 编辑器状态
+## Editor state
 
-- `definitions`：组件定义索引，键为稳定的 `id`。
-- `objects`：当前为 Three.js 场景对象数组；导出快照只保存 `id/type/position/rotation/scale`，渲染诊断元数据不持久化。
-- `History`：工程快照，不保存 Three.js 对象引用；撤销、重做和分支操作必须复制数据。
-- `selected` 与 `tool`：短生命周期 UI 状态，不进入工程文件。
-- `PublishedAssetLoader`：已发布资源状态，不进入工程文件；工程保存组件定义 ID，由绑定和 manifest 找到 lazy-loaded 资产。
-- `AssetLibrary`：开发/审计辅助状态，不进入工程文件，也不属于 GitHub Pages 完整使用路径。
+- `definitions`: definition index keyed by stable `id`.
+- `objects`: currently an array of Three.js scene objects; snapshots retain only `id/type/position/rotation/scale`, not render-diagnostic metadata.
+- `History`: project snapshots without Three.js references; undo, redo, and branching must copy data.
+- `selected` and `tool`: short-lived UI state excluded from project files.
+- `PublishedAssetLoader`: published-resource state excluded from project files; saved definition IDs resolve to lazy-loaded assets through bindings/manifests.
+- `AssetLibrary`: development/audit state excluded from projects and the complete GitHub Pages user workflow.
 
-## 当前领域架构
+## Current domain architecture
 
-`src/editor/model.js` 已提供 Project、Vehicle、Grid、Component、Node、Edge、Plate、Link，以及 editor document 的双向适配。现有场景仍是领域模型的渲染投影，结构操作通过 `operations.js` 生成快照，纯数据模型保存 `gridId`、局部 transform、父级 transform、单位和未知字段 extras。原生端口、梁、面板连接仍待 `.data` 适配器接入。
+`src/editor/model.js` provides Project, Vehicle, Grid, Component, Node, Edge, Plate, Link, and bidirectional editor-document adapters. The scene remains a render projection of domain data. Structural operations create snapshots through `operations.js`; the pure-data model preserves `gridId`, local/parent transforms, units, and unknown-field extras. Native port/beam/plate connections still need `.data` adapter integration at this design stage.
 
-节点/梁/面板在原生样本中位于 vehicle 层级；目标模型不能直接把它们全部强制塞入 grid。Grid 局部坐标与渲染 submesh 也必须分开。原生适配器负责表达游戏字段，中间 XML 适配器负责版本化的交换格式。
+Native samples place nodes/beams/plates at vehicle level; the target model must not force them all into grids. Grid coordinates and render submeshes are also distinct. Native adapters represent game fields; intermediate XML adapters represent a versioned exchange format.
 
-依赖方向为：UI → 命令/领域模型 → 验证与历史；Three.js 场景订阅领域变化；资源库提供模型；格式适配器读写领域数据。解析器不引用 UI，领域模型不持有 Three.js 对象。
+Dependency direction: UI -> commands/domain model -> validation/history. The Three.js scene observes domain changes, resource libraries provide models, and format adapters read/write domain data. Parsers do not reference UI; domain models do not hold Three.js objects.
 
-具体文件和单组件资源结构见 [拆分方案](04_COMPONENT_MESH_SPLIT.md)，拓扑操作见 [建造操作](05_BUILD_OPERATIONS.md)。
+See [component/resource splitting](04_COMPONENT_MESH_SPLIT.md) for file organization and [building operations](05_BUILD_OPERATIONS.md) for topology.
 
-## 约束
+## Constraints
 
-- 不把 `I:\`、`D:\` 或游戏 EXE 路径写入生产运行时资源。
-- 正式部署不允许出现“请导入游戏目录”“缺失本地 Mesh 才能使用”这类前置条件；Pages 资产 manifest 必须覆盖全部已承诺组件及其动态/材质依赖。
-- 压缩只优化传输和存储。每个发布 Mesh 必须可从原始资源路径、hash、转换器版本及量化/压缩参数追溯，且压缩前后几何和材质验收通过。
-- 不在浏览器端信任导入 JSON 的组件、数值、ID 或 XML 字符串；导入前做 schema、范围、重复 ID 和定义存在性检查。
-- 不把中间 XML 称为游戏存档；页面 UI 和文件注释都必须保留兼容性否定标记。
-- 当前不规划触屏、平板或移动端布局；桌面浏览器和鼠标键盘是本阶段支持平台。
+- Never embed `I:\`, `D:\`, or game EXE paths in production resources.
+- Production must not require importing the game directory or local Mesh files. The Pages manifest must cover all promised components and their dynamic/material dependencies.
+- Compression optimizes transfer/storage only. Trace every published Mesh to original path/hash, converter version, and quantization/compression parameters; validate geometry/materials before and after compression.
+- Do not trust imported JSON components, numbers, IDs, or XML strings. Validate schema, ranges, duplicate IDs, and definition existence first.
+- Never call intermediate XML a game save; retain the incompatibility marker in UI and file comments.
+- Touch/tablet/mobile layouts are outside this phase; desktop mouse/keyboard browsers are supported.

@@ -1,43 +1,43 @@
-# 斜向平面组件吸附
+# Component snapping on inclined plates
 
-核对日期：2026-09-28。实现仅对射线实际命中的结构面板斜面启用；轴向面、梁、组件 Mesh 和曲面继续使用原有放置逻辑。
+Reviewed 2026-09-28. This applies only to an inclined structural plate actually hit by the ray. Axial faces, beams, component Meshes, and curved surfaces retain existing placement logic.
 
-## 游戏与仪表盘证据
+## Game and dashboard evidence
 
-只读研究输入为游戏 `bin/game.gcl` 与仓库 `test-vehicle/vehicle.data`，指纹、选定函数、常量和样本摘要在 [证据记录](evidence/inclined-placement.json)。原始游戏文件、反编译全文及临时产物不进入版本库。
+Read-only inputs: `bin/game.gcl` and repository `test-vehicle/vehicle.data`. Fingerprints, selected functions, constants, and sample summaries are in the [evidence record](evidence/inclined-placement.json). Original game files, full decompilation, and temporary output stay outside Git.
 
-样本的 vehicle 553、`grids[1]` 为仪表盘安装网格：
+Sample vehicle 553, `grids[1]`, is a dashboard mounting grid:
 
-- `origin = [0, -90, 183]`，`dir = [0, 1, -2]`。
-- 两个 `circular_dial_a`（180、181）和三个 `circular_dial_small_a`（217、218、219），全部采用整数局部 `pos`。
-- 前三个组件的列主序 `rot` 为 `[-1,0,0,0,1,0,0,0,-1]`；后两个为 `[0,0,1,0,1,0,-1,0,0]`。
-- 支撑面板 45、46、52 的节点都满足 `y - 2*z = -456`。从这些节点按游戏的原点规范化规则都得到上述 `origin`。
+- `origin = [0, -90, 183]`, `dir = [0, 1, -2]`.
+- Two `circular_dial_a` (180,181) and three `circular_dial_small_a` (217,218,219), all with integer local `pos`.
+- First three column-major `rot` arrays: `[-1,0,0,0,1,0,0,0,-1]`; last two: `[0,0,1,0,1,0,-1,0,0]`.
+- Supporting plates 45,46,52 have nodes satisfying `y - 2*z = -456`. Applying the game's origin normalization to any of these nodes produces that `origin`.
 
-斜面倾角来自安装网格的 `dir`，而不是把小数角度写入组件局部 `rot`。`state_add_component.tick`（`0x84880f`）调用 `mat33_s32.rotation_angle_axis`，旋转步进常量为 `1` 和 `-1`；后者分派到整数 `rotation_x_axis/y_axis/z_axis`。放置网络事件同样传递 `grid_origin_dir`、`vec3_s32` 和 `mat33_s32`。没有在所查放置路径中发现任意局部角度安装的依据，因此本次保留 90°，不增加任意角度子面板。整数旋转轴函数的独立函数体尚未解码，不把名称或间接引用视为完整实现证据。
+Inclination comes from grid `dir`, not fractional angles in local component `rot`. `state_add_component.tick` (`0x84880f`) calls `mat33_s32.rotation_angle_axis` with step constants `1` and `-1`, dispatching to integer `rotation_x_axis/y_axis/z_axis`. Placement network events also transmit `grid_origin_dir`, `vec3_s32`, `mat33_s32`. No arbitrary local-angle placement evidence was found in these paths, so local steps remain 90° without adding arbitrary-angle subpanels. Integer-axis rotation bodies remain undecoded; names/indirect references are not full implementation proof.
 
-## 已实现的坐标规则
+## Implemented coordinates
 
-`src/native/grid-frame.js` 为导入和新建斜面安装共用同一坐标变换。以下计算以原生格为单位：
+`src/native/grid-frame.js` shares transforms between import and new inclined mounting. In native cells:
 
-1. 从面板真实节点求整数平面法线，并按最大公约数化简；用点击射线确定正面或背面。只接受共面、整数节点构成的斜面。
-2. 以世界 Y 为参考方向 `up`（法线平行 Y 时用 Z），建立 `X = normalize(dir × up)`、`Y = normalize(dir)`、`Z = normalize(X × Y)`。
-3. 按 `get_consistent_grid_origin_and_dir` 先将整数 X/Z 基向量各自化简，再计算 `origin = p - X * floor(dot(p,X)/dot(X,X)) - Z * floor(dot(p,Z)/dot(Z,Z))`。这里的 X/Z 是化简后的整数轴；负数同样使用 floor，不能截断取整，也不能直接把面板首节点当原点。
-4. 有效安装原点为 `origin + 0.5 * sign(dir) + 0.5 * normalize(dir)`。面内 X/Z 按局部整数格吸附，局部 Y 结合组件占用区和当前局部旋转确定。
-5. 组合安装帧与放置的局部旋转；编辑器与游戏之间反射 X 轴，矩阵使用 `S R S`。最终世界坐标可以有小数，不能再次按世界 XYZ 取整。
+1. Derive an integer plane normal from real nodes and reduce by greatest common divisor. Use click ray to choose front/back. Accept only coplanar inclined faces with integer nodes.
+2. Use world Y as reference `up` (Z when normal parallels Y): `X = normalize(dir × up)`, `Y = normalize(dir)`, `Z = normalize(X × Y)`.
+3. Following `get_consistent_grid_origin_and_dir`, separately reduce integer X/Z basis vectors and compute `origin = p - X * floor(dot(p,X)/dot(X,X)) - Z * floor(dot(p,Z)/dot(Z,Z))`. X/Z here are reduced integer axes. Negative values also use floor, never truncation; the first plate node is not necessarily the origin.
+4. Effective mounting origin is `origin + 0.5 * sign(dir) + 0.5 * normalize(dir)`. Snap in-plane X/Z to local integer cells; determine local Y from occupancy and current local rotation.
+5. Compose mounting frame and local rotation. Reflect X between editor/game with `S R S`. Final world coordinates may be fractional and must not be rounded again by world XYZ.
 
-`src/editor/inclined-placement.js` 负责射线、面板和预览朝向；提交使用点击时保存的射线重新计算，避免组件资源异步加载期间鼠标移动导致预览与结果不同。放置中的 J/K/L 仍按安装坐标系的 X/Y/Z 轴每次旋转 90°。
+`src/editor/inclined-placement.js` handles rays, plates, and preview orientation. Commit recomputes using the saved click ray, preventing mouse movement during asynchronous resource loading from changing the result. Placement J/K/L rotate 90° around mounting-frame X/Y/Z.
 
-## 工程与原生导出
+## Project and native export
 
-工程 v1 新增可选的组件 `surfaceMount: { dir: [0,1,-2], position: [66,0,131] }`。字段为原生整数法线和安装网格内整数坐标；对象的 `position/rotation` 仍为世界位置和 XYZ 欧拉弧度。校验、领域适配、快照、复制、历史和 JSON 均保留该信息。旧工程缺少字段时无需迁移；旧版编辑器不能保证保留新增安装信息。
+Project v1 adds optional `surfaceMount: { dir: [0,1,-2], position: [66,0,131] }`: native integer normal and mounting-grid integer coordinates. Object `position/rotation` remain world position/XYZ Euler radians. Validation, domain adapters, snapshots, copy, history, and JSON preserve it. Old projects without it need no migration; older editors may not preserve it.
 
-不保存可能过期的固定安装原点。导出由当前世界位置和局部坐标逆算整数 `origin`，将世界方向还原为整数局部 `rot`，按 `origin + dir` 分组生成同一物理载具中的原生 `grids[]`。这些安装坐标网格不是新的独立物理子网格。导入会重新恢复安装信息；整格移动、居中和复制不丢失原安装帧的小数位置。移动控件对位移取整，保留位置的小数余量。
+Do not store an origin that can become stale. Export reconstructs integer `origin` from current world/local position, recovers integer local `rot`, and groups by `origin + dir` into native `grids[]` within one physical vehicle. Mounting grids are not independent physics bodies. Import restores mounting metadata. Whole-cell moves, centering, and copies retain fractional mounting offsets. Move controls round displacement, preserving fractional position remainder.
 
-非整格位移、无法表示为安装坐标系局部 90° 的旋转及反射几何会在原生导出时报错。斜面放置启用镜像时会在提交前拒绝并提示关闭镜像；现有通用旋转 Inspector 不因此获得任意角度的原生兼容性。中间 XML 不编码 `surfaceMount`，仍为非游戏存档调试格式。
+Native export rejects noninteger-cell displacement, rotations not representable as local 90° mounting rotations, and reflected geometry. Inclined placement with mirroring rejects before commit and requests disabling mirror. Generic rotation Inspector does not thereby gain arbitrary-angle native compatibility. Intermediate XML omits `surfaceMount` and remains a non-game debug format.
 
-## 复核与边界
+## Checks and limits
 
-在仓库根目录运行以下只读检查，参数为本机游戏文件：
+From repository root, with local game input:
 
 ```powershell
 node scripts/check-inclined-placement-evidence.mjs <game.gcl>
@@ -45,10 +45,10 @@ npm run check
 npm run test:browser:editor
 ```
 
-- 证据脚本检查游戏版本、9 个函数签名与代码哈希、2 个旋转常量、3 块仪表台面板及 5 个仪表的原生坐标/方向往返，确认源样本未改变。
-- `tests/inclined.test.js` 覆盖规范原点和负数 floor、面内格点、局部旋转、背面与三轴斜面、普通表面排除、格式校验、移动/复制和仪表盘样本。它由现有单元测试入口显式加载。
-- 编辑器浏览器用例覆盖实际悬停/点击、K 旋转、预览与提交、Y 轴拖拽保留小数位置、撤销重做、原生下载和重新导入。其他编辑器工作流用于普通放置及相关编辑行为回归。
+- Evidence checking covers game version, nine function signatures/code hashes, two rotation constants, three dashboard plates, and coordinate/orientation round trips for five gauges, with unchanged source sample.
+- `tests/inclined.test.js`, explicitly loaded by the unit entry point, covers canonical origin/negative floor, in-plane cells, local rotation, backside/three-axis slopes, ordinary-surface exclusions, format validation, move/copy, and dashboard sample.
+- Browser tests cover actual hover/click, K rotation, preview/commit, Y dragging with fractional-position preservation, undo/redo, native download/reimport. Other editor workflows cover ordinary placement/related edits.
 
-本轮实际执行结果：证据脚本通过；`npm run check` 的 171 项单元测试和生产构建通过；`npm run test:browser:editor` 的 64 项测试通过；`git diff --check` 通过。生产构建已恢复 `docs/` 的相对资源路径。未执行完整浏览器设置/恢复套件或重新生成资源。
+Actual historical results: evidence check passed; `npm run check` passed 171 unit tests and production build; editor browser suite passed 64 tests; `git diff --check` passed. Production `docs/` relative paths were restored. Full settings/recovery browser suites and asset regeneration were not run.
 
-尚未验证：真实游戏加载、全部组件的占用碰撞规则、任意动态子载具姿态及同机位视觉对照。斜面吸附不自动模拟游戏的全部放置合法性检查；通过保存和构建不能代替游戏验收。
+Unverified: game loading, all component occupancy/collision rules, arbitrary dynamic-subvehicle poses, and matched-camera visuals. Snapping does not reproduce all game placement-validity checks. Save/build success is not game acceptance.

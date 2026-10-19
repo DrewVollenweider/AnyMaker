@@ -1,27 +1,27 @@
-# 版本与来源
+# Versions and provenance
 
-当前基线：Steam app 4435340，build **25904830**，TargetBuildID 相同，StateFlags=4。完整 [清单](versions/build-25904830/inventory.json) 含 10,813 个相对路径、大小和 SHA-256，总计 1,194,452,027 字节。没有保存 Steam LastOwner 或账户字段。
+Current baseline: Steam app 4435340, build **25904830**, matching TargetBuildID, StateFlags=4. The complete [inventory](versions/build-25904830/inventory.json) contains 10,813 relative paths, sizes, and SHA-256 hashes totaling 1,194,452,027 bytes. Steam LastOwner and account fields were not retained.
 
-快照选择代码、全部 `rom/data/`、发布翻译、音频描述库和安装自带样本，共 4,833 文件、171,094,372 字节。原文件未修改；每个副本独立哈希匹配，随后再次遍历并哈希全部安装文件。此方法检测读/复制期间变化，但不冒充操作系统原子快照，也不能保证检查结束后的文件不变。
+The selective snapshot includes code, all `rom/data/`, shipped translations, audio descriptor libraries, and installation-provided examples: 4,833 files and 171,094,372 bytes. Originals were untouched. Every copy independently matched its source hash, followed by a second full traversal and hashing of the installation. This detects changes during reading/copying; it is not an operating-system atomic snapshot and cannot guarantee files remain unchanged after the check.
 
-语义版本 **v0.1.25** 来源于 10 月 14 日已有游戏界面观察。当前 Steam build 和 GCL 哈希与那次记录吻合；本轮没有读取当前游戏窗口，EXE 版本资源未提供可用字符串。因此本轮以 Steam build + 全文件哈希作为直接身份依据。
+Semantic version **v0.1.25** comes from an existing October 14 game-UI observation. The current Steam build and GCL hash match that record. This checkpoint did not read the current game window, and EXE version resources provided no useful string. Steam build plus full-file hashes are therefore the direct identity evidence for this checkpoint.
 
-当前 `bin/game.gcl`：82,528,301 字节，SHA-256 `626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355`。原生 x64 指令与长度前缀签名、全局/源路径表、重定位操作数和未解码元数据共存；不是仅凭 `.gcl` 扩展名认定的字节码。
+Current `bin/game.gcl`: 82,528,301 bytes, SHA-256 `626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355`. Native x64 instructions coexist with length-prefixed signatures, global/source-path tables, relocation operands, and undecoded metadata. It was not classified as bytecode merely from its `.gcl` extension.
 
-## 历史证据
+## Historical evidence
 
-[六组复核结果](versions/build-25904830/historical-check.json) 覆盖 grid、机械配合、液压、履带、皮带和结构岛，共 96 个历史范围。旧位置 0/96 匹配；按完整签名重新定位 96/96；其中 66 个新位置代码哈希与历史相同。该计数包含跨证据重复记录，不是 96 个不同机制。
+[Six evidence-group checks](versions/build-25904830/historical-check.json) cover grids, mechanical mates, hydraulics, tracks, belts, and structural islands: 96 historical ranges. Original locations matched 0/96; full-signature relocation succeeded for 96/96; 66 relocated code hashes match the historical record. This includes duplicate records across evidence groups, not 96 distinct mechanics.
 
-`32c1389e...`、`d9725681...`、`da170da3...` 等历史 GCL 不能与当前构建混用。字节不同可能只是重定位/布局变化，不能据此断言机制改变；字节相同也不能跳过调用方、数据布局和外部常量复核。
+Historical GCLs such as `32c1389e...`, `d9725681...`, and `da170da3...` must not be mixed with the current build. Different bytes may reflect relocation/layout alone, not a mechanic change. Identical bytes do not remove the need to review callers, data layouts, and external constants.
 
-原有 CURRENT-FACTS、EXPERIMENTS、NATIVE-AND-RESEARCH、NATIVE-TRACE-SUMMARY、TOOLS、接受的 CPE1Running/大型测试车及归档解析器已经检查。旧“GCL 仅三段样本恢复”的说明保留为历史；本轮新增记录扫描器补充它，并未完成整个容器解码。
+Existing CURRENT-FACTS, EXPERIMENTS, NATIVE-AND-RESEARCH, NATIVE-TRACE-SUMMARY, TOOLS, accepted CPE1Running/large test vehicles, and archived parsers were reviewed. The earlier statement that GCL recovery covered only three samples remains historical. The new record scanner extends it without claiming complete container decoding.
 
-## 文件格式边界
+## Format boundaries
 
-[格式清单](versions/build-25904830/format-census.json) 根据字节识别，而非按后缀猜测。`mesh` v5 签名同时出现在 `.mesh` 与 `.anim`；因此不能把 `.anim` 一概称作动画指令格式。全部 4,470 个该签名文件只在本轮确认头部，不计作完整几何解析。既有 `src/assets/mesh.js` 和资源审计应继续复用，当前构建全变体复核尚待进行。
+The [format census](versions/build-25904830/format-census.json) identifies bytes rather than guessing from suffixes. The `mesh` v5 signature occurs in both `.mesh` and `.anim`; `.anim` is therefore not universally an animation-instruction format. This checkpoint checked only headers of all 4,470 matching files, not complete geometry. Continue reusing `src/assets/mesh.js` and existing asset audits; full current-build variant review remains pending.
 
-2,979 个文件通过完整 JSON 解析，其中包括 `.data`、`.meta` 和音频 `.slib`；后者是音效描述库，不是推测的脚本库。TXTR v2、ATLA v1 和字体只做格式识别；1,843 个 `.bin` 保持未解析，采样指向 vegetation 数据。没有发现依据可将这些数据笼统称作可执行字节码。
+2,979 files passed full JSON parsing, including `.data`, `.meta`, and audio `.slib`. The latter are sound-effect descriptor libraries, not presumed script libraries. TXTR v2, ATLA v1, and fonts were only identified. 1,843 `.bin` files remain unparsed; samples point to vegetation data. There is no evidence to classify these collectively as executable bytecode.
 
-Ghidra 12.1.4、Temurin 25.0.4.1+1、Python 3.12.14。已复用本机隔离运行时；没有重新下载或系统安装依赖。工具源、输入和导出的哈希分别见清单、GCL 摘要、导出检查和 runner 记录。完整本地数据库/反编译不进 Git。
+Tools: Ghidra 12.1.4, Temurin 25.0.4.1+1, Python 3.12.14. Existing isolated local runtimes were reused; nothing was downloaded again or installed system-wide. Tool-source, input, and export hashes are recorded separately in the inventory, GCL summary, export checks, and runner record. Full local databases/decompilations stay outside Git.
 
-维护新版本时必须新建目录，先比较清单，再比较定义语义和函数记录哈希。只有相关输入哈希和工具哈希都一致时才复用输出；旧地址必须重新定位。
+For future builds, create a new directory, compare inventories first, then definition semantics and function-record hashes. Reuse output only when relevant input and tool hashes both match. Relocate historical addresses again.

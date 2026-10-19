@@ -1,38 +1,38 @@
-# 协调运行实验协议
+# Coordinated runtime experiment protocols
 
-**全部为 planned / unperformed。** 本轮不得执行：用户可能正在游戏。只在用户明确安排独立研究时段后，使用备份或一次性世界、单独命名创建进行。先核对 [版本](VERSIONS.md) 的完整哈希，再开始操作；版本不同先重新静态定位。
+**All are planned / unperformed.** Do not run them during this checkpoint: the user may be playing. Use backed-up or disposable worlds and separately named creations only after the user explicitly arranges a separate research session. First check the complete hashes in [versions](VERSIONS.md); relocate static evidence before testing a different version.
 
-## SEA-01：开口、舱盖和锁紧的独立作用
+## SEA-01: independent roles of Opening, Hatch, and latch
 
-竞争解释：A Opening 自身始终阻水；B Opening 是水流通道、匹配 Hatch 负责密封；C latch engagement 是独立必要条件；D 只有几何/物理姿态使两者看似相关。静态证据目前支持 B 与几何判定，但不是运行结果。
+Competing explanations: A, Opening itself always blocks water; B, Opening passes water and a matching Hatch seals it; C, latch engagement is independently necessary; D, geometry/physical alignment alone explains their apparent relationship. Static evidence currently supports B and geometric matching; it is not a runtime result.
 
-准备工作：在一次性世界建立支持的简单封闭盒体，固定相同质量、材料、面朝向和边界梁。上方保持通气/观察条件一致；控制测试孔在水线下同一位置。先用完整 solid 面板验证基准隔水，再使用原生 Opening Tool 替换该测试面。Hatch 必须是可独立运动的正确刚体，以原生支持的铰链/锁件安装；不通过编辑原生坐标引入游戏不支持的几何。
+Preparation: build a supported simple closed box in a disposable world, keeping mass, materials, face orientation, and boundary beams fixed. Keep ventilation/observation conditions above it consistent; place the test hole at the same position below the waterline. First establish a watertight baseline using a complete solid plate, then replace the test face with the native Opening Tool. The Hatch must be the correct independently moving rigid body, mounted with supported hinges/latches. Do not edit native coordinates to introduce unsupported geometry.
 
-预先命名：`Research_SEA01_Solid`、`Research_SEA01_OpeningOnly`、`Research_SEA01_HatchAlignedUnlocked`、`Research_SEA01_HatchAlignedLatched`、`Research_SEA01_HatchOpen`。这些名称是计划，不表示文件已经生成或导入。
+Planned names: `Research_SEA01_Solid`, `Research_SEA01_OpeningOnly`, `Research_SEA01_HatchAlignedUnlocked`, `Research_SEA01_HatchAlignedLatched`, `Research_SEA01_HatchOpen`. These are planned names, not files already generated/imported.
 
-| 条件 | 单独改变的变量 | 支持/反驳 |
+| Condition | Single changed variable | Support/contradiction |
 | --- | --- | --- |
-| solid 对照 | 没有开口 | 对照漏水则先修复盒体，整轮无效 |
-| Opening only | 测试面为 Opening，无 Hatch | 进水反驳“无条件阻水”；不进水必须确认压差/水位、观察时长和腔体有效性 |
-| Hatch 对齐未锁 | 增加匹配 Hatch，保持静止闭合 | 隔水支持几何密封；需确认是否只是短时未观测到流动 |
-| 同姿态锁紧 | 只改变锁状态 | 若姿态保持且密封改变，需重新追踪独立 latch 条件 |
-| 开启 Hatch | 只改变相对姿态 | 失配后进水支持动态解除密封；记录延迟而非声称实时 |
+| Solid control | No opening | If it leaks, repair the box; invalidate the entire run |
+| Opening only | Test face is Opening, without Hatch | Flooding contradicts unconditional water blocking; no flooding requires checking pressure difference/water level, duration, and valid cavity |
+| Aligned, unlatched Hatch | Add matching Hatch, stationary and closed | Water exclusion supports geometric sealing; rule out merely failing to see short-term flow |
+| Latched at same alignment | Change only latch state | If sealing changes with alignment maintained, retrace an independent latch condition |
+| Open Hatch | Change only relative alignment | Flooding after mismatch supports dynamic unsealing; record delay instead of claiming instantaneous response |
 
-每条件先等待几何/运动稳定；记录明确的 0、10、30、60 秒观察点并重复至少两次。使用现有可用游戏 UI/支持的仪表记录水位或腔体水量；若没有数值量，明确视觉观察的分辨率，不发明遥测 API。每次只比较同初始水量、同水位、同环境的成对试验。不能把一次保存当连续流量测量。
+Wait for geometry/motion to settle for each condition. Record explicit observations at 0, 10, 30, and 60 seconds and repeat at least twice. Use available game UI/supported instruments for water level or cavity volume. If only visual observation is available, state its resolution; do not invent a telemetry API. Compare paired trials with equal initial water volume, waterline, and environment. One saved snapshot is not continuous flow measurement.
 
-另外在干燥安全地面测试玩家穿行，比较 Opening、Hatch 开/关；不把浮力结果用作碰撞证据。不要把玩家坐进载具/切换视角等未经测试的动作自动化。
+Separately test player passage on safe dry ground, comparing Opening and open/closed Hatch. Do not use buoyancy results as collision evidence. Do not automate untested actions such as entering vehicles or changing camera mode.
 
-保存：每条件保留用户主动导出的 `.data/.meta` 与版本清单；只分析这些独立研究文件。已有归档工具可只读 `snapshot`、`inspect`、`diff`，先查看 `--help` 并使用新输出名。世界备份和个人存档留在 Git 外。结果记录应含 UTC 与本地时间、操作者、初态、唯一变量、观察、失败/反例、文件哈希和恢复状态。对照失败不能标 PASS。
+Preservation: retain user-exported `.data/.meta` and version inventories for each condition; analyze only these separate research files. Existing archived tools offer read-only `snapshot`, `inspect`, and `diff`; check `--help` first and use fresh output names. Keep world backups and personal saves outside Git. Record UTC/local time, operator, initial state, unique variable, observations, failures/counterexamples, file hashes, and restoration status. A failed control cannot be marked PASS.
 
-静态阈值边界实验另列 SEA-02：通过支持的铰链运动、已知格点/原生装配改变相对姿态；先验证是否能可靠测量 0.02 原生坐标量附近的状态。不能为追求精确阈值而修改游戏能力或几何。
+SEA-02 separately addresses threshold boundaries: use supported hinge motion, known grid points, or native assemblies to vary relative alignment. First establish whether states near 0.02 native coordinate units can be measured reliably. Do not alter game capabilities or geometry to obtain an exact threshold.
 
-## 其他优先协议
+## Other priority protocols
 
-| ID | 假设/竞争解释 | 控制与观测 | 状态 |
+| ID | Hypothesis/competing explanation | Controls/observations | Status |
 | --- | --- | --- | --- |
-| ENG-01 | 紧凑引擎冷却能持续稳态 / 只在短快照有效 | 接受的 CPE1Running 派生独立创建，相同初始油/水/燃料和转速；持续温度、各储液量及负载，先完成仪表设计 | 未执行，准备不足 |
-| ELEC-01 | 控制器失电立即停止 / 延迟或保留输出 | 仅独立切断供电；同程序、负载、数据网和初态；观测供电/输出及恢复；先静态追踪调度 | 未执行，准备不足 |
-| SCRIPT-01 | 特定操作符导入缺失 / 特定表达式与类型问题 | 保留成功 `>0/<0` 对照，每次只改表达式；导出文本与编译诊断配对；不泛化旧 `!=` 个案 | 未执行，准备不足 |
-| MP-01 | 服务端权威 / 本地预测造成可见差异 | 需用户另行安排两客户端和一次性世界；先完成权限/复制路径，避免影响当前游玩 | 未执行，准备不足 |
+| ENG-01 | Compact-engine cooling reaches sustained equilibrium / only works in short snapshots | Separate derivative of accepted CPE1Running; equal initial oil/water/fuel and RPM; sustained temperatures, reservoir quantities, and load; design instrumentation first | Unperformed; insufficient preparation |
+| ELEC-01 | Controller immediately stops on power loss / delays or retains outputs | Independently cut only power; same program, load, data network, initial state; observe supply/output/recovery; statically trace scheduling first | Unperformed; insufficient preparation |
+| SCRIPT-01 | Specific operator missing on import / expression or type problem | Keep working `>0/<0` controls; change one expression at a time; pair exported text with compile diagnostics; do not generalize the historical `!=` case | Unperformed; insufficient preparation |
+| MP-01 | Server authority / local prediction creates visible differences | User must arrange two clients and a disposable world; first finish authority/replication paths; protect current gameplay | Unperformed; insufficient preparation |
 
-进入任何运行时阶段前，先把精确创建/初态、仪表能力和恢复步骤准备到可复查状态，再请求用户协调；本文件没有授权后台启动实验。
+Before any runtime work, prepare exact creations/initial states, instrument capabilities, and restoration steps for review, then request coordination. This document does not authorize background experiments.

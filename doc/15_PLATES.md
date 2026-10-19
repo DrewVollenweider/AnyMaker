@@ -1,48 +1,48 @@
-# Plate 渲染与选边复核
+# Plate rendering and edge-selection review
 
-复核日期：2026-09-28。结论来自当前源码、原生样本、只读 GCL 机器码与选定反编译结果；没有运行游戏或完成同机位截图验收。
+Reviewed 2026-09-28 from source, native samples, read-only GCL machine code, and selected decompilation. No game run or matched-camera screenshot acceptance.
 
-## Review 结论
+## Review findings
 
-| 优先级 | 发现 | 当前处理 |
+| Priority | Finding | Current treatment |
 | --- | --- | --- |
-| P1 | 原渲染把完整镜头方向用于选择每个节点立方体的角。正视时扩张轮廓，斜视时整片横移；相同节点环因创建视角不同得到不同几何。 | 内部面改为按面法线计算统一表面偏移，镜头只决定正反面。 |
-| P1 | 对未闭合的草稿提前做凸性、共面、尺寸及端点连续性检查，会阻碍合法边界的选择。 | 按用户要求允许任意顺序选梁，包括共线分段、不同梁宽及暂时不相连的边；只在形成单一闭环后校验共面、同一子网格及有效边界。无四梁上限。 |
-| P1 | 原选梁射线只检测梁，能穿过前景面板和组件。 | 悬停和点击共用最近实体命中，再检查候选。尚未完整复现游戏所有 raycast filter。 |
-| P1 | 单层多边形几何缺少游戏的厚度、外沿条带及玻璃内框。 | **仍未完成**。本轮仅修正内部面的轮廓和表面位置，不称为完整游戏 plate mesh。 |
-| P2 | 原校验没有检测自交，共面误差随叉积长度改变；扇形三角化会填满某些凹面缺口。 | 共面使用单位法线距离，最终闭环拒绝自交/回折；新建、旧工程及导入的简单凹面均采用耳切三角化。 |
-| P2 | 重复边界检查对循环起点的索引不正确，换一根梁开始可能漏过重复面。 | 修复循环移位及反向绕序的去重。 |
-| P2 | 结构面文案混用 Plate、Panels，模型导入和涂色提示也不一致。 | 结构面统一为 Plate / plates；数学平面仍为 plane，设置面板仍为 panel。 |
+| P1 | Full camera direction selected node-cube corners, expanding frontal outlines and translating oblique plates; identical node loops produced view-dependent geometry. | Inner faces use uniform normal-derived surface offset; camera only selects front/back. |
+| P1 | Convexity/coplanarity/size/endpoint-continuity checks on unfinished drafts blocked valid boundary selection. | User-requested arbitrary beam order, collinear segments, mixed widths, temporarily disconnected edges. Validate coplanarity, one subgrid, valid boundary only after one closed loop; no four-beam cap. |
+| P1 | Beam-only raycasts selected through foreground plates/components. | Hover/click share nearest solid hit before candidate checks; complete game raycast filters remain unrecovered. |
+| P1 | Single-layer polygons lack native thickness, outer strips, glass inner frames. | **Unfinished**. Only inner outline/surface placement corrected; not complete native plate geometry. |
+| P2 | No self-intersection check; coplanarity tolerance varied with cross-product length; fans filled some concave gaps. | Unit-normal distance, reject closed self-crossing/backtracking boundaries; ear clipping for new/existing/imported simple concave plates. |
+| P2 | Cyclic starting-index error missed duplicate boundaries when starting from another beam. | Deduplicate cyclic shifts and reversed winding. |
+| P2 | Structural surfaces mixed Plate/Panels terminology across import/painting. | Structural objects use Plate/plates; mathematical plane and settings panel remain distinct. |
 
-## 已验证的静态代码事实
+## Verified static code
 
-[证据摘要](evidence/plates.json) 记录 11 个函数的签名、代码/分配范围、代码哈希和重定位列表。当前输入为 bin/game.gcl，81,870,449 字节，SHA-256 为 d9725681f1b0bff321c58fcadc0d2e12104919a541eef074cf12945b283edb75。它与旧 native-grid-transform.json 的 32c138… 版本不同，因此本次重新解析函数记录，并核对代码后的所有者名称，未沿用旧偏移。
+[Evidence](evidence/plates.json) records 11 function signatures, code/allocation ranges, hashes, and relocation lists. Input `bin/game.gcl`: 81,870,449 bytes, SHA-256 `d9725681f1b0bff321c58fcadc0d2e12104919a541eef074cf12945b283edb75`. This differs from old `native-grid-transform.json`'s `32c138…`; records and following owner names were reparsed, never old offsets reused.
 
-选点问题的具体区别是**梁链的节点拓扑及候选规则**，不能据此认定游戏允许任意点选独立节点：
+Selection concerns **beam-chain node topology and candidate rules**, not proof of arbitrary independent-node selection:
 
-- state_add_plate.tick 从命中的梁建立草稿，同时存入该梁两端节点 ID。
-- state_add_plate_select_edges.get_is_edge_visible 检查梁端是否连接节点链的首尾，并调用 _get_is_planar、_get_is_convex。
-- state_add_plate_select_edges.tick 支持向链首或链尾插入节点。闭合时调用 client_scene.vehicle.can_add_plate，再发送节点列表、朝向标记和 plate 类型。
-- _get_is_convex 将节点位置交给 vehicle_util.test_is_convex。这是游戏静态代码证据；当前编辑器按用户要求去掉选取时的凸性等前置过滤，不把该游戏候选规则作为编辑器限制。
+- `state_add_plate.tick` starts from a hit beam and stores both endpoint IDs.
+- `state_add_plate_select_edges.get_is_edge_visible` checks endpoint connection to chain ends and calls `_get_is_planar`, `_get_is_convex`.
+- `state_add_plate_select_edges.tick` inserts at either end; closing calls `client_scene.vehicle.can_add_plate`, then sends nodes, orientation flag, plate type.
+- `_get_is_convex` passes positions to `vehicle_util.test_is_convex`. This is game static evidence. The editor intentionally removes such preliminary filters per user request rather than imposing the game's candidate rules.
 
-渲染路径中，add_static_geometry 调用 get_plate_node_surface_offset，另用 G_VEHICLE_PLATE_THICKNESS 计算背面偏移，再按 solid/window/opening/hatch 分派，并调用 add_geometry_outer。add_geometry_inner_solid 将同一个节点表面偏移加到每个节点，分别提交正反三角面。偏移取决于法线的非零轴：一轴取立方体面中心，两轴取最外侧边中点，三轴取最外侧角；与镜头的切向分量无关。
+Rendering: `add_static_geometry` calls `get_plate_node_surface_offset`, uses `G_VEHICLE_PLATE_THICKNESS` for backside offset, dispatches solid/window/opening/hatch, then calls `add_geometry_outer`. `add_geometry_inner_solid` adds one shared node-surface offset to each node and submits front/back triangles. Offset depends on nonzero normal axes: cube face center for one, outer-edge midpoint for two, outer corner for three; no camera tangential component.
 
-本轮没有实现 add_geometry_outer_1_axis/2_axis 的全部外沿、边框、窗口孔洞和厚度规则，也没有把游戏对凸形使用扇形三角化解释为对任意凹形安全。诊断材质、玻璃透明度和光照仍与原游戏不同。
+Complete `add_geometry_outer_1_axis/2_axis` strips/frames/window holes/thickness were not implemented. A game fan for convex polygons does not prove safety for arbitrary concavity. Diagnostic materials/glass alpha/lighting differ from the game.
 
-## 当前实现与数据边界
+## Implementation and data boundaries
 
-- [plate-selection.js](../src/editor/plate-selection.js) 收集所选梁集合，悬停和点击调用同一逻辑。再次点击取消单条梁，Esc 清空。暂未相连、共线、混合宽度、不共面和跨网格的草稿都可以继续编辑，不提前当作封闭多边形校验。全部所选梁组成单一闭环时才排序节点，并校验所有边界节点共面、梁及明确归属的节点在同一子网格，随后创建面板或窗。分支和多个不连通环不提交；自交、回折或退化闭环报错且保留原草稿及工程。中间共线节点保留在工程边界引用中，三角化可略过冗余共线点。草稿不写入工程，闭合才提交一个可撤销操作。隐藏节点辅助不会清除选梁草稿。
-- [plate-polygon.js](../src/editor/plate-polygon.js) 共用平面投影、自交校验及三角化；领域层不引入 Three.js。
-- 拖动节点暂时造成不共面或自交时，仅隐藏无效的 plate 预览，恢复有效轮廓后重新显示；共线节点使三角形数量变化时同步更新法线及正反面材质组，提交仍执行领域校验。
-- construction-view.js 的内部面以节点环加统一支撑偏移渲染。轴向面的轮廓不再凭空扩大半格；外侧梁面因而更明显，这是尚未实现独立外沿条带的可见边界。
-- 工程 schema 仍为 v1。已有 surfaceDirection 保留，但只用于判断法线正负；新建时保存带正反方向的单位法线。旧文件不需要删字段，重新渲染的轮廓会按修正规则变化。
-- normalOffset 继续保留为世界单位的可选偏移参数；在本次内部面实现中，其绝对值用于每个非零法线轴的支撑偏移。普通新建值为 0.04，三格宽梁为 0.12；混合梁宽取所选梁的最大宽度，因此不依赖点击顺序。零值保持在节点面。该参数不是游戏 plate 厚度。
-- 新面归属跟随所选梁链，避免把非当前子网格上的面错误写入 active grid。此处 grid 是编辑器物理分组，不把原生安装坐标网格当作独立刚体。
-- 原生导出仍按既有 X 反射及节点绕序映射正反面。修正内部渲染不代表原生存档已获得游戏加载验收。
+- [plate-selection.js](../src/editor/plate-selection.js) collects a beam set using shared hover/click logic. Reclick cancels one beam; Esc clears. Disconnected, collinear, mixed-width, noncoplanar, cross-grid drafts remain editable without premature polygon validation. Only a single closed loop is ordered/validated for coplanarity and same-subgrid beams/explicitly owned nodes, then creates a plate/window. Branches/multiple disconnected loops do not commit. Self-crossing/backtracking/degenerate loops report errors and retain draft/project. Intermediate collinear nodes stay in project references; triangulation may omit redundant points. Drafts are not saved; closure makes one undoable operation. Hiding node helpers preserves drafts.
+- [plate-polygon.js](../src/editor/plate-polygon.js) shares planar projection, self-intersection checks, triangulation without Three.js in domain code.
+- Temporarily nonplanar/self-crossing node drags hide only invalid previews; valid outlines restore them. Collinearity-driven triangle-count changes refresh normals/front/back material groups. Commit still runs domain validation.
+- `construction-view.js` renders inner faces from node loops plus uniform support offset. Axial outlines no longer expand by half a cell. More exposed outer beams reflect the still-missing independent outer strips.
+- Project schema remains v1. Existing `surfaceDirection` is preserved but only chooses normal sign; new plates save an oriented unit normal. Old fields need not be deleted, though corrected rendering changes outlines.
+- Optional `normalOffset` remains in world units. Here its absolute value supplies support offset for each nonzero normal axis. Typical new value 0.04, three-cell beams 0.12; mixed widths use maximum selected width, independent of click order. Zero stays on node plane. This is not native plate thickness.
+- New plates follow selected-chain ownership rather than incorrectly using active grid. Here grid is editor physical grouping, not an independent body for each native mounting grid.
+- Native export retains existing X reflection/node-winding mappings for front/back. Rendering fixes do not establish game-save loading acceptance.
 
-## 复核方法
+## Review procedure
 
-在仓库根目录执行：
+From repository root:
 
 ~~~powershell
 node scripts/check-plate-evidence.mjs <game.gcl>
@@ -51,25 +51,25 @@ npm run test:browser:editor
 npm run build
 ~~~
 
-证据脚本只读检查当前游戏版本、函数头、所有者、代码哈希和重定位。[专项测试](../tests/plates.test.js) 已由现有单元测试入口显式加载；浏览器用例覆盖任意顺序选梁、八段共线边界、混合梁宽、前景遮挡、面板与窗、取消、子网格归属、旋转视角和撤销重做。涂色/删除重叠测试使用实际吸附后的节点坐标，不能依赖旧版任意扩张后的像素位置。
+The read-only evidence script checks version, headers, owners, hashes, relocations. [Targeted tests](../tests/plates.test.js) are explicitly loaded by the unit entry point. Browser coverage: arbitrary-order beams, eight collinear segments, mixed widths, occlusion, plates/windows, cancel, ownership, camera rotation, undo/redo. Paint/delete overlap tests use actual snapped nodes rather than old artificially expanded pixel positions.
 
-本轮运行日志和截图保留在忽略目录 tmp/plate-review/。为保护已有未提交的 docs/ 产物，本轮生产构建使用 --outDir tmp/plate-review/production-dist；浏览器沿用原配置的 Chromium、单 worker、1500×960、SwiftShader 和 /anymaker-builder/ 子路径，构建/报告输出重定向到该临时目录。完整编辑器回归使用 4173；最后专项复测时 4173 与 4187 已被其他服务占用，因此临时配置改用系统分配的空闲端口 8753，没有停止或复用已有服务，仓库正式测试配置未改。
+Logs/screenshots remain ignored in `tmp/plate-review/`. To preserve existing uncommitted `docs/`, this review built with `--outDir tmp/plate-review/production-dist`. Browser settings remained Chromium, one worker, 1500×960, SwiftShader, `/anymaker-builder/`, with outputs redirected there. Complete editor regression used 4173. Final targeted reruns found 4173/4187 occupied, used temporary port 8753 without stopping/reusing services, and did not change committed config.
 
-## 放宽选梁规则的验证（2026-09-28）
+## Relaxed beam-selection validation (2026-09-28)
 
-- `npm test`：224/224 通过，含 9 项 Plate 专项；覆盖八段共线边界、乱序及取消选择、混合梁宽、凹面、闭环后共面/归属失败的原子性和多个独立环不提交。日志：`tmp/plate-selection-unit.log`。
-- `npm run test:browser:editor`：92/92 通过；新增面板、窗的八梁闭环实鼠标操作，验证中间草稿不提交历史、取消单梁、渲染、撤销/重做及保存重载。日志：`tmp/plate-selection-editor.log`。
-- `npm run build` 通过，正常输出 `docs/`。日志：`tmp/plate-selection-build.log`。
-- 未运行游戏；任意凹面及混合梁宽的实际游戏加载、原生厚度/外沿仍未验收。
+- `npm test`: 224/224 passed, including nine Plate tests for eight collinear segments, unordered/cancelled selection, mixed widths, concavity, atomic closed-loop coplanarity/ownership failure, multiple loops not committing. Log `tmp/plate-selection-unit.log`.
+- Editor browser suite: 92/92 passed. New real-mouse eight-beam plate/window loops check no draft history commits, single-edge cancellation, rendering, undo/redo, save/reload. Log `tmp/plate-selection-editor.log`.
+- `npm run build` passed to normal `docs/`; log `tmp/plate-selection-build.log`.
+- No game run; arbitrary concavity/mixed-width game loading and native thickness/outer edges remain unaccepted.
 
-## 前次渲染复核的验证记录
+## Earlier rendering-review validation
 
-- 证据脚本通过：11 个函数的版本、所有者、代码哈希和重定位均匹配，见 tmp/plate-review/evidence-final.log。它验证的是输入与函数记录，不是游戏运行效果。
-- 最终 npm test：218/218 通过，含 7 项 plate 专项；见 tmp/plate-review/unit-final.log。工作区的其他功能测试也在此入口内，本轮未将这些功能归为 plate 改动。
-- 编辑器完整浏览器回归：当时的 74/74 通过，见 tmp/plate-review/browser-editor.log。该运行早于最后的拖动预览修复及追加用例，不能当作最终工作区全部浏览器用例的重跑。
-- 最终相关浏览器专项：5/5 通过，覆盖有序梁链、前景遮挡与取消、拖动无效/共线位置及正反材质恢复、玻璃涂色、面与梁重叠删除；见 tmp/plate-review/browser-final-isolated-port.log。该运行包含最终代码的 Pages 子路径生产构建。
-- 独立生产构建通过，输出 tmp/plate-review/production-dist，见 tmp/plate-review/build-final.log；本次修改文件的 git diff --check 通过。
-- 早期失败的测试日志和端口冲突日志保留在同一目录。最后拖动测试修正为实际触发 TransformControls 拖动态，并选取会消除共线顶点的轮廓起点后重新通过，未删除法线/材质组断言。
-- 未执行设置/恢复专项、资产检查或 check:full；本轮没有修改发布资产或设置持久化。
+- Evidence script matched 11 functions' version/owner/hash/relocations: `tmp/plate-review/evidence-final.log`. This checks inputs/records, not gameplay.
+- Final `npm test`: 218/218, seven plate cases, `tmp/plate-review/unit-final.log`. Other functions' tests also use this entry point and are not plate changes.
+- Complete editor browser suite then passed 74/74, `tmp/plate-review/browser-editor.log`, before the final drag-preview fix/additional cases; not a rerun of all final-workspace cases.
+- Final targeted browser tests: 5/5 covering ordered chains, occlusion/cancel, invalid/collinear drags and front/back groups, glass paint, overlapping plate/beam deletion. Log `tmp/plate-review/browser-final-isolated-port.log`, including final Pages-subpath build.
+- Separate build passed to `tmp/plate-review/production-dist`: `tmp/plate-review/build-final.log`; changed-file `git diff --check` passed.
+- Early failures/port-conflict logs remain. Final drag test was corrected to trigger actual TransformControls dragging and start at an outline point eliminating collinear vertices, then passed without deleting normal/material-group assertions.
+- Settings/recovery suites, asset checks, and `check:full` were not run; no published assets/settings persistence changed.
 
-尚未验证：真实游戏选点交互对照、全部 can_add_plate 阻挡规则、完整外沿/厚度/窗口几何、所有原生边尺寸与动态姿态、游戏加载及同机位像素对比。测试通过不能据此标记视觉 1:1。
+Still unverified: actual game selection interaction, all `can_add_plate` blockers, full outer/thickness/window geometry, all native edge sizes/dynamic poses, game loading, matched-camera pixels. Passing tests do not establish visual parity.

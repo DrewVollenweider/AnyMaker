@@ -1,21 +1,21 @@
-# 全游戏研究入口 / Whole-game research
+# Whole-game research
 
-2026-10-18（America/New_York）。这是持续研究系统的首个全游戏基线检查点，不是“已理解整个游戏”的声明。先看 [覆盖矩阵](COVERAGE.md)、[版本记录](VERSIONS.md) 和 [交接](HANDOFF.md)，再按 [系统索引](versions/build-25904830/system-map.json) 检索。原有 [当前工程结论](../CURRENT-FACTS.md) 和验收记录继续有效，但必须保留各自版本和证据边界。
+2026-10-18 (America/New_York). This is the first whole-game baseline checkpoint of an ongoing research system, not a claim to understand the entire game. Start with [coverage](COVERAGE.md), [versions](VERSIONS.md), and [handoff](HANDOFF.md), then search through the [system index](versions/build-25904830/system-map.json). The existing [engineering findings](../CURRENT-FACTS.md) and acceptance records remain applicable within their own version and evidence boundaries.
 
-本轮完成全安装双遍 SHA-256 清单、隔离快照、现有研究复核、定义索引、GCL 函数记录/引用索引、历史地址迁移检查，以及 Opening/Hatch 密封链的首次深入静态研究。没有启动、附加或操纵游戏，也没有修改安装目录或活动存档。运行实验尚未执行。
+This checkpoint completed a two-pass SHA-256 inventory of the entire installation, an isolated snapshot, review of existing research, definition indexes, GCL function-record/reference indexes, historical-address relocation checks, and an initial detailed static investigation of the Opening/Hatch sealing path. The game was never launched, attached to, or controlled. Installation files and active saves were untouched. Runtime experiments have not been performed.
 
-## 如何回答问题
+## Answering questions
 
-1. 确认 Steam build、输入 SHA-256 和分析工具 SHA-256，禁止混用旧地址。
-2. 在定义数据库查询原始字段；省略字段保留为省略，不擅自填默认值。
-3. 在 GCL 数据库按完整签名查函数，沿符号引用查调用方，再检查原始代码和反汇编。符号引用不是已经执行的调用。
-4. 检查代表性原生文件，区分加载状态、静态连接和历史运行验收。
-5. 用 [证据分类](#证据分类) 写出已知内容和边界；运行时歧义转入 [实验协议](EXPERIMENTS.md)。
-6. 添加可复现命令、输入哈希、结果、反例和下一步。完整反编译、二进制、ROM、个人存档只留本地。
+1. Confirm the Steam build, input SHA-256, and analysis-tool SHA-256. Never reuse old addresses without checking.
+2. Query original fields in the definition database. Preserve omitted fields as omitted; do not invent defaults.
+3. Find functions by full signature in the GCL database, follow symbol references to callers, and inspect original code and disassembly. A symbol reference is not an executed call.
+4. Inspect representative native files, distinguishing loaded state, static connections, and historical runtime acceptance.
+5. State findings and limits using the [evidence categories](#evidence-categories). Move runtime ambiguities into [experiment protocols](EXPERIMENTS.md).
+6. Record reproducible commands, input hashes, results, counterexamples, and next steps. Keep full decompilations, binaries, ROM copies, and personal saves local.
 
-## 检索与工具
+## Search and tools
 
-Python 3.12+，索引和基本解析只使用标准库。命令从仓库根运行；`$r` 指向仓库外独立研究目录。输出目录必须是新目录，已有输出不会被覆盖。
+Python 3.12+. Indexing and basic parsing use only the standard library. Run commands from the repository root; `$r` points to a separate research directory outside the repository. Output directories must be new; existing outputs are not overwritten.
 
 ```powershell
 python scripts/research/gcl_index.py build "$r/snapshot/bin/game.gcl" "$r/gcl"
@@ -27,21 +27,21 @@ python scripts/research/system_map.py "$r/gcl/index.sqlite" "$r/catalog/definiti
 python -m unittest discover -s scripts/research -p test_research.py -v
 ```
 
-`gcl/index.sqlite` 保存完整本地签名、代码范围/哈希、重定位操作数、全局/源文件表和引用解析状态。`catalog/definitions.sqlite` 保存定义 JSON、JSON Pointer、来源/规范化定义哈希和全文搜索。可按 `functions.record` 和 `definitions.json` 取原始记录；原始定义不在轻量组件索引中重复发布。
+`gcl/index.sqlite` stores full local signatures, code ranges/hashes, relocation operands, global/source-file tables, and reference-resolution status. `catalog/definitions.sqlite` stores definition JSON, JSON Pointers, source/normalized-definition hashes, and full-text search. Retrieve original records through `functions.record` and `definitions.json`; the lightweight component index does not republish complete definitions.
 
-[工具与维护](TOOLS.md) 给出基线、Ghidra、历史证据检查和升级比较命令。当前机器的精确本地路径在工作区 `RESEARCH-HANDOFF.md`，不写入公共仓库。
+[Tools and maintenance](TOOLS.md) covers baseline collection, Ghidra, historical evidence checks, and update comparison. Exact paths on the current machine are in workspace `RESEARCH-HANDOFF.md`, not the public repository.
 
-## 证据分类
+## Evidence categories
 
-| 类别 | 含义 |
+| Category | Meaning |
 | --- | --- |
-| `shipped` | 发布的文档/定义明确写出的内容，尚不等于运行实现 |
-| `static` | 按匹配版本检查实现、调用关系或原始字节得到的结论 |
-| `runtime` | 实际游戏观察；注明操作者、初始状态、控制变量和观测范围 |
-| `inference` | 有支持的推论，写明推理桥梁及可能反例 |
-| `hypothesis` | 待检验解释，不能写作结果 |
-| `unknown` | 尚无足够证据，记录下一步 |
+| `shipped` | Explicitly stated in shipped documentation/definitions; not automatically implementation behavior |
+| `static` | Established by checking matching-version implementation, references, or original bytes |
+| `runtime` | Actual game observation; identify operator, initial state, controls, and observation scope |
+| `inference` | Supported deduction; state the reasoning and possible counterexamples |
+| `hypothesis` | Explanation awaiting a test; never report it as a result |
+| `unknown` | Insufficient evidence; record the next investigation |
 
-置信程度与证据类别分开记录。函数数量、关键词命中、成功反编译、静态审核通过都不计作系统运行验收。
+Record confidence separately from evidence category. Function counts, keyword hits, successful decompilation, and passing static checks do not count as system runtime acceptance.
 
-本轮新增实质结论见 [Opening/Hatch](SEALING.md)。目前没有全系统的单位表、完整类型恢复、完整 GCL 容器语法、通用运行时遥测或万能反编译器。
+The substantive new behavioral findings are in [Opening/Hatch](SEALING.md). There is currently no whole-game units table, complete type recovery, complete GCL container grammar, general runtime telemetry, or universal decompiler.

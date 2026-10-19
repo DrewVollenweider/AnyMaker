@@ -1,110 +1,110 @@
-# 编辑性能与渲染质量
+# Editing performance and render quality
 
-本文记录当前实现和自动化检查，不把资源复用等同于特定硬件的帧率保证。主要代码位于 src/editor/visual-cache.js、render-quality.js、render-quality-ui.js，以及 src/main.js 的编辑协调链路。
+This records implementation/automated checks, not hardware FPS guarantees from resource reuse. Main code: `src/editor/visual-cache.js`, `render-quality.js`, `render-quality-ui.js`, and `src/main.js` coordination.
 
-## 编辑过程
+## Editing
 
-- 鼠标移动和变换附属预览每个渲染帧只处理最新样本。TransformControls 仍直接接收鼠标输入；释放时同步处理最后一份变换，历史只提交最终状态。拖动组件时跳过无关的悬停射线检测；操作相机时保持拾取更新，预览和高亮使用当前帧的镜头与鼠标位置。
-- 取消原先拖动时固定 30 FPS 的限制，使用用户设置的统一帧率上限。交互时按比例降低画布分辨率，结束后恢复。默认缓存交互前的阴影，不切换光源投影标志，避免反复切换着色器变体。
-- 组件恢复根据规范化数据比较复用未变化的渲染对象。调整线性尺寸仅实例化变化的组件。新对象和结构先准备成功再替换；失败释放本次创建的对象，保持原场景。显式重新导入本地 Mesh 时仍强制重建组件。
-- 节点、梁、面板和连接按照实体及依赖数据决定是否重建。新增梁或面板保留其他结构的几何、材质及对象；节点拖动只更新关联梁和面板，连接折点拖动只重建变化的连接。
-- 相同格点下的梁预览保留几何。重复分配相同深度层不再标记材质重新编译。组件和面板保留包围盒供射线检测使用。
-- 梁放置指示球半径从 0.07 调为 0.035，直径减半；整数格吸附距离和实际梁截面保持原有规则。放置碰撞缓存实际 Mesh 的世界包围盒，先剔除不相交模型，再按距离查询最近的实体表面；轮廓线不参与实体碰撞。邻近表面回退复用同一缓存，编辑、变换和工具切换会使缓存失效。
-- 节点吸附复用屏幕投影，相机、视口或节点数据变化后更新；相同提示文字不重复改写 DOM，减少移动指示球时的几何遍历、临时对象和界面布局工作。
-- 旋转视角后的惯性更新仅在没有待处理鼠标输入时请求预览刷新，不能覆盖本帧的新坐标。原始鼠标位置在事件到达时记录，旋转期间也保留；拾取前同步当前相机矩阵，避免指示球使用上一帧视角。相机惯性效果仍保留。
-- 网格覆盖和方向指示器在相机未变化时跳过重复计算。梁长度标签关闭时不创建 DOM，开启后复用未变化的标签，视角未变化时不重复投影和写入样式。
+- Process only latest mouse/attached-preview sample each render frame. TransformControls still receives input directly; release synchronously flushes final transform, committing final state only. Skip unrelated hover rays during component drags, retain picking during camera interaction with current camera/mouse.
+- Remove fixed 30 FPS drag cap; use configured global cap. Lower canvas resolution proportionally during interaction, restore afterward. Default to cached preinteraction shadows without changing light casting flags/recompiling shader variants.
+- Compare normalized component data to reuse unchanged render objects. Linear-size edits instantiate changed components only. Prepare all replacements before swap; failure disposes new objects and preserves scene. Explicit local-Mesh reimport forces component rebuilding.
+- Rebuild nodes/beams/plates/links only for changed entities/dependencies. New structure preserves unrelated geometry/material/objects; node dragging updates connected structures, path dragging changed links only.
+- Same-cell beam previews retain geometry. Reapplying same depth layer no longer triggers material compilation. Cache component/plate bounds for rays.
+- Beam placement sphere radius reduced 0.07 -> 0.035, halving diameter without changing snapping/beam rules. Cache real Mesh world bounds, cull misses, query nearest actual surface by distance; outlines do not collide. Nearby fallback shares cache, invalidated by edits/transforms/tool switches.
+- Reuse node screen projections until camera/viewport/node changes. Avoid unchanged DOM text rewrites and repeated traversal/temporary allocations/layout.
+- Camera inertia requests preview refresh only without pending mouse input, never overwriting fresh coordinates. Record raw mouse positions immediately, including during orbit; synchronize camera matrix before picking to avoid old-view cursor positions. Inertia stays enabled.
+- Skip grid/axis-indicator updates when camera unchanged. Disabled beam labels create no DOM; enabled labels reuse/project/style only when needed.
 
-## 编辑器参数 → 渲染质量
+## Editor settings -> render quality
 
-设置使用现有、按站点路径隔离的 localStorage v1 记录中的 renderQuality 字段；不写入工程，不改变工程 schema。旧记录或无效值使用以下默认值。
+Persist `renderQuality` in existing path-isolated localStorage v1, never project/schema. Missing/invalid values use:
 
-| 参数 | 范围／选项 | 默认值与作用 |
+| Parameter | Range/options | Default/effect |
 | --- | --- | --- |
-| 质量预设 | 流畅、均衡、高质量、自定义 | 均衡；修改明细后自动识别为自定义 |
-| 渲染比例 | 50%–150% | 100%；调整画布像素数量 |
-| 像素比上限 | 1–3 | 1.5；实际不超过屏幕设备像素比 |
-| 交互渲染比例 | 35%–100% | 75%；乘在正常分辨率上，仅在拖动／相机交互时使用 |
-| 帧率上限 | 30、60、120、跟随屏幕 | 60 FPS；上限不是性能保证 |
-| 多重采样抗锯齿 | 开／关 | 开；WebGL 上下文初始化选项，刷新页面后生效，界面提示先保存工程 |
-| 启用阴影 | 开／关 | 开 |
-| 阴影贴图尺寸 | 512、1024、2048、4096 | 1024；受 GPU 最大纹理尺寸限制，切换尺寸释放旧贴图 |
-| 阴影过滤 | 基础、PCF、柔和 PCF | 柔和 PCF；现有光照柔和度控制仅在 PCF 下调整过滤半径 |
-| 阴影更新 | 场景变化时、每帧 | 场景变化时；编辑提交和灯光设置变化后刷新 |
-| 交互时更新阴影 | 开／关 | 关；交互期间暂用上次阴影，释放后刷新 |
-| 色调映射 | 无、线性、Reinhard、ACES Filmic | 无；诊断材质下的显示效果 |
-| 曝光 | 0.1–3 | 1；启用色调映射后生效 |
-| 显示渲染统计 | 开／关 | 关；显示帧间隔、绘制调用、三角形数量和实际像素比 |
+| Preset | Performance/Balanced/High/Custom | Balanced; changed details identify Custom |
+| Render scale | 50%–150% | 100%; canvas pixels |
+| Pixel ratio cap | 1–3 | 1.5, capped by device ratio |
+| Interaction scale | 35%–100% | 75% of normal resolution while dragging/camera interaction |
+| Frame cap | 30/60/120/display | 60 FPS cap, not guarantee |
+| Multisample antialias | On/off | On; WebGL initialization, reload required; prompt to save |
+| Shadows | On/off | On |
+| Shadow map | 512/1024/2048/4096 | 1024, GPU-limited; dispose old map on size change |
+| Shadow filter | Basic/PCF/Soft PCF | Soft PCF; softness adjusts radius only under PCF |
+| Shadow updates | Scene changes/every frame | Scene changes; committed edits/light settings refresh |
+| Update during interaction | On/off | Off; reuse old shadows until release |
+| Tone mapping | None/Linear/Reinhard/ACES Filmic | None; diagnostic-material display |
+| Exposure | 0.1–3 | 1, active with tone mapping |
+| Statistics | On/off | Off; frame interval/draw calls/triangles/effective ratio |
 
-除了抗锯齿以外，设置即时生效。交互结束后按当前设置恢复分辨率，不保存临时降采样值。关闭阴影时禁用相关明细输入；无色调映射时禁用曝光输入。
+Except antialias, apply immediately. Restore current configured resolution after interaction without persisting temporary scale. Disable shadow details when off/exposure when no tone mapping.
 
-## 验证证据与边界
+## Evidence and limits
 
-- 单元测试覆盖参数边界／旧偏好兼容、阴影冻结和恢复、旧贴图释放、事件合并与取消、依赖失效和不变几何复用。
-- 100 次待处理鼠标样本只调用一次预览更新；连续 50 次相同梁预览不会替换／释放几何。这些是确定性的工作量检查，不是硬件计时结果。
-- 浏览器测试实际导入 60 个传动轴，修改其中一个的线性尺寸，检查其余 59 个的 Three.js UUID 不变，并检查撤销／重做的工程数据。
-- 浏览器测试实际点击闭合梁环生成面板，检查已有节点和梁的 UUID 在新增与撤销期间保留。
-- 浏览器测试通过鼠标拖动移动／旋转控件，检查相机不被带动、交互像素比恢复、组件对象不重建，以及每次拖动只增加一条历史记录。
-- 浏览器设置流程检查中英文、刷新恢复、真实 renderer 参数、抗锯齿重建上下文、相机交互降采样以及静止场景的阴影缓存。测试使用 Three.js 自带 devtools 观察事件，应用不暴露测试控制接口。
-- Chromium + SwiftShader 只能证明自动化环境中的行为和资源复用。真实显卡、复杂原生载具的 P95 输入延迟／GPU 帧时间、跨浏览器体验和游戏视觉一致性仍需单独实测；本文不宣称固定帧率或游戏 1:1 渲染。
+- Unit tests cover bounds/legacy settings, shadow freeze/restore, old-map disposal, coalescing/cancel, dependency invalidation, geometry reuse.
+- 100 pending mouse samples cause one preview update; 50 identical beam previews never replace/dispose geometry. Deterministic workload checks, not hardware timing.
+- Browser imports 60 shafts, edits one size, asserts other 59 Three.js UUIDs unchanged and undo/redo data correct.
+- Real closed-loop plate creation/undo retains existing node/beam UUIDs.
+- Actual move/rotate handle drags verify camera stays still, pixel ratio restores, components not rebuilt, one history record per drag.
+- Settings browser tests cover localization/reload, actual renderer values, antialias context recreation, camera downsampling, static shadow cache, using Three.js devtools events without exposing application test-control APIs.
+- Chromium/SwiftShader establishes automated behavior/reuse only. Real GPU P95 input latency/frame time, complex native scenes, cross-browser experience, game visual parity need separate measurement.
 
-日常执行 npm run check，再按影响范围执行 test:browser:editor 与 test:browser:preferences。已有未提交的 docs/ 发布产物时，可用 Vite 的 --outDir dist 在独立输出目录验证，浏览器预览服务也必须使用相同的输出目录与 /anymaker-builder/ base；不要覆盖用户已有发布产物。
+Normally run `npm run check`, then affected editor/preferences suites. Preserve uncommitted `docs/` using `--outDir dist` with matching preview output and `/anymaker-builder/` base.
 
-### 本次实际检查
+### Actual historical checks
 
-- npm test：130 项通过。
-- 编辑器和偏好两个 Playwright 文件：51 项通过；使用继承主配置的本地临时配置，仅将构建和预览目录改为 dist，仍使用 Chromium、SwiftShader、单 worker、1500×960 和 Pages 子路径。
-- 浏览器服务的生产构建：npm run build -- --outDir dist --base=/anymaker-builder/ 成功。
-- 已检查画质面板截图；明细输入、中英文切换、刷新恢复与交互画布分辨率均有浏览器验证。
-- 首轮完整回归发现并校准了旧测试：原生参考坐标需要沿用领域层已有的 X 反射；当前工程已有 grids 和 projectName 字段；刷新测试的初始化夹具不能每次导航都清空设置。线性尺寸用例同时对齐已有的“显示基础尺寸、ext 仅存增量”约定。保留精确断言，并新增设置不混入工程的检查；没有跳过失败用例或改动坐标／schema 实现来适配测试。
-- 本次未重生成发布资产，未执行游戏加载验收，也未测量真实显卡上的 FPS／P95 延迟。
+- `npm test`: 130 passed.
+- Editor/preferences Playwright: 51 passed with temporary inherited config changing only output/preview to dist; Chromium/SwiftShader/one worker/1500×960/Pages subpath unchanged.
+- Service build `npm run build -- --outDir dist --base=/anymaker-builder/` succeeded.
+- Quality-panel screenshot inspected; controls/localization/reload/interaction resolution browser-checked.
+- Initial regression calibrated old tests: native X reflection, new grids/projectName, refresh fixtures must not clear settings on every navigation. Linear-size test follows base-size display/ext-as-increment. Precise assertions retained plus settings-exclusion check; no skipped failures or coordinate/schema changes to satisfy tests.
+- No asset regeneration/game loading/real-GPU FPS/P95 measurements.
 
-### 梁放置指示球追加回归
+### Beam placement sphere regressions
 
-- npm test：133 项通过。新增测试覆盖缓存失效、最近实体碰撞、旋转与尺寸变化、射线起点位于包围盒内部、邻近吸附和节点投影复用。
-- 100 个模型、50 次指针采样的确定性用例中，包围盒各计算一次，仅执行 50 次实际 Mesh 射线检测；轮廓线不参与碰撞。
-- 浏览器导入 60 个传动轴，确认指示球半径为 0.035、移动位置改变而几何保持复用；预热后在空白区域移动，不再重算模型包围盒或调用远处 Mesh 的 raycast，也不重复改写建梁状态文案。随后完成建梁与撤销。
-- 编辑器文件共 46 项：首轮 45 项通过，1 项在读取工程下载时收到 download.createReadStream: canceled；未修改断言或应用下载行为，单独复跑该用例通过。首轮错误摘要保留在本地忽略目录 tmp/beam-hover-first-run.txt。
-- Playwright 服务的 dist 生产构建成功；本次未重生成 docs 发布产物或资产，未测量真实显卡帧率。
+- 133 unit tests passed, adding cache invalidation, nearest solids, rotation/size, rays inside bounds, nearby snapping, projection reuse.
+- Deterministic 100-model/50-pointer case computes each bound once and performs 50 actual Mesh raycasts, excluding outlines.
+- Browser with 60 shafts verifies radius 0.035 and reused geometry as position changes. Warm empty-region movement causes no bound recalculation/distant Mesh raycasts/repeated status text. Beam creation/undo works.
+- Editor 46 cases: first 45 passed, one `download.createReadStream: canceled`. Isolated rerun passed without app/assertion changes; first failure `tmp/beam-hover-first-run.txt` retained.
+- dist service build succeeded; no docs/assets regeneration or GPU FPS measurement.
 
-### 旋转视角后的指示球跟随回归
+### Cursor after orbit
 
-- 新增浏览器用例先实际右键旋转视角，再在相机惯性仍生效时移动鼠标；修复前可复现指示球偏离当前鼠标。只修复输入覆盖后仍存在一帧的相机矩阵滞后，同步矩阵后通过。
-- 最终用例逐帧核对当前相机和最新鼠标对应的整数格位置，覆盖松开右键后不再移动鼠标、以及立即继续移动鼠标两种情况；没有通过关闭惯性或放宽位置断言规避问题。
-- npm test：134 项通过；编辑器 Playwright 文件：47 项全部通过；dist 生产构建成功。修复前失败证据保留在本地忽略目录 tmp/orbit-cursor-before 与 tmp/orbit-cursor-after，最终浏览器输出使用 tmp/orbit-cursor-regression。
-- 这是输入时序与拾取位置一致性的验证；没有测量真实显卡 FPS 或 P95 延迟。
+- Real right-button orbit then mouse movement during inertia reproduced cursor drift before fix. Input-overwrite fix alone left one-frame camera lag; matrix synchronization resolved it.
+- Per-frame exact cell checks cover stationary mouse after release and immediately continued movement. Neither inertia disablement nor relaxed assertions hid errors.
+- 134 unit tests, 47 editor cases, dist build passed. Before/after failures retained in `tmp/orbit-cursor-before`, `tmp/orbit-cursor-after`; final `tmp/orbit-cursor-regression`.
+- Checks timing/position consistency, not GPU FPS/P95.
 
-### 放置碰撞与吸附规则完善
+### Placement collision and snapping
 
-- 保留“最近真实三角面 → 邻近包围范围 → Y=0 工作平面”的顺序。邻近吸附改用各个 Mesh 的局部包围盒及实际变换，不再把一个组件多个零件之间的空隙或旋转后世界包围盒的空角当作实体。逆变换、法线矩阵与包围盒一起缓存，编辑后统一失效。
-- 邻近检测遵守射线的 near、far 和层掩码；射线起点已经进入包围范围时，不把远侧出口翻成朝向鼠标的接触面。斜面格点搜索保留表面外侧约束，复用候选向量，并稳定处理浮点舍入近似相等的候选点。
-- 建梁与放置节点选择已有节点时，先核对整数格坐标，再沿该节点的屏幕投影检测遮挡。透视和正交视图均排除被实体挡住的节点；节点辅助图形隐藏后，无遮挡的有效节点仍可作为建梁端点。检测在节点方块朝向相机的表面截止，斜视时也不会被自己的梁端遮挡；方块范围随已连接的可见梁采用 1 格或 3 格尺寸。
-- 遮挡判断排除该节点自身参与构成的梁和面板，让斜梁侧面及面板偏移表面不妨碍选择自身连接端点。无关联的梁、面板和组件仍参与遮挡检测；隐藏节点辅助图形、撤销和重做不改变这一规则。
-- 旋转或镜像待放置组件后，立即用新尺寸重新计算预览落点，无须再次移动鼠标。点击时保存本次射线，异步创建完成后用实际组件包围盒确认接触点；延迟加载完成时若鼠标已离开画布，预览保持隐藏，返回后使用当前位置。
-- 单元回归覆盖零件间空隙、旋转及非均匀缩放、射线范围和层掩码、远侧出口、透视／正交遮挡，以及斜面舍入稳定性。浏览器回归使用实际发布组件，检查遮挡节点在换视角后重新可选、旋转预览与最终保存位置一致、延迟加载期间离开和返回画布的行为。
-- 邻近回退仍是每个 Mesh 的包围盒近似，不是任意凹洞的精确碰撞体，也不是完整装配干涉检查或接口配对。此处验证交互位置与时序，不代表真实显卡的延迟测量。
+- Keep nearest-real-triangle -> nearby-bounds -> Y=0 plane ordering. Fallback uses each Mesh local bounds/transform, not gaps between parts or empty corners of rotated world boxes. Cache inverse/normal matrices with bounds; invalidate together on edits.
+- Honor ray near/far/layers. Starting inside bounds must not flip far exit into mouse-facing contact. Inclined lattice searches preserve outside-surface condition, reuse vectors, stabilize near-equal rounding candidates.
+- Existing-node beam/node placement first validates integer cells, then tests occlusion along node projection. Perspective/orthographic exclude blocked nodes; hidden helpers do not invalidate unobstructed logical endpoints. Stop at camera-facing node-cube surface to avoid self-occlusion; cube size follows visible one-/three-cell beams.
+- Exclude beams/plates containing that node so oblique beam sides/offset plate faces do not obscure their own endpoints. Unrelated solids still occlude; helper visibility/history do not change this.
+- Rotating/mirroring pending components refreshes preview immediately using new bounds. Save click ray, recheck actual bounds after asynchronous creation. If mouse leaves while loading, preview stays hidden until return at current position.
+- Unit coverage: gaps, rotated/nonuniform scale, ray ranges/layers, far exits, perspective/orthographic occlusion, inclined rounding. Browser uses real published assets to check changed-view node access, rotated preview/save agreement, delayed loading/leave/return.
+- Nearby fallback remains per-Mesh box approximation, not exact arbitrary cavities, full assembly interference, or interface mating. No hardware latency claim.
 
-本轮实际验证：
+Actual checks:
 
-- npm test：143 项通过；编辑器 Playwright 文件：51 项全部通过。五项建梁、面板与遮挡专项回归也通过。浏览器仍使用 Chromium、SwiftShader、单 worker 和 Pages 子路径。
-- 浏览器服务执行的 dist 生产构建成功；git diff --check 通过。未覆盖 docs 发布目录，也未重生成发布资产。
-- 完整回归发现本次新增遮挡判断曾把梁端自身表面当作遮挡，导致重复建点。修正方块边界及所属结构排除规则后，保留原来的节点数量、闭环和撤销断言全部通过。另补充 1 格／3 格、斜视、无关前景遮挡的单元检查，并用实际 3 格梁验证前后视角切换。
-- 初轮四项失败及随后一项斜梁失败的证据分别保留在本地忽略目录 tmp/placement-snapping-regression 和 tmp/placement-snapping-final；最终完整通过输出位于 tmp/placement-snapping-complete。未测量真实显卡的 FPS 或 P95 输入延迟。
+- 143 unit tests, 51 editor cases, five targeted beam/plate/occlusion cases passed using existing browser settings.
+- dist service build/`git diff --check` passed, no docs/assets overwritten.
+- Initial self-occluding beam-end logic duplicated nodes. Corrected cube boundaries/owned-structure exclusions retained node-count/loop/undo assertions. Added one-/three-cell, oblique, unrelated-front-occluder units and real three-cell front/back browser tests.
+- Initial four failures and later one oblique failure retained at `tmp/placement-snapping-regression`, `tmp/placement-snapping-final`; final success `tmp/placement-snapping-complete`. No GPU FPS/P95 measurement.
 
-### 重叠梁点击与自动分割的遮挡修复
+### Overlapping-beam click and automatic split occlusion
 
-- 之前的节点遮挡筛选未覆盖“点击梁身自动分割建点”的独立入口。该入口优先按屏幕中线距离选梁，前后梁重叠时可能命中被遮挡的后梁。
-- 当前点击顺序为：优先选择已有的可见节点，再按鼠标射线命中的最近实体表面决定是否分割梁。仅当射线完全未命中实体时，才使用原有 24 像素屏幕容差，并再次检查候选分割点是否被遮挡。原有端点保护区和整数格分割规则保留。
-- Alt 分割同样以最近实体表面为准，前景面板会阻止分割后面的梁。这些调整位于点击路径，复用已有碰撞缓存，没有在逐帧悬停中新增分割点枚举。
-- 三项新增浏览器回归覆盖透视与正交投影、前后视角切换、后梁先进入数据数组、隐藏节点辅助球、撤销，以及普通／Alt 点击的面板遮挡。通过保存的实体 ID、节点数量和精确坐标确认实际选中与分割结果。
-- 实际验证：npm test 的 143 项单元测试通过；编辑器 Playwright 文件的 54 项全部通过；浏览器服务执行的 dist 生产构建成功。使用 Chromium、SwiftShader、单 worker 和 Pages 子路径，未重生成 docs 发布产物或资产。
-- 修复前复现证据位于本地忽略目录 tmp/overlapping-beams-before；修复后五项专项回归与完整编辑器回归分别位于 tmp/overlapping-beams-after 和 tmp/overlapping-beams-regression。本轮验证遮挡选择行为，未测量真实显卡 FPS 或 P95 输入延迟。
+- Separate click-to-split entry used screen centerline priority, missing the node occlusion filter and selecting rear beams.
+- Now visible existing nodes first, nearest real hit next to decide beam splitting. Only with no solid hit use original 24-pixel tolerance, rechecking split-point occlusion. Endpoint protection/integer splits retained.
+- Alt split also obeys nearest solid; foreground plates block rear beams. Click-path cache reuse adds no per-frame split-candidate enumeration.
+- Three new browser cases cover perspective/orthographic, front/back, rear-beam-first array order, hidden helpers, undo, normal/Alt plate occlusion, using exact IDs/counts/coordinates.
+- 143 unit/54 editor cases and dist build passed with unchanged browser settings, no docs/assets regeneration.
+- Before failure `tmp/overlapping-beams-before`; five targeted passes `tmp/overlapping-beams-after`; complete suite `tmp/overlapping-beams-regression`. Behavioral checks only, no hardware timing.
 
-### 旋转和平移镜头期间的统一拾取更新
+### Unified picking during camera orbit/pan
 
-- 当前实现曾在相机交互期间从公共鼠标处理入口直接返回，导致所有工具的预览与悬停高亮暂停；右键／中键释放时也会取消相机结束事件排队的刷新。现在相机交互保留每帧一次的最新输入处理，释放时保留最终坐标刷新，惯性阶段没有新鼠标事件也持续跟随镜头。
-- 相机更新后同步拾取矩阵，变换手柄的朝向与世界矩阵也先更新，再检查当前鼠标下的手柄。手柄悬停不再只依赖原生 pointermove 事件；pointerdown 捕获阶段同步视图，让后续 TransformControls 点击使用当前镜头。组件变换期间的相机禁用与单次历史提交规则不变。
-- 右键捕获鼠标后即使移出画布仍会收到移动事件。此时清除悬停和放置预览，重新进入后恢复拾取，避免继续显示画布外的旧落点。
-- 新增浏览器回归逐帧比较实际工具射线与画面使用的相机，覆盖全部 13 个工具的透视／正交旋转、中键平移及释放后的惯性更新；另检查组件拓展、移动、旋转与缩放手柄的射线和实际悬停轴。梁指示球用例扩展为右键按住期间也检查精确位置，并验证捕获鼠标时离开／返回画布。
-- 手柄专项修复前可复现射线起点滞后，失败证据位于本地忽略目录 tmp/gizmo-orbit-before；公共拾取首轮三项验证位于 tmp/all-tools-orbit-after，手柄修复后六项专项验证位于 tmp/all-tools-orbit-targeted。当前工作区的 npm test 共 144 项通过。
-- 完整编辑器 Playwright 回归 57 项通过（2.7 分钟），输出位于 tmp/all-tools-orbit-regression；测试服务的 dist 生产构建成功，仍使用 Chromium、SwiftShader、单 worker 和 Pages 子路径。git diff --check 检查本轮文件通过；本轮构建使用独立 dist 目录。
-- 本轮验证输入、相机、射线与显示结果的时序一致性，不代表已测量真实显卡 FPS、GPU 帧时间或 P95 输入延迟。
+- Previous shared mouse-handler return paused all previews/highlights during camera motion; release cancelled queued final refresh. Now process latest sample once per frame, retain release refresh, and follow inertia without new events.
+- Synchronize picking camera matrices and transform-handle orientation/world matrices before hover. Hover is not pointermove-only; pointerdown capture synchronizes view before TransformControls. Component drags still disable camera and commit once.
+- Captured right-button movement can arrive outside canvas: clear previews/highlights, restore on reentry instead of showing stale off-canvas points.
+- New browser checks compare actual tool rays/render camera every frame for all 13 tools, perspective/orthographic orbit, middle-pan, release inertia. Also extension/move/rotate/scale handle rays/axes. Beam cursor exactness includes held-right-button and captured leave/return.
+- Handle pre-fix stale-origin evidence: `tmp/gizmo-orbit-before`; first three shared-picking checks `tmp/all-tools-orbit-after`; six handle targeted checks `tmp/all-tools-orbit-targeted`. 144 unit tests passed.
+- Complete editor suite 57 passed in 2.7 minutes, `tmp/all-tools-orbit-regression`; dist service build and changed-file diff check passed, unchanged Chromium/SwiftShader/one-worker/Pages settings.
+- This validates input/camera/ray/display timing, not real-GPU FPS, frame time, or P95 input latency.
