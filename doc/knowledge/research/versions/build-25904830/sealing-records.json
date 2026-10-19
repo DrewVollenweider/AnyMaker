@@ -1,0 +1,1535 @@
+{
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "records": [
+    {
+      "signature": "(bool) server_scene.vehicle_buoyancy_hatch_manager._check_hatch_opening_match (const server_scene.vehicle_buoyancy_hatch_manager, const server_scene.vehicle_buoyancy_hatch, const server_scene.vehicle_buoyancy_opening)",
+      "signature_offset": 53414187,
+      "code_offset": 53415309,
+      "code_size": 3744,
+      "allocation_size": 3872,
+      "serialized_size": 3872,
+      "allocation_extra_uninterpreted": 0,
+      "metadata_uninterpreted": [
+        3,
+        160
+      ],
+      "references": [
+        {
+          "kind": 4,
+          "symbol": "(s32) vector<vec3>.size (const vector<vec3>)",
+          "slot_offset": 3744
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) math.abs (const f64)",
+          "slot_offset": 3752
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (vec3)",
+          "slot_offset": 3760
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) operator_mul (const mat33, const vec3)",
+          "slot_offset": 3768
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) vec3.get_dot (const vec3, const vec3)",
+          "slot_offset": 3776
+        },
+        {
+          "kind": 4,
+          "symbol": "() dtor (vec3)",
+          "slot_offset": 3784
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vec3>) operator_aa (const vector<vec3>, const s32)",
+          "slot_offset": 3792
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) operator_mul (const mat34, const vec3)",
+          "slot_offset": 3800
+        },
+        {
+          "kind": 3,
+          "symbol": "math.f64_max",
+          "slot_offset": 3808
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vec3>.begin (const vector<vec3>)",
+          "slot_offset": 3816
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vec3>.end (const vector<vec3>)",
+          "slot_offset": 3824
+        },
+        {
+          "kind": 4,
+          "symbol": "(s32) vector<vec3>.key (const vector<vec3>, const uptr)",
+          "slot_offset": 3832
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vec3>) vector<vec3>.value (const vector<vec3>, const uptr)",
+          "slot_offset": 3840
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) vec3.get_distance_sq (const vec3, const vec3)",
+          "slot_offset": 3848
+        },
+        {
+          "kind": 4,
+          "symbol": "(bool) server_scene.vehicle_buoyancy_hatch_manager._test_node_match (const server_scene.vehicle_buoyancy_hatch_manager, const vec3, const vec3)",
+          "slot_offset": 3856
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vec3>.next (const vector<vec3>, const uptr)",
+          "slot_offset": 3864
+        }
+      ],
+      "code_sha256": "d195b7b12329db302d62b6c4dd980ab17a5062b1f727b184b9af022c76617e6a",
+      "serialized_sha256": "2153f78d3eab36bc9a18c020471425b5a55230b3ce6ad23c2302a52ffb3a4377",
+      "same_signature_records": 1,
+      "export_name": "f_53415309_server_scene_vehicle_buoyancy_hatch_manager__check_hatch_opening_match"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle_buoyancy_hatch_manager._test_node_match (const server_scene.vehicle_buoyancy_hatch_manager, const vec3, const vec3)",
+      "signature_offset": 53424976,
+      "code_offset": 53425275,
+      "code_size": 96,
+      "allocation_size": 120,
+      "serialized_size": 112,
+      "allocation_extra_uninterpreted": 8,
+      "metadata_uninterpreted": [
+        3,
+        267
+      ],
+      "references": [
+        {
+          "kind": 3,
+          "symbol": "server_scene.vehicle_buoyancy_hatch_manager.g_node_match_threshold_sq",
+          "slot_offset": 96
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) vec3.get_distance_sq (const vec3, const vec3)",
+          "slot_offset": 104
+        }
+      ],
+      "code_sha256": "f14442b0c47e79f20c8ee430d8c4ab6e82e37b3d1f557cf5b45b86daf79d2a42",
+      "serialized_sha256": "92afba334d1130c88a3a03c9f86e134da5cb1e5f265b3e9a3ddf8192e92305b9",
+      "same_signature_records": 1,
+      "export_name": "f_53425275_server_scene_vehicle_buoyancy_hatch_manager__test_node_match"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager.tick (server_scene.vehicle_buoyancy_hatch_manager)",
+      "signature_offset": 53438907,
+      "code_offset": 53440764,
+      "code_size": 992,
+      "allocation_size": 1088,
+      "serialized_size": 1088,
+      "allocation_extra_uninterpreted": 0,
+      "metadata_uninterpreted": [
+        3,
+        80
+      ],
+      "references": [
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<ref<server_scene.vehicle_buoyancy_hatch>>.begin (const vector<ref<server_scene.vehicle_buoyancy_hatch>>)",
+          "slot_offset": 992
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<ref<server_scene.vehicle_buoyancy_hatch>>.end (const vector<ref<server_scene.vehicle_buoyancy_hatch>>)",
+          "slot_offset": 1000
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<ref<server_scene.vehicle_buoyancy_hatch>>) vector<ref<server_scene.vehicle_buoyancy_hatch>>.value (const vector<ref<server_scene.vehicle_buoyancy_hatch>>, const uptr)",
+          "slot_offset": 1008
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<ref<server_scene.vehicle_buoyancy_opening>>.begin (const vector<ref<server_scene.vehicle_buoyancy_opening>>)",
+          "slot_offset": 1016
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<ref<server_scene.vehicle_buoyancy_opening>>.end (const vector<ref<server_scene.vehicle_buoyancy_opening>>)",
+          "slot_offset": 1024
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<ref<server_scene.vehicle_buoyancy_opening>>) vector<ref<server_scene.vehicle_buoyancy_opening>>.value (const vector<ref<server_scene.vehicle_buoyancy_opening>>, const uptr)",
+          "slot_offset": 1032
+        },
+        {
+          "kind": 4,
+          "symbol": "(bool) server_scene.vehicle_buoyancy_hatch_manager._check_hatch_opening_match (const server_scene.vehicle_buoyancy_hatch_manager, const server_scene.vehicle_buoyancy_hatch, const server_scene.vehicle_buoyancy_opening)",
+          "slot_offset": 1040
+        },
+        {
+          "kind": 4,
+          "symbol": "() vehicle_buoyancy.set_is_plate_opening_sealed (vehicle_buoyancy, const s32, const bool)",
+          "slot_offset": 1048
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<ref<server_scene.vehicle_buoyancy_opening>>.next (const vector<ref<server_scene.vehicle_buoyancy_opening>>, const uptr)",
+          "slot_offset": 1056
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<ref<server_scene.vehicle_buoyancy_opening>>.erase (vector<ref<server_scene.vehicle_buoyancy_opening>>, const uptr)",
+          "slot_offset": 1064
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<ref<server_scene.vehicle_buoyancy_hatch>>.next (const vector<ref<server_scene.vehicle_buoyancy_hatch>>, const uptr)",
+          "slot_offset": 1072
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<ref<server_scene.vehicle_buoyancy_hatch>>.erase (vector<ref<server_scene.vehicle_buoyancy_hatch>>, const uptr)",
+          "slot_offset": 1080
+        }
+      ],
+      "code_sha256": "616552932307ee7ec3d1c338319a2b28db4cce41a11a08eaddbeaf018fa77336",
+      "serialized_sha256": "c38226775cc267e1f94e9660c3ad4e4310461ed94f3f4ae1ed30b34f607ef9ec",
+      "same_signature_records": 1,
+      "export_name": "f_53440764_server_scene_vehicle_buoyancy_hatch_manager_tick"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager.rebuild_vehicle_hatches (server_scene.vehicle_buoyancy_hatch_manager, server_scene.vehicle)",
+      "signature_offset": 53436110,
+      "code_offset": 53437898,
+      "code_size": 544,
+      "allocation_size": 616,
+      "serialized_size": 616,
+      "allocation_extra_uninterpreted": 0,
+      "metadata_uninterpreted": [
+        3,
+        28
+      ],
+      "references": [
+        {
+          "kind": 4,
+          "symbol": "() server_scene.vehicle_buoyancy_hatch_manager.clear_vehicle_hatches (server_scene.vehicle_buoyancy_hatch_manager, server_scene.vehicle)",
+          "slot_offset": 544
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>.begin (const replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>)",
+          "slot_offset": 552
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>.end (const replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>)",
+          "slot_offset": 560
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<server_scene.vehicle_plate>) replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>.value (const replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>, const uptr)",
+          "slot_offset": 568
+        },
+        {
+          "kind": 6,
+          "symbol": "(ptr<const vehicle_plate_util.e_plate_type>) replication.master.property_enum<vehicle_plate_util.e_plate_type>.get (const replication.master.property_enum<vehicle_plate_util.e_plate_type>)",
+          "slot_offset": 576
+        },
+        {
+          "kind": 4,
+          "symbol": "() server_scene.vehicle_buoyancy_hatch_manager._add_hatch (server_scene.vehicle_buoyancy_hatch_manager, server_scene.vehicle, const server_scene.vehicle_plate)",
+          "slot_offset": 584
+        },
+        {
+          "kind": 4,
+          "symbol": "() server_scene.vehicle_buoyancy_hatch_manager._add_opening (server_scene.vehicle_buoyancy_hatch_manager, server_scene.vehicle, const server_scene.vehicle_plate)",
+          "slot_offset": 592
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>.next (const replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>, const uptr)",
+          "slot_offset": 600
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>.erase (replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>, const uptr)",
+          "slot_offset": 608
+        }
+      ],
+      "code_sha256": "eac575e43d621fcf0375eec33698597db28b124f84b259e1e33c107dd84c00ec",
+      "serialized_sha256": "6ef77bcf692fbac5b865cf1b706cdd5a8aaf6f10f03f4d1a791356b01acdd26e",
+      "same_signature_records": 1,
+      "export_name": "f_53437898_server_scene_vehicle_buoyancy_hatch_manager_rebuild_vehicle_hatches"
+    },
+    {
+      "signature": "() vehicle_buoyancy._build_plates (vehicle_buoyancy, const s32)",
+      "signature_offset": 62018651,
+      "code_offset": 62020505,
+      "code_size": 5320,
+      "allocation_size": 5528,
+      "serialized_size": 5528,
+      "allocation_extra_uninterpreted": 0,
+      "metadata_uninterpreted": [
+        3,
+        1985
+      ],
+      "references": [
+        {
+          "kind": 4,
+          "symbol": "(ptr<vehicle_buoyancy.plate>) operator_aa (const vector<vehicle_buoyancy.plate>, const s32)",
+          "slot_offset": 5320
+        },
+        {
+          "kind": 4,
+          "symbol": "() dtor (vec3)",
+          "slot_offset": 5328
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (vec3)",
+          "slot_offset": 5336
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vec3_s32>) operator_aa (const array<vec3_s32>, const s32)",
+          "slot_offset": 5344
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) vec3.from_s32 (const vec3_s32)",
+          "slot_offset": 5352
+        },
+        {
+          "kind": 3,
+          "symbol": "G_VEHICLE_GRID_SIZE",
+          "slot_offset": 5360
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) operator_mul (const vec3, const f64)",
+          "slot_offset": 5368
+        },
+        {
+          "kind": 4,
+          "symbol": "(s32) array<vec3_s32>.size (const array<vec3_s32>)",
+          "slot_offset": 5376
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (vec3_s32, const vec3_s32)",
+          "slot_offset": 5384
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) operator_add (const vec3, const vec3)",
+          "slot_offset": 5392
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) operator_sub (const vec3, const vec3)",
+          "slot_offset": 5400
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) vec3.get_cross (const vec3, const vec3)",
+          "slot_offset": 5408
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) vec3.get_length (const vec3)",
+          "slot_offset": 5416
+        },
+        {
+          "kind": 3,
+          "symbol": "math.pi",
+          "slot_offset": 5424
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.plate>.begin (const vector<vehicle_buoyancy.plate>)",
+          "slot_offset": 5432
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.plate>.end (const vector<vehicle_buoyancy.plate>)",
+          "slot_offset": 5440
+        },
+        {
+          "kind": 4,
+          "symbol": "(s32) vector<vehicle_buoyancy.plate>.key (const vector<vehicle_buoyancy.plate>, const uptr)",
+          "slot_offset": 5448
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vehicle_buoyancy.plate>) vector<vehicle_buoyancy.plate>.value (const vector<vehicle_buoyancy.plate>, const uptr)",
+          "slot_offset": 5456
+        },
+        {
+          "kind": 4,
+          "symbol": "(bool) operator_eq (const vec3_s32, const vec3_s32)",
+          "slot_offset": 5464
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) vehicle_buoyancy.get_angle_between_plates_on_edge (const vehicle_buoyancy, const vehicle_buoyancy.plate, const vehicle_buoyancy.plate, const s32)",
+          "slot_offset": 5472
+        },
+        {
+          "kind": 4,
+          "symbol": "() dtor (vec3_s32)",
+          "slot_offset": 5480
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.plate>.next (const vector<vehicle_buoyancy.plate>, const uptr)",
+          "slot_offset": 5488
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.plate>.erase (vector<vehicle_buoyancy.plate>, const uptr)",
+          "slot_offset": 5496
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vehicle_buoyancy.plate.adjacent>) operator_aa (const array<vehicle_buoyancy.plate.adjacent>, const s32)",
+          "slot_offset": 5504
+        },
+        {
+          "kind": 4,
+          "symbol": "() vehicle_buoyancy._set_plate_adjacent (vehicle_buoyancy, const s32, const s32, const s32, const s32)",
+          "slot_offset": 5512
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) operator_div (const vec3, const f64)",
+          "slot_offset": 5520
+        }
+      ],
+      "code_sha256": "e62137a6b48ad19083c0db8c0aff493badb631e530ce9a2b537c10709b79eb5f",
+      "serialized_sha256": "5214f8ee73e499a2f3332e1e27210d1666efa1c478fc9418ba90cf22304b8d7a",
+      "same_signature_records": 1,
+      "export_name": "f_62020505_vehicle_buoyancy__build_plates"
+    },
+    {
+      "signature": "() vehicle_buoyancy.set_is_plate_opening_sealed (vehicle_buoyancy, const s32, const bool)",
+      "signature_offset": 62325903,
+      "code_offset": 62326512,
+      "code_size": 256,
+      "allocation_size": 304,
+      "serialized_size": 296,
+      "allocation_extra_uninterpreted": 8,
+      "metadata_uninterpreted": [
+        3,
+        1187
+      ],
+      "references": [
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.plate>.begin (const vector<vehicle_buoyancy.plate>)",
+          "slot_offset": 256
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.plate>.end (const vector<vehicle_buoyancy.plate>)",
+          "slot_offset": 264
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vehicle_buoyancy.plate>) vector<vehicle_buoyancy.plate>.value (const vector<vehicle_buoyancy.plate>, const uptr)",
+          "slot_offset": 272
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.plate>.next (const vector<vehicle_buoyancy.plate>, const uptr)",
+          "slot_offset": 280
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.plate>.erase (vector<vehicle_buoyancy.plate>, const uptr)",
+          "slot_offset": 288
+        }
+      ],
+      "code_sha256": "750fdbbd2445f240a97247efca73c66556453c28ba7f8ab663c6e57db12afd90",
+      "serialized_sha256": "6309b267a25a950d52c1e310371e3fd513370acc8b3be2afe9f0f788049b958a",
+      "same_signature_records": 1,
+      "export_name": "f_62326512_vehicle_buoyancy_set_is_plate_opening_sealed"
+    },
+    {
+      "signature": "(vehicle_plate_util.e_plate_type) client_scene.item_world.vehicle_editor_add_opening.get_plate_type (const client_scene.item_world.vehicle_editor_add_opening)",
+      "signature_offset": 9232795,
+      "code_offset": 9232973,
+      "code_size": 36,
+      "allocation_size": 36,
+      "serialized_size": 36,
+      "allocation_extra_uninterpreted": 0,
+      "metadata_uninterpreted": [
+        7,
+        2
+      ],
+      "references": [],
+      "code_sha256": "2daf5a8566e0ec0ba72653297b42ca8ab10b5807115cecf9b08a8dfe6ea44de2",
+      "serialized_sha256": "2daf5a8566e0ec0ba72653297b42ca8ab10b5807115cecf9b08a8dfe6ea44de2",
+      "same_signature_records": 1,
+      "export_name": "f_9232973_client_scene_item_world_vehicle_editor_add_opening_get_plate_type"
+    },
+    {
+      "signature": "(vehicle_plate_util.e_plate_type) client_scene.item_world.vehicle_editor_add_hatch.get_plate_type (const client_scene.item_world.vehicle_editor_add_hatch)",
+      "signature_offset": 9232351,
+      "code_offset": 9232525,
+      "code_size": 36,
+      "allocation_size": 36,
+      "serialized_size": 36,
+      "allocation_extra_uninterpreted": 0,
+      "metadata_uninterpreted": [
+        7,
+        2
+      ],
+      "references": [],
+      "code_sha256": "b054a14dd67202d20b70795b817013087895547a52aea795fbdaee5e0085978e",
+      "serialized_sha256": "b054a14dd67202d20b70795b817013087895547a52aea795fbdaee5e0085978e",
+      "same_signature_records": 1,
+      "export_name": "f_9232525_client_scene_item_world_vehicle_editor_add_hatch_get_plate_type"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager.g_node_match_threshold_sq.$ctor ()",
+      "signature_offset": 53435338,
+      "code_offset": 53435590,
+      "code_size": 40,
+      "allocation_size": 64,
+      "serialized_size": 56,
+      "allocation_extra_uninterpreted": 8,
+      "metadata_uninterpreted": [
+        1,
+        0
+      ],
+      "references": [
+        {
+          "kind": 3,
+          "symbol": "server_scene.vehicle_buoyancy_hatch_manager.g_node_match_threshold_sq",
+          "slot_offset": 40
+        },
+        {
+          "kind": 3,
+          "symbol": "server_scene.vehicle_buoyancy_hatch_manager.g_node_match_threshold",
+          "slot_offset": 48
+        }
+      ],
+      "code_sha256": "d8fd83e576502ca9cba789ffa27a6899a53b9a273bb30d0ed3548959fada5469",
+      "serialized_sha256": "c88e83a1275d9fb1ae550a6f1377945d91c7ede76a4f028238b92c0fe9680165",
+      "same_signature_records": 1,
+      "export_name": "f_53435590_server_scene_vehicle_buoyancy_hatch_manager_g_node_match_threshold_sq__ctor"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager.g_node_match_threshold_sq.$dtor ()",
+      "signature_offset": 53435785,
+      "code_offset": 53435963,
+      "code_size": 8,
+      "allocation_size": 16,
+      "serialized_size": 16,
+      "allocation_extra_uninterpreted": 0,
+      "metadata_uninterpreted": [
+        1,
+        0
+      ],
+      "references": [
+        {
+          "kind": 3,
+          "symbol": "server_scene.vehicle_buoyancy_hatch_manager.g_node_match_threshold_sq",
+          "slot_offset": 8
+        }
+      ],
+      "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6",
+      "serialized_sha256": "1d24935c60b5c34ab61039d22ae97ce3da10ff31948c9519d140f418c0fc00f0",
+      "same_signature_records": 1,
+      "export_name": "f_53435963_server_scene_vehicle_buoyancy_hatch_manager_g_node_match_threshold_sq__dtor"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager._add_hatch (server_scene.vehicle_buoyancy_hatch_manager, server_scene.vehicle, const server_scene.vehicle_plate)",
+      "signature_offset": 53410515,
+      "code_offset": 53411365,
+      "code_size": 448,
+      "allocation_size": 520,
+      "serialized_size": 512,
+      "allocation_extra_uninterpreted": 8,
+      "metadata_uninterpreted": [
+        3,
+        272
+      ],
+      "references": [
+        {
+          "kind": 4,
+          "symbol": "(ptr<ref<server_scene.vehicle_buoyancy_hatch>>) vector<ref<server_scene.vehicle_buoyancy_hatch>>.push_back (vector<ref<server_scene.vehicle_buoyancy_hatch>>)",
+          "slot_offset": 448
+        },
+        {
+          "kind": 4,
+          "symbol": "() $ref_dtor (uptr)",
+          "slot_offset": 456
+        },
+        {
+          "kind": 4,
+          "symbol": "() dtor (server_scene.vehicle_buoyancy_hatch)",
+          "slot_offset": 464
+        },
+        {
+          "kind": 4,
+          "symbol": "() $ref_ctor_alloc (uptr, const s32, const uptr)",
+          "slot_offset": 472
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (server_scene.vehicle_buoyancy_hatch)",
+          "slot_offset": 480
+        },
+        {
+          "kind": 6,
+          "symbol": "(f64) server_scene.vehicle_plate.calculate_surface_area (const server_scene.vehicle_plate)",
+          "slot_offset": 488
+        },
+        {
+          "kind": 4,
+          "symbol": "() copy (vec3, const vec3)",
+          "slot_offset": 496
+        },
+        {
+          "kind": 4,
+          "symbol": "() server_scene.vehicle_buoyancy_hatch_manager._get_plate_node_positions_simplified (server_scene.vehicle_buoyancy_hatch_manager, const server_scene.vehicle_plate, vector<vec3>)",
+          "slot_offset": 504
+        }
+      ],
+      "code_sha256": "9a91255273913a738b931f36d024d6f74f501e4ac6e35af0c6ab5e36a54661c9",
+      "serialized_sha256": "3dba41330a4c15e9c2dae5823453fd85a98b25ac359cfc36e94215d66b5bcb10",
+      "same_signature_records": 1,
+      "export_name": "f_53411365_server_scene_vehicle_buoyancy_hatch_manager__add_hatch"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager._add_opening (server_scene.vehicle_buoyancy_hatch_manager, server_scene.vehicle, const server_scene.vehicle_plate)",
+      "signature_offset": 53412342,
+      "code_offset": 53413204,
+      "code_size": 448,
+      "allocation_size": 520,
+      "serialized_size": 512,
+      "allocation_extra_uninterpreted": 8,
+      "metadata_uninterpreted": [
+        3,
+        283
+      ],
+      "references": [
+        {
+          "kind": 4,
+          "symbol": "(ptr<ref<server_scene.vehicle_buoyancy_opening>>) vector<ref<server_scene.vehicle_buoyancy_opening>>.push_back (vector<ref<server_scene.vehicle_buoyancy_opening>>)",
+          "slot_offset": 448
+        },
+        {
+          "kind": 4,
+          "symbol": "() $ref_dtor (uptr)",
+          "slot_offset": 456
+        },
+        {
+          "kind": 4,
+          "symbol": "() dtor (server_scene.vehicle_buoyancy_opening)",
+          "slot_offset": 464
+        },
+        {
+          "kind": 4,
+          "symbol": "() $ref_ctor_alloc (uptr, const s32, const uptr)",
+          "slot_offset": 472
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (server_scene.vehicle_buoyancy_opening)",
+          "slot_offset": 480
+        },
+        {
+          "kind": 6,
+          "symbol": "(f64) server_scene.vehicle_plate.calculate_surface_area (const server_scene.vehicle_plate)",
+          "slot_offset": 488
+        },
+        {
+          "kind": 4,
+          "symbol": "() copy (vec3, const vec3)",
+          "slot_offset": 496
+        },
+        {
+          "kind": 4,
+          "symbol": "() server_scene.vehicle_buoyancy_hatch_manager._get_plate_node_positions_simplified (server_scene.vehicle_buoyancy_hatch_manager, const server_scene.vehicle_plate, vector<vec3>)",
+          "slot_offset": 504
+        }
+      ],
+      "code_sha256": "c0482ab5bd2f01c7ac4998a4033937462dbc8acc52cd4ea6af5294a58a026520",
+      "serialized_sha256": "02954836d62731403dfadf615bc08beaabe7a7d0e58898618533d32d22ed28bc",
+      "same_signature_records": 1,
+      "export_name": "f_53413204_server_scene_vehicle_buoyancy_hatch_manager__add_opening"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager.g_node_match_threshold.$ctor ()",
+      "signature_offset": 53434682,
+      "code_offset": 53434854,
+      "code_size": 32,
+      "allocation_size": 40,
+      "serialized_size": 40,
+      "allocation_extra_uninterpreted": 0,
+      "metadata_uninterpreted": [
+        1,
+        0
+      ],
+      "references": [
+        {
+          "kind": 3,
+          "symbol": "server_scene.vehicle_buoyancy_hatch_manager.g_node_match_threshold",
+          "slot_offset": 32
+        }
+      ],
+      "code_sha256": "930f930e5b78f3b0d6ae8d2a47565ea63e8a43e9ef84c9ca6e1edfcfebefcb3b",
+      "serialized_sha256": "27d534469ca8eef59cb100c28724a067e728f557d889b36c193702fd804be089",
+      "same_signature_records": 1,
+      "export_name": "f_53434854_server_scene_vehicle_buoyancy_hatch_manager_g_node_match_threshold__ctor"
+    },
+    {
+      "signature": "() vehicle_buoyancy._calculate_forces (vehicle_buoyancy, const bool)",
+      "signature_offset": 62050880,
+      "code_offset": 62056483,
+      "code_size": 20736,
+      "allocation_size": 21320,
+      "serialized_size": 21320,
+      "allocation_extra_uninterpreted": 0,
+      "metadata_uninterpreted": [
+        3,
+        1199
+      ],
+      "references": [
+        {
+          "kind": 4,
+          "symbol": "() ctor (mat34, const mat34)",
+          "slot_offset": 20736
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (vehicle_buoyancy.octree_wave_patch_hit_data)",
+          "slot_offset": 20744
+        },
+        {
+          "kind": 3,
+          "symbol": "g_debug_render_server_tick",
+          "slot_offset": 20752
+        },
+        {
+          "kind": 4,
+          "symbol": "() vehicle_buoyancy.wave_patch.debug_render (const vehicle_buoyancy.wave_patch, application.graphics.debug)",
+          "slot_offset": 20760
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.surface>.begin (const vector<vehicle_buoyancy.surface>)",
+          "slot_offset": 20768
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.surface>.end (const vector<vehicle_buoyancy.surface>)",
+          "slot_offset": 20776
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vehicle_buoyancy.surface>) vector<vehicle_buoyancy.surface>.value (const vector<vehicle_buoyancy.surface>, const uptr)",
+          "slot_offset": 20784
+        },
+        {
+          "kind": 4,
+          "symbol": "() vehicle_buoyancy.octree.collide_wave_patch (const vehicle_buoyancy.octree, const vehicle_buoyancy.wave_patch, const mat34, const bool, vehicle_buoyancy.octree_wave_patch_hit_data)",
+          "slot_offset": 20792
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) math.max (const f64, const f64)",
+          "slot_offset": 20800
+        },
+        {
+          "kind": 4,
+          "symbol": "() dtor (vehicle_buoyancy.octree_wave_patch_hit_data)",
+          "slot_offset": 20808
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.surface>.next (const vector<vehicle_buoyancy.surface>, const uptr)",
+          "slot_offset": 20816
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.surface>.erase (vector<vehicle_buoyancy.surface>, const uptr)",
+          "slot_offset": 20824
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<collision.line>.begin (const vector<collision.line>)",
+          "slot_offset": 20832
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<collision.line>.end (const vector<collision.line>)",
+          "slot_offset": 20840
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<collision.line>) vector<collision.line>.value (const vector<collision.line>, const uptr)",
+          "slot_offset": 20848
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (vec3)",
+          "slot_offset": 20856
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) operator_mul (const mat34, const vec3)",
+          "slot_offset": 20864
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (color8, const s32, const s32, const s32, const s32)",
+          "slot_offset": 20872
+        },
+        {
+          "kind": 4,
+          "symbol": "() application.graphics.debug.add_line (const application.graphics.debug, const vec3, const vec3, const color8)",
+          "slot_offset": 20880
+        },
+        {
+          "kind": 4,
+          "symbol": "() dtor (color8)",
+          "slot_offset": 20888
+        },
+        {
+          "kind": 4,
+          "symbol": "() dtor (vec3)",
+          "slot_offset": 20896
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<collision.line>.next (const vector<collision.line>, const uptr)",
+          "slot_offset": 20904
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<collision.line>.erase (vector<collision.line>, const uptr)",
+          "slot_offset": 20912
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.octree_wave_patch_hit_data.triangle>.begin (const vector<vehicle_buoyancy.octree_wave_patch_hit_data.triangle>)",
+          "slot_offset": 20920
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.octree_wave_patch_hit_data.triangle>.end (const vector<vehicle_buoyancy.octree_wave_patch_hit_data.triangle>)",
+          "slot_offset": 20928
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vehicle_buoyancy.octree_wave_patch_hit_data.triangle>) vector<vehicle_buoyancy.octree_wave_patch_hit_data.triangle>.value (const vector<vehicle_buoyancy.octree_wave_patch_hit_data.triangle>, const uptr)",
+          "slot_offset": 20936
+        },
+        {
+          "kind": 4,
+          "symbol": "() application.graphics.debug.add_triangle (const application.graphics.debug, const vec3, const vec3, const vec3, const color8)",
+          "slot_offset": 20944
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.octree_wave_patch_hit_data.triangle>.next (const vector<vehicle_buoyancy.octree_wave_patch_hit_data.triangle>, const uptr)",
+          "slot_offset": 20952
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.octree_wave_patch_hit_data.triangle>.erase (vector<vehicle_buoyancy.octree_wave_patch_hit_data.triangle>, const uptr)",
+          "slot_offset": 20960
+        },
+        {
+          "kind": 3,
+          "symbol": "vehicle_buoyancy.g_parameters",
+          "slot_offset": 20968
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) vec3.get_length (const vec3)",
+          "slot_offset": 20976
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (vec3, const vec3)",
+          "slot_offset": 20984
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) vec3.get_length_sq (const vec3)",
+          "slot_offset": 20992
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) vec3.normalize (const vec3)",
+          "slot_offset": 21000
+        },
+        {
+          "kind": 3,
+          "symbol": "math.f64_max",
+          "slot_offset": 21008
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.plate>.begin (const vector<vehicle_buoyancy.plate>)",
+          "slot_offset": 21016
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.plate>.end (const vector<vehicle_buoyancy.plate>)",
+          "slot_offset": 21024
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vehicle_buoyancy.plate>) vector<vehicle_buoyancy.plate>.value (const vector<vehicle_buoyancy.plate>, const uptr)",
+          "slot_offset": 21032
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) array<vec3_s32>.begin (const array<vec3_s32>)",
+          "slot_offset": 21040
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) array<vec3_s32>.end (const array<vec3_s32>)",
+          "slot_offset": 21048
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vec3_s32>) array<vec3_s32>.value (const array<vec3_s32>, const uptr)",
+          "slot_offset": 21056
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) vec3.from_s32 (const vec3_s32)",
+          "slot_offset": 21064
+        },
+        {
+          "kind": 3,
+          "symbol": "G_VEHICLE_GRID_SIZE",
+          "slot_offset": 21072
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) operator_mul (const vec3, const f64)",
+          "slot_offset": 21080
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) vec3.get_dot (const vec3, const vec3)",
+          "slot_offset": 21088
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) math.min (const f64, const f64)",
+          "slot_offset": 21096
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) array<vec3_s32>.next (const array<vec3_s32>, const uptr)",
+          "slot_offset": 21104
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.plate>.next (const vector<vehicle_buoyancy.plate>, const uptr)",
+          "slot_offset": 21112
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.plate>.erase (vector<vehicle_buoyancy.plate>, const uptr)",
+          "slot_offset": 21120
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) operator_add (const vec3, const vec3)",
+          "slot_offset": 21128
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) operator_div (const vec3, const f64)",
+          "slot_offset": 21136
+        },
+        {
+          "kind": 4,
+          "symbol": "() vehicle_buoyancy.wave_patch.get_height_velocity (const vehicle_buoyancy.wave_patch, const vec3, f64, vec3)",
+          "slot_offset": 21144
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) operator_mul (const mat33, const vec3)",
+          "slot_offset": 21152
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) vehicle_buoyancy._get_vehicle_point_velocity (const vehicle_buoyancy, const vec3)",
+          "slot_offset": 21160
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) operator_sub (const vec3, const vec3)",
+          "slot_offset": 21168
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) operator_mul (const f64, const vec3)",
+          "slot_offset": 21176
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (vec3, const f64, const f64, const f64)",
+          "slot_offset": 21184
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) operator_mul (const vec3, const vec3)",
+          "slot_offset": 21192
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) math.log10 (const f64)",
+          "slot_offset": 21200
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) math.pow (const f64, const f64)",
+          "slot_offset": 21208
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) math.abs (const f64)",
+          "slot_offset": 21216
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vehicle_buoyancy.force>) vector<vehicle_buoyancy.force>.push_back (vector<vehicle_buoyancy.force>)",
+          "slot_offset": 21224
+        },
+        {
+          "kind": 4,
+          "symbol": "() dtor (vehicle_buoyancy.force)",
+          "slot_offset": 21232
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (vehicle_buoyancy.force, const vec3, const vec3, const bool)",
+          "slot_offset": 21240
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vehicle_buoyancy.surface>) operator_aa (const vector<vehicle_buoyancy.surface>, const s32)",
+          "slot_offset": 21248
+        },
+        {
+          "kind": 3,
+          "symbol": "g_server_delta_time",
+          "slot_offset": 21256
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) math.clamp (const f64, const f64, const f64)",
+          "slot_offset": 21264
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vehicle_buoyancy.plate>) operator_aa (const vector<vehicle_buoyancy.plate>, const s32)",
+          "slot_offset": 21272
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) vehicle_buoyancy.surface.get_water_height (const vehicle_buoyancy.surface, const mat34, const vec3)",
+          "slot_offset": 21280
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) vehicle_buoyancy._get_plate_water_coverage (const vehicle_buoyancy, const vehicle_buoyancy.plate, const mat34, const f64)",
+          "slot_offset": 21288
+        },
+        {
+          "kind": 3,
+          "symbol": "vehicle_buoyancy.g_opening_flow_rate",
+          "slot_offset": 21296
+        },
+        {
+          "kind": 4,
+          "symbol": "() copy (vec3, const vec3)",
+          "slot_offset": 21304
+        },
+        {
+          "kind": 4,
+          "symbol": "() dtor (mat34)",
+          "slot_offset": 21312
+        }
+      ],
+      "code_sha256": "5b2a7047236212a9bc91819354ae8cb9c7ce8902c7f7b5026b9b76faf5ca023b",
+      "serialized_sha256": "f80a67f1a798e546a999cce572cbc23c76f8da475386b0a7e1a747fd00e4590d",
+      "same_signature_records": 1,
+      "export_name": "f_62056483_vehicle_buoyancy__calculate_forces"
+    },
+    {
+      "signature": "() vehicle_buoyancy._build (vehicle_buoyancy, const bool, const ref<vehicle_buoyancy>)",
+      "signature_offset": 62009032,
+      "code_offset": 62011032,
+      "code_size": 4480,
+      "allocation_size": 4688,
+      "serialized_size": 4688,
+      "allocation_extra_uninterpreted": 0,
+      "metadata_uninterpreted": [
+        3,
+        1611
+      ],
+      "references": [
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.plate>.begin (const vector<vehicle_buoyancy.plate>)",
+          "slot_offset": 4480
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.plate>.end (const vector<vehicle_buoyancy.plate>)",
+          "slot_offset": 4488
+        },
+        {
+          "kind": 4,
+          "symbol": "(s32) vector<vehicle_buoyancy.plate>.key (const vector<vehicle_buoyancy.plate>, const uptr)",
+          "slot_offset": 4496
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vehicle_buoyancy.plate>) vector<vehicle_buoyancy.plate>.value (const vector<vehicle_buoyancy.plate>, const uptr)",
+          "slot_offset": 4504
+        },
+        {
+          "kind": 4,
+          "symbol": "() vehicle_buoyancy._build_plates (vehicle_buoyancy, const s32)",
+          "slot_offset": 4512
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.plate>.next (const vector<vehicle_buoyancy.plate>, const uptr)",
+          "slot_offset": 4520
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.plate>.erase (vector<vehicle_buoyancy.plate>, const uptr)",
+          "slot_offset": 4528
+        },
+        {
+          "kind": 4,
+          "symbol": "() vehicle_buoyancy._build_surfaces (vehicle_buoyancy, const bool)",
+          "slot_offset": 4536
+        },
+        {
+          "kind": 4,
+          "symbol": "(s32) vector<vehicle_buoyancy.surface>.size (const vector<vehicle_buoyancy.surface>)",
+          "slot_offset": 4544
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (array<vector<s32>>, const s32)",
+          "slot_offset": 4552
+        },
+        {
+          "kind": 4,
+          "symbol": "() copy (vec3, const vec3)",
+          "slot_offset": 4560
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vehicle_buoyancy.surface>) operator_aa (const vector<vehicle_buoyancy.surface>, const s32)",
+          "slot_offset": 4568
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vector<s32>>) operator_aa (const array<vector<s32>>, const s32)",
+          "slot_offset": 4576
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<s32>.begin (const vector<s32>)",
+          "slot_offset": 4584
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<s32>.end (const vector<s32>)",
+          "slot_offset": 4592
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<s32>) vector<s32>.value (const vector<s32>, const uptr)",
+          "slot_offset": 4600
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<s32>.next (const vector<s32>, const uptr)",
+          "slot_offset": 4608
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<s32>.erase (vector<s32>, const uptr)",
+          "slot_offset": 4616
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<s32>) vector<s32>.push_back (vector<s32>)",
+          "slot_offset": 4624
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) array<vector<s32>>.begin (const array<vector<s32>>)",
+          "slot_offset": 4632
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) array<vector<s32>>.end (const array<vector<s32>>)",
+          "slot_offset": 4640
+        },
+        {
+          "kind": 4,
+          "symbol": "(s32) array<vector<s32>>.key (const array<vector<s32>>, const uptr)",
+          "slot_offset": 4648
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vector<s32>>) array<vector<s32>>.value (const array<vector<s32>>, const uptr)",
+          "slot_offset": 4656
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) math.min (const f64, const f64)",
+          "slot_offset": 4664
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) array<vector<s32>>.next (const array<vector<s32>>, const uptr)",
+          "slot_offset": 4672
+        },
+        {
+          "kind": 4,
+          "symbol": "() dtor (array<vector<s32>>)",
+          "slot_offset": 4680
+        }
+      ],
+      "code_sha256": "f9ca3a7e05f445bb7cf5617e91d3ad1c2ddad8c78ee669576e65f8d26a7ab0c3",
+      "serialized_sha256": "0f37942cb17b2f57b982dc87cef21f1940cad2c33e0b10a2923ee0f69c0fe4b5",
+      "same_signature_records": 1,
+      "export_name": "f_62011032_vehicle_buoyancy__build"
+    },
+    {
+      "signature": "() server_scene.vehicle._rebuild_buoyancy (server_scene.vehicle, physics.scene, server_scene.vehicle_buoyancy_hatch_manager)",
+      "signature_offset": 52570271,
+      "code_offset": 52572066,
+      "code_size": 1192,
+      "allocation_size": 1360,
+      "serialized_size": 1360,
+      "allocation_extra_uninterpreted": 0,
+      "metadata_uninterpreted": [
+        3,
+        4005
+      ],
+      "references": [
+        {
+          "kind": 6,
+          "symbol": "(ptr<const physics.e_motion_type>) replication.master.property_enum<physics.e_motion_type>.get (const replication.master.property_enum<physics.e_motion_type>)",
+          "slot_offset": 1192
+        },
+        {
+          "kind": 4,
+          "symbol": "() $ref_ctor_copy (uptr, const uptr)",
+          "slot_offset": 1200
+        },
+        {
+          "kind": 4,
+          "symbol": "() $ref_dtor (uptr)",
+          "slot_offset": 1208
+        },
+        {
+          "kind": 4,
+          "symbol": "() dtor (vehicle_buoyancy)",
+          "slot_offset": 1216
+        },
+        {
+          "kind": 4,
+          "symbol": "() $ref_ctor_alloc (uptr, const s32, const uptr)",
+          "slot_offset": 1224
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (vehicle_buoyancy)",
+          "slot_offset": 1232
+        },
+        {
+          "kind": 4,
+          "symbol": "() vehicle_buoyancy.create (vehicle_buoyancy, const server_scene.vehicle, const ref<vehicle_buoyancy>, physics.scene)",
+          "slot_offset": 1240
+        },
+        {
+          "kind": 4,
+          "symbol": "(bool) vector<f64>.empty (const vector<f64>)",
+          "slot_offset": 1248
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.surface>.begin (const vector<vehicle_buoyancy.surface>)",
+          "slot_offset": 1256
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.surface>.end (const vector<vehicle_buoyancy.surface>)",
+          "slot_offset": 1264
+        },
+        {
+          "kind": 4,
+          "symbol": "(s32) vector<vehicle_buoyancy.surface>.key (const vector<vehicle_buoyancy.surface>, const uptr)",
+          "slot_offset": 1272
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vehicle_buoyancy.surface>) vector<vehicle_buoyancy.surface>.value (const vector<vehicle_buoyancy.surface>, const uptr)",
+          "slot_offset": 1280
+        },
+        {
+          "kind": 4,
+          "symbol": "(s32) vector<f64>.size (const vector<f64>)",
+          "slot_offset": 1288
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<f64>) operator_aa (const vector<f64>, const s32)",
+          "slot_offset": 1296
+        },
+        {
+          "kind": 4,
+          "symbol": "(f64) math.clamp (const f64, const f64, const f64)",
+          "slot_offset": 1304
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.surface>.next (const vector<vehicle_buoyancy.surface>, const uptr)",
+          "slot_offset": 1312
+        },
+        {
+          "kind": 4,
+          "symbol": "(uptr) vector<vehicle_buoyancy.surface>.erase (vector<vehicle_buoyancy.surface>, const uptr)",
+          "slot_offset": 1320
+        },
+        {
+          "kind": 4,
+          "symbol": "() vector<f64>.clear (vector<f64>)",
+          "slot_offset": 1328
+        },
+        {
+          "kind": 4,
+          "symbol": "() vehicle_buoyancy.destroy_physics (vehicle_buoyancy, physics.scene)",
+          "slot_offset": 1336
+        },
+        {
+          "kind": 4,
+          "symbol": "() vehicle_buoyancy.destroy (vehicle_buoyancy)",
+          "slot_offset": 1344
+        },
+        {
+          "kind": 4,
+          "symbol": "() server_scene.vehicle_buoyancy_hatch_manager.rebuild_vehicle_hatches (server_scene.vehicle_buoyancy_hatch_manager, server_scene.vehicle)",
+          "slot_offset": 1352
+        }
+      ],
+      "code_sha256": "1b083471ebf92d7aa17392b70ea75c132943d119e83bc9c37fbb149d8cf8442a",
+      "serialized_sha256": "c86a7ffeb308899f39232701ea247da6e3cf3652d3ba62341cdc5639f3f6d947",
+      "same_signature_records": 1,
+      "export_name": "f_52572066_server_scene_vehicle__rebuild_buoyancy"
+    },
+    {
+      "signature": "() vehicle_plate_util.add_static_geometry (const vector<vec3_s32>, const vec3, const s32, const s32, const vec3_s32, const s32, const vehicle_plate_util.e_plate_type, const s32, const e_vehicle_glass_state, const vector<vec3_s32>, vehicle_plates_edges_builder)",
+      "signature_offset": 63374340,
+      "code_offset": 63375987,
+      "code_size": 1648,
+      "allocation_size": 1744,
+      "serialized_size": 1744,
+      "allocation_extra_uninterpreted": 0,
+      "metadata_uninterpreted": [
+        1,
+        0
+      ],
+      "references": [
+        {
+          "kind": 4,
+          "symbol": "(s32) vector<vec3_s32>.size (const vector<vec3_s32>)",
+          "slot_offset": 1648
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (vec3, const vec3)",
+          "slot_offset": 1656
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (vec3)",
+          "slot_offset": 1664
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) operator_mul (const vec3, const f64)",
+          "slot_offset": 1672
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) vehicle_plate_util.get_plate_node_surface_offset (const vec3_s32, const vec3, const s32)",
+          "slot_offset": 1680
+        },
+        {
+          "kind": 3,
+          "symbol": "G_VEHICLE_PLATE_THICKNESS",
+          "slot_offset": 1688
+        },
+        {
+          "kind": 4,
+          "symbol": "() dtor (vec3)",
+          "slot_offset": 1696
+        },
+        {
+          "kind": 4,
+          "symbol": "() vehicle_plate_util.add_geometry_inner_opening (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const s32, const vec3_s32, const s32, vehicle_plates_edges_builder)",
+          "slot_offset": 1704
+        },
+        {
+          "kind": 4,
+          "symbol": "() vehicle_plate_util.add_geometry_inner_window (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const s32, const vec3_s32, const s32, const e_vehicle_glass_state, const vector<vec3_s32>, vehicle_plates_edges_builder)",
+          "slot_offset": 1712
+        },
+        {
+          "kind": 4,
+          "symbol": "() vehicle_plate_util.add_geometry_inner_hatch (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const s32, const vec3_s32, const s32, vehicle_plates_edges_builder)",
+          "slot_offset": 1720
+        },
+        {
+          "kind": 4,
+          "symbol": "() vehicle_plate_util.add_geometry_inner_solid (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const s32, vehicle_plates_edges_builder)",
+          "slot_offset": 1728
+        },
+        {
+          "kind": 4,
+          "symbol": "() vehicle_plate_util.add_geometry_outer (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const vec3_s32, const s32, vehicle_plates_edges_builder)",
+          "slot_offset": 1736
+        }
+      ],
+      "code_sha256": "cca1c85b26cd805318d3b45a7b93e9e996e3dcc68994d156b6e55bcf93719727",
+      "serialized_sha256": "45b1a83d240a05be9393b8da5b1f5d57c82ec2174f51ab29164fa191e9c25554",
+      "same_signature_records": 1,
+      "export_name": "f_63375987_vehicle_plate_util_add_static_geometry"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager._get_plate_node_positions_simplified (server_scene.vehicle_buoyancy_hatch_manager, const server_scene.vehicle_plate, vector<vec3>)",
+      "signature_offset": 53421487,
+      "code_offset": 53422905,
+      "code_size": 1152,
+      "allocation_size": 1280,
+      "serialized_size": 1280,
+      "allocation_extra_uninterpreted": 0,
+      "metadata_uninterpreted": [
+        3,
+        245
+      ],
+      "references": [
+        {
+          "kind": 4,
+          "symbol": "() vector<vec3>.clear (vector<vec3>)",
+          "slot_offset": 1152
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (vec3_s32)",
+          "slot_offset": 1160
+        },
+        {
+          "kind": 6,
+          "symbol": "(ptr<const vec3_s32>) replication.master.property_type_simple<vec3_s32>.get (const replication.master.property_type_simple<vec3_s32>)",
+          "slot_offset": 1168
+        },
+        {
+          "kind": 6,
+          "symbol": "(ptr<const s32>) replication.master.property_type_simple<s32>.get (const replication.master.property_type_simple<s32>)",
+          "slot_offset": 1176
+        },
+        {
+          "kind": 4,
+          "symbol": "() ctor (vec3)",
+          "slot_offset": 1184
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) vehicle_plate_util.get_plate_node_surface_offset (const vec3_s32, const vec3, const s32)",
+          "slot_offset": 1192
+        },
+        {
+          "kind": 6,
+          "symbol": "(s32) replication.master.container_vector_ref<server_scene.vehicle_plate_node>.size (const replication.master.container_vector_ref<server_scene.vehicle_plate_node>)",
+          "slot_offset": 1200
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<server_scene.vehicle_plate_node>) operator_aa (const replication.master.container_vector_ref<server_scene.vehicle_plate_node>, const s32)",
+          "slot_offset": 1208
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3_s32) operator_sub (const vec3_s32, const vec3_s32)",
+          "slot_offset": 1216
+        },
+        {
+          "kind": 4,
+          "symbol": "(bool) vehicle_util.test_vectors_same_direction_s32 (const vec3_s32, const vec3_s32)",
+          "slot_offset": 1224
+        },
+        {
+          "kind": 4,
+          "symbol": "(ptr<vec3>) vector<vec3>.push_back (vector<vec3>)",
+          "slot_offset": 1232
+        },
+        {
+          "kind": 6,
+          "symbol": "(vec3) server_scene.vehicle_node.get_pos (const server_scene.vehicle_node)",
+          "slot_offset": 1240
+        },
+        {
+          "kind": 4,
+          "symbol": "(vec3) operator_add (const vec3, const vec3)",
+          "slot_offset": 1248
+        },
+        {
+          "kind": 4,
+          "symbol": "() dtor (vec3)",
+          "slot_offset": 1256
+        },
+        {
+          "kind": 4,
+          "symbol": "() copy (vec3_s32, const vec3_s32)",
+          "slot_offset": 1264
+        },
+        {
+          "kind": 4,
+          "symbol": "() dtor (vec3_s32)",
+          "slot_offset": 1272
+        }
+      ],
+      "code_sha256": "bf7b6605bd4907c7d008a4eaefc18e7646f107e0726e3b18699f840f2d897cb7",
+      "serialized_sha256": "985cd8444f1d094ad8e68663c0087671ac58cd2e12dc307d48cf3191ddfc7caf",
+      "same_signature_records": 1,
+      "export_name": "f_53422905_server_scene_vehicle_buoyancy_hatch_manager__get_plate_node_positions_simplified"
+    }
+  ]
+}

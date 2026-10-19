@@ -1,5 +1,7 @@
 # Anymaker engineering knowledge — start here
 
+Whole-game research started October 18: [versioned research hub](research/README.md), [coverage and gaps](research/COVERAGE.md), [Opening/Hatch implementation trace](research/SEALING.md), and [restart instructions](research/HANDOFF.md). This extends the historical engineering archive below; whole-game understanding and runtime verification remain incomplete.
+
 Updated 16 October 2026. This is the accumulated project knowledge from **11–16 October**, including the pedestal petrol engine, **compact inline-four / CPE1Running**, giant-engine circulation and working test vehicle. It complements the existing browser-builder documentation.
 
 Read [current verified facts](CURRENT-FACTS.md) first, then [compact I4 and pedestal engines](COMPACT-I4.md), [giant engine and vehicle](GIANT-VEHICLE.md), and [native files and research methods](NATIVE-AND-RESEARCH.md). [Experiments and corrections](EXPERIMENTS.md) distinguishes successful results from superseded attempts. [Tools and archive map](TOOLS.md) gives working paths and commands.

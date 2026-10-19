@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "examples": [
+    {
+      "source": "doc/knowledge/archive/toolset/output/compact-petrol-engine-01-complete/running-result/CPE1Running.data",
+      "data_sha256": "65a2cfc700ffa32c9244ac3452b4640af7496e1ed5c75a8383ef2711c6c4a7ed",
+      "metadata_sha256": "e6b227b26a214d83f11b762380381eafa7064330e0d2092698192fdf003993a2",
+      "bodies": [
+        {
+          "id": 215,
+          "mounting_grids": 1,
+          "components": 60,
+          "nodes": 177,
+          "edges": 197,
+          "plates": 1,
+          "networks": {
+            "electric_links": 5,
+            "mechanical_links": 5,
+            "liquid_links": 8,
+            "gas_links": 6,
+            "belt_links": 5,
+            "data_links": 0
+          },
+          "components_with_script": 0
+        }
+      ],
+      "evidence": "Current read-only archive inspection. Runtime acceptance is historical user evidence from the linked archive, not a new run."
+    },
+    {
+      "source": "doc/knowledge/archive/toolset/output/shift-repair/20261016-100456/Giant_Engine_Test_Vehicle_01.data",
+      "data_sha256": "57de2fed038bb63d74541bba79ef8b11a33c3560c79cec02cc7c68da93052744",
+      "metadata_sha256": "46afe315b4e925f4c073baa83bcea291bd474f1ec5063607090599d851ecf95e",
+      "bodies": [
+        {
+          "id": 228,
+          "mounting_grids": 1,
+          "components": 103,
+          "nodes": 170,
+          "edges": 225,
+          "plates": 17,
+          "networks": {
+            "electric_links": 3,
+            "mechanical_links": 19,
+            "liquid_links": 20,
+            "gas_links": 11,
+            "belt_links": 6,
+            "data_links": 3
+          },
+          "components_with_script": 1
+        }
+      ],
+      "evidence": "Current read-only archive inspection. Runtime acceptance is historical user evidence from the linked archive, not a new run."
+    }
+  ],
+  "limits": "Counts and definition-index bounds only; not a collision/network-operating test."
+}

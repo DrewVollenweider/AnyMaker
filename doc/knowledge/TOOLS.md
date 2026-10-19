@@ -1,5 +1,7 @@
 # Tools, archive and reuse
 
+October 18 whole-game additions: [baseline, GCL/definition indexes, bounded Ghidra export, historical relocation checks and update comparison](research/TOOLS.md). Full local indexes and code dumps remain outside Git; [coverage](research/COVERAGE.md) distinguishes recovered records from understood behavior.
+
 The archive preserves the project's reusable utilities and historical creation scripts. All previous explanations are included; CURRENT-FACTS.md resolves superseded conclusions. Existing game resources are already published under the repository's public/data and public/assets; this upload does not duplicate a full ROM or executable.
 
 ## General read-only tools

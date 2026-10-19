@@ -1,0 +1,43 @@
+{
+  "formats_by_suffix_for_navigation_only": {
+    "json": {
+      ".data": 205,
+      ".meta": 205,
+      ".slib": 9,
+      ".json": 2560
+    },
+    "png": {
+      ".png": 3
+    },
+    "gcl-source-table-header": {
+      ".gcl": 1
+    },
+    "pe-x64": {
+      ".exe": 1,
+      ".dll": 1
+    },
+    "mesh-v5-header": {
+      ".anim": 1075,
+      ".mesh": 3395
+    },
+    "ogg": {
+      ".ogg": 1386
+    },
+    "binary-unresolved": {
+      ".bin": 1843
+    },
+    "sfnt-candidate": {
+      ".ttf": 6
+    },
+    "utf8-tabular": {
+      ".tsv": 7
+    },
+    "TXTR-v2-header": {
+      ".txtr": 115
+    },
+    "ATLA-v1-header": {
+      ".atlas": 1
+    }
+  },
+  "limits": "Classification came from bytes/structure. Suffix groups are navigation aids; binary-unresolved is explicitly unsupported by the baseline classifier."
+}

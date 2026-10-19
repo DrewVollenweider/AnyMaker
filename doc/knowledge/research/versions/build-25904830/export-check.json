@@ -1,0 +1,209 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "tool_sha256": "c0b4c7650f4e594ce58d467f99f38a332cf9dd964800b2ff9f837222ba3497be",
+  "functions_exported": 18,
+  "instructions_byte_checked": 6599,
+  "instruction_bytes_checked": 40843,
+  "records": [
+    {
+      "signature": "(bool) server_scene.vehicle_buoyancy_hatch_manager._check_hatch_opening_match (const server_scene.vehicle_buoyancy_hatch_manager, const server_scene.vehicle_buoyancy_hatch, const server_scene.vehicle_buoyancy_opening)",
+      "code_offset": 53415309,
+      "code_size": 3744,
+      "code_sha256": "d195b7b12329db302d62b6c4dd980ab17a5062b1f727b184b9af022c76617e6a",
+      "instructions_exported": 630,
+      "instruction_bytes_checked": 3711,
+      "assembly_sha256": "6f88a50e63eff7ea0637ae254863f434290ed8620a2c1d0d50c1001e815fd62c",
+      "pseudocode_sha256": "01090a008a41c1914dedb4212ad0d36831cd01a673fb5167a69ebbaec4273892",
+      "export_name": "f_53415309_server_scene_vehicle_buoyancy_hatch_manager__check_hatch_opening_match"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle_buoyancy_hatch_manager._test_node_match (const server_scene.vehicle_buoyancy_hatch_manager, const vec3, const vec3)",
+      "code_offset": 53425275,
+      "code_size": 96,
+      "code_sha256": "f14442b0c47e79f20c8ee430d8c4ab6e82e37b3d1f557cf5b45b86daf79d2a42",
+      "instructions_exported": 24,
+      "instruction_bytes_checked": 92,
+      "assembly_sha256": "f471e999c0fea73dad1ff5d3d288a4f2946ce7b1241491564e60a996b5e55cb6",
+      "pseudocode_sha256": "0e7be323329429d71cbdfa2c4234d8a3786c63e5b4396afb14daef3298befa2b",
+      "export_name": "f_53425275_server_scene_vehicle_buoyancy_hatch_manager__test_node_match"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager.tick (server_scene.vehicle_buoyancy_hatch_manager)",
+      "code_offset": 53440764,
+      "code_size": 992,
+      "code_sha256": "616552932307ee7ec3d1c338319a2b28db4cce41a11a08eaddbeaf018fa77336",
+      "instructions_exported": 187,
+      "instruction_bytes_checked": 978,
+      "assembly_sha256": "72c5a1f462e18f3c107381be76c5ec2efd676bda7112d83952e1da5fd8a8790d",
+      "pseudocode_sha256": "823802d0140b020e86a36989dd5d8ae2be5083e9478fdf92064446b655f2394d",
+      "export_name": "f_53440764_server_scene_vehicle_buoyancy_hatch_manager_tick"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager.rebuild_vehicle_hatches (server_scene.vehicle_buoyancy_hatch_manager, server_scene.vehicle)",
+      "code_offset": 53437898,
+      "code_size": 544,
+      "code_sha256": "eac575e43d621fcf0375eec33698597db28b124f84b259e1e33c107dd84c00ec",
+      "instructions_exported": 110,
+      "instruction_bytes_checked": 531,
+      "assembly_sha256": "1d9d59fccb80cd4eb2e0712c14a87977ab7106a91b5175f632e23754a9c95047",
+      "pseudocode_sha256": "bcd74c8756f720583186fa7b3d8f89c04878c74dc2b0741f19cf64aabfabcebd",
+      "export_name": "f_53437898_server_scene_vehicle_buoyancy_hatch_manager_rebuild_vehicle_hatches"
+    },
+    {
+      "signature": "() vehicle_buoyancy._build_plates (vehicle_buoyancy, const s32)",
+      "code_offset": 62020505,
+      "code_size": 5320,
+      "code_sha256": "e62137a6b48ad19083c0db8c0aff493badb631e530ce9a2b537c10709b79eb5f",
+      "instructions_exported": 847,
+      "instruction_bytes_checked": 5276,
+      "assembly_sha256": "872efb4ac1565856dbbde668d418df770daf2feea96fb52d1b6d654da7a39ad0",
+      "pseudocode_sha256": "f7e4117cfe3b89e40c442b480661d7d553eb62bcc757fd05d627cd9030b8fdc1",
+      "export_name": "f_62020505_vehicle_buoyancy__build_plates"
+    },
+    {
+      "signature": "() vehicle_buoyancy.set_is_plate_opening_sealed (vehicle_buoyancy, const s32, const bool)",
+      "code_offset": 62326512,
+      "code_size": 256,
+      "code_sha256": "750fdbbd2445f240a97247efca73c66556453c28ba7f8ab663c6e57db12afd90",
+      "instructions_exported": 52,
+      "instruction_bytes_checked": 250,
+      "assembly_sha256": "4ca9ad291d4e4f61ddf38468c137088e95e9fdbf0978603a60db374c62e88f8a",
+      "pseudocode_sha256": "49b4a8550830ad1f3a6b8f394e12ca00d717c15377b0cdac65dc4983b7bca530",
+      "export_name": "f_62326512_vehicle_buoyancy_set_is_plate_opening_sealed"
+    },
+    {
+      "signature": "(vehicle_plate_util.e_plate_type) client_scene.item_world.vehicle_editor_add_opening.get_plate_type (const client_scene.item_world.vehicle_editor_add_opening)",
+      "code_offset": 9232973,
+      "code_size": 36,
+      "code_sha256": "2daf5a8566e0ec0ba72653297b42ca8ab10b5807115cecf9b08a8dfe6ea44de2",
+      "instructions_exported": 8,
+      "instruction_bytes_checked": 31,
+      "assembly_sha256": "39b6db47544254c3e2e0721e720416c49f7f486efd0d42c389be0f72413c32b0",
+      "pseudocode_sha256": "362f31490755874c9ee28ab36a428b33b94b7f8ee716c05bdfc729944027416a",
+      "export_name": "f_9232973_client_scene_item_world_vehicle_editor_add_opening_get_plate_type"
+    },
+    {
+      "signature": "(vehicle_plate_util.e_plate_type) client_scene.item_world.vehicle_editor_add_hatch.get_plate_type (const client_scene.item_world.vehicle_editor_add_hatch)",
+      "code_offset": 9232525,
+      "code_size": 36,
+      "code_sha256": "b054a14dd67202d20b70795b817013087895547a52aea795fbdaee5e0085978e",
+      "instructions_exported": 8,
+      "instruction_bytes_checked": 31,
+      "assembly_sha256": "67435233ea5de7765d0e16c6509bef694a84a7416fbcce08ed0b9762dda37ea2",
+      "pseudocode_sha256": "31a823dbcd1d59a37984c0a01b02a2cb8391b9816c8bbb693db3de3005248474",
+      "export_name": "f_9232525_client_scene_item_world_vehicle_editor_add_hatch_get_plate_type"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager.g_node_match_threshold_sq.$ctor ()",
+      "code_offset": 53435590,
+      "code_size": 40,
+      "code_sha256": "d8fd83e576502ca9cba789ffa27a6899a53b9a273bb30d0ed3548959fada5469",
+      "instructions_exported": 7,
+      "instruction_bytes_checked": 34,
+      "assembly_sha256": "871ee8616ec95fa81a204f9951894fbc6416086ea942f64abc784143aca90ae7",
+      "pseudocode_sha256": "26b2291e186301207d230bcc7e535dbf58bfebf5605499c0a65984be6510a382",
+      "export_name": "f_53435590_server_scene_vehicle_buoyancy_hatch_manager_g_node_match_threshold_sq__ctor"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager.g_node_match_threshold_sq.$dtor ()",
+      "code_offset": 53435963,
+      "code_size": 8,
+      "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6",
+      "instructions_exported": 2,
+      "instruction_bytes_checked": 8,
+      "assembly_sha256": "bd38893a23320f3af57f50a3aa4b7f32445d704ee4a90e50724c1a72f016433e",
+      "pseudocode_sha256": "1f5e1cac9e394542767439f6a7a79b95c984d1031c020bbc32cd9f97e0437f4a",
+      "export_name": "f_53435963_server_scene_vehicle_buoyancy_hatch_manager_g_node_match_threshold_sq__dtor"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager._add_hatch (server_scene.vehicle_buoyancy_hatch_manager, server_scene.vehicle, const server_scene.vehicle_plate)",
+      "code_offset": 53411365,
+      "code_size": 448,
+      "code_sha256": "9a91255273913a738b931f36d024d6f74f501e4ac6e35af0c6ab5e36a54661c9",
+      "instructions_exported": 93,
+      "instruction_bytes_checked": 444,
+      "assembly_sha256": "42ff1c4c2f20fc90f5cd896e626030026d2430c608a5f80a30b82d3613917e33",
+      "pseudocode_sha256": "fe482a897cc09432a263437a2db9fc43ead37671d7032ffa680bdda03167ee4b",
+      "export_name": "f_53411365_server_scene_vehicle_buoyancy_hatch_manager__add_hatch"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager._add_opening (server_scene.vehicle_buoyancy_hatch_manager, server_scene.vehicle, const server_scene.vehicle_plate)",
+      "code_offset": 53413204,
+      "code_size": 448,
+      "code_sha256": "c0482ab5bd2f01c7ac4998a4033937462dbc8acc52cd4ea6af5294a58a026520",
+      "instructions_exported": 93,
+      "instruction_bytes_checked": 445,
+      "assembly_sha256": "bcf962f02cdcf8d031bae256a4eb1737242a0bbb10fe2ff7ab9b008530bd6889",
+      "pseudocode_sha256": "5505d95fddbb8d44acd21e79f82ead3c7d7340b0d3df44497e0a9ffac17421e8",
+      "export_name": "f_53413204_server_scene_vehicle_buoyancy_hatch_manager__add_opening"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager.g_node_match_threshold.$ctor ()",
+      "code_offset": 53434854,
+      "code_size": 32,
+      "code_sha256": "930f930e5b78f3b0d6ae8d2a47565ea63e8a43e9ef84c9ca6e1edfcfebefcb3b",
+      "instructions_exported": 4,
+      "instruction_bytes_checked": 20,
+      "assembly_sha256": "41894e531d012d28ec493b5b3535296d38eb4c81f03901c6120949c679dcecc3",
+      "pseudocode_sha256": "90346e641a24d2d3d01fa7d51428e817a1ad4c1e5af53d3e875198687d0d0013",
+      "export_name": "f_53434854_server_scene_vehicle_buoyancy_hatch_manager_g_node_match_threshold__ctor"
+    },
+    {
+      "signature": "() vehicle_buoyancy._calculate_forces (vehicle_buoyancy, const bool)",
+      "code_offset": 62056483,
+      "code_size": 20736,
+      "code_sha256": "5b2a7047236212a9bc91819354ae8cb9c7ce8902c7f7b5026b9b76faf5ca023b",
+      "instructions_exported": 3069,
+      "instruction_bytes_checked": 20604,
+      "assembly_sha256": "48e85758db416fd31b6c098f2542036d7ca141918fa85019cc2219f6442207c8",
+      "pseudocode_sha256": "8daf6975f359c87180041714219f27f4aec3900aca650b5e4a21bcf39714eb5a",
+      "export_name": "f_62056483_vehicle_buoyancy__calculate_forces"
+    },
+    {
+      "signature": "() vehicle_buoyancy._build (vehicle_buoyancy, const bool, const ref<vehicle_buoyancy>)",
+      "code_offset": 62011032,
+      "code_size": 4480,
+      "code_sha256": "f9ca3a7e05f445bb7cf5617e91d3ad1c2ddad8c78ee669576e65f8d26a7ab0c3",
+      "instructions_exported": 732,
+      "instruction_bytes_checked": 4461,
+      "assembly_sha256": "069390fe779402bb4c16f7e3c3061038e51d828e5527465589b8e1ac57fe8d79",
+      "pseudocode_sha256": "38ec65a2d192db97b7c83114cac53e8937f8dfe2bf39aff38c7624d19e5e9121",
+      "export_name": "f_62011032_vehicle_buoyancy__build"
+    },
+    {
+      "signature": "() server_scene.vehicle._rebuild_buoyancy (server_scene.vehicle, physics.scene, server_scene.vehicle_buoyancy_hatch_manager)",
+      "code_offset": 52572066,
+      "code_size": 1192,
+      "code_sha256": "1b083471ebf92d7aa17392b70ea75c132943d119e83bc9c37fbb149d8cf8442a",
+      "instructions_exported": 226,
+      "instruction_bytes_checked": 1167,
+      "assembly_sha256": "fc65fc72cba879635359cb89a5954eddf0e802b7fbde22164e786c00c969303b",
+      "pseudocode_sha256": "171d3831692eba3b62a0e7a71ff2050e51b882e007e86bbb66a9768372ca02bd",
+      "export_name": "f_52572066_server_scene_vehicle__rebuild_buoyancy"
+    },
+    {
+      "signature": "() vehicle_plate_util.add_static_geometry (const vector<vec3_s32>, const vec3, const s32, const s32, const vec3_s32, const s32, const vehicle_plate_util.e_plate_type, const s32, const e_vehicle_glass_state, const vector<vec3_s32>, vehicle_plates_edges_builder)",
+      "code_offset": 63375987,
+      "code_size": 1648,
+      "code_sha256": "cca1c85b26cd805318d3b45a7b93e9e996e3dcc68994d156b6e55bcf93719727",
+      "instructions_exported": 285,
+      "instruction_bytes_checked": 1623,
+      "assembly_sha256": "f479c907778ab35068935fe6c3842cc1bdf8977a2dac53010da18c290da32b62",
+      "pseudocode_sha256": "664a087d033edfb0bfae10ad85fb54050590e8e2aca3efdc2d8af68bd355235f",
+      "export_name": "f_63375987_vehicle_plate_util_add_static_geometry"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager._get_plate_node_positions_simplified (server_scene.vehicle_buoyancy_hatch_manager, const server_scene.vehicle_plate, vector<vec3>)",
+      "code_offset": 53422905,
+      "code_size": 1152,
+      "code_sha256": "bf7b6605bd4907c7d008a4eaefc18e7646f107e0726e3b18699f840f2d897cb7",
+      "instructions_exported": 222,
+      "instruction_bytes_checked": 1137,
+      "assembly_sha256": "ea5cfdbbd1600149726d8f7474454d3b3a729ddc308e43a756c6f5f31546d93f",
+      "pseudocode_sha256": "6948c8fcb37f1ce8de4fa90c8da5a27da5cfb24e318c16eb7b7fdbb991ec1f79",
+      "export_name": "f_53422905_server_scene_vehicle_buoyancy_hatch_manager__get_plate_node_positions_simplified"
+    }
+  ],
+  "limits": "Checks exact bytes, bounds and export success. Does not prove recovered types, semantics, complete CFG coverage, or runtime behavior."
+}

@@ -1,0 +1,16 @@
+{
+  "tool_sha256": "7d319c7fe90eaa2e01c61542e6f2fb52d43a447acf745f5ae9366b9920c32617",
+  "export_script_sha256": "d9e4c1d754bfbc882bd796dd9029dc165a9ff71aaa78ecb194bcd63653aab624",
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "resources_before": {
+    "disk_free_bytes": 484674965504,
+    "memory_total_bytes": 34130497536,
+    "memory_available_bytes": 16221278208
+  },
+  "java_version": "openjdk 25.0.4.1 2026-08-18 LTS\nOpenJDK Runtime Environment Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS)\nOpenJDK 64-Bit Server VM Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS, mixed mode, sharing)\n",
+  "ghidra_properties_sha256": "e84c26b08545eee63d24a1a8a4dd7905e4209538e2e7192093877c435c64eb67",
+  "heap_limit": "2GiB",
+  "headless_workers": 1,
+  "automatic_analysis": false,
+  "limits": "Raw imported copy only; unresolved pointers/types preserved; no game execution."
+}

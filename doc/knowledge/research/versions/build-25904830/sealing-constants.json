@@ -1,0 +1,97 @@
+{
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "constants": [
+    {
+      "label": "hatch_plate_enum",
+      "file_offset": 9232557,
+      "format": "<i",
+      "value": 3,
+      "bytes_hex": "03000000"
+    },
+    {
+      "label": "opening_plate_enum",
+      "file_offset": 9233005,
+      "format": "<i",
+      "value": 2,
+      "bytes_hex": "02000000"
+    },
+    {
+      "label": "empty_node_count",
+      "file_offset": 53419021,
+      "format": "<i",
+      "value": 0,
+      "bytes_hex": "00000000"
+    },
+    {
+      "label": "area_difference_threshold",
+      "file_offset": 53419029,
+      "format": "<d",
+      "value": 0.001,
+      "bytes_hex": "fca9f1d24d62503f"
+    },
+    {
+      "label": "normal_dot_threshold",
+      "file_offset": 53419037,
+      "format": "<d",
+      "value": -0.99,
+      "bytes_hex": "ae47e17a14aeefbf"
+    },
+    {
+      "label": "unmatched_node_index",
+      "file_offset": 53419045,
+      "format": "<i",
+      "value": -1,
+      "bytes_hex": "ffffffff"
+    },
+    {
+      "label": "match_initial_true",
+      "file_offset": 53419049,
+      "format": "<B",
+      "value": 1,
+      "bytes_hex": "01"
+    },
+    {
+      "label": "node_distance_threshold",
+      "file_offset": 53434878,
+      "format": "<d",
+      "value": 0.02,
+      "bytes_hex": "7b14ae47e17a943f"
+    },
+    {
+      "label": "seal_true_argument",
+      "file_offset": 53441748,
+      "format": "<B",
+      "value": 1,
+      "bytes_hex": "01"
+    },
+    {
+      "label": "seal_false_argument",
+      "file_offset": 53441749,
+      "format": "<B",
+      "value": 0,
+      "bytes_hex": "00"
+    },
+    {
+      "label": "flow_sealed_comparison",
+      "file_offset": 62077091,
+      "format": "<B",
+      "value": 0,
+      "bytes_hex": "00"
+    },
+    {
+      "label": "geometry_opening_enum",
+      "file_offset": 63377627,
+      "format": "<i",
+      "value": 2,
+      "bytes_hex": "02000000"
+    },
+    {
+      "label": "geometry_hatch_enum",
+      "file_offset": 63377611,
+      "format": "<i",
+      "value": 3,
+      "bytes_hex": "03000000"
+    }
+  ],
+  "limits": "Typed interpretations checked against the listed x64 load/comparison paths; structure fields and world-unit labels remain separately documented."
+}

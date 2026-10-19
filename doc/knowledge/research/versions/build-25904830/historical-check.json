@@ -1,0 +1,1023 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "tool_sha256": "7eab408937e2cd37fffa89914e734379a5ecf36fbd52d25feb5e37a0c3ee08c0",
+  "evidence_files": 6,
+  "range_checks": 96,
+  "old_offsets_matching": 0,
+  "relocation_status": {
+    "unique-record": 96
+  },
+  "same_code_hash_after_relocation": 66,
+  "reports": [
+    {
+      "evidence": "belts.json",
+      "evidence_sha256": "6621f9cfc1f794fb0ce73737d316bbb26e7c1ab85e67627154ae1e734e6abf07",
+      "historical_gcl_sha256": "d9725681f1b0bff321c58fcadc0d2e12104919a541eef074cf12945b283edb75",
+      "same_build": false,
+      "records": [
+        {
+          "signature": "() client_scene.vehicle_belt.rebuild (client_scene.vehicle_belt, client_scene.vehicle)",
+          "historical_offset": 15966159,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 16061267,
+          "current_code_size": 29352,
+          "current_code_sha256": "5c57a140c4e5c57e21a4a302e9bc13566b85a732d3cada77daeb3e3fe2cc2f29",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() client_scene.vehicle_belt.rebuild (client_scene.vehicle)",
+          "historical_offset": 16025320,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 16120428,
+          "current_code_size": 7560,
+          "current_code_sha256": "2bd21fb9827a5b377470d51940881f8982cbfd4fcce3addc508253ec2c3a40e0",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() client_scene.vehicle_belt.tick (client_scene.vehicle_belt, client_scene.vehicle, const f64)",
+          "historical_offset": 16038420,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 16133528,
+          "current_code_size": 408,
+          "current_code_sha256": "be41d92ff8f95cd5e3bd557bdbc98759da294ba2f9b4c712afdba6a50a49234e",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() client_scene.vehicle_component.engine_wheel.get_belt_data (const client_scene.vehicle_component.engine_wheel, f64, bool, f64)",
+          "historical_offset": 17150396,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 17242665,
+          "current_code_size": 224,
+          "current_code_sha256": "5c881e4a0271ddf1191ffa8d4c0b732f567086ebc7348ebdbbde17435d9ed36d",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() client_scene.vehicle_component.engine_wheel_b.get_belt_data (const client_scene.vehicle_component.engine_wheel_b, f64, bool, f64)",
+          "historical_offset": 17157348,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 17249617,
+          "current_code_size": 224,
+          "current_code_sha256": "c54c8c1f6976c042bf605881f4371edc7a3affe6f927d880578f584d6e04c69f",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() client_scene.vehicle_component.engine_wheel_c.get_belt_data (const client_scene.vehicle_component.engine_wheel_c, f64, bool, f64)",
+          "historical_offset": 17158290,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 17250559,
+          "current_code_size": 224,
+          "current_code_sha256": "72a12d955950f6082b7305ea9a91fdac7440a0fe572877b12131b1227ef49f64",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() client_scene.vehicle_component.pulley_wheel.get_belt_data (const client_scene.vehicle_component.pulley_wheel, f64, bool, f64)",
+          "historical_offset": 18136205,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 18237822,
+          "current_code_size": 224,
+          "current_code_sha256": "25f72246b65b370590c4193ef6dfcf71717c7fb96badb796d27e570f35e01f7f",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.engine_wheel.parse_save_data (server_scene.vehicle_component.engine_wheel, server_scene.save_data.parser)",
+          "historical_offset": 54099632,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 54542498,
+          "current_code_size": 192,
+          "current_code_sha256": "6f9656f396d687770c6e511c214db430bd82dada9d90ae8902b87358f3d3e688",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.pulley_wheel.parse_save_data (server_scene.vehicle_component.pulley_wheel, server_scene.save_data.parser)",
+          "historical_offset": 56690766,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57115612,
+          "current_code_size": 192,
+          "current_code_sha256": "6f9656f396d687770c6e511c214db430bd82dada9d90ae8902b87358f3d3e688",
+          "same_code_hash_after_relocation": true
+        }
+      ]
+    },
+    {
+      "evidence": "hydraulic-connections.json",
+      "evidence_sha256": "c1efd6ed39f579c1e94f1d6f2cbed05c0805a0215a5f8547051797517d2036a3",
+      "historical_gcl_sha256": "d9725681f1b0bff321c58fcadc0d2e12104919a541eef074cf12945b283edb75",
+      "same_build": false,
+      "records": [
+        {
+          "signature": "(ref<client_scene.item_world.vehicle_editor_hydraulic.state_base>) client_scene.item_world.vehicle_editor_hydraulic.state_edit_hydraulic_nodes_drag.tick (client_scene.item_world.vehicle_editor_hydraulic.state_edit_hydraulic_nodes_drag, client_scene.item_world.vehicle_editor_hydraulic, client, client_scene, const f64, const client_scene.item_world.vehicle_editor_hydraulic.inputs)",
+          "historical_offset": 9976340,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 10043557,
+          "current_code_size": 6536,
+          "current_code_sha256": "a89c1cfe9c6f59ee3c6e76a50f6b8c0d61e64624eb151673021281b035259cac",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector.parse_save_data (server_scene.vehicle_component.hydraulic_cylinder_connector, server_scene.save_data.parser)",
+          "historical_offset": 54900821,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 55337028,
+          "current_code_size": 624,
+          "current_code_sha256": "e0cc0c88be79dd6ecc3f27a4b4d3df5eb16ed77f6a36a3aa1cc7abf6af39c8ee",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector.post_load (server_scene.vehicle_component.hydraulic_cylinder_connector, server_scene)",
+          "historical_offset": 54902676,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 55338883,
+          "current_code_size": 608,
+          "current_code_sha256": "451e1ab135d5319ce404916b6900966842e02aa9cfd280578c02f9cdeca0cc31",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.connect_multibody (server_scene.vehicle_component.hydraulic_cylinder_connector_base, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+          "historical_offset": 54921500,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 55357000,
+          "current_code_size": 5952,
+          "current_code_sha256": "fc18b9d9f719500cfaad47c9a6dcb4544a024a88af81e786df8665970b9bf1f5",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.parse_save_data (server_scene.vehicle_component.hydraulic_cylinder_connector_base, server_scene.save_data.parser)",
+          "historical_offset": 54942346,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 55377846,
+          "current_code_size": 1232,
+          "current_code_sha256": "e24cdf5896461fa7042ff2c29931ff45e771da4b2c2f25dd1d5c46b22b3939cb",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.post_load (server_scene.vehicle_component.hydraulic_cylinder_connector_base, server_scene)",
+          "historical_offset": 54944978,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 55380478,
+          "current_code_size": 688,
+          "current_code_sha256": "faca48a41be7d6882f9749b1ddc5c143ea85b63b8eed41d7cbcc1a33da390665",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.set_extension_size (server_scene.vehicle_component.hydraulic_cylinder_connector_base, const f64, const s32)",
+          "historical_offset": 54957223,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 55392723,
+          "current_code_size": 104,
+          "current_code_sha256": "9121d5c38a44ef6f551dda2712d122505a8f5484f7944083186fdfe75e9ad972",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "(bool) vehicle_util.can_add_hydraulic_link<server_scene> (const server_scene.vehicle, const s32, const s32, const server_scene.vehicle, const s32, const s32)",
+          "historical_offset": 64325845,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 64762851,
+          "current_code_size": 464,
+          "current_code_sha256": "22c70024359757bf194099986bf751bca0b9af9c070f51a61348e4e88209361e",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "(vec3) vehicle_component_definition.logic_node.get_size_offset (const vehicle_component_definition.logic_node)",
+          "historical_offset": 62210755,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 62645750,
+          "current_code_size": 704,
+          "current_code_sha256": "33a128c1ba8152b0b34bfed6ab00f9ae51d892b1a7b2dfec55ac4c5946072402",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle_component.wheel_hydraulic.parse_save_data (server_scene.vehicle_component.wheel_hydraulic, server_scene.save_data.parser)",
+          "historical_offset": 57664336,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 58082395,
+          "current_code_size": 1288,
+          "current_code_sha256": "0308c73bffd4bcff0107497286363ff8a8d1feb798fd587ffbeae72500049fd0",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle_element.hydraulic_cylinder.parse_save_data (server_scene.vehicle_element.hydraulic_cylinder, server_scene.save_data.parser)",
+          "historical_offset": 57904371,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 58324080,
+          "current_code_size": 304,
+          "current_code_sha256": "7353e16bdb722f38418e163c41add1c3bf01cd13660605ce23a3a79d5d8b5f44",
+          "same_code_hash_after_relocation": false
+        }
+      ]
+    },
+    {
+      "evidence": "mechanical-mates.json",
+      "evidence_sha256": "167ad7f0c67ba72322fcbb2c4897f55da726a65965fdca71918df280011c71f2",
+      "historical_gcl_sha256": "d9725681f1b0bff321c58fcadc0d2e12104919a541eef074cf12945b283edb75",
+      "same_build": false,
+      "records": [
+        {
+          "signature": "(bool) client_scene.vehicle_component.can_connect_multibody (const client_scene.vehicle_component, const string, const vehicle_component_definition, const vec3, s32, s32, vehicle_util.grid_origin_dir, vec3_s32, mat33_s32)",
+          "historical_offset": 16994124,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 17085780,
+          "current_code_size": 2520,
+          "current_code_sha256": "2efc0a2d2ce4b3ff1dac3620d097b4240a25cacb2205b48f30c42b85d3d59c51",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "(bool) client_scene.vehicle_component.rail.can_connect_multibody (const client_scene.vehicle_component.rail, const string, const vehicle_component_definition, const vec3, s32, s32, vehicle_util.grid_origin_dir, vec3_s32, mat33_s32)",
+          "historical_offset": 18160568,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 18262730,
+          "current_code_size": 3072,
+          "current_code_sha256": "dbe1740f1f6f282f53ac61b529feac3a09c41e078d8f3448ac985926d3232045",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "(bool) server_scene.vehicle_component.hinge_pin.can_connect (const server_scene.vehicle_component.hinge_pin)",
+          "historical_offset": 54800571,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 55238624,
+          "current_code_size": 34,
+          "current_code_sha256": "4753d6949ff38927d0619008ae13ac3a97543362e3db5238c826ead20571b94b",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.hinge_pin.connect_multibody (server_scene.vehicle_component.hinge_pin, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+          "historical_offset": 54802970,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 55241004,
+          "current_code_size": 6024,
+          "current_code_sha256": "12fd093eacbd9a358015ea5069fe32b9afb645d8e711b165bcc493ebc86ca8df",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle_component.hinge_pin.parse_save_data (server_scene.vehicle_component.hinge_pin, server_scene.save_data.parser)",
+          "historical_offset": 54833300,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 55270291,
+          "current_code_size": 808,
+          "current_code_sha256": "f84f7be0d598f23be62569e5f4a5f328a01f9c98f2fa1850eb0e4a17a43975c6",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle_component.hinge_pin.post_load (server_scene.vehicle_component.hinge_pin, server_scene)",
+          "historical_offset": 54835198,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 55272189,
+          "current_code_size": 568,
+          "current_code_sha256": "efddaf35b77447436216a7c3681f5bf608324f66f4f600abdb26b3d52ff22cc1",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "(bool) server_scene.vehicle_component.latch_pin.can_connect (const server_scene.vehicle_component.latch_pin)",
+          "historical_offset": 55726384,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 56158592,
+          "current_code_size": 34,
+          "current_code_sha256": "8301b50eab608691a2056ffc03d7b4eef2f0eda27e4f7e074cc0a6080037ef6c",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.latch_pin.connect_multibody (server_scene.vehicle_component.latch_pin, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+          "historical_offset": 55728065,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 56160273,
+          "current_code_size": 2560,
+          "current_code_sha256": "ca5a95e88fa983634f322d815b2ddd790ec75f8cff1ad856ab8fd70102c02079",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.latch_pin.parse_save_data (server_scene.vehicle_component.latch_pin, server_scene.save_data.parser)",
+          "historical_offset": 55742386,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 56174329,
+          "current_code_size": 736,
+          "current_code_sha256": "4744950cf6c4a77640dbb2e8df02ca25a849c6f2d33fb07bc906e04b178187c2",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle_component.latch_pin.post_load (server_scene.vehicle_component.latch_pin, server_scene)",
+          "historical_offset": 55744196,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 56176139,
+          "current_code_size": 568,
+          "current_code_sha256": "708e7b4472494c1462c60dc6f21d496b17d33386567e557cef902d4af06d5d03",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "(bool) server_scene.vehicle_component.mounting_knuckle.can_connect (const server_scene.vehicle_component.mounting_knuckle)",
+          "historical_offset": 56562791,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 56987891,
+          "current_code_size": 34,
+          "current_code_sha256": "c78fb1ee400ff69169e51a1747356d28df01e34558d2c03e2a96595eb3c15b6e",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.mounting_knuckle.connect_multibody (server_scene.vehicle_component.mounting_knuckle, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+          "historical_offset": 56563461,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 56988561,
+          "current_code_size": 136,
+          "current_code_sha256": "ebc7e42380b43ee27e87be3f61989356f78c1f32014c5a002081945cce5e06f9",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.mounting_knuckle.parse_save_data (server_scene.vehicle_component.mounting_knuckle, server_scene.save_data.parser)",
+          "historical_offset": 56582238,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57007338,
+          "current_code_size": 624,
+          "current_code_sha256": "04dd69d01e87deb7414f5fb9df90186131ce1f197ecc62d300d5ac61c00d379a",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle_component.mounting_knuckle.post_load (server_scene.vehicle_component.mounting_knuckle, server_scene)",
+          "historical_offset": 56583970,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57009070,
+          "current_code_size": 568,
+          "current_code_sha256": "baea231ebc789616e5f2bf046a4ed54251d7f825afb63f25ab5313fbdb7c367d",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "(bool) server_scene.vehicle_component.mounting_pin.can_connect (const server_scene.vehicle_component.mounting_pin)",
+          "historical_offset": 56592862,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57017962,
+          "current_code_size": 34,
+          "current_code_sha256": "c78fb1ee400ff69169e51a1747356d28df01e34558d2c03e2a96595eb3c15b6e",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.mounting_pin.connect_multibody (server_scene.vehicle_component.mounting_pin, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+          "historical_offset": 56594640,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57019740,
+          "current_code_size": 2976,
+          "current_code_sha256": "2652d83ea967714e18b30d94bd2b93089c78e614f86ae2b5754091cc8656a260",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle_component.mounting_pin.parse_save_data (server_scene.vehicle_component.mounting_pin, server_scene.save_data.parser)",
+          "historical_offset": 56618832,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57043932,
+          "current_code_size": 624,
+          "current_code_sha256": "525fbd0dacffa75d5cff6fdeebdbb949c9f7d0382e6d62f0f96258e099a1dfb4",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle_component.mounting_pin.post_load (server_scene.vehicle_component.mounting_pin, server_scene)",
+          "historical_offset": 56620540,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57045640,
+          "current_code_size": 568,
+          "current_code_sha256": "baea231ebc789616e5f2bf046a4ed54251d7f825afb63f25ab5313fbdb7c367d",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "(bool) server_scene.vehicle_component.rail.can_connect (const server_scene.vehicle_component.rail)",
+          "historical_offset": 56752802,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57177386,
+          "current_code_size": 176,
+          "current_code_sha256": "2a7ddd4be7c2a5d262df6ac3f005f8b8dd6b5c34e709d406ac624e5785b7ca52",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.rail.connect_multibody (server_scene.vehicle_component.rail, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+          "historical_offset": 56753586,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57178170,
+          "current_code_size": 136,
+          "current_code_sha256": "ebc7e42380b43ee27e87be3f61989356f78c1f32014c5a002081945cce5e06f9",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.rail.parse_save_data (server_scene.vehicle_component.rail, server_scene.save_data.parser)",
+          "historical_offset": 56761039,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57185623,
+          "current_code_size": 200,
+          "current_code_sha256": "3669be4096da385fee4916a988a7ba2a9aa275f90dc9b05da17a131a9f340def",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.rail.post_load (server_scene.vehicle_component.rail, server_scene)",
+          "historical_offset": 56762943,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57187527,
+          "current_code_size": 672,
+          "current_code_sha256": "3a51d2ebb16bc92bac29897de28cbe684cef2b975ca623f1414656e547d1fa01",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.rail.slider_data.parse_save_data (server_scene.vehicle_component.rail.slider_data, server_scene.save_data.parser)",
+          "historical_offset": 56774759,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57199343,
+          "current_code_size": 344,
+          "current_code_sha256": "4511220fdb46a6a9e20d2186a28945c6c31ad6075845654a279d46598684b352",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle_component.rail_ballscrew.parse_save_data (server_scene.vehicle_component.rail_ballscrew, server_scene.save_data.parser)",
+          "historical_offset": 56798722,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57223306,
+          "current_code_size": 200,
+          "current_code_sha256": "81a99dd3bf48a6310875943926bf6b738c903a56f17d5edeb6e4fb82a3b9ba2b",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.rail_ballscrew.slider_data.parse_save_data (server_scene.vehicle_component.rail_ballscrew.slider_data, server_scene.save_data.parser)",
+          "historical_offset": 56812986,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57237570,
+          "current_code_size": 344,
+          "current_code_sha256": "095c241bdc04ccb9720e094ce53d0553d8951a532300d8f789239678256a390c",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.rail_ballscrew_slider.connect_multibody (server_scene.vehicle_component.rail_ballscrew_slider, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+          "historical_offset": 56822575,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57247667,
+          "current_code_size": 2664,
+          "current_code_sha256": "4b99349f39f01c53612f54a63a4fd35fdd7e534841f6cbad1562ba2280940b07",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle_component.rail_ballscrew_slider.parse_save_data (server_scene.vehicle_component.rail_ballscrew_slider, server_scene.save_data.parser)",
+          "historical_offset": 56831842,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57256934,
+          "current_code_size": 408,
+          "current_code_sha256": "3719a0312269a057f59712722256b2f0599c098d5faeecca6de0e017edf44e04",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "(bool) server_scene.vehicle_component.rail_slider.can_connect (const server_scene.vehicle_component.rail_slider)",
+          "historical_offset": 56844704,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57269796,
+          "current_code_size": 34,
+          "current_code_sha256": "98fa0f82c61c3bd0fff1ea5462c53c3d656390605dca2fb2d2d032bd1502bf3b",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.rail_slider.connect_multibody (server_scene.vehicle_component.rail_slider, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+          "historical_offset": 56846268,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57271360,
+          "current_code_size": 2696,
+          "current_code_sha256": "115f511b2986ba95e5443fb3afaebc1e10d45be94392a0658c56121dc5f4017d",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.rail_slider.parse_save_data (server_scene.vehicle_component.rail_slider, server_scene.save_data.parser)",
+          "historical_offset": 56865205,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57290297,
+          "current_code_size": 408,
+          "current_code_sha256": "4cd04561f8cf50cd5bd97429ebf58de76005c2280d814787cef60842409f1413",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.rail_slider.post_load (server_scene.vehicle_component.rail_slider, server_scene)",
+          "historical_offset": 56866675,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57291767,
+          "current_code_size": 568,
+          "current_code_sha256": "755c17a2a2dadd9657b55073ad0bb7ba91ebed259690095ae06392d18c29fb44",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "(bool) server_scene.vehicle_component.tow_bar.can_connect (const server_scene.vehicle_component.tow_bar)",
+          "historical_offset": 57399277,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57819272,
+          "current_code_size": 34,
+          "current_code_sha256": "f2a482533299e3277f3ea06c8563240e416cfdc308f9376f1585650a3adcf4f2",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.tow_bar.connect_multibody (server_scene.vehicle_component.tow_bar, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+          "historical_offset": 57400654,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57820649,
+          "current_code_size": 1928,
+          "current_code_sha256": "936a05cafae93c4ae397c8f1788fc7acd37c488f454b86384e13ab637b62b573",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle_component.tow_bar.parse_save_data (server_scene.vehicle_component.tow_bar, server_scene.save_data.parser)",
+          "historical_offset": 57414558,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57834288,
+          "current_code_size": 936,
+          "current_code_sha256": "3fc4bc685b4730ea58c2a4c360857becb6327011d16f8f6c7657163a9a5f8ad5",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.tow_bar.post_load (server_scene.vehicle_component.tow_bar, server_scene)",
+          "historical_offset": 57416572,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57836302,
+          "current_code_size": 568,
+          "current_code_sha256": "c1b593a4930a022b7aa0184267b1849d39134aa461a07a8ec052b7d655a05cb2",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.tow_bar.tick_multibody (server_scene.vehicle_component.tow_bar, server_scene.vehicle, server_scene)",
+          "historical_offset": 57428529,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57848259,
+          "current_code_size": 4824,
+          "current_code_sha256": "8f728550912a227ab31249afad2babe5ab95ab90634be78a51e4b1b06f61d7ab",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() vehicle_component_definition.parse_json (vehicle_component_definition, json.parser, json.node)",
+          "historical_offset": 62260990,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 62695985,
+          "current_code_size": 29600,
+          "current_code_sha256": "9a5538b38ae1f684c747a417f1ff23fac18520a85b03f93f22a3132cc0263f95",
+          "same_code_hash_after_relocation": false
+        }
+      ]
+    },
+    {
+      "evidence": "native-grid-transform.json",
+      "evidence_sha256": "c61c187a5a28dd6d09bae44090e5842922c52a57c8fdacb3e588838852ea7977",
+      "historical_gcl_sha256": "32c1389e6bbc49aeae5a7eff93f2f580fed78ec453a69e6a491c014253e4ae09",
+      "same_build": false,
+      "records": [
+        {
+          "signature": "(mat34) vehicle_util.grid_origin_dir.get_transform (const vehicle_util.grid_origin_dir)",
+          "historical_offset": 63236332,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 63672764,
+          "current_code_size": 1280,
+          "current_code_sha256": "afe42e812ce3deabb754e7514f07316799db1ccdef1e7be441c683bf7a8031b8",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "(mat33) vehicle_util.grid_origin_dir.get_orientation (const vehicle_util.grid_origin_dir)",
+          "historical_offset": 63234415,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 63670847,
+          "current_code_size": 304,
+          "current_code_sha256": "b84ca98ce3e1c29e6799436c66f6e11b417b53000ca2fc3efa404cc99d85a886",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() vehicle_grid_util.get_grid_axis_normals (const vec3_s32, vec3, vec3, vec3)",
+          "historical_offset": 62756916,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 63193348,
+          "current_code_size": 840,
+          "current_code_sha256": "c62315e12a109423a6811a7f0c6176469e00b7c78f230f9ef0a239c2e41dbdd2",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "(vec3) vehicle_plate_util.get_plate_node_surface_offset (const vec3_s32, const vec3, const s32)",
+          "historical_offset": 63019209,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 63455641,
+          "current_code_size": 2304,
+          "current_code_sha256": "d6ee9d56ae839836532b7ff6600fc53800fe5f06438c3a1d8f17409b073bc140",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "(bool) vehicle_util.grid_origin_dir.get_is_base_grid (const vehicle_util.grid_origin_dir)",
+          "historical_offset": 63232947,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 63669379,
+          "current_code_size": 352,
+          "current_code_sha256": "3da50d5a0c8521de4faff85ef7dc64eaf4c28869dad64ca71e50d3c91418a18f",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() vehicle_util.grid_origin_dir.parse_json (vehicle_util.grid_origin_dir, json.parser, json.node)",
+          "historical_offset": 63238962,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 63675394,
+          "current_code_size": 560,
+          "current_code_sha256": "872fb737531783375e5ead3edeee8494dce3746f654c6fea5d8f149eebb8b603",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() vehicle_plate_util._g_plate_node_corners.$ctor ()",
+          "historical_offset": 62785313,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 63221745,
+          "current_code_size": 640,
+          "current_code_sha256": "0dd89a475fa9433733b60548a95f1a941dbb19d34f9f8fd977d362e7e934185a",
+          "same_code_hash_after_relocation": true
+        }
+      ]
+    },
+    {
+      "evidence": "native-islands.json",
+      "evidence_sha256": "fa657fdafb28b17b82897590f27e98a61044d82b2dbc37fb741c34be550af8f0",
+      "historical_gcl_sha256": "d9725681f1b0bff321c58fcadc0d2e12104919a541eef074cf12945b283edb75",
+      "same_build": false,
+      "records": [
+        {
+          "signature": "() server_scene.vehicle._flood_island (server_scene.vehicle, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)",
+          "historical_offset": 52081464,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 52526963,
+          "current_code_size": 1520,
+          "current_code_sha256": "466932ffdd183fd72fc7f9f86593840ae7d0a25d0759e517dfc0bf4c60911331",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle._flood_islands (server_scene.vehicle)",
+          "historical_offset": 52088458,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 52533957,
+          "current_code_size": 1936,
+          "current_code_sha256": "da110ba7f6eb84ef1d9c7178f1a0f6ce4da52815acb0b34e9eabaf4eea89ce58",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle._flood_islands (server_scene.vehicle, server_scene.vehicle_edge, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)",
+          "historical_offset": 52093736,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 52539235,
+          "current_code_size": 1424,
+          "current_code_sha256": "cafe184f0af9420802d0c6071cf9f5965233ea71dc1c0c91c9c27187d31fd5b1",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle._flood_islands (server_scene.vehicle, server_scene.vehicle_plate, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)",
+          "historical_offset": 52098334,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 52543833,
+          "current_code_size": 688,
+          "current_code_sha256": "3d1a92e1f56de92bf71b13bfaf4bf2e8d34c199a1b422bbf404c183e90ac1438",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle._flood_islands (server_scene.vehicle, server_scene.vehicle_component, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)",
+          "historical_offset": 52102299,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 52547798,
+          "current_code_size": 944,
+          "current_code_sha256": "49f1f7b99a938e7baebea4298d2589294861e46d787204081faf1a7f74eec807",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle._rebuild_islands (server_scene.vehicle, server_scene, const bool)",
+          "historical_offset": 52134087,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 52579586,
+          "current_code_size": 2416,
+          "current_code_sha256": "da74ae4e499a81c642a7105ac8f8077beb3c2bd17d9a3ef8dd4a4e5b0397e550",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() server_scene.vehicle._reset_island_indices (server_scene.vehicle)",
+          "historical_offset": 52143803,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 52589302,
+          "current_code_size": 1096,
+          "current_code_sha256": "289e55622344be45890d9a75bdce64d4291e84f41ff6f1fdf2c0128e55262471",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle._split_islands (server_scene.vehicle, server_scene)",
+          "historical_offset": 52178366,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 52623865,
+          "current_code_size": 26528,
+          "current_code_sha256": "3ad021742c0e7214c9d14d83a4e4f7ce47c7fe8a404ca0b388ad610c80b4a9b3",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle.rebuild_plate_adjacencies (server_scene.vehicle, server_scene.vehicle_plate, const ptr<server_scene.vehicle_plate>)",
+          "historical_offset": 52789829,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 53235734,
+          "current_code_size": 48,
+          "current_code_sha256": "5f0bc5ac2df626dd32104734851767762f84287721899e0889d01b5ced2f6e6d",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "(ptr<server_scene.vehicle_edge>) vehicle_util.find_edge<server_scene> (server_scene.vehicle, const s32, const s32)",
+          "historical_offset": 65139347,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 65577661,
+          "current_code_size": 776,
+          "current_code_sha256": "2a4b8fccaefb8207fe04ba9dbe2c855d23f39e4edc59c57026007c9390212b0a",
+          "same_code_hash_after_relocation": true
+        }
+      ]
+    },
+    {
+      "evidence": "tracks.json",
+      "evidence_sha256": "722173f4565b70cb41bf0363cfcf24e2fe8ee9be765ad12a97088de98ffbdfc6",
+      "historical_gcl_sha256": "d9725681f1b0bff321c58fcadc0d2e12104919a541eef074cf12945b283edb75",
+      "same_build": false,
+      "records": [
+        {
+          "signature": "() client_scene.vehicle_belt.G_TRACK_NODE_TANGENT_COUNT.$ctor ()",
+          "historical_offset": 15948006,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 16043114,
+          "current_code_size": 24,
+          "current_code_sha256": "35674fd81a586ee946dd62a66a78cf058d615238dcca3a41d060f6a50d9e7600",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() client_scene.vehicle_belt.rebuild (client_scene.vehicle_belt, client_scene.vehicle)",
+          "historical_offset": 15966159,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 16061267,
+          "current_code_size": 29352,
+          "current_code_sha256": "5c57a140c4e5c57e21a4a302e9bc13566b85a732d3cada77daeb3e3fe2cc2f29",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() client_scene.vehicle_belt.rebuild (client_scene.vehicle)",
+          "historical_offset": 16025320,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 16120428,
+          "current_code_size": 7560,
+          "current_code_sha256": "2bd21fb9827a5b377470d51940881f8982cbfd4fcce3addc508253ec2c3a40e0",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() client_scene.vehicle_belt_track._push_track_data (const client_scene.vehicle_belt_track, scene_renderer, const bitset, const mat34)",
+          "historical_offset": 16049334,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 16144442,
+          "current_code_size": 864,
+          "current_code_sha256": "456b546c5949d0ee1648d78a07e3542a16efcbc96140a0705073e641d3b19d09",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "(s32) client_scene.vehicle_belt_track.angle_to_segment (const f64)",
+          "historical_offset": 16051048,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 16146156,
+          "current_code_size": 136,
+          "current_code_sha256": "d6d49350bc2641d6d01cfc42d26d234861eb4367b5b9dc0070c4f6605a48e9c7",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "(f64) client_scene.vehicle_belt_track.get_track_piece_length (const vehicle_component_definition.e_logic_node_type)",
+          "historical_offset": 16068617,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 16163725,
+          "current_code_size": 280,
+          "current_code_sha256": "20c684f21f8e84824a62e98ec753cbb700cb413083350cdc109128d0f3c7f3d5",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() client_scene.vehicle_belt_track.get_track_transforms (client_scene.vehicle_belt_track, const mat34, vector<mat34>)",
+          "historical_offset": 16070712,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 16165820,
+          "current_code_size": 5168,
+          "current_code_sha256": "c68750c8c9262f01b1dc91152e92f76bb17fcd63f9c1563a80e6419ec7ac3071",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "() client_scene.vehicle_belt_track.rebuild (client_scene.vehicle_belt_track, client_scene.vehicle)",
+          "historical_offset": 16084320,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 16179428,
+          "current_code_size": 13064,
+          "current_code_sha256": "3c7b7b78ae2ff4d81e41d1d7ebf4a478ba6b3ffc572390aed97dd4612d7b68fc",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "(f64) client_scene.vehicle_belt_track.segment_to_angle (const s32)",
+          "historical_offset": 16107454,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 16202562,
+          "current_code_size": 80,
+          "current_code_sha256": "466fe7e46012434ff96c5324a13bab9d3a907ecc2ac7e78b6766304ba18a9744",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "(f64) client_scene.vehicle_belt_track.segment_to_angle (const f64)",
+          "historical_offset": 16107860,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 16202968,
+          "current_code_size": 80,
+          "current_code_sha256": "696b2735bf8a41e6a6abaef505a75e8d9b6203f67fe5e30c6b14057cc7e2975d",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() client_scene.vehicle_component.roller_wheel_fixed.get_belt_track_data (const client_scene.vehicle_component.roller_wheel_fixed, f64, f64, vec3)",
+          "historical_offset": 18231984,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 18336158,
+          "current_code_size": 232,
+          "current_code_sha256": "1ecafaad00ef51534582b7061bcaadc64557423ea6c5bb1a1a1d35368835e700",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "(f64) client_scene.vehicle_component.roller_wheel_fixed.get_radius (const client_scene.vehicle_component.roller_wheel_fixed)",
+          "historical_offset": 18236484,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 18340658,
+          "current_code_size": 48,
+          "current_code_sha256": "6008fa737668051eae83f517f4dfcbb79038ff28a4e34ac900d1e165bd0552ca",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() client_scene.vehicle_component.roller_wheel_suspension.get_belt_track_data (const client_scene.vehicle_component.roller_wheel_suspension, f64, f64, vec3)",
+          "historical_offset": 18269568,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 18373750,
+          "current_code_size": 360,
+          "current_code_sha256": "b78258ebfd80e958e93b223d94dc5e1ccca816e5d00ce7c2f56cfa9b3840309b",
+          "same_code_hash_after_relocation": false
+        },
+        {
+          "signature": "(f64) client_scene.vehicle_component.roller_wheel_suspension.get_radius (const client_scene.vehicle_component.roller_wheel_suspension)",
+          "historical_offset": 18276390,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 18380572,
+          "current_code_size": 48,
+          "current_code_sha256": "6008fa737668051eae83f517f4dfcbb79038ff28a4e34ac900d1e165bd0552ca",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() client_scene.vehicle_component.sprocket.get_belt_track_data (const client_scene.vehicle_component.sprocket, f64, f64, vec3)",
+          "historical_offset": 18444897,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 18549071,
+          "current_code_size": 208,
+          "current_code_sha256": "3915d7f205286f4f617c91161df2714a4611d749aef7b8970bae51b282d0e954",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.save_data.vehicle_belt_link.parse_save_data (server_scene.save_data.vehicle_belt_link, server_scene.save_data.parser)",
+          "historical_offset": 51335910,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 51786429,
+          "current_code_size": 288,
+          "current_code_sha256": "473a7d374258c4d0469a2997dbf541ec1be2aac24cd0bf196f468e9e379f97af",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.sprocket_large.G_RADIUS.$ctor ()",
+          "historical_offset": 57181901,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57603457,
+          "current_code_size": 32,
+          "current_code_sha256": "f160b197bd18b667e3d8ba21a4ecdc879f5f325459e31d41271398cbcc70150f",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.sprocket_large_narrow.G_RADIUS.$ctor ()",
+          "historical_offset": 57183399,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57604955,
+          "current_code_size": 32,
+          "current_code_sha256": "e6ba1f3b1cbb87f38de7811ba5ad721a1e64f2bc92bc4b582256604e02455349",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.sprocket_large_wide.G_RADIUS.$ctor ()",
+          "historical_offset": 57184991,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57606547,
+          "current_code_size": 32,
+          "current_code_sha256": "21a9ff396c0496a70e82cef0118978fe9593ae64aa9a61791af7693ba13a6a00",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.sprocket_small.G_RADIUS.$ctor ()",
+          "historical_offset": 57186545,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57608101,
+          "current_code_size": 32,
+          "current_code_sha256": "1fb25d8fd59257ae2e2ef992fce713588223724a293bbe5bbb2892f535b84a37",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.sprocket_small_narrow.G_RADIUS.$ctor ()",
+          "historical_offset": 57188043,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57609599,
+          "current_code_size": 32,
+          "current_code_sha256": "b8fe5f027019f2f3891444cce2e9a8919c0b0f21bd6b626950347b31aec5f04d",
+          "same_code_hash_after_relocation": true
+        },
+        {
+          "signature": "() server_scene.vehicle_component.sprocket_small_wide.G_RADIUS.$ctor ()",
+          "historical_offset": 57189635,
+          "historical_bytes_match_at_old_offset": false,
+          "relocation_status": "unique-record",
+          "current_code_offset": 57611191,
+          "current_code_size": 32,
+          "current_code_sha256": "d4364b0a46c7627ec3a1b0be593eb6839453c71a80203886996814d90b8946ec",
+          "same_code_hash_after_relocation": true
+        }
+      ]
+    }
+  ],
+  "limits": "Byte equality is narrower than semantic equality. Relocated records require renewed caller/type/constant validation before carrying conclusions forward."
+}

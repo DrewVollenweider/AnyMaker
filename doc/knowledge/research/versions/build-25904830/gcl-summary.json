@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "tool_version": "1.3.0",
+  "tool_sha256": "4592759ec1a85ff91cebbe393abdf5d3153fc24d261c481be6687526a9e90078",
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "source_bytes": 82528301,
+  "source_count": 1172,
+  "global_count": 931,
+  "header_end": 216593,
+  "function_records": 37082,
+  "code_bytes_in_records": 22156957,
+  "ambiguous_signatures": {},
+  "metadata_word0_counts": {
+    "1": 11806,
+    "3": 11309,
+    "7": 11165,
+    "5": 2437,
+    "33": 195,
+    "9": 170
+  },
+  "allocation_extra_counts": {
+    "0": 23438,
+    "8": 13644
+  },
+  "relocations": {
+    "global-table": 9629,
+    "unresolved": 84908,
+    "function-record": 84872
+  },
+  "rejected_candidates": {
+    "unsupported metadata flag shape": 235781,
+    "unbounded relocation count": 57091
+  },
+  "decoded_functions": 0,
+  "understood_functions": 0,
+  "limits": [
+    "Scanner coverage is not complete-container coverage.",
+    "Code size includes constants/padding; not every byte is an instruction.",
+    "Relocation targets are symbols, not proven executed calls.",
+    "Metadata words, trailing debug/unwind tables, types and indirect calls remain unresolved.",
+    "No runtime behavior is established by a recovered record."
+  ]
+}

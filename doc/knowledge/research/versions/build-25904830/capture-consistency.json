@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "old_build": {
+    "appid": "4435340",
+    "name": "Anymaker",
+    "buildid": "25904830",
+    "TargetBuildID": "25904830",
+    "StateFlags": "4",
+    "lastupdated": "1791903480"
+  },
+  "new_build": {
+    "appid": "4435340",
+    "name": "Anymaker",
+    "buildid": "25904830",
+    "TargetBuildID": "25904830",
+    "StateFlags": "4",
+    "lastupdated": "1791903480"
+  },
+  "files": {
+    "added": [],
+    "removed": [],
+    "changed": [],
+    "unchanged": 10813
+  },
+  "limits": "Semantic JSON changes preserve missing versus present fields. Same machine-code bytes do not establish unchanged bindings, constants, callers or runtime behavior."
+}

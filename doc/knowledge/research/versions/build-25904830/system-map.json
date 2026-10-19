@@ -1,0 +1,1715 @@
+{
+  "schema": 1,
+  "provenance": {
+    "tool_version": "1.3.0",
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355"
+  },
+  "topics": [
+    {
+      "id": "building",
+      "title": "Building, grids, welding, structures and islands",
+      "lead_pattern": "grid|vehicle_edge|vehicle_plate|island|weld",
+      "function_record_keyword_hits": 1517,
+      "definition_keyword_hits": 8,
+      "implementation_explained": false,
+      "runtime_tests_this_session": 0,
+      "function_leads": [
+        {
+          "signature": "() G_VEHICLE_BUILDING_GRID_SNAP.$ctor ()",
+          "code_offset": 269534,
+          "code_size": 24,
+          "code_sha256": "0e470352e81deec67a005f94c8a7bee4a2ee584f1f3dad17ecc569637219aafd"
+        },
+        {
+          "signature": "() G_VEHICLE_BUILDING_GRID_SNAP.$dtor ()",
+          "code_offset": 269752,
+          "code_size": 8,
+          "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6"
+        },
+        {
+          "signature": "() G_VEHICLE_EDGE_DENSITY.$ctor ()",
+          "code_offset": 269942,
+          "code_size": 32,
+          "code_sha256": "69d0dcbdc2d7b2cdd7f79c1cb8ad498254e7dfb2d38694dede5db1bbc877d2be"
+        },
+        {
+          "signature": "() G_VEHICLE_EDGE_DENSITY.$dtor ()",
+          "code_offset": 270150,
+          "code_size": 8,
+          "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6"
+        },
+        {
+          "signature": "() G_VEHICLE_GRID_SIZE.$ctor ()",
+          "code_offset": 271602,
+          "code_size": 32,
+          "code_sha256": "b8fe5f027019f2f3891444cce2e9a8919c0b0f21bd6b626950347b31aec5f04d"
+        },
+        {
+          "signature": "() G_VEHICLE_GRID_SIZE.$dtor ()",
+          "code_offset": 271801,
+          "code_size": 8,
+          "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6"
+        },
+        {
+          "signature": "() G_VEHICLE_PLATE_DENSITY.$ctor ()",
+          "code_offset": 272449,
+          "code_size": 32,
+          "code_sha256": "4d55557600317a1d0be6c3462b714c586b0e7178bd0bd2376297129ac7303270"
+        },
+        {
+          "signature": "() G_VEHICLE_PLATE_DENSITY.$dtor ()",
+          "code_offset": 272660,
+          "code_size": 8,
+          "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6"
+        }
+      ],
+      "definition_leads": [
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/27",
+          "id": "welding_mask",
+          "class": "clothing"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/130",
+          "id": "vehicle_editor_add_building_component",
+          "class": "vehicle_editor_add_building_component"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/132",
+          "id": "vehicle_editor_add_edge",
+          "class": "vehicle_editor_add_edge"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/336",
+          "id": "vehicle_editor_weld",
+          "class": "vehicle_editor_weld"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/359",
+          "id": "vehicle_editor_add_edge_2",
+          "class": "vehicle_editor_add_edge_2"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/23",
+          "id": "tool_box_a",
+          "class": "inventory"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/24",
+          "id": "tool_box_b",
+          "class": "inventory"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/429",
+          "id": "hotel_storage_grid_a",
+          "class": "furniture"
+        }
+      ],
+      "next_questions": [
+        "Mounting transform defaults and supported directions",
+        "Attachment versus network connection",
+        "Island splitting and update order"
+      ],
+      "required_trace": [
+        "Inputs/outputs and units",
+        "Defaults/limits/state transitions",
+        "Update order and dependencies",
+        "Serialization and omitted values",
+        "Failure modes",
+        "Implementation and callers",
+        "Runtime ambiguity and controls"
+      ]
+    },
+    {
+      "id": "components",
+      "title": "Components, interfaces, properties and accessories",
+      "lead_pattern": "component_definition|vehicle_component|logic_node|interface|accessor",
+      "function_record_keyword_hits": 6630,
+      "definition_keyword_hits": 605,
+      "implementation_explained": false,
+      "runtime_tests_this_session": 0,
+      "function_leads": [
+        {
+          "signature": "() G_VEHICLE_LOGIC_NODE_RADIUS.$ctor ()",
+          "code_offset": 272019,
+          "code_size": 40,
+          "code_sha256": "e585c432385378780c473c420e52e57b2b6cf57fd6345c5dee98e6bf7715cade"
+        },
+        {
+          "signature": "() G_VEHICLE_LOGIC_NODE_RADIUS.$dtor ()",
+          "code_offset": 272258,
+          "code_size": 8,
+          "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6"
+        },
+        {
+          "signature": "() client.on_event (client, client_scene.vehicle_component, server_scene.vehicle_component.event.component_ability)",
+          "code_offset": 1927916,
+          "code_size": 96,
+          "code_sha256": "16890fcc2dd8a6f31eb9bf97bcd7c17cc57a8121e7fd9c123762894b4002ee58"
+        },
+        {
+          "signature": "() client.on_event (client, client_scene.vehicle_component, server_scene.vehicle_component.event.component_item_attached)",
+          "code_offset": 1928534,
+          "code_size": 112,
+          "code_sha256": "296aa07d09169b66516d4d7fd0f379ab56625e951cf17fbaff7c9371ae9c7948"
+        },
+        {
+          "signature": "() client.on_event (client, client_scene.vehicle_component, server_scene.vehicle_component.event.component_item_detached)",
+          "code_offset": 1929178,
+          "code_size": 112,
+          "code_sha256": "296aa07d09169b66516d4d7fd0f379ab56625e951cf17fbaff7c9371ae9c7948"
+        },
+        {
+          "signature": "(s32) client_peer.data.event.vehicle_attach_component_accessory.get_virtual_type_id (const client_peer.data.event.vehicle_attach_component_accessory)",
+          "code_offset": 2197188,
+          "code_size": 36,
+          "code_sha256": "bf267a87b288059491112a9cc171f176de74e2a1077ac066697784391216bd4a"
+        },
+        {
+          "signature": "() client_peer.data.event.vehicle_attach_component_accessory.parse (client_peer.data.event.vehicle_attach_component_accessory, binary.parser)",
+          "code_offset": 2197671,
+          "code_size": 208,
+          "code_sha256": "ae06248f2f280ef3749765d123c103c9df13c5e8086760e85f8341812fc1cced"
+        },
+        {
+          "signature": "(s32) client_peer.data.event.vehicle_component_interact_begin.get_virtual_type_id (const client_peer.data.event.vehicle_component_interact_begin)",
+          "code_offset": 2198371,
+          "code_size": 36,
+          "code_sha256": "58b589d67360ac76a1e535d32379091be31c3ba6bffe409c3adc3fc0ceb0bb58"
+        }
+      ],
+      "definition_leads": [
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/322",
+          "id": "120_570mm_shell",
+          "class": "component_accessory"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/342",
+          "id": "40_365mm_shell",
+          "class": "component_accessory"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/366",
+          "id": "rope_electric",
+          "class": "cable_electric"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/367",
+          "id": "rope_data",
+          "class": "cable_data"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/368",
+          "id": "rope_liquid",
+          "class": "cable_liquid"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/369",
+          "id": "rope_gas",
+          "class": "cable_gas"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/370",
+          "id": "rope_mechanical",
+          "class": "cable_mechanical"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/0",
+          "id": "engine",
+          "class": "engine"
+        }
+      ],
+      "next_questions": [
+        "Class-to-definition binding",
+        "Omitted defaults and compatibility by variant",
+        "Fitted accessories and saved endpoint ordinals"
+      ],
+      "required_trace": [
+        "Inputs/outputs and units",
+        "Defaults/limits/state transitions",
+        "Update order and dependencies",
+        "Serialization and omitted values",
+        "Failure modes",
+        "Implementation and callers",
+        "Runtime ambiguity and controls"
+      ]
+    },
+    {
+      "id": "physics",
+      "title": "Physics, collisions, damage, destruction and repair",
+      "lead_pattern": "physics|collision|constraint|damage|repair|destroy",
+      "function_record_keyword_hits": 2416,
+      "definition_keyword_hits": 9,
+      "implementation_explained": false,
+      "runtime_tests_this_session": 0,
+      "function_leads": [
+        {
+          "signature": "() actor_spawn_edit_panel.raycast_scene (actor_spawn_edit_panel, physics.scene, tile_edit_panel.selection_data, ptr<const application.graphics.camera>, const collision.ray, client_scene.environment_tile_container)",
+          "code_offset": 299650,
+          "code_size": 9168,
+          "code_sha256": "21971e8c07277fa77193b707b9d4747a3b146c3f20ed21dc37e944d9db230dec"
+        },
+        {
+          "signature": "() actor_spawn_edit_panel.update_dev_ui (actor_spawn_edit_panel, client_scene, ptr<const application.graphics.camera>, const collision.ray, client_scene.environment_tile_container, const s32)",
+          "code_offset": 320772,
+          "code_size": 17616,
+          "code_sha256": "680e94ffb5174908b8894542c6f0a164887234a62033856051a541394222c818"
+        },
+        {
+          "signature": "(ptr<const application.graphics.asset_mesh.bone>) application.graphics.asset_mesh._get_physics_root_bone_recursive (application.graphics.asset_mesh, const application.graphics.asset_mesh.bone)",
+          "code_offset": 373637,
+          "code_size": 472,
+          "code_sha256": "1c28d1f5c8efd202d15ef5690388bd1b7e2417f2eb0e9fa323884d643ce1edea"
+        },
+        {
+          "signature": "(ptr<const application.graphics.asset_mesh.bone>) application.graphics.asset_mesh.get_physics_root_bone (application.graphics.asset_mesh)",
+          "code_offset": 433429,
+          "code_size": 144,
+          "code_sha256": "e84bc929616115af634913c936e6efb86f38ade4aa45c1f42871a574bdb290c0"
+        },
+        {
+          "signature": "() application_physics_user_data.set_actor_character (application_physics_user_data, server_scene.actor_character)",
+          "code_offset": 673487,
+          "code_size": 44,
+          "code_sha256": "3bcf2538da21c032ec6f4000866eeee292599f9bb511787fdc28865d633a8406"
+        },
+        {
+          "signature": "() application_physics_user_data.set_actor_creature (application_physics_user_data, server_scene.actor_creature)",
+          "code_offset": 673894,
+          "code_size": 44,
+          "code_sha256": "de2977d63ab0f7c5b3678ddb8830aba53c2e72025ef595cd4913b7d64d56511f"
+        },
+        {
+          "signature": "() application_physics_user_data.set_bullet_casing (application_physics_user_data, client_scene.bullet_casing)",
+          "code_offset": 674297,
+          "code_size": 44,
+          "code_sha256": "aa540afc45428b7ef4121ca3cbfb8e2aed88b29016231870c1a88e5cdb7a420e"
+        },
+        {
+          "signature": "() application_physics_user_data.set_entity (application_physics_user_data, client_scene.entity)",
+          "code_offset": 674692,
+          "code_size": 44,
+          "code_sha256": "fe0217b30bd8525f62133cc6b500f885fba2a19ebd64c8c401671edbb0da2782"
+        }
+      ],
+      "definition_leads": [
+        {
+          "source": "rom/data/dungeon_tile_definitions.json",
+          "pointer": "/definitions/92",
+          "id": "",
+          "class": ""
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/6",
+          "id": "military_helmet",
+          "class": "clothing"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/7",
+          "id": "combat_helmet",
+          "class": "clothing"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/92",
+          "id": "military_plate_vest",
+          "class": "clothing"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/340",
+          "id": "vehicle_editor_repair",
+          "class": "vehicle_editor_repair"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/4",
+          "id": "radiator",
+          "class": "radiator"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/8",
+          "id": "battery_a",
+          "class": "battery"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/169",
+          "id": "battery_b",
+          "class": "battery"
+        }
+      ],
+      "next_questions": [
+        "Collision versus buoyancy geometry",
+        "Constraint units and break thresholds",
+        "Damage propagation and repair state"
+      ],
+      "required_trace": [
+        "Inputs/outputs and units",
+        "Defaults/limits/state transitions",
+        "Update order and dependencies",
+        "Serialization and omitted values",
+        "Failure modes",
+        "Implementation and callers",
+        "Runtime ambiguity and controls"
+      ]
+    },
+    {
+      "id": "powertrain",
+      "title": "Combustion, torque, gears, clutches, wheels, belts and tracks",
+      "lead_pattern": "engine|torque|gearbox|differential|clutch|wheel|belt|track",
+      "function_record_keyword_hits": 1886,
+      "definition_keyword_hits": 127,
+      "implementation_explained": false,
+      "runtime_tests_this_session": 0,
+      "function_leads": [
+        {
+          "signature": "() G_UI_SCROLL_TRACK_WIDTH.$ctor ()",
+          "code_offset": 268042,
+          "code_size": 24,
+          "code_sha256": "ce511e853e6eb3cc992f69742e18d764c9ee30dd206d58d5098dfe83aede4331"
+        },
+        {
+          "signature": "() G_UI_SCROLL_TRACK_WIDTH.$dtor ()",
+          "code_offset": 268245,
+          "code_size": 8,
+          "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6"
+        },
+        {
+          "signature": "(bool) actor_spawn_edit_panel.on_input_pointer_wheel (actor_spawn_edit_panel, const s32)",
+          "code_offset": 294701,
+          "code_size": 256,
+          "code_sha256": "932aa7cbf3977458a7fe9d1d9e233299aaa7118260253ca1e379f68249638cce"
+        },
+        {
+          "signature": "(bool) chunk_edit_panel.on_input_pointer_wheel (chunk_edit_panel, const s32)",
+          "code_offset": 879716,
+          "code_size": 256,
+          "code_sha256": "c2c77865bcba73049635821d990bfcf921f2413f8bb8c0885595fbae7e8ace54"
+        },
+        {
+          "signature": "(bool) client.on_input_pointer_wheel (client, const s32)",
+          "code_offset": 1944704,
+          "code_size": 112,
+          "code_sha256": "8e0cc463e8171630d2b3c8ff921c816aba44e2cc322f2e9860a851983734ecf7"
+        },
+        {
+          "signature": "(s32) client_peer.data.event.vehicle_add_ammo_belt_link.get_virtual_type_id (const client_peer.data.event.vehicle_add_ammo_belt_link)",
+          "code_offset": 2181114,
+          "code_size": 36,
+          "code_sha256": "747736181b8269c20831b6279b1b473acd4b68b03e22d6fdc4d738e45acc794d"
+        },
+        {
+          "signature": "() client_peer.data.event.vehicle_add_ammo_belt_link.parse (client_peer.data.event.vehicle_add_ammo_belt_link, binary.parser)",
+          "code_offset": 2181565,
+          "code_size": 168,
+          "code_sha256": "e4bcb919f5cc0bbf505b0a8884f60c6e057a9771bfeb45d6ac1767eb95004441"
+        },
+        {
+          "signature": "(s32) client_peer.data.event.vehicle_add_belt_link.get_virtual_type_id (const client_peer.data.event.vehicle_add_belt_link)",
+          "code_offset": 2182163,
+          "code_size": 36,
+          "code_sha256": "7c963cdd745e8dcb365f5cf7ce4afebfc089f2042d703bccdf3d4aec04cbcf13"
+        }
+      ],
+      "definition_leads": [
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/125",
+          "id": "wheel_car",
+          "class": "wheel"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/126",
+          "id": "wheel_truck",
+          "class": "wheel"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/127",
+          "id": "wheel_motorcycle",
+          "class": "wheel"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/128",
+          "id": "wheel_quadbike",
+          "class": "wheel"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/142",
+          "id": "vehicle_editor_belt",
+          "class": "vehicle_editor_belt"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/146",
+          "id": "wheel_helicopter",
+          "class": "wheel"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/147",
+          "id": "wheel_plane",
+          "class": "wheel"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/148",
+          "id": "wheel_van",
+          "class": "wheel"
+        }
+      ],
+      "next_questions": [
+        "Complete torque sign and ratio path",
+        "Combustion and fluid dependency thresholds",
+        "Unchecked size and steering variants"
+      ],
+      "required_trace": [
+        "Inputs/outputs and units",
+        "Defaults/limits/state transitions",
+        "Update order and dependencies",
+        "Serialization and omitted values",
+        "Failure modes",
+        "Implementation and callers",
+        "Runtime ambiguity and controls"
+      ]
+    },
+    {
+      "id": "electric",
+      "title": "Electrical generation, storage, networks and loads",
+      "lead_pattern": "electric|battery|alternator|generator|relay",
+      "function_record_keyword_hits": 865,
+      "definition_keyword_hits": 62,
+      "implementation_explained": false,
+      "runtime_tests_this_session": 0,
+      "function_leads": [
+        {
+          "signature": "(s32) client_peer.data.event.vehicle_add_electric_link.get_virtual_type_id (const client_peer.data.event.vehicle_add_electric_link)",
+          "code_offset": 2188543,
+          "code_size": 36,
+          "code_sha256": "13ee1b43de87388f4ef4f66ecdabd2f0184cf109130ea4e82ab80fcf264db9fe"
+        },
+        {
+          "signature": "() client_peer.data.event.vehicle_add_electric_link.parse (client_peer.data.event.vehicle_add_electric_link, binary.parser)",
+          "code_offset": 2189081,
+          "code_size": 240,
+          "code_sha256": "2e52a00d424fec1d9cde26ab7541ae94103ac38fa635243aa341bef0c4bc7c5a"
+        },
+        {
+          "signature": "(s32) client_peer.data.event.vehicle_modify_electric_link_point.get_virtual_type_id (const client_peer.data.event.vehicle_modify_electric_link_point)",
+          "code_offset": 2206621,
+          "code_size": 36,
+          "code_sha256": "fafcc83f112c3a0db0988d06205cdef06cb89f2c9fe7f3d8e0dcf3e0e9c42e3f"
+        },
+        {
+          "signature": "() client_peer.data.event.vehicle_modify_electric_link_point.parse (client_peer.data.event.vehicle_modify_electric_link_point, binary.parser)",
+          "code_offset": 2207166,
+          "code_size": 272,
+          "code_sha256": "d14f54749792e9b27959d6f2b53d05e61373e2579375bbf4dafd40df3c0c3b7a"
+        },
+        {
+          "signature": "(s32) client_peer.data.event.vehicle_paint_fill_electric_link.get_virtual_type_id (const client_peer.data.event.vehicle_paint_fill_electric_link)",
+          "code_offset": 2219007,
+          "code_size": 36,
+          "code_sha256": "f748b2f802ff2c6f7216c5769197514c4f0dc3dd3fbd2644405c4bd8d5ad07cd"
+        },
+        {
+          "signature": "() client_peer.data.event.vehicle_paint_fill_electric_link.parse (client_peer.data.event.vehicle_paint_fill_electric_link, binary.parser)",
+          "code_offset": 2219482,
+          "code_size": 240,
+          "code_sha256": "d9f7e79675f3769d5c4cc8ff88a6490cfe872ca27ea1ba548ca07dd952094d8e"
+        },
+        {
+          "signature": "(s32) client_peer.data.event.vehicle_remove_electric_link.get_virtual_type_id (const client_peer.data.event.vehicle_remove_electric_link)",
+          "code_offset": 2233562,
+          "code_size": 36,
+          "code_sha256": "fbed6f8b87169c6ab5767b305ee667e0f3538c0d1155d0f909d65cc1d3676109"
+        },
+        {
+          "signature": "() client_peer.data.event.vehicle_remove_electric_link.parse (client_peer.data.event.vehicle_remove_electric_link, binary.parser)",
+          "code_offset": 2234021,
+          "code_size": 208,
+          "code_sha256": "ae06248f2f280ef3749765d123c103c9df13c5e8086760e85f8341812fc1cced"
+        }
+      ],
+      "definition_leads": [
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/16",
+          "id": "headlamp",
+          "class": "headlamp"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/93",
+          "id": "helmet_light",
+          "class": "helmet_light"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/94",
+          "id": "military_strobe_light",
+          "class": "strobe_light"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/138",
+          "id": "vehicle_editor_electric",
+          "class": "vehicle_editor_electric"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/164",
+          "id": "battery_a",
+          "class": "battery"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/165",
+          "id": "battery_b",
+          "class": "battery"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/223",
+          "id": "night_vision_goggles",
+          "class": "night_vision_goggles"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/229",
+          "id": "radio_a",
+          "class": "radio"
+        }
+      ],
+      "next_questions": [
+        "Voltage/current/power conventions",
+        "Network solve order and overload behavior",
+        "Storage limits and disconnected defaults"
+      ],
+      "required_trace": [
+        "Inputs/outputs and units",
+        "Defaults/limits/state transitions",
+        "Update order and dependencies",
+        "Serialization and omitted values",
+        "Failure modes",
+        "Implementation and callers",
+        "Runtime ambiguity and controls"
+      ]
+    },
+    {
+      "id": "fluids",
+      "title": "Liquids, gases, flow, pressure, temperature and cooling",
+      "lead_pattern": "liquid|gas_|pressure|temperature|pump|coolant|radiator|valve",
+      "function_record_keyword_hits": 2078,
+      "definition_keyword_hits": 145,
+      "implementation_explained": false,
+      "runtime_tests_this_session": 0,
+      "function_leads": [
+        {
+          "signature": "(f64) body_temperature.get_display_factor (const f64)",
+          "code_offset": 779601,
+          "code_size": 72,
+          "code_sha256": "c3b8b853ac354abbbc3a7476841917baa996d686df224079123a4e4eada69651"
+        },
+        {
+          "signature": "(f64) body_temperature.get_effective_temperature (const weather_data, const f64, const f64, const f64, const bool, const f64)",
+          "code_offset": 780126,
+          "code_size": 408,
+          "code_sha256": "0820ea0ab5d678f717497cd4c4a2726297fcb93ab91a21bbc658bc14660703fa"
+        },
+        {
+          "signature": "(f64) body_temperature.get_insulation_degrees (const s32, const f64)",
+          "code_offset": 781169,
+          "code_size": 208,
+          "code_sha256": "292d165f0bf550ff9a2c56422669b7a355ce9b74068e864908e1bf6effbbbd75"
+        },
+        {
+          "signature": "(s32) client_peer.data.event.vehicle_add_gas_link.get_virtual_type_id (const client_peer.data.event.vehicle_add_gas_link)",
+          "code_offset": 2189795,
+          "code_size": 36,
+          "code_sha256": "92fa049a55ea2d055aad16642258fcf05b8160019c9d9b56253cc43675f03dc5"
+        },
+        {
+          "signature": "() client_peer.data.event.vehicle_add_gas_link.parse (client_peer.data.event.vehicle_add_gas_link, binary.parser)",
+          "code_offset": 2190313,
+          "code_size": 240,
+          "code_sha256": "2e52a00d424fec1d9cde26ab7541ae94103ac38fa635243aa341bef0c4bc7c5a"
+        },
+        {
+          "signature": "(s32) client_peer.data.event.vehicle_add_liquid_link.get_virtual_type_id (const client_peer.data.event.vehicle_add_liquid_link)",
+          "code_offset": 2192403,
+          "code_size": 36,
+          "code_sha256": "6decf79864542e814d6defb358bb7ad42b963fe8efeef41da30090442d39b0f6"
+        },
+        {
+          "signature": "() client_peer.data.event.vehicle_add_liquid_link.parse (client_peer.data.event.vehicle_add_liquid_link, binary.parser)",
+          "code_offset": 2192933,
+          "code_size": 240,
+          "code_sha256": "2e52a00d424fec1d9cde26ab7541ae94103ac38fa635243aa341bef0c4bc7c5a"
+        },
+        {
+          "signature": "(s32) client_peer.data.event.vehicle_modify_gas_link_point.get_virtual_type_id (const client_peer.data.event.vehicle_modify_gas_link_point)",
+          "code_offset": 2207964,
+          "code_size": 36,
+          "code_sha256": "0e124ad17a89e75f24c30adbdd604797ef64ea14ba2855287c15f11c8043dc41"
+        }
+      ],
+      "definition_leads": [
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/140",
+          "id": "vehicle_editor_liquid",
+          "class": "vehicle_editor_liquid"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/178",
+          "id": "jerry_can",
+          "class": "jerry_can"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/196",
+          "id": "food_soup",
+          "class": "food_canned_liquid"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/197",
+          "id": "food_canned_milk",
+          "class": "food_canned_liquid"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/204",
+          "id": "food_jam",
+          "class": "food_jar_liquid"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/269",
+          "id": "pump_action_shotgun",
+          "class": "gun_pump_action_shotgun"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/270",
+          "id": "pump_action_shotgun_tactical",
+          "class": "gun_pump_action_shotgun_tactical"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/321",
+          "id": "12_gauge_shotgun_cartridges_ammobox",
+          "class": "ammo_box"
+        }
+      ],
+      "next_questions": [
+        "Native volume and pressure conversions",
+        "Conservation and timestep integration",
+        "Pump direction and port-to-chamber mapping"
+      ],
+      "required_trace": [
+        "Inputs/outputs and units",
+        "Defaults/limits/state transitions",
+        "Update order and dependencies",
+        "Serialization and omitted values",
+        "Failure modes",
+        "Implementation and callers",
+        "Runtime ambiguity and controls"
+      ]
+    },
+    {
+      "id": "doors",
+      "title": "Doors, openings, hatches, latches, sealing, rails and actuators",
+      "lead_pattern": "hatch|opening|hinge|latch|rail|actuator|ballscrew",
+      "function_record_keyword_hits": 342,
+      "definition_keyword_hits": 57,
+      "implementation_explained": false,
+      "runtime_tests_this_session": 0,
+      "function_leads": [
+        {
+          "signature": "() G_VEHICLE_PLATE_HATCH_BORDER_INSET.$ctor ()",
+          "code_offset": 272896,
+          "code_size": 40,
+          "code_sha256": "e585c432385378780c473c420e52e57b2b6cf57fd6345c5dee98e6bf7715cade"
+        },
+        {
+          "signature": "() G_VEHICLE_PLATE_HATCH_BORDER_INSET.$dtor ()",
+          "code_offset": 273156,
+          "code_size": 8,
+          "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6"
+        },
+        {
+          "signature": "() G_VEHICLE_PLATE_HATCH_BORDER_THICKNESS.$ctor ()",
+          "code_offset": 273384,
+          "code_size": 32,
+          "code_sha256": "930f930e5b78f3b0d6ae8d2a47565ea63e8a43e9ef84c9ca6e1edfcfebefcb3b"
+        },
+        {
+          "signature": "() G_VEHICLE_PLATE_HATCH_BORDER_THICKNESS.$dtor ()",
+          "code_offset": 273640,
+          "code_size": 8,
+          "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6"
+        },
+        {
+          "signature": "() G_VEHICLE_PLATE_HATCH_BORDER_WIDTH.$ctor ()",
+          "code_offset": 273864,
+          "code_size": 32,
+          "code_sha256": "930f930e5b78f3b0d6ae8d2a47565ea63e8a43e9ef84c9ca6e1edfcfebefcb3b"
+        },
+        {
+          "signature": "() G_VEHICLE_PLATE_HATCH_BORDER_WIDTH.$dtor ()",
+          "code_offset": 274108,
+          "code_size": 8,
+          "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6"
+        },
+        {
+          "signature": "() G_VEHICLE_PLATE_OPENING_BORDER_INSET.$ctor ()",
+          "code_offset": 274359,
+          "code_size": 40,
+          "code_sha256": "e585c432385378780c473c420e52e57b2b6cf57fd6345c5dee98e6bf7715cade"
+        },
+        {
+          "signature": "() G_VEHICLE_PLATE_OPENING_BORDER_INSET.$dtor ()",
+          "code_offset": 274625,
+          "code_size": 8,
+          "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6"
+        }
+      ],
+      "definition_leads": [
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/135",
+          "id": "vehicle_editor_add_opening",
+          "class": "vehicle_editor_add_opening"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/136",
+          "id": "vehicle_editor_add_hatch",
+          "class": "vehicle_editor_add_hatch"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/245",
+          "id": "submachine_gun_45",
+          "class": "gun_submachine_45"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/247",
+          "id": "rifle_short_barrel",
+          "class": "gun_rifle_short_barrel"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/248",
+          "id": "rifle_long_barrel",
+          "class": "gun_rifle_long_barrel"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/252",
+          "id": "bolt_action_sniper_rifle",
+          "class": "gun_bolt_action_sniper_rifle"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/255",
+          "id": "battle_rifle",
+          "class": "gun_battle_rifle"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/257",
+          "id": "mg_3",
+          "class": "gun_mg3"
+        }
+      ],
+      "next_questions": [
+        "Geometric seal conditions and collision separation",
+        "Latch state versus alignment",
+        "Tolerance and moving-body seal transitions"
+      ],
+      "required_trace": [
+        "Inputs/outputs and units",
+        "Defaults/limits/state transitions",
+        "Update order and dependencies",
+        "Serialization and omitted values",
+        "Failure modes",
+        "Implementation and callers",
+        "Runtime ambiguity and controls"
+      ]
+    },
+    {
+      "id": "controls",
+      "title": "Mechanical controls, sensors, data, displays and microcontrollers",
+      "lead_pattern": "mechanical|sensor|data_node|display|microcontroller|junction",
+      "function_record_keyword_hits": 3767,
+      "definition_keyword_hits": 367,
+      "implementation_explained": false,
+      "runtime_tests_this_session": 0,
+      "function_leads": [
+        {
+          "signature": "(f64) body_temperature.get_display_factor (const f64)",
+          "code_offset": 779601,
+          "code_size": 72,
+          "code_sha256": "c3b8b853ac354abbbc3a7476841917baa996d686df224079123a4e4eada69651"
+        },
+        {
+          "signature": "() client.on_network_event (client, application.network.client_event, messages_server_to_client.microcontroller_save_script_data)",
+          "code_offset": 1965031,
+          "code_size": 840,
+          "code_sha256": "a22112d7e81331376b7b0f574376811b7db2b90c31c9a1d6e1e6489cfc1def61"
+        },
+        {
+          "signature": "() client.ui_data.microcontroller.reset (client.ui_data.microcontroller)",
+          "code_offset": 2043913,
+          "code_size": 88,
+          "code_sha256": "9d8417f6a8dc13c240b454af57e11dde1a32167bf2b077383b36aa04be037dba"
+        },
+        {
+          "signature": "() client.ui_data.microcontroller.reset_canvas_hover (client.ui_data.microcontroller)",
+          "code_offset": 2044378,
+          "code_size": 32,
+          "code_sha256": "f06e0d562a1adc36133a05a3ae2e58b4ae38a1a353b6acb196916250a889e0ac"
+        },
+        {
+          "signature": "() client.ui_data.microcontroller.reset_drag (client.ui_data.microcontroller)",
+          "code_offset": 2044763,
+          "code_size": 120,
+          "code_sha256": "ae4b38de08d4bc1bf9b8fc4de3f1e1428c24f00d2ff69258e744873234c985cc"
+        },
+        {
+          "signature": "() client.ui_data.microcontroller.reset_scroll (client.ui_data.microcontroller)",
+          "code_offset": 2045257,
+          "code_size": 132,
+          "code_sha256": "272b8a1201d54467f31ff595c3eed13bac69c98e02930e05ea8daf2db66fff1c"
+        },
+        {
+          "signature": "() client.ui_data.microcontroller_load_script.reset (client.ui_data.microcontroller_load_script)",
+          "code_offset": 2046027,
+          "code_size": 80,
+          "code_sha256": "844b34b2f6c7b1d15a1730722904d126a8ff08602be40fbd0702272aead41bec"
+        },
+        {
+          "signature": "() client.ui_data.microcontroller_load_script.reset_scroll (client.ui_data.microcontroller_load_script)",
+          "code_offset": 2046528,
+          "code_size": 80,
+          "code_sha256": "3f64648a2255eb3af679d11ed5d9caf8122f9cd1c197c7939a7528e4449b463f"
+        }
+      ],
+      "definition_leads": [
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/139",
+          "id": "vehicle_editor_mechanical",
+          "class": "vehicle_editor_mechanical"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/167",
+          "id": "vehicle_editor_microcontroller",
+          "class": "vehicle_editor_microcontroller"
+        },
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/370",
+          "id": "rope_mechanical",
+          "class": "cable_mechanical"
+        },
+        {
+          "source": "rom/data/tile_junction_definitions.json",
+          "pointer": "/definitions/0",
+          "id": "",
+          "class": ""
+        },
+        {
+          "source": "rom/data/tile_junction_definitions.json",
+          "pointer": "/definitions/1",
+          "id": "",
+          "class": ""
+        },
+        {
+          "source": "rom/data/tile_junction_definitions.json",
+          "pointer": "/definitions/2",
+          "id": "",
+          "class": ""
+        },
+        {
+          "source": "rom/data/tile_junction_definitions.json",
+          "pointer": "/definitions/3",
+          "id": "",
+          "class": ""
+        },
+        {
+          "source": "rom/data/tile_junction_definitions.json",
+          "pointer": "/definitions/4",
+          "id": "",
+          "class": ""
+        }
+      ],
+      "next_questions": [
+        "Signal types, defaults and hysteresis",
+        "Network discovery and alias scope",
+        "Controller scheduling and power-loss behavior"
+      ],
+      "required_trace": [
+        "Inputs/outputs and units",
+        "Defaults/limits/state transitions",
+        "Update order and dependencies",
+        "Serialization and omitted values",
+        "Failure modes",
+        "Implementation and callers",
+        "Runtime ambiguity and controls"
+      ]
+    },
+    {
+      "id": "scripts",
+      "title": "Script grammar, types, bindings, execution and persistence",
+      "lead_pattern": "script|lexer|token|parser|on_tick|global_private|binding",
+      "function_record_keyword_hits": 4001,
+      "definition_keyword_hits": 1,
+      "implementation_explained": false,
+      "runtime_tests_this_session": 0,
+      "function_leads": [
+        {
+          "signature": "() array<application.audio.descriptor>.reset (array<application.audio.descriptor>)",
+          "code_offset": 699466,
+          "code_size": 48,
+          "code_sha256": "c24d88ef8715d7d8ff58a34da3a2090529d7d1065c3d5201d95cc02cf21d8fec"
+        },
+        {
+          "signature": "() biome_manager.tile_header.parse_json (biome_manager.tile_header, json.parser, json.node)",
+          "code_offset": 764619,
+          "code_size": 696,
+          "code_sha256": "f5452abe2fd9c07c748a88c3e718f099fe7108dccbbe662628cd5d05f2da9bdb"
+        },
+        {
+          "signature": "() array<input.binding_action_digital>.reset (array<input.binding_action_digital>)",
+          "code_offset": 1865199,
+          "code_size": 48,
+          "code_sha256": "c24d88ef8715d7d8ff58a34da3a2090529d7d1065c3d5201d95cc02cf21d8fec"
+        },
+        {
+          "signature": "() array<input.binding_action_axis>.reset (array<input.binding_action_axis>)",
+          "code_offset": 1869769,
+          "code_size": 48,
+          "code_sha256": "c24d88ef8715d7d8ff58a34da3a2090529d7d1065c3d5201d95cc02cf21d8fec"
+        },
+        {
+          "signature": "() client.on_network_event (client, application.network.client_event, messages_server_to_client.microcontroller_save_script_data)",
+          "code_offset": 1965031,
+          "code_size": 840,
+          "code_sha256": "a22112d7e81331376b7b0f574376811b7db2b90c31c9a1d6e1e6489cfc1def61"
+        },
+        {
+          "signature": "() client.ui_data.microcontroller_load_script.reset (client.ui_data.microcontroller_load_script)",
+          "code_offset": 2046027,
+          "code_size": 80,
+          "code_sha256": "844b34b2f6c7b1d15a1730722904d126a8ff08602be40fbd0702272aead41bec"
+        },
+        {
+          "signature": "() client.ui_data.microcontroller_load_script.reset_scroll (client.ui_data.microcontroller_load_script)",
+          "code_offset": 2046528,
+          "code_size": 80,
+          "code_sha256": "3f64648a2255eb3af679d11ed5d9caf8122f9cd1c197c7939a7528e4449b463f"
+        },
+        {
+          "signature": "() client.ui_data.microcontroller_save_script.reset (client.ui_data.microcontroller_save_script)",
+          "code_offset": 2047209,
+          "code_size": 144,
+          "code_sha256": "d8e8914134e88083f6c503cb6cb86ec6c37a79d468872d4f85694874a0d73e80"
+        }
+      ],
+      "definition_leads": [
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/462",
+          "id": "microcontroller",
+          "class": "microcontroller"
+        }
+      ],
+      "next_questions": [
+        "Grammar and operator round-trip",
+        "Type conversions and API bindings",
+        "Instruction budget, scheduling and persistent state"
+      ],
+      "required_trace": [
+        "Inputs/outputs and units",
+        "Defaults/limits/state transitions",
+        "Update order and dependencies",
+        "Serialization and omitted values",
+        "Failure modes",
+        "Implementation and callers",
+        "Runtime ambiguity and controls"
+      ]
+    },
+    {
+      "id": "survival",
+      "title": "Inventory, progression, loot, survival, weather, combat and AI",
+      "lead_pattern": "inventory|loot|craft|survival|weather|zombie|creature|weapon|projectile|progress",
+      "function_record_keyword_hits": 4191,
+      "definition_keyword_hits": 478,
+      "implementation_explained": false,
+      "runtime_tests_this_session": 0,
+      "function_leads": [
+        {
+          "signature": "() application_physics_user_data.set_actor_creature (application_physics_user_data, server_scene.actor_creature)",
+          "code_offset": 673894,
+          "code_size": 44,
+          "code_sha256": "de2977d63ab0f7c5b3678ddb8830aba53c2e72025ef595cd4913b7d64d56511f"
+        },
+        {
+          "signature": "(f64) body_temperature.get_effective_temperature (const weather_data, const f64, const f64, const f64, const bool, const f64)",
+          "code_offset": 780126,
+          "code_size": 408,
+          "code_sha256": "0820ea0ab5d678f717497cd4c4a2726297fcb93ab91a21bbc658bc14660703fa"
+        },
+        {
+          "signature": "() client.on_event (client, client_scene.actor, server_scene.actor.event.inventory_interaction_result)",
+          "code_offset": 1927348,
+          "code_size": 96,
+          "code_sha256": "ba250fdad086604a76423c2e407757be02549a466a51897c2b72e12086eacdd1"
+        },
+        {
+          "signature": "() client.on_event (client, client_scene.projectile_manager, server_scene.projectile_manager.event.projectiles_actor_add)",
+          "code_offset": 1941981,
+          "code_size": 512,
+          "code_sha256": "a4f032cbd9b15ffc113d4863d300897792634adf5002eaa4c7e7750db6bf1b21"
+        },
+        {
+          "signature": "() client.on_event (client, client_scene.projectile_manager, server_scene.projectile_manager.event.projectiles_seeking_actor_add)",
+          "code_offset": 1943630,
+          "code_size": 520,
+          "code_sha256": "1d2717ea65dc0aa984bc3d0b765f8137b33119ef68f59dbec9fe926952a69ab8"
+        },
+        {
+          "signature": "() client.ui_data.inventory.cursor.reset (client.ui_data.inventory.cursor)",
+          "code_offset": 2041515,
+          "code_size": 168,
+          "code_sha256": "46e8ab8ab6588eb51a525418a63b12cc54330233c4b4c08ddf8b3ed45a340762"
+        },
+        {
+          "signature": "() client.ui_data.inventory.reset (client.ui_data.inventory)",
+          "code_offset": 2042313,
+          "code_size": 72,
+          "code_sha256": "4ef49c03622ca8eea333f987afdeec16a083da5ff9e8d04a7cf32b30e265fb66"
+        },
+        {
+          "signature": "() client.ui_data.inventory.reset_dragged_item (client.ui_data.inventory)",
+          "code_offset": 2042806,
+          "code_size": 112,
+          "code_sha256": "2ffef06af952100989df669956698d8d5362489ed2da3e64f8c16ccb46f66f8d"
+        }
+      ],
+      "definition_leads": [
+        {
+          "source": "rom/data/creature_definitions.json",
+          "pointer": "/definitions/0",
+          "id": "black_bear",
+          "class": ""
+        },
+        {
+          "source": "rom/data/creature_definitions.json",
+          "pointer": "/definitions/1",
+          "id": "bald_eagle",
+          "class": ""
+        },
+        {
+          "source": "rom/data/creature_definitions.json",
+          "pointer": "/definitions/2",
+          "id": "opossum",
+          "class": ""
+        },
+        {
+          "source": "rom/data/creature_definitions.json",
+          "pointer": "/definitions/3",
+          "id": "alaska_mountain_goat",
+          "class": ""
+        },
+        {
+          "source": "rom/data/creature_definitions.json",
+          "pointer": "/definitions/4",
+          "id": "alaska_reindeer",
+          "class": ""
+        },
+        {
+          "source": "rom/data/creature_definitions.json",
+          "pointer": "/definitions/5",
+          "id": "arctic_fox",
+          "class": ""
+        },
+        {
+          "source": "rom/data/creature_definitions.json",
+          "pointer": "/definitions/6",
+          "id": "bighorn_sheep",
+          "class": ""
+        },
+        {
+          "source": "rom/data/creature_definitions.json",
+          "pointer": "/definitions/7",
+          "id": "black_tailed_deer",
+          "class": ""
+        }
+      ],
+      "next_questions": [
+        "Discover whether crafting/progression exists",
+        "Loot and survival update paths",
+        "AI authority, sensing and combat damage"
+      ],
+      "required_trace": [
+        "Inputs/outputs and units",
+        "Defaults/limits/state transitions",
+        "Update order and dependencies",
+        "Serialization and omitted values",
+        "Failure modes",
+        "Implementation and callers",
+        "Runtime ambiguity and controls"
+      ]
+    },
+    {
+      "id": "world",
+      "title": "World generation, buildings, bunkers and environment",
+      "lead_pattern": "world|tile_|dungeon|bunker|building|terrain|environment",
+      "function_record_keyword_hits": 6696,
+      "definition_keyword_hits": 604,
+      "implementation_explained": false,
+      "runtime_tests_this_session": 0,
+      "function_leads": [
+        {
+          "signature": "() G_VEHICLE_BUILDING_GRID_SNAP.$ctor ()",
+          "code_offset": 269534,
+          "code_size": 24,
+          "code_sha256": "0e470352e81deec67a005f94c8a7bee4a2ee584f1f3dad17ecc569637219aafd"
+        },
+        {
+          "signature": "() G_VEHICLE_BUILDING_GRID_SNAP.$dtor ()",
+          "code_offset": 269752,
+          "code_size": 8,
+          "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6"
+        },
+        {
+          "signature": "() actor_spawn_edit_panel.raycast_scene (actor_spawn_edit_panel, physics.scene, tile_edit_panel.selection_data, ptr<const application.graphics.camera>, const collision.ray, client_scene.environment_tile_container)",
+          "code_offset": 299650,
+          "code_size": 9168,
+          "code_sha256": "21971e8c07277fa77193b707b9d4747a3b146c3f20ed21dc37e944d9db230dec"
+        },
+        {
+          "signature": "() actor_spawn_edit_panel.update_dev_ui (actor_spawn_edit_panel, client_scene, ptr<const application.graphics.camera>, const collision.ray, client_scene.environment_tile_container, const s32)",
+          "code_offset": 320772,
+          "code_size": 17616,
+          "code_sha256": "680e94ffb5174908b8894542c6f0a164887234a62033856051a541394222c818"
+        },
+        {
+          "signature": "() biome_manager.create_client (biome_manager, const s32, const ptr<environment_tile_definition_container>)",
+          "code_offset": 748157,
+          "code_size": 200,
+          "code_sha256": "218396aa7c31dcf8da74ab8ee272a87aca0ecbae4ac61930b1de18d9f042b17d"
+        },
+        {
+          "signature": "() biome_manager.create_server (biome_manager, const s32, const ptr<environment_tile_definition_container>)",
+          "code_offset": 750403,
+          "code_size": 5976,
+          "code_sha256": "a47454e047de685c5b0cc380da741094296bf4cf758ce52567d87367d4d82a47"
+        },
+        {
+          "signature": "() biome_manager.tile_header.parse_json (biome_manager.tile_header, json.parser, json.node)",
+          "code_offset": 764619,
+          "code_size": 696,
+          "code_sha256": "f5452abe2fd9c07c748a88c3e718f099fe7108dccbbe662628cd5d05f2da9bdb"
+        },
+        {
+          "signature": "() biome_manager.tile_height_field.build (biome_manager.tile_height_field, const ptr<environment_tile_definition_container>, const s32, const s32)",
+          "code_offset": 767818,
+          "code_size": 4520,
+          "code_sha256": "c3622c72cd110c4e16c94c7c22ca3a6ada1e4baacb9492d5644d322af9a57b33"
+        }
+      ],
+      "definition_leads": [
+        {
+          "source": "rom/data/dungeon_tile_definitions.json",
+          "pointer": "/definitions/0",
+          "id": "",
+          "class": ""
+        },
+        {
+          "source": "rom/data/dungeon_tile_definitions.json",
+          "pointer": "/definitions/1",
+          "id": "",
+          "class": ""
+        },
+        {
+          "source": "rom/data/dungeon_tile_definitions.json",
+          "pointer": "/definitions/2",
+          "id": "",
+          "class": ""
+        },
+        {
+          "source": "rom/data/dungeon_tile_definitions.json",
+          "pointer": "/definitions/3",
+          "id": "",
+          "class": ""
+        },
+        {
+          "source": "rom/data/dungeon_tile_definitions.json",
+          "pointer": "/definitions/4",
+          "id": "",
+          "class": ""
+        },
+        {
+          "source": "rom/data/dungeon_tile_definitions.json",
+          "pointer": "/definitions/5",
+          "id": "",
+          "class": ""
+        },
+        {
+          "source": "rom/data/dungeon_tile_definitions.json",
+          "pointer": "/definitions/6",
+          "id": "",
+          "class": ""
+        },
+        {
+          "source": "rom/data/dungeon_tile_definitions.json",
+          "pointer": "/definitions/7",
+          "id": "",
+          "class": ""
+        }
+      ],
+      "next_questions": [
+        "Seed and tile assembly rules",
+        "Building asset serialization",
+        "Environmental interaction and persistence"
+      ],
+      "required_trace": [
+        "Inputs/outputs and units",
+        "Defaults/limits/state transitions",
+        "Update order and dependencies",
+        "Serialization and omitted values",
+        "Failure modes",
+        "Implementation and callers",
+        "Runtime ambiguity and controls"
+      ]
+    },
+    {
+      "id": "saves",
+      "title": "Save/load, creations, metadata and version migration",
+      "lead_pattern": "save_data|save_|load_|parse_json|serialize|clipboard",
+      "function_record_keyword_hits": 1509,
+      "definition_keyword_hits": 0,
+      "implementation_explained": false,
+      "runtime_tests_this_session": 0,
+      "function_leads": [
+        {
+          "signature": "() biome_manager.tile_header.parse_json (biome_manager.tile_header, json.parser, json.node)",
+          "code_offset": 764619,
+          "code_size": 696,
+          "code_sha256": "f5452abe2fd9c07c748a88c3e718f099fe7108dccbbe662628cd5d05f2da9bdb"
+        },
+        {
+          "signature": "(bool) chunk_edit_panel.is_in_save_range (const client_scene, const vec3_s32)",
+          "code_offset": 877377,
+          "code_size": 664,
+          "code_sha256": "f5b0d4e6ba020e93a44b9b7061f7fab6336d6aa786de120a2cb5ec96b27ce187"
+        },
+        {
+          "signature": "() chunk_edit_panel.save_scene (client_scene, client_scene.environment_tile_container)",
+          "code_offset": 891412,
+          "code_size": 7552,
+          "code_sha256": "deba9c0afd47d35185fdf6eae7549d5e729a198d8c65281a3387829fa11acd0d"
+        },
+        {
+          "signature": "() client.on_network_event (client, application.network.client_event, messages_server_to_client.vehicle_editor_request_copy_vehicle_to_clipboard_response)",
+          "code_offset": 1959837,
+          "code_size": 88,
+          "code_sha256": "336a12d3d271c5dffc274f70e1bc50e78c981620dd0140096699c99ac5c0e2e0"
+        },
+        {
+          "signature": "() client.on_network_event (client, application.network.client_event, messages_server_to_client.microcontroller_save_script_data)",
+          "code_offset": 1965031,
+          "code_size": 840,
+          "code_sha256": "a22112d7e81331376b7b0f574376811b7db2b90c31c9a1d6e1e6489cfc1def61"
+        },
+        {
+          "signature": "() client.on_network_event (client, application.network.client_event, messages_server_to_client.insignia_save_data)",
+          "code_offset": 1975046,
+          "code_size": 840,
+          "code_sha256": "0c4f77dc0a85e3dff9a5b2c89d9991743011cf9e4e7b18825f80744fce6dcb04"
+        },
+        {
+          "signature": "() client.send_message_vehicle_editor_request_load_vehicle (client, application.network.client, const string, const mat34)",
+          "code_offset": 2018304,
+          "code_size": 152,
+          "code_sha256": "440613053036913779f355fcb492a31e7e74d403d0313ff0edd405f45e990116"
+        },
+        {
+          "signature": "() client.send_message_vehicle_editor_request_load_vehicle (client, application.network.host, const s32, const string, const mat34)",
+          "code_offset": 2019279,
+          "code_size": 192,
+          "code_sha256": "120456447533bf168d3abdfc7494a881160fb0a4892b287a511a2d1503e39689"
+        }
+      ],
+      "definition_leads": [],
+      "next_questions": [
+        "Creation versus world schema",
+        "Omitted defaults and migration policy",
+        "Unknown fields and ID remapping"
+      ],
+      "required_trace": [
+        "Inputs/outputs and units",
+        "Defaults/limits/state transitions",
+        "Update order and dependencies",
+        "Serialization and omitted values",
+        "Failure modes",
+        "Implementation and callers",
+        "Runtime ambiguity and controls"
+      ]
+    },
+    {
+      "id": "multiplayer",
+      "title": "Multiplayer authority, synchronization, ownership and persistence",
+      "lead_pattern": "replication|network|authority|ownership|peer|multiplayer",
+      "function_record_keyword_hits": 8505,
+      "definition_keyword_hits": 21,
+      "implementation_explained": false,
+      "runtime_tests_this_session": 0,
+      "function_leads": [
+        {
+          "signature": "(s32) application.network.client_event.get_channel (application.network.client_event)",
+          "code_offset": 630233,
+          "code_size": 29,
+          "code_sha256": "c07701f26865630b6502ac470c454e13cde463b887efa7399c19e02e9dd7500f"
+        },
+        {
+          "signature": "(application.network.client_error_type) application.network.client_event.get_error (application.network.client_event)",
+          "code_offset": 630570,
+          "code_size": 28,
+          "code_sha256": "a8895b6b1c03af739a1c58a5ea4c01ddfb3367417291f4e32aee06c1a14dbd6d"
+        },
+        {
+          "signature": "(bool) application.network.client_event.get_is_error (application.network.client_event)",
+          "code_offset": 630908,
+          "code_size": 44,
+          "code_sha256": "b21bf4766a9d653a2ee505b551663d56fafc7af2c8cf113301eb86225fc8ebf6"
+        },
+        {
+          "signature": "(application.network.client_event_type) application.network.client_event.get_type (application.network.client_event)",
+          "code_offset": 631261,
+          "code_size": 27,
+          "code_sha256": "1580900b1467b4b443c9b92d3d37445ed71fc7bd62843445e391a6c3bdfcaf3b"
+        },
+        {
+          "signature": "(s32) application.network.host_event.get_channel (application.network.host_event)",
+          "code_offset": 633696,
+          "code_size": 29,
+          "code_sha256": "c07701f26865630b6502ac470c454e13cde463b887efa7399c19e02e9dd7500f"
+        },
+        {
+          "signature": "(application.network.host_error_type) application.network.host_event.get_error (application.network.host_event)",
+          "code_offset": 634023,
+          "code_size": 28,
+          "code_sha256": "1447c4a49152cbb42103eaef24f188822e93c87ccc093f43726f9e8c82f7ad3d"
+        },
+        {
+          "signature": "(bool) application.network.host_event.get_is_error (application.network.host_event)",
+          "code_offset": 634351,
+          "code_size": 44,
+          "code_sha256": "4afb7f75d9faa79c814ffc6059310fc728d3a940423c8411fbcfd5421dea1160"
+        },
+        {
+          "signature": "(s32) application.network.host_event.get_peer_id (application.network.host_event)",
+          "code_offset": 634665,
+          "code_size": 28,
+          "code_sha256": "a8895b6b1c03af739a1c58a5ea4c01ddfb3367417291f4e32aee06c1a14dbd6d"
+        }
+      ],
+      "definition_leads": [
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/8",
+          "id": "battery_a",
+          "class": "battery"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/69",
+          "id": "7_segment_lcd_display_1",
+          "class": "seven_segment"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/70",
+          "id": "7_segment_lcd_display_3",
+          "class": "seven_segment"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/71",
+          "id": "7_segment_lcd_display_7",
+          "class": "seven_segment"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/72",
+          "id": "7_segment_lcd_display_backlight_1",
+          "class": "seven_segment"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/73",
+          "id": "7_segment_lcd_display_backlight_3",
+          "class": "seven_segment"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/74",
+          "id": "7_segment_lcd_display_backlight_7",
+          "class": "seven_segment"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/116",
+          "id": "alternator_motor",
+          "class": "alternator"
+        }
+      ],
+      "next_questions": [
+        "Client/server ownership and validation",
+        "Replication ordering and loss recovery",
+        "Join/leave persistence"
+      ],
+      "required_trace": [
+        "Inputs/outputs and units",
+        "Defaults/limits/state transitions",
+        "Update order and dependencies",
+        "Serialization and omitted values",
+        "Failure modes",
+        "Implementation and callers",
+        "Runtime ambiguity and controls"
+      ]
+    },
+    {
+      "id": "rendering",
+      "title": "Rendering, meshes, textures, materials and animation",
+      "lead_pattern": "graphics|mesh|texture|material|animation|render|geometry",
+      "function_record_keyword_hits": 5592,
+      "definition_keyword_hits": 0,
+      "implementation_explained": false,
+      "runtime_tests_this_session": 0,
+      "function_leads": [
+        {
+          "signature": "() G_UI_IS_RENDER_DROP_SHADOWS.$ctor ()",
+          "code_offset": 264618,
+          "code_size": 24,
+          "code_sha256": "dfabad9f04a060f9ed8b519ab74399ed73fa163273b898848cbd21bb901412cd"
+        },
+        {
+          "signature": "() G_UI_IS_RENDER_DROP_SHADOWS.$dtor ()",
+          "code_offset": 264833,
+          "code_size": 8,
+          "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6"
+        },
+        {
+          "signature": "() actor_spawn_edit_panel.raycast_scene (actor_spawn_edit_panel, physics.scene, tile_edit_panel.selection_data, ptr<const application.graphics.camera>, const collision.ray, client_scene.environment_tile_container)",
+          "code_offset": 299650,
+          "code_size": 9168,
+          "code_sha256": "21971e8c07277fa77193b707b9d4747a3b146c3f20ed21dc37e944d9db230dec"
+        },
+        {
+          "signature": "() actor_spawn_edit_panel.render (actor_spawn_edit_panel, scene_renderer)",
+          "code_offset": 314807,
+          "code_size": 18,
+          "code_sha256": "ce519e9121741d8a81f8d1037d5c04d6fd9edf7b5cf967e3243e7ce5a4d63e9d"
+        },
+        {
+          "signature": "() actor_spawn_edit_panel.update_dev_ui (actor_spawn_edit_panel, client_scene, ptr<const application.graphics.camera>, const collision.ray, client_scene.environment_tile_container, const s32)",
+          "code_offset": 320772,
+          "code_size": 17616,
+          "code_sha256": "680e94ffb5174908b8894542c6f0a164887234a62033856051a541394222c818"
+        },
+        {
+          "signature": "() app.graphics.$ctor ()",
+          "code_offset": 346303,
+          "code_size": 32,
+          "code_sha256": "f8d172bf557f781fe604de8cfb33a92b50e399f8c53dfb2396c8c39cb962b39e"
+        },
+        {
+          "signature": "() app.graphics.$dtor ()",
+          "code_offset": 346501,
+          "code_size": 8,
+          "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6"
+        },
+        {
+          "signature": "(ptr<const application.graphics.asset_mesh.bone>) application.graphics.asset_mesh._get_physics_root_bone_recursive (application.graphics.asset_mesh, const application.graphics.asset_mesh.bone)",
+          "code_offset": 373637,
+          "code_size": 472,
+          "code_sha256": "1c28d1f5c8efd202d15ef5690388bd1b7e2417f2eb0e9fa323884d643ce1edea"
+        }
+      ],
+      "definition_leads": [],
+      "next_questions": [
+        "Mesh variants and dynamic assembly",
+        "Collision/render mesh relationship",
+        "Animation state and material parameters"
+      ],
+      "required_trace": [
+        "Inputs/outputs and units",
+        "Defaults/limits/state transitions",
+        "Update order and dependencies",
+        "Serialization and omitted values",
+        "Failure modes",
+        "Implementation and callers",
+        "Runtime ambiguity and controls"
+      ]
+    },
+    {
+      "id": "input_audio_ui",
+      "title": "Input, audio, UI, localization and journal",
+      "lead_pattern": "input|action_digital|audio|sound|language|journal|ui_",
+      "function_record_keyword_hits": 4525,
+      "definition_keyword_hits": 62,
+      "implementation_explained": false,
+      "runtime_tests_this_session": 0,
+      "function_leads": [
+        {
+          "signature": "() G_UI_BUTTON_HEIGHT.$ctor ()",
+          "code_offset": 254590,
+          "code_size": 24,
+          "code_sha256": "dc008827231245112ce80f135e240a83dfdee5c2cfd215617592129ada8e5181"
+        },
+        {
+          "signature": "() G_UI_BUTTON_HEIGHT.$dtor ()",
+          "code_offset": 254778,
+          "code_size": 8,
+          "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6"
+        },
+        {
+          "signature": "() G_UI_COLOR_CONTENT.$ctor ()",
+          "code_offset": 255018,
+          "code_size": 80,
+          "code_sha256": "62433456e92b9e1708af0fbc2f754a39a7d7b6e110d1cbd72177d2ee49235d16"
+        },
+        {
+          "signature": "() G_UI_COLOR_CONTENT.$dtor ()",
+          "code_offset": 255298,
+          "code_size": 32,
+          "code_sha256": "f8d172bf557f781fe604de8cfb33a92b50e399f8c53dfb2396c8c39cb962b39e"
+        },
+        {
+          "signature": "() G_UI_COLOR_ELEMENT_BACKGROUND.$ctor ()",
+          "code_offset": 255604,
+          "code_size": 72,
+          "code_sha256": "eda160c76ca64d15abebfd98895343746b5a1e3db5b26a76a353f626d84bcac5"
+        },
+        {
+          "signature": "() G_UI_COLOR_ELEMENT_BACKGROUND.$dtor ()",
+          "code_offset": 255909,
+          "code_size": 32,
+          "code_sha256": "f8d172bf557f781fe604de8cfb33a92b50e399f8c53dfb2396c8c39cb962b39e"
+        },
+        {
+          "signature": "() G_UI_COLOR_ELEMENT_BACKGROUND_ACTION.$ctor ()",
+          "code_offset": 256240,
+          "code_size": 80,
+          "code_sha256": "35be3b01ba65717f682d2db3e5dc1eea4eecef70887539cb014b8e35ceeef818"
+        },
+        {
+          "signature": "() G_UI_COLOR_ELEMENT_BACKGROUND_ACTION.$dtor ()",
+          "code_offset": 256574,
+          "code_size": 32,
+          "code_sha256": "f8d172bf557f781fe604de8cfb33a92b50e399f8c53dfb2396c8c39cb962b39e"
+        }
+      ],
+      "definition_leads": [
+        {
+          "source": "rom/data/inventory_definitions.json",
+          "pointer": "/definitions/371",
+          "id": "journal",
+          "class": "journal"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/0",
+          "id": "engine",
+          "class": "engine"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/14",
+          "id": "klaxon",
+          "class": "horn_klaxon"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/17",
+          "id": "horn_speaker",
+          "class": "horn"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/20",
+          "id": "antenna_a",
+          "class": "antenna"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/21",
+          "id": "antenna_b",
+          "class": "antenna"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/22",
+          "id": "antenna_c",
+          "class": "antenna"
+        },
+        {
+          "source": "rom/data/vehicle_component_definitions.json",
+          "pointer": "/definitions/28",
+          "id": "v_engine",
+          "class": "engine"
+        }
+      ],
+      "next_questions": [
+        "Digital versus analog paths",
+        "Audio event and spatialization bindings",
+        "Journal/localization completeness"
+      ],
+      "required_trace": [
+        "Inputs/outputs and units",
+        "Defaults/limits/state transitions",
+        "Update order and dependencies",
+        "Serialization and omitted values",
+        "Failure modes",
+        "Implementation and callers",
+        "Runtime ambiguity and controls"
+      ]
+    }
+  ],
+  "limits": "Keyword leads overlap and include templates. A hit is not an explained system; zero hits do not establish absence."
+}
