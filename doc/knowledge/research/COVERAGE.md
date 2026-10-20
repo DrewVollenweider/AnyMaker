@@ -1,5 +1,7 @@
 # Coverage and gaps
 
+Newest continuation: [survival and scene scheduling](SURVIVAL-SCHEDULE-20261020.md). Reviewed chains include peer authority gates, condition cadence, vital storage and thresholds, stamina/oxygen, clothing/temperature and selected damage. Reader: 1,191 functions/167,289 instructions/947,427 bytes; 151 tests. Full character movement, actor variants, combat/death, outer scheduling and world systems remain unfinished.
+
 Newest continuation: [sensor/data chains](SENSORS-DATA-20261020.md). Selected sensor getters, mounted-axis calculations, pressure conversion, data-island flood and controller discovery are reviewed. Reader: 1,129 functions/158,494 instructions/901,354 bytes. The existing 143-test suite remains passing; no executable research tool changed in this continuation. Complete native units, controls, compiler, lifecycle and other full-register domains remain unfinished.
 
 Newest continuation: [joints and winches](JOINTS-WINCHES-20261020.md). Selected hinge/mount/latch/rail/tow/winch chains now have source/field evidence and eight arithmetic tests. Reader: 1,110 functions/154,167 checked instructions/877,643 bytes. Suite: 143 tests. This adds reviewed behavior at the stated scope; it does not close all moving joints, loaded states, tool compatibility or other audit domains.

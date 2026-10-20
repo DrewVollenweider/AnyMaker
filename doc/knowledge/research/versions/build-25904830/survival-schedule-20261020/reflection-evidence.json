@@ -1,0 +1,956 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "table": {
+    "offset": 66399263,
+    "end": 82528301,
+    "records": 8084,
+    "sha256": "5d619ecd6c69220d0e873d73e012dd301038f4eb911d859486db58c386b60a8e"
+  },
+  "types": [
+    {
+      "name": "server_scene.actor",
+      "base": "replication.master.object_events",
+      "offset": 75522095,
+      "length": 12629,
+      "descriptor_sha256": "ba7e24a87ce49445a36bfaa871915693f712c15696616d34a41bb0bade2b9aae",
+      "size": 504,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.actor_character",
+      "base": "server_scene.actor",
+      "offset": 75593321,
+      "length": 18120,
+      "descriptor_sha256": "c4376efc04a250873c92f50b1539c890e8986d29a81fab3af4f8fe986a8acdab",
+      "size": 3872,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.inventory",
+      "base": "replication.master.composite",
+      "offset": 76314692,
+      "length": 5610,
+      "descriptor_sha256": "1dfc9a0dd7664727332fbc3e1afcbf0d4164611678e2338acd8d6c2edd1db58d",
+      "size": 248,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.item_world",
+      "base": "replication.master.object_events",
+      "offset": 76336525,
+      "length": 3923,
+      "descriptor_sha256": "b114a3d595695b9e8c1e85dccac0b0f617248e3bb440989778d9ac3ba9392318",
+      "size": 144,
+      "alignment": 8
+    },
+    {
+      "name": "inventory_definition",
+      "base": "",
+      "offset": 74738349,
+      "length": 1297,
+      "descriptor_sha256": "bb13af35a3f06d5bec9bfd553c2754cd6a310debdebf03ca1b5f568b8f193fc1",
+      "size": 1080,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.peer",
+      "base": "replication.master.object",
+      "offset": 77496344,
+      "length": 1545,
+      "descriptor_sha256": "41bf13d6f175ec890fbb04ac6f77c825a7b0677633822d5c8157a14dcedf7277",
+      "size": 6672,
+      "alignment": 8
+    },
+    {
+      "name": "server_peer.data",
+      "base": "replication.slave.object",
+      "offset": 75403643,
+      "length": 948,
+      "descriptor_sha256": "ea69c4dfd949ae714e3dbeca11f07fdb9daeb42b6c86fd64f83db062569fa35a",
+      "size": 1696,
+      "alignment": 8
+    },
+    {
+      "name": "server_peer.actor_authority_data",
+      "base": "replication.slave.composite",
+      "offset": 75401907,
+      "length": 1736,
+      "descriptor_sha256": "5fee253b5fbc03aebcdc3f9baf1fa94d91b7a1b887b9bb7f8291efd016cb109c",
+      "size": 472,
+      "alignment": 8
+    },
+    {
+      "name": "replication.master.property_f64_compressed_u8",
+      "base": "replication.master.property",
+      "offset": 75296652,
+      "length": 1244,
+      "descriptor_sha256": "ca04c5334e14f776528b69145bc2abe0ba53815c9fc2dc4722eb24db4f2aed9e",
+      "size": 48,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.actor_damage_src",
+      "base": "",
+      "offset": 75923768,
+      "length": 464,
+      "descriptor_sha256": "e2fba37e299ba0bb08750ce3628cd51df908c8e46f60d037ff189279720555dc",
+      "size": 64,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene",
+      "base": "replication.master.object_events",
+      "offset": 75514302,
+      "length": 7793,
+      "descriptor_sha256": "3ce42513de7e816526344a8090e4df228a98a6c311641c557eee479e72356b3e",
+      "size": 5520,
+      "alignment": 8
+    },
+    {
+      "name": "e_actor_condition_index",
+      "base": "",
+      "offset": 74440509,
+      "length": 399,
+      "descriptor_sha256": "6586f3ebf2f8887bccf5123003e40d7ed102a889837e5458879fa0f218fe9f7d",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "e_actor_damage_type",
+      "base": "",
+      "offset": 74440908,
+      "length": 176,
+      "descriptor_sha256": "6f7714a7ccc65988e8759becaaae747398e0bdb859aca7553bf2437ec2bb8a10",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "e_gamemode",
+      "base": "",
+      "offset": 74454993,
+      "length": 101,
+      "descriptor_sha256": "74202d7256bbe27fe3b2d1a2d90856fa4a805ccb0a3e1be08a30b75c2f841741",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "e_wearable_slot",
+      "base": "",
+      "offset": 74497329,
+      "length": 178,
+      "descriptor_sha256": "324403291e7a70172829dd2708d57103c9efcf137f83c8a5448e45e64e74d58c",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "e_physics_group",
+      "base": "",
+      "offset": 74484529,
+      "length": 188,
+      "descriptor_sha256": "3b3ee4d5e23b21ebaec326ce20be9f0fce65fec2a8aa7689fe725015bca12027",
+      "size": 4,
+      "alignment": 4
+    }
+  ],
+  "enums": [
+    {
+      "type": "e_actor_condition_index",
+      "labels": [
+        "hunger",
+        "hunger_critical",
+        "thirst",
+        "thirst_critical",
+        "temperature_hot",
+        "temperature_hot_critical",
+        "temperature_cold",
+        "temperature_cold_critical",
+        "wetness",
+        "bleeding",
+        "broken_leg",
+        "infection",
+        "infection_critical",
+        "low_oxygen",
+        "low_oxygen_critical",
+        "temperature_slightly_cold",
+        "temperature_slightly_hot"
+      ]
+    },
+    {
+      "type": "e_actor_damage_type",
+      "labels": [
+        "weapon_melee",
+        "weapon_gun",
+        "impact",
+        "weapon_grenade",
+        "environment_explosion",
+        "injury",
+        "acid"
+      ]
+    },
+    {
+      "type": "e_gamemode",
+      "labels": [
+        "survival",
+        "creative",
+        "sandbox"
+      ]
+    },
+    {
+      "type": "e_wearable_slot",
+      "labels": [
+        "unassigned",
+        "hat",
+        "head",
+        "eyes",
+        "ears",
+        "neck",
+        "body",
+        "body_over",
+        "back",
+        "legs",
+        "feet",
+        "hands"
+      ]
+    },
+    {
+      "type": "e_physics_group",
+      "labels": [
+        "terrain",
+        "tree",
+        "character",
+        "vehicle",
+        "prop",
+        "item",
+        "ragdoll",
+        "effect",
+        "entity",
+        "rope",
+        "buoyancy_volume"
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "s32",
+        "name": "m_id",
+        "offset": 64
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "_m_blood_factor",
+        "offset": 72
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "_m_is_incapacitated",
+        "offset": 120
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_sleeping",
+        "offset": 152
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "mat34",
+        "name": "m_relative_transform",
+        "offset": 184
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "s32",
+        "name": "m_relative_vehicle",
+        "offset": 280
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "s32",
+        "name": "m_relative_entity",
+        "offset": 284
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "s32",
+        "name": "m_relative_actor",
+        "offset": 288
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "vec2",
+        "name": "m_orientation",
+        "offset": 296
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "f64",
+        "name": "m_move_speed",
+        "offset": 312
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "f64",
+        "name": "m_body_capsule_pitch",
+        "offset": 320
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "f64",
+        "name": "m_body_capsule_yaw",
+        "offset": 328
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "mat34",
+        "name": "m_transform",
+        "offset": 336
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "ptr<server_scene.peer>",
+        "name": "m_peer_authority",
+        "offset": 432
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "f64",
+        "name": "_m_stun_duration",
+        "offset": 440
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_impact_ignored",
+        "offset": 448
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "f64",
+        "name": "m_light_volume_factor",
+        "offset": 456
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "f64",
+        "name": "_m_corpse_despawn_timer",
+        "offset": 464
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "environment_data",
+        "name": "m_environment_data",
+        "offset": 472
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "bitset",
+        "name": "m_server_flags",
+        "offset": 496
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "character_definition",
+        "name": "m_character_definition",
+        "offset": 504
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "server_scene.actor.seat_data",
+        "name": "m_seat_data",
+        "offset": 984
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "server_scene.actor.ladder_data",
+        "name": "m_ladder_data",
+        "offset": 1176
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "server_scene.actor.mount_data",
+        "name": "m_mount_data",
+        "offset": 1384
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "server_scene.actor.handle_data",
+        "name": "m_handle_data",
+        "offset": 1528
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "server_scene.actor.rope_data",
+        "name": "m_rope_data",
+        "offset": 1672
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "server_scene.actor.drag_actor_data",
+        "name": "m_drag_actor_data",
+        "offset": 1832
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "server_scene.inventory",
+        "name": "m_inventory",
+        "offset": 1920
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "server_scene.inventory_hotbar",
+        "name": "m_hotbar",
+        "offset": 2168
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "physics.actor_character",
+        "name": "m_physics",
+        "offset": 2272
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "application_physics_user_data",
+        "name": "_m_physics_user_data",
+        "offset": 2424
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "vec3",
+        "name": "_m_linear_velocity",
+        "offset": 2520
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "server_scene.actor_character.ai",
+        "name": "_m_ai",
+        "offset": 2544
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "s32",
+        "name": "_m_team_id",
+        "offset": 3088
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "actor_character.ability_state",
+        "name": "m_ability_state",
+        "offset": 3092
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "f64",
+        "name": "m_ability_timer",
+        "offset": 3096
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_lying",
+        "offset": 3104
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "vec3",
+        "name": "_m_lying_dir",
+        "offset": 3112
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "f64",
+        "name": "_m_lying_timer",
+        "offset": 3136
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "f64",
+        "name": "_m_stand_crouch_timer",
+        "offset": 3144
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_crouched",
+        "offset": 3152
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_sprint",
+        "offset": 3184
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_jump",
+        "offset": 3216
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_swim",
+        "offset": 3248
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_ads",
+        "offset": 3280
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_enum_bitset<e_actor_condition_index>",
+        "name": "_m_conditions",
+        "offset": 3312
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "s32",
+        "name": "_m_conditions_timer",
+        "offset": 3344
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "_m_hunger",
+        "offset": 3352
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "_m_thirst",
+        "offset": 3400
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "_m_oxygen",
+        "offset": 3448
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "_m_temperature_hot",
+        "offset": 3496
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "_m_temperature_cold",
+        "offset": 3544
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "_m_infection",
+        "offset": 3592
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "_m_wetness",
+        "offset": 3640
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "_m_stamina",
+        "offset": 3688
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "bool",
+        "name": "_m_prev_is_jump",
+        "offset": 3736
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "bool",
+        "name": "_m_bleeding",
+        "offset": 3737
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "bool",
+        "name": "_m_broken_leg",
+        "offset": 3738
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_gender",
+        "offset": 3744
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_color8",
+        "name": "m_skin_color",
+        "offset": 3776
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_hair_style",
+        "offset": 3808
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_color8",
+        "name": "m_hair_color",
+        "offset": 3840
+      }
+    },
+    {
+      "type": "server_scene.inventory",
+      "field": {
+        "type": "array<server_scene.item_world_ref>",
+        "name": "_m_item_world_slots",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.inventory",
+      "field": {
+        "type": "server_scene.item_world_ref",
+        "name": "_m_item_world_slot_primary_hand",
+        "offset": 40
+      }
+    },
+    {
+      "type": "server_scene.inventory",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "_m_primary_hand_item_preferred_container_id",
+        "offset": 88
+      }
+    },
+    {
+      "type": "server_scene.inventory",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "_m_primary_hand_item_preferred_grid_index",
+        "offset": 120
+      }
+    },
+    {
+      "type": "server_scene.inventory",
+      "field": {
+        "type": "replication.master.property_vec2_s32",
+        "name": "_m_primary_hand_item_preferred_grid_pos",
+        "offset": 152
+      }
+    },
+    {
+      "type": "server_scene.inventory",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "_m_primary_hand_item_preferred_rotation",
+        "offset": 184
+      }
+    },
+    {
+      "type": "server_scene.inventory",
+      "field": {
+        "type": "replication.master.property_enum<e_wearable_slot>",
+        "name": "_m_primary_hand_item_preferred_wearable_slot",
+        "offset": 216
+      }
+    },
+    {
+      "type": "server_scene.item_world",
+      "field": {
+        "type": "ptr<const inventory_definition>",
+        "name": "m_definition",
+        "offset": 136
+      }
+    },
+    {
+      "type": "inventory_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_clothing_resist_temperature",
+        "offset": 1068
+      }
+    },
+    {
+      "type": "inventory_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_clothing_resist_wetness",
+        "offset": 1072
+      }
+    },
+    {
+      "type": "server_scene.peer",
+      "field": {
+        "type": "ptr<server_peer.data>",
+        "name": "m_peer_data",
+        "offset": 6608
+      }
+    },
+    {
+      "type": "server_scene.peer",
+      "field": {
+        "type": "ptr<server_scene.actor>",
+        "name": "m_authority_actor",
+        "offset": 6616
+      }
+    },
+    {
+      "type": "server_scene.peer",
+      "field": {
+        "type": "ptr<server_scene.actor>",
+        "name": "m_follow_actor",
+        "offset": 6624
+      }
+    },
+    {
+      "type": "server_peer.data",
+      "field": {
+        "type": "server_peer.actor_authority_data",
+        "name": "m_actor_authority_data",
+        "offset": 16
+      }
+    },
+    {
+      "type": "server_peer.data",
+      "field": {
+        "type": "server_peer.actor_authority_data",
+        "name": "m_actor_dragged_authority_data",
+        "offset": 488
+      }
+    },
+    {
+      "type": "server_peer.actor_authority_data",
+      "field": {
+        "type": "replication.slave.property_s32",
+        "name": "m_actor_id",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_peer.actor_authority_data",
+      "field": {
+        "type": "replication.slave.property_bool",
+        "name": "m_is_invulnerable",
+        "offset": 440
+      }
+    },
+    {
+      "type": "server_peer.actor_authority_data",
+      "field": {
+        "type": "replication.slave.property_bool",
+        "name": "m_is_invisible",
+        "offset": 456
+      }
+    },
+    {
+      "type": "replication.master.property_f64_compressed_u8",
+      "field": {
+        "type": "f64",
+        "name": "_m_value",
+        "offset": 24
+      }
+    },
+    {
+      "type": "replication.master.property_f64_compressed_u8",
+      "field": {
+        "type": "f64",
+        "name": "_m_scale",
+        "offset": 32
+      }
+    },
+    {
+      "type": "replication.master.property_f64_compressed_u8",
+      "field": {
+        "type": "u8",
+        "name": "_m_compressed",
+        "offset": 40
+      }
+    },
+    {
+      "type": "server_scene.actor_damage_src",
+      "field": {
+        "type": "s32",
+        "name": "m_actor_id_src",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.actor_damage_src",
+      "field": {
+        "type": "e_actor_damage_type",
+        "name": "m_type",
+        "offset": 4
+      }
+    },
+    {
+      "type": "server_scene.actor_damage_src",
+      "field": {
+        "type": "vec3",
+        "name": "m_position",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.actor_damage_src",
+      "field": {
+        "type": "vec3",
+        "name": "m_normal",
+        "offset": 32
+      }
+    },
+    {
+      "type": "server_scene.actor_damage_src",
+      "field": {
+        "type": "s32",
+        "name": "m_hit_flesh_effect",
+        "offset": 56
+      }
+    },
+    {
+      "type": "server_scene",
+      "field": {
+        "type": "bool",
+        "name": "m_is_debug_pause_physics",
+        "offset": 5512
+      }
+    },
+    {
+      "type": "server_scene",
+      "field": {
+        "type": "bool",
+        "name": "m_is_debug_step_physics",
+        "offset": 5513
+      }
+    }
+  ],
+  "virtuals": []
+}

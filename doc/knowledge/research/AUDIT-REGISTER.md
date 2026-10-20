@@ -1,5 +1,7 @@
 # Full-game audit register
 
+Latest selected findings: [survival and scene scheduling](SURVIVAL-SCHEDULE-20261020.md). Authority-dependent character eligibility, vital thresholds/precision, condition cadence, stamina/oxygen, clothing/temperature and selected damage are now traced. Complete actors/creatures/AI/combat, outer scheduling/world/persistence and all other open areas remain unfinished. Reader counts do not certify semantic completion.
+
 Latest selected findings: [sensors and data discovery](SENSORS-DATA-20261020.md), following [joints and winches](JOINTS-WINCHES-20261020.md). Selected frame/history/unit conversions, data-island topology and controller binding construction are now traced. Full native contracts, input/device paths, cross-body groups, compiler/resolver and lifecycle remain open. Reader access counts do not close whole-game semantic coverage.
 
 Latest selected findings: [hinges, mounts, latches, rails, tow links and winches](JOINTS-WINCHES-20261020.md). Selected connection/cleanup, capture/release, tier suppression, ballscrew motor and winch nominal-length chains are now reviewed. Full lifecycle, loaded/invalid states, interface/tool compatibility and native solver units remain open. The 1,110-function reader is access infrastructure; the full-game audit remains incomplete.

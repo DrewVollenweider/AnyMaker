@@ -1,0 +1,1465 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "(f64) body_temperature.get_effective_temperature (const weather_data, const f64, const f64, const f64, const bool, const f64)",
+      "signature_offset": 779817,
+      "code_offset": 780126,
+      "code_size": 408,
+      "code_sha256": "0820ea0ab5d678f717497cd4c4a2726297fcb93ab91a21bbc658bc14660703fa"
+    },
+    {
+      "signature": "(f64) body_temperature.get_insulation_degrees (const s32, const f64)",
+      "signature_offset": 781023,
+      "code_offset": 781169,
+      "code_size": 208,
+      "code_sha256": "292d165f0bf550ff9a2c56422669b7a355ce9b74068e864908e1bf6effbbbd75"
+    },
+    {
+      "signature": "() ctor (server_scene.inventory)",
+      "signature_offset": 24125241,
+      "code_offset": 24125670,
+      "code_size": 232,
+      "code_sha256": "02db3898c3cedfe5bca8058ce6c4ec3aba1441ae1bed840def99fdcbb3edfee4"
+    },
+    {
+      "signature": "() g_body_comfort_temperature_max.$ctor ()",
+      "signature_offset": 29014491,
+      "code_offset": 29014591,
+      "code_size": 32,
+      "code_sha256": "96967cdc717d1c748b141d7dfa86f4427c6615bb3043e377e649fa6c48b7c8e9"
+    },
+    {
+      "signature": "() g_body_comfort_temperature_min.$ctor ()",
+      "signature_offset": 29014931,
+      "code_offset": 29015031,
+      "code_size": 32,
+      "code_sha256": "691a82299c7f3ad34fa070e279f9051ef9774f22fddbfc1e1abe279035034fd9"
+    },
+    {
+      "signature": "() g_body_water_chill_degrees.$ctor ()",
+      "signature_offset": 29015371,
+      "code_offset": 29015463,
+      "code_size": 32,
+      "code_sha256": "31985978b1db23f7db50ec82e799af2f356a91ca11f0d2ec12008f104ba421e7"
+    },
+    {
+      "signature": "() g_server_delta_time.$ctor ()",
+      "signature_offset": 29087116,
+      "code_offset": 29087220,
+      "code_size": 40,
+      "code_sha256": "2980cba79cd1b6224ddad1c3e5d5bb55bb9c41eed5070dede8cd9cacb494571c"
+    },
+    {
+      "signature": "() g_server_tick_rate.$ctor ()",
+      "signature_offset": 29088780,
+      "code_offset": 29088886,
+      "code_size": 32,
+      "code_sha256": "82ec5503ad94f1805c2c740347edc0a14a1a93c4bf18c038a37e55159c2f7413"
+    },
+    {
+      "signature": "() g_server_tick_rate_s32.$ctor ()",
+      "signature_offset": 29089194,
+      "code_offset": 29089278,
+      "code_size": 24,
+      "code_sha256": "3afff7c838de536517d7a2ecd8a89fabefeaf0fde630a9e87f2a5463ccaab8ba"
+    },
+    {
+      "signature": "() g_vital_warning_threshold.$ctor ()",
+      "signature_offset": 29113575,
+      "code_offset": 29113665,
+      "code_size": 32,
+      "code_sha256": "75d70596855935cae3912c880870ebe14428a8ffb5a8f09d5863a1e64f915840"
+    },
+    {
+      "signature": "(ptr<const f64>) replication.master.property_f64_compressed_u8.get (const replication.master.property_f64_compressed_u8)",
+      "signature_offset": 38843522,
+      "code_offset": 38843662,
+      "code_size": 30,
+      "code_sha256": "d165083f702bf87b2cc72cc832bfc1f3a725fce222cc975616d30597f58f45bd"
+    },
+    {
+      "signature": "() replication.master.property_f64_compressed_u8.set (replication.master.property_f64_compressed_u8, const f64)",
+      "signature_offset": 38846541,
+      "code_offset": 38846811,
+      "code_size": 216,
+      "code_sha256": "e68e9aac30b5d6fda07a2a8d3b49be453dbed0a4eaf51506e36e037bd015c940"
+    },
+    {
+      "signature": "() server_scene.actor.container.tick (server_scene.actor.container, server, server_scene)",
+      "signature_offset": 41147732,
+      "code_offset": 41149200,
+      "code_size": 552,
+      "code_sha256": "eacaf6f802810d77f1383e34f993d2f987d7d513f6b6e57ca2dbff409c9bff4c"
+    },
+    {
+      "signature": "() server_scene.actor.damage (server_scene.actor, server_scene, const f64, const server_scene.actor_damage_src)",
+      "signature_offset": 41150466,
+      "code_offset": 41151584,
+      "code_size": 1160,
+      "code_sha256": "5b3b9dfdeecc9a55856ec127874df2079f124e4f3085c399ffa12653add85134"
+    },
+    {
+      "signature": "() server_scene.actor.g_melee_knockdown_chance.$ctor ()",
+      "signature_offset": 41199753,
+      "code_offset": 41199879,
+      "code_size": 32,
+      "code_sha256": "abed1b60379f49acf15f9680fff27eb64220a7fa2fdbdac136c1bf99df80f11e"
+    },
+    {
+      "signature": "(bool) server_scene.actor.get_is_incapacitated (const server_scene.actor)",
+      "signature_offset": 41205769,
+      "code_offset": 41205991,
+      "code_size": 112,
+      "code_sha256": "25a76d35e52d13dc62cd7ac82817c95ab99a0264a20520dc053d96ac07efddf2"
+    },
+    {
+      "signature": "(f64) server_scene.actor.get_maximum_blood (const server_scene.actor)",
+      "signature_offset": 41229946,
+      "code_offset": 41230035,
+      "code_size": 48,
+      "code_sha256": "0d80c158195bf98aa38209c85ebe8b88fdbc0e782c6b445c25a2d16910daa156"
+    },
+    {
+      "signature": "(ptr<server_peer.actor_authority_data>) server_scene.actor.get_peer_authority_data (server_scene.actor)",
+      "signature_offset": 41230906,
+      "code_offset": 41231153,
+      "code_size": 368,
+      "code_sha256": "ad0852bfabac4adba172efc7c3b51dd130299659934c71a0111e27b93022dd3f"
+    },
+    {
+      "signature": "() server_scene.actor.modify_blood (server_scene.actor, const f64)",
+      "signature_offset": 41275651,
+      "code_offset": 41276026,
+      "code_size": 312,
+      "code_sha256": "cbcfbdbb3ef5d55dd8d42387964b6ef5a77ea27205ece4c4022ac282f5149cd7"
+    },
+    {
+      "signature": "() server_scene.actor_character._set_wetness (server_scene.actor_character, const f64)",
+      "signature_offset": 41406760,
+      "code_offset": 41407360,
+      "code_size": 304,
+      "code_sha256": "d4452aefbed9ed48dde759c013b25fdcf61b4072ce1c4712f4155e48c8eb3f75"
+    },
+    {
+      "signature": "() server_scene.actor_character.g_blood_max_seconds.$ctor ()",
+      "signature_offset": 41795656,
+      "code_offset": 41795792,
+      "code_size": 48,
+      "code_sha256": "546af6798a0b5eb5a04d75a5dcc7f7516c263f125f4058da5a2392e79b96cc5a"
+    },
+    {
+      "signature": "() server_scene.actor_character.g_hunger_max_seconds.$ctor ()",
+      "signature_offset": 41796220,
+      "code_offset": 41796358,
+      "code_size": 56,
+      "code_sha256": "da98c2010a26b9fb8fe35a8ba3df6f184438e2b5e60930a79c09bc5987f63290"
+    },
+    {
+      "signature": "() server_scene.actor_character.g_infection_max_seconds.$ctor ()",
+      "signature_offset": 41796798,
+      "code_offset": 41796942,
+      "code_size": 48,
+      "code_sha256": "546af6798a0b5eb5a04d75a5dcc7f7516c263f125f4058da5a2392e79b96cc5a"
+    },
+    {
+      "signature": "() server_scene.actor_character.g_oxygen_deplete_seconds.$ctor ()",
+      "signature_offset": 41797386,
+      "code_offset": 41797532,
+      "code_size": 32,
+      "code_sha256": "96967cdc717d1c748b141d7dfa86f4427c6615bb3043e377e649fa6c48b7c8e9"
+    },
+    {
+      "signature": "() server_scene.actor_character.g_oxygen_drown_seconds.$ctor ()",
+      "signature_offset": 41797964,
+      "code_offset": 41798106,
+      "code_size": 32,
+      "code_sha256": "96967cdc717d1c748b141d7dfa86f4427c6615bb3043e377e649fa6c48b7c8e9"
+    },
+    {
+      "signature": "() server_scene.actor_character.g_oxygen_recover_seconds.$ctor ()",
+      "signature_offset": 41798530,
+      "code_offset": 41798676,
+      "code_size": 32,
+      "code_sha256": "31985978b1db23f7db50ec82e799af2f356a91ca11f0d2ec12008f104ba421e7"
+    },
+    {
+      "signature": "() server_scene.actor_character.g_stamina_drain_seconds.$ctor ()",
+      "signature_offset": 41799108,
+      "code_offset": 41799252,
+      "code_size": 32,
+      "code_sha256": "42f64498b6847110273fdd39deef009b022822d5be1eb279aafdba714314956d"
+    },
+    {
+      "signature": "() server_scene.actor_character.g_stamina_recover_seconds.$ctor ()",
+      "signature_offset": 41799680,
+      "code_offset": 41799828,
+      "code_size": 32,
+      "code_sha256": "6ff7b4baf892a97c6cdb76c6152be10079f5b2fe8390d60f4a08af2633c0675c"
+    },
+    {
+      "signature": "() server_scene.actor_character.g_temp_cold_max_seconds.$ctor ()",
+      "signature_offset": 41800264,
+      "code_offset": 41800408,
+      "code_size": 48,
+      "code_sha256": "546af6798a0b5eb5a04d75a5dcc7f7516c263f125f4058da5a2392e79b96cc5a"
+    },
+    {
+      "signature": "() server_scene.actor_character.g_temp_hot_max_seconds.$ctor ()",
+      "signature_offset": 41800852,
+      "code_offset": 41800994,
+      "code_size": 48,
+      "code_sha256": "546af6798a0b5eb5a04d75a5dcc7f7516c263f125f4058da5a2392e79b96cc5a"
+    },
+    {
+      "signature": "() server_scene.actor_character.g_thirst_max_seconds.$ctor ()",
+      "signature_offset": 41801434,
+      "code_offset": 41801572,
+      "code_size": 56,
+      "code_sha256": "d3dd74a206573d88dba981f6c714c945321316a30a98599849c2461a6da0d6c2"
+    },
+    {
+      "signature": "(bool) server_scene.actor_character.get_is_invulnerable (const server_scene.actor_character, const server_scene)",
+      "signature_offset": 41819707,
+      "code_offset": 41820212,
+      "code_size": 432,
+      "code_sha256": "73601480098f17e5e46e3b6e27be9f6f295295db337eeab741c9f00082d105a3"
+    },
+    {
+      "signature": "() server_scene.actor_character.modify_blood (server_scene.actor_character, const f64)",
+      "signature_offset": 41840063,
+      "code_offset": 41840492,
+      "code_size": 360,
+      "code_sha256": "74607f5b4bec135745ee2875687267341e15097569e15e12ad89d0716c3060cf"
+    },
+    {
+      "signature": "() server_scene.actor_character.modify_hunger (server_scene.actor_character, const f64)",
+      "signature_offset": 41841835,
+      "code_offset": 41842196,
+      "code_size": 232,
+      "code_sha256": "0f8582af40b731090eca984ca9cd5d5c9c58e45977f6b2f9ccd17c67c292aca6"
+    },
+    {
+      "signature": "() server_scene.actor_character.modify_infection (server_scene.actor_character, const f64)",
+      "signature_offset": 41842654,
+      "code_offset": 41843021,
+      "code_size": 232,
+      "code_sha256": "74aa17a50cc66b33fc8a7894c3376e8ce37d11379cfd1815a1e29ded0792a047"
+    },
+    {
+      "signature": "() server_scene.actor_character.modify_oxygen (server_scene.actor_character, const f64)",
+      "signature_offset": 41843482,
+      "code_offset": 41843843,
+      "code_size": 232,
+      "code_sha256": "1f605f8d9126e5923441784908a7de8bd232bbbe3fabd0584ce46b07321f55ef"
+    },
+    {
+      "signature": "() server_scene.actor_character.modify_temperature_cold (server_scene.actor_character, const f64)",
+      "signature_offset": 41844301,
+      "code_offset": 41844648,
+      "code_size": 176,
+      "code_sha256": "16de5aea429d326f8277169d7798669405b2dfee220f7ac1c27206eb3b48bbc8"
+    },
+    {
+      "signature": "() server_scene.actor_character.modify_temperature_hot (server_scene.actor_character, const f64)",
+      "signature_offset": 41845044,
+      "code_offset": 41845389,
+      "code_size": 176,
+      "code_sha256": "a1761076536df747e8227715735107fae2114cbfe93ad111bd69799c9248ce41"
+    },
+    {
+      "signature": "() server_scene.actor_character.modify_thirst (server_scene.actor_character, const f64)",
+      "signature_offset": 41845784,
+      "code_offset": 41846145,
+      "code_size": 232,
+      "code_sha256": "d089e57d531ce51e3c2d1b65ab44dfcde789e9f0830f0749027cfe38b6fc75d2"
+    },
+    {
+      "signature": "() server_scene.actor_character.reduce_hunger_level (server_scene.actor_character)",
+      "signature_offset": 41891282,
+      "code_offset": 41891479,
+      "code_size": 88,
+      "code_sha256": "87a7917b411f2b8d75662f2fa4994cafcdcf66349d4a62dda9bcab293f72da82"
+    },
+    {
+      "signature": "() server_scene.actor_character.reduce_thirst_level (server_scene.actor_character)",
+      "signature_offset": 41891743,
+      "code_offset": 41891940,
+      "code_size": 88,
+      "code_sha256": "87a7917b411f2b8d75662f2fa4994cafcdcf66349d4a62dda9bcab293f72da82"
+    },
+    {
+      "signature": "() server_scene.actor_character.set_hunger (server_scene.actor_character, const f64)",
+      "signature_offset": 41900029,
+      "code_offset": 41900660,
+      "code_size": 544,
+      "code_sha256": "1b10b1c5b359bd16ffc17358f2da84551eab8b45b10bc8b54818da0cd286cc08"
+    },
+    {
+      "signature": "() server_scene.actor_character.set_infection (server_scene.actor_character, const f64)",
+      "signature_offset": 41901459,
+      "code_offset": 41902093,
+      "code_size": 544,
+      "code_sha256": "2b65651264edefbae766471da4494ae09e3993cf506008a2291349fc8aed7ef5"
+    },
+    {
+      "signature": "() server_scene.actor_character.set_oxygen (server_scene.actor_character, const f64)",
+      "signature_offset": 41903354,
+      "code_offset": 41903985,
+      "code_size": 544,
+      "code_sha256": "a8ad74ab61444d803ee9bf5b54a096f0bed73cf4d6162a7d7ead2e0f5095a4b3"
+    },
+    {
+      "signature": "() server_scene.actor_character.set_temperature_cold (server_scene.actor_character, const f64)",
+      "signature_offset": 41905092,
+      "code_offset": 41905733,
+      "code_size": 544,
+      "code_sha256": "3a93a72a3b8367331fcd35a234b04868b8f327de96997cb0768e2a6917cebe70"
+    },
+    {
+      "signature": "() server_scene.actor_character.set_temperature_hot (server_scene.actor_character, const f64)",
+      "signature_offset": 41906542,
+      "code_offset": 41907182,
+      "code_size": 544,
+      "code_sha256": "11491bac11002bc0cf885f8353820fb0ec8bb4452790e87e558f37f8d6c3b649"
+    },
+    {
+      "signature": "() server_scene.actor_character.set_thirst (server_scene.actor_character, const f64)",
+      "signature_offset": 41907990,
+      "code_offset": 41908621,
+      "code_size": 544,
+      "code_sha256": "1f39c068e252f6a74832e67aa082deb2c13e67eb52e013ad96f66883922db637"
+    },
+    {
+      "signature": "() server_scene.actor_character.tick (server_scene.actor_character, server, server_scene)",
+      "signature_offset": 41909999,
+      "code_offset": 41917657,
+      "code_size": 15896,
+      "code_sha256": "7cb6ae78e87983d3523de3a257e4e3e08bb07835a58c8b367cc25394f5aeec06"
+    },
+    {
+      "signature": "() server_scene.actor_character.tick_conditions (server_scene.actor_character, server_scene)",
+      "signature_offset": 41943580,
+      "code_offset": 41949825,
+      "code_size": 8120,
+      "code_sha256": "89bb26fad9f45676e8d14cfa43f9424f1dd8c1a51b9f26457472fd49aac49f70"
+    },
+    {
+      "signature": "() server_scene.actor_character.tick_oxygen (server_scene.actor_character, server_scene)",
+      "signature_offset": 41963829,
+      "code_offset": 41964849,
+      "code_size": 840,
+      "code_sha256": "59e8ccbd61f95f6f41151558b5e49a094160326180e5367a14b26a46ba2ba442"
+    },
+    {
+      "signature": "() server_scene.actor_character.tick_stamina (server_scene.actor_character)",
+      "signature_offset": 41966156,
+      "code_offset": 41966834,
+      "code_size": 976,
+      "code_sha256": "95577071ccf1249596dc55fcc79974037cdba0a9fd063a52fe5aa02ba2af139f"
+    },
+    {
+      "signature": "() server_scene.inventory.g_clothing_dry_seconds_cold.$ctor ()",
+      "signature_offset": 47302737,
+      "code_offset": 47302877,
+      "code_size": 32,
+      "code_sha256": "2ee64271e44aa70749e63f1457b5eb68b839e8d136f0ffb09854494e7bbd0690"
+    },
+    {
+      "signature": "() server_scene.inventory.g_clothing_dry_seconds_warm.$ctor ()",
+      "signature_offset": 47303297,
+      "code_offset": 47303437,
+      "code_size": 32,
+      "code_sha256": "b88d9d6106fbe1ce1a1f1ea63bf617252efd4af1448a2206e6f20b0a60c591fe"
+    },
+    {
+      "signature": "() server_scene.inventory.g_clothing_rain_soak_seconds.$ctor ()",
+      "signature_offset": 47303857,
+      "code_offset": 47303999,
+      "code_size": 32,
+      "code_sha256": "6ff7b4baf892a97c6cdb76c6152be10079f5b2fe8390d60f4a08af2633c0675c"
+    },
+    {
+      "signature": "() server_scene.inventory.g_clothing_splash_soak_factor.$ctor ()",
+      "signature_offset": 47304423,
+      "code_offset": 47304567,
+      "code_size": 32,
+      "code_sha256": "62397f146416e97e2686ab5954eaef791e714633d2cd12c76e647056fab9ac0a"
+    },
+    {
+      "signature": "() server_scene.inventory.g_clothing_swim_soak_seconds.$ctor ()",
+      "signature_offset": 47304995,
+      "code_offset": 47305137,
+      "code_size": 32,
+      "code_sha256": "ad7722d8ab43c76db4947ae24fcf64eb4e14f527ac14edb031cd815052792103"
+    },
+    {
+      "signature": "() server_scene.inventory.get_resist_temperature_wetness (server_scene.inventory, s32, s32)",
+      "signature_offset": 47324542,
+      "code_offset": 47325270,
+      "code_size": 408,
+      "code_sha256": "a8dd8cf9d6e5b9156bfe1acd3cef310d2f3431f488ae2698e13b5081341d3104"
+    },
+    {
+      "signature": "() server_scene.inventory.parse_save_data (server_scene.inventory, server_scene.save_data.parser)",
+      "signature_offset": 47333674,
+      "code_offset": 47335864,
+      "code_size": 2864,
+      "code_sha256": "d53a0599827bb23111024b26f5a1b3e77e51f2cb752f4f61c445314adfb99b6f"
+    },
+    {
+      "signature": "(f64) server_scene.inventory.update_clothing_wetness (server_scene.inventory, const f64, const f64, const f64)",
+      "signature_offset": 47360627,
+      "code_offset": 47362006,
+      "code_size": 1512,
+      "code_sha256": "1b8ad4cdcae36b3c969cb5d6329ec4455048e6b81226a15eb57347d3556697a9"
+    },
+    {
+      "signature": "() server_scene.item_world.drink.on_use_self (server_scene.item_world.drink, server, server_scene, server_scene.actor, const s32, bool)",
+      "signature_offset": 47555271,
+      "code_offset": 47555655,
+      "code_size": 368,
+      "code_sha256": "378e26daed568b4655aaed3241a5fd11999912e618a7d916c98935dc38cd200c"
+    },
+    {
+      "signature": "() server_scene.item_world.food.on_use_self (server_scene.item_world.food, server, server_scene, server_scene.actor, const s32, bool)",
+      "signature_offset": 47579654,
+      "code_offset": 47580036,
+      "code_size": 368,
+      "code_sha256": "378e26daed568b4655aaed3241a5fd11999912e618a7d916c98935dc38cd200c"
+    },
+    {
+      "signature": "() server_scene.tick (server_scene, server)",
+      "signature_offset": 51831466,
+      "code_offset": 51836326,
+      "code_size": 2816,
+      "code_sha256": "002378f0f3c914988b00fd4be8a06d23921cc1f1ec881e3bf64d94ccfae65c47"
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 29113665,
+      "offset": 29113689,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 29087220,
+      "offset": 29087252,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 38846811,
+      "offset": 38847011,
+      "format": "f64",
+      "bytes": "0000000000e06f40",
+      "value": 255.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 38846811,
+      "offset": 38847019,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41900660,
+      "offset": 41901180,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41900660,
+      "offset": 41901188,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41902093,
+      "offset": 41902613,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41902093,
+      "offset": 41902621,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41903985,
+      "offset": 41904505,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41903985,
+      "offset": 41904513,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41905733,
+      "offset": 41906253,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41905733,
+      "offset": 41906261,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41907182,
+      "offset": 41907702,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41907182,
+      "offset": 41907710,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41908621,
+      "offset": 41909141,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41908621,
+      "offset": 41909149,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41407360,
+      "offset": 41407632,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41796358,
+      "offset": 41796398,
+      "format": "f64",
+      "bytes": "0000000000004e40",
+      "value": 60.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41796358,
+      "offset": 41796406,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41801572,
+      "offset": 41801612,
+      "format": "f64",
+      "bytes": "0000000000004e40",
+      "value": 60.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41801572,
+      "offset": 41801620,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41795792,
+      "offset": 41795824,
+      "format": "f64",
+      "bytes": "0000000000004e40",
+      "value": 60.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41795792,
+      "offset": 41795832,
+      "format": "f64",
+      "bytes": "0000000000002440",
+      "value": 10.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41796942,
+      "offset": 41796974,
+      "format": "f64",
+      "bytes": "0000000000004e40",
+      "value": 60.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41796942,
+      "offset": 41796982,
+      "format": "f64",
+      "bytes": "0000000000002440",
+      "value": 10.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41800408,
+      "offset": 41800440,
+      "format": "f64",
+      "bytes": "0000000000004e40",
+      "value": 60.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41800408,
+      "offset": 41800448,
+      "format": "f64",
+      "bytes": "0000000000002440",
+      "value": 10.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41800994,
+      "offset": 41801026,
+      "format": "f64",
+      "bytes": "0000000000004e40",
+      "value": 60.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41800994,
+      "offset": 41801034,
+      "format": "f64",
+      "bytes": "0000000000002440",
+      "value": 10.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41797532,
+      "offset": 41797556,
+      "format": "f64",
+      "bytes": "0000000000003e40",
+      "value": 30.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41798106,
+      "offset": 41798130,
+      "format": "f64",
+      "bytes": "0000000000003e40",
+      "value": 30.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41798676,
+      "offset": 41798700,
+      "format": "f64",
+      "bytes": "0000000000002440",
+      "value": 10.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41799252,
+      "offset": 41799276,
+      "format": "f64",
+      "bytes": "0000000000804640",
+      "value": 45.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41799828,
+      "offset": 41799852,
+      "format": "f64",
+      "bytes": "0000000000805640",
+      "value": 90.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41966834,
+      "offset": 41967762,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41966834,
+      "offset": 41967770,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41966834,
+      "offset": 41967778,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41966834,
+      "offset": 41967786,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41966834,
+      "offset": 41967802,
+      "format": "f64",
+      "bytes": "9a9999999999a93f",
+      "value": 0.05,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41964849,
+      "offset": 41965681,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957809,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957817,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957825,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957833,
+      "format": "f64",
+      "bytes": "9a9999999999c93f",
+      "value": 0.2,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957841,
+      "format": "f64",
+      "bytes": "000000000000d03f",
+      "value": 0.25,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957849,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957857,
+      "format": "f64",
+      "bytes": "0000000000002ec0",
+      "value": -15.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957865,
+      "format": "f64",
+      "bytes": "00000000000014c0",
+      "value": -5.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957873,
+      "format": "f64",
+      "bytes": "0000000000005940",
+      "value": 100.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957897,
+      "format": "f64",
+      "bytes": "9a9999999999b93f",
+      "value": 0.1,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41891479,
+      "offset": 41891559,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41891940,
+      "offset": 41892020,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 781169,
+      "offset": 781337,
+      "format": "f64",
+      "bytes": "0000000000805640",
+      "value": 90.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 781169,
+      "offset": 781345,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 781169,
+      "offset": 781353,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 781169,
+      "offset": 781361,
+      "format": "f64",
+      "bytes": "0000000000003e40",
+      "value": 30.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 781169,
+      "offset": 781369,
+      "format": "f64",
+      "bytes": "666666666666e63f",
+      "value": 0.7,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 780126,
+      "offset": 780510,
+      "format": "f64",
+      "bytes": "0000000000002440",
+      "value": 10.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 780126,
+      "offset": 780518,
+      "format": "f64",
+      "bytes": "0000000000001840",
+      "value": 6.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 780126,
+      "offset": 780526,
+      "format": "f64",
+      "bytes": "0000000000001440",
+      "value": 5.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 29014591,
+      "offset": 29014615,
+      "format": "f64",
+      "bytes": "0000000000003e40",
+      "value": 30.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 29015031,
+      "offset": 29015055,
+      "format": "f64",
+      "bytes": "0000000000002840",
+      "value": 12.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 29015463,
+      "offset": 29015487,
+      "format": "f64",
+      "bytes": "0000000000002440",
+      "value": 10.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 47362006,
+      "offset": 47363478,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 47362006,
+      "offset": 47363486,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 47362006,
+      "offset": 47363494,
+      "format": "f64",
+      "bytes": "0000000000003940",
+      "value": 25.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 47362006,
+      "offset": 47363502,
+      "format": "f64",
+      "bytes": "0000000000002e40",
+      "value": 15.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 47302877,
+      "offset": 47302901,
+      "format": "f64",
+      "bytes": "0000000000c09240",
+      "value": 1200.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 47303437,
+      "offset": 47303461,
+      "format": "f64",
+      "bytes": "0000000000c08240",
+      "value": 600.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 47303999,
+      "offset": 47304023,
+      "format": "f64",
+      "bytes": "0000000000805640",
+      "value": 90.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 47304567,
+      "offset": 47304591,
+      "format": "f64",
+      "bytes": "9a9999999999a93f",
+      "value": 0.05,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 47305137,
+      "offset": 47305161,
+      "format": "f64",
+      "bytes": "0000000000002e40",
+      "value": 15.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41151584,
+      "offset": 41152704,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41151584,
+      "offset": 41152736,
+      "format": "f64",
+      "bytes": "00000000000044c0",
+      "value": -40.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41199879,
+      "offset": 41199903,
+      "format": "f64",
+      "bytes": "000000000000d03f",
+      "value": 0.25,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41230035,
+      "offset": 41230075,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 41840492,
+      "offset": 41840844,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected reviewed calibration/boundary"
+    },
+    {
+      "function_offset": 29089278,
+      "offset": 29089294,
+      "format": "s32",
+      "bytes": "3c000000",
+      "value": 60,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957801,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957805,
+      "format": "s32",
+      "bytes": "3c000000",
+      "value": 60,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957809,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957881,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957885,
+      "format": "s32",
+      "bytes": "08000000",
+      "value": 8,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957889,
+      "format": "s32",
+      "bytes": "04000000",
+      "value": 4,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957905,
+      "format": "s32",
+      "bytes": "10000000",
+      "value": 16,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957909,
+      "format": "s32",
+      "bytes": "0f000000",
+      "value": 15,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957913,
+      "format": "s32",
+      "bytes": "09000000",
+      "value": 9,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957917,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957921,
+      "format": "s32",
+      "bytes": "06000000",
+      "value": 6,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957925,
+      "format": "s32",
+      "bytes": "07000000",
+      "value": 7,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957929,
+      "format": "s32",
+      "bytes": "05000000",
+      "value": 5,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957933,
+      "format": "s32",
+      "bytes": "0e000000",
+      "value": 14,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957937,
+      "format": "s32",
+      "bytes": "0c000000",
+      "value": 12,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 47580036,
+      "offset": 47580388,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 47580036,
+      "offset": 47580392,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 47580036,
+      "offset": 47580396,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 47555655,
+      "offset": 47556007,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 47555655,
+      "offset": 47556011,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 47555655,
+      "offset": 47556015,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41900660,
+      "offset": 41901180,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41900660,
+      "offset": 41901196,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41902093,
+      "offset": 41902629,
+      "format": "s32",
+      "bytes": "0b000000",
+      "value": 11,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41902093,
+      "offset": 41902633,
+      "format": "s32",
+      "bytes": "0c000000",
+      "value": 12,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41903985,
+      "offset": 41904521,
+      "format": "s32",
+      "bytes": "0d000000",
+      "value": 13,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41903985,
+      "offset": 41904525,
+      "format": "s32",
+      "bytes": "0e000000",
+      "value": 14,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41905733,
+      "offset": 41906269,
+      "format": "s32",
+      "bytes": "06000000",
+      "value": 6,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41905733,
+      "offset": 41906273,
+      "format": "s32",
+      "bytes": "07000000",
+      "value": 7,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41907182,
+      "offset": 41907718,
+      "format": "s32",
+      "bytes": "04000000",
+      "value": 4,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41907182,
+      "offset": 41907722,
+      "format": "s32",
+      "bytes": "05000000",
+      "value": 5,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41908621,
+      "offset": 41909157,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41908621,
+      "offset": 41909161,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41407360,
+      "offset": 41407656,
+      "format": "s32",
+      "bytes": "08000000",
+      "value": 8,
+      "name": "Selected reviewed enum/count"
+    },
+    {
+      "function_offset": 41949825,
+      "offset": 41957802,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Selected false flag"
+    },
+    {
+      "function_offset": 41917657,
+      "offset": 41933437,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Selected false flag"
+    }
+  ],
+  "strings": [
+    {
+      "function_offset": 47335864,
+      "offset": 47338616,
+      "text": "slot_"
+    },
+    {
+      "function_offset": 47335864,
+      "offset": 47338628,
+      "text": "slot_primary"
+    }
+  ],
+  "call_examples": [
+    {
+      "function_offset": 41917657,
+      "instruction": 41917793,
+      "bytes": "ffd3",
+      "slot_address": 41933561,
+      "kind": 6,
+      "symbol": "(ptr<server_peer.actor_authority_data>) server_scene.actor.get_peer_authority_data (server_scene.actor)"
+    },
+    {
+      "function_offset": 41917657,
+      "instruction": 41920769,
+      "bytes": "ffd3",
+      "slot_address": 41933745,
+      "kind": 6,
+      "symbol": "(bool) server_scene.actor.get_is_incapacitated (const server_scene.actor)"
+    },
+    {
+      "function_offset": 41917657,
+      "instruction": 41920832,
+      "bytes": "ffd2",
+      "slot_address": 41933753,
+      "kind": 6,
+      "symbol": "() server_scene.actor_character.tick_stamina (server_scene.actor_character)"
+    },
+    {
+      "function_offset": 41917657,
+      "instruction": 41920882,
+      "bytes": "ffd3",
+      "slot_address": 41933761,
+      "kind": 6,
+      "symbol": "() server_scene.actor_character.tick_oxygen (server_scene.actor_character, server_scene)"
+    },
+    {
+      "function_offset": 41917657,
+      "instruction": 41920932,
+      "bytes": "ffd3",
+      "slot_address": 41933769,
+      "kind": 6,
+      "symbol": "() server_scene.actor_character.tick_conditions (server_scene.actor_character, server_scene)"
+    },
+    {
+      "function_offset": 41917657,
+      "instruction": 41921372,
+      "bytes": "ffd3",
+      "slot_address": 41933745,
+      "kind": 6,
+      "symbol": "(bool) server_scene.actor.get_is_incapacitated (const server_scene.actor)"
+    },
+    {
+      "function_offset": 41949825,
+      "instruction": 41955733,
+      "bytes": "ff16",
+      "slot_address": 41958457,
+      "kind": 4,
+      "symbol": "(f64) body_temperature.get_effective_temperature (const weather_data, const f64, const f64, const f64, const bool, const f64)"
+    },
+    {
+      "function_offset": 47555655,
+      "instruction": 47555975,
+      "bytes": "ffd0",
+      "slot_address": 47556047,
+      "kind": 6,
+      "symbol": "() server_scene.actor_character.reduce_thirst_level (server_scene.actor_character)"
+    },
+    {
+      "function_offset": 47580036,
+      "instruction": 47580356,
+      "bytes": "ffd0",
+      "slot_address": 47580428,
+      "kind": 6,
+      "symbol": "() server_scene.actor_character.reduce_hunger_level (server_scene.actor_character)"
+    },
+    {
+      "function_offset": 51836326,
+      "instruction": 51837875,
+      "bytes": "ff13",
+      "slot_address": 51839390,
+      "kind": 4,
+      "symbol": "() physics.scene.update (physics.scene, const f64)"
+    },
+    {
+      "function_offset": 51836326,
+      "instruction": 51837906,
+      "bytes": "ff13",
+      "slot_address": 51839390,
+      "kind": 4,
+      "symbol": "() physics.scene.update (physics.scene, const f64)"
+    },
+    {
+      "function_offset": 51836326,
+      "instruction": 51837950,
+      "bytes": "ff13",
+      "slot_address": 51839390,
+      "kind": 4,
+      "symbol": "() physics.scene.update (physics.scene, const f64)"
+    }
+  ],
+  "limits": "Selected exact source identities/bytes only; complete dispatch, lifecycle and semantic review remain separate requirements."
+}

@@ -1,5 +1,7 @@
 # Whole-game research
 
+Latest continuation: [survival and scene scheduling](SURVIVAL-SCHEDULE-20261020.md). Selected actor eligibility, vital thresholds/precision, clothing wetness, body temperature and damage paths are traced. Reader: 1,191 functions/167,289 checked instructions/947,427 bytes; all 151 tests pass. Complete actors/AI/combat, world, saves/authority, vehicles/native/compiler and all other open register areas remain in scope.
+
 Latest continuation: [sensors and data-network discovery](SENSORS-DATA-20261020.md). Read sensor frame/history limits, pressure conversion by 9800, separate data power flags and descriptor-driven microcontroller bindings. The reader has 1,129 functions/158,494 checked instructions/901,354 bytes. Native angle/physics contracts, complete input/resolver/lifecycle and the broader full-game audit remain open.
 
 Latest continuation: [hinges, mounts, latches, rails, tow links and winches](JOINTS-WINCHES-20261020.md). Per-peer tiers, release/capture gates, slider construction, ballscrew motor arithmetic and rope endpoint stretch are traced. The reader has 1,110 functions/154,167 checked instructions/877,643 bytes; all 143 research tests pass. Native solver units and full joint lifecycle remain open, along with the full-game audit.
