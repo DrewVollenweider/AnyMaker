@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "date": "2026-10-19",
+  "research_tests_passed": 51,
+  "new_invariant_tests": 9,
+  "seeded_invariant_cases": 1000,
+  "selected_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "d50e9288592c2f2ef55dfcd3b042433e4d61242247104796249a0b4e7f3e855d",
+    "function_records_checked": 44,
+    "constants_checked": 13,
+    "strings_checked": 4,
+    "call_instruction_examples_checked": 20,
+    "limitations": "Exact static identities/bytes only; virtual target binding and prose semantics are not proven by this checker."
+  },
+  "reader_counts": {
+    "functions": 65,
+    "instructions_byte_checked": 13855,
+    "slot_derived_calls": 660,
+    "unresolved_calls": 453
+  },
+  "new_exports": {
+    "functions": 36,
+    "instructions_byte_checked": 7042,
+    "instruction_bytes_checked": 38015
+  },
+  "model_tool_sha256": "5a4d70e180584c68907c2c51a4d52d59962ec2ea0937634e070120d3c7b3ef2a",
+  "model_tests_sha256": "e8442c3df21d839190cf904a85afd9d911aaae613323611e7e1ddb79f1a45c6f",
+  "game_executed": false,
+  "installation_and_saves_edited": false,
+  "limits": "Exact static evidence and explanatory-model invariants only; not native game execution, recovered dynamic target binding, or a full network simulator."
+}

@@ -20,6 +20,7 @@ Source: `scripts/research/`. Python 3.12+ standard library; Ghidra exports addit
 | `code_reader.py` | SQLite full-text reader over selected C/assembly/evidence; source-bound build with incomplete/overwrite rejection |
 | `check_offline_evidence.py` | Independent matching-source checks of selected published records, constants, strings, and call bytes; not a proof of prose semantics |
 | `test_code_trace.py` | Synthetic dataflow boundaries, tampering/failure controls, literal distinctions, reader and evidence-checker tests |
+| `static_models.py`, `test_static_models.py` | Selected explanatory arithmetic and conservation/order/boundary counterexamples; not a game simulator or runtime acceptance |
 
 ## New baseline
 
@@ -59,6 +60,8 @@ python -m unittest discover -s scripts/research -p 'test_*.py' -v
 ```
 
 The reader and checks use Python standard-library modules, including SQLite FTS5 in the verified runtime. Ghidra/JDK are required only to produce new exports. No game launch, attachment, or in-game test is required. Full exports/databases contain proprietary code and stay outside Git. This continuation passed 42 tests and checked 29 selected function identities, 17 constants, four strings, and 21 call-instruction examples. These counts supplement the historical validation paragraph below.
+
+The [systems follow-up](OFFLINE-SYSTEMS-20261019.md) adds two further batches: 36 functions, 7,042 instructions/38,015 bytes. Build a new reader from all four distinct export directories to obtain 65 functions/13,855 instructions. `python scripts/research/static_models.py` prints illustrative electrical and liquid calculations without game execution. All 51 research-tool tests passed; the new selected evidence checks 44 identities, 13 constants, four strings and 20 call examples. Use `versions/build-25904830/offline-systems-20261019/evidence.json` as the checker input for this follow-up. Models have an explicitly narrower scope than the native network solver.
 
 ## Updates and historical records
 

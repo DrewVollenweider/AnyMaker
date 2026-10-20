@@ -1,6 +1,6 @@
 # Whole-game research
 
-Latest continuation: [offline code reader and implementation findings, 2026-10-19](OFFLINE-20261019.md). New tools connect instruction bytes, p-code operand dependencies, searchable decompilation, and independently checkable selected evidence. The user requested research without required in-game testing; continue offline and label remaining unknowns explicitly. Historical runtime protocols remain reference plans, not a gate for this assignment.
+Latest continuation: [electrical ordering, liquid accounting, and script loop limits](OFFLINE-SYSTEMS-20261019.md), following the [offline code reader checkpoint](OFFLINE-20261019.md). The reader now covers 65 selected functions; the new report traces deferred electrical debit, order-sensitive consumer acceptance, native liquid units/head/conservation, and a 256-iteration per-loop cap. The user requested research without required in-game testing; continue offline and label remaining unknowns explicitly. Historical runtime protocols remain reference plans, not a gate for this assignment.
 
 2026-10-18 (America/New_York). This is the first whole-game baseline checkpoint of an ongoing research system, not a claim to understand the entire game. Start with [coverage](COVERAGE.md), [versions](VERSIONS.md), and [handoff](HANDOFF.md), then search through the [system index](versions/build-25904830/system-map.json). The existing [engineering findings](../CURRENT-FACTS.md) and acceptance records remain applicable within their own version and evidence boundaries.
 

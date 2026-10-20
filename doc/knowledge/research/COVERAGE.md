@@ -15,6 +15,7 @@ Measurements in this checkpoint apply to build 25904830. Keyword counts come fro
 | Additional offline exports, 2026-10-19 | 29 distinct functions; 6,813 instructions/39,264 bytes; searchable C, assembly and machine facts | Full types, all dynamic bindings, or complete behavior of each exported function |
 | Offline call-use traces | 297 local operand-slot dependencies at call sites; 270 unresolved indirect calls | A resolved runtime call graph; a kind 6 displacement is not necessarily a direct function pointer |
 | Offline selected evidence | 29 record identities, 17 constants, four strings, 21 call examples checked; 42 research-tool tests | Automated proof of prose semantics or game-runtime acceptance |
+| Offline systems follow-up | 36 further functions/7,042 instructions/38,015 bytes; combined reader 65 functions/13,855 instructions; 51 tests | Complete component ordering, all conservation edge cases, or a whole-program script budget |
 | System map | 15 topics with definition/code leads and question queues | Explanations of 15 systems |
 | Detailed investigation | Opening/Hatch matching -> sealing flag -> water-flow branch | Player passage, all geometry/dynamic states, or runtime acceptance |
 | New runtime experiments | **0** | Testing of any new game behavior |
@@ -27,11 +28,11 @@ Measurements in this checkpoint apply to build 25904830. Keyword counts come fro
 | Components/interfaces/accessories/defaults | All 598 definitions, field presence, and interface-type index | Native parser defaults, compatibility of every variant, instance state |
 | Physics/collision/damage/repair | PE/GCL physics leads and existing constraint research | Collision shapes, constraint parameters/failure, damage/repair state machines |
 | Engines/torque/gears/clutches/wheels/belts/tracks | Accepted engines/vehicles and historical native traces | Current per-class review, load/durability, all sizes and wheel arrangements |
-| Electrical | Shipped ports/loads, previously operated assemblies; new consume_binary/consume_factor and relay hysteresis traces | Complete network solver, storage/overload, consumer ordering |
-| Liquid/gas/temperature/cooling | Existing circuit evidence; new pump shaft/reverse/pressure-limit arithmetic and save-field bindings | Unit conversion/conservation, every valve/pump variant, sustained thermal equilibrium |
+| Electrical | Consumer calls are sequential within component updates; pending demand debited in following pre-build proportionally across sources; relay hysteresis | Stable component-vector construction across loads/splits, generator/redistribution losses, complete solver |
+| Liquid/gas/temperature/cooling | Native 0.5 L/voxel capacity factor; overfill pressure surrogate and level/static-bias head; conservative direct mixture transfers and equalization | Multi-source edge cases, all units/species labels, sources/sinks, all variants and thermal equilibrium |
 | Doors/openings/hatches/latches/rails/actuators | New sealing path; historical mechanical/hydraulic connections | Collision/player passage, independent latch experiment, dynamic boundaries |
 | Controls/sensors/data/displays/microcontrollers | Positive/negative selectors and working examples; new 10 W demand and >1% power gate/analogue reset path | All power-loss effects, alias scope, sensor units/timing, all logic blocks |
-| Scripts | Native samples/typed state; GCL parser/binding leads | Full grammar, compilation/execution/scheduling/persistence/budget |
+| Scripts | Normal event/body traversal; repeat/foreach cap 256 iterations per invocation in run/execute/debug paths | Complete grammar, call-graph restrictions, global resource/time budget, persistence and full scheduling |
 | Inventory/progression/survival/weather/combat/AI | Inventory/creature/zombie definitions and code leads | Do not infer functionality from content names; first establish whether crafting/progression exist |
 | World/buildings/bunkers/environment | All data JSON; tile/dungeon source leads | Generation/seeds/environment state; vegetation binaries |
 | Saves/creations/metadata/versions | Accepted native examples; raw-field preservation tools | Current parse/save defaults, migration, world-versus-creation differences |
