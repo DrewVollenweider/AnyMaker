@@ -1,6 +1,8 @@
 # Anymaker engineering knowledge — start here
 
-Newest research: [wheel contact, gas/thermal behavior and native helpers](research/CONTACT-FLUIDS-NATIVE-20261020.md). This adds suspension/grip arithmetic, pressure-released truck brakes, actual tyre calibration, gas-temperature overload differences, exchanger/world-sampling paths and selected native math/vector implementations. The current reader has 1,074 functions; 127 research-tool tests pass. Whole-game semantic review remains incomplete.
+Newest research: [hydraulic cylinders, tracks and native raycast ordering](research/ACTUATORS-TRACKS-RAYCAST-20261020.md). This traces two-chamber extension bounds, size-dependent capacity/geometry, body-pair constraint cleanup, separate roller contact and native hit sorting. The current reader has 1,093 functions; 135 research-tool tests pass. Whole-game semantic review remains incomplete.
+
+Previous continuation: [wheel contact, gas/thermal behavior and native helpers](research/CONTACT-FLUIDS-NATIVE-20261020.md), including pressure-released truck brakes, tyre calibration, gas-temperature overload differences and exchanger/world sampling.
 
 Whole-game research started October 18: [versioned research hub](research/README.md), [coverage and gaps](research/COVERAGE.md), [Opening/Hatch implementation trace](research/SEALING.md), and [restart instructions](research/HANDOFF.md). This extends the historical engineering archive below; whole-game understanding and runtime verification remain incomplete.
 

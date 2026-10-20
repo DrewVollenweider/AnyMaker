@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "date": "2026-10-20",
+  "source_check": {
+    "schema": 1,
+    "date": "2026-10-20",
+    "installed_buildid": "25904830",
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "definition_files_checked": 2968,
+    "definition_file_mismatches": [],
+    "rechecked_for": "actuators-tracks-raycast-20261020"
+  },
+  "selected_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "d50e9288592c2f2ef55dfcd3b042433e4d61242247104796249a0b4e7f3e855d",
+    "function_records_checked": 34,
+    "constants_checked": 58,
+    "strings_checked": 8,
+    "call_instruction_examples_checked": 8,
+    "limitations": "Exact static identities/bytes only; virtual target binding and prose semantics are not proven by this checker."
+  },
+  "reflection_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "69d24f7374cb557ca6d809758e932f2ea7b16b88cdd5aa0eec839d6664571fca",
+    "table_records_checked": 8084,
+    "selected_type_identities_checked": 23,
+    "enum_label_lists_checked": 0,
+    "fields_checked": 89,
+    "virtual_declarations_checked": 30,
+    "limits": "Static descriptor declarations and identities only. Not executed dispatch, full storage ABI, units, lifecycle semantics or whole-game understanding."
+  },
+  "reader_counts": {
+    "functions": 1093,
+    "identical_exports_deduplicated": 2,
+    "instructions_byte_checked": 149791,
+    "slot_derived_calls": 7375,
+    "unresolved_calls": 5998
+  },
+  "selected_counts": {
+    "function_identities": 34,
+    "constants": 58,
+    "strings": 8,
+    "calls": 8,
+    "reflected_types": 23,
+    "fields": 89,
+    "virtuals": 30,
+    "native_spans": 11,
+    "native_instructions": 1889,
+    "native_bytes": 7936
+  },
+  "native_export_checks": [
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 1,
+      "instructions_byte_checked": 104,
+      "instruction_bytes_checked": 469,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof.",
+      "pseudocode_requested": false
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 4,
+      "instructions_byte_checked": 419,
+      "instruction_bytes_checked": 1777,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 2,
+      "instructions_byte_checked": 320,
+      "instruction_bytes_checked": 1244,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 1,
+      "instructions_byte_checked": 971,
+      "instruction_bytes_checked": 4203,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 3,
+      "instructions_byte_checked": 75,
+      "instruction_bytes_checked": 243,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    }
+  ],
+  "native_selected_evidence_rechecked": true,
+  "research_tool_tests_passed": 135,
+  "test_log_sha256": "a0fae222ee97dd5312983488ab6e5adb31a4400b2b9b4e6aa346df997fc29d7e",
+  "game_executed": false,
+  "installation_and_active_saves_edited": false,
+  "limits": "Selected static identities, exact artifact bytes and ordinary arithmetic tests. Generic loader specialization is an inference; full actuator/track/native physics and the whole-game audit remain incomplete."
+}

@@ -1,0 +1,819 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "() ctor (vector<physics.raycast_hit>)",
+      "signature_offset": 31866490,
+      "code_offset": 31866574,
+      "code_size": 128,
+      "code_sha256": "bd099fe953ed5ac395db0c2a2b395bd6722bd6dd67d45635f2a6f5d00a0e4dff"
+    },
+    {
+      "signature": "() server_scene.vehicle._rebuild_constraints_internal (server_scene.vehicle, physics.scene)",
+      "signature_offset": 52574051,
+      "code_offset": 52577045,
+      "code_size": 936,
+      "code_sha256": "07456128f56da3d1d1204cbc833f85640e9ec15ca782b7e522ac9fd163a46633"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hydraulic_actuator.tick (server_scene.vehicle_component.hydraulic_actuator, server_scene.vehicle, server_scene)",
+      "signature_offset": 55329017,
+      "code_offset": 55329901,
+      "code_size": 704,
+      "code_sha256": "ccb25f9826b9791ab499080347ba2fd1af8df8d313766141c267fdad0f2ea7f4"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector.connect_multibody (server_scene.vehicle_component.hydraulic_cylinder_connector, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+      "signature_offset": 55331422,
+      "code_offset": 55331880,
+      "code_size": 136,
+      "code_sha256": "ebc7e42380b43ee27e87be3f61989356f78c1f32014c5a002081945cce5e06f9"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.connect_multibody (server_scene.vehicle_component.hydraulic_cylinder_connector_base, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+      "signature_offset": 55354440,
+      "code_offset": 55357000,
+      "code_size": 5952,
+      "code_sha256": "fc18b9d9f719500cfaad47c9a6dcb4544a024a88af81e786df8665970b9bf1f5"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.create (server_scene.vehicle_component.hydraulic_cylinder_connector_base, server_scene.vehicle)",
+      "signature_offset": 55365388,
+      "code_offset": 55367177,
+      "code_size": 904,
+      "code_sha256": "e5a2e6fb8c3cef569479bc60b573be077560ee2c8056e3b4ea9606bfd9b707ae"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.disconnect_multibody (server_scene.vehicle_component.hydraulic_cylinder_connector_base, physics.scene)",
+      "signature_offset": 55371182,
+      "code_offset": 55372053,
+      "code_size": 944,
+      "code_sha256": "5f92ded9745ec541332f9cc3b5c0ad7a880e16036a015fb996aeefd19b1015f6"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.hydraulic_cylinder_connector_base.get_litres_per_meter (const server_scene.vehicle_component.hydraulic_cylinder_connector_base)",
+      "signature_offset": 55374429,
+      "code_offset": 55374613,
+      "code_size": 48,
+      "code_sha256": "98ad3bc3e96198fa437ecff0956416c7004caa8e0c8ce43102f142f560cfc19b"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.hydraulic_cylinder_connector_base.get_margin (const server_scene.vehicle_component.hydraulic_cylinder_connector_base)",
+      "signature_offset": 55374905,
+      "code_offset": 55375106,
+      "code_size": 56,
+      "code_sha256": "561215a6cedd3cb2f648fc9c1ed406f0e73c3b9f9db401fac8fb7098dd9cdfca"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.parse_save_data (server_scene.vehicle_component.hydraulic_cylinder_connector_base, server_scene.save_data.parser)",
+      "signature_offset": 55376990,
+      "code_offset": 55377846,
+      "code_size": 1232,
+      "code_sha256": "e24cdf5896461fa7042ff2c29931ff45e771da4b2c2f25dd1d5c46b22b3939cb"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.post_load (server_scene.vehicle_component.hydraulic_cylinder_connector_base, server_scene)",
+      "signature_offset": 55379509,
+      "code_offset": 55380478,
+      "code_size": 688,
+      "code_sha256": "faca48a41be7d6882f9749b1ddc5c143ea85b63b8eed41d7cbcc1a33da390665"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.rebuild_constraints (server_scene.vehicle_component.hydraulic_cylinder_connector_base, server_scene)",
+      "signature_offset": 55381690,
+      "code_offset": 55382964,
+      "code_size": 960,
+      "code_sha256": "618603f063f7023721343969a310fab84a98d70e0306471d27740177c64a1526"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.tick (server_scene.vehicle_component.hydraulic_cylinder_connector_base, server_scene.vehicle, server_scene)",
+      "signature_offset": 55393154,
+      "code_offset": 55396282,
+      "code_size": 6232,
+      "code_sha256": "ad78d864f80499a43d98685b3d5d317c87325e9e2d6566e71b2939e9ebc7cae1"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.hydraulic_cylinder_connector_base_2_2.get_litres_per_meter (const server_scene.vehicle_component.hydraulic_cylinder_connector_base_2_2)",
+      "signature_offset": 55406064,
+      "code_offset": 55406256,
+      "code_size": 48,
+      "code_sha256": "34c75b3a7636e49f65ffb46ec6cced80d7d6b7e856d49ff5caf465e11f135f03"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.hydraulic_cylinder_connector_base_2_2.get_margin (const server_scene.vehicle_component.hydraulic_cylinder_connector_base_2_2)",
+      "signature_offset": 55406556,
+      "code_offset": 55406765,
+      "code_size": 56,
+      "code_sha256": "682d173d79636e658cc016afe946dca8b4ab88b599b53caf8c0d17de89a5494d"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.hydraulic_cylinder_connector_base_3_3.get_litres_per_meter (const server_scene.vehicle_component.hydraulic_cylinder_connector_base_3_3)",
+      "signature_offset": 55407071,
+      "code_offset": 55407263,
+      "code_size": 48,
+      "code_sha256": "a1415c070b46ae2544c62ae3af9f6a98505ab4464a97f02aa2f7656cf771c67a"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.hydraulic_cylinder_connector_base_3_3.get_margin (const server_scene.vehicle_component.hydraulic_cylinder_connector_base_3_3)",
+      "signature_offset": 55407563,
+      "code_offset": 55407772,
+      "code_size": 56,
+      "code_sha256": "4bf41e03ef3772db17c719866e3553ee8eac4fd5cac658d0950469bddd9d2128"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)",
+      "signature_offset": 57329311,
+      "code_offset": 57333489,
+      "code_size": 17408,
+      "code_sha256": "1e43c152c2e32dd56ada061a889d4d30c5e1d73385e20f55906248056d475f52"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension)",
+      "signature_offset": 57388976,
+      "code_offset": 57389141,
+      "code_size": 48,
+      "code_sha256": "6008fa737668051eae83f517f4dfcbb79038ff28a4e34ac900d1e165bd0552ca"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.roller_wheel_suspension.tick (server_scene.vehicle_component.roller_wheel_suspension, server_scene.vehicle, server_scene)",
+      "signature_offset": 57396619,
+      "code_offset": 57400851,
+      "code_size": 16896,
+      "code_sha256": "95b10088d0f6bee62278da6421fcc3915e88204f6894b3e57f3db7e9d5680c79"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_large.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_large)",
+      "signature_offset": 57431297,
+      "code_offset": 57431501,
+      "code_size": 56,
+      "code_sha256": "4bf41e03ef3772db17c719866e3553ee8eac4fd5cac658d0950469bddd9d2128"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_large_narrow.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_large_narrow)",
+      "signature_offset": 57432857,
+      "code_offset": 57433075,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_large_wide.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_large_wide)",
+      "signature_offset": 57434462,
+      "code_offset": 57434676,
+      "code_size": 56,
+      "code_sha256": "4bf41e03ef3772db17c719866e3553ee8eac4fd5cac658d0950469bddd9d2128"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_small.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_small)",
+      "signature_offset": 57436032,
+      "code_offset": 57436236,
+      "code_size": 56,
+      "code_sha256": "561215a6cedd3cb2f648fc9c1ed406f0e73c3b9f9db401fac8fb7098dd9cdfca"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_small_narrow.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_small_narrow)",
+      "signature_offset": 57437592,
+      "code_offset": 57437810,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_small_wide.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_small_wide)",
+      "signature_offset": 57439197,
+      "code_offset": 57439411,
+      "code_size": 56,
+      "code_sha256": "561215a6cedd3cb2f648fc9c1ed406f0e73c3b9f9db401fac8fb7098dd9cdfca"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.sprocket.tick (server_scene.vehicle_component.sprocket, server_scene.vehicle, server_scene)",
+      "signature_offset": 57600503,
+      "code_offset": 57601755,
+      "code_size": 1088,
+      "code_sha256": "0beba38534fdc639db6578724ae66e48620ca3deabbfb48837a281d8bc63424b"
+    },
+    {
+      "signature": "() server_scene.vehicle_element.hydraulic_cylinder.create (server_scene.vehicle_element.hydraulic_cylinder, server_scene.vehicle, server_scene.vehicle_component, const vehicle_util.grid_origin_dir, const s32, const s32)",
+      "signature_offset": 58318087,
+      "code_offset": 58318675,
+      "code_size": 304,
+      "code_sha256": "46145ddbeeea265047d1ff27a68f5e74c8e49c51f3a0c56b28fd26243faa2120"
+    },
+    {
+      "signature": "() server_scene.vehicle_element.hydraulic_cylinder.parse_save_data (server_scene.vehicle_element.hydraulic_cylinder, server_scene.save_data.parser)",
+      "signature_offset": 58323645,
+      "code_offset": 58324080,
+      "code_size": 304,
+      "code_sha256": "7353e16bdb722f38418e163c41add1c3bf01cd13660605ce23a3a79d5d8b5f44"
+    },
+    {
+      "signature": "() server_scene.vehicle_element.hydraulic_cylinder.set_capacity (server_scene.vehicle_element.hydraulic_cylinder, const f64)",
+      "signature_offset": 58324677,
+      "code_offset": 58324821,
+      "code_size": 30,
+      "code_sha256": "1d177ada25f684c2f2013443952731d590e79b7207b38583ca1d7c4b7f94231b"
+    },
+    {
+      "signature": "() server_scene.vehicle_element.hydraulic_cylinder.set_extension_factor (server_scene.vehicle_element.hydraulic_cylinder, const f64)",
+      "signature_offset": 58325073,
+      "code_offset": 58325225,
+      "code_size": 30,
+      "code_sha256": "e9b214cda50743902aea409ce199e80d75baa4927bd0980761679a248d92064b"
+    },
+    {
+      "signature": "() server_scene.vehicle_element.hydraulic_cylinder.tick (server_scene.vehicle_element.hydraulic_cylinder, server_scene.vehicle)",
+      "signature_offset": 58325493,
+      "code_offset": 58325834,
+      "code_size": 416,
+      "code_sha256": "2087972a224ae9ec8b8400d6cde1b5cc8029162063cb785f4c7699a029b8f02e"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle_torque_node.is_node_part_of_belt_loop (server_scene.vehicle_torque_node, vector<server_scene.vehicle_logic_link.node_id>)",
+      "signature_offset": 59216592,
+      "code_offset": 59219372,
+      "code_size": 6424,
+      "code_sha256": "339089b058d689ac01bcecd5614e0748b255b785f9f88be242eaede0996fb154"
+    },
+    {
+      "signature": "(bool) vehicle_util.can_add_component_multibody<server_scene> (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const ptr<vehicle_util.blocking_hit_data>, const vehicle_component_definition)",
+      "signature_offset": 65519791,
+      "code_offset": 65520378,
+      "code_size": 240,
+      "code_sha256": "57044b4f3c2135c6902fe4198f1c176e485bae605dc8f321843324b691e3f4ee"
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 55329901,
+      "offset": 55330573,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 55329901,
+      "offset": 55330581,
+      "format": "f64",
+      "bytes": "333333333333d33f",
+      "value": 0.3,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 55329901,
+      "offset": 55330597,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 55329901,
+      "offset": 55330557,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 55357000,
+      "offset": 55362936,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Margin factor"
+    },
+    {
+      "function_offset": 55357000,
+      "offset": 55362944,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Initial constraint interpolation"
+    },
+    {
+      "function_offset": 55374613,
+      "offset": 55374653,
+      "format": "f64",
+      "bytes": "0000000000002040",
+      "value": 8.0,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 55375106,
+      "offset": 55375154,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 55396282,
+      "offset": 55402466,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 55396282,
+      "offset": 55402474,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 55396282,
+      "offset": 55402482,
+      "format": "f64",
+      "bytes": "fca9f1d24d62603f",
+      "value": 0.002,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 55396282,
+      "offset": 55402506,
+      "format": "f64",
+      "bytes": "fca9f1d24d62503f",
+      "value": 0.001,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 55406256,
+      "offset": 55406296,
+      "format": "f64",
+      "bytes": "0000000000003040",
+      "value": 16.0,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 55406765,
+      "offset": 55406813,
+      "format": "f64",
+      "bytes": "0000000000000440",
+      "value": 2.5,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 55407263,
+      "offset": 55407303,
+      "format": "f64",
+      "bytes": "0000000000003840",
+      "value": 24.0,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 55407772,
+      "offset": 55407820,
+      "format": "f64",
+      "bytes": "0000000000000840",
+      "value": 3.0,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 57333489,
+      "offset": 57350769,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57333489,
+      "offset": 57350777,
+      "format": "f64",
+      "bytes": "9a9999999999b93f",
+      "value": 0.1,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57333489,
+      "offset": 57350785,
+      "format": "f64",
+      "bytes": "9a9999999999c93f",
+      "value": 0.2,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57333489,
+      "offset": 57350793,
+      "format": "f64",
+      "bytes": "666666666666e63f",
+      "value": 0.7,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57333489,
+      "offset": 57350801,
+      "format": "f64",
+      "bytes": "9a9999999999d93f",
+      "value": 0.4,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57333489,
+      "offset": 57350809,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57333489,
+      "offset": 57350817,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57333489,
+      "offset": 57350857,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57333489,
+      "offset": 57350881,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57389141,
+      "offset": 57389181,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57400851,
+      "offset": 57417611,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57400851,
+      "offset": 57417619,
+      "format": "f64",
+      "bytes": "9a9999999999b93f",
+      "value": 0.1,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57400851,
+      "offset": 57417627,
+      "format": "f64",
+      "bytes": "9a9999999999c93f",
+      "value": 0.2,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57400851,
+      "offset": 57417635,
+      "format": "f64",
+      "bytes": "666666666666e63f",
+      "value": 0.7,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57400851,
+      "offset": 57417643,
+      "format": "f64",
+      "bytes": "9a9999999999d93f",
+      "value": 0.4,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57400851,
+      "offset": 57417651,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57400851,
+      "offset": 57417659,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57400851,
+      "offset": 57417699,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57400851,
+      "offset": 57417739,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 57431501,
+      "offset": 57431549,
+      "format": "f64",
+      "bytes": "0000000000000840",
+      "value": 3.0,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 57434676,
+      "offset": 57434724,
+      "format": "f64",
+      "bytes": "0000000000000840",
+      "value": 3.0,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 57436236,
+      "offset": 57436284,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 57439411,
+      "offset": 57439459,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 57601755,
+      "offset": 57602835,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 58325834,
+      "offset": 58326234,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected embedded scalar read"
+    },
+    {
+      "function_offset": 55377846,
+      "offset": 55378970,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Default disconnected ID"
+    },
+    {
+      "function_offset": 55377846,
+      "offset": 55379074,
+      "format": "s32",
+      "bytes": "08000000",
+      "value": 8,
+      "name": "Default maximum length cells"
+    },
+    {
+      "function_offset": 55377846,
+      "offset": 55379054,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Default saved extension"
+    },
+    {
+      "function_offset": 52577045,
+      "offset": 52577973,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Connected body collision disabled"
+    },
+    {
+      "function_offset": 55357000,
+      "offset": 55362928,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Connection body collision disabled"
+    },
+    {
+      "function_offset": 55372053,
+      "offset": 55372981,
+      "format": "u8",
+      "bytes": "01",
+      "value": 1,
+      "name": "Cleanup body collision enabled"
+    },
+    {
+      "function_offset": 31866574,
+      "offset": 31866694,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "New vector count/start/capacity zero"
+    },
+    {
+      "function_offset": 59219372,
+      "offset": 59225784,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "No continuation"
+    },
+    {
+      "function_offset": 59219372,
+      "offset": 59225788,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "One continuation"
+    },
+    {
+      "function_offset": 59219372,
+      "offset": 59225792,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Accepted short-path node count"
+    },
+    {
+      "function_offset": 57333489,
+      "offset": 57350865,
+      "format": "f64",
+      "bytes": "0000000000003440",
+      "value": 20.0,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 57333489,
+      "offset": 57350873,
+      "format": "f64",
+      "bytes": "0000000000002440",
+      "value": 10.0,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 57333489,
+      "offset": 57350889,
+      "format": "f64",
+      "bytes": "cdccccccccccec3f",
+      "value": 0.9,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 57400851,
+      "offset": 57417707,
+      "format": "f64",
+      "bytes": "0000000000003440",
+      "value": 20.0,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 57400851,
+      "offset": 57417715,
+      "format": "f64",
+      "bytes": "0000000000002440",
+      "value": 10.0,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 57400851,
+      "offset": 57417723,
+      "format": "f64",
+      "bytes": "0000000000005940",
+      "value": 100.0,
+      "name": "Selected reviewed coefficient/getter"
+    },
+    {
+      "function_offset": 57400851,
+      "offset": 57417731,
+      "format": "f64",
+      "bytes": "cdccccccccccec3f",
+      "value": 0.9,
+      "name": "Selected reviewed coefficient/getter"
+    }
+  ],
+  "strings": [
+    {
+      "function_offset": 55377846,
+      "offset": 55378950,
+      "text": "connected_vehicle"
+    },
+    {
+      "function_offset": 55377846,
+      "offset": 55378974,
+      "text": "connected_component"
+    },
+    {
+      "function_offset": 55377846,
+      "offset": 55378994,
+      "text": "connected_node_index"
+    },
+    {
+      "function_offset": 55377846,
+      "offset": 55379015,
+      "text": "hydraulic_cylinder"
+    },
+    {
+      "function_offset": 55377846,
+      "offset": 55379034,
+      "text": "extension_factor"
+    },
+    {
+      "function_offset": 55377846,
+      "offset": 55379062,
+      "text": "length_max"
+    },
+    {
+      "function_offset": 58324080,
+      "offset": 58324360,
+      "text": "content_a"
+    },
+    {
+      "function_offset": 58324080,
+      "offset": 58324370,
+      "text": "content_b"
+    }
+  ],
+  "call_examples": [
+    {
+      "function_offset": 52577045,
+      "instruction": 52577818,
+      "bytes": "ff16",
+      "slot_address": 52578069,
+      "kind": 4,
+      "symbol": "() physics.object.set_is_collision_enabled (const physics.object, const physics.object, const bool)"
+    },
+    {
+      "function_offset": 55372053,
+      "instruction": 55372433,
+      "bytes": "ff13",
+      "slot_address": 55373029,
+      "kind": 4,
+      "symbol": "() physics.object.set_is_collision_enabled (const physics.object, const physics.object, const bool)"
+    },
+    {
+      "function_offset": 55396282,
+      "instruction": 55401703,
+      "bytes": "ffd5",
+      "slot_address": 55402746,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_element.hydraulic_cylinder.tick (server_scene.vehicle_element.hydraulic_cylinder, server_scene.vehicle)"
+    },
+    {
+      "function_offset": 55396282,
+      "instruction": 55401855,
+      "bytes": "ff13",
+      "slot_address": 55402762,
+      "kind": 4,
+      "symbol": "() physics.constraint.distance.set_distance (physics.constraint.distance, const f64, const f64)"
+    },
+    {
+      "function_offset": 57333489,
+      "instruction": 57333659,
+      "bytes": "ff13",
+      "slot_address": 57350913,
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle_torque_node.is_node_part_of_belt_loop (server_scene.vehicle_torque_node, vector<server_scene.vehicle_logic_link.node_id>)"
+    },
+    {
+      "function_offset": 57333489,
+      "instruction": 57337231,
+      "bytes": "ff10",
+      "slot_address": 57351169,
+      "kind": 4,
+      "symbol": "(uptr) vector<physics.raycast_hit>.erase (vector<physics.raycast_hit>, const uptr)"
+    },
+    {
+      "function_offset": 57400851,
+      "instruction": 57401021,
+      "bytes": "ff13",
+      "slot_address": 57417763,
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle_torque_node.is_node_part_of_belt_loop (server_scene.vehicle_torque_node, vector<server_scene.vehicle_logic_link.node_id>)"
+    },
+    {
+      "function_offset": 57400851,
+      "instruction": 57404900,
+      "bytes": "ff10",
+      "slot_address": 57418035,
+      "kind": 4,
+      "symbol": "(uptr) vector<physics.raycast_hit>.erase (vector<physics.raycast_hit>, const uptr)"
+    }
+  ],
+  "limits": "Selected exact source identities/bytes only; not automatic proof of prose or runtime bindings."
+}

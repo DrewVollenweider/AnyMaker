@@ -1,6 +1,6 @@
 # Coverage and gaps
 
-Newest continuation: [wheel/contact, gas/thermal and native helpers](CONTACT-FLUIDS-NATIVE-20261020.md). The combined reader has 1,074 functions/149,292 checked instructions/849,610 bytes. The matching PE has a bounded index and ten selected byte-checked spans; five registrations are corroborated. The complete research suite has 127 passing synthetic tests. These are selected semantic/source checks, not whole-game completion or runtime acceptance.
+Newest continuation: [hydraulic cylinders, tracks and native raycast ordering](ACTUATORS-TRACKS-RAYCAST-20261020.md). The reader has 1,093 functions/149,791 checked instructions/852,045 bytes and 135 synthetic tests pass. Cylinder chamber/geometry/body cleanup, distinct roller contact and selected raycast sorting/erase paths are reviewed. Full native loader specialization, all actuator families and whole-game semantics remain open. The [previous contact/gas/native checkpoint](CONTACT-FLUIDS-NATIVE-20261020.md) remains applicable at its stated scope.
 
 Measurements in this checkpoint apply to build 25904830. Keyword counts come from the [machine-readable system index](versions/build-25904830/system-map.json), with overlapping topics and template expansion; they cannot be converted into a percentage of understanding.
 
@@ -10,6 +10,7 @@ Latest scope supersedes the earlier topic-only queue: [full-game audit register]
 
 | Dimension | Completed | Does not establish |
 | --- | --- | --- |
+| Cylinder/track/raycast continuation | Chamber volume bounds, six cylinder calibration getters, body-pair cleanup, roller differences and native hit ordering/erase | Every moving joint, complete belt rendering/topology, native physics solver or generic loader specialization |
 | Contact/gas/native continuation | Suspension/load/grip, gas brake thresholds, tyre calibration, overload temperature distinction, exchangers/world sampling and selected native constructors/math | Full track contact, moving-support/native physics, actuator ownership, all gas aliases/empty states or complete ABI |
 | Component update access | All 156 distinct declared update implementations across 224 types; all 598 shipped definition IDs retained | Complete review of their behavior or availability of compiled-only classes |
 | Torque/propulsion follow-up | 611-function reader/103,166 instructions/597,691 bytes; 101 synthetic tests; selected solver, motor, alternator, jet and rotor traces | Full contact/track/aerodynamic/thermal models, native intrinsic behavior or game-runtime acceptance |

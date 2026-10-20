@@ -9,10 +9,11 @@ from pathlib import Path
 from baseline import resources,sha,write
 from native_image import Image
 
-VERSION='1.0.0'
+VERSION='1.1.0'
 
 
-def select(raw,selections):
+def select(raw,selections,assembly_only=False):
+    if type(assembly_only) is not bool:raise ValueError('Boolean assembly-only selector required')
     image=Image(raw);rows=[]
     if not 1<=len(selections)<=64:raise ValueError('Select 1..64 bounded native spans')
     for selection in selections:
@@ -33,12 +34,14 @@ def select(raw,selections):
                          span_sha256=hashlib.sha256(raw[offset:offset+end-begin]).hexdigest()))
     ordered=sorted(rows,key=lambda x:x['begin_rva'])
     if any(a['end_rva']>b['begin_rva'] for a,b in zip(ordered,ordered[1:])):raise ValueError('Selected native spans overlap')
-    return dict(schema=1,tool_version=VERSION,source_sha256=hashlib.sha256(raw).hexdigest(),image_base=image.image_base,
+    return dict(schema=1,tool_version=VERSION,mode='assembly-only' if assembly_only else 'decompile',source_sha256=hashlib.sha256(raw).hexdigest(),image_base=image.image_base,
                 spans=rows,limits='Selected static spans only. Manual bounds, native signatures, ABI and runtime dispatch require separate evidence.')
 
 
 def check(source,plan,output):
     raw=source.read_bytes();image=Image(raw)
+    mode=plan.get('mode','decompile')
+    if mode not in ['decompile','assembly-only']:raise ValueError('Unsupported native export mode')
     if plan.get('schema')!=1 or plan.get('source_sha256')!=hashlib.sha256(raw).hexdigest() or plan.get('image_base')!=image.image_base:
         raise ValueError('Native export/source identity mismatch')
     selections=[f"{r['begin_rva']}:{r['end_rva']}" for r in plan['spans']]
@@ -48,9 +51,12 @@ def check(source,plan,output):
             if row[key]!=expected[key]:raise ValueError('Changed native selected range')
         path=output/row['name']
         c=path.with_suffix('.c').read_text(encoding='utf-8')
-        if not c.strip() or c.startswith('ERROR:'):raise ValueError('Native decompilation did not complete')
+        if mode=='assembly-only':
+            if c.strip()!='/* Static disassembly only; no pseudocode requested. */':raise ValueError('Missing explicit assembly-only marker')
+        elif not c.strip() or c.startswith('ERROR:'):raise ValueError('Native decompilation did not complete')
         facts=json.loads(path.with_suffix('.facts.json').read_text(encoding='utf-8'))
-        if facts.get('schema')!=1 or not facts.get('decompile_completed') or facts.get('code_offset')!=row['va'] or facts.get('code_size')!=row['size'] or facts.get('export_name')!=row['name']:
+        expected_completed=mode=='decompile'
+        if facts.get('schema')!=1 or facts.get('decompile_completed') is not expected_completed or facts.get('code_offset')!=row['va'] or facts.get('code_size')!=row['size'] or facts.get('export_name')!=row['name']:
             raise ValueError('Native facts/plan identity mismatch')
         asm=[]
         for line in path.with_suffix('.asm.tsv').read_text(encoding='utf-8').splitlines():
@@ -69,12 +75,14 @@ def check(source,plan,output):
             instructions+=1;total+=len(data)
         if not observed or asm!=observed:raise ValueError('Native facts/assembly disagreement')
     if sha(source)!=plan['source_sha256']:raise ValueError('Native source changed during checking')
-    return dict(schema=1,source_sha256=plan['source_sha256'],spans=len(plan['spans']),
+    report=dict(schema=1,source_sha256=plan['source_sha256'],spans=len(plan['spans']),
                 instructions_byte_checked=instructions,instruction_bytes_checked=total,
                 limits='Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof.')
+    if mode=='assembly-only':report['pseudocode_requested']=False
+    return report
 
 
-def run(source,output,runtime,project,selections):
+def run(source,output,runtime,project,selections,assembly_only=False):
     source=source.resolve();output=output.resolve();runtime=runtime.resolve();project=project.resolve()
     if output.exists() or project.exists():raise FileExistsError('Use new output and project directories')
     if any(p.startswith('.') or any(c in p for c in '{}') for p in project.parts):raise ValueError('Use a plain Ghidra-compatible project path')
@@ -82,7 +90,7 @@ def run(source,output,runtime,project,selections):
     if budget.get('memory_available_bytes',10**10)<4*1024**3:raise MemoryError('Require 4 GiB available')
     ghidras=list((runtime/'ghidra').glob('ghidra_*'));jdks=list((runtime/'jdk').glob('*/bin/java.exe'))
     if len(ghidras)!=1 or len(jdks)!=1:raise ValueError('Missing/ambiguous existing Ghidra/JDK runtime')
-    ghidra,java=ghidras[0],jdks[0];plan=select(source.read_bytes(),selections)
+    ghidra,java=ghidras[0],jdks[0];plan=select(source.read_bytes(),selections,assembly_only)
     output.mkdir(parents=True);project.mkdir(parents=True);state=output/'runtime-state';state.mkdir()
     write(output/'plan.json',plan)
     (output/'plan.tsv').write_text(''.join(f"F\t{r['va']}\t{r['size']}\t{r['name']}\tPE selected span; {r['bound_kind']}; signature unresolved\n" for r in plan['spans']),encoding='utf-8')
@@ -93,6 +101,7 @@ def run(source,output,runtime,project,selections):
       '-Djavax.xml.accessExternalStylesheet=','-cp',str(ghidra/'Ghidra/Framework/Utility/lib/Utility.jar'),'ghidra.Ghidra',
       'ghidra.app.util.headless.AnalyzeHeadless',str(project),'Selected','-import',str(source),'-noanalysis','-max-cpu','1',
       '-scriptPath',str(Path(__file__).resolve().parent),'-postScript','ExportNative.java',str(output/'plan.tsv'),str(output/'ghidra')]
+    if assembly_only:args.append('assembly-only')
     with (output/'ghidra.log').open('x',encoding='utf-8') as log:
         result=subprocess.run(args,stdout=log,stderr=subprocess.STDOUT,
             creationflags=subprocess.BELOW_NORMAL_PRIORITY_CLASS if os.name=='nt' else 0)
@@ -101,6 +110,7 @@ def run(source,output,runtime,project,selections):
     write(output/'run.json',dict(tool_version=VERSION,tool_sha256=sha(Path(__file__)),
         export_script_sha256=sha(Path(__file__).with_name('ExportNative.java')),source_sha256=plan['source_sha256'],
         resources_before=budget,heap='2GiB',headless_workers=1,automatic_analysis=False,native_source_executed=False,
+        pseudocode_requested=not assembly_only,
         java_version=subprocess.check_output([str(java),'--version'],text=True),ghidra_properties_sha256=sha(ghidra/'Ghidra/application.properties')))
     print(json.dumps(report,indent=2));return report
 
@@ -109,4 +119,5 @@ if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     for name in ['source','output','runtime','project']:p.add_argument(name,type=Path)
     p.add_argument('selections',nargs='+',help='RVA inside one exception range, or explicit begin:end RVA')
-    a=p.parse_args();run(a.source,a.output,a.runtime,a.project,a.selections)
+    p.add_argument('--assembly-only',action='store_true',help='Explicitly skip pseudocode; still check selected disassembly/facts/source bytes')
+    a=p.parse_args();run(a.source,a.output,a.runtime,a.project,a.selections,a.assembly_only)

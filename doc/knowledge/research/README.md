@@ -1,6 +1,8 @@
 # Whole-game research
 
-Latest continuation: [wheel contact, gas circulation, heat and selected native helpers](CONTACT-FLUIDS-NATIVE-20261020.md). The source-bound reader now contains 1,074 functions/149,292 checked instructions; 127 synthetic tests pass. New findings include suspension/grip arithmetic, pressure-released truck brakes, gas overload temperature differences, exchanger coefficients, world sampling and selected native vector/math registrations. Track and actuator exports remain separate from complete semantic review. The full-game audit remains active and incomplete.
+Latest continuation: [hydraulic cylinders, track contact and native raycast ordering](ACTUATORS-TRACKS-RAYCAST-20261020.md). The reader has 1,093 functions/149,791 checked instructions; 135 synthetic tests pass. New findings cover chamber bounds/update order, cylinder-size geometry, multibody cleanup, distinct roller contact, hit sorting and native generic erase. Loader specialization remains explicit; whole-game semantic review is incomplete.
+
+Previous continuation: [wheel contact, gas circulation, heat and selected native helpers](CONTACT-FLUIDS-NATIVE-20261020.md). That checkpoint added suspension/grip arithmetic, pressure-released truck brakes, gas overload temperature differences, exchanger/world-sampling paths and selected native vector/math registrations.
 
 Latest checkpoint: [torque, electric machines, jets and helicopter rotors](POWERTRAIN-20261020.md). All 156 declared component update implementations are available in the local reader, which now contains 611 selected functions. New selected traces explain ratio-dependent mass, shared brakes, motor demand, alternator losses, jet-chain validation, swashplate mixing and rotor/ground-effect arithmetic. The full-game audit remains active and incomplete.
 

@@ -1,0 +1,1086 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "table": {
+    "offset": 66399263,
+    "end": 82528301,
+    "records": 8084,
+    "sha256": "5d619ecd6c69220d0e873d73e012dd301038f4eb911d859486db58c386b60a8e"
+  },
+  "types": [
+    {
+      "name": "physics.raycast_hit",
+      "base": "",
+      "offset": 75018113,
+      "length": 354,
+      "descriptor_sha256": "8159c60e79e6a1d1d0958aa041a08ff90dd87ccc82b75161a1fa10408a8beef1",
+      "size": 72,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.hydraulic_cylinder_connector",
+      "base": "server_scene.vehicle_component",
+      "offset": 79494893,
+      "length": 16567,
+      "descriptor_sha256": "cf07e81c2faeedbb7decffc153918a1e0c0ea9c2f26810018a192634ba64d4c3",
+      "size": 592,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "base": "server_scene.vehicle_component",
+      "offset": 79544124,
+      "length": 18064,
+      "descriptor_sha256": "d8a73e272a405a5ecf7b66ba03060afc4072923c92ddd2d01611ef52c36abf93",
+      "size": 1352,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.hydraulic_cylinder_connector_base_2_2",
+      "base": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "offset": 79562188,
+      "length": 17331,
+      "descriptor_sha256": "713911993a1fd663611a17bbacb3853937b717881873fe3f474a52b38d3e2f8f",
+      "size": 1352,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.hydraulic_cylinder_connector_base_3_3",
+      "base": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "offset": 79579519,
+      "length": 17331,
+      "descriptor_sha256": "680fbd31fb49541e40bf0e1ebf5ce4f3f4fadf714392637c52c4ce3e90fa0927",
+      "size": 1352,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_fixed",
+      "base": "server_scene.vehicle_component",
+      "offset": 80838917,
+      "length": 17328,
+      "descriptor_sha256": "7b5ef64a2450d53e7d824bab30ee80acd6ef42df1929ac478407272a1f1a225a",
+      "size": 984,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_fixed_large",
+      "base": "server_scene.vehicle_component.roller_wheel_fixed",
+      "offset": 80856245,
+      "length": 16594,
+      "descriptor_sha256": "2cb7e96286206d6d0bc8593c07e062eda93af2b251c51b6be4792738b9ad92ed",
+      "size": 984,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_fixed_large_narrow",
+      "base": "server_scene.vehicle_component.roller_wheel_fixed",
+      "offset": 80872839,
+      "length": 16643,
+      "descriptor_sha256": "ac299a943c8cc716ec7755e7c8c48d4c3e6c20312d416897106ca425bfc4c5d1",
+      "size": 984,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_fixed_large_wide",
+      "base": "server_scene.vehicle_component.roller_wheel_fixed",
+      "offset": 80889482,
+      "length": 16629,
+      "descriptor_sha256": "864eecee6157d768793714ba50657b34819317a08bf4cc32c880c48e87e27fdc",
+      "size": 984,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_fixed_small",
+      "base": "server_scene.vehicle_component.roller_wheel_fixed",
+      "offset": 80906111,
+      "length": 16594,
+      "descriptor_sha256": "1326c6659db07d451648d715409657fd7f0f25a4b5ab57353c3c4f639c9cc20d",
+      "size": 984,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_fixed_small_narrow",
+      "base": "server_scene.vehicle_component.roller_wheel_fixed",
+      "offset": 80922705,
+      "length": 16643,
+      "descriptor_sha256": "de8d3434c7e03de4bfdf6c82209fe634e8212e021eb7c4c77a618d50f3394963",
+      "size": 984,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_fixed_small_wide",
+      "base": "server_scene.vehicle_component.roller_wheel_fixed",
+      "offset": 80939348,
+      "length": 16629,
+      "descriptor_sha256": "3771233df7227053cffad37b8ba718ad4a6c1bb9eb44dc1e627c96cfcd398b57",
+      "size": 984,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_suspension",
+      "base": "server_scene.vehicle_component",
+      "offset": 80955977,
+      "length": 17798,
+      "descriptor_sha256": "8430f8245daa0f906dd313c7495c682bd47079f925a2319c7197864ca1a34032",
+      "size": 1032,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_suspension_large",
+      "base": "server_scene.vehicle_component.roller_wheel_suspension",
+      "offset": 80973775,
+      "length": 17003,
+      "descriptor_sha256": "1c64d919c6d71797da423fd1e43a7f7114f4716fc373f6e800a177a560258110",
+      "size": 1032,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_suspension_large_narrow",
+      "base": "server_scene.vehicle_component.roller_wheel_suspension",
+      "offset": 80990778,
+      "length": 17066,
+      "descriptor_sha256": "f6babdef9256357962ea01f7fd691a5c9ade9a4140d283eb9b1342e92a5ba691",
+      "size": 1032,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_suspension_large_wide",
+      "base": "server_scene.vehicle_component.roller_wheel_suspension",
+      "offset": 81007844,
+      "length": 17048,
+      "descriptor_sha256": "07f944302d7dc823480498d935350b723160a1bdf28422a5a09e2934f9f161fb",
+      "size": 1032,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_suspension_small",
+      "base": "server_scene.vehicle_component.roller_wheel_suspension",
+      "offset": 81024892,
+      "length": 17003,
+      "descriptor_sha256": "35d124ebc696aac5352070635136c49eea0c276b76624dd12d7c997b67ef3db4",
+      "size": 1032,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_suspension_small_narrow",
+      "base": "server_scene.vehicle_component.roller_wheel_suspension",
+      "offset": 81041895,
+      "length": 17066,
+      "descriptor_sha256": "9558f2d010fc997ecf6c02059f87a1c885aac24e9a10ed2b062290e163ec44eb",
+      "size": 1032,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_suspension_small_wide",
+      "base": "server_scene.vehicle_component.roller_wheel_suspension",
+      "offset": 81058961,
+      "length": 17048,
+      "descriptor_sha256": "6b618c5dec77a333a5e66b97ec2075e1c77584d40bf8306ec9214b78d105af7e",
+      "size": 1032,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_element.hydraulic_cylinder",
+      "base": "replication.master.composite",
+      "offset": 81671282,
+      "length": 1736,
+      "descriptor_sha256": "528f0d6625e3e9b1b9d230f5bbceabafcf28b9ff285b1e492ca066bec0065399",
+      "size": 488,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_liquid_content",
+      "base": "",
+      "offset": 81699782,
+      "length": 288,
+      "descriptor_sha256": "5422ca48d8f13acc8ed5b7b3019ebccca67481edbed10dcbbe8062a1e175394e",
+      "size": 56,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_liquid_content_volume",
+      "base": "server_scene.vehicle_liquid_content",
+      "offset": 81700667,
+      "length": 621,
+      "descriptor_sha256": "40862e20b390421b95ddd5254afe1a449dec10082df39e991646786324f15ad5",
+      "size": 232,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_liquid_node",
+      "base": "",
+      "offset": 81703518,
+      "length": 783,
+      "descriptor_sha256": "f6b68bc7f6e5575b6db6792ce05ba803bca661898dce2b0af1a1009f6dc0c850",
+      "size": 80,
+      "alignment": 8
+    }
+  ],
+  "enums": [],
+  "fields": [
+    {
+      "type": "server_scene.vehicle_element.hydraulic_cylinder",
+      "field": {
+        "type": "server_scene.vehicle_liquid_content_volume",
+        "name": "m_content_a",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.hydraulic_cylinder",
+      "field": {
+        "type": "server_scene.vehicle_liquid_content_volume",
+        "name": "m_content_b",
+        "offset": 240
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.hydraulic_cylinder",
+      "field": {
+        "type": "f64",
+        "name": "_m_fluid_capacity",
+        "offset": 472
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.hydraulic_cylinder",
+      "field": {
+        "type": "f64",
+        "name": "_m_extension_factor",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content",
+      "field": {
+        "type": "array<f64>",
+        "name": "m_amounts",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content",
+      "field": {
+        "type": "f64",
+        "name": "m_volume",
+        "offset": 32
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content",
+      "field": {
+        "type": "f64",
+        "name": "m_capacity",
+        "offset": 40
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content",
+      "field": {
+        "type": "f64",
+        "name": "m_temperature",
+        "offset": 48
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content_volume",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component>",
+        "name": "_m_component_inspection",
+        "offset": 56
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content_volume",
+      "field": {
+        "type": "vehicle_util.grid_origin_dir",
+        "name": "m_grid_origin_dir",
+        "offset": 64
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content_volume",
+      "field": {
+        "type": "vec3",
+        "name": "_m_local_min",
+        "offset": 88
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content_volume",
+      "field": {
+        "type": "vec3",
+        "name": "_m_local_max",
+        "offset": 112
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content_volume",
+      "field": {
+        "type": "vec4",
+        "name": "m_pressure_plane",
+        "offset": 136
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content_volume",
+      "field": {
+        "type": "vec3",
+        "name": "m_pendulum_position",
+        "offset": 168
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content_volume",
+      "field": {
+        "type": "vec3",
+        "name": "m_pendulum_velocity",
+        "offset": 192
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content_volume",
+      "field": {
+        "type": "f64",
+        "name": "m_turbulence",
+        "offset": 216
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content_volume",
+      "field": {
+        "type": "s32",
+        "name": "m_inspection_stamp",
+        "offset": 224
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content_volume",
+      "field": {
+        "type": "s32",
+        "name": "m_inspection_group_index",
+        "offset": 228
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_connected_vehicle_id",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_connected_component_id",
+        "offset": 512
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_connected_node_index",
+        "offset": 544
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_length_max",
+        "offset": 576
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "m_flow_factor",
+        "offset": 608
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "field": {
+        "type": "server_scene.vehicle_liquid_node",
+        "name": "m_logic_liquid_a",
+        "offset": 656
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "field": {
+        "type": "server_scene.vehicle_liquid_node",
+        "name": "m_logic_liquid_b",
+        "offset": 736
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "field": {
+        "type": "server_scene.vehicle_element.hydraulic_cylinder",
+        "name": "m_element_hydraulic_cylinder",
+        "offset": 816
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component.hydraulic_cylinder_connector>",
+        "name": "m_connected_component",
+        "offset": 1304
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "field": {
+        "type": "physics.constraint.distance",
+        "name": "_m_constraint",
+        "offset": 1312
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "field": {
+        "type": "s32",
+        "name": "m_hydraulic_node_index",
+        "offset": 1328
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "field": {
+        "type": "f64",
+        "name": "m_extension_factor",
+        "offset": 1336
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "field": {
+        "type": "f64",
+        "name": "_m_constraint_distance_activated",
+        "offset": 1344
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_connected_vehicle_id",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_connected_component_id",
+        "offset": 512
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_connected_node_index",
+        "offset": 544
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component.hydraulic_cylinder_connector_base>",
+        "name": "m_connected_component",
+        "offset": 576
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector",
+      "field": {
+        "type": "s32",
+        "name": "m_hydraulic_node_index",
+        "offset": 584
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_node",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component>",
+        "name": "m_component",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_node",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component>",
+        "name": "m_component_flood",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_node",
+      "field": {
+        "type": "s32",
+        "name": "m_component_id",
+        "offset": 16
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_node",
+      "field": {
+        "type": "s32",
+        "name": "m_node_index",
+        "offset": 20
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_node",
+      "field": {
+        "type": "ptr<server_scene.vehicle_liquid_content_volume>",
+        "name": "m_content",
+        "offset": 24
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_node",
+      "field": {
+        "type": "bool",
+        "name": "m_is_expandable",
+        "offset": 32
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_node",
+      "field": {
+        "type": "f64",
+        "name": "m_static_pressure",
+        "offset": 40
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_node",
+      "field": {
+        "type": "f64",
+        "name": "m_height",
+        "offset": 48
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_node",
+      "field": {
+        "type": "f64",
+        "name": "m_flow",
+        "offset": 56
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_node",
+      "field": {
+        "type": "ptr<server_scene.vehicle_liquid_island>",
+        "name": "m_island",
+        "offset": 64
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_node",
+      "field": {
+        "type": "s32",
+        "name": "m_vehicle_node_index",
+        "offset": 72
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "replication.master.property_f64_compressed_s8",
+        "name": "m_wheel_rps",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "server_scene.vehicle_torque_data",
+        "name": "m_torque_data",
+        "offset": 528
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 592
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 632
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "physics.object",
+        "name": "m_contact_object",
+        "offset": 648
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "vec3",
+        "name": "m_contact_position",
+        "offset": 664
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "vec3",
+        "name": "m_contact_position_local",
+        "offset": 688
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "physics.object",
+        "name": "m_memory_object",
+        "offset": 712
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "vec3",
+        "name": "m_memory_position",
+        "offset": 728
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "vec3",
+        "name": "m_memory_position_local",
+        "offset": 752
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "vec3",
+        "name": "m_memory_vector_prev",
+        "offset": 776
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "f64",
+        "name": "m_compression_factor",
+        "offset": 800
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "physics_util.impulse_activator",
+        "name": "_m_impulse_activator",
+        "offset": 808
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "physics_util.impulse_activator",
+        "name": "_m_contact_impulse_activator",
+        "offset": 848
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "vec3",
+        "name": "m_debug_contact_velocity",
+        "offset": 888
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "vec3",
+        "name": "m_debug_front_dir",
+        "offset": 912
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "vec3",
+        "name": "m_debug_side_dir",
+        "offset": 936
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "field": {
+        "type": "vec3",
+        "name": "m_debug_wheel_force",
+        "offset": 960
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "replication.master.property_f64_compressed_s8",
+        "name": "m_wheel_rps",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "server_scene.vehicle_torque_data",
+        "name": "m_torque_data",
+        "offset": 528
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 592
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 632
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "physics.object",
+        "name": "m_contact_object",
+        "offset": 648
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "vec3",
+        "name": "m_contact_position",
+        "offset": 664
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "vec3",
+        "name": "m_contact_position_local",
+        "offset": 688
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "physics.object",
+        "name": "m_memory_object",
+        "offset": 712
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "vec3",
+        "name": "m_memory_position",
+        "offset": 728
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "vec3",
+        "name": "m_memory_position_local",
+        "offset": 752
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "vec3",
+        "name": "m_memory_vector_prev",
+        "offset": 776
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "f64",
+        "name": "m_compression_factor",
+        "offset": 800
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "physics_util.impulse_activator",
+        "name": "_m_impulse_activator",
+        "offset": 808
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "physics_util.impulse_activator",
+        "name": "_m_contact_impulse_activator",
+        "offset": 848
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "vec3",
+        "name": "m_debug_suspension_start",
+        "offset": 888
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "vec3",
+        "name": "m_debug_suspension_end",
+        "offset": 912
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "vec3",
+        "name": "m_debug_contact_velocity",
+        "offset": 936
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "vec3",
+        "name": "m_debug_front_dir",
+        "offset": 960
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "vec3",
+        "name": "m_debug_side_dir",
+        "offset": 984
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "field": {
+        "type": "vec3",
+        "name": "m_debug_wheel_force",
+        "offset": 1008
+      }
+    },
+    {
+      "type": "physics.raycast_hit",
+      "field": {
+        "type": "physics.object",
+        "name": "m_object",
+        "offset": 0
+      }
+    },
+    {
+      "type": "physics.raycast_hit",
+      "field": {
+        "type": "f64",
+        "name": "m_distance",
+        "offset": 16
+      }
+    },
+    {
+      "type": "physics.raycast_hit",
+      "field": {
+        "type": "vec3",
+        "name": "m_position",
+        "offset": 24
+      }
+    },
+    {
+      "type": "physics.raycast_hit",
+      "field": {
+        "type": "vec3",
+        "name": "m_normal",
+        "offset": 48
+      }
+    }
+  ],
+  "virtuals": [
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.tick (server_scene.vehicle_component.hydraulic_cylinder_connector_base, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "slot": 124,
+      "signature": "(f64) server_scene.vehicle_component.hydraulic_cylinder_connector_base.get_litres_per_meter (const server_scene.vehicle_component.hydraulic_cylinder_connector_base)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "slot": 125,
+      "signature": "(f64) server_scene.vehicle_component.hydraulic_cylinder_connector_base.get_margin (const server_scene.vehicle_component.hydraulic_cylinder_connector_base)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base_2_2",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.tick (server_scene.vehicle_component.hydraulic_cylinder_connector_base, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base_2_2",
+      "slot": 124,
+      "signature": "(f64) server_scene.vehicle_component.hydraulic_cylinder_connector_base_2_2.get_litres_per_meter (const server_scene.vehicle_component.hydraulic_cylinder_connector_base_2_2)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base_2_2",
+      "slot": 125,
+      "signature": "(f64) server_scene.vehicle_component.hydraulic_cylinder_connector_base_2_2.get_margin (const server_scene.vehicle_component.hydraulic_cylinder_connector_base_2_2)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base_3_3",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.tick (server_scene.vehicle_component.hydraulic_cylinder_connector_base, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base_3_3",
+      "slot": 124,
+      "signature": "(f64) server_scene.vehicle_component.hydraulic_cylinder_connector_base_3_3.get_litres_per_meter (const server_scene.vehicle_component.hydraulic_cylinder_connector_base_3_3)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base_3_3",
+      "slot": 125,
+      "signature": "(f64) server_scene.vehicle_component.hydraulic_cylinder_connector_base_3_3.get_margin (const server_scene.vehicle_component.hydraulic_cylinder_connector_base_3_3)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed_large",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed_large_narrow",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed_large_wide",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed_small",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed_small_narrow",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed_small_wide",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_suspension.tick (server_scene.vehicle_component.roller_wheel_suspension, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "slot": 124,
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_large",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_suspension.tick (server_scene.vehicle_component.roller_wheel_suspension, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_large",
+      "slot": 124,
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_large.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_large)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_large_narrow",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_suspension.tick (server_scene.vehicle_component.roller_wheel_suspension, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_large_narrow",
+      "slot": 124,
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_large_narrow.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_large_narrow)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_large_wide",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_suspension.tick (server_scene.vehicle_component.roller_wheel_suspension, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_large_wide",
+      "slot": 124,
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_large_wide.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_large_wide)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_small",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_suspension.tick (server_scene.vehicle_component.roller_wheel_suspension, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_small",
+      "slot": 124,
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_small.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_small)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_small_narrow",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_suspension.tick (server_scene.vehicle_component.roller_wheel_suspension, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_small_narrow",
+      "slot": 124,
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_small_narrow.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_small_narrow)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_small_wide",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_suspension.tick (server_scene.vehicle_component.roller_wheel_suspension, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_small_wide",
+      "slot": 124,
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_small_wide.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_small_wide)"
+    }
+  ]
+}

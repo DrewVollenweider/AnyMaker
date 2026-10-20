@@ -86,7 +86,9 @@ public class ExportNative extends GhidraScript {
 
   public void run() throws Exception {
     String[] args = getScriptArgs();
-    if (args.length != 2) throw new IllegalArgumentException("plan.tsv output-directory");
+    if (args.length != 2 && args.length != 3) throw new IllegalArgumentException("plan.tsv output-directory [assembly-only]");
+    boolean assemblyOnly = args.length == 3 && args[2].equals("assembly-only");
+    if (args.length == 3 && !assemblyOnly) throw new IllegalArgumentException("Unknown export mode");
     Path out = Paths.get(args[1]);
     Files.createDirectories(out);
     List<String[]> funcs = new ArrayList<>();
@@ -121,11 +123,13 @@ public class ExportNative extends GhidraScript {
           listing.append(ins.getAddress()).append("\t").append(hex).append("\t").append(ins).append("\n");
         }
         Files.writeString(out.resolve(p[3] + ".asm.tsv"), listing.toString(), StandardCharsets.UTF_8, StandardOpenOption.CREATE_NEW);
-        DecompileResults result = decompiler.decompileFunction(f, 60, monitor);
-        String text = result.decompileCompleted() ? result.getDecompiledFunction().getC() : "ERROR: " + result.getErrorMessage();
+        DecompileResults result = assemblyOnly ? null : decompiler.decompileFunction(f, 60, monitor);
+        boolean completed = result != null && result.decompileCompleted();
+        String text = assemblyOnly ? "/* Static disassembly only; no pseudocode requested. */\n" :
+          completed ? result.getDecompiledFunction().getC() : "ERROR: " + result.getErrorMessage();
         Files.writeString(out.resolve(p[3] + ".c"), text, StandardCharsets.UTF_8, StandardOpenOption.CREATE_NEW);
-        exportFacts(out.resolve(p[3] + ".facts.json"), p, body, result.decompileCompleted());
-        println("RESEARCH_EXPORT " + p[3] + " decompiled=" + result.decompileCompleted());
+        exportFacts(out.resolve(p[3] + ".facts.json"), p, body, completed);
+        println("RESEARCH_EXPORT " + p[3] + " decompiled=" + completed + " assembly_only=" + assemblyOnly);
       }
     } finally { decompiler.dispose(); }
   }

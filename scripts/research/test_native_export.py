@@ -16,6 +16,25 @@ def artifacts(root):
 
 
 class NativeExportTests(unittest.TestCase):
+    def test_assembly_only_is_explicit_and_does_not_promote_failed_c(self):
+        with tempfile.TemporaryDirectory(dir=Path.cwd()) as directory:
+            source,plan,out,facts=artifacts(Path(directory));name=plan['spans'][0]['name']
+            plan['mode']='assembly-only'
+            with self.assertRaises(ValueError):check(source,plan,out)
+            facts['decompile_completed']=False
+            (out/(name+'.facts.json')).write_text(json.dumps(facts))
+            (out/(name+'.c')).write_text('/* Static disassembly only; no pseudocode requested. */\n')
+            self.assertFalse(check(source,plan,out)['pseudocode_requested'])
+            plan['mode']='decompile'
+            with self.assertRaises(ValueError):check(source,plan,out)
+
+    def test_unsupported_mode_and_selector_reject(self):
+        self.assertEqual(select(fixture(),['0x1001'],True)['mode'],'assembly-only')
+        with self.assertRaises(ValueError):select(fixture(),['0x1001'],1)
+        with tempfile.TemporaryDirectory(dir=Path.cwd()) as directory:
+            source,plan,out,_=artifacts(Path(directory));plan['mode']='invented'
+            with self.assertRaises(ValueError):check(source,plan,out)
+
     def test_range_and_manual_selection_are_distinguished(self):
         a=select(fixture(),['0x1001'])['spans'][0];b=select(fixture(),['0x1000:0x1008'])['spans'][0]
         self.assertEqual(a['size'],32);self.assertEqual(b['size'],8)

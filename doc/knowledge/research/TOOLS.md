@@ -24,8 +24,9 @@ Source: `scripts/research/`. Python 3.12+ standard library; Ghidra exports addit
 | `powertrain_models.py`, `test_powertrain_models.py` | Selected torque-island, motor, alternator, swashplate, rotor and distance-only ground-effect arithmetic; explicit model-domain guards; not a native physics solver |
 | `contact_models.py`, `test_contact_models.py` | Selected wheel load/grip, tangent cap and pressure-brake arithmetic; excludes casts, topology, support motion and native physics |
 | `gas_thermal_models.py`, `test_gas_thermal_models.py` | Ordinary gas transfer, explicit pair/vector temperature difference and quantity-weighted heat blend; not a whole-network simulator |
+| `actuator_models.py`, `test_actuator_models.py` | Selected two-chamber quantity bounds, pre-correction capacity writes and size-dependent geometry; not a native constraint/force solver |
 | `native_image.py`, `test_native_image.py` | Bounded read-only x64 PE mapping, exception-directory ranges, signature strings and relative-byte-pattern leads; patterns do not establish bindings |
-| `native_export.py`, `ExportNative.java`, `test_native_export.py` | Static selected native spans through existing Ghidra; exact source/range/artifact/instruction checks; manual spans do not recover function boundaries or ABI |
+| `native_export.py` 1.1.0, `ExportNative.java`, `test_native_export.py` | Static selected native spans through existing Ghidra; explicit assembly-only mode; exact source/range/artifact/instruction checks; manual spans and exception entries do not guarantee full function boundaries or ABI |
 
 ## Selected native executable research
 
@@ -37,6 +38,8 @@ python scripts/research/native_export.py "$r/snapshot/game.exe" "$r/native-expor
 ```
 
 Use fresh output/project directories. The exporter uses a 2 GiB heap, one headless worker, BelowNormal priority and disabled automatic analysis. A selection without a colon requires exactly one containing exception-directory entry; an explicit begin:end span is recorded as manual. Exact bytes and complete output artifacts are checked before success. Ten production spans passed; no game process was executed. Selected registration bodies must be traced separately from string/pattern discovery.
+
+The [actuator/track/raycast continuation](ACTUATORS-TRACKS-RAYCAST-20261020.md) adds 11 further checked native spans across five successful batches. Use `--assembly-only` when pseudocode is deliberately excluded; a mode marker and false decompilation status are required, and failed pseudocode cannot silently pass as assembly. Two earlier physics pseudocode attempts timed out and remain failed. Read adjacent exception fragments together; approximate C can cross a selected fragment and return-type inference can be wrong.
 
 ## New baseline
 

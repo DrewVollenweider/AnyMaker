@@ -1,6 +1,6 @@
 # Full-game audit register
 
-Latest selected findings: [contact, gas/thermal and native helpers](CONTACT-FLUIDS-NATIVE-20261020.md). Wheel suspension/grip, pressure-released brakes, calibration, gas equalization overloads, exchanger/world sampling and five native helper registrations are reviewed at the report's scope. Full track dynamics, actuator ownership, network aliases/empty cases, native physics and the remaining systems below stay open. The 1,074-function reader is access infrastructure, not a completion count.
+Latest selected findings: [hydraulic cylinders, tracks and raycast ordering](ACTUATORS-TRACKS-RAYCAST-20261020.md), following [contact, gas/thermal and native helpers](CONTACT-FLUIDS-NATIVE-20261020.md). Chamber/geometry/body cleanup, separate roller/sprocket contact and selected native sorting/erase paths are reviewed at their stated scope. Remaining moving joints, full track topology/rendering, network edge cases, native solver/loader and all other domains below stay open. The 1,093-function reader is access infrastructure, not a completion count.
 
 Scope expanded on 2026-10-19: research every game system and revisit earlier work. This register is a work queue, not a completion certificate. Research stays offline; no new gameplay test is required from the user. Build 25904830 and source hashes remain mandatory boundaries.
 
