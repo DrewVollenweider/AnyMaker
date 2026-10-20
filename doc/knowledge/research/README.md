@@ -1,5 +1,7 @@
 # Whole-game research
 
+Latest continuation: [creatures, sensing and ambient spawning](CREATURES-SENSING-SPAWN-20261020.md). Includes selected records for all 40 creature definitions, actor/vehicle sensing differences, sight filters, timing and ambient placement/despawn gates. Reader: 1,228 functions/176,005 checked instructions/996,711 bytes; 159 tests pass. Complete AI/combat/navigation and every other open register area remain in scope.
+
 Latest continuation: [survival and scene scheduling](SURVIVAL-SCHEDULE-20261020.md). Selected actor eligibility, vital thresholds/precision, clothing wetness, body temperature and damage paths are traced. Reader: 1,191 functions/167,289 checked instructions/947,427 bytes; all 151 tests pass. Complete actors/AI/combat, world, saves/authority, vehicles/native/compiler and all other open register areas remain in scope.
 
 Latest continuation: [sensors and data-network discovery](SENSORS-DATA-20261020.md). Read sensor frame/history limits, pressure conversion by 9800, separate data power flags and descriptor-driven microcontroller bindings. The reader has 1,129 functions/158,494 checked instructions/901,354 bytes. Native angle/physics contracts, complete input/resolver/lifecycle and the broader full-game audit remain open.

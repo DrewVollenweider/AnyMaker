@@ -1,0 +1,1493 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "definition_source": "rom/data/creature_definitions.json",
+  "definition_source_sha256": "cbc4ea4df37ccc90a82235050b2f4947b143a3ed39a2f1f371eb690bec2f26e2",
+  "source_functions": {
+    "parser": 22112739,
+    "factory": 41097191,
+    "constructor": 23278556
+  },
+  "selected_parser_defaults": {
+    "spawn_group_size": 1,
+    "move_speed_crouch": 0.5,
+    "move_speed_walk": 2.0,
+    "move_speed_run": 6.0,
+    "move_speed_swim": 2.0,
+    "maximum_blood": 1.0,
+    "attack_damage": 0.1,
+    "attack_jump_force": 200.0,
+    "attack_knockback": 600.0
+  },
+  "actor_type_counts": {
+    "creature_regular": 33,
+    "creature_large": 1,
+    "creature_large_centipede": 1,
+    "creature_large_burrower": 1,
+    "creature_large_acid": 1,
+    "creature_large_crusher": 1,
+    "creature_large_carrier": 1,
+    "creature_large_eel": 1
+  },
+  "behavior_counts": {
+    "predator": 14,
+    "prey": 25,
+    "monster": 1
+  },
+  "variants": [
+    {
+      "id": "black_bear",
+      "pointer": "/definitions/0",
+      "definition_sha256": "98c868456d1bd952699ee7102b12391d3715c2112ff700d467f58e0867d7579e",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "predator",
+        "explicit": true
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 1,
+        "move_speed_crouch": 0.7,
+        "move_speed_walk": 2.2,
+        "move_speed_run": 8.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 3.0,
+        "attack_damage": 0.15,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 300.0
+      },
+      "defaulted_fields": [
+        "spawn_group_size",
+        "move_speed_swim",
+        "attack_jump_force"
+      ]
+    },
+    {
+      "id": "bald_eagle",
+      "pointer": "/definitions/1",
+      "definition_sha256": "8a51e4a45e1a6680960d67af125ef01005af3d34b2b4a1d7d5558cf8aabc7fec",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "bird",
+        "explicit": true
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 4.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 0.8,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "opossum",
+      "pointer": "/definitions/2",
+      "definition_sha256": "069f1b79c5a932b759430e6a5619140301b8894b5899711145a3a562ff805ab3",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 3,
+        "move_speed_crouch": 1.0,
+        "move_speed_walk": 1.6,
+        "move_speed_run": 4.5,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 0.4,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "alaska_mountain_goat",
+      "pointer": "/definitions/3",
+      "definition_sha256": "316c27260ceeb7d52c33b96bc65dbe78e9b882aff9ad34a2106d18b58148e20a",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 6.5,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 1.0,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "maximum_blood",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "alaska_reindeer",
+      "pointer": "/definitions/4",
+      "definition_sha256": "119d48a264194322ec48636b4c7606dc258492f4b8d543fcf60514c78e6ac21d",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 7.5,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 2.0,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "arctic_fox",
+      "pointer": "/definitions/5",
+      "definition_sha256": "4a4e1fccad37247694123a3dd4acd6f38eebf246d98bce47f5ad1e2013f3994e",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 6.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 1.0,
+        "attack_damage": 0.025,
+        "attack_jump_force": 100.0,
+        "attack_knockback": 200.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_run",
+        "move_speed_swim",
+        "maximum_blood"
+      ]
+    },
+    {
+      "id": "bighorn_sheep",
+      "pointer": "/definitions/6",
+      "definition_sha256": "c9ae4a812f28ab4e93ed5cb090003c9228ff4d741d0e93d41d0f743ca3411c8a",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 5,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 7.5,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 1.0,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "maximum_blood",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "black_tailed_deer",
+      "pointer": "/definitions/7",
+      "definition_sha256": "ac64d1c6abf77d9d6a3416afa3e669455095fcec843a7296ec499648267ba335",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 5,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 8.5,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 2.0,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "bobcat",
+      "pointer": "/definitions/8",
+      "definition_sha256": "8e01b568c8ec560d1a773c1f595cc24b27f692f62ae5d3098bd18bb502f7688c",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "predator",
+        "explicit": true
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 1,
+        "move_speed_crouch": 0.7,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 7.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 1.5,
+        "attack_damage": 0.1,
+        "attack_jump_force": 100.0,
+        "attack_knockback": 200.0
+      },
+      "defaulted_fields": [
+        "spawn_group_size",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage"
+      ]
+    },
+    {
+      "id": "canada_goose",
+      "pointer": "/definitions/9",
+      "definition_sha256": "88de230775f705538d99005ccb02475aa98b5e0d9a9289e1f7c8c433a46a3209",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "bird",
+        "explicit": true
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 4.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 0.8,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "coyote",
+      "pointer": "/definitions/10",
+      "definition_sha256": "554ef79681d61e5a7e978edbd29803400cfe60049eac1e2cfd43e1957889d48a",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "predator",
+        "explicit": true
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 8.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 1.5,
+        "attack_damage": 0.05,
+        "attack_jump_force": 100.0,
+        "attack_knockback": 200.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim"
+      ]
+    },
+    {
+      "id": "golden_eagle",
+      "pointer": "/definitions/11",
+      "definition_sha256": "12ce922fcac0042da628a9e6144c741312eeae02ffec41152aabb6127012fa03",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "bird",
+        "explicit": true
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 4.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 0.8,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "gray_fox",
+      "pointer": "/definitions/12",
+      "definition_sha256": "ad0d9303312d38127febe1a5765cda763a892d105af8026022df49232820e0f6",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 6.5,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 0.8,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "grizzly_bear",
+      "pointer": "/definitions/13",
+      "definition_sha256": "21d7090fd6c1a020b112f87be58794614860c94b2b9473b1d33b788f6e4a2ae2",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "predator",
+        "explicit": true
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.5,
+        "move_speed_run": 9.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 4.0,
+        "attack_damage": 0.2,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 300.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_swim",
+        "attack_jump_force"
+      ]
+    },
+    {
+      "id": "horned_puffin",
+      "pointer": "/definitions/14",
+      "definition_sha256": "eb3a9e9ac77fdec74bd50051d86cee5795f729aa6be4c5af652416e75fa9e029",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "bird",
+        "explicit": true
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 4.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 0.8,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "interior_wolf",
+      "pointer": "/definitions/15",
+      "definition_sha256": "de0b6a2559d3342647f9313ea5ecf2917997cdc8fd6329b8739add98517f4b0f",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "predator",
+        "explicit": true
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 5,
+        "move_speed_crouch": 0.7,
+        "move_speed_walk": 2.3,
+        "move_speed_run": 8.5,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 1.5,
+        "attack_damage": 0.1,
+        "attack_jump_force": 150.0,
+        "attack_knockback": 300.0
+      },
+      "defaulted_fields": [
+        "move_speed_swim",
+        "attack_damage"
+      ]
+    },
+    {
+      "id": "moose",
+      "pointer": "/definitions/16",
+      "definition_sha256": "3831c7382af0fa9859253c4eb829efc2b2f1f84aed97121d3d3303524fb3153e",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 7.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 3.0,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "mountain_lion",
+      "pointer": "/definitions/17",
+      "definition_sha256": "16290eb2d6e2165b05b74b7e1a2f6d92529c6a8a2c6c492c6760dac1b95f82e7",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "predator",
+        "explicit": true
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.8,
+        "move_speed_walk": 2.3,
+        "move_speed_run": 9.5,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 1.5,
+        "attack_damage": 0.15,
+        "attack_jump_force": 150.0,
+        "attack_knockback": 300.0
+      },
+      "defaulted_fields": [
+        "move_speed_swim"
+      ]
+    },
+    {
+      "id": "musk_ox",
+      "pointer": "/definitions/18",
+      "definition_sha256": "255bf99e44477ebef05e55054162df798afa40a4c7ab1a9369bb8347893a16bb",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 6.5,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 2.5,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "osprey",
+      "pointer": "/definitions/19",
+      "definition_sha256": "8d40dc88b41dface5b40eb788a7afc590acbb6adb5e3e7169de628313a575be6",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "bird",
+        "explicit": true
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 4.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 0.8,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "peccary",
+      "pointer": "/definitions/20",
+      "definition_sha256": "9a660d042c2e251fec84bd5fd68c5adbeef20b10d2c744f543b8ee748f9fad95",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 3,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 6.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 1.5,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_run",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "pileated_woodpecker",
+      "pointer": "/definitions/21",
+      "definition_sha256": "4059ee61edd9457e2df7a35472cc0f9022eb36cb4e008d599fde66ab750a7b7e",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "bird",
+        "explicit": true
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 4.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 0.8,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "polar_bear",
+      "pointer": "/definitions/22",
+      "definition_sha256": "0d760f7c72b04d2b6d999d21953936ca4ede23b0ed67b5906655bd41af95a577",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "predator",
+        "explicit": true
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 7.5,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 4.0,
+        "attack_damage": 0.25,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 300.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_jump_force"
+      ]
+    },
+    {
+      "id": "raccoon",
+      "pointer": "/definitions/23",
+      "definition_sha256": "c4ca9948926908bf3cee14da22025e4cfd11a613b95b4a2b44dbe18950ba9d77",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 5.5,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 0.8,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "red_fox",
+      "pointer": "/definitions/24",
+      "definition_sha256": "866dd86f5dc6eeb46b19fc0e5bef8cc25fb0e5826f35da0b0ca9494e74a56e4f",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 6.5,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 0.8,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "red_tailed_hawk",
+      "pointer": "/definitions/25",
+      "definition_sha256": "bbb2f920b03aba65c34f1d6ba176b23505d22c332d1613ddf747bad849453402",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "bird",
+        "explicit": true
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 4.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 0.8,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "ringtail_cat",
+      "pointer": "/definitions/26",
+      "definition_sha256": "3d01f9db5188bb1e4cc654c7f4b322ff6a3fbce0d653b864d4b3fcddb9365055",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 6.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 0.4,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_run",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "roosevelt_elk",
+      "pointer": "/definitions/27",
+      "definition_sha256": "15417c077c41d17677d245bab955c2f72ac1f7adb0c53e295ea59b80f56494a0",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.3,
+        "move_speed_run": 8.5,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 3.0,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "spotted_owl",
+      "pointer": "/definitions/28",
+      "definition_sha256": "4a5433e3de6601d25b46c6f5cda0682531e8917fd0a01524f824611677d58f73",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "bird",
+        "explicit": true
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 4.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 0.8,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "turkey_vulture",
+      "pointer": "/definitions/29",
+      "definition_sha256": "aac3fcc811a5da7f5b3049c90b50e82ade39da11ddbe4f5700149f7f00c4f2d6",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "bird",
+        "explicit": true
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 4.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 0.8,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "white_shepherd",
+      "pointer": "/definitions/30",
+      "definition_sha256": "ae4d498fb308cc1a3b06472de964117e5f162ea6df2d5dd025fdffd2ead51a87",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 7.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 0.8,
+        "attack_damage": 0.05,
+        "attack_jump_force": 100.0,
+        "attack_knockback": 200.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim"
+      ]
+    },
+    {
+      "id": "white_tailed_kite",
+      "pointer": "/definitions/31",
+      "definition_sha256": "398f247f76b0ded238c7c83d175e7e0be65e2f7d455db8a7903a6efdfaf0d2c2",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "prey",
+        "explicit": false
+      },
+      "animator": {
+        "value": "bird",
+        "explicit": true
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 0.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 4.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 0.8,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 600.0
+      },
+      "defaulted_fields": [
+        "move_speed_crouch",
+        "move_speed_walk",
+        "move_speed_swim",
+        "attack_damage",
+        "attack_jump_force",
+        "attack_knockback"
+      ]
+    },
+    {
+      "id": "monster_s",
+      "pointer": "/definitions/32",
+      "definition_sha256": "34c1f75e70d2bd40a610b7dca9ad777d4881e87a0a59206b6063ac331c11138f",
+      "actor_type": {
+        "value": "creature_regular",
+        "explicit": false,
+        "factory_name": "server_scene.actor_creature_regular",
+        "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f"
+      },
+      "behavior": {
+        "value": "monster",
+        "explicit": true
+      },
+      "animator": {
+        "value": "quadruped_tail",
+        "explicit": true
+      },
+      "selected_values": {
+        "spawn_group_size": 1,
+        "move_speed_crouch": 1.5,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 8.0,
+        "move_speed_swim": 24.0,
+        "maximum_blood": 48.0,
+        "attack_damage": 0.2,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 300.0
+      },
+      "defaulted_fields": [
+        "spawn_group_size",
+        "move_speed_walk",
+        "attack_jump_force"
+      ]
+    },
+    {
+      "id": "monster_m",
+      "pointer": "/definitions/33",
+      "definition_sha256": "634b95de2346c0bec3ace98452c5a3361c8ab07cac26b3954e4751e5b79269e3",
+      "actor_type": {
+        "value": "creature_large",
+        "explicit": true,
+        "factory_name": "server_scene.actor_creature_large",
+        "descriptor_sha256": "ad93a430c11c95833ef7d07ebe1cc09eeebc19495628e5184e9c37e6b81fea9c"
+      },
+      "behavior": {
+        "value": "predator",
+        "explicit": true
+      },
+      "animator": {
+        "value": "quadruped_tail",
+        "explicit": true
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 1.5,
+        "move_speed_walk": 3.0,
+        "move_speed_run": 5.0,
+        "move_speed_swim": 2.0,
+        "maximum_blood": 60.0,
+        "attack_damage": 0.5,
+        "attack_jump_force": 300.0,
+        "attack_knockback": 400.0
+      },
+      "defaulted_fields": [
+        "move_speed_swim"
+      ]
+    },
+    {
+      "id": "monster_centipede",
+      "pointer": "/definitions/34",
+      "definition_sha256": "54541fe52be0a56f432387b92429fccaa8e15795e048381bfdccbc2e4d6a76b1",
+      "actor_type": {
+        "value": "creature_large_centipede",
+        "explicit": true,
+        "factory_name": "server_scene.actor_creature_large_centipede",
+        "descriptor_sha256": "0abb59d21459842583373963e9808b262aa414cbe6f2e282715ea26c6eceed0d"
+      },
+      "behavior": {
+        "value": "predator",
+        "explicit": true
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 2.0,
+        "move_speed_walk": 5.0,
+        "move_speed_run": 9.0,
+        "move_speed_swim": 30.0,
+        "maximum_blood": 60.0,
+        "attack_damage": 1.0,
+        "attack_jump_force": 400.0,
+        "attack_knockback": 400.0
+      },
+      "defaulted_fields": []
+    },
+    {
+      "id": "monster_burrower",
+      "pointer": "/definitions/35",
+      "definition_sha256": "62241a523596b34a0f93973d145ed897a3b3445645880e45998e78f8311d5783",
+      "actor_type": {
+        "value": "creature_large_burrower",
+        "explicit": true,
+        "factory_name": "server_scene.actor_creature_large_burrower",
+        "descriptor_sha256": "2c7d18e73ad8a26dc09fab81fb7964b82d221464f91a0696ceb498d5f117d9cf"
+      },
+      "behavior": {
+        "value": "predator",
+        "explicit": true
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 2.0,
+        "move_speed_walk": 5.0,
+        "move_speed_run": 9.0,
+        "move_speed_swim": 40.0,
+        "maximum_blood": 60.0,
+        "attack_damage": 1.0,
+        "attack_jump_force": 400.0,
+        "attack_knockback": 400.0
+      },
+      "defaulted_fields": []
+    },
+    {
+      "id": "monster_acid",
+      "pointer": "/definitions/36",
+      "definition_sha256": "ca0661d32ad7fbbdc6a0883f06e0ecc619a7cd17991fbce7588ae901089dd78e",
+      "actor_type": {
+        "value": "creature_large_acid",
+        "explicit": true,
+        "factory_name": "server_scene.actor_creature_large_acid",
+        "descriptor_sha256": "54d7aa3b544f63a0cddfd7cf5e1415ebe0415b36b73f7aab22436405bcbf7ff4"
+      },
+      "behavior": {
+        "value": "predator",
+        "explicit": true
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 2.0,
+        "move_speed_walk": 5.0,
+        "move_speed_run": 9.0,
+        "move_speed_swim": 30.0,
+        "maximum_blood": 60.0,
+        "attack_damage": 0.1,
+        "attack_jump_force": 200.0,
+        "attack_knockback": 200.0
+      },
+      "defaulted_fields": [
+        "attack_damage",
+        "attack_jump_force"
+      ]
+    },
+    {
+      "id": "monster_crusher",
+      "pointer": "/definitions/37",
+      "definition_sha256": "7e5807c7de9e99c51a73d8b6351b73d10e809d52738166fe31b18158e59a07e1",
+      "actor_type": {
+        "value": "creature_large_crusher",
+        "explicit": true,
+        "factory_name": "server_scene.actor_creature_large_crusher",
+        "descriptor_sha256": "33056d595fcabc2e8ebd86a20394a4fb32aae6e9b39d7752a2fa8d825b803785"
+      },
+      "behavior": {
+        "value": "predator",
+        "explicit": true
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 2.0,
+        "move_speed_walk": 3.0,
+        "move_speed_run": 5.0,
+        "move_speed_swim": 30.0,
+        "maximum_blood": 60.0,
+        "attack_damage": 1.0,
+        "attack_jump_force": 400.0,
+        "attack_knockback": 400.0
+      },
+      "defaulted_fields": []
+    },
+    {
+      "id": "monster_carrier",
+      "pointer": "/definitions/38",
+      "definition_sha256": "31a40e0a0e030f12a729db193770e72cf688f6e0f826cc9b86494f112a8bae9e",
+      "actor_type": {
+        "value": "creature_large_carrier",
+        "explicit": true,
+        "factory_name": "server_scene.actor_creature_large_carrier",
+        "descriptor_sha256": "a5df0ce5fa22205f73025f6c7d46f0e577cd10121debb2da288e5fdaab0e4a1b"
+      },
+      "behavior": {
+        "value": "predator",
+        "explicit": true
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 1.0,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 3.0,
+        "move_speed_swim": 20.0,
+        "maximum_blood": 60.0,
+        "attack_damage": 1.0,
+        "attack_jump_force": 400.0,
+        "attack_knockback": 400.0
+      },
+      "defaulted_fields": [
+        "move_speed_walk"
+      ]
+    },
+    {
+      "id": "monster_eel",
+      "pointer": "/definitions/39",
+      "definition_sha256": "b334b05a96f16b8a80045bd840103271065f4060c1064723c6afc29508483665",
+      "actor_type": {
+        "value": "creature_large_eel",
+        "explicit": true,
+        "factory_name": "server_scene.actor_creature_large_eel",
+        "descriptor_sha256": "2aae49947e81caa35ccf719b41a937e3a5b902745da9d16b8afcaaea1d9f3ac4"
+      },
+      "behavior": {
+        "value": "predator",
+        "explicit": true
+      },
+      "animator": {
+        "value": "quadruped",
+        "explicit": false
+      },
+      "selected_values": {
+        "spawn_group_size": 0,
+        "move_speed_crouch": 1.0,
+        "move_speed_walk": 2.0,
+        "move_speed_run": 3.0,
+        "move_speed_swim": 20.0,
+        "maximum_blood": 60.0,
+        "attack_damage": 1.0,
+        "attack_jump_force": 400.0,
+        "attack_knockback": 400.0
+      },
+      "defaulted_fields": [
+        "move_speed_walk"
+      ]
+    }
+  ],
+  "limits": "Selected valid shipped literals and explicit parser defaults reconstructed. Factory constructs these names; descriptors exist. No constructor/physics/AI/lifecycle completion or runtime acceptance certificate.",
+  "complete_behavior_review": false
+}

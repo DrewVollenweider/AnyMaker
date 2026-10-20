@@ -1,5 +1,7 @@
 # Anymaker engineering knowledge — start here
 
+Newest research: [creatures, sensing and ambient spawning](research/CREATURES-SENSING-SPAWN-20261020.md). All 40 creature definitions have selected factory/default records. Sensing, sight, spawn pools and placement/despawn gates are traced; complete brains/combat/navigation remain open. Reader: 1,228 functions; all 159 research tests pass.
+
 Newest research: [survival, clothing, damage and scene scheduling](research/SURVIVAL-SCHEDULE-20261020.md). New findings distinguish authority/eligibility gates, 61-call condition cadence, 50% vital warnings, full-precision internal reserves, stamina edges and separate rain/wind protection. Reader: 1,191 functions; all 151 research tests pass. Full-game review remains incomplete.
 
 Newest research: [sensor readings and data-network discovery](research/SENSORS-DATA-20261020.md). This traces mounted sensor axes, raw per-update acceleration, gyro/compass behavior, pressure conversion, data discovery and pointer-backed script bindings. Reader: 1,129 functions; research suite: 143 tests. Full-game semantic review remains incomplete.

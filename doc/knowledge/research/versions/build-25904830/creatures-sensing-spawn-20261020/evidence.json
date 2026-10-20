@@ -1,0 +1,1359 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "() creature_definition.parse_json (creature_definition, json.parser, json.node)",
+      "signature_offset": 22111213,
+      "code_offset": 22112739,
+      "code_size": 9808,
+      "code_sha256": "38216f716bd48b87806dffa0c578bf8cb45062e3783a7ab630e47edc53304e1a"
+    },
+    {
+      "signature": "() ctor (creature_definition)",
+      "signature_offset": 23278248,
+      "code_offset": 23278556,
+      "code_size": 1112,
+      "code_sha256": "15d193e87bf682b540800055e6228f65e545f660f96fc9e07b2b3b1de091a27f"
+    },
+    {
+      "signature": "() g_max_spawned_actors.$ctor ()",
+      "signature_offset": 29077943,
+      "code_offset": 29078023,
+      "code_size": 24,
+      "code_sha256": "dda346c5b89c057dfd79698b4df15d1d5ebec409acfd561bbc70c1cdad585612"
+    },
+    {
+      "signature": "() g_spawn_creature_exclusion_range.$ctor ()",
+      "signature_offset": 29091692,
+      "code_offset": 29091796,
+      "code_size": 32,
+      "code_sha256": "16d3b56b2befeb5eb6706b48d9507037d31f37724dadc64ae56c02af7f6efbbc"
+    },
+    {
+      "signature": "() g_time_dawn.$ctor ()",
+      "signature_offset": 29105238,
+      "code_offset": 29105300,
+      "code_size": 32,
+      "code_sha256": "abed1b60379f49acf15f9680fff27eb64220a7fa2fdbdac136c1bf99df80f11e"
+    },
+    {
+      "signature": "() g_time_dusk.$ctor ()",
+      "signature_offset": 29105564,
+      "code_offset": 29105626,
+      "code_size": 32,
+      "code_sha256": "505d303c91f0eeb7237f0a5c2538276e604b99fa8afb9b28e9e2ef85d8caa55f"
+    },
+    {
+      "signature": "(server_scene.actor_inputs) server_scene.actor.ai_locomotion.tick (server_scene.actor.ai_locomotion, server_scene.actor, server_scene, const navigation.navmesh)",
+      "signature_offset": 40992808,
+      "code_offset": 40994284,
+      "code_size": 712,
+      "code_sha256": "edfeb982b9c40c921e1af4203119d7ff10156e39069a0ba395139bdf7d25a7d1"
+    },
+    {
+      "signature": "() server_scene.actor.ai_target_sensor._apply_visible_audible_dist_modifier (server_scene.actor.ai_target_sensor, const server_scene.actor, f64, f64)",
+      "signature_offset": 40995772,
+      "code_offset": 40996111,
+      "code_size": 184,
+      "code_sha256": "362934f2f2f6f03e8415a964694ea75245108c3105518fb273c92268e426004f"
+    },
+    {
+      "signature": "(bool) server_scene.actor.ai_target_sensor._get_is_sensable_actor (const server_scene.actor.ai_target_sensor, const server_scene.actor, const server_scene.actor, const bitset)",
+      "signature_offset": 40996690,
+      "code_offset": 40997510,
+      "code_size": 2168,
+      "code_sha256": "4d5cbc00d74c232c1d4258c57a1bef076c2a6f5a407c36dfac8957931cba3e67"
+    },
+    {
+      "signature": "(bool) server_scene.actor.ai_target_sensor._get_is_sensable_vehicle (const server_scene.actor.ai_target_sensor, const server_scene.actor, const server_scene.vehicle, const server_scene, const bitset)",
+      "signature_offset": 41000323,
+      "code_offset": 41000881,
+      "code_size": 352,
+      "code_sha256": "1a2886c0a8c66a817c637c419a3a2df5c083b6d71566675ddeb90dcc70572d0d"
+    },
+    {
+      "signature": "() server_scene.actor.ai_target_sensor.begin (server_scene.actor.ai_target_sensor)",
+      "signature_offset": 41001675,
+      "code_offset": 41001882,
+      "code_size": 96,
+      "code_sha256": "da2668a58a069916bb15ccc8708d1b79ba6d1e7d8453fa2d20b51515a29bd5b0"
+    },
+    {
+      "signature": "(bool) server_scene.actor.ai_target_sensor.get_is_vehicle_hostile (const server_scene.vehicle, const server_scene)",
+      "signature_offset": 41008877,
+      "code_offset": 41010048,
+      "code_size": 784,
+      "code_sha256": "3ba3833c0da1acb849e1b4018d95397bc62adde2ab58b63125d017c62a0d1db1"
+    },
+    {
+      "signature": "() server_scene.actor.ai_target_sensor.get_sensed_targets (server_scene.actor.ai_target_sensor, server_scene, server_scene.actor, const f64, const f64, const bitset, server_scene.actor.ai_target_sensor.result)",
+      "signature_offset": 41011428,
+      "code_offset": 41016080,
+      "code_size": 3040,
+      "code_sha256": "69f959521dc8b67ebc7a31d02eb3b3535dc53ff61e9da9967b7d6983fa5c2483"
+    },
+    {
+      "signature": "() server_scene.actor.ai_target_sensor.parse_save_data (server_scene.actor.ai_target_sensor, server_scene.save_data.parser)",
+      "signature_offset": 41021523,
+      "code_offset": 41021891,
+      "code_size": 1400,
+      "code_sha256": "dd4aa496a9eeabf505425d9e94a3b3c6d0530d6714c0deb003357ecdf4e95b31"
+    },
+    {
+      "signature": "() server_scene.actor.ai_target_sensor.result._sort_added_target (server_scene.actor.ai_target_sensor.result, vector<server_scene.actor.ai_target_sensor.target>)",
+      "signature_offset": 41031314,
+      "code_offset": 41032042,
+      "code_size": 600,
+      "code_sha256": "cf08529be02474a43335672e91f66d8faacf06c02b55763c288cd77d05b7f944"
+    },
+    {
+      "signature": "() server_scene.actor.ai_target_sensor.result.add_audible_actor (server_scene.actor.ai_target_sensor.result, server_scene.actor, const f64)",
+      "signature_offset": 41033140,
+      "code_offset": 41033673,
+      "code_size": 192,
+      "code_sha256": "b170e94d74290e6c3fff8335588f5d476fe6c73a455e04bcfe6e3c6131c30d8f"
+    },
+    {
+      "signature": "() server_scene.actor.ai_target_sensor.result.add_audible_vehicle (server_scene.actor.ai_target_sensor.result, server_scene.vehicle, const f64)",
+      "signature_offset": 41034297,
+      "code_offset": 41034834,
+      "code_size": 192,
+      "code_sha256": "8cbaec2a93e0a863363242d21249da4f03b7c1f78c1f1b1b2621edad1f57eeef"
+    },
+    {
+      "signature": "() server_scene.actor.ai_target_sensor.result.add_visible_actor (server_scene.actor.ai_target_sensor.result, server_scene.actor, const f64)",
+      "signature_offset": 41035464,
+      "code_offset": 41035997,
+      "code_size": 192,
+      "code_sha256": "585920d223963379f716f76307ef0b24de6874d8db1d11396a566ab7586d7e72"
+    },
+    {
+      "signature": "() server_scene.actor.ai_target_sensor.result.add_visible_vehicle (server_scene.actor.ai_target_sensor.result, server_scene.vehicle, const f64)",
+      "signature_offset": 41036621,
+      "code_offset": 41037158,
+      "code_size": 192,
+      "code_sha256": "bb1c089097680f7ff771fe50019a47c9ac5eeadecfb2f6cfd203d46d23baa802"
+    },
+    {
+      "signature": "() server_scene.actor.ai_target_sensor.tick (server_scene.actor.ai_target_sensor, server_scene, server_scene.actor, const f64, const f64)",
+      "signature_offset": 41037788,
+      "code_offset": 41039448,
+      "code_size": 1232,
+      "code_sha256": "1d2b8288ba7ddda26e8999ca546c03defd48c876a7f1ef50f297bb737ee85684"
+    },
+    {
+      "signature": "() server_scene.actor.ai_utility.calculate_actor_sense_distance (const f64, const f64, const f64, const f64, const bool, server_scene.actor, f64, f64)",
+      "signature_offset": 41046647,
+      "code_offset": 41047223,
+      "code_size": 1368,
+      "code_sha256": "eb30b65008ef037c46d42bd72a249dbad7dcd7b89bb6be0375064abeef428f0e"
+    },
+    {
+      "signature": "() server_scene.actor.ai_utility.calculate_vehicle_sense_distance (const f64, const f64, const f64, const f64, const bool, server_scene.vehicle, f64, f64)",
+      "signature_offset": 41049785,
+      "code_offset": 41050129,
+      "code_size": 456,
+      "code_sha256": "ef4d1eb92d1a96e6af000bead27fd454a74cc5e44d6ef912438cf4e7570bf4f4"
+    },
+    {
+      "signature": "(f64) server_scene.actor.ai_utility.dist_sq_to_vehicle (const vec3, const server_scene.vehicle)",
+      "signature_offset": 41051234,
+      "code_offset": 41051673,
+      "code_size": 304,
+      "code_sha256": "5eb8112a0f3f84ca0fe3e50f178ee532cbfbbe6ac0f4202b40e6c1b58b3a02d5"
+    },
+    {
+      "signature": "(ptr<server_scene.actor_creature>) server_scene.actor.container.create_creature (server_scene.actor.container, server_scene, const creature_definition, const mat34)",
+      "signature_offset": 41096209,
+      "code_offset": 41097191,
+      "code_size": 928,
+      "code_sha256": "dfdf8b6274236195f3921e0391b885e4c087eff7b30cd364746a4f464b50f16e"
+    },
+    {
+      "signature": "(bool) server_scene.actor.get_is_unobstructed (const server_scene.actor, const physics.scene, const server_scene, const vec3)",
+      "signature_offset": 41208900,
+      "code_offset": 41211025,
+      "code_size": 3488,
+      "code_sha256": "623d136aa05da5c3edc5b3ba7236c940283578554c86c165a59723d02bbd2174"
+    },
+    {
+      "signature": "(bool) server_scene.actor.get_is_unobstructed (const server_scene.actor, const physics.scene, const server_scene, const server_scene.vehicle)",
+      "signature_offset": 41216090,
+      "code_offset": 41218111,
+      "code_size": 3456,
+      "code_sha256": "a3b2502a6f35002316d39273afa2c36590c3d5b9a9db75f72ebdec53185e37e4"
+    },
+    {
+      "signature": "(bool) server_scene.actor.get_is_within_view_and_unobstructed (const server_scene.actor, const physics.scene, const server_scene, const vec3)",
+      "signature_offset": 41222974,
+      "code_offset": 41223462,
+      "code_size": 432,
+      "code_sha256": "98fb4e415e8a7dfe03ce63b5ba2a87860350809dacef51f4232fdaa3148b3549"
+    },
+    {
+      "signature": "(bool) server_scene.actor.get_is_within_view_and_unobstructed (const server_scene.actor, const physics.scene, const server_scene, const server_scene.vehicle)",
+      "signature_offset": 41224181,
+      "code_offset": 41224701,
+      "code_size": 440,
+      "code_sha256": "4cd85c0296989d75ba9f9baf7b71ca7eedb71242200a462f163b5114a887bfa0"
+    },
+    {
+      "signature": "(bool) server_scene.actor.get_is_within_view_cone (const server_scene.actor, const vec3)",
+      "signature_offset": 41225443,
+      "code_offset": 41225932,
+      "code_size": 872,
+      "code_sha256": "deb1a11fffd777b86ab2af10c923764bcb5f15bf9167b0ab222d1ec045a37bd4"
+    },
+    {
+      "signature": "(bool) server_scene.actor.get_is_within_view_sphere (const server_scene.actor, const vec3)",
+      "signature_offset": 41227207,
+      "code_offset": 41227458,
+      "code_size": 240,
+      "code_sha256": "0a2bc4f85714cc2b64beb2bb17d392fade8f1c7486f951613ab36f80e80e43f7"
+    },
+    {
+      "signature": "(server_scene.actor_inputs) server_scene.actor_character.ai.tick (server_scene.actor_character.ai, server_scene.actor_character, server, server_scene)",
+      "signature_offset": 41417903,
+      "code_offset": 41419041,
+      "code_size": 424,
+      "code_sha256": "d73f702903458af2316b4eafeeae1b3a605081d961de47fca5b5c4c6cd97a7e4"
+    },
+    {
+      "signature": "() server_scene.actor_character.ai_state_machine.tick (server_scene.actor_character.ai_state_machine, server_scene.actor_character, server_scene.actor.ai_locomotion, server_scene.actor_character.ai_combat_controller, server_scene)",
+      "signature_offset": 41638284,
+      "code_offset": 41639343,
+      "code_size": 496,
+      "code_sha256": "cf2bccc0fe24c5b7e30eef3d9dd3b153ee6bf82fab9219379650f5a3e0e42aae"
+    },
+    {
+      "signature": "(f64) server_scene.actor_zombie.ai_utility.get_visible_audible_dist_modifier (const s32)",
+      "signature_offset": 44016496,
+      "code_offset": 44016604,
+      "code_size": 112,
+      "code_sha256": "094c192b723d74a8d803e08b38d99d1f770cdf6335cb797ba91bd827aefeabf3"
+    },
+    {
+      "signature": "() server_scene.creature_manager._tick_despawn (server_scene.creature_manager, server_scene, const f64)",
+      "signature_offset": 44735368,
+      "code_offset": 44738098,
+      "code_size": 2112,
+      "code_sha256": "80f7bef187c481b02a3890219a4c14727d38d3d29587925b5bb3cb6c0abfba83"
+    },
+    {
+      "signature": "() server_scene.creature_manager._tick_despawn_dome (server_scene.creature_manager, server_scene)",
+      "signature_offset": 44741960,
+      "code_offset": 44744337,
+      "code_size": 1392,
+      "code_sha256": "14a619e1f7f9c46afcde4ae72384d7d2d5aab798b56bda4ae124a52a0f72b3ef"
+    },
+    {
+      "signature": "() server_scene.creature_manager._tick_spawn (server_scene.creature_manager, server_scene, const vector<vec3>, const f64)",
+      "signature_offset": 44746993,
+      "code_offset": 44753872,
+      "code_size": 11648,
+      "code_sha256": "c1f17155572a12a496ca005491280ff64a16b8b93524a7d95493d2dc756fccfc"
+    },
+    {
+      "signature": "() server_scene.creature_manager.tick (server_scene.creature_manager, server_scene, const vector<vec3>)",
+      "signature_offset": 44782964,
+      "code_offset": 44783901,
+      "code_size": 496,
+      "code_sha256": "296cc1b723ac4998f1510d72857d7434659300f335dc07f35af523dbbc4e4f05"
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 22112739,
+      "offset": 22122003,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 22112739,
+      "offset": 22122027,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 22112739,
+      "offset": 22122051,
+      "format": "f64",
+      "bytes": "0000000000001840",
+      "value": 6.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 22112739,
+      "offset": 22122099,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 22112739,
+      "offset": 22122371,
+      "format": "f64",
+      "bytes": "9a9999999999b93f",
+      "value": 0.1,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 22112739,
+      "offset": 22122403,
+      "format": "f64",
+      "bytes": "0000000000006940",
+      "value": 200.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 22112739,
+      "offset": 22122435,
+      "format": "f64",
+      "bytes": "0000000000c08240",
+      "value": 600.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41010048,
+      "offset": 41010808,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41010048,
+      "offset": 41010824,
+      "format": "f64",
+      "bytes": "0000000000001440",
+      "value": 5.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41016080,
+      "offset": 41019104,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41016080,
+      "offset": 41019112,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41047223,
+      "offset": 41048503,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41047223,
+      "offset": 41048511,
+      "format": "f64",
+      "bytes": "0000000000001040",
+      "value": 4.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41047223,
+      "offset": 41048519,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41047223,
+      "offset": 41048527,
+      "format": "f64",
+      "bytes": "666666666666e63f",
+      "value": 0.7,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41047223,
+      "offset": 41048535,
+      "format": "f64",
+      "bytes": "9a9999999999d93f",
+      "value": 0.4,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41047223,
+      "offset": 41048543,
+      "format": "f64",
+      "bytes": "9a9999999999e93f",
+      "value": 0.8,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41047223,
+      "offset": 41048551,
+      "format": "f64",
+      "bytes": "333333333333d33f",
+      "value": 0.3,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41047223,
+      "offset": 41048559,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41047223,
+      "offset": 41048567,
+      "format": "f64",
+      "bytes": "7b14ae47e17a943f",
+      "value": 0.02,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41047223,
+      "offset": 41048575,
+      "format": "f64",
+      "bytes": "0000000000000840",
+      "value": 3.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41047223,
+      "offset": 41048583,
+      "format": "f64",
+      "bytes": "9a9999999999b93f",
+      "value": 0.1,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41050129,
+      "offset": 41050537,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41050129,
+      "offset": 41050545,
+      "format": "f64",
+      "bytes": "666666666666e63f",
+      "value": 0.7,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41050129,
+      "offset": 41050553,
+      "format": "f64",
+      "bytes": "9a9999999999d93f",
+      "value": 0.4,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41050129,
+      "offset": 41050561,
+      "format": "f64",
+      "bytes": "333333333333d33f",
+      "value": 0.3,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41050129,
+      "offset": 41050569,
+      "format": "f64",
+      "bytes": "9a9999999999c93f",
+      "value": 0.2,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41050129,
+      "offset": 41050577,
+      "format": "f64",
+      "bytes": "0000000000000840",
+      "value": 3.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 44016604,
+      "offset": 44016684,
+      "format": "f64",
+      "bytes": "9a9999999999e93f",
+      "value": 0.8,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 44016604,
+      "offset": 44016700,
+      "format": "f64",
+      "bytes": "0000000000002040",
+      "value": 8.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 44016604,
+      "offset": 44016708,
+      "format": "f64",
+      "bytes": "9a9999999999c93f",
+      "value": 0.2,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41225932,
+      "offset": 41226796,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41227458,
+      "offset": 41227690,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41211025,
+      "offset": 41214481,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41218111,
+      "offset": 41221535,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41218111,
+      "offset": 41221543,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 44738098,
+      "offset": 44740202,
+      "format": "f64",
+      "bytes": "00000000000044c0",
+      "value": -40.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765360,
+      "format": "f64",
+      "bytes": "0000000000c06240",
+      "value": 150.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765384,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765392,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765432,
+      "format": "f64",
+      "bytes": "0000000000006040",
+      "value": 128.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765440,
+      "format": "f64",
+      "bytes": "0000000000002040",
+      "value": 8.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765448,
+      "format": "f64",
+      "bytes": "000000000000b040",
+      "value": 4096.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 29091796,
+      "offset": 29091820,
+      "format": "f64",
+      "bytes": "0000000000006940",
+      "value": 200.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 29105300,
+      "offset": 29105324,
+      "format": "f64",
+      "bytes": "000000000000d03f",
+      "value": 0.25,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 29105626,
+      "offset": 29105650,
+      "format": "f64",
+      "bytes": "9a9999999999e93f",
+      "value": 0.8,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 22112739,
+      "offset": 22121891,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 22112739,
+      "offset": 22121979,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 40997510,
+      "offset": 40999662,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 40997510,
+      "offset": 40999666,
+      "format": "s32",
+      "bytes": "04000000",
+      "value": 4,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 40997510,
+      "offset": 40999670,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 40997510,
+      "offset": 40999674,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41000881,
+      "offset": 41001217,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41000881,
+      "offset": 41001221,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41001882,
+      "offset": 41001970,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41001882,
+      "offset": 41001974,
+      "format": "s32",
+      "bytes": "0a000000",
+      "value": 10,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41021891,
+      "offset": 41023155,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41021891,
+      "offset": 41023159,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41021891,
+      "offset": 41023187,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41021891,
+      "offset": 41023263,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41021891,
+      "offset": 41023283,
+      "format": "s32",
+      "bytes": "05000000",
+      "value": 5,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41039448,
+      "offset": 41040656,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41039448,
+      "offset": 41040660,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41039448,
+      "offset": 41040664,
+      "format": "s32",
+      "bytes": "0a000000",
+      "value": 10,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44016604,
+      "offset": 44016692,
+      "format": "s32",
+      "bytes": "09000000",
+      "value": 9,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41211025,
+      "offset": 41214485,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41211025,
+      "offset": 41214489,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41211025,
+      "offset": 41214493,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41211025,
+      "offset": 41214497,
+      "format": "s32",
+      "bytes": "08000000",
+      "value": 8,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41211025,
+      "offset": 41214501,
+      "format": "s32",
+      "bytes": "04000000",
+      "value": 4,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41211025,
+      "offset": 41214505,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41218111,
+      "offset": 41221551,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41218111,
+      "offset": 41221555,
+      "format": "s32",
+      "bytes": "08000000",
+      "value": 8,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41218111,
+      "offset": 41221559,
+      "format": "s32",
+      "bytes": "04000000",
+      "value": 4,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 41218111,
+      "offset": 41221563,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44738098,
+      "offset": 44740194,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765352,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765360,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765368,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765372,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765376,
+      "format": "s32",
+      "bytes": "05000000",
+      "value": 5,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765412,
+      "format": "s32",
+      "bytes": "ab020000",
+      "value": 683,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765416,
+      "format": "s32",
+      "bytes": "59000000",
+      "value": 89,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765420,
+      "format": "s32",
+      "bytes": "0f010000",
+      "value": 271,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765424,
+      "format": "s32",
+      "bytes": "65000000",
+      "value": 101,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765476,
+      "format": "s32",
+      "bytes": "c7000000",
+      "value": 199,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765480,
+      "format": "s32",
+      "bytes": "97030000",
+      "value": 919,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765484,
+      "format": "s32",
+      "bytes": "65020000",
+      "value": 613,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44783901,
+      "offset": 44784381,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44783901,
+      "offset": 44784385,
+      "format": "s32",
+      "bytes": "08000000",
+      "value": 8,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 44783901,
+      "offset": 44784389,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    },
+    {
+      "function_offset": 29078023,
+      "offset": 29078039,
+      "format": "s32",
+      "bytes": "2c010000",
+      "value": 300,
+      "name": "Reviewed enum, count, timer or seed coefficient"
+    }
+  ],
+  "strings": [
+    {
+      "function_offset": 22112739,
+      "offset": 22121934,
+      "text": "quadruped"
+    },
+    {
+      "function_offset": 41097191,
+      "offset": 41098095,
+      "text": "server_scene.actor_"
+    },
+    {
+      "function_offset": 41021891,
+      "offset": 41023131,
+      "text": "cooldown_check_proximity"
+    },
+    {
+      "function_offset": 41021891,
+      "offset": 41023163,
+      "text": "proximity_cooldown_min"
+    },
+    {
+      "function_offset": 41021891,
+      "offset": 41023191,
+      "text": "proximity_cooldown_max"
+    },
+    {
+      "function_offset": 41021891,
+      "offset": 41023214,
+      "text": "timer_check_sensed"
+    },
+    {
+      "function_offset": 41021891,
+      "offset": 41023233,
+      "text": "sense_delay"
+    },
+    {
+      "function_offset": 41021891,
+      "offset": 41023245,
+      "text": "sense_delay_min"
+    },
+    {
+      "function_offset": 41021891,
+      "offset": 41023267,
+      "text": "sense_delay_max"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765400,
+      "text": "tank"
+    },
+    {
+      "function_offset": 44753872,
+      "offset": 44765405,
+      "text": "ambush"
+    }
+  ],
+  "call_examples": [
+    {
+      "function_offset": 41010048,
+      "instruction": 41010694,
+      "bytes": "ff13",
+      "slot_address": 41010896,
+      "kind": 4,
+      "symbol": "(f64) server_scene.actor.ai_utility.dist_sq_to_vehicle (const vec3, const server_scene.vehicle)"
+    },
+    {
+      "function_offset": 41016080,
+      "instruction": 41017425,
+      "bytes": "41ff12",
+      "slot_address": 41019224,
+      "kind": 4,
+      "symbol": "() server_scene.actor.ai_utility.calculate_actor_sense_distance (const f64, const f64, const f64, const f64, const bool, server_scene.actor, f64, f64)"
+    },
+    {
+      "function_offset": 41016080,
+      "instruction": 41017663,
+      "bytes": "ffd6",
+      "slot_address": 41019240,
+      "kind": 6,
+      "symbol": "(bool) server_scene.actor.get_is_within_view_and_unobstructed (const server_scene.actor, const physics.scene, const server_scene, const vec3)"
+    },
+    {
+      "function_offset": 41016080,
+      "instruction": 41018363,
+      "bytes": "ff13",
+      "slot_address": 41019320,
+      "kind": 4,
+      "symbol": "(f64) server_scene.actor.ai_utility.dist_sq_to_vehicle (const vec3, const server_scene.vehicle)"
+    },
+    {
+      "function_offset": 41016080,
+      "instruction": 41018604,
+      "bytes": "41ff12",
+      "slot_address": 41019328,
+      "kind": 4,
+      "symbol": "() server_scene.actor.ai_utility.calculate_vehicle_sense_distance (const f64, const f64, const f64, const f64, const bool, server_scene.vehicle, f64, f64)"
+    },
+    {
+      "function_offset": 41016080,
+      "instruction": 41018844,
+      "bytes": "ffd6",
+      "slot_address": 41019336,
+      "kind": 6,
+      "symbol": "(bool) server_scene.actor.get_is_within_view_and_unobstructed (const server_scene.actor, const physics.scene, const server_scene, const server_scene.vehicle)"
+    },
+    {
+      "function_offset": 41223462,
+      "instruction": 41223582,
+      "bytes": "ffd7",
+      "slot_address": 41223894,
+      "kind": 6,
+      "symbol": "(bool) server_scene.actor.get_is_within_view_cone (const server_scene.actor, const vec3)"
+    },
+    {
+      "function_offset": 41223462,
+      "instruction": 41223663,
+      "bytes": "ffd6",
+      "slot_address": 41223902,
+      "kind": 6,
+      "symbol": "(bool) server_scene.actor.get_is_within_view_sphere (const server_scene.actor, const vec3)"
+    },
+    {
+      "function_offset": 41224701,
+      "instruction": 41224824,
+      "bytes": "ffd7",
+      "slot_address": 41225141,
+      "kind": 6,
+      "symbol": "(bool) server_scene.actor.get_is_within_view_cone (const server_scene.actor, const vec3)"
+    },
+    {
+      "function_offset": 41224701,
+      "instruction": 41224908,
+      "bytes": "ffd6",
+      "slot_address": 41225149,
+      "kind": 6,
+      "symbol": "(bool) server_scene.actor.get_is_within_view_sphere (const server_scene.actor, const vec3)"
+    },
+    {
+      "function_offset": 41419041,
+      "instruction": 41419156,
+      "bytes": "41ff13",
+      "slot_address": 41419465,
+      "kind": 4,
+      "symbol": "() server_scene.actor_character.ai_state_machine.tick (server_scene.actor_character.ai_state_machine, server_scene.actor_character, server_scene.actor.ai_locomotion, server_scene.actor_character.ai_combat_controller, server_scene)"
+    },
+    {
+      "function_offset": 41419041,
+      "instruction": 41419276,
+      "bytes": "ff16",
+      "slot_address": 41419481,
+      "kind": 4,
+      "symbol": "() server_scene.actor_character.ai_combat_controller.tick (server_scene.actor_character.ai_combat_controller, server_scene.actor_character, server, server_scene)"
+    },
+    {
+      "function_offset": 41419041,
+      "instruction": 41419396,
+      "bytes": "ff13",
+      "slot_address": 41419497,
+      "kind": 4,
+      "symbol": "(server_scene.actor_inputs) server_scene.actor.ai_locomotion.tick (server_scene.actor.ai_locomotion, server_scene.actor, server_scene, const navigation.navmesh)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44757461,
+      "bytes": "ff10",
+      "slot_address": 44765840,
+      "kind": 4,
+      "symbol": "(s32) vector<environment_tile.creature_spawn_position>.size (const vector<environment_tile.creature_spawn_position>)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44757693,
+      "bytes": "ff10",
+      "slot_address": 44765840,
+      "kind": 4,
+      "symbol": "(s32) vector<environment_tile.creature_spawn_position>.size (const vector<environment_tile.creature_spawn_position>)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44757791,
+      "bytes": "ff13",
+      "slot_address": 44765864,
+      "kind": 4,
+      "symbol": "(ptr<environment_tile.creature_spawn_position>) operator_aa (const vector<environment_tile.creature_spawn_position>, const s32)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44757819,
+      "bytes": "ff10",
+      "slot_address": 44765872,
+      "kind": 4,
+      "symbol": "() ctor (environment_tile.creature_spawn_position, const environment_tile.creature_spawn_position)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44758193,
+      "bytes": "ff10",
+      "slot_address": 44765920,
+      "kind": 4,
+      "symbol": "() dtor (environment_tile.creature_spawn_position)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44758260,
+      "bytes": "ff10",
+      "slot_address": 44765920,
+      "kind": 4,
+      "symbol": "() dtor (environment_tile.creature_spawn_position)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44758464,
+      "bytes": "ff10",
+      "slot_address": 44765920,
+      "kind": 4,
+      "symbol": "() dtor (environment_tile.creature_spawn_position)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44758569,
+      "bytes": "ff10",
+      "slot_address": 44765920,
+      "kind": 4,
+      "symbol": "() dtor (environment_tile.creature_spawn_position)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44759831,
+      "bytes": "ff10",
+      "slot_address": 44765920,
+      "kind": 4,
+      "symbol": "() dtor (environment_tile.creature_spawn_position)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44760289,
+      "bytes": "ff10",
+      "slot_address": 44765840,
+      "kind": 4,
+      "symbol": "(s32) vector<environment_tile.creature_spawn_position>.size (const vector<environment_tile.creature_spawn_position>)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44760509,
+      "bytes": "ff10",
+      "slot_address": 44765840,
+      "kind": 4,
+      "symbol": "(s32) vector<environment_tile.creature_spawn_position>.size (const vector<environment_tile.creature_spawn_position>)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44760607,
+      "bytes": "ff13",
+      "slot_address": 44765864,
+      "kind": 4,
+      "symbol": "(ptr<environment_tile.creature_spawn_position>) operator_aa (const vector<environment_tile.creature_spawn_position>, const s32)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44760635,
+      "bytes": "ff10",
+      "slot_address": 44765872,
+      "kind": 4,
+      "symbol": "() ctor (environment_tile.creature_spawn_position, const environment_tile.creature_spawn_position)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44760680,
+      "bytes": "ff10",
+      "slot_address": 44765920,
+      "kind": 4,
+      "symbol": "() dtor (environment_tile.creature_spawn_position)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44761215,
+      "bytes": "ff10",
+      "slot_address": 44765920,
+      "kind": 4,
+      "symbol": "() dtor (environment_tile.creature_spawn_position)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44761706,
+      "bytes": "ff10",
+      "slot_address": 44765920,
+      "kind": 4,
+      "symbol": "() dtor (environment_tile.creature_spawn_position)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44762486,
+      "bytes": "ff10",
+      "slot_address": 44765920,
+      "kind": 4,
+      "symbol": "() dtor (environment_tile.creature_spawn_position)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44762972,
+      "bytes": "ff10",
+      "slot_address": 44765840,
+      "kind": 4,
+      "symbol": "(s32) vector<environment_tile.creature_spawn_position>.size (const vector<environment_tile.creature_spawn_position>)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44763176,
+      "bytes": "ff10",
+      "slot_address": 44765840,
+      "kind": 4,
+      "symbol": "(s32) vector<environment_tile.creature_spawn_position>.size (const vector<environment_tile.creature_spawn_position>)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44763274,
+      "bytes": "ff13",
+      "slot_address": 44765864,
+      "kind": 4,
+      "symbol": "(ptr<environment_tile.creature_spawn_position>) operator_aa (const vector<environment_tile.creature_spawn_position>, const s32)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44763302,
+      "bytes": "ff10",
+      "slot_address": 44765872,
+      "kind": 4,
+      "symbol": "() ctor (environment_tile.creature_spawn_position, const environment_tile.creature_spawn_position)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44763347,
+      "bytes": "ff10",
+      "slot_address": 44765920,
+      "kind": 4,
+      "symbol": "() dtor (environment_tile.creature_spawn_position)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44763930,
+      "bytes": "ff10",
+      "slot_address": 44765920,
+      "kind": 4,
+      "symbol": "() dtor (environment_tile.creature_spawn_position)"
+    },
+    {
+      "function_offset": 44753872,
+      "instruction": 44765217,
+      "bytes": "ff10",
+      "slot_address": 44765920,
+      "kind": 4,
+      "symbol": "() dtor (environment_tile.creature_spawn_position)"
+    }
+  ],
+  "limits": "Selected exact identities/bytes; complete AI, combat, navigation, native contracts and lifecycle remain separate requirements."
+}

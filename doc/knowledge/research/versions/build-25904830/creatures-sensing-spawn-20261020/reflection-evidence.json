@@ -1,0 +1,993 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "table": {
+    "offset": 66399263,
+    "end": 82528301,
+    "records": 8084,
+    "sha256": "5d619ecd6c69220d0e873d73e012dd301038f4eb911d859486db58c386b60a8e"
+  },
+  "types": [
+    {
+      "name": "creature_definition",
+      "base": "",
+      "offset": 74427436,
+      "length": 1872,
+      "descriptor_sha256": "0691b63d51fa4a3d75e1033053be47185685d656c43b67a4e87d5ff51c7edd95",
+      "size": 600,
+      "alignment": 8
+    },
+    {
+      "name": "creature_definition.e_actor_type",
+      "base": "",
+      "offset": 74429308,
+      "length": 278,
+      "descriptor_sha256": "b9fc0c814ad257a13fb964b2818daf6e24fd7ede626dafa5eee7fe6719ff85db",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "creature_definition.e_behaviour_type",
+      "base": "",
+      "offset": 74429586,
+      "length": 123,
+      "descriptor_sha256": "3a5cc82989fd8f4b033dcd2949a11f480e8a56e595952d3cfa4d8753a08ed79b",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "zombie_definition",
+      "base": "",
+      "offset": 82369458,
+      "length": 1597,
+      "descriptor_sha256": "5211d8b6ecea1f550e33a0b192ddb7a4ef2be7e116c62eeef8209ffc91f96f00",
+      "size": 544,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.actor",
+      "base": "replication.master.object_events",
+      "offset": 75522095,
+      "length": 12629,
+      "descriptor_sha256": "ba7e24a87ce49445a36bfaa871915693f712c15696616d34a41bb0bade2b9aae",
+      "size": 504,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.actor.ai_target_sensor",
+      "base": "",
+      "offset": 75561912,
+      "length": 610,
+      "descriptor_sha256": "89a94099fec031d33b1d9890af7b61c0977bafb3e981e20f97f794bedc04e75a",
+      "size": 28,
+      "alignment": 4
+    },
+    {
+      "name": "server_scene.actor.ai_target_sensor.e_target_sensor_flags",
+      "base": "",
+      "offset": 75562522,
+      "length": 210,
+      "descriptor_sha256": "26ff06b76bb922e8ccf1e99c997439900939ca54d52d19347880da1997bf47c8",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "server_scene.actor.ai_target_sensor.result",
+      "base": "",
+      "offset": 75563241,
+      "length": 360,
+      "descriptor_sha256": "75349cdb5fef6b3e6f00bfd16bdbcbee10b232f34951acddddf829e1f1baec65",
+      "size": 80,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.actor.ai_target_sensor.target",
+      "base": "",
+      "offset": 75563601,
+      "length": 544,
+      "descriptor_sha256": "ba18b2289e2619db13f0bf715ad8196ca152cd2cb1bdabc125ca4ca31972a9eb",
+      "size": 48,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle",
+      "base": "replication.master.object_events",
+      "offset": 77873717,
+      "length": 15417,
+      "descriptor_sha256": "b43d221735bd8dff64b9163cc3550e77b3e807d74ab7f748e4ded44228a573d1",
+      "size": 2928,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.environment_tile",
+      "base": "",
+      "offset": 76298824,
+      "length": 1357,
+      "descriptor_sha256": "7af22d6cc3905a96fbf3b66b10f44f3063245445237b8f59b5faf3b78e4bb1df",
+      "size": 624,
+      "alignment": 8
+    },
+    {
+      "name": "environment_tile.creature_spawn_position",
+      "base": "",
+      "offset": 74498246,
+      "length": 445,
+      "descriptor_sha256": "40cb349ca1f58933d9e925f724fadd397797a959e987ca3ef7d6da1e138b6dbd",
+      "size": 48,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.peer",
+      "base": "replication.master.object",
+      "offset": 77496344,
+      "length": 1545,
+      "descriptor_sha256": "41bf13d6f175ec890fbb04ac6f77c825a7b0677633822d5c8157a14dcedf7277",
+      "size": 6672,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene",
+      "base": "replication.master.object_events",
+      "offset": 75514302,
+      "length": 7793,
+      "descriptor_sha256": "3ce42513de7e816526344a8090e4df228a98a6c311641c557eee479e72356b3e",
+      "size": 5520,
+      "alignment": 8
+    },
+    {
+      "name": "e_physics_group",
+      "base": "",
+      "offset": 74484529,
+      "length": 188,
+      "descriptor_sha256": "3b3ee4d5e23b21ebaec326ce20be9f0fce65fec2a8aa7689fe725015bca12027",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "e_gamemode",
+      "base": "",
+      "offset": 74454993,
+      "length": 101,
+      "descriptor_sha256": "74202d7256bbe27fe3b2d1a2d90856fa4a805ccb0a3e1be08a30b75c2f841741",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "physics.e_motion_type",
+      "base": "",
+      "offset": 75016615,
+      "length": 111,
+      "descriptor_sha256": "ffa59b2722c2e40411391177a38ad866546ce78e8677b1073b97808a73fe757b",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "server_scene.actor_creature_large",
+      "base": "server_scene.actor_creature_regular",
+      "offset": 75730900,
+      "length": 17012,
+      "descriptor_sha256": "ad93a430c11c95833ef7d07ebe1cc09eeebc19495628e5184e9c37e6b81fea9c",
+      "size": 1768,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.actor_creature_large_acid",
+      "base": "server_scene.actor_creature",
+      "offset": 75747912,
+      "length": 16254,
+      "descriptor_sha256": "54d7aa3b544f63a0cddfd7cf5e1415ebe0415b36b73f7aab22436405bcbf7ff4",
+      "size": 1616,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.actor_creature_large_burrower",
+      "base": "server_scene.actor_creature",
+      "offset": 75769012,
+      "length": 18268,
+      "descriptor_sha256": "2c7d18e73ad8a26dc09fab81fb7964b82d221464f91a0696ceb498d5f117d9cf",
+      "size": 2088,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.actor_creature_large_carrier",
+      "base": "server_scene.actor_creature",
+      "offset": 75816450,
+      "length": 17566,
+      "descriptor_sha256": "a5df0ce5fa22205f73025f6c7d46f0e577cd10121debb2da288e5fdaab0e4a1b",
+      "size": 2032,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.actor_creature_large_centipede",
+      "base": "server_scene.actor_creature",
+      "offset": 75838768,
+      "length": 18181,
+      "descriptor_sha256": "0abb59d21459842583373963e9808b262aa414cbe6f2e282715ea26c6eceed0d",
+      "size": 2760,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.actor_creature_large_crusher",
+      "base": "server_scene.actor_creature",
+      "offset": 75861763,
+      "length": 17458,
+      "descriptor_sha256": "33056d595fcabc2e8ebd86a20394a4fb32aae6e9b39d7752a2fa8d825b803785",
+      "size": 2024,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.actor_creature_large_eel",
+      "base": "server_scene.actor_creature",
+      "offset": 75884001,
+      "length": 18133,
+      "descriptor_sha256": "2aae49947e81caa35ccf719b41a937e3a5b902745da9d16b8afcaaea1d9f3ac4",
+      "size": 2072,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.actor_creature_regular",
+      "base": "server_scene.actor_creature",
+      "offset": 75906906,
+      "length": 16862,
+      "descriptor_sha256": "5448f66492da8e42e77182bea2c5efe8af346c62e309fd0b490f213c1e8a9f2f",
+      "size": 1624,
+      "alignment": 8
+    }
+  ],
+  "enums": [
+    {
+      "type": "creature_definition.e_actor_type",
+      "labels": [
+        "creature_regular",
+        "creature_large",
+        "creature_large_centipede",
+        "creature_large_burrower",
+        "creature_large_acid",
+        "creature_large_crusher",
+        "creature_large_carrier",
+        "creature_large_eel"
+      ]
+    },
+    {
+      "type": "creature_definition.e_behaviour_type",
+      "labels": [
+        "prey",
+        "predator",
+        "monster"
+      ]
+    },
+    {
+      "type": "server_scene.actor.ai_target_sensor.e_target_sensor_flags",
+      "labels": [
+        "sense_characters",
+        "sense_creatures",
+        "sense_zombies",
+        "sense_vehicles",
+        "sense_incapacitated"
+      ]
+    },
+    {
+      "type": "e_physics_group",
+      "labels": [
+        "terrain",
+        "tree",
+        "character",
+        "vehicle",
+        "prop",
+        "item",
+        "ragdoll",
+        "effect",
+        "entity",
+        "rope",
+        "buoyancy_volume"
+      ]
+    },
+    {
+      "type": "e_gamemode",
+      "labels": [
+        "survival",
+        "creative",
+        "sandbox"
+      ]
+    },
+    {
+      "type": "physics.e_motion_type",
+      "labels": [
+        "dynamic",
+        "static",
+        "kinematic"
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "string",
+        "name": "m_id",
+        "offset": 0
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "string",
+        "name": "m_display_name",
+        "offset": 16
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "creature_definition.mesh_anim",
+        "name": "m_mesh_anim",
+        "offset": 32
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "vector<creature_definition.mesh_anim>",
+        "name": "m_mesh_anim_secondary",
+        "offset": 72
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "creature_definition.e_actor_type",
+        "name": "m_actor_type",
+        "offset": 112
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "string",
+        "name": "m_animator_class",
+        "offset": 120
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "creature_definition.e_behaviour_type",
+        "name": "m_behaviour_type",
+        "offset": 136
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_move_speed_crouch",
+        "offset": 144
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_move_speed_walk",
+        "offset": 152
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_move_speed_run",
+        "offset": 160
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_move_speed_swim",
+        "offset": 168
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_anim_factor_crouch",
+        "offset": 176
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_anim_factor_walk",
+        "offset": 184
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_anim_factor_run",
+        "offset": 192
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_spawn_group_size",
+        "offset": 200
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_phys_capsule_radius",
+        "offset": 208
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_phys_capsule_length",
+        "offset": 216
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_phys_compression_max",
+        "offset": 224
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "string",
+        "name": "m_sfx_idle_name",
+        "offset": 232
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "string",
+        "name": "m_sfx_breath_name",
+        "offset": 248
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "string",
+        "name": "m_sfx_alert_name",
+        "offset": 264
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "string",
+        "name": "m_sfx_attack_name",
+        "offset": 280
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "string",
+        "name": "m_sfx_pain_name",
+        "offset": 296
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "string",
+        "name": "m_sfx_perish_name",
+        "offset": 312
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "string",
+        "name": "m_sfx_footstep_walk_name",
+        "offset": 328
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "string",
+        "name": "m_sfx_footstep_run_name",
+        "offset": 344
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_sfx_volume",
+        "offset": 360
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_sfx_pitch",
+        "offset": 368
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_sfx_idle",
+        "offset": 376
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_sfx_breath",
+        "offset": 380
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_sfx_alert",
+        "offset": 384
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_sfx_attack",
+        "offset": 388
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_sfx_pain",
+        "offset": 392
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_sfx_perish",
+        "offset": 396
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_sfx_footstep_walk",
+        "offset": 400
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_sfx_footstep_run",
+        "offset": 404
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_attack_damage",
+        "offset": 408
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_attack_jump_force",
+        "offset": 416
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_attack_knockback",
+        "offset": 424
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_maximum_blood",
+        "offset": 432
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "vec3",
+        "name": "m_eye_shine_offset",
+        "offset": 440
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_eye_shine_scale",
+        "offset": 464
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "color8",
+        "name": "m_eye_shine_color",
+        "offset": 472
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "bool",
+        "name": "m_can_drag_character",
+        "offset": 476
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "vec3",
+        "name": "m_mouth_offset",
+        "offset": 480
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_assigned_id",
+        "offset": 504
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_bone_index_shoulder",
+        "offset": 508
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_bone_index_jaw",
+        "offset": 512
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "vector<s32>",
+        "name": "m_head_bone_indices",
+        "offset": 520
+      }
+    },
+    {
+      "type": "creature_definition",
+      "field": {
+        "type": "vector<s32>",
+        "name": "m_limb_bone_indices",
+        "offset": 560
+      }
+    },
+    {
+      "type": "zombie_definition",
+      "field": {
+        "type": "string",
+        "name": "m_class",
+        "offset": 32
+      }
+    },
+    {
+      "type": "zombie_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_spawn_group_size",
+        "offset": 176
+      }
+    },
+    {
+      "type": "zombie_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_spawn_probability",
+        "offset": 184
+      }
+    },
+    {
+      "type": "zombie_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_spawn_tier",
+        "offset": 192
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "s32",
+        "name": "m_id",
+        "offset": 64
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_sleeping",
+        "offset": 152
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "f64",
+        "name": "m_move_speed",
+        "offset": 312
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "f64",
+        "name": "m_light_volume_factor",
+        "offset": 456
+      }
+    },
+    {
+      "type": "server_scene.actor.ai_target_sensor",
+      "field": {
+        "type": "s32",
+        "name": "_m_cooldown_check_proximity",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.actor.ai_target_sensor",
+      "field": {
+        "type": "s32",
+        "name": "_m_proximity_cooldown_min",
+        "offset": 4
+      }
+    },
+    {
+      "type": "server_scene.actor.ai_target_sensor",
+      "field": {
+        "type": "s32",
+        "name": "_m_proximity_cooldown_max",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.actor.ai_target_sensor",
+      "field": {
+        "type": "s32",
+        "name": "_m_timer_check_sensed",
+        "offset": 12
+      }
+    },
+    {
+      "type": "server_scene.actor.ai_target_sensor",
+      "field": {
+        "type": "s32",
+        "name": "_m_sense_delay",
+        "offset": 16
+      }
+    },
+    {
+      "type": "server_scene.actor.ai_target_sensor",
+      "field": {
+        "type": "s32",
+        "name": "_m_sense_delay_min",
+        "offset": 20
+      }
+    },
+    {
+      "type": "server_scene.actor.ai_target_sensor",
+      "field": {
+        "type": "s32",
+        "name": "_m_sense_delay_max",
+        "offset": 24
+      }
+    },
+    {
+      "type": "server_scene.actor.ai_target_sensor.result",
+      "field": {
+        "type": "vector<server_scene.actor.ai_target_sensor.target>",
+        "name": "m_targets_visible",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.actor.ai_target_sensor.result",
+      "field": {
+        "type": "vector<server_scene.actor.ai_target_sensor.target>",
+        "name": "m_targets_audible",
+        "offset": 40
+      }
+    },
+    {
+      "type": "server_scene.actor.ai_target_sensor.target",
+      "field": {
+        "type": "ptr<server_scene.actor>",
+        "name": "m_actor",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.actor.ai_target_sensor.target",
+      "field": {
+        "type": "ptr<server_scene.vehicle>",
+        "name": "m_vehicle",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.actor.ai_target_sensor.target",
+      "field": {
+        "type": "f64",
+        "name": "m_dist_sq",
+        "offset": 16
+      }
+    },
+    {
+      "type": "server_scene.actor.ai_target_sensor.target",
+      "field": {
+        "type": "vec3",
+        "name": "m_position",
+        "offset": 24
+      }
+    },
+    {
+      "type": "server_scene.vehicle",
+      "field": {
+        "type": "replication.master.property_enum<physics.e_motion_type>",
+        "name": "m_physics_motion_type",
+        "offset": 1440
+      }
+    },
+    {
+      "type": "server_scene.vehicle",
+      "field": {
+        "type": "mat34",
+        "name": "m_transform",
+        "offset": 1512
+      }
+    },
+    {
+      "type": "server_scene.vehicle",
+      "field": {
+        "type": "vec3",
+        "name": "m_vehicle_center",
+        "offset": 1608
+      }
+    },
+    {
+      "type": "server_scene.environment_tile",
+      "field": {
+        "type": "s32",
+        "name": "m_height",
+        "offset": 20
+      }
+    },
+    {
+      "type": "server_scene.environment_tile",
+      "field": {
+        "type": "vec3",
+        "name": "m_nearest_ocean_pos",
+        "offset": 344
+      }
+    },
+    {
+      "type": "server_scene.environment_tile",
+      "field": {
+        "type": "vec3_s32",
+        "name": "m_grid_position",
+        "offset": 368
+      }
+    },
+    {
+      "type": "server_scene.environment_tile",
+      "field": {
+        "type": "vector<environment_tile.creature_spawn_position>",
+        "name": "m_creature_spawn_positions",
+        "offset": 536
+      }
+    },
+    {
+      "type": "environment_tile.creature_spawn_position",
+      "field": {
+        "type": "vec3",
+        "name": "m_position",
+        "offset": 0
+      }
+    },
+    {
+      "type": "environment_tile.creature_spawn_position",
+      "field": {
+        "type": "vec3",
+        "name": "m_ocean_dir",
+        "offset": 24
+      }
+    },
+    {
+      "type": "server_scene.peer",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_authority_actor_id",
+        "offset": 6480
+      }
+    },
+    {
+      "type": "server_scene",
+      "field": {
+        "type": "s32",
+        "name": "m_version",
+        "offset": 64
+      }
+    },
+    {
+      "type": "server_scene",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_world_seed",
+        "offset": 72
+      }
+    },
+    {
+      "type": "server_scene",
+      "field": {
+        "type": "replication.master.property_enum<e_gamemode>",
+        "name": "m_gamemode",
+        "offset": 136
+      }
+    },
+    {
+      "type": "server_scene",
+      "field": {
+        "type": "server_scene.actor.container",
+        "name": "m_actors",
+        "offset": 592
+      }
+    },
+    {
+      "type": "server_scene",
+      "field": {
+        "type": "s32",
+        "name": "m_loot_level",
+        "offset": 5336
+      }
+    }
+  ],
+  "virtuals": []
+}
