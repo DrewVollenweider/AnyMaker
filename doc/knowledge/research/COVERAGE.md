@@ -1,5 +1,7 @@
 # Coverage and gaps
 
+Newest continuation: [sensor/data chains](SENSORS-DATA-20261020.md). Selected sensor getters, mounted-axis calculations, pressure conversion, data-island flood and controller discovery are reviewed. Reader: 1,129 functions/158,494 instructions/901,354 bytes. The existing 143-test suite remains passing; no executable research tool changed in this continuation. Complete native units, controls, compiler, lifecycle and other full-register domains remain unfinished.
+
 Newest continuation: [joints and winches](JOINTS-WINCHES-20261020.md). Selected hinge/mount/latch/rail/tow/winch chains now have source/field evidence and eight arithmetic tests. Reader: 1,110 functions/154,167 checked instructions/877,643 bytes. Suite: 143 tests. This adds reviewed behavior at the stated scope; it does not close all moving joints, loaded states, tool compatibility or other audit domains.
 
 Newest continuation: [hydraulic cylinders, tracks and native raycast ordering](ACTUATORS-TRACKS-RAYCAST-20261020.md). The reader has 1,093 functions/149,791 checked instructions/852,045 bytes and 135 synthetic tests pass. Cylinder chamber/geometry/body cleanup, distinct roller contact and selected raycast sorting/erase paths are reviewed. Full native loader specialization, all actuator families and whole-game semantics remain open. The [previous contact/gas/native checkpoint](CONTACT-FLUIDS-NATIVE-20261020.md) remains applicable at its stated scope.

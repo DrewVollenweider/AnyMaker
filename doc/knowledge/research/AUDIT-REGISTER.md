@@ -1,5 +1,7 @@
 # Full-game audit register
 
+Latest selected findings: [sensors and data discovery](SENSORS-DATA-20261020.md), following [joints and winches](JOINTS-WINCHES-20261020.md). Selected frame/history/unit conversions, data-island topology and controller binding construction are now traced. Full native contracts, input/device paths, cross-body groups, compiler/resolver and lifecycle remain open. Reader access counts do not close whole-game semantic coverage.
+
 Latest selected findings: [hinges, mounts, latches, rails, tow links and winches](JOINTS-WINCHES-20261020.md). Selected connection/cleanup, capture/release, tier suppression, ballscrew motor and winch nominal-length chains are now reviewed. Full lifecycle, loaded/invalid states, interface/tool compatibility and native solver units remain open. The 1,110-function reader is access infrastructure; the full-game audit remains incomplete.
 
 Latest selected findings: [hydraulic cylinders, tracks and raycast ordering](ACTUATORS-TRACKS-RAYCAST-20261020.md), following [contact, gas/thermal and native helpers](CONTACT-FLUIDS-NATIVE-20261020.md). Chamber/geometry/body cleanup, separate roller/sprocket contact and selected native sorting/erase paths are reviewed at their stated scope. Remaining moving joints, full track topology/rendering, network edge cases, native solver/loader and all other domains below stay open. The 1,093-function reader is access infrastructure, not a completion count.

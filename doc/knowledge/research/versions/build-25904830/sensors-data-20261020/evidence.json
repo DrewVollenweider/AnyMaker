@@ -1,0 +1,624 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "(ptr<f64>) server_scene.vehicle_component.acceleration_sensor.get_data_f64 (server_scene.vehicle_component.acceleration_sensor, const string)",
+      "signature_offset": 53455774,
+      "code_offset": 53456086,
+      "code_size": 256,
+      "code_sha256": "1c0e5364f931c61cdd85185e7aea4124d8d2b52f918f504e62cfb3cac86dcace"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.acceleration_sensor.parse_save_data (server_scene.vehicle_component.acceleration_sensor, server_scene.save_data.parser)",
+      "signature_offset": 53458535,
+      "code_offset": 53459190,
+      "code_size": 592,
+      "code_sha256": "869728b68b4e6036d114eb1075f695d8be0680a9fe6d9ffd5ee099fb992fecf1"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.acceleration_sensor.tick (server_scene.vehicle_component.acceleration_sensor, server_scene.vehicle, server_scene)",
+      "signature_offset": 53461363,
+      "code_offset": 53462170,
+      "code_size": 1040,
+      "code_sha256": "60d67ec634d0a8f200dbb86cb8146de036e5eed896dce7b4579f48abb939dd39"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.altitude_sensor.tick (server_scene.vehicle_component.altitude_sensor, server_scene.vehicle, server_scene)",
+      "signature_offset": 53532902,
+      "code_offset": 53533340,
+      "code_size": 456,
+      "code_sha256": "e9eddfb9a5e3d161363c5869ad8ef6df7d2b1d201e829f9d0a72ba37ea69cf8c"
+    },
+    {
+      "signature": "(ptr<f64>) server_scene.vehicle_component.compass_sensor.get_data_f64 (server_scene.vehicle_component.compass_sensor, const string)",
+      "signature_offset": 54178996,
+      "code_offset": 54179298,
+      "code_size": 256,
+      "code_sha256": "719af9374ab69198d0e74ced4b5e7334abb29675f58806d35875a4df67fe1347"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.compass_sensor.tick (server_scene.vehicle_component.compass_sensor, server_scene.vehicle, server_scene)",
+      "signature_offset": 54183977,
+      "code_offset": 54184833,
+      "code_size": 1184,
+      "code_sha256": "d09dd884c3ac8d639b62e84486f4052bd32f99b3819bd60cdbda17d413704f14"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gas_pressure_sensor.tick (server_scene.vehicle_component.gas_pressure_sensor, server_scene.vehicle, server_scene)",
+      "signature_offset": 54810429,
+      "code_offset": 54810751,
+      "code_size": 200,
+      "code_sha256": "e798789948c6fcf12e29782a491ad96b858a62ffd545ce8b543a75950979bb0d"
+    },
+    {
+      "signature": "(ptr<f64>) server_scene.vehicle_component.gas_temperature_sensor.get_data_f64 (server_scene.vehicle_component.gas_temperature_sensor, const string)",
+      "signature_offset": 54874101,
+      "code_offset": 54874419,
+      "code_size": 256,
+      "code_sha256": "afe6214958276e3d634b6a94131034eb805851fe4df87e5c355a8ea8ab138a4c"
+    },
+    {
+      "signature": "(string) server_scene.vehicle_component.get_name (const server_scene.vehicle_component)",
+      "signature_offset": 55083106,
+      "code_offset": 55083474,
+      "code_size": 280,
+      "code_sha256": "1a115708e565ac5e9830083d48b785f3125b85d54acb4a635823b14dac79cd28"
+    },
+    {
+      "signature": "(ptr<f64>) server_scene.vehicle_component.gyro_rotation_sensor.get_data_f64 (server_scene.vehicle_component.gyro_rotation_sensor, const string)",
+      "signature_offset": 55101025,
+      "code_offset": 55101339,
+      "code_size": 248,
+      "code_sha256": "bb320a23b23c19cf48add6699ea0955b886823923ddbb979f3f9bc5f5ebffa73"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gyro_rotation_sensor.tick (server_scene.vehicle_component.gyro_rotation_sensor, server_scene.vehicle, server_scene)",
+      "signature_offset": 55106142,
+      "code_offset": 55106881,
+      "code_size": 936,
+      "code_sha256": "1f27d484ecfb3423f9484b6a561e9e791193064baf1a987bcfe744a7d8bdf10d"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_pressure_sensor.tick (server_scene.vehicle_component.liquid_pressure_sensor, server_scene.vehicle, server_scene)",
+      "signature_offset": 56347376,
+      "code_offset": 56347710,
+      "code_size": 200,
+      "code_sha256": "d3f4a7f3b452288d6b87506fab703b0f1f43cd70803095584806fa3e3762172f"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_temperature_sensor.tick (server_scene.vehicle_component.liquid_temperature_sensor, server_scene.vehicle, server_scene)",
+      "signature_offset": 56421903,
+      "code_offset": 56422218,
+      "code_size": 64,
+      "code_sha256": "18142fd85af995d6832c4d446783f684fbd8cf5035fbeba69a9c45469cb16b72"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.microcontroller.rebuild_data_connections (server_scene.vehicle_component.microcontroller)",
+      "signature_offset": 56768123,
+      "code_offset": 56775897,
+      "code_size": 8304,
+      "code_sha256": "daafe47543c28c29acc7e9fc5b59576dcd849935837335ef10a511676ce27e99"
+    },
+    {
+      "signature": "(ptr<f64>) server_scene.vehicle_component.tilt_sensor.get_data_f64 (server_scene.vehicle_component.tilt_sensor, const string)",
+      "signature_offset": 57719674,
+      "code_offset": 57719970,
+      "code_size": 248,
+      "code_sha256": "7017b195048e60f55ec7ff24cfc782b68107319e398ccc4ccd18b8d1c3ab4d71"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.tilt_sensor.tick (server_scene.vehicle_component.tilt_sensor, server_scene.vehicle, server_scene)",
+      "signature_offset": 57724575,
+      "code_offset": 57725284,
+      "code_size": 864,
+      "code_sha256": "799aca2e740c8b31704ae1fac1837cbfc175495375f11e945489d4ba62f1dad3"
+    },
+    {
+      "signature": "() server_scene.vehicle_data_analogue.reset (server_scene.vehicle_data_analogue)",
+      "signature_offset": 58131505,
+      "code_offset": 58131605,
+      "code_size": 56,
+      "code_sha256": "bc0d54345b9655d239ca6b5ab8a33d0ddc54eb619356c3c6929592b6dbc6850e"
+    },
+    {
+      "signature": "() server_scene.vehicle_data_analogue.set (server_scene.vehicle_data_analogue, const s32, const f64)",
+      "signature_offset": 58131843,
+      "code_offset": 58131963,
+      "code_size": 37,
+      "code_sha256": "90a9b796168638b7753772cd916292afa295b94fd75e7434811c0b14ef360d1a"
+    },
+    {
+      "signature": "() server_scene.vehicle_data_island_group.rebuild_connected_microcontrollers (server_scene.vehicle_data_island_group)",
+      "signature_offset": 58139781,
+      "code_offset": 58142590,
+      "code_size": 1352,
+      "code_sha256": "e39b7640597ad02e0498d2e1604fad922c99259e5c305450806ea731805e07a7"
+    },
+    {
+      "signature": "() server_scene.vehicle_data_node.container._flood_island (server_scene.vehicle_data_node.container, server_scene.vehicle, const s32, server_scene.vehicle_data_island, const array<s32>)",
+      "signature_offset": 58147776,
+      "code_offset": 58150592,
+      "code_size": 2488,
+      "code_sha256": "89cb0c26f6e9c39e33348e45fcac28dfbc8100c0d9dd0daf9fc1169d2479dd13"
+    },
+    {
+      "signature": "() server_scene.vehicle_data_node.container.post_build (server_scene.vehicle_data_node.container)",
+      "signature_offset": 58167001,
+      "code_offset": 58169216,
+      "code_size": 760,
+      "code_sha256": "fc2b0e50a4bb9ae49d6447cf0202ac717716fedf8a4552073152794ed4611fba"
+    },
+    {
+      "signature": "() server_scene.vehicle_data_node.container.pre_build (server_scene.vehicle_data_node.container, server_scene.vehicle, server_scene.connections_manager)",
+      "signature_offset": 58170860,
+      "code_offset": 58177823,
+      "code_size": 6672,
+      "code_sha256": "4ff07972f3eb44f22ee706e2c6fd2ca8ec5460e93f68966ace2def5395dbae2e"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle_data_node.get_is_receive_power (server_scene.vehicle_data_node)",
+      "signature_offset": 58188253,
+      "code_offset": 58188364,
+      "code_size": 121,
+      "code_sha256": "bd700ff2ef5acb46eeda8d57954b26cb4f40fa5bea9b5a27da37fb0b6fed2582"
+    },
+    {
+      "signature": "() server_scene.vehicle_data_node_group._create (server_scene.vehicle_data_node_group, server_scene.vehicle, const ptr<server_scene.vehicle_component>, const bool)",
+      "signature_offset": 58189877,
+      "code_offset": 58190674,
+      "code_size": 1016,
+      "code_sha256": "4481d3c3d7013f57628167686740d57a766f8a71240d44979f8723ed2d406d45"
+    },
+    {
+      "signature": "() server_scene.vehicle_data_node_group.set_distribute_power (server_scene.vehicle_data_node_group, const bool)",
+      "signature_offset": 58199529,
+      "code_offset": 58199899,
+      "code_size": 144,
+      "code_sha256": "42c3de30156403c1ad478c600cfec4717bdc061810998afb8889d0e2cf6e5a72"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_mechanical_node_in.read (const server_scene.vehicle_mechanical_node_in)",
+      "signature_offset": 58908434,
+      "code_offset": 58908552,
+      "code_size": 32,
+      "code_sha256": "de364133812107b782a73a789603324e3cf13d53e181470b463b4e7a164dee3f"
+    },
+    {
+      "signature": "(f64) units.pressure_to_pascals (const f64)",
+      "signature_offset": 61821590,
+      "code_offset": 61821653,
+      "code_size": 48,
+      "code_sha256": "8c77eda5a3358f33c00262e8fbee607271cf37b7e34a09c3d18973ed1917cdbf"
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 53462170,
+      "offset": 53463194,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected sensor/pressure scalar"
+    },
+    {
+      "function_offset": 53462170,
+      "offset": 53463202,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected sensor/pressure scalar"
+    },
+    {
+      "function_offset": 54184833,
+      "offset": 54185993,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected sensor/pressure scalar"
+    },
+    {
+      "function_offset": 54184833,
+      "offset": 54186001,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected sensor/pressure scalar"
+    },
+    {
+      "function_offset": 54184833,
+      "offset": 54186009,
+      "format": "f64",
+      "bytes": "fca9f1d24d62503f",
+      "value": 0.001,
+      "name": "Selected sensor/pressure scalar"
+    },
+    {
+      "function_offset": 55106881,
+      "offset": 55107793,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected sensor/pressure scalar"
+    },
+    {
+      "function_offset": 55106881,
+      "offset": 55107801,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected sensor/pressure scalar"
+    },
+    {
+      "function_offset": 55106881,
+      "offset": 55107809,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Selected sensor/pressure scalar"
+    },
+    {
+      "function_offset": 57725284,
+      "offset": 57726124,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected sensor/pressure scalar"
+    },
+    {
+      "function_offset": 57725284,
+      "offset": 57726132,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected sensor/pressure scalar"
+    },
+    {
+      "function_offset": 57725284,
+      "offset": 57726140,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Selected sensor/pressure scalar"
+    },
+    {
+      "function_offset": 61821653,
+      "offset": 61821693,
+      "format": "f64",
+      "bytes": "000000000024c340",
+      "value": 9800.0,
+      "name": "Selected sensor/pressure scalar"
+    },
+    {
+      "function_offset": 54810751,
+      "offset": 54810943,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected sensor/pressure scalar"
+    },
+    {
+      "function_offset": 56347710,
+      "offset": 56347902,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected sensor/pressure scalar"
+    },
+    {
+      "function_offset": 58131605,
+      "offset": 58131653,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected sensor/pressure scalar"
+    },
+    {
+      "function_offset": 58131605,
+      "offset": 58131645,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 58150592,
+      "offset": 58153072,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 58177823,
+      "offset": 58184479,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 58177823,
+      "offset": 58184483,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 58177823,
+      "offset": 58184487,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 58177823,
+      "offset": 58184491,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 55083474,
+      "offset": 55083746,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 58190674,
+      "offset": 58191674,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 58190674,
+      "offset": 58191678,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 58190674,
+      "offset": 58191682,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 56775897,
+      "offset": 56784169,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 56775897,
+      "offset": 56784173,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 56775897,
+      "offset": 56784177,
+      "format": "s32",
+      "bytes": "04000000",
+      "value": 4,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 56775897,
+      "offset": 56784181,
+      "format": "s32",
+      "bytes": "05000000",
+      "value": 5,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 56775897,
+      "offset": 56784185,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 56775897,
+      "offset": 56784189,
+      "format": "s32",
+      "bytes": "06000000",
+      "value": 6,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 56775897,
+      "offset": 56784193,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 56775897,
+      "offset": 56784197,
+      "format": "s32",
+      "bytes": "07000000",
+      "value": 7,
+      "name": "Selected ID/enum/iteration scalar"
+    },
+    {
+      "function_offset": 58169216,
+      "offset": 58169968,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Selected power state"
+    },
+    {
+      "function_offset": 58169216,
+      "offset": 58169969,
+      "format": "u8",
+      "bytes": "01",
+      "value": 1,
+      "name": "Selected power state"
+    },
+    {
+      "function_offset": 58188364,
+      "offset": 58188484,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Selected power state"
+    }
+  ],
+  "strings": [
+    {
+      "function_offset": 53456086,
+      "offset": 53456326,
+      "text": "acceleration"
+    },
+    {
+      "function_offset": 54179298,
+      "offset": 54179538,
+      "text": "north_angle"
+    },
+    {
+      "function_offset": 55101339,
+      "offset": 55101579,
+      "text": "rps"
+    },
+    {
+      "function_offset": 57719970,
+      "offset": 57720210,
+      "text": "tilt"
+    },
+    {
+      "function_offset": 54874419,
+      "offset": 54874659,
+      "text": "temperature"
+    },
+    {
+      "function_offset": 53459190,
+      "offset": 53459742,
+      "text": "user_defined_alias"
+    },
+    {
+      "function_offset": 53459190,
+      "offset": 53459760,
+      "text": ""
+    },
+    {
+      "function_offset": 53459190,
+      "offset": 53459761,
+      "text": "prev_velocity"
+    }
+  ],
+  "call_examples": [
+    {
+      "function_offset": 53462170,
+      "instruction": 53462285,
+      "bytes": "ff13",
+      "slot_address": 53463218,
+      "kind": 4,
+      "symbol": "(vec3) physics.object.get_linear_velocity (const physics.object)"
+    },
+    {
+      "function_offset": 54810751,
+      "instruction": 54810912,
+      "bytes": "ff10",
+      "slot_address": 54810959,
+      "kind": 4,
+      "symbol": "(f64) units.pressure_to_pascals (const f64)"
+    },
+    {
+      "function_offset": 55106881,
+      "instruction": 55106996,
+      "bytes": "ff13",
+      "slot_address": 55107825,
+      "kind": 4,
+      "symbol": "(vec3) physics.object.get_angular_velocity (const physics.object)"
+    },
+    {
+      "function_offset": 56347710,
+      "instruction": 56347871,
+      "bytes": "ff10",
+      "slot_address": 56347918,
+      "kind": 4,
+      "symbol": "(f64) units.pressure_to_pascals (const f64)"
+    },
+    {
+      "function_offset": 56775897,
+      "instruction": 56781154,
+      "bytes": "ffd0",
+      "slot_address": 56784529,
+      "kind": 6,
+      "symbol": "(ptr<f64>) server_scene.vehicle_component.get_data_f64 (server_scene.vehicle_component, const string)"
+    },
+    {
+      "function_offset": 56775897,
+      "instruction": 56781513,
+      "bytes": "ffd0",
+      "slot_address": 56784529,
+      "kind": 6,
+      "symbol": "(ptr<f64>) server_scene.vehicle_component.get_data_f64 (server_scene.vehicle_component, const string)"
+    },
+    {
+      "function_offset": 56775897,
+      "instruction": 56781667,
+      "bytes": "ffd0",
+      "slot_address": 56784529,
+      "kind": 6,
+      "symbol": "(ptr<f64>) server_scene.vehicle_component.get_data_f64 (server_scene.vehicle_component, const string)"
+    },
+    {
+      "function_offset": 56775897,
+      "instruction": 56782018,
+      "bytes": "ffd0",
+      "slot_address": 56784529,
+      "kind": 6,
+      "symbol": "(ptr<f64>) server_scene.vehicle_component.get_data_f64 (server_scene.vehicle_component, const string)"
+    },
+    {
+      "function_offset": 58142590,
+      "instruction": 58143858,
+      "bytes": "ffd0",
+      "slot_address": 58144094,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.microcontroller.rebuild_data_connections (server_scene.vehicle_component.microcontroller)"
+    },
+    {
+      "function_offset": 58150592,
+      "instruction": 58152622,
+      "bytes": "ffd0",
+      "slot_address": 58153176,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.get_data_flood_nodes (server_scene.vehicle_component, vector<ptr<server_scene.vehicle_data_node>>)"
+    }
+  ],
+  "assembly_examples": [
+    {
+      "function_offset": 55106881,
+      "instruction": 55107710,
+      "bytes": "f20f5ec1",
+      "assembly": "DIVSD XMM0,XMM1"
+    },
+    {
+      "function_offset": 55106881,
+      "instruction": 55107719,
+      "bytes": "f20f118118020000",
+      "assembly": "MOVSD qword ptr [RCX + 0x218],XMM0"
+    }
+  ],
+  "limits": "Selected exact identities/bytes only; native units, complete dispatch/lifecycle and prose are separate claims."
+}

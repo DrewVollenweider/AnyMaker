@@ -1,5 +1,7 @@
 # Whole-game research
 
+Latest continuation: [sensors and data-network discovery](SENSORS-DATA-20261020.md). Read sensor frame/history limits, pressure conversion by 9800, separate data power flags and descriptor-driven microcontroller bindings. The reader has 1,129 functions/158,494 checked instructions/901,354 bytes. Native angle/physics contracts, complete input/resolver/lifecycle and the broader full-game audit remain open.
+
 Latest continuation: [hinges, mounts, latches, rails, tow links and winches](JOINTS-WINCHES-20261020.md). Per-peer tiers, release/capture gates, slider construction, ballscrew motor arithmetic and rope endpoint stretch are traced. The reader has 1,110 functions/154,167 checked instructions/877,643 bytes; all 143 research tests pass. Native solver units and full joint lifecycle remain open, along with the full-game audit.
 
 Latest continuation: [hydraulic cylinders, track contact and native raycast ordering](ACTUATORS-TRACKS-RAYCAST-20261020.md). The reader has 1,093 functions/149,791 checked instructions; 135 synthetic tests pass. New findings cover chamber bounds/update order, cylinder-size geometry, multibody cleanup, distinct roller contact, hit sorting and native generic erase. Loader specialization remains explicit; whole-game semantic review is incomplete.

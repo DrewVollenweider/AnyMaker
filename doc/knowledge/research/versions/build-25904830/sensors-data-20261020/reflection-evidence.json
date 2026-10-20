@@ -1,0 +1,963 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "table": {
+    "offset": 66399263,
+    "end": 82528301,
+    "records": 8084,
+    "sha256": "5d619ecd6c69220d0e873d73e012dd301038f4eb911d859486db58c386b60a8e"
+  },
+  "types": [
+    {
+      "name": "server_scene.vehicle_component.acceleration_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 77935321,
+      "length": 16084,
+      "descriptor_sha256": "c444613b21d4780f7d96b2304d5545310fb4a316b173f1885da48b6c4c0fcada",
+      "size": 568,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gyro_rotation_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 79315778,
+      "length": 16065,
+      "descriptor_sha256": "172cce9cc5fc5bcb4f3c0f5c043c0527b4a51b47227fcffacf1f381350366dc1",
+      "size": 544,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.compass_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 78497568,
+      "length": 15950,
+      "descriptor_sha256": "db77e0cba1d965f21e5e2a38a5f586d318b89940f6a69ae71413afca8d4cf17e",
+      "size": 544,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.tilt_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 81450555,
+      "length": 15877,
+      "descriptor_sha256": "53fa9e6facd3e622cf0deaaf40387cda613cf7134fa342e611b980b7ab4919cc",
+      "size": 544,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_pressure_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 79087286,
+      "length": 16228,
+      "descriptor_sha256": "f0b879310e322f65cf9dd8b7cc6efead0a94b610c9bd83305856ca49b5139f25",
+      "size": 608,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_pressure_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 80218839,
+      "length": 16315,
+      "descriptor_sha256": "685504614006c8573e494d4bdd4d064e0eda18b14ea2137cc34d29dd98337f56",
+      "size": 624,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_temperature_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 79152385,
+      "length": 16338,
+      "descriptor_sha256": "16defc4b2928c5ffc39376a7d60057bb881c5a5707a4dc38fa69c4a22c4e893a",
+      "size": 720,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_temperature_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 80268304,
+      "length": 16487,
+      "descriptor_sha256": "7e8e37903e0dc1dccb9f5eb203c40288e063a7b62d751b74ae1e75040d3b4d50",
+      "size": 928,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.microcontroller",
+      "base": "server_scene.vehicle_component",
+      "offset": 80530655,
+      "length": 26563,
+      "descriptor_sha256": "5d95ce0bd3a7492fb3eaf9e93bdbfb3001b28126e7be8b6fcb727aa7133787bc",
+      "size": 1408,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_data_node",
+      "base": "",
+      "offset": 81656822,
+      "length": 658,
+      "descriptor_sha256": "d38ff373d208a2734ad6c2c381b9be8faaf5254d878b349d0a32907864c56734",
+      "size": 48,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_data_node_group",
+      "base": "",
+      "offset": 81659394,
+      "length": 247,
+      "descriptor_sha256": "81897a126f999fa00abb9168e5d7b4be2104442fdc83003d7eabe997c97d945d",
+      "size": 40,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_data_island",
+      "base": "",
+      "offset": 81654689,
+      "length": 401,
+      "descriptor_sha256": "509cd3a19d8849b86ea21a68a4dc678072ec1847394d7e33152450b0c85cf181",
+      "size": 104,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_data_island_group",
+      "base": "",
+      "offset": 81655579,
+      "length": 329,
+      "descriptor_sha256": "78cf4cff6531890b6d59708d4364d647047ea5404914e69b41c9208447c93f18",
+      "size": 48,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_data_analogue",
+      "base": "",
+      "offset": 81654193,
+      "length": 397,
+      "descriptor_sha256": "5149a2dd401919a40f1c4b038fb5abbee0a98ad7eed6addccbf457a23bfabf4e",
+      "size": 16,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_mechanical_node_in",
+      "base": "",
+      "offset": 81711814,
+      "length": 549,
+      "descriptor_sha256": "3877182b9d1c2534ebb3e33121f64890b5d4079a8a5976727c6ad4c5a6198985",
+      "size": 32,
+      "alignment": 8
+    },
+    {
+      "name": "vehicle_component_definition.vehicle_data_descriptor",
+      "base": "",
+      "offset": 82336442,
+      "length": 591,
+      "descriptor_sha256": "6b1f5afb642b37ecedca696898a8182e88e800585f298f879d0cb3cca6051e3a",
+      "size": 40,
+      "alignment": 8
+    },
+    {
+      "name": "vehicle_component_definition.e_data_type",
+      "base": "",
+      "offset": 82330873,
+      "length": 256,
+      "descriptor_sha256": "c3af6c35ee4955871d8c04f92e2467e6ee5167e3323c96b1fde28a95922c909d",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "e_script_data_type",
+      "base": "",
+      "offset": 74485402,
+      "length": 179,
+      "descriptor_sha256": "d9bca7516f011e8e9dae98f8f9e150aed94a79ecb14111fcf101966dea427cf1",
+      "size": 4,
+      "alignment": 4
+    }
+  ],
+  "enums": [
+    {
+      "type": "vehicle_component_definition.e_data_type",
+      "labels": [
+        "type_bool_input",
+        "type_s32_input",
+        "type_f64_input",
+        "type_analogue_input",
+        "type_bool_output",
+        "type_s32_output",
+        "type_f64_output",
+        "type_analogue_output"
+      ]
+    },
+    {
+      "type": "e_script_data_type",
+      "labels": [
+        "none",
+        "type_bool",
+        "type_s32",
+        "type_f64",
+        "type_string",
+        "type_analogue",
+        "type_object",
+        "type_list"
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "type": "server_scene.vehicle_component.acceleration_sensor",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.acceleration_sensor",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 520
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.acceleration_sensor",
+      "field": {
+        "type": "vec3",
+        "name": "m_prev_velocity",
+        "offset": 536
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.acceleration_sensor",
+      "field": {
+        "type": "f64",
+        "name": "m_acceleration",
+        "offset": 560
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.gyro_rotation_sensor",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.gyro_rotation_sensor",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 520
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.gyro_rotation_sensor",
+      "field": {
+        "type": "f64",
+        "name": "m_rps",
+        "offset": 536
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.compass_sensor",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.compass_sensor",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 520
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.compass_sensor",
+      "field": {
+        "type": "f64",
+        "name": "m_angle_to_north",
+        "offset": 536
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tilt_sensor",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tilt_sensor",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 520
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tilt_sensor",
+      "field": {
+        "type": "f64",
+        "name": "m_tilt",
+        "offset": 536
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_pressure_sensor",
+      "field": {
+        "type": "server_scene.vehicle_gas_node",
+        "name": "m_gas_node",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_pressure_sensor",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 544
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_pressure_sensor",
+      "field": {
+        "type": "f64",
+        "name": "m_display_pressure",
+        "offset": 584
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_pressure_sensor",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 592
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_pressure_sensor",
+      "field": {
+        "type": "server_scene.vehicle_liquid_node",
+        "name": "m_liquid_node",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_pressure_sensor",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 560
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_pressure_sensor",
+      "field": {
+        "type": "f64",
+        "name": "m_display_pressure",
+        "offset": 600
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_pressure_sensor",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 608
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_temperature_sensor",
+      "field": {
+        "type": "server_scene.vehicle_gas_node",
+        "name": "m_gas_node_a",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_temperature_sensor",
+      "field": {
+        "type": "server_scene.vehicle_gas_node",
+        "name": "m_gas_node_b",
+        "offset": 544
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_temperature_sensor",
+      "field": {
+        "type": "server_scene.vehicle_gas_content",
+        "name": "m_content",
+        "offset": 608
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_temperature_sensor",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 664
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_temperature_sensor",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 704
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_temperature_sensor",
+      "field": {
+        "type": "server_scene.vehicle_liquid_node",
+        "name": "m_liquid_node_a",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_temperature_sensor",
+      "field": {
+        "type": "server_scene.vehicle_liquid_node",
+        "name": "m_liquid_node_b",
+        "offset": 560
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_temperature_sensor",
+      "field": {
+        "type": "server_scene.vehicle_liquid_content_volume",
+        "name": "m_content",
+        "offset": 640
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_temperature_sensor",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 872
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_temperature_sensor",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 912
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "server_scene.vehicle_electric_node_group",
+        "name": "m_electric_nodes",
+        "offset": 520
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "s32",
+        "name": "_m_element_id_counter",
+        "offset": 568
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "ref<server_scene_script.element_root>",
+        "name": "m_root",
+        "offset": 576
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "bool",
+        "name": "m_is_compile_error",
+        "offset": 592
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "bool",
+        "name": "m_is_load_error",
+        "offset": 593
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "bool",
+        "name": "m_is_pending_connection_update",
+        "offset": 594
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "bool",
+        "name": "m_is_load_from_save",
+        "offset": 595
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "f64",
+        "name": "m_display_electric_consumption",
+        "offset": 600
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 608
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "s32",
+        "name": "_m_variable_id_counter",
+        "offset": 624
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "s32",
+        "name": "_m_member_id_counter",
+        "offset": 628
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "s32",
+        "name": "_m_type_id_counter",
+        "offset": 632
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "s32",
+        "name": "_m_parameter_id_counter",
+        "offset": 636
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "s32",
+        "name": "_m_function_id_counter",
+        "offset": 640
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "vector<server_scene.vehicle_component.microcontroller_data_value>",
+        "name": "m_connected_bool_outputs",
+        "offset": 648
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "vector<server_scene.vehicle_component.microcontroller_data_value>",
+        "name": "m_connected_bool_inputs",
+        "offset": 688
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "vector<server_scene.vehicle_component.microcontroller_data_value>",
+        "name": "m_connected_s32_outputs",
+        "offset": 728
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "vector<server_scene.vehicle_component.microcontroller_data_value>",
+        "name": "m_connected_s32_inputs",
+        "offset": 768
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "vector<server_scene.vehicle_component.microcontroller_data_value>",
+        "name": "m_connected_f64_outputs",
+        "offset": 808
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "vector<server_scene.vehicle_component.microcontroller_data_value>",
+        "name": "m_connected_f64_inputs",
+        "offset": 848
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "vector<server_scene.vehicle_component.microcontroller_data_value>",
+        "name": "m_connected_analogue_outputs",
+        "offset": 888
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "vector<server_scene.vehicle_component.microcontroller_data_value>",
+        "name": "m_connected_analogue_inputs",
+        "offset": 928
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "ptr<server_scene_script.element>",
+        "name": "m_step_element",
+        "offset": 968
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "bool",
+        "name": "m_is_step",
+        "offset": 976
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "bool",
+        "name": "m_is_pending_pause",
+        "offset": 977
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "bool",
+        "name": "m_is_pending_resume",
+        "offset": 978
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "bool",
+        "name": "m_is_pending_step_over",
+        "offset": 979
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "bool",
+        "name": "m_is_pending_step_in",
+        "offset": 980
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "bool",
+        "name": "m_is_pending_step_out",
+        "offset": 981
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "server_scene.vehicle_component.microcontroller_execution_context",
+        "name": "m_execute_context",
+        "offset": 984
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "vector<vehicle_component_definition.vehicle_data_descriptor>",
+        "name": "m_global_descriptors",
+        "offset": 1280
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "bool",
+        "name": "m_is_pending_undo_action",
+        "offset": 1320
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "bool",
+        "name": "m_is_pending_redo_action",
+        "offset": 1321
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "vector<ref<server_scene_script.action>>",
+        "name": "_m_undo_queue",
+        "offset": 1328
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "vector<ref<server_scene_script.action>>",
+        "name": "_m_redo_queue",
+        "offset": 1368
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": {
+        "type": "server_scene_script.parser",
+        "name": "_m_script_parser",
+        "offset": 1408
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_node",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component>",
+        "name": "m_component",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_node",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component>",
+        "name": "m_component_flood",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_node",
+      "field": {
+        "type": "s32",
+        "name": "m_component_id",
+        "offset": 16
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_node",
+      "field": {
+        "type": "s32",
+        "name": "m_node_index",
+        "offset": 20
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_node",
+      "field": {
+        "type": "bool",
+        "name": "m_can_distribute_power",
+        "offset": 24
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_node",
+      "field": {
+        "type": "bool",
+        "name": "m_is_powered",
+        "offset": 25
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_node",
+      "field": {
+        "type": "ptr<server_scene.vehicle_data_island>",
+        "name": "m_island",
+        "offset": 32
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_node",
+      "field": {
+        "type": "s32",
+        "name": "m_vehicle_node_index",
+        "offset": 40
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_node_group",
+      "field": {
+        "type": "vector<ptr<server_scene.vehicle_data_node>>",
+        "name": "_m_nodes",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_island",
+      "field": {
+        "type": "s32",
+        "name": "m_island_index",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_island",
+      "field": {
+        "type": "ref<server_scene.vehicle_data_island_group>",
+        "name": "m_group",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_island",
+      "field": {
+        "type": "vector<ptr<server_scene.vehicle_data_node>>",
+        "name": "m_nodes",
+        "offset": 24
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_island",
+      "field": {
+        "type": "vector<ptr<server_scene.vehicle_data_node>>",
+        "name": "m_energy_distributors",
+        "offset": 64
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_island_group",
+      "field": {
+        "type": "vector<ptr<server_scene.vehicle_data_island>>",
+        "name": "m_islands",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_island_group",
+      "field": {
+        "type": "bool",
+        "name": "m_is_powered",
+        "offset": 40
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_island_group",
+      "field": {
+        "type": "bool",
+        "name": "m_is_rebuild_microcontrollers",
+        "offset": 41
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_analogue",
+      "field": {
+        "type": "s32",
+        "name": "m_peer_id",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.vehicle_data_analogue",
+      "field": {
+        "type": "f64",
+        "name": "m_signal",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.vehicle_mechanical_node_in",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component>",
+        "name": "m_component",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.vehicle_mechanical_node_in",
+      "field": {
+        "type": "s32",
+        "name": "m_component_id",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.vehicle_mechanical_node_in",
+      "field": {
+        "type": "s32",
+        "name": "m_node_index",
+        "offset": 12
+      }
+    },
+    {
+      "type": "server_scene.vehicle_mechanical_node_in",
+      "field": {
+        "type": "s32",
+        "name": "m_pair_count",
+        "offset": 16
+      }
+    },
+    {
+      "type": "server_scene.vehicle_mechanical_node_in",
+      "field": {
+        "type": "f64",
+        "name": "_m_value",
+        "offset": 24
+      }
+    },
+    {
+      "type": "vehicle_component_definition.vehicle_data_descriptor",
+      "field": {
+        "type": "vehicle_component_definition.e_data_type",
+        "name": "m_type",
+        "offset": 0
+      }
+    },
+    {
+      "type": "vehicle_component_definition.vehicle_data_descriptor",
+      "field": {
+        "type": "string",
+        "name": "m_name",
+        "offset": 8
+      }
+    },
+    {
+      "type": "vehicle_component_definition.vehicle_data_descriptor",
+      "field": {
+        "type": "string",
+        "name": "m_documentation",
+        "offset": 24
+      }
+    }
+  ],
+  "virtuals": [
+    {
+      "type": "server_scene.vehicle_component.gas_temperature_sensor",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    }
+  ]
+}
