@@ -1,0 +1,992 @@
+{
+  "schema": 1,
+  "date": "2026-10-19",
+  "build": "25904830",
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "() server_scene.vehicle_component.gearbox.tick (server_scene.vehicle_component.gearbox, server_scene.vehicle, server_scene)",
+      "signature_offset": 54982428,
+      "code_offset": 54983294,
+      "code_size": 1784,
+      "code_sha256": "a25cf7ae279958d7e810a3889ae8ce662e2a9ccad90bc90446a8a3dcf1459c33"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gearbox_b.tick (server_scene.vehicle_component.gearbox_b, server_scene.vehicle, server_scene)",
+      "signature_offset": 55019010,
+      "code_offset": 55020130,
+      "code_size": 2280,
+      "code_sha256": "4c16074943b14cc362af28faa286af47ed65885d197603296d017dfb9d9b3189"
+    },
+    {
+      "signature": "(s32) server_scene.vehicle_component.gearbox_b.get_gear_count (const server_scene.vehicle_component.gearbox_b)",
+      "signature_offset": 55005931,
+      "code_offset": 55006260,
+      "code_size": 168,
+      "code_sha256": "8b7ceb14c5938ebeb53b9b5c2feb7f06726cf08fd3c9f3976758c25824fc4a9f"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gas_valve_t.tick (server_scene.vehicle_component.gas_valve_t, server_scene.vehicle, server_scene)",
+      "signature_offset": 54914456,
+      "code_offset": 54915417,
+      "code_size": 1112,
+      "code_sha256": "51bfef559344c32065285bc3acd27132ec75c943a01c80e95a1a4f40c27553a6"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gas_valve_t.get_gas_flood_nodes (server_scene.vehicle_component.gas_valve_t, vector<ptr<server_scene.vehicle_gas_node>>)",
+      "signature_offset": 54905870,
+      "code_offset": 54906191,
+      "code_size": 240,
+      "code_sha256": "76071fa1383cb847218f8660194af3b3ae9bbea1dfc74b82deeb8f2ff62cc741"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gas_valve_t.create (server_scene.vehicle_component.gas_valve_t, server_scene.vehicle)",
+      "signature_offset": 54902196,
+      "code_offset": 54902921,
+      "code_size": 536,
+      "code_sha256": "0347d8216fee473700b49d304fc7208898ed79fc75b175445dde6f0aa1b20cfb"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.steering_wheel.apply_seat_input (server_scene.vehicle_component.steering_wheel, server_peer.seat_input, const f64)",
+      "signature_offset": 57617877,
+      "code_offset": 57618239,
+      "code_size": 424,
+      "code_sha256": "571b87ce4561cd15be450e5264229f7eb1a9d84fbdacc958149c5d222cdec3cb"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.steering_wheel.tick (server_scene.vehicle_component.steering_wheel, server_scene.vehicle, server_scene)",
+      "signature_offset": 57638669,
+      "code_offset": 57639184,
+      "code_size": 464,
+      "code_sha256": "234616bf76c2d6e5afd4e7f35f3436e4a7fd54b5e17b9f35b261b9ccb28a12cd"
+    },
+    {
+      "signature": "(f64) server_peer.seat_input.get_axis (server_peer.seat_input, s32)",
+      "signature_offset": 40110775,
+      "code_offset": 40110988,
+      "code_size": 704,
+      "code_sha256": "a9daf9ed83cd6e866436035aa138464bd0eb078cdc349f66268d2a95382af8a7"
+    },
+    {
+      "signature": "(bool) server_peer.seat_input.get_digital (server_peer.seat_input, s32)",
+      "signature_offset": 40111989,
+      "code_offset": 40112207,
+      "code_size": 384,
+      "code_sha256": "0db6c0e9ff334be96cef8d0886cc24ffc6ac0d99764e839e8a538b8fc266f76a"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.seven_segment.tick (server_scene.vehicle_component.seven_segment, server_scene.vehicle, server_scene)",
+      "signature_offset": 57500725,
+      "code_offset": 57501235,
+      "code_size": 288,
+      "code_sha256": "458181a5e8297602607f7a68fb56d31ea79d62428e3e8897db133d7c9b8c38fc"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.oil_filter.tick (server_scene.vehicle_component.oil_filter, server_scene.vehicle, server_scene)",
+      "signature_offset": 57081553,
+      "code_offset": 57083087,
+      "code_size": 1352,
+      "code_sha256": "9a01c3103ea6042d66cc3e1479f972366dd4a3e6884d83928b96534fdf0aebd5"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.battery.tick (server_scene.vehicle_component.battery, server_scene.vehicle, server_scene)",
+      "signature_offset": 53813208,
+      "code_offset": 53814304,
+      "code_size": 688,
+      "code_sha256": "e27a724e84807bc07f3bb2c22532159df177e2d42114c6cfa1bb05f4f2010f9f"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.clutch.tick (server_scene.vehicle_component.clutch, server_scene.vehicle, server_scene)",
+      "signature_offset": 54175276,
+      "code_offset": 54175871,
+      "code_size": 232,
+      "code_sha256": "6c8ceaa88f0e98b6b531a98eceb06042d22b050aa4ffb2e502ee069f543b0f2a"
+    },
+    {
+      "signature": "(f64) weather_data.get_temperature_degrees (const weather_data)",
+      "signature_offset": 63735441,
+      "code_offset": 63735647,
+      "code_size": 112,
+      "code_sha256": "21729c64fd5add9e79abb361e5b0cf01acdfe5f708a438d91f6d1764c9844a2f"
+    },
+    {
+      "signature": "(f64) weather_data.get_temperature_factor (const weather_data)",
+      "signature_offset": 63735977,
+      "code_offset": 63736264,
+      "code_size": 96,
+      "code_sha256": "efb238fadd08d8f653ea276c40d5ae423de47d048a79c5654cd963f1edfb7e1f"
+    },
+    {
+      "signature": "() weather_manager.blend_temperature_towards_ambient (weather_manager, const server_scene, const mat34, f64, const f64)",
+      "signature_offset": 63741285,
+      "code_offset": 63741958,
+      "code_size": 400,
+      "code_sha256": "499d077b6475df4e2878aa75d58e9b96980f2ebd9b624c3909f72b22d01379fc"
+    },
+    {
+      "signature": "(f64) weather_data.rain_factor (const weather_data)",
+      "signature_offset": 63737440,
+      "code_offset": 63737580,
+      "code_size": 112,
+      "code_sha256": "6db3d3def6b34d5496b60de63b3e24b629cf508471f1f797c607cce4e3dc7b60"
+    },
+    {
+      "signature": "(f64) weather_data.snow_factor (const weather_data)",
+      "signature_offset": 63737835,
+      "code_offset": 63737975,
+      "code_size": 88,
+      "code_sha256": "c69802dbf3c19ed27a9717c3a16bd400c1f192aa74cf97d35fae9a8d1a03606f"
+    },
+    {
+      "signature": "() server_scene.save_data_meta.parse_json (server_scene.save_data_meta, json.parser, json.node)",
+      "signature_offset": 51824765,
+      "code_offset": 51825056,
+      "code_size": 256,
+      "code_sha256": "9333fcbce617bda257c7757e7999a6b2eab74b88ec975f06d852d14ff94f17f3"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.jet_engine_combustion.tick (server_scene.vehicle_component.jet_engine_combustion, server_scene.vehicle, server_scene)",
+      "signature_offset": 55822200,
+      "code_offset": 55827040,
+      "code_size": 8976,
+      "code_sha256": "7180aafa2c8ffb9683f55fe6cccc32991d8e75398d1258b5b1ada4d6a8bce091"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.jet_engine_compressor.tick (server_scene.vehicle_component.jet_engine_compressor, server_scene.vehicle, server_scene)",
+      "signature_offset": 55876387,
+      "code_offset": 55877210,
+      "code_size": 1456,
+      "code_sha256": "ae6cd82b476f5b25ee8361b992f5d93fb01e338de28d914315ff59ec502fe450"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.control_surface.tick (server_scene.vehicle_component.control_surface, server_scene.vehicle, server_scene)",
+      "signature_offset": 54203454,
+      "code_offset": 54205652,
+      "code_size": 5632,
+      "code_sha256": "7af6a6780bbbad4f46745b31086e22796d47dd2af52ecaf11756f98581671881"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.boat_propeller.tick (server_scene.vehicle_component.boat_propeller, server_scene.vehicle, server_scene)",
+      "signature_offset": 53826552,
+      "code_offset": 53828211,
+      "code_size": 2512,
+      "code_sha256": "b2092307f956d51a0e0e681b1b7f556e4cff436501613a565c064db247966937"
+    },
+    {
+      "signature": "() server_scene.vehicle.build_physics_shape (server_scene.vehicle, physics.compound_shape, s32, s32)",
+      "signature_offset": 52748413,
+      "code_offset": 52757266,
+      "code_size": 20704,
+      "code_sha256": "a05f32e05dd8c01e7874a48e807e377f9219bcdb4b3b24fdaf72d2533df4cac5"
+    },
+    {
+      "signature": "() server_scene.save_data.vehicle.parse_save_data (server_scene.save_data.vehicle, server_scene.save_data.parser)",
+      "signature_offset": 51774949,
+      "code_offset": 51778349,
+      "code_size": 4328,
+      "code_sha256": "f74142040b814f72cbd0a2da0f0e038588f1ba607b227bbf295158f39e574a77"
+    },
+    {
+      "signature": "() weather_manager.tick_simulation (weather_manager, const s32, const s32, const e_gamemode)",
+      "signature_offset": 63762999,
+      "code_offset": 63763443,
+      "code_size": 744,
+      "code_sha256": "28267b0148a91b60a99ff5e3476a71b690aedb425cc3a4451f961ba4ed02038d"
+    },
+    {
+      "signature": "(bool) server_peer.unlocked_item.container.is_item_unlocked (server_peer.unlocked_item.container, const server_scene, const unlocked_item)",
+      "signature_offset": 40115519,
+      "code_offset": 40117400,
+      "code_size": 1576,
+      "code_sha256": "994a7c1c4bf5c0ff60c94f4944d1d3a19bbd9be5b94f240e5d7109efb01e52a6"
+    },
+    {
+      "signature": "() server_peer.unlocked_item.container.process_item_unlock (server_peer.unlocked_item.container, server, server_peer.data, server_scene, const ptr<server_scene.item_world>)",
+      "signature_offset": 40120002,
+      "code_offset": 40122547,
+      "code_size": 1536,
+      "code_sha256": "a287d5e0cf471c710e9a3f628f529fc19be87490b7bf16f2e45e335708375332"
+    },
+    {
+      "signature": "(f64) server_scene.actor._get_impact_damage (server_scene.actor, const vec3, const vec3)",
+      "signature_offset": 40778697,
+      "code_offset": 40779193,
+      "code_size": 816,
+      "code_sha256": "3600348fc5d9475d2837c3f26a288ccf9689fcd9def3d3d95703f37b2f4dc44f"
+    },
+    {
+      "signature": "(bool) server_scene.actor.ai_locomotion.get_is_stuck (const server_scene.actor.ai_locomotion)",
+      "signature_offset": 40907674,
+      "code_offset": 40908105,
+      "code_size": 312,
+      "code_sha256": "83d8791c2ed6091cd2d8478345c8e07d5bbf0b5c492569c410e57b9cc69bc282"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle_buoyancy_hatch_manager._check_hatch_opening_match (const server_scene.vehicle_buoyancy_hatch_manager, const server_scene.vehicle_buoyancy_hatch, const server_scene.vehicle_buoyancy_opening)",
+      "signature_offset": 53414187,
+      "code_offset": 53415309,
+      "code_size": 3744,
+      "code_sha256": "d195b7b12329db302d62b6c4dd980ab17a5062b1f727b184b9af022c76617e6a"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle_buoyancy_hatch_manager._test_node_match (const server_scene.vehicle_buoyancy_hatch_manager, const vec3, const vec3)",
+      "signature_offset": 53424976,
+      "code_offset": 53425275,
+      "code_size": 96,
+      "code_sha256": "f14442b0c47e79f20c8ee430d8c4ab6e82e37b3d1f557cf5b45b86daf79d2a42"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager.tick (server_scene.vehicle_buoyancy_hatch_manager)",
+      "signature_offset": 53438907,
+      "code_offset": 53440764,
+      "code_size": 992,
+      "code_sha256": "616552932307ee7ec3d1c338319a2b28db4cce41a11a08eaddbeaf018fa77336"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager.rebuild_vehicle_hatches (server_scene.vehicle_buoyancy_hatch_manager, server_scene.vehicle)",
+      "signature_offset": 53436110,
+      "code_offset": 53437898,
+      "code_size": 544,
+      "code_sha256": "eac575e43d621fcf0375eec33698597db28b124f84b259e1e33c107dd84c00ec"
+    },
+    {
+      "signature": "() vehicle_buoyancy._build_plates (vehicle_buoyancy, const s32)",
+      "signature_offset": 62018651,
+      "code_offset": 62020505,
+      "code_size": 5320,
+      "code_sha256": "e62137a6b48ad19083c0db8c0aff493badb631e530ce9a2b537c10709b79eb5f"
+    },
+    {
+      "signature": "() vehicle_buoyancy.set_is_plate_opening_sealed (vehicle_buoyancy, const s32, const bool)",
+      "signature_offset": 62325903,
+      "code_offset": 62326512,
+      "code_size": 256,
+      "code_sha256": "750fdbbd2445f240a97247efca73c66556453c28ba7f8ab663c6e57db12afd90"
+    },
+    {
+      "signature": "(vehicle_plate_util.e_plate_type) client_scene.item_world.vehicle_editor_add_opening.get_plate_type (const client_scene.item_world.vehicle_editor_add_opening)",
+      "signature_offset": 9232795,
+      "code_offset": 9232973,
+      "code_size": 36,
+      "code_sha256": "2daf5a8566e0ec0ba72653297b42ca8ab10b5807115cecf9b08a8dfe6ea44de2"
+    },
+    {
+      "signature": "(vehicle_plate_util.e_plate_type) client_scene.item_world.vehicle_editor_add_hatch.get_plate_type (const client_scene.item_world.vehicle_editor_add_hatch)",
+      "signature_offset": 9232351,
+      "code_offset": 9232525,
+      "code_size": 36,
+      "code_sha256": "b054a14dd67202d20b70795b817013087895547a52aea795fbdaee5e0085978e"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager.g_node_match_threshold_sq.$ctor ()",
+      "signature_offset": 53435338,
+      "code_offset": 53435590,
+      "code_size": 40,
+      "code_sha256": "d8fd83e576502ca9cba789ffa27a6899a53b9a273bb30d0ed3548959fada5469"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager.g_node_match_threshold_sq.$dtor ()",
+      "signature_offset": 53435785,
+      "code_offset": 53435963,
+      "code_size": 8,
+      "code_sha256": "9b90fcd8a1722f73235577bcf3404a81bdfe323298f7229c9a71be604d3132e6"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager._add_hatch (server_scene.vehicle_buoyancy_hatch_manager, server_scene.vehicle, const server_scene.vehicle_plate)",
+      "signature_offset": 53410515,
+      "code_offset": 53411365,
+      "code_size": 448,
+      "code_sha256": "9a91255273913a738b931f36d024d6f74f501e4ac6e35af0c6ab5e36a54661c9"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager._add_opening (server_scene.vehicle_buoyancy_hatch_manager, server_scene.vehicle, const server_scene.vehicle_plate)",
+      "signature_offset": 53412342,
+      "code_offset": 53413204,
+      "code_size": 448,
+      "code_sha256": "c0482ab5bd2f01c7ac4998a4033937462dbc8acc52cd4ea6af5294a58a026520"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager.g_node_match_threshold.$ctor ()",
+      "signature_offset": 53434682,
+      "code_offset": 53434854,
+      "code_size": 32,
+      "code_sha256": "930f930e5b78f3b0d6ae8d2a47565ea63e8a43e9ef84c9ca6e1edfcfebefcb3b"
+    },
+    {
+      "signature": "() vehicle_buoyancy._calculate_forces (vehicle_buoyancy, const bool)",
+      "signature_offset": 62050880,
+      "code_offset": 62056483,
+      "code_size": 20736,
+      "code_sha256": "5b2a7047236212a9bc91819354ae8cb9c7ce8902c7f7b5026b9b76faf5ca023b"
+    },
+    {
+      "signature": "() vehicle_buoyancy._build (vehicle_buoyancy, const bool, const ref<vehicle_buoyancy>)",
+      "signature_offset": 62009032,
+      "code_offset": 62011032,
+      "code_size": 4480,
+      "code_sha256": "f9ca3a7e05f445bb7cf5617e91d3ad1c2ddad8c78ee669576e65f8d26a7ab0c3"
+    },
+    {
+      "signature": "() server_scene.vehicle._rebuild_buoyancy (server_scene.vehicle, physics.scene, server_scene.vehicle_buoyancy_hatch_manager)",
+      "signature_offset": 52570271,
+      "code_offset": 52572066,
+      "code_size": 1192,
+      "code_sha256": "1b083471ebf92d7aa17392b70ea75c132943d119e83bc9c37fbb149d8cf8442a"
+    },
+    {
+      "signature": "() server_scene.vehicle_buoyancy_hatch_manager._get_plate_node_positions_simplified (server_scene.vehicle_buoyancy_hatch_manager, const server_scene.vehicle_plate, vector<vec3>)",
+      "signature_offset": 53421487,
+      "code_offset": 53422905,
+      "code_size": 1152,
+      "code_sha256": "bf7b6605bd4907c7d008a4eaefc18e7646f107e0726e3b18699f840f2d897cb7"
+    },
+    {
+      "signature": "() vehicle_buoyancy.create (vehicle_buoyancy, const server_scene.vehicle, const ref<vehicle_buoyancy>, physics.scene)",
+      "signature_offset": 62126744,
+      "code_offset": 62131051,
+      "code_size": 2960,
+      "code_sha256": "b4efc7e74164e45c79badfb96dec839f9d05549e8a23c2ae1c3fd81f5cb60193"
+    },
+    {
+      "signature": "() vehicle_buoyancy.create (vehicle_buoyancy, const client_scene.vehicle, const ref<vehicle_buoyancy>)",
+      "signature_offset": 62135360,
+      "code_offset": 62138702,
+      "code_size": 2656,
+      "code_sha256": "242c0870020ad3cf3f20754bfb11191d6a5002546aeb0749df5f59b116195dea"
+    },
+    {
+      "signature": "() g_temperature_degrees_min.$ctor ()",
+      "signature_offset": 29096380,
+      "code_offset": 29096470,
+      "code_size": 32,
+      "code_sha256": "84bc67912ca7ed2e2f7115c05b02bf7793e7f6899add09da8aac7cc3b3855f04"
+    },
+    {
+      "signature": "() g_temperature_degrees_max.$ctor ()",
+      "signature_offset": 29095970,
+      "code_offset": 29096060,
+      "code_size": 32,
+      "code_sha256": "b98da95f78bb592d58378b35072b134eeee73530f529b00c4a0f88aef8da51c4"
+    },
+    {
+      "signature": "() g_server_tick_rate.$ctor ()",
+      "signature_offset": 29088780,
+      "code_offset": 29088886,
+      "code_size": 32,
+      "code_sha256": "82ec5503ad94f1805c2c740347edc0a14a1a93c4bf18c038a37e55159c2f7413"
+    },
+    {
+      "signature": "() server_scene.actor.g_impact_horizontal_scale.$ctor ()",
+      "signature_offset": 41198249,
+      "code_offset": 41198377,
+      "code_size": 32,
+      "code_sha256": "bba93259a60aec399088d49a52102423ca7939454f2da33c50054e4413847e3f"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_gas_content.get_pressure (const server_scene.vehicle_gas_content)",
+      "signature_offset": 58574262,
+      "code_offset": 58574484,
+      "code_size": 264,
+      "code_sha256": "8fa9804dad88bba14b71fbc328ed79b77adc7231b5392a73047b3b961d34f80f"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hydraulic_actuator.tick (server_scene.vehicle_component.hydraulic_actuator, server_scene.vehicle, server_scene)",
+      "signature_offset": 55329017,
+      "code_offset": 55329901,
+      "code_size": 704,
+      "code_sha256": "ccb25f9826b9791ab499080347ba2fd1af8df8d313766141c267fdad0f2ea7f4"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.radiator.tick (server_scene.vehicle_component.radiator, server_scene.vehicle, server_scene)",
+      "signature_offset": 57149600,
+      "code_offset": 57151646,
+      "code_size": 1272,
+      "code_sha256": "650d21b90ea6277e99328b607682af07f7520f9013db1f4c56108c3dcfa813ec"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.altitude_sensor.tick (server_scene.vehicle_component.altitude_sensor, server_scene.vehicle, server_scene)",
+      "signature_offset": 53532902,
+      "code_offset": 53533340,
+      "code_size": 456,
+      "code_sha256": "e9eddfb9a5e3d161363c5869ad8ef6df7d2b1d201e829f9d0a72ba37ea69cf8c"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.force_emitter_collective.tick (server_scene.vehicle_component.force_emitter_collective, server_scene.vehicle, server_scene)",
+      "signature_offset": 54691468,
+      "code_offset": 54692330,
+      "code_size": 456,
+      "code_sha256": "156673ad34d906afb11fc45816b5795b06923818c8b3d17f94d80b8a21b534d1"
+    },
+    {
+      "signature": "() weather_map.tick (weather_map, const s32, const vec2)",
+      "signature_offset": 63768154,
+      "code_offset": 63768287,
+      "code_size": 192,
+      "code_sha256": "71adc012ac09a5df24c2f4637176b49c4e78b710f1ebf8d611ff331c9c4fad9c"
+    },
+    {
+      "signature": "() server_scene.actor_character.tick_oxygen (server_scene.actor_character, server_scene)",
+      "signature_offset": 41963829,
+      "code_offset": 41964849,
+      "code_size": 840,
+      "code_sha256": "59e8ccbd61f95f6f41151558b5e49a094160326180e5367a14b26a46ba2ba442"
+    },
+    {
+      "signature": "() server_scene.actor_character.tick_stamina (server_scene.actor_character)",
+      "signature_offset": 41966156,
+      "code_offset": 41966834,
+      "code_size": 976,
+      "code_sha256": "95577071ccf1249596dc55fcc79974037cdba0a9fd063a52fe5aa02ba2af139f"
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 55020130,
+      "offset": 55022346,
+      "format": "f64",
+      "bytes": "0000000000000840",
+      "value": 3.0,
+      "name": "pneumatic shift activation pressure"
+    },
+    {
+      "function_offset": 55020130,
+      "offset": 55022354,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "pneumatic shift reset pressure"
+    },
+    {
+      "function_offset": 55020130,
+      "offset": 55022386,
+      "format": "f64",
+      "bytes": "9a9999999999a93f",
+      "value": 0.05,
+      "name": "internal clutch transition per tick"
+    },
+    {
+      "function_offset": 55006260,
+      "offset": 55006420,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "base/minimum forward gear count"
+    },
+    {
+      "function_offset": 55006260,
+      "offset": 55006424,
+      "format": "s32",
+      "bytes": "08000000",
+      "value": 8,
+      "name": "maximum forward gear count"
+    },
+    {
+      "function_offset": 57501235,
+      "offset": 57501515,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "display lower clamp"
+    },
+    {
+      "function_offset": 57083087,
+      "offset": 57084407,
+      "format": "f64",
+      "bytes": "9a9999999999b93f",
+      "value": 0.1,
+      "name": "filter fitted-item reserve debit per removed dirty volume"
+    },
+    {
+      "function_offset": 57083087,
+      "offset": 57084415,
+      "format": "f64",
+      "bytes": "2d431cebe2361a3f",
+      "value": 0.0001,
+      "name": "filter maximum dirty removal per tick"
+    },
+    {
+      "function_offset": 57083087,
+      "offset": 57084423,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "filter dirty species index"
+    },
+    {
+      "function_offset": 29096470,
+      "offset": 29096494,
+      "format": "f64",
+      "bytes": "00000000000014c0",
+      "value": -5.0,
+      "name": "initialized ambient temperature low endpoint"
+    },
+    {
+      "function_offset": 29096060,
+      "offset": 29096084,
+      "format": "f64",
+      "bytes": "0000000000003c40",
+      "value": 28.0,
+      "name": "initialized ambient temperature high endpoint"
+    },
+    {
+      "function_offset": 55329901,
+      "offset": 55330573,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "hydraulic control activation pressure"
+    },
+    {
+      "function_offset": 55329901,
+      "offset": 55330581,
+      "format": "f64",
+      "bytes": "333333333333d33f",
+      "value": 0.3,
+      "name": "hydraulic control reset pressure"
+    },
+    {
+      "function_offset": 55329901,
+      "offset": 55330597,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "hydraulic control active output"
+    },
+    {
+      "function_offset": 57151646,
+      "offset": 57152886,
+      "format": "f64",
+      "bytes": "2d431cebe2362a3f",
+      "value": 0.0002,
+      "name": "radiator baseline ambient blend factor"
+    },
+    {
+      "function_offset": 57151646,
+      "offset": 57152894,
+      "format": "f64",
+      "bytes": "2d431cebe2363a3f",
+      "value": 0.0004,
+      "name": "radiator fan relative-volume coefficient"
+    },
+    {
+      "function_offset": 58574484,
+      "offset": 58574684,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "gas pressure zero-volume guard"
+    },
+    {
+      "function_offset": 41198377,
+      "offset": 41198401,
+      "format": "f64",
+      "bytes": "0000000000001040",
+      "value": 4.0,
+      "name": "actor horizontal impact scale initializer"
+    },
+    {
+      "function_offset": 40779193,
+      "offset": 40779993,
+      "format": "f64",
+      "bytes": "0000000000005940",
+      "value": 100.0,
+      "name": "actor impact damage denominator"
+    },
+    {
+      "function_offset": 40779193,
+      "offset": 40780001,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "actor non-damaging impact return"
+    }
+  ],
+  "strings": [
+    {
+      "function_offset": 51778349,
+      "offset": 51782397,
+      "text": "transform"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782407,
+      "text": "nodes"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782413,
+      "text": "edges"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782419,
+      "text": "plates"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782426,
+      "text": "plate_paint"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782438,
+      "text": "grids"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782444,
+      "text": "electric_links"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782459,
+      "text": "mechanical_links"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782476,
+      "text": "liquid_links"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782489,
+      "text": "gas_links"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782499,
+      "text": "belt_links"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782510,
+      "text": "data_links"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782521,
+      "text": "loot_locations"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782536,
+      "text": "creature_locations"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782555,
+      "text": "motion_type"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782567,
+      "text": "server_flags"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782580,
+      "text": "spawn_dead_drop_cartridge_id"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782613,
+      "text": "spawn_journal_content_index"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782641,
+      "text": "dead_drop_id"
+    },
+    {
+      "function_offset": 51778349,
+      "offset": 51782654,
+      "text": "buoyancy_fill"
+    }
+  ],
+  "call_examples": [
+    {
+      "function_offset": 55020130,
+      "instruction": 55020765,
+      "bytes": "ff13",
+      "slot_address": 55022450,
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_gas_content.get_pressure (const server_scene.vehicle_gas_content)"
+    },
+    {
+      "function_offset": 55020130,
+      "instruction": 55020230,
+      "bytes": "ffd5",
+      "slot_address": 55022410,
+      "kind": 6,
+      "symbol": "(s32) server_scene.vehicle_component.gearbox_b.get_gear_count (const server_scene.vehicle_component.gearbox_b)"
+    },
+    {
+      "function_offset": 55020130,
+      "instruction": 55022009,
+      "bytes": "ff10",
+      "slot_address": 55022490,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_node.set_clutch_factor (server_scene.vehicle_torque_node, const f64)"
+    },
+    {
+      "function_offset": 54915417,
+      "instruction": 54915811,
+      "bytes": "ff13",
+      "slot_address": 54916569,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.thresholded_input (bool, const f64)"
+    },
+    {
+      "function_offset": 54906191,
+      "instruction": 54906252,
+      "bytes": "ff5500",
+      "slot_address": 54906431,
+      "kind": 4,
+      "symbol": "(ptr<ptr<server_scene.vehicle_gas_node>>) vector<ptr<server_scene.vehicle_gas_node>>.push_back (vector<ptr<server_scene.vehicle_gas_node>>)"
+    },
+    {
+      "function_offset": 54175871,
+      "instruction": 54175962,
+      "bytes": "ff13",
+      "slot_address": 54176111,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.thresholded_input (bool, const f64)"
+    },
+    {
+      "function_offset": 54175871,
+      "instruction": 54176024,
+      "bytes": "ff10",
+      "slot_address": 54176119,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_data.disconnect_link (server_scene.vehicle_torque_data, const server_scene.vehicle, const s32)"
+    },
+    {
+      "function_offset": 57501235,
+      "instruction": 57501290,
+      "bytes": "ff13",
+      "slot_address": 57501523,
+      "kind": 4,
+      "symbol": "(f64) math.max (const f64, const f64)"
+    },
+    {
+      "function_offset": 57501235,
+      "instruction": 57501371,
+      "bytes": "ff13",
+      "slot_address": 57501539,
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle_data_node.get_is_receive_power (server_scene.vehicle_data_node)"
+    },
+    {
+      "function_offset": 57083087,
+      "instruction": 57083456,
+      "bytes": "ffd3",
+      "slot_address": 57084463,
+      "kind": 6,
+      "symbol": "(ptr<server_scene.item_world_ref>) server_scene.vehicle_element.accessory.get_item (server_scene.vehicle_element.accessory)"
+    },
+    {
+      "function_offset": 57083087,
+      "instruction": 57084354,
+      "bytes": "ff10",
+      "slot_address": 57084535,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_liquid_content.equalize_contents (vector<ptr<server_scene.vehicle_liquid_content>>)"
+    },
+    {
+      "function_offset": 63741958,
+      "instruction": 63742273,
+      "bytes": "ff13",
+      "slot_address": 63742382,
+      "kind": 4,
+      "symbol": "(weather_data) weather_manager.get_weather_data (const weather_manager, const vec3, const f64)"
+    },
+    {
+      "function_offset": 63741958,
+      "instruction": 63742295,
+      "bytes": "ff10",
+      "slot_address": 63742390,
+      "kind": 4,
+      "symbol": "(f64) weather_data.get_temperature_degrees (const weather_data)"
+    },
+    {
+      "function_offset": 63741958,
+      "instruction": 63742330,
+      "bytes": "ff10",
+      "slot_address": 63742398,
+      "kind": 4,
+      "symbol": "(f64) math.lerp (const f64, const f64, const f64)"
+    },
+    {
+      "function_offset": 63737580,
+      "instruction": 63737627,
+      "bytes": "ff5500",
+      "slot_address": 63737692,
+      "kind": 4,
+      "symbol": "(f64) weather_data._snow_factor_internal (const weather_data)"
+    },
+    {
+      "function_offset": 63737975,
+      "instruction": 63738022,
+      "bytes": "ff5500",
+      "slot_address": 63738063,
+      "kind": 4,
+      "symbol": "(f64) weather_data._snow_factor_internal (const weather_data)"
+    },
+    {
+      "function_offset": 57151646,
+      "instruction": 57152447,
+      "bytes": "ff5500",
+      "slot_address": 57152998,
+      "kind": 4,
+      "symbol": "() weather_manager.blend_temperature_towards_ambient (weather_manager, const server_scene, const mat34, f64, const f64)"
+    },
+    {
+      "function_offset": 57151646,
+      "instruction": 57152093,
+      "bytes": "ffd0",
+      "slot_address": 57152958,
+      "kind": 6,
+      "symbol": "(s32) server_scene.vehicle_component.get_volume (const server_scene.vehicle_component)"
+    },
+    {
+      "function_offset": 55329901,
+      "instruction": 55330238,
+      "bytes": "ff13",
+      "slot_address": 55330645,
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_liquid_content.get_pressure (const server_scene.vehicle_liquid_content)"
+    },
+    {
+      "function_offset": 55329901,
+      "instruction": 55330474,
+      "bytes": "ff13",
+      "slot_address": 55330653,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_mechanical_node_out.write (server_scene.vehicle_mechanical_node_out, const f64)"
+    },
+    {
+      "function_offset": 53828211,
+      "instruction": 53829322,
+      "bytes": "ffd3",
+      "slot_address": 53830835,
+      "kind": 6,
+      "symbol": "(bool) ocean_data.get_is_point_submerged (const ocean_data, const vec3, const f64, const bool)"
+    },
+    {
+      "function_offset": 53828211,
+      "instruction": 53830349,
+      "bytes": "ff13",
+      "slot_address": 53830867,
+      "kind": 4,
+      "symbol": "() physics_util.impulse_activator.add_impulse (physics_util.impulse_activator, physics.object, const vec3, const vec3)"
+    },
+    {
+      "function_offset": 54205652,
+      "instruction": 54208178,
+      "bytes": "ffd3",
+      "slot_address": 54211436,
+      "kind": 6,
+      "symbol": "(f64) ocean_data.get_submergence_factor (const ocean_data, const vec3, const vec3, const f64, const bool)"
+    },
+    {
+      "function_offset": 54205652,
+      "instruction": 54211032,
+      "bytes": "ff10",
+      "slot_address": 54211524,
+      "kind": 4,
+      "symbol": "() physics_util.impulse_activator.add_force (physics_util.impulse_activator, physics.object, const vec3, const vec3)"
+    },
+    {
+      "function_offset": 55827040,
+      "instruction": 55827182,
+      "bytes": "ffd2",
+      "slot_address": 55836024,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.jet_engine_combustion.rebuild_jet_engine (server_scene.vehicle_component.jet_engine_combustion)"
+    },
+    {
+      "function_offset": 55827040,
+      "instruction": 55828408,
+      "bytes": "ffd5",
+      "slot_address": 55836104,
+      "kind": 6,
+      "symbol": "() server_scene.get_world_gas_content (server_scene, vec3, server_scene.vehicle_gas_content)"
+    },
+    {
+      "function_offset": 41964849,
+      "instruction": 41965046,
+      "bytes": "ffd3",
+      "slot_address": 41965705,
+      "kind": 6,
+      "symbol": "(mat34) server_scene.actor_character.get_view_transform (const server_scene.actor_character)"
+    },
+    {
+      "function_offset": 40122547,
+      "instruction": 40124002,
+      "bytes": "41ffd2",
+      "slot_address": 40124219,
+      "kind": 6,
+      "symbol": "() server_peer.unlocked_item.container.process_item_unlock (server_peer.unlocked_item.container, server, server_peer.data, server_scene, const ptr<server_scene.item_world>)"
+    },
+    {
+      "function_offset": 40117400,
+      "instruction": 40118844,
+      "bytes": "ff10",
+      "slot_address": 40119064,
+      "kind": 4,
+      "symbol": "(bool) unlocked_item.is_equal (const unlocked_item, const server_peer.unlocked_item)"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52771018,
+      "bytes": "ff13",
+      "slot_address": 52778586,
+      "kind": 4,
+      "symbol": "(bool) vehicle_plate_util.get_is_physics_plate (const vehicle_plate_util.e_plate_type, const e_vehicle_glass_state)"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52772885,
+      "bytes": "ff5500",
+      "slot_address": 52778602,
+      "kind": 4,
+      "symbol": "() physics.shape.create_convex_hull (physics.shape, const vector<vec3>, const vec3, const f64)"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52770040,
+      "bytes": "ff16",
+      "slot_address": 52778554,
+      "kind": 4,
+      "symbol": "() physics.shape.create_capsule (physics.shape, const f64, const f64, const vec3, const f64)"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52774619,
+      "bytes": "ff10",
+      "slot_address": 52778618,
+      "kind": 4,
+      "symbol": "() physics.shape.create_box (physics.shape, const vec3, const vec3, const f64)"
+    },
+    {
+      "function_offset": 51778349,
+      "instruction": 51779298,
+      "bytes": "ff13",
+      "slot_address": 51782741,
+      "kind": 4,
+      "symbol": "() server_scene.save_data.parser.parse_vector_of_objects<server_scene.save_data.vehicle_plate> (server_scene.save_data.parser, const string, vector<server_scene.save_data.vehicle_plate>)"
+    },
+    {
+      "function_offset": 51778349,
+      "instruction": 51778938,
+      "bytes": "ff13",
+      "slot_address": 51782725,
+      "kind": 4,
+      "symbol": "() server_scene.save_data.parser.parse_vector_of_objects<server_scene.save_data.vehicle_node> (server_scene.save_data.parser, const string, vector<server_scene.save_data.vehicle_node>)"
+    }
+  ],
+  "limits": [
+    "Selected static identities and bytes only; no recovered ABI, complete semantics or runtime acceptance.",
+    "62 distinct identities in these batches include 17 earlier sealing exports and one already-exported battery method."
+  ]
+}

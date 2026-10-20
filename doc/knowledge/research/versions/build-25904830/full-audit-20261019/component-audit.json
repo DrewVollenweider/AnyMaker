@@ -1,0 +1,1671 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "classes": [
+    {
+      "class": null,
+      "definitions": 4,
+      "indexed_exact_owner_methods": 0,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "unresolved",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "acceleration_sensor",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 9,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "air_filter",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 17,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "air_manifold",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 8,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "alternator",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 15,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "altitude_sensor",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 9,
+      "exported_exact_owner_methods": 1,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "ammo_belt_flexible",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 25,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "ammo_belt_interface",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 14,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "ammo_belt_magazine",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 6,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "ammo_belt_motor",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 6,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "ammo_belt_straight",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 4,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "ammo_belt_turn",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 4,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "antenna",
+      "definitions": 3,
+      "indexed_exact_owner_methods": 19,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "autocannon",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 17,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "battery",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 24,
+      "exported_exact_owner_methods": 2,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "boat_propeller",
+      "definitions": 3,
+      "indexed_exact_owner_methods": 7,
+      "exported_exact_owner_methods": 1,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "brake",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 10,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "building",
+      "definitions": 11,
+      "indexed_exact_owner_methods": 1,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "building_door",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 15,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "building_door_double",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "building_door_garage",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 6,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "building_foundation",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 1,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "building_window",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 8,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "button",
+      "definitions": 8,
+      "indexed_exact_owner_methods": 11,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "button_additive",
+      "definitions": 12,
+      "indexed_exact_owner_methods": 12,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "button_knob",
+      "definitions": 5,
+      "indexed_exact_owner_methods": 10,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "button_slider",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 12,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "button_switch",
+      "definitions": 3,
+      "indexed_exact_owner_methods": 10,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "button_switch_covered",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 12,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "button_switch_key",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 12,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "cannon",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 17,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "catalytic",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 11,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "clutch",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 14,
+      "exported_exact_owner_methods": 1,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "compass_sensor",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 9,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "control_surface",
+      "definitions": 8,
+      "indexed_exact_owner_methods": 8,
+      "exported_exact_owner_methods": 1,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "coolant_manifold",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "data_bracket",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "data_junction",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 4,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "data_port",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 7,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "dial",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 11,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "dial_compass",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 11,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "dial_dual",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 11,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "dial_gauge",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 11,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "dial_range",
+      "definitions": 5,
+      "indexed_exact_owner_methods": 11,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "differential_gearbox",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 11,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "drive_shaft",
+      "definitions": 3,
+      "indexed_exact_owner_methods": 10,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "electric_bracket",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "electric_junction",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 4,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "electric_port",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 7,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "electric_relay",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 14,
+      "exported_exact_owner_methods": 2,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "engine",
+      "definitions": 9,
+      "indexed_exact_owner_methods": 17,
+      "exported_exact_owner_methods": 6,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "engine_wheel",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 11,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "engine_wheel_b",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 2,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "engine_wheel_c",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 2,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "entity_interface",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 14,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "exhaust_manifold",
+      "definitions": 4,
+      "indexed_exact_owner_methods": 9,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "flight_stick",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 15,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "flight_stick_jet",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 14,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "flight_yoke",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 14,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "force_emitter_collective",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 24,
+      "exported_exact_owner_methods": 1,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "force_emitter_swashplate",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 24,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "fuel_manifold",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 9,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "furniture",
+      "definitions": 192,
+      "indexed_exact_owner_methods": 0,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "unresolved",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gas_bracket",
+      "definitions": 3,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gas_junction_t",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gas_junction_x",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gas_port",
+      "definitions": 4,
+      "indexed_exact_owner_methods": 7,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gas_pressure_sensor",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 12,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gas_pump",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 13,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gas_pump_centrifugal",
+      "definitions": 3,
+      "indexed_exact_owner_methods": 13,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gas_tank",
+      "definitions": 3,
+      "indexed_exact_owner_methods": 12,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gas_temperature_sensor",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 11,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gas_valve_straight",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 15,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gas_valve_t",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 15,
+      "exported_exact_owner_methods": 3,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gas_vent",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 7,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gas_vent_b",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 7,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gear_track",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 7,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gearbox",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 18,
+      "exported_exact_owner_methods": 1,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gearbox_b",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 17,
+      "exported_exact_owner_methods": 2,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gearbox_c",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 1,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gearbox_fixed_ratio",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 13,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "gyro_rotation_sensor",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 9,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "handbrake",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 15,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "handle",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 6,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "heat_exchanger_gas_gas",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 12,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "heat_exchanger_gas_liquid",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 12,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "heat_exchanger_liquid_liquid",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 12,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "hinge_knuckle",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "hinge_pin",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 19,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "horn",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 13,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "horn_klaxon",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 13,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "hydraulic_actuator",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 13,
+      "exported_exact_owner_methods": 1,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "hydraulic_cylinder_connector",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 11,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "hydraulic_cylinder_connector_2_2",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 0,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "unresolved",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "hydraulic_cylinder_connector_3_3",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 0,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "unresolved",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "hydraulic_cylinder_connector_base",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 20,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "hydraulic_cylinder_connector_base_2_2",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 2,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "hydraulic_cylinder_connector_base_3_3",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 2,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "indicator",
+      "definitions": 8,
+      "indexed_exact_owner_methods": 10,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "interface_data",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "interface_electric",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "interface_gas",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "interface_liquid",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "interface_mechanical_in",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 17,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "interface_mechanical_out",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 17,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "interface_torque",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 18,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "inventory",
+      "definitions": 58,
+      "indexed_exact_owner_methods": 19,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "jet_engine_combustion",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 22,
+      "exported_exact_owner_methods": 1,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "jet_engine_compressor",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 19,
+      "exported_exact_owner_methods": 1,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "jet_engine_exhaust",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 19,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "jet_engine_fuel_manifold",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 9,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "jet_engine_gearbox",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 17,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "jet_engine_gearbox_nose",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "jet_engine_particle_separator",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 15,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "keycard_reader",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 11,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "ladder",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 10,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "landing_gear",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "landing_gear_dual",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "landing_gear_retractable",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 15,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "latch_handle",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 26,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "latch_knuckle",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 20,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "latch_pin",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 23,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "lever_switch",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 10,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "lever_switch_curve",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 12,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "lever_switch_large",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 12,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "light_omni",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 17,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "light_rotate",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 17,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "light_spot",
+      "definitions": 4,
+      "indexed_exact_owner_methods": 17,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "liquid_bracket",
+      "definitions": 3,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "liquid_fill_port",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 3,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "liquid_junction_t",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "liquid_junction_x",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "liquid_port",
+      "definitions": 4,
+      "indexed_exact_owner_methods": 7,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "liquid_pressure_sensor",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 12,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "liquid_pump",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 14,
+      "exported_exact_owner_methods": 5,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "liquid_tank",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 17,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "liquid_temperature_sensor",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 12,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "liquid_valve_straight",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 15,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "liquid_valve_t",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 15,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "liquid_vent",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 7,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "mechanical_bracket",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "mechanical_handle",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "mechanical_junction",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "mechanical_junction_abs",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "mechanical_junction_add",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "mechanical_junction_invert",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "mechanical_junction_max",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "mechanical_junction_min",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "mechanical_junction_offset",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 7,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "mechanical_junction_scale",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 7,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "mechanical_junction_set_reset",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 6,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "mechanical_junction_toggle",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 6,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "microcontroller",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 62,
+      "exported_exact_owner_methods": 3,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "microphone",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 10,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "motor",
+      "definitions": 3,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "mounting_knuckle",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 17,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "mounting_pin",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 18,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "oil_filter",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 24,
+      "exported_exact_owner_methods": 1,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "oil_manifold",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "pulley",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 6,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "pulley_corner",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 1,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "pulley_straight",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 1,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "pulley_wheel",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 11,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "radiator",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 1,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "radiator_fan",
+      "definitions": 4,
+      "indexed_exact_owner_methods": 11,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "rail",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 15,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "rail_ballscrew",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 17,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "rail_ballscrew_slider",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 14,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "rail_slider",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "roller_wheel_fixed_large",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 2,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "roller_wheel_fixed_large_narrow",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 2,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "roller_wheel_fixed_large_wide",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 2,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "roller_wheel_fixed_small",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 2,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "roller_wheel_fixed_small_narrow",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 2,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "roller_wheel_fixed_small_wide",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 2,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "roller_wheel_suspension_large",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 3,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "roller_wheel_suspension_large_narrow",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 3,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "roller_wheel_suspension_large_wide",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 3,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "roller_wheel_suspension_small",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 3,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "roller_wheel_suspension_small_narrow",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 3,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "roller_wheel_suspension_small_wide",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 3,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "rope_hook",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 5,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "seat",
+      "definitions": 4,
+      "indexed_exact_owner_methods": 15,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "seven_segment",
+      "definitions": 6,
+      "indexed_exact_owner_methods": 11,
+      "exported_exact_owner_methods": 1,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "short_shifter",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "speaker",
+      "definitions": 3,
+      "indexed_exact_owner_methods": 10,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "sprocket_large",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 2,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "sprocket_large_narrow",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 2,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "sprocket_large_wide",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 2,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "sprocket_small",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 2,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "sprocket_small_narrow",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 2,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "sprocket_small_wide",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 2,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "steering_wheel",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 15,
+      "exported_exact_owner_methods": 2,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "stepper_motor",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 11,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "throttle",
+      "definitions": 4,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "throttle_gear",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 15,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "throttle_slide",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "tilt_sensor",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 9,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "tool_wall",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "tow_bar",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 23,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "tow_hitch",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 23,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "weapon_mount",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 15,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "weapon_mount_pintle",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 20,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "weight_block",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 0,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "unresolved",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "wheel",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 25,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "wheel_hydraulic",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 25,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "wheel_mount",
+      "definitions": 2,
+      "indexed_exact_owner_methods": 16,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    },
+    {
+      "class": "winch",
+      "definitions": 1,
+      "indexed_exact_owner_methods": 9,
+      "exported_exact_owner_methods": 0,
+      "binding_status": "name_candidate_only",
+      "semantic_status": "requires_individual_review"
+    }
+  ],
+  "limits": "All component class groups including omitted class. Counts do not indicate behavioral understanding; generic/inherited dispatch still needs tracing."
+}

@@ -13,7 +13,7 @@ import sqlite3
 from baseline import sha,write
 from trace_code import audit
 
-VERSION='1.0.0'
+VERSION='1.1.0'
 
 
 def connect(path):
@@ -39,16 +39,22 @@ def build(source,index,output,folders):
                 code_sha256 TEXT,c_source TEXT,assembly TEXT,evidence TEXT);
             CREATE VIRTUAL TABLE search USING fts5(signature,c_source,symbols,literals);
         ''')
-        names=set();counts={'functions':0,'instructions_byte_checked':0,'slot_derived_calls':0,'unresolved_calls':0}
+        names={};counts={'functions':0,'identical_exports_deduplicated':0,'instructions_byte_checked':0,'slot_derived_calls':0,'unresolved_calls':0}
         for folder,report in zip(folders,reports):
             if report['source_sha256']!=expected:raise ValueError('Multiple source builds')
             for r in report['functions']:
-                if r['code_offset'] in names:raise ValueError('Duplicate export function; select distinct batches')
-                names.add(r['code_offset'])
                 c=(folder/'ghidra'/(r['export_name']+'.c')).read_text(encoding='utf-8')
                 asm=(folder/'ghidra'/(r['export_name']+'.asm.tsv')).read_text(encoding='utf-8')
                 if not c.strip() or c.startswith('ERROR:'):raise ValueError('Incomplete pseudocode')
                 evidence=json.dumps(r,ensure_ascii=False)
+                identity=(r['signature'],r['code_sha256'],c,asm,
+                          json.dumps(r,sort_keys=True,ensure_ascii=False))
+                if r['code_offset'] in names:
+                    if names[r['code_offset']]!=identity:
+                        raise ValueError('Conflicting duplicate export function')
+                    counts['identical_exports_deduplicated']+=1
+                    continue
+                names[r['code_offset']]=identity
                 db.execute('INSERT INTO functions VALUES(?,?,?,?,?,?)',
                     (r['code_offset'],r['signature'],r['code_sha256'],c,asm,evidence))
                 db.execute('INSERT INTO search(rowid,signature,c_source,symbols,literals) VALUES(?,?,?,?,?)',

@@ -67,6 +67,14 @@ The [engine/structure follow-up](OFFLINE-ENGINE-STRUCTURE-20261019.md) adds anot
 
 ## Updates and historical records
 
+The [full-game audit](FULL-AUDIT-20261019.md) adds `audit_scope.py` for exhaustive accounting over the supplied GCL/definition indexes. It retains unclassified names and omitted classes, checks a reader's completion/source identity, and emits local function/class/definition-group queues. Public summaries deliberately omit the full method inventory. No class is automatically marked understood.
+
+```powershell
+python scripts/research/audit_scope.py "$r/gcl/index.sqlite" "$r/catalog/definitions.sqlite" "$r/scope" --reader "$r/reader/code.sqlite"
+```
+
+Reader 1.1 accepts identical repeated exports after auditing every batch, counts each function's instructions once, and reports deduplicated exports. Identity, approximate C, assembly and evidence must all match; conflicting duplicates are rejected and the reader stays incomplete. Use a fresh output after a failed build. The latest nine-batch reader has 153 functions/43,027 instructions/253,345 bytes. All 60 synthetic research-tool tests passed, including duplicate conflict and scope-accounting failure controls. The evidence checker input for this follow-up is `versions/build-25904830/full-audit-20261019/evidence.json`.
+
 ```powershell
 python scripts/research/check_historical.py "$r/snapshot/bin/game.gcl" "$r/gcl/index.sqlite" "<directory-of-selected-evidence-json>" "$r/historical-check.json"
 python scripts/research/compare_builds.py "<old>/inventory.json" "<new>/inventory.json" "<new>/diff.json" --old-definitions "<old>/catalog/definitions.sqlite" --new-definitions "<new>/catalog/definitions.sqlite" --old-functions "<old>/gcl/index.sqlite" --new-functions "<new>/gcl/index.sqlite"

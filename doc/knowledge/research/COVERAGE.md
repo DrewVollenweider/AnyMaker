@@ -2,6 +2,8 @@
 
 Measurements in this checkpoint apply to build 25904830. Keyword counts come from the [machine-readable system index](versions/build-25904830/system-map.json), with overlapping topics and template expansion; they cannot be converted into a percentage of understanding.
 
+Latest scope supersedes the earlier topic-only queue: [full-game audit register](AUDIT-REGISTER.md), [new findings and historical review](FULL-AUDIT-20261019.md), [complete indexed scope accounting](versions/build-25904830/full-audit-20261019/scope-summary.json), and [every component class group](versions/build-25904830/full-audit-20261019/component-audit.json). The table below retains chronological measurements; they must not be summed blindly because later readers include earlier exports.
+
 | Dimension | Completed | Does not establish |
 | --- | --- | --- |
 | Installation files | 10,813/10,813, two-pass SHA-256 | Understanding of every file's internal structure |
@@ -17,6 +19,9 @@ Measurements in this checkpoint apply to build 25904830. Keyword counts come fro
 | Offline selected evidence | 29 record identities, 17 constants, four strings, 21 call examples checked; 42 research-tool tests | Automated proof of prose semantics or game-runtime acceptance |
 | Offline systems follow-up | 36 further functions/7,042 instructions/38,015 bytes; combined reader 65 functions/13,855 instructions; 51 tests | Complete component ordering, all conservation edge cases, or a whole-program script budget |
 | Engine/structure follow-up | 27 further functions/11,186 instructions/68,043 bytes; combined reader 92 functions/25,041 instructions | Complete engine calibration, all contact/collision cases, or structural strength thresholds |
+| Full-game scope follow-up | All 1,737 definitions/379 source-class groups; 598 components/207 named classes; all 37,082 records/4,364 owner groups retained | Class binding, default recovery or understanding of every indexed item; 15,049 method-name leads remain unclassified |
+| Expanded combined reader | 153 unique functions/43,027 instructions/253,345 bytes; 60 synthetic tool tests | Whole-game decompilation, ABI recovery, all virtual targets or all prose interpretations |
+| Historical creation recheck | Six later truck/heli reports recovered; five archived files re-audited | The rejected heli inset still passes the basic audit; the cleaned giant export retains a frame-only grouping warning |
 | System map | 15 topics with definition/code leads and question queues | Explanations of 15 systems |
 | Detailed investigation | Opening/Hatch matching -> sealing flag -> water-flow branch | Player passage, all geometry/dynamic states, or runtime acceptance |
 | New runtime experiments | **0** | Testing of any new game behavior |

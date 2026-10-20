@@ -1,0 +1,239 @@
+{
+  "schema": 1,
+  "date": "2026-10-19",
+  "reports": [
+    {
+      "label": "hauler-cab-03",
+      "report_sha256": "715cec1d5c661ebdf42f9de4eece060f751489f2f1075c2cefdf64436466194e",
+      "facts": {
+        "name": "Longhood_Hauler_8Speed_03",
+        "components": 117,
+        "seat_raise_m": 0.48,
+        "seat_forward_m": 0.32,
+        "windscreen_sill_lowered_m": 0.16,
+        "rewound_panels": 49,
+        "limits": "Eye heights are an explicit planning band, not a recovered native camera transform. Driver viewpoint and covers need in-game confirmation. No new driving or shift test performed.",
+        "service_route_count": 31,
+        "planned_sightline_count": 27,
+        "static_mounting_islands": 1
+      }
+    },
+    {
+      "label": "rejected-heli-inset",
+      "report_sha256": "b8b4f5679663b8338dc9118f5dab1ec9bdb68ee3c5e7bf545df56e2497ad7bb0",
+      "facts": {
+        "inset_grid_units": 1,
+        "grid_unit_m": 0.08,
+        "inner_panels_changed": 65,
+        "moved_nodes": 102,
+        "counts_before": {
+          "nodes": 183,
+          "edges": 396,
+          "plates": 325
+        },
+        "counts_after": {
+          "nodes": 278,
+          "edges": 652,
+          "plates": 342
+        }
+      }
+    },
+    {
+      "label": "heli-rollback",
+      "report_sha256": "b0a4234e596fb1d30e92b6f3fd09bbfe2fd18a3095c23dd8ba16bf20f90641d4",
+      "facts": {
+        "status": "original_restored",
+        "reason": "User reported phantom plates/edges and requested treating the inset revision as corrupt.",
+        "restored_hashes": {
+          ".data": "eeb5489af06e5e8635614feff2271dd4aa5b0db3007340f725172877e6c5ee10",
+          ".meta": "5d0e8da2cda22e0dfe0cb6f86403c608cb01db3998cddc8b39ba761aa16281be",
+          ".png": "b1e618a29131be85c61463222138a69503c3aff479020693509c3b210399b36e"
+        },
+        "note": "Exact rollback includes original liquid levels. Existing spawned objects are not replaced by a disk restore."
+      }
+    },
+    {
+      "label": "heli-native-lining",
+      "report_sha256": "0e84b545789df91914a8cfa05e177c482ddb2184559fa935584f366f51eb99db",
+      "facts": {
+        "source_wall_added_plates": 14,
+        "source_dash_added_plates": 6,
+        "wall_offset_grid_units": 2,
+        "wall_offset_m": 0.16,
+        "counts_before": {
+          "nodes": 213,
+          "edges": 462,
+          "plates": 343
+        },
+        "counts_after": {
+          "nodes": 255,
+          "edges": 571,
+          "plates": 405
+        },
+        "new_partial_edge_overlaps": 0
+      }
+    },
+    {
+      "label": "heli-pilot-and-rear-restoration",
+      "report_sha256": "8427b9bed29efe38c8a7046ddf3f4b42bdbe2cafd46718f2ea8a72076b57d262",
+      "facts": {
+        "removed_rear_added_panels": 45,
+        "rear_footprints_exact_original_match": true,
+        "rear_frame_coverage_exact_original_match": true,
+        "tanks": [
+          {
+            "id": 120,
+            "liquid": "petrol",
+            "before_l": 20.189624634684623,
+            "after_l": 240.0,
+            "capacity_l": 240.0
+          },
+          {
+            "id": 121,
+            "liquid": "petrol",
+            "before_l": 20.1896962273309,
+            "after_l": 240.0,
+            "capacity_l": 240.0
+          },
+          {
+            "id": 122,
+            "liquid": "petrol",
+            "before_l": 19.81036694769447,
+            "after_l": 180.0,
+            "capacity_l": 180.0
+          },
+          {
+            "id": 123,
+            "liquid": "petrol",
+            "before_l": 19.810312190287096,
+            "after_l": 180.0,
+            "capacity_l": 180.0
+          },
+          {
+            "id": 112,
+            "liquid": "oil",
+            "before_l": 0.5313790229049159,
+            "after_l": 144.0,
+            "capacity_l": 144.0
+          }
+        ],
+        "counts_before": {
+          "nodes": 266,
+          "edges": 596,
+          "plates": 421
+        },
+        "counts_after": {
+          "nodes": 246,
+          "edges": 541,
+          "plates": 388
+        },
+        "gameplay": "No new in-game test performed; mirrored shell is taken from the user native geometry."
+      }
+    },
+    {
+      "label": "heli-rear-completion",
+      "report_sha256": "ae28b1fae54510484f8948a34dc3efe85d3c1f10991974bde804961b6035ceb1",
+      "facts": {
+        "source_patch_panels": 25,
+        "shared_center_panels_skipped": 6,
+        "counts_before": {
+          "nodes": 269,
+          "edges": 607,
+          "plates": 384
+        },
+        "counts_after": {
+          "nodes": 279,
+          "edges": 641,
+          "plates": 403
+        },
+        "gameplay": "Static checks only; no new in-game test performed.",
+        "mirrored_panels": 19
+      }
+    }
+  ],
+  "archived_native_audits": [
+    {
+      "label": "compact-i4-user-running",
+      "creation_sha256": "65a2cfc700ffa32c9244ac3452b4640af7496e1ed5c75a8383ef2711c6c4a7ed",
+      "issues": [],
+      "vehicles": [
+        {
+          "id": 215,
+          "components": 60,
+          "nodes": 177,
+          "edges": 197,
+          "plates": 1
+        }
+      ]
+    },
+    {
+      "label": "giant-working-cleaned",
+      "creation_sha256": "57de2fed038bb63d74541bba79ef8b11a33c3560c79cec02cc7c68da93052744",
+      "issues": [
+        {
+          "severity": "warning",
+          "code": "frame_groups",
+          "path": "/vehicles/vehicles/0",
+          "message": "6 disconnected frame-only groups; component bridges are not evaluated"
+        }
+      ],
+      "vehicles": [
+        {
+          "id": 228,
+          "components": 103,
+          "nodes": 170,
+          "edges": 225,
+          "plates": 17
+        }
+      ]
+    },
+    {
+      "label": "heli-rejected-inset",
+      "creation_sha256": "d151f01fb4bb09e431922bd15a3631bc435ed4ebf6bdc2b8f70527e90a9297c4",
+      "issues": [],
+      "vehicles": [
+        {
+          "id": 243,
+          "components": 89,
+          "nodes": 278,
+          "edges": 652,
+          "plates": 342
+        }
+      ]
+    },
+    {
+      "label": "heli-pilot-restored",
+      "creation_sha256": "99b2f5b90b9c7823749823fbc77486020c5f084ba9466a4d66df6350ebcff8c7",
+      "issues": [],
+      "vehicles": [
+        {
+          "id": 246,
+          "components": 91,
+          "nodes": 246,
+          "edges": 541,
+          "plates": 388
+        }
+      ]
+    },
+    {
+      "label": "heli-rear-completed",
+      "creation_sha256": "929e191f4202640740394a1869468c9ea4e35832085ae6bada249fe694b4c409",
+      "issues": [],
+      "vehicles": [
+        {
+          "id": 248,
+          "components": 89,
+          "nodes": 279,
+          "edges": 641,
+          "plates": 403
+        }
+      ]
+    }
+  ],
+  "audit_tool_sha256": "04ed32ad0d04c4d4cc9aa216d5837320dbfaf6bffafc3aa533f9fccbe61ae854",
+  "limits": [
+    "Prior reports are historical records, not newly executed creation changes or runtime tests.",
+    "The rejected inset remains rejected regardless of static audit outcome; the root cause of phantom geometry is unresolved.",
+    "Basic native audits check schema/IDs/references within their implementation limits, not full topology, mounting, visual appearance or game loading."
+  ]
+}

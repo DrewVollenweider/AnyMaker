@@ -5,6 +5,7 @@ from pathlib import Path
 import sqlite3
 import struct
 import tempfile
+import shutil
 import unittest
 from contextlib import closing
 
@@ -137,6 +138,22 @@ class ReaderTests(unittest.TestCase):
         f=json.loads(json.dumps(self.fact));f['instructions'][0]['bytes']='90'
         with self.assertRaisesRegex(ValueError,'bytes differ'):
             trace.validate_instructions(f,self.rec,self.raw,self.asm)
+
+    def test_identical_reexport_counted_once(self):
+        result=code_reader.build(self.source,self.index,self.root/'duplicate',
+                                 [self.folder,self.folder])
+        self.assertEqual(result['counts']['functions'],1)
+        self.assertEqual(result['counts']['instructions_byte_checked'],1)
+        self.assertEqual(result['counts']['identical_exports_deduplicated'],1)
+
+    def test_conflicting_reexport_rejected_and_reader_stays_incomplete(self):
+        other=self.root/'other';shutil.copytree(self.folder,other)
+        (other/'ghidra/example.c').write_text('void different() { return; }')
+        out=self.root/'conflict'
+        with self.assertRaisesRegex(ValueError,'Conflicting duplicate'):
+            code_reader.build(self.source,self.index,out,[self.folder,other])
+        with self.assertRaises((ValueError,sqlite3.OperationalError)):
+            code_reader.search(out/'code.sqlite','research')
 
     def test_assembly_and_facts_disagreement_rejected(self):
         with self.assertRaisesRegex(ValueError,'disagree'):

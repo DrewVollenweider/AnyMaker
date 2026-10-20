@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "tool_version": "1.0.0",
+  "tool_sha256": "af26f35a66c95179cc38a2b0a79284a32df8dec819ebb636bec5f52005218c46",
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "index_sha256": "bd2879d1c249899c3d1e8ae8ab9134d983a80bec86bbf610ba1635916efe2f71",
+  "catalog_sha256": "0aea2e87abc023cccef856cc8001a8f29c22f4031afa4df5795f4dde5c6bf8a1",
+  "reader_sha256": "e2e8dba45ac320d5c45eb8c613cbd84c080b314f47b1d5db90e75b25c0a9560a",
+  "summary": {
+    "function_records": 37082,
+    "method_owner_groups": 4364,
+    "unparsed_signatures": 0,
+    "topic_name_leads_overlapping": {
+      "building": 842,
+      "components": 4679,
+      "controls": 2229,
+      "doors": 271,
+      "electric": 572,
+      "fluids": 1428,
+      "input_audio_ui": 3177,
+      "multiplayer": 4610,
+      "physics": 1607,
+      "powertrain": 1382,
+      "rendering": 2999,
+      "saves": 1200,
+      "scripts": 2262,
+      "survival": 2964,
+      "unclassified": 15049,
+      "world": 4577
+    },
+    "reader_identity_matches": 153,
+    "all_definition_records": 1737,
+    "definition_source_class_groups": 379,
+    "component_definitions": 598,
+    "explicit_component_classes": 207,
+    "component_definitions_with_omitted_class": 4,
+    "class_groups_with_same_name_owner": 203
+  },
+  "required_review_dimensions": [
+    "definition variants and inherited implementation binding",
+    "creation and omitted parser defaults",
+    "structural mounting and moving-body ownership",
+    "interface type, gender, ordinal, position and facing",
+    "inputs, outputs, units and thresholds",
+    "state transitions, power loss and damage",
+    "tick order and network dependencies",
+    "serialization, ID remapping and migration",
+    "render geometry versus collision and buoyancy",
+    "historical claims, contradictions and remaining uncertainty"
+  ],
+  "limits": "Exhaustive only over supplied indexes. Names are leads, not binding or behavior. Export identity does not establish semantic review. Unclassified records are retained. Old claims and runtime evidence require a separate manual review ledger.",
+  "reader_instruction_bytes_checked": 253345
+}

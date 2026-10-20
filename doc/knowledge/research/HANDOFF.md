@@ -1,12 +1,13 @@
 # Handoff and restart
 
-Latest checkpoint: [engines, edges and plates](OFFLINE-ENGINE-STRUCTURE-20261019.md), following [electrical/liquid/script systems](OFFLINE-SYSTEMS-20261019.md) and the [offline reader](OFFLINE-20261019.md). The combined reader covers 92 selected functions; new instruction/evidence checks passed. No research implementation changed since the 51-test passing suite. The user's current request is research without required in-game testing. Exact local outputs are in workspace `RESEARCH-HANDOFF.md`. Preserve unknown dynamic bindings rather than inventing targets.
+Latest checkpoint: [full-game audit](FULL-AUDIT-20261019.md). The user explicitly expanded scope to all systems, including earlier work; follow the [complete audit register](AUDIT-REGISTER.md), not only the previously prioritized questions. The reader contains 153 unique selected functions with 43,027 source-checked instructions. All 60 synthetic tool tests passed. New scope accounting retains every indexed record/class without implying semantic completion. Later truck/heli reports are recovered, including the rejected inset and rollback. Continue offline without requiring user gameplay tests. Exact local outputs are in workspace `RESEARCH-HANDOFF.md`; preserve unresolved bindings.
 
 Status: phase 1 (baseline/existing-work assessment/system map) is complete. The first necessary search and local native-analysis capabilities of phase 2 are delivered. Complete container/type recovery in phase 2 remains unfinished; phase 3's per-system explanations are beginning. Do not mark the whole assignment complete at this checkpoint.
 
 ## Restart sequence
 
 1. Read parent AGENTS, the knowledge hub, CURRENT-FACTS, and this directory's README/COVERAGE/VERSIONS.
+   Also read AUDIT-REGISTER and FULL-AUDIT-20261019 before selecting new work. Earlier focused next steps remain useful subsets, not the full assignment.
 2. Locate the separate research directory. Exact machine paths are in workspace `RESEARCH-HANDOFF.md`; the public repository stores only relative paths and hashes. Without local inputs, recollect the matching version using TOOLS; never request or commit private keys.
 3. Confirm `gcl/index.sqlite` by source SHA. Query the target signature/references and read local original bytes/limited exports. Do not load the entire decompilation into context.
 4. Read this checkpoint's `historical-check.json` first. All 96 historical addresses are invalid; use relocated addresses. The 66 identical code hashes do not establish unchanged data/caller environments.
@@ -36,6 +37,7 @@ Status: phase 1 (baseline/existing-work assessment/system map) is complete. The 
 | 2026-10-19 | Electrical budget calls, relay hysteresis, liquid pump arithmetic, microcontroller power gate | 42 research-tool tests; 29 records, 17 constants, four strings, 21 call examples checked; no game execution |
 | 2026-10-19 | Electrical update ordering/deferred debit, liquid accounting/head/conservation, 256-iteration per-loop limit | 36 further exports/7,042 instructions/38,015 bytes; combined reader 65 functions; 51 tests; 44 selected records, 13 constants, four strings, 20 call examples checked |
 | 2026-10-19 | Engine gates/damage/units; edge/plate/component attachment; plate facing/support/thickness | 27 further exports/11,186 instructions/68,043 bytes; reader 92 functions; 27 identities, 24 constants, 14 strings, 15 call examples checked; no new game test |
+| 2026-10-19 | Full-game accounting, all earlier subject queue, later truck/heli recovery; gearbox/filter/weather/propulsion/survival/save traces | Reader 153 functions/43,027 instructions/253,345 bytes; 60 tool tests; 62 selected identities, 20 constants, 20 strings, 35 call examples checked; whole-game semantic audit remains incomplete |
 
 Default Git transfers repeatedly stalled in this environment and were terminated. A separate sparse checkout was recovered through GitHub API objects and existing archive blobs, checking every object's SHA-1: base `bcfea8e9b94604020d8957e456493c744a89e2e0`, 49 trees, 133 matching blobs. Unretrieved application blobs remain absent under sparse checkout; this is not a usable frontend-test checkout. Other checkouts' local changes/commits were neither read nor rewritten.
 

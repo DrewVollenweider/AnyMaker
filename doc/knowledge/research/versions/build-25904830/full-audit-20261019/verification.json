@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "date": "2026-10-19",
+  "source_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "definition_files_checked": 2968,
+    "definition_file_mismatches": []
+  },
+  "selected_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "d50e9288592c2f2ef55dfcd3b042433e4d61242247104796249a0b4e7f3e855d",
+    "function_records_checked": 62,
+    "constants_checked": 20,
+    "strings_checked": 20,
+    "call_instruction_examples_checked": 35,
+    "limitations": "Exact static identities/bytes only; virtual target binding and prose semantics are not proven by this checker."
+  },
+  "reader_counts": {
+    "functions": 153,
+    "identical_exports_deduplicated": 1,
+    "instructions_byte_checked": 43027,
+    "slot_derived_calls": 1946,
+    "unresolved_calls": 1748
+  },
+  "reader_instruction_bytes_checked": 253345,
+  "research_tool_tests_passed": 60,
+  "research_tool_test_log_sha256": "f7ddc18537d4fa8d3a9fd470847369c587ce7fe21f45d7b2a5c04e9ca9df58dc",
+  "scope_summary": {
+    "function_records": 37082,
+    "method_owner_groups": 4364,
+    "unparsed_signatures": 0,
+    "topic_name_leads_overlapping": {
+      "building": 842,
+      "components": 4679,
+      "controls": 2229,
+      "doors": 271,
+      "electric": 572,
+      "fluids": 1428,
+      "input_audio_ui": 3177,
+      "multiplayer": 4610,
+      "physics": 1607,
+      "powertrain": 1382,
+      "rendering": 2999,
+      "saves": 1200,
+      "scripts": 2262,
+      "survival": 2964,
+      "unclassified": 15049,
+      "world": 4577
+    },
+    "reader_identity_matches": 153,
+    "all_definition_records": 1737,
+    "definition_source_class_groups": 379,
+    "component_definitions": 598,
+    "explicit_component_classes": 207,
+    "component_definitions_with_omitted_class": 4,
+    "class_groups_with_same_name_owner": 203
+  },
+  "archived_creation_files_reaudited": 5,
+  "archived_creation_audit_findings": {
+    "errors": 0,
+    "warnings": 1
+  },
+  "game_executed": false,
+  "installation_and_active_saves_edited": false,
+  "limits": "Static identity/bytes, input equality and synthetic tool checks. Not proof of all prose semantics, full class binding, runtime behavior or completion of the full-game audit."
+}

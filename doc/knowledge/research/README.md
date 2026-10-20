@@ -1,6 +1,8 @@
 # Whole-game research
 
-Latest continuation: [engines, edges and plates](OFFLINE-ENGINE-STRUCTURE-20261019.md), following [electrical/liquid/script systems](OFFLINE-SYSTEMS-20261019.md) and the [offline reader checkpoint](OFFLINE-20261019.md). The combined reader now covers 92 selected functions. New traces address engine gates/damage/channel units, structural adjacency/attachment, plate facing, support offsets and thickness. The user requested research without required in-game testing; continue offline and label remaining unknowns explicitly. Historical runtime protocols remain reference plans, not a gate for this assignment.
+Latest continuation: [full-game scope and new traces](FULL-AUDIT-20261019.md), with an [audit register covering every system and past subject](AUDIT-REGISTER.md). It accounts for all indexed records and 207 named component classes, adds current gearbox/filter/weather/propulsion/survival/save traces, and recovers the later truck/helicopter records. The combined reader now covers 153 selected functions. Full-game semantic understanding remains incomplete. Continue offline without requiring in-game testing, and retain unresolved bindings and historical failures explicitly.
+
+Earlier checkpoints: [engines, edges and plates](OFFLINE-ENGINE-STRUCTURE-20261019.md), [electrical/liquid/script systems](OFFLINE-SYSTEMS-20261019.md), and the [offline reader](OFFLINE-20261019.md). Historical runtime protocols remain reference plans, not a gate for this assignment.
 
 2026-10-18 (America/New_York). This is the first whole-game baseline checkpoint of an ongoing research system, not a claim to understand the entire game. Start with [coverage](COVERAGE.md), [versions](VERSIONS.md), and [handoff](HANDOFF.md), then search through the [system index](versions/build-25904830/system-map.json). The existing [engineering findings](../CURRENT-FACTS.md) and acceptance records remain applicable within their own version and evidence boundaries.
 
