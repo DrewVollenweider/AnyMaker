@@ -1,5 +1,7 @@
 # Coverage and gaps
 
+Newest continuation: [wheel/contact, gas/thermal and native helpers](CONTACT-FLUIDS-NATIVE-20261020.md). The combined reader has 1,074 functions/149,292 checked instructions/849,610 bytes. The matching PE has a bounded index and ten selected byte-checked spans; five registrations are corroborated. The complete research suite has 127 passing synthetic tests. These are selected semantic/source checks, not whole-game completion or runtime acceptance.
+
 Measurements in this checkpoint apply to build 25904830. Keyword counts come from the [machine-readable system index](versions/build-25904830/system-map.json), with overlapping topics and template expansion; they cannot be converted into a percentage of understanding.
 
 Current continuation: [torque/electric machines/jets/rotors](POWERTRAIN-20261020.md), following [component types/construction/geometry](COMPONENTS-TYPES-20261020.md). All declared component update methods are available, with selected coherent behavior chains reviewed. The current local index has 37,140 functions; reflection supplies declared class/enum/method/field information. Historical rows below remain measurements of their own checkpoints.
@@ -8,6 +10,7 @@ Latest scope supersedes the earlier topic-only queue: [full-game audit register]
 
 | Dimension | Completed | Does not establish |
 | --- | --- | --- |
+| Contact/gas/native continuation | Suspension/load/grip, gas brake thresholds, tyre calibration, overload temperature distinction, exchangers/world sampling and selected native constructors/math | Full track contact, moving-support/native physics, actuator ownership, all gas aliases/empty states or complete ABI |
 | Component update access | All 156 distinct declared update implementations across 224 types; all 598 shipped definition IDs retained | Complete review of their behavior or availability of compiled-only classes |
 | Torque/propulsion follow-up | 611-function reader/103,166 instructions/597,691 bytes; 101 synthetic tests; selected solver, motor, alternator, jet and rotor traces | Full contact/track/aerodynamic/thermal models, native intrinsic behavior or game-runtime acceptance |
 | Installation files | 10,813/10,813, two-pass SHA-256 | Understanding of every file's internal structure |

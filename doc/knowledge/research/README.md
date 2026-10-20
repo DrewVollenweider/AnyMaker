@@ -1,5 +1,7 @@
 # Whole-game research
 
+Latest continuation: [wheel contact, gas circulation, heat and selected native helpers](CONTACT-FLUIDS-NATIVE-20261020.md). The source-bound reader now contains 1,074 functions/149,292 checked instructions; 127 synthetic tests pass. New findings include suspension/grip arithmetic, pressure-released truck brakes, gas overload temperature differences, exchanger coefficients, world sampling and selected native vector/math registrations. Track and actuator exports remain separate from complete semantic review. The full-game audit remains active and incomplete.
+
 Latest checkpoint: [torque, electric machines, jets and helicopter rotors](POWERTRAIN-20261020.md). All 156 declared component update implementations are available in the local reader, which now contains 611 selected functions. New selected traces explain ratio-dependent mass, shared brakes, motor demand, alternator losses, jet-chain validation, swashplate mixing and rotor/ground-effect arithmetic. The full-game audit remains active and incomplete.
 
 Earlier October 20 checkpoint: [component construction, reflection and geometry](COMPONENTS-TYPES-20261020.md). The parser reads the complete declared 8,084-entry reflection table and indexes 37,140 bounded function records, preserving all earlier records. All 207 shipped named component classes have reflected declarations and constructor-prefix evidence; specialized behavior remains separately reviewable. That checkpoint's reader contained 394 selected functions.

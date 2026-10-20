@@ -1,5 +1,7 @@
 # Full-game audit register
 
+Latest selected findings: [contact, gas/thermal and native helpers](CONTACT-FLUIDS-NATIVE-20261020.md). Wheel suspension/grip, pressure-released brakes, calibration, gas equalization overloads, exchanger/world sampling and five native helper registrations are reviewed at the report's scope. Full track dynamics, actuator ownership, network aliases/empty cases, native physics and the remaining systems below stay open. The 1,074-function reader is access infrastructure, not a completion count.
+
 Scope expanded on 2026-10-19: research every game system and revisit earlier work. This register is a work queue, not a completion certificate. Research stays offline; no new gameplay test is required from the user. Build 25904830 and source hashes remain mandatory boundaries.
 
 Start with the [current torque/propulsion findings](POWERTRAIN-20261020.md), [component/type foundation](COMPONENTS-TYPES-20261020.md), [component declarations and constructor evidence](versions/build-25904830/components-types-20261020/component-bindings.json), and [earlier full-scope findings](FULL-AUDIT-20261019.md). The refreshed local index retains 37,140 bounded functions, including all previous 37,082 records; 15,050 method-name leads remain unclassified. The reflection parser reads the declared 8,084-entry table. All 156 distinct declared component updates are available, with complete semantic review still pending. Names, declarations and export counts cannot establish complete implementation behavior.

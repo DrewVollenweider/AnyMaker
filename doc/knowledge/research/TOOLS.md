@@ -22,6 +22,21 @@ Source: `scripts/research/`. Python 3.12+ standard library; Ghidra exports addit
 | `test_code_trace.py` | Synthetic dataflow boundaries, tampering/failure controls, literal distinctions, reader and evidence-checker tests |
 | `static_models.py`, `test_static_models.py` | Selected explanatory arithmetic and conservation/order/boundary counterexamples; not a game simulator or runtime acceptance |
 | `powertrain_models.py`, `test_powertrain_models.py` | Selected torque-island, motor, alternator, swashplate, rotor and distance-only ground-effect arithmetic; explicit model-domain guards; not a native physics solver |
+| `contact_models.py`, `test_contact_models.py` | Selected wheel load/grip, tangent cap and pressure-brake arithmetic; excludes casts, topology, support motion and native physics |
+| `gas_thermal_models.py`, `test_gas_thermal_models.py` | Ordinary gas transfer, explicit pair/vector temperature difference and quantity-weighted heat blend; not a whole-network simulator |
+| `native_image.py`, `test_native_image.py` | Bounded read-only x64 PE mapping, exception-directory ranges, signature strings and relative-byte-pattern leads; patterns do not establish bindings |
+| `native_export.py`, `ExportNative.java`, `test_native_export.py` | Static selected native spans through existing Ghidra; exact source/range/artifact/instruction checks; manual spans do not recover function boundaries or ABI |
+
+## Selected native executable research
+
+The [contact/fluid/native checkpoint](CONTACT-FLUIDS-NATIVE-20261020.md) uses a separate matching isolated executable. Keep its full index/exports local. Source SHA, native RVAs and GCL offsets are separate address domains. PE indexing never executes its source; selected exports execute only the existing Java/Ghidra analysis runtime.
+
+```powershell
+python scripts/research/native_image.py "$r/snapshot/game.exe" "$r/native-index"
+python scripts/research/native_export.py "$r/snapshot/game.exe" "$r/native-export" "$runtime" "$project" 0x2a580 0x2c280:0x2c290
+```
+
+Use fresh output/project directories. The exporter uses a 2 GiB heap, one headless worker, BelowNormal priority and disabled automatic analysis. A selection without a colon requires exactly one containing exception-directory entry; an explicit begin:end span is recorded as manual. Exact bytes and complete output artifacts are checked before success. Ten production spans passed; no game process was executed. Selected registration bodies must be traced separately from string/pattern discovery.
 
 ## New baseline
 

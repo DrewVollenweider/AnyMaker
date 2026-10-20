@@ -1,0 +1,943 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "table": {
+    "offset": 66399263,
+    "end": 82528301,
+    "records": 8084,
+    "sha256": "5d619ecd6c69220d0e873d73e012dd301038f4eb911d859486db58c386b60a8e"
+  },
+  "types": [
+    {
+      "name": "e_physics_group",
+      "base": "",
+      "offset": 74484529,
+      "length": 188,
+      "descriptor_sha256": "3b3ee4d5e23b21ebaec326ce20be9f0fce65fec2a8aa7689fe725015bca12027",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "server_scene.e_vehicle_gas_type",
+      "base": "",
+      "offset": 76233062,
+      "length": 105,
+      "descriptor_sha256": "38b538e65017e3b0cb3eb9fbc5d25b050a72f40b45341cb49196363040913761",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "server_scene.e_vehicle_liquid_type",
+      "base": "",
+      "offset": 76233167,
+      "length": 129,
+      "descriptor_sha256": "40d5bdea2950557a8e30aabe468a9cf00b8e442a08d0e282d34af59968ab8ec3",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "server_scene.vehicle_component.heat_exchanger_gas_gas",
+      "base": "server_scene.vehicle_component",
+      "offset": 79364255,
+      "length": 16335,
+      "descriptor_sha256": "3c7eb3c429efe01a8b8f2a5d964e7884c089c0e9176c71d1a782d7c726db2b1a",
+      "size": 648,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.heat_exchanger_gas_liquid",
+      "base": "server_scene.vehicle_component",
+      "offset": 79380590,
+      "length": 16426,
+      "descriptor_sha256": "e1e5e202834dc2f05ad33f2feae151560d6d38743c9f3b4bdc6d570d1a2f103d",
+      "size": 824,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.heat_exchanger_liquid_liquid",
+      "base": "server_scene.vehicle_component",
+      "offset": 79397016,
+      "length": 16517,
+      "descriptor_sha256": "d8677df90ebd4fee0d388f412153e18e6d7c586fd9abb5070928f94337018b2f",
+      "size": 1000,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.wheel",
+      "base": "server_scene.vehicle_component",
+      "offset": 81588701,
+      "length": 16426,
+      "descriptor_sha256": "1697bd5d33ba1c2df5aca1d80862142e29a9e6e2f7842007e3f0f88ca9fa167a",
+      "size": 1504,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.wheel_hydraulic",
+      "base": "server_scene.vehicle_component",
+      "offset": 81605127,
+      "length": 17134,
+      "descriptor_sha256": "1b5d8a3bafd845c501957d7d87d2c65f7ba2de5884eb47e2e9fc165644b081cb",
+      "size": 2184,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_element.wheel",
+      "base": "replication.master.composite",
+      "offset": 81686934,
+      "length": 2818,
+      "descriptor_sha256": "9534f55a7b846f6ad1fdc8cb6a83ab82d222c530ca082e054813e60572076ce2",
+      "size": 736,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_gas_content",
+      "base": "",
+      "offset": 81689752,
+      "length": 279,
+      "descriptor_sha256": "8bd44b4cb1528c1b5d8ddf28e8446a6449d2a4ba685b50b6baf15f9a78bfe7cc",
+      "size": 56,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_liquid_content",
+      "base": "",
+      "offset": 81699782,
+      "length": 288,
+      "descriptor_sha256": "5422ca48d8f13acc8ed5b7b3019ebccca67481edbed10dcbbe8062a1e175394e",
+      "size": 56,
+      "alignment": 8
+    },
+    {
+      "name": "vec3",
+      "base": "",
+      "offset": 82299029,
+      "length": 188,
+      "descriptor_sha256": "4fa2e037b458a971ac19590eceaad80d64bdc8d24730dec70d7d0572a685475a",
+      "size": 24,
+      "alignment": 8
+    },
+    {
+      "name": "vec3_s32",
+      "base": "",
+      "offset": 82299217,
+      "length": 216,
+      "descriptor_sha256": "10c172b7d2c71fafa3d3c36b6e8eaf2dc06c0bb1a5b3208ad72c42f957665193",
+      "size": 12,
+      "alignment": 4
+    },
+    {
+      "name": "vehicle_element_definition.wheel",
+      "base": "",
+      "offset": 82345294,
+      "length": 794,
+      "descriptor_sha256": "f9db4c7c51417951b0a7bbdaa2bbfd0b26457e9e2815e39f30cb11d5467c8b0d",
+      "size": 320,
+      "alignment": 8
+    }
+  ],
+  "enums": [
+    {
+      "type": "server_scene.e_vehicle_gas_type",
+      "labels": [
+        "air",
+        "exhaust"
+      ]
+    },
+    {
+      "type": "server_scene.e_vehicle_liquid_type",
+      "labels": [
+        "water",
+        "petrol",
+        "oil",
+        "pollutant"
+      ]
+    },
+    {
+      "type": "e_physics_group",
+      "labels": [
+        "terrain",
+        "tree",
+        "character",
+        "vehicle",
+        "prop",
+        "item",
+        "ragdoll",
+        "effect",
+        "entity",
+        "rope",
+        "buoyancy_volume"
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "ptr<vehicle_element_definition.wheel>",
+        "name": "m_definition",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "ptr<server_scene.vehicle_torque_node>",
+        "name": "m_torque_node",
+        "offset": 16
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "replication.master.property_f64_compressed_s8",
+        "name": "m_steering",
+        "offset": 24
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "replication.master.property_f64_compressed_s8",
+        "name": "m_wheel_rps",
+        "offset": 72
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_skid",
+        "offset": 120
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "server_scene.vehicle_element.accessory",
+        "name": "m_accessory",
+        "offset": 152
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "physics.object",
+        "name": "m_contact_object",
+        "offset": 304
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "vec3",
+        "name": "m_contact_position",
+        "offset": 320
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "vec3",
+        "name": "m_contact_position_local",
+        "offset": 344
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "vec3",
+        "name": "m_contact_normal_smooth",
+        "offset": 368
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "physics.object",
+        "name": "m_memory_object",
+        "offset": 392
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "vec3",
+        "name": "m_memory_position",
+        "offset": 408
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "vec3",
+        "name": "m_memory_position_local",
+        "offset": 432
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "vec3",
+        "name": "m_memory_vector_prev",
+        "offset": 456
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_compression_factor",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_grip_load_average",
+        "offset": 488
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_value_steering",
+        "offset": 496
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_suspension_offset",
+        "offset": 504
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "physics_util.impulse_activator",
+        "name": "_m_impulse_activator",
+        "offset": 512
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "physics_util.impulse_activator",
+        "name": "_m_contact_impulse_activator",
+        "offset": 552
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "vec3",
+        "name": "m_debug_suspension_start",
+        "offset": 592
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "vec3",
+        "name": "m_debug_suspension_end",
+        "offset": 616
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "vec3",
+        "name": "m_debug_contact_velocity",
+        "offset": 640
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "vec3",
+        "name": "m_debug_front_dir",
+        "offset": 664
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "vec3",
+        "name": "m_debug_side_dir",
+        "offset": 688
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.wheel",
+      "field": {
+        "type": "vec3",
+        "name": "m_debug_wheel_force",
+        "offset": 712
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_radius",
+        "offset": 8
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "vec3",
+        "name": "m_position",
+        "offset": 16
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "mat33_s32",
+        "name": "m_rotation",
+        "offset": 40
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "vec3",
+        "name": "m_steering_position",
+        "offset": 80
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "mat33",
+        "name": "m_wheel_rotation",
+        "offset": 104
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_suspension_length",
+        "offset": 176
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_stiffness",
+        "offset": 184
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_damping",
+        "offset": 192
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_suspension_arm_length",
+        "offset": 200
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_steering_angle_min",
+        "offset": 208
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_steering_angle_max",
+        "offset": 216
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_memory_tether_range",
+        "offset": 224
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_grip_friction",
+        "offset": 232
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_memory_friction",
+        "offset": 240
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_friction_circle_mu",
+        "offset": 248
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_load_sensitivity",
+        "offset": 256
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_bump_stop_scale",
+        "offset": 264
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_roll_damping",
+        "offset": 272
+      }
+    },
+    {
+      "type": "vehicle_element_definition.wheel",
+      "field": {
+        "type": "vector<string>",
+        "name": "m_compatible_tyre_definitions",
+        "offset": 280
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel",
+      "field": {
+        "type": "server_scene.vehicle_element.wheel",
+        "name": "m_element_wheel",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "m_factor_temperature",
+        "offset": 1216
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel",
+      "field": {
+        "type": "server_scene.vehicle_mechanical_node_in",
+        "name": "m_logic_steering_pos",
+        "offset": 1264
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel",
+      "field": {
+        "type": "server_scene.vehicle_mechanical_node_in",
+        "name": "m_logic_steering_neg",
+        "offset": 1296
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel",
+      "field": {
+        "type": "server_scene.vehicle_mechanical_node_in",
+        "name": "m_logic_brake",
+        "offset": 1328
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel",
+      "field": {
+        "type": "server_scene.vehicle_torque_data",
+        "name": "m_torque_data",
+        "offset": 1360
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 1424
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 1464
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_stiffness",
+        "offset": 1480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel",
+      "field": {
+        "type": "f64",
+        "name": "m_damping",
+        "offset": 1488
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel",
+      "field": {
+        "type": "bool",
+        "name": "m_is_pending_damage_accessory_release",
+        "offset": 1496
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel_hydraulic",
+      "field": {
+        "type": "server_scene.vehicle_element.wheel",
+        "name": "m_element_wheel",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel_hydraulic",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "m_factor_temperature",
+        "offset": 1216
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel_hydraulic",
+      "field": {
+        "type": "server_scene.vehicle_element.hydraulic_cylinder",
+        "name": "m_element_hydraulic_cylinder",
+        "offset": 1264
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel_hydraulic",
+      "field": {
+        "type": "server_scene.vehicle_gas_content",
+        "name": "m_content_gas",
+        "offset": 1752
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel_hydraulic",
+      "field": {
+        "type": "server_scene.vehicle_liquid_node",
+        "name": "m_liquid_node_steering_positive",
+        "offset": 1808
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel_hydraulic",
+      "field": {
+        "type": "server_scene.vehicle_liquid_node",
+        "name": "m_liquid_node_steering_negative",
+        "offset": 1888
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel_hydraulic",
+      "field": {
+        "type": "server_scene.vehicle_gas_node",
+        "name": "m_gas_node_brake",
+        "offset": 1968
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel_hydraulic",
+      "field": {
+        "type": "server_scene.vehicle_torque_data",
+        "name": "m_torque_data",
+        "offset": 2032
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel_hydraulic",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 2096
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel_hydraulic",
+      "field": {
+        "type": "f64",
+        "name": "m_hydraulic_factor",
+        "offset": 2136
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel_hydraulic",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 2144
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel_hydraulic",
+      "field": {
+        "type": "f64",
+        "name": "m_stiffness",
+        "offset": 2160
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel_hydraulic",
+      "field": {
+        "type": "f64",
+        "name": "m_damping",
+        "offset": 2168
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel_hydraulic",
+      "field": {
+        "type": "bool",
+        "name": "m_is_pending_damage_accessory_release",
+        "offset": 2176
+      }
+    },
+    {
+      "type": "server_scene.vehicle_gas_content",
+      "field": {
+        "type": "array<f64>",
+        "name": "m_amounts",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.vehicle_gas_content",
+      "field": {
+        "type": "f64",
+        "name": "m_volume",
+        "offset": 32
+      }
+    },
+    {
+      "type": "server_scene.vehicle_gas_content",
+      "field": {
+        "type": "f64",
+        "name": "m_capacity",
+        "offset": 40
+      }
+    },
+    {
+      "type": "server_scene.vehicle_gas_content",
+      "field": {
+        "type": "f64",
+        "name": "m_temperature",
+        "offset": 48
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content",
+      "field": {
+        "type": "array<f64>",
+        "name": "m_amounts",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content",
+      "field": {
+        "type": "f64",
+        "name": "m_volume",
+        "offset": 32
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content",
+      "field": {
+        "type": "f64",
+        "name": "m_capacity",
+        "offset": 40
+      }
+    },
+    {
+      "type": "server_scene.vehicle_liquid_content",
+      "field": {
+        "type": "f64",
+        "name": "m_temperature",
+        "offset": 48
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.heat_exchanger_gas_gas",
+      "field": {
+        "type": "server_scene.vehicle_gas_content",
+        "name": "m_content_a",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.heat_exchanger_gas_gas",
+      "field": {
+        "type": "server_scene.vehicle_gas_content",
+        "name": "m_content_b",
+        "offset": 536
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.heat_exchanger_gas_gas",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 592
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.heat_exchanger_gas_gas",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 632
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.heat_exchanger_gas_liquid",
+      "field": {
+        "type": "server_scene.vehicle_gas_content",
+        "name": "m_content_a",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.heat_exchanger_gas_liquid",
+      "field": {
+        "type": "server_scene.vehicle_liquid_content_volume",
+        "name": "m_content_b",
+        "offset": 536
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.heat_exchanger_gas_liquid",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 768
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.heat_exchanger_gas_liquid",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 808
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.heat_exchanger_liquid_liquid",
+      "field": {
+        "type": "server_scene.vehicle_liquid_content_volume",
+        "name": "m_content_a",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.heat_exchanger_liquid_liquid",
+      "field": {
+        "type": "server_scene.vehicle_liquid_content_volume",
+        "name": "m_content_b",
+        "offset": 712
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.heat_exchanger_liquid_liquid",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 944
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.heat_exchanger_liquid_liquid",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 984
+      }
+    },
+    {
+      "type": "vec3",
+      "field": {
+        "type": "f64",
+        "name": "x",
+        "offset": 0
+      }
+    },
+    {
+      "type": "vec3",
+      "field": {
+        "type": "f64",
+        "name": "y",
+        "offset": 8
+      }
+    },
+    {
+      "type": "vec3",
+      "field": {
+        "type": "f64",
+        "name": "z",
+        "offset": 16
+      }
+    },
+    {
+      "type": "vec3_s32",
+      "field": {
+        "type": "s32",
+        "name": "x",
+        "offset": 0
+      }
+    },
+    {
+      "type": "vec3_s32",
+      "field": {
+        "type": "s32",
+        "name": "y",
+        "offset": 4
+      }
+    },
+    {
+      "type": "vec3_s32",
+      "field": {
+        "type": "s32",
+        "name": "z",
+        "offset": 8
+      }
+    }
+  ],
+  "virtuals": []
+}

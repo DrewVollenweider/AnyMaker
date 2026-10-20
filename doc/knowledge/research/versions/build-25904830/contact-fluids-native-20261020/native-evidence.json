@@ -1,0 +1,285 @@
+{
+  "schema": 1,
+  "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+  "image_base": 5368709120,
+  "selected_spans": [
+    {
+      "begin_rva": 161856,
+      "end_rva": 164498,
+      "va": 5368870976,
+      "file_offset": 158784,
+      "size": 2642,
+      "unwind_rva": 5716460,
+      "bound_kind": "exception_directory_range_not_complete_function_inventory",
+      "name": "native_27840",
+      "span_sha256": "b51cc8b81bc78f7a03ff5f8b5943907fa1e488052b1b8404bec1465a2dd98354"
+    },
+    {
+      "begin_rva": 173440,
+      "end_rva": 180863,
+      "va": 5368882560,
+      "file_offset": 170368,
+      "size": 7423,
+      "unwind_rva": 5716892,
+      "bound_kind": "exception_directory_range_not_complete_function_inventory",
+      "name": "native_2a580",
+      "span_sha256": "880d148889b022ae40e32ac0fb19f5c628b2b64b604c6d36c24093b335160e05"
+    },
+    {
+      "begin_rva": 223104,
+      "end_rva": 231428,
+      "va": 5368932224,
+      "file_offset": 220032,
+      "size": 8324,
+      "unwind_rva": 5718960,
+      "bound_kind": "exception_directory_range_not_complete_function_inventory",
+      "name": "native_36780",
+      "span_sha256": "e1ceda33de6fce6d6ea0b0f3492855f836c7db2bb4cce974690500b7331011fa"
+    },
+    {
+      "begin_rva": 180864,
+      "end_rva": 180880,
+      "va": 5368889984,
+      "file_offset": 177792,
+      "size": 16,
+      "unwind_rva": null,
+      "bound_kind": "manual_span_not_recovered_boundary",
+      "name": "native_2c280",
+      "span_sha256": "0b4b93a2eecc3f49bfb203843dac69fa65271cf40bccc4305aec0e4e223abf3d"
+    },
+    {
+      "begin_rva": 180880,
+      "end_rva": 180912,
+      "va": 5368890000,
+      "file_offset": 177808,
+      "size": 32,
+      "unwind_rva": null,
+      "bound_kind": "manual_span_not_recovered_boundary",
+      "name": "native_2c290",
+      "span_sha256": "b107d8ce29bd8866bf5ca247d0af1291709fb20f5fa117cc212cd51b827137d5"
+    },
+    {
+      "begin_rva": 164512,
+      "end_rva": 164544,
+      "va": 5368873632,
+      "file_offset": 161440,
+      "size": 32,
+      "unwind_rva": null,
+      "bound_kind": "manual_span_not_recovered_boundary",
+      "name": "native_282a0",
+      "span_sha256": "8ae3636456effc9c7ad6da6909f6e9e54efdb1ae402081b9190fe0e028f9bdb2"
+    },
+    {
+      "begin_rva": 232240,
+      "end_rva": 232272,
+      "va": 5368941360,
+      "file_offset": 229168,
+      "size": 32,
+      "unwind_rva": null,
+      "bound_kind": "manual_span_not_recovered_boundary",
+      "name": "native_38b30",
+      "span_sha256": "156056cc296267b00d2b319eca2391b3156d93d866ee1d7d1416de660439768b"
+    },
+    {
+      "begin_rva": 232368,
+      "end_rva": 232400,
+      "va": 5368941488,
+      "file_offset": 229296,
+      "size": 32,
+      "unwind_rva": null,
+      "bound_kind": "manual_span_not_recovered_boundary",
+      "name": "native_38bb0",
+      "span_sha256": "e15e6f6bc446948ca32d3cd50f565831c4767de8d74da9894c1c4daf22500d05"
+    },
+    {
+      "begin_rva": 232448,
+      "end_rva": 232480,
+      "va": 5368941568,
+      "file_offset": 229376,
+      "size": 32,
+      "unwind_rva": null,
+      "bound_kind": "manual_span_not_recovered_boundary",
+      "name": "native_38c00",
+      "span_sha256": "f5ae364875e72fc332ff30bb853da04ac63d40e32456ff2362482b08137aed0a"
+    },
+    {
+      "begin_rva": 232528,
+      "end_rva": 232576,
+      "va": 5368941648,
+      "file_offset": 229456,
+      "size": 48,
+      "unwind_rva": null,
+      "bound_kind": "manual_span_not_recovered_boundary",
+      "name": "native_38c50",
+      "span_sha256": "5cb8cbce02aaaeb4c95abe2a633f71bcfa461d4371f02844b502b2c7fb7db5a1"
+    }
+  ],
+  "export_verification": {
+    "schema": 1,
+    "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+    "spans": 10,
+    "instructions_byte_checked": 4303,
+    "instruction_bytes_checked": 18570,
+    "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+  },
+  "selected_bindings": [
+    {
+      "signature": "() ctor (vec3)",
+      "string_rva": 5301152,
+      "string_file_offset": 5295520,
+      "registration_rva": 173440,
+      "target_rva": 180864,
+      "selected_target_pointer_stores": [
+        {
+          "instruction_rva": 173608,
+          "bytes": "488d05511c0000",
+          "assembly": "LEA RAX,[0x14002c280]"
+        },
+        {
+          "instruction_rva": 173615,
+          "bytes": "48894328",
+          "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+        },
+        {
+          "instruction_rva": 173637,
+          "bytes": "488d05341c0000",
+          "assembly": "LEA RAX,[0x14002c280]"
+        },
+        {
+          "instruction_rva": 173644,
+          "bytes": "488901",
+          "assembly": "MOV qword ptr [RCX],RAX"
+        }
+      ],
+      "status": "Selected registration and helper body corroborated; loader lookup/complete ABI not proven"
+    },
+    {
+      "signature": "() ctor (vec3, const f64, const f64, const f64)",
+      "string_rva": 5301168,
+      "string_file_offset": 5295536,
+      "registration_rva": 173440,
+      "target_rva": 180880,
+      "selected_target_pointer_stores": [
+        {
+          "instruction_rva": 173792,
+          "bytes": "488d05a91b0000",
+          "assembly": "LEA RAX,[0x14002c290]"
+        },
+        {
+          "instruction_rva": 173799,
+          "bytes": "48894328",
+          "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+        },
+        {
+          "instruction_rva": 173821,
+          "bytes": "488d058c1b0000",
+          "assembly": "LEA RAX,[0x14002c290]"
+        },
+        {
+          "instruction_rva": 173828,
+          "bytes": "488901",
+          "assembly": "MOV qword ptr [RCX],RAX"
+        }
+      ],
+      "status": "Selected registration and helper body corroborated; loader lookup/complete ABI not proven"
+    },
+    {
+      "signature": "() ctor (vec3_s32)",
+      "string_rva": 5299008,
+      "string_file_offset": 5293376,
+      "registration_rva": 161856,
+      "target_rva": 164512,
+      "selected_target_pointer_stores": [
+        {
+          "instruction_rva": 162013,
+          "bytes": "488d05bc090000",
+          "assembly": "LEA RAX,[0x1400282a0]"
+        },
+        {
+          "instruction_rva": 162020,
+          "bytes": "48894328",
+          "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+        },
+        {
+          "instruction_rva": 162042,
+          "bytes": "488d059f090000",
+          "assembly": "LEA RAX,[0x1400282a0]"
+        },
+        {
+          "instruction_rva": 162049,
+          "bytes": "488901",
+          "assembly": "MOV qword ptr [RCX],RAX"
+        }
+      ],
+      "status": "Selected registration and helper body corroborated; loader lookup/complete ABI not proven"
+    },
+    {
+      "signature": "(f64) math.clamp (const f64, const f64, const f64)",
+      "string_rva": 5308928,
+      "string_file_offset": 5303296,
+      "registration_rva": 223104,
+      "target_rva": 232240,
+      "selected_target_pointer_stores": [
+        {
+          "instruction_rva": 227501,
+          "bytes": "488d057c120000",
+          "assembly": "LEA RAX,[0x140038b30]"
+        },
+        {
+          "instruction_rva": 227508,
+          "bytes": "48894328",
+          "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+        },
+        {
+          "instruction_rva": 227530,
+          "bytes": "488d055f120000",
+          "assembly": "LEA RAX,[0x140038b30]"
+        },
+        {
+          "instruction_rva": 227537,
+          "bytes": "488901",
+          "assembly": "MOV qword ptr [RCX],RAX"
+        }
+      ],
+      "status": "Selected registration and helper body corroborated; loader lookup/complete ABI not proven"
+    },
+    {
+      "signature": "(f64) math.lerp (const f64, const f64, const f64)",
+      "string_rva": 5309200,
+      "string_file_offset": 5303568,
+      "registration_rva": 223104,
+      "target_rva": 232368,
+      "selected_target_pointer_stores": [
+        {
+          "instruction_rva": 228673,
+          "bytes": "488d05680e0000",
+          "assembly": "LEA RAX,[0x140038bb0]"
+        },
+        {
+          "instruction_rva": 228680,
+          "bytes": "48894328",
+          "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+        },
+        {
+          "instruction_rva": 228702,
+          "bytes": "488d054b0e0000",
+          "assembly": "LEA RAX,[0x140038bb0]"
+        },
+        {
+          "instruction_rva": 228709,
+          "bytes": "488901",
+          "assembly": "MOV qword ptr [RCX],RAX"
+        }
+      ],
+      "status": "Selected registration and helper body corroborated; loader lookup/complete ABI not proven"
+    }
+  ],
+  "selected_scalar": {
+    "rva": 5594392,
+    "file_offset": 5588760,
+    "format": "f64",
+    "bytes": "000000000000f03f",
+    "value": 1.0
+  },
+  "limits": "Selected identities, raw strings, pointer stores and body byte checks; no complete boot/loader ABI, universal binding or physics implementation proof."
+}

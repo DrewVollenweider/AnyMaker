@@ -1,5 +1,7 @@
 # Anymaker engineering knowledge — start here
 
+Newest research: [wheel contact, gas/thermal behavior and native helpers](research/CONTACT-FLUIDS-NATIVE-20261020.md). This adds suspension/grip arithmetic, pressure-released truck brakes, actual tyre calibration, gas-temperature overload differences, exchanger/world-sampling paths and selected native math/vector implementations. The current reader has 1,074 functions; 127 research-tool tests pass. Whole-game semantic review remains incomplete.
+
 Whole-game research started October 18: [versioned research hub](research/README.md), [coverage and gaps](research/COVERAGE.md), [Opening/Hatch implementation trace](research/SEALING.md), and [restart instructions](research/HANDOFF.md). This extends the historical engineering archive below; whole-game understanding and runtime verification remain incomplete.
 
 Latest October 20 findings: [torque, electric machines, jets and helicopter rotors](research/POWERTRAIN-20261020.md). The reader now contains 611 selected functions, including every declared component update implementation. Selected traces cover shared shaft brakes, ratio-dependent load, motor demand, alternator efficiency, jet-chain validation, swashplate mixing and rotor/ground-effect arithmetic. Full-system behavior remains under investigation.

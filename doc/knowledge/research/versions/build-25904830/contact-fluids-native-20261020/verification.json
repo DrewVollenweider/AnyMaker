@@ -1,0 +1,133 @@
+{
+  "schema": 1,
+  "date": "2026-10-20",
+  "source_check": {
+    "schema": 1,
+    "date": "2026-10-20",
+    "installed_buildid": "25904830",
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "definition_files_checked": 2968,
+    "definition_file_mismatches": [],
+    "rechecked_for": "contact-fluids-native-20261020"
+  },
+  "selected_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "d50e9288592c2f2ef55dfcd3b042433e4d61242247104796249a0b4e7f3e855d",
+    "function_records_checked": 82,
+    "constants_checked": 107,
+    "strings_checked": 26,
+    "call_instruction_examples_checked": 12,
+    "limitations": "Exact static identities/bytes only; virtual target binding and prose semantics are not proven by this checker."
+  },
+  "reflection_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "69d24f7374cb557ca6d809758e932f2ea7b16b88cdd5aa0eec839d6664571fca",
+    "table_records_checked": 8084,
+    "selected_type_identities_checked": 14,
+    "enum_label_lists_checked": 3,
+    "fields_checked": 96,
+    "virtual_declarations_checked": 0,
+    "limits": "Static descriptor declarations and identities only. Not executed dispatch, full storage ABI, units, lifecycle semantics or whole-game understanding."
+  },
+  "reader_counts": {
+    "functions": 1074,
+    "identical_exports_deduplicated": 2,
+    "instructions_byte_checked": 149292,
+    "slot_derived_calls": 7361,
+    "unresolved_calls": 5989
+  },
+  "selected_counts": {
+    "function_identities": 82,
+    "constants": 107,
+    "strings": 26,
+    "calls": 12,
+    "reflected_types": 14,
+    "fields": 96,
+    "enums": 3,
+    "native_selected_bindings": 5,
+    "reader_instruction_bytes": 849610
+  },
+  "native_export_check": {
+    "schema": 1,
+    "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+    "spans": 10,
+    "instructions_byte_checked": 4303,
+    "instruction_bytes_checked": 18570,
+    "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+  },
+  "native_index": {
+    "schema": 1,
+    "tool_version": "1.0.0",
+    "tool_sha256": "972a26537246b7b9c00f8182e938b85ce23a1116c82f7d700092b22919899c72",
+    "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+    "source_bytes": 6636544,
+    "image_base": 5368709120,
+    "image_size": 6946816,
+    "sections": [
+      {
+        "name": ".text",
+        "rva": 4096,
+        "virtual_size": 4629980,
+        "raw_size": 4630016,
+        "raw_offset": 1024,
+        "flags": 1610612768
+      },
+      {
+        "name": ".rdata",
+        "rva": 4636672,
+        "virtual_size": 1389898,
+        "raw_size": 1390080,
+        "raw_offset": 4631040,
+        "flags": 1073741888
+      },
+      {
+        "name": ".data",
+        "rva": 6029312,
+        "virtual_size": 377028,
+        "raw_size": 84992,
+        "raw_offset": 6021120,
+        "flags": 3221225536
+      },
+      {
+        "name": ".pdata",
+        "rva": 6410240,
+        "virtual_size": 152028,
+        "raw_size": 152064,
+        "raw_offset": 6106112,
+        "flags": 1073741888
+      },
+      {
+        "name": ".rsrc",
+        "rva": 6565888,
+        "virtual_size": 362000,
+        "raw_size": 362496,
+        "raw_offset": 6258176,
+        "flags": 1073741888
+      },
+      {
+        "name": ".reloc",
+        "rva": 6930432,
+        "virtual_size": 15632,
+        "raw_size": 15872,
+        "raw_offset": 6620672,
+        "flags": 1107296320
+      }
+    ],
+    "runtime_function_records": 12669,
+    "signature_strings": 1207,
+    "relative_signature_leads": 1175,
+    "limits": [
+      "Exception-directory records omit leaf functions and do not recover all native functions.",
+      "Relative byte patterns can be false positives; decode and trace before asserting a binding.",
+      "No native execution, ABI recovery or complete PE loader/relocation proof."
+    ]
+  },
+  "native_selected_evidence_rechecked": true,
+  "research_tool_tests_passed": 127,
+  "test_log_sha256": "5336e069ab5e7996b98087026e2956cb16634d0b54fc936e6b6fd3489decbbbd",
+  "game_executed": false,
+  "installation_and_active_saves_edited": false,
+  "limits": "Selected exact identities, byte-backed artifacts and ordinary arithmetic tests. Whole-game semantics, full native ABI/physics, track/actuator/network edge cases and runtime acceptance remain unfinished."
+}

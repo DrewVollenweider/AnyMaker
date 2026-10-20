@@ -1,0 +1,216 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "function_offset": 63120176,
+  "rows": [
+    {
+      "id": "wheel_car",
+      "id_offset": 63126584,
+      "radius": 0.3,
+      "radius_offset": 63126600,
+      "thickness": 0.16,
+      "thickness_offset": 63126608
+    },
+    {
+      "id": "wheel_van",
+      "id_offset": 63126616,
+      "radius": 0.3,
+      "radius_offset": 63126600,
+      "thickness": 0.16,
+      "thickness_offset": 63126608
+    },
+    {
+      "id": "wheel_5_prong",
+      "id_offset": 63126626,
+      "radius": 0.34,
+      "radius_offset": 63126640,
+      "thickness": 0.16,
+      "thickness_offset": 63126608
+    },
+    {
+      "id": "wheel_5_prong_tread",
+      "id_offset": 63126648,
+      "radius": 0.34,
+      "radius_offset": 63126640,
+      "thickness": 0.16,
+      "thickness_offset": 63126608
+    },
+    {
+      "id": "wheel_rim_20",
+      "id_offset": 63126668,
+      "radius": 0.33,
+      "radius_offset": 63126688,
+      "thickness": 0.16,
+      "thickness_offset": 63126608
+    },
+    {
+      "id": "wheel_rim_20_tread",
+      "id_offset": 63126696,
+      "radius": 0.33,
+      "radius_offset": 63126688,
+      "thickness": 0.16,
+      "thickness_offset": 63126608
+    },
+    {
+      "id": "wheel_rim_22",
+      "id_offset": 63126715,
+      "radius": 0.36,
+      "radius_offset": 63126728,
+      "thickness": 0.16,
+      "thickness_offset": 63126608
+    },
+    {
+      "id": "wheel_rim_22_tread",
+      "id_offset": 63126736,
+      "radius": 0.39,
+      "radius_offset": 63126760,
+      "thickness": 0.16,
+      "thickness_offset": 63126608
+    },
+    {
+      "id": "wheel_rim_24",
+      "id_offset": 63126768,
+      "radius": 0.34,
+      "radius_offset": 63126640,
+      "thickness": 0.16,
+      "thickness_offset": 63126608
+    },
+    {
+      "id": "wheel_rim_24_tread",
+      "id_offset": 63126781,
+      "radius": 0.39,
+      "radius_offset": 63126760,
+      "thickness": 0.16,
+      "thickness_offset": 63126608
+    },
+    {
+      "id": "wheel_quadbike",
+      "id_offset": 63126800,
+      "radius": 0.31,
+      "radius_offset": 63126816,
+      "thickness": 0.16,
+      "thickness_offset": 63126608
+    },
+    {
+      "id": "wheel4x4",
+      "id_offset": 63126824,
+      "radius": 0.43,
+      "radius_offset": 63126840,
+      "thickness": 0.16,
+      "thickness_offset": 63126608
+    },
+    {
+      "id": "wheel_construction",
+      "id_offset": 63126848,
+      "radius": 1.24,
+      "radius_offset": 63126872,
+      "thickness": 0.8,
+      "thickness_offset": 63126880
+    },
+    {
+      "id": "wheel_tractor_a",
+      "id_offset": 63126888,
+      "radius": 1.19,
+      "radius_offset": 63126904,
+      "thickness": 0.85,
+      "thickness_offset": 63126912
+    },
+    {
+      "id": "wheel_tractor_b",
+      "id_offset": 63126920,
+      "radius": 1.32,
+      "radius_offset": 63126936,
+      "thickness": 0.85,
+      "thickness_offset": 63126912
+    },
+    {
+      "id": "wheel_construction_lws",
+      "id_offset": 63126944,
+      "radius": 1.17,
+      "radius_offset": 63126968,
+      "thickness": 2.0,
+      "thickness_offset": 63126976
+    },
+    {
+      "id": "wheel_loader",
+      "id_offset": 63126984,
+      "radius": 1.54,
+      "radius_offset": 63127000,
+      "thickness": 2.0,
+      "thickness_offset": 63126976
+    },
+    {
+      "id": "wheel_earthmover",
+      "id_offset": 63127008,
+      "radius": 1.64,
+      "radius_offset": 63127032,
+      "thickness": 2.25,
+      "thickness_offset": 63127040
+    },
+    {
+      "id": "wheel_heavyloader",
+      "id_offset": 63127048,
+      "radius": 1.67,
+      "radius_offset": 63127072,
+      "thickness": 2.1,
+      "thickness_offset": 63127080
+    },
+    {
+      "id": "wheel_truck",
+      "id_offset": 63127088,
+      "radius": 0.73,
+      "radius_offset": 63127104,
+      "thickness": 0.7,
+      "thickness_offset": 63127112
+    },
+    {
+      "id": "wheel_truck_out_a",
+      "id_offset": 63127120,
+      "radius": 0.56,
+      "radius_offset": 63127144,
+      "thickness": 0.7,
+      "thickness_offset": 63127112
+    },
+    {
+      "id": "wheel_truck_out_b",
+      "id_offset": 63127152,
+      "radius": 0.62,
+      "radius_offset": 63127176,
+      "thickness": 0.7,
+      "thickness_offset": 63127112
+    },
+    {
+      "id": "wheel_truck_in_a",
+      "id_offset": 63127184,
+      "radius": 0.56,
+      "radius_offset": 63127144,
+      "thickness": 0.7,
+      "thickness_offset": 63127112
+    },
+    {
+      "id": "wheel_truck_in_b",
+      "id_offset": 63127201,
+      "radius": 0.62,
+      "radius_offset": 63127176,
+      "thickness": 0.7,
+      "thickness_offset": 63127112
+    },
+    {
+      "id": "wheel_helicopter",
+      "id_offset": 63127218,
+      "radius": 0.25,
+      "radius_offset": 63127240,
+      "thickness": 0.165,
+      "thickness_offset": 63127248
+    },
+    {
+      "id": "wheel_plane",
+      "id_offset": 63127256,
+      "radius": 0.6,
+      "radius_offset": 63127272,
+      "thickness": 0.28,
+      "thickness_offset": 63127280
+    }
+  ],
+  "limits": "Native hardcoded accessory lookup; component minimum radius is separately max-combined. Not rendered mesh dimensions."
+}

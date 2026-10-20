@@ -1,0 +1,1669 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "() client_scene.vehicle_belt.G_TRACK_BELT_NARROW_WIDTH.$ctor ()",
+      "signature_offset": 16041149,
+      "code_offset": 16041318,
+      "code_size": 56,
+      "code_sha256": "68fdda150d5dcd7e8d0f4508c5ca2b720aefa86764a20dcdf8eb2ead81cb5e01"
+    },
+    {
+      "signature": "() client_scene.vehicle_belt.G_TRACK_BELT_WIDE_WIDTH.$ctor ()",
+      "signature_offset": 16041774,
+      "code_offset": 16041939,
+      "code_size": 56,
+      "code_sha256": "6a2355535a1373949f3b30092460a0ce47a2af1444f94925652f1b0eeaf403ea"
+    },
+    {
+      "signature": "() client_scene.vehicle_belt.G_TRACK_BELT_WIDTH.$ctor ()",
+      "signature_offset": 16042387,
+      "code_offset": 16042542,
+      "code_size": 56,
+      "code_sha256": "965d95d49f38b759b18dbc17f6eab0e5c2e0e8b5c841aef705389d3d6f79d6b5"
+    },
+    {
+      "signature": "() g_constraint_break_force.$ctor ()",
+      "signature_offset": 29037129,
+      "code_offset": 29037217,
+      "code_size": 32,
+      "code_sha256": "9de0027718ae37161646fe89969a2725dfb5f3c6b002d0a2932bf83ac7e89bfe"
+    },
+    {
+      "signature": "() server_scene.connections_manager.gas.build (server_scene.connections_manager.gas)",
+      "signature_offset": 44529711,
+      "code_offset": 44531507,
+      "code_size": 784,
+      "code_sha256": "510171c5d01f1ed827d85368a81c5f6e3cab36e358b4d2308865344ff2dabdb7"
+    },
+    {
+      "signature": "() server_scene.get_world_gas_content (server_scene, vec3, server_scene.vehicle_gas_content)",
+      "signature_offset": 47259567,
+      "code_offset": 47260216,
+      "code_size": 520,
+      "code_sha256": "b32df1bf7f26126ea8a2be9649543fbb9cbeae7509ea099dc5a75da22c15dda1"
+    },
+    {
+      "signature": "() server_scene.get_world_liquid_content (server_scene, vec3, server_scene.vehicle_liquid_content)",
+      "signature_offset": 47261427,
+      "code_offset": 47262318,
+      "code_size": 808,
+      "code_sha256": "85964dc363d5825206552f6e7b53c0519792cfe42925630fdb30fa7bd13ea28f"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.air_filter.tick (server_scene.vehicle_component.air_filter, server_scene.vehicle, server_scene)",
+      "signature_offset": 53479899,
+      "code_offset": 53480653,
+      "code_size": 416,
+      "code_sha256": "8a54fc044aa174f742b1190b993b802a7630ca73607c148a94ca9d4d1ca4438c"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gas_pump.tick (server_scene.vehicle_component.gas_pump, server_scene.vehicle, server_scene)",
+      "signature_offset": 54827961,
+      "code_offset": 54829110,
+      "code_size": 2240,
+      "code_sha256": "e8d807fcc834901d565438dc1c33da45284179bdcee0034071eb734670e2ed71"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gas_pump_centrifugal.tick (server_scene.vehicle_component.gas_pump_centrifugal, server_scene.vehicle, server_scene)",
+      "signature_offset": 54848884,
+      "code_offset": 54849863,
+      "code_size": 1264,
+      "code_sha256": "572afaaf0ca87cd2e8b726d61ba2bc95231ed56f076e93f11c4955cc3c20e7db"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gas_vent.tick (server_scene.vehicle_component.gas_vent, server_scene.vehicle, server_scene)",
+      "signature_offset": 54923206,
+      "code_offset": 54923963,
+      "code_size": 656,
+      "code_sha256": "1f12043f44290a37997d3bcc3b667a034308f138653189a8b56e67856cd8ae72"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.heat_exchanger_gas_gas.tick (server_scene.vehicle_component.heat_exchanger_gas_gas, server_scene.vehicle, server_scene)",
+      "signature_offset": 55162860,
+      "code_offset": 55163671,
+      "code_size": 800,
+      "code_sha256": "819ad7cd5b7076b4957b62626b9bbee30b3a7546445ebe235143e48c94fca28f"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.heat_exchanger_gas_liquid.tick (server_scene.vehicle_component.heat_exchanger_gas_liquid, server_scene.vehicle, server_scene)",
+      "signature_offset": 55185251,
+      "code_offset": 55186207,
+      "code_size": 880,
+      "code_sha256": "e59cd48d092261f3cee14878f4d88d6c43feefffe26b9dba7450148bae9b5525"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.heat_exchanger_liquid_liquid.tick (server_scene.vehicle_component.heat_exchanger_liquid_liquid, server_scene.vehicle, server_scene)",
+      "signature_offset": 55205335,
+      "code_offset": 55206303,
+      "code_size": 928,
+      "code_sha256": "9455af4f159d292d80b2cabbc0e6566610b67b7ca1cb27b1f846cc68d9127f4a"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hinge_pin.tick (server_scene.vehicle_component.hinge_pin, server_scene.vehicle, server_scene)",
+      "signature_offset": 55280829,
+      "code_offset": 55282013,
+      "code_size": 1304,
+      "code_sha256": "62e1b2ce829b04450147baec9c24913857b5ffbc589a606eb553a27e71a4a394"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_vent.tick (server_scene.vehicle_component.liquid_vent, server_scene.vehicle, server_scene)",
+      "signature_offset": 56466994,
+      "code_offset": 56467809,
+      "code_size": 432,
+      "code_sha256": "7e79a3cbdf180d80cab5a9ee66d4dbc3b50294ff0e6ee81850623698a1cbb88b"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_fixed.get_radius (const server_scene.vehicle_component.roller_wheel_fixed)",
+      "signature_offset": 57321918,
+      "code_offset": 57322062,
+      "code_size": 48,
+      "code_sha256": "6008fa737668051eae83f517f4dfcbb79038ff28a4e34ac900d1e165bd0552ca"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_fixed.get_track_width (const server_scene.vehicle_component.roller_wheel_fixed)",
+      "signature_offset": 57322767,
+      "code_offset": 57322916,
+      "code_size": 48,
+      "code_sha256": "6008fa737668051eae83f517f4dfcbb79038ff28a4e34ac900d1e165bd0552ca"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_fixed_large.get_radius (const server_scene.vehicle_component.roller_wheel_fixed_large)",
+      "signature_offset": 57364361,
+      "code_offset": 57364579,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_fixed_large.get_track_width (const server_scene.vehicle_component.roller_wheel_fixed_large)",
+      "signature_offset": 57364851,
+      "code_offset": 57365064,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_fixed_large_narrow.get_radius (const server_scene.vehicle_component.roller_wheel_fixed_large_narrow)",
+      "signature_offset": 57365341,
+      "code_offset": 57365580,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_fixed_large_narrow.get_track_width (const server_scene.vehicle_component.roller_wheel_fixed_large_narrow)",
+      "signature_offset": 57365866,
+      "code_offset": 57366100,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_fixed_large_wide.get_radius (const server_scene.vehicle_component.roller_wheel_fixed_large_wide)",
+      "signature_offset": 57366391,
+      "code_offset": 57366624,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_fixed_large_wide.get_track_width (const server_scene.vehicle_component.roller_wheel_fixed_large_wide)",
+      "signature_offset": 57366906,
+      "code_offset": 57367134,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_fixed_small.get_radius (const server_scene.vehicle_component.roller_wheel_fixed_small)",
+      "signature_offset": 57367421,
+      "code_offset": 57367639,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_fixed_small.get_track_width (const server_scene.vehicle_component.roller_wheel_fixed_small)",
+      "signature_offset": 57367911,
+      "code_offset": 57368124,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_fixed_small_narrow.get_radius (const server_scene.vehicle_component.roller_wheel_fixed_small_narrow)",
+      "signature_offset": 57368401,
+      "code_offset": 57368640,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_fixed_small_narrow.get_track_width (const server_scene.vehicle_component.roller_wheel_fixed_small_narrow)",
+      "signature_offset": 57368926,
+      "code_offset": 57369160,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_fixed_small_wide.get_radius (const server_scene.vehicle_component.roller_wheel_fixed_small_wide)",
+      "signature_offset": 57369451,
+      "code_offset": 57369684,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_fixed_small_wide.get_track_width (const server_scene.vehicle_component.roller_wheel_fixed_small_wide)",
+      "signature_offset": 57369966,
+      "code_offset": 57370194,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension.get_radius (const server_scene.vehicle_component.roller_wheel_suspension)",
+      "signature_offset": 57388560,
+      "code_offset": 57388714,
+      "code_size": 48,
+      "code_sha256": "6008fa737668051eae83f517f4dfcbb79038ff28a4e34ac900d1e165bd0552ca"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension.get_track_width (const server_scene.vehicle_component.roller_wheel_suspension)",
+      "signature_offset": 57389887,
+      "code_offset": 57390046,
+      "code_size": 48,
+      "code_sha256": "6008fa737668051eae83f517f4dfcbb79038ff28a4e34ac900d1e165bd0552ca"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_large.get_radius (const server_scene.vehicle_component.roller_wheel_suspension_large)",
+      "signature_offset": 57430787,
+      "code_offset": 57431015,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_large.get_track_width (const server_scene.vehicle_component.roller_wheel_suspension_large)",
+      "signature_offset": 57431802,
+      "code_offset": 57432025,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_large_narrow.get_radius (const server_scene.vehicle_component.roller_wheel_suspension_large_narrow)",
+      "signature_offset": 57432312,
+      "code_offset": 57432561,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_large_narrow.get_track_width (const server_scene.vehicle_component.roller_wheel_suspension_large_narrow)",
+      "signature_offset": 57433382,
+      "code_offset": 57433626,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_large_wide.get_radius (const server_scene.vehicle_component.roller_wheel_suspension_large_wide)",
+      "signature_offset": 57433927,
+      "code_offset": 57434170,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_large_wide.get_track_width (const server_scene.vehicle_component.roller_wheel_suspension_large_wide)",
+      "signature_offset": 57434987,
+      "code_offset": 57435225,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_small.get_radius (const server_scene.vehicle_component.roller_wheel_suspension_small)",
+      "signature_offset": 57435522,
+      "code_offset": 57435750,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_small.get_track_width (const server_scene.vehicle_component.roller_wheel_suspension_small)",
+      "signature_offset": 57436537,
+      "code_offset": 57436760,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_small_narrow.get_radius (const server_scene.vehicle_component.roller_wheel_suspension_small_narrow)",
+      "signature_offset": 57437047,
+      "code_offset": 57437296,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_small_narrow.get_track_width (const server_scene.vehicle_component.roller_wheel_suspension_small_narrow)",
+      "signature_offset": 57438117,
+      "code_offset": 57438361,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_small_wide.get_radius (const server_scene.vehicle_component.roller_wheel_suspension_small_wide)",
+      "signature_offset": 57438662,
+      "code_offset": 57438905,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_small_wide.get_track_width (const server_scene.vehicle_component.roller_wheel_suspension_small_wide)",
+      "signature_offset": 57439722,
+      "code_offset": 57439960,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.sprocket.get_radius (const server_scene.vehicle_component.sprocket)",
+      "signature_offset": 57595016,
+      "code_offset": 57595140,
+      "code_size": 48,
+      "code_sha256": "6008fa737668051eae83f517f4dfcbb79038ff28a4e34ac900d1e165bd0552ca"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.sprocket.get_track_width (const server_scene.vehicle_component.sprocket)",
+      "signature_offset": 57595785,
+      "code_offset": 57595914,
+      "code_size": 48,
+      "code_sha256": "6008fa737668051eae83f517f4dfcbb79038ff28a4e34ac900d1e165bd0552ca"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.sprocket_large.G_RADIUS.$ctor ()",
+      "signature_offset": 57603309,
+      "code_offset": 57603457,
+      "code_size": 32,
+      "code_sha256": "f160b197bd18b667e3d8ba21a4ecdc879f5f325459e31d41271398cbcc70150f"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.sprocket_large.get_radius (const server_scene.vehicle_component.sprocket_large)",
+      "signature_offset": 57603893,
+      "code_offset": 57604091,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.sprocket_large.get_track_width (const server_scene.vehicle_component.sprocket_large)",
+      "signature_offset": 57604343,
+      "code_offset": 57604536,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.sprocket_large_narrow.G_RADIUS.$ctor ()",
+      "signature_offset": 57604793,
+      "code_offset": 57604955,
+      "code_size": 32,
+      "code_sha256": "e6ba1f3b1cbb87f38de7811ba5ad721a1e64f2bc92bc4b582256604e02455349"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.sprocket_large_narrow.get_radius (const server_scene.vehicle_component.sprocket_large_narrow)",
+      "signature_offset": 57605419,
+      "code_offset": 57605638,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.sprocket_large_narrow.get_track_width (const server_scene.vehicle_component.sprocket_large_narrow)",
+      "signature_offset": 57605904,
+      "code_offset": 57606118,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.sprocket_large_wide.G_RADIUS.$ctor ()",
+      "signature_offset": 57606389,
+      "code_offset": 57606547,
+      "code_size": 32,
+      "code_sha256": "21a9ff396c0496a70e82cef0118978fe9593ae64aa9a61791af7693ba13a6a00"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.sprocket_large_wide.get_radius (const server_scene.vehicle_component.sprocket_large_wide)",
+      "signature_offset": 57607003,
+      "code_offset": 57607216,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.sprocket_large_wide.get_track_width (const server_scene.vehicle_component.sprocket_large_wide)",
+      "signature_offset": 57607478,
+      "code_offset": 57607686,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.sprocket_small.G_RADIUS.$ctor ()",
+      "signature_offset": 57607953,
+      "code_offset": 57608101,
+      "code_size": 32,
+      "code_sha256": "1fb25d8fd59257ae2e2ef992fce713588223724a293bbe5bbb2892f535b84a37"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.sprocket_small.get_radius (const server_scene.vehicle_component.sprocket_small)",
+      "signature_offset": 57608537,
+      "code_offset": 57608735,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.sprocket_small.get_track_width (const server_scene.vehicle_component.sprocket_small)",
+      "signature_offset": 57608987,
+      "code_offset": 57609180,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.sprocket_small_narrow.G_RADIUS.$ctor ()",
+      "signature_offset": 57609437,
+      "code_offset": 57609599,
+      "code_size": 32,
+      "code_sha256": "b8fe5f027019f2f3891444cce2e9a8919c0b0f21bd6b626950347b31aec5f04d"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.sprocket_small_narrow.get_radius (const server_scene.vehicle_component.sprocket_small_narrow)",
+      "signature_offset": 57610063,
+      "code_offset": 57610282,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.sprocket_small_narrow.get_track_width (const server_scene.vehicle_component.sprocket_small_narrow)",
+      "signature_offset": 57610548,
+      "code_offset": 57610762,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.sprocket_small_wide.G_RADIUS.$ctor ()",
+      "signature_offset": 57611033,
+      "code_offset": 57611191,
+      "code_size": 32,
+      "code_sha256": "d4364b0a46c7627ec3a1b0be593eb6839453c71a80203886996814d90b8946ec"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.sprocket_small_wide.get_radius (const server_scene.vehicle_component.sprocket_small_wide)",
+      "signature_offset": 57611647,
+      "code_offset": 57611860,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.sprocket_small_wide.get_track_width (const server_scene.vehicle_component.sprocket_small_wide)",
+      "signature_offset": 57612122,
+      "code_offset": 57612330,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.wheel_hydraulic.tick (server_scene.vehicle_component.wheel_hydraulic, server_scene.vehicle, server_scene)",
+      "signature_offset": 58091423,
+      "code_offset": 58094140,
+      "code_size": 3040,
+      "code_sha256": "b8167c4e802c4b0c408adda0d55a63547c1ff01d7ac3ce609340574bf4ad9316"
+    },
+    {
+      "signature": "() server_scene.vehicle_element.wheel.tick (server_scene.vehicle_element.wheel, server_scene.vehicle, server_scene.vehicle_component, server_scene, f64, f64)",
+      "signature_offset": 58490691,
+      "code_offset": 58495995,
+      "code_size": 24208,
+      "code_sha256": "fa1b7bc1917f9111ef291f4d2fe56d6c3a785d90aa58cdbc0d55dc14eb6f6596"
+    },
+    {
+      "signature": "() server_scene.vehicle_gas_content.blend_contents_temperatures (server_scene.vehicle_gas_content, server_scene.vehicle_gas_content, const f64)",
+      "signature_offset": 58553195,
+      "code_offset": 58553453,
+      "code_size": 80,
+      "code_sha256": "ea01a6d4d56befc92ba0692094b90c6760f2fb413b9942a2dce81456699d037c"
+    },
+    {
+      "signature": "() server_scene.vehicle_gas_content.blend_contents_temperatures (server_scene.vehicle_gas_content, server_scene.vehicle_liquid_content, const f64)",
+      "signature_offset": 58553818,
+      "code_offset": 58554079,
+      "code_size": 80,
+      "code_sha256": "ea01a6d4d56befc92ba0692094b90c6760f2fb413b9942a2dce81456699d037c"
+    },
+    {
+      "signature": "() server_scene.vehicle_gas_content.create (server_scene.vehicle_gas_content, server_scene.vehicle, const server_scene.vehicle_component, const s32, const f64)",
+      "signature_offset": 58554447,
+      "code_offset": 58556168,
+      "code_size": 3248,
+      "code_sha256": "434470bfa3064740fa6121a94ecb13fba2e76ffe14753db31c5542e2f2d18fda"
+    },
+    {
+      "signature": "() server_scene.vehicle_gas_content.equalize_contents (vector<ptr<server_scene.vehicle_gas_content>>)",
+      "signature_offset": 58568258,
+      "code_offset": 58569300,
+      "code_size": 1296,
+      "code_sha256": "6f1c7a62be077806c692ee5137c01cb42cf256b462e33650c1b4bffa4b83179f"
+    },
+    {
+      "signature": "() server_scene.vehicle_gas_content.equalize_contents (server_scene.vehicle_gas_content, server_scene.vehicle_gas_content)",
+      "signature_offset": 58571501,
+      "code_offset": 58571899,
+      "code_size": 1408,
+      "code_sha256": "0df7bae41e43f2eed7141d2d1e39a6145f7b12b0131daea692122019f163b138"
+    },
+    {
+      "signature": "() server_scene.vehicle_gas_content.modify_content (server_scene.vehicle_gas_content, const server_scene.e_vehicle_gas_type, const f64, const f64)",
+      "signature_offset": 58574992,
+      "code_offset": 58575275,
+      "code_size": 320,
+      "code_sha256": "bbcb0f377e3cbf086a8f4b397629594f1c71a36e32a5cee92dcb3c1716a44d05"
+    },
+    {
+      "signature": "() server_scene.vehicle_gas_content.move_content (server_scene.vehicle_gas_content, server_scene.vehicle_gas_content, const f64)",
+      "signature_offset": 58575932,
+      "code_offset": 58576281,
+      "code_size": 568,
+      "code_sha256": "861b82d394f693f60dd50dd7d399547be6a132333244a066eb38d71183623362"
+    },
+    {
+      "signature": "() server_scene.vehicle_gas_node.container._flood_island (server_scene.vehicle_gas_node.container, server_scene.vehicle, const s32, server_scene.vehicle_gas_island, const array<s32>)",
+      "signature_offset": 58594458,
+      "code_offset": 58597347,
+      "code_size": 2960,
+      "code_sha256": "899761a51d80ad7a2fb55cb4ab8b5a32320355918a2286a8cb2a314eb5075af9"
+    },
+    {
+      "signature": "() server_scene.vehicle_gas_node.container.post_build (server_scene.vehicle_gas_node.container)",
+      "signature_offset": 58613764,
+      "code_offset": 58616162,
+      "code_size": 2408,
+      "code_sha256": "21405a7be5c432f968e5b73a92b6311ed60cb43cc6636e57527c45ea901cb996"
+    },
+    {
+      "signature": "() server_scene.vehicle_gas_node.container.pre_build (server_scene.vehicle_gas_node.container, server_scene.vehicle, server_scene.connections_manager)",
+      "signature_offset": 58620570,
+      "code_offset": 58626195,
+      "code_size": 6760,
+      "code_sha256": "70b37f7e4de78f98e5c2ff69801ae84c29383156fae3d429212f8edfa1d7c738"
+    },
+    {
+      "signature": "() server_scene.vehicle_liquid_content.blend_contents_temperatures (server_scene.vehicle_liquid_content, server_scene.vehicle_liquid_content, const f64)",
+      "signature_offset": 58717857,
+      "code_offset": 58718124,
+      "code_size": 80,
+      "code_sha256": "ea01a6d4d56befc92ba0692094b90c6760f2fb413b9942a2dce81456699d037c"
+    },
+    {
+      "signature": "() server_scene.vehicle_liquid_content.equalize_contents (server_scene.vehicle_liquid_content, server_scene.vehicle_liquid_content)",
+      "signature_offset": 58729812,
+      "code_offset": 58730228,
+      "code_size": 1208,
+      "code_sha256": "f9a74ccbd6d0e5d0d41e503625a36c34a8c4776fdec1dd5d1719310c66b308bb"
+    },
+    {
+      "signature": "() vehicle_element_definition.wheel.tyre_data.container.create (vehicle_element_definition.wheel.tyre_data.container)",
+      "signature_offset": 63119511,
+      "code_offset": 63120176,
+      "code_size": 7112,
+      "code_sha256": "4022cdf9979a9bc3ceeec5fad0656043cce42ccbe930dc9695f546a425678bbf"
+    },
+    {
+      "signature": "(f64) vehicle_element_definition.wheel.tyre_data.container.get_tyre_radius (const vehicle_element_definition.wheel.tyre_data.container, const string)",
+      "signature_offset": 63127959,
+      "code_offset": 63128782,
+      "code_size": 352,
+      "code_sha256": "6c57928251276ad58bc28d62dc47c6f675f8eb9f87107f12d974d582638a8813"
+    },
+    {
+      "signature": "(f64) vehicle_element_definition.wheel.tyre_data.container.get_tyre_thickness (const vehicle_element_definition.wheel.tyre_data.container, const string)",
+      "signature_offset": 63129552,
+      "code_offset": 63130378,
+      "code_size": 352,
+      "code_sha256": "784846db53bc4a2dd35816408698a1d0e1a4be9c0d450622e76e7697e7c4a5e9"
+    },
+    {
+      "signature": "() vehicle_util.blend_contents_temperatures (const f64, f64, const f64, f64, const f64)",
+      "signature_offset": 63541593,
+      "code_offset": 63541757,
+      "code_size": 224,
+      "code_sha256": "a8dc02148dfa819d8f83e467ed73f2eb7ca6f7176c4ea5278d278e79c81ee0e4"
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 16041318,
+      "offset": 16041358,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 16041318,
+      "offset": 16041366,
+      "format": "f64",
+      "bytes": "7b14ae47e17aa43f",
+      "value": 0.04,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 16041939,
+      "offset": 16041979,
+      "format": "f64",
+      "bytes": "0000000000002040",
+      "value": 8.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 16041939,
+      "offset": 16041987,
+      "format": "f64",
+      "bytes": "7b14ae47e17aa43f",
+      "value": 0.04,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 16042542,
+      "offset": 16042582,
+      "format": "f64",
+      "bytes": "0000000000001040",
+      "value": 4.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 16042542,
+      "offset": 16042590,
+      "format": "f64",
+      "bytes": "7b14ae47e17aa43f",
+      "value": 0.04,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 29037217,
+      "offset": 29037241,
+      "format": "f64",
+      "bytes": "00000000006af840",
+      "value": 100000.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 47260216,
+      "offset": 47260704,
+      "format": "f64",
+      "bytes": "0000000000407f40",
+      "value": 500.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 47260216,
+      "offset": 47260712,
+      "format": "f64",
+      "bytes": "0000000000307f40",
+      "value": 499.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 47260216,
+      "offset": 47260728,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 47262318,
+      "offset": 47263118,
+      "format": "f64",
+      "bytes": "0000000000408f40",
+      "value": 1000.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 54829110,
+      "offset": 54831294,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 54829110,
+      "offset": 54831302,
+      "format": "f64",
+      "bytes": "333333333333e33f",
+      "value": 0.6,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 54829110,
+      "offset": 54831310,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 54829110,
+      "offset": 54831318,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 54829110,
+      "offset": 54831326,
+      "format": "f64",
+      "bytes": "9a9999999999c93f",
+      "value": 0.2,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 54829110,
+      "offset": 54831342,
+      "format": "f64",
+      "bytes": "7b14ae47e17aa43f",
+      "value": 0.04,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 54849863,
+      "offset": 54851063,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 54849863,
+      "offset": 54851071,
+      "format": "f64",
+      "bytes": "333333333333e33f",
+      "value": 0.6,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 54849863,
+      "offset": 54851079,
+      "format": "f64",
+      "bytes": "9a9999999999b93f",
+      "value": 0.1,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 54849863,
+      "offset": 54851087,
+      "format": "f64",
+      "bytes": "9a9999999999d93f",
+      "value": 0.4,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 54849863,
+      "offset": 54851095,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 54849863,
+      "offset": 54851103,
+      "format": "f64",
+      "bytes": "0000000000004e40",
+      "value": 60.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 54849863,
+      "offset": 54851111,
+      "format": "f64",
+      "bytes": "000000000040bf40",
+      "value": 8000.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 54923963,
+      "offset": 54924595,
+      "format": "f64",
+      "bytes": "0000000000005940",
+      "value": 100.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 55163671,
+      "offset": 55164455,
+      "format": "f64",
+      "bytes": "fa7e6abc7493683f",
+      "value": 0.003,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 55186207,
+      "offset": 55187071,
+      "format": "f64",
+      "bytes": "fa7e6abc7493683f",
+      "value": 0.003,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 55206303,
+      "offset": 55207215,
+      "format": "f64",
+      "bytes": "fa7e6abc7493683f",
+      "value": 0.003,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 55282013,
+      "offset": 55283301,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 55282013,
+      "offset": 55283309,
+      "format": "f64",
+      "bytes": "7b14ae47e17a843f",
+      "value": 0.01,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 56467809,
+      "offset": 56468225,
+      "format": "f64",
+      "bytes": "0000000000005940",
+      "value": 100.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 57322062,
+      "offset": 57322102,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 57322916,
+      "offset": 57322956,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 57388714,
+      "offset": 57388754,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 57390046,
+      "offset": 57390086,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 57595140,
+      "offset": 57595180,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 57595914,
+      "offset": 57595954,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 57603457,
+      "offset": 57603481,
+      "format": "f64",
+      "bytes": "c3f5285c8fc2d53f",
+      "value": 0.34,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 57604955,
+      "offset": 57604979,
+      "format": "f64",
+      "bytes": "7b14ae47e17ac43f",
+      "value": 0.16,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 57606547,
+      "offset": 57606571,
+      "format": "f64",
+      "bytes": "85eb51b81e85db3f",
+      "value": 0.43,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 57608101,
+      "offset": 57608125,
+      "format": "f64",
+      "bytes": "0ad7a3703d0ac73f",
+      "value": 0.18,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 57609599,
+      "offset": 57609623,
+      "format": "f64",
+      "bytes": "7b14ae47e17ab43f",
+      "value": 0.08,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 57611191,
+      "offset": 57611215,
+      "format": "f64",
+      "bytes": "713d0ad7a370cd3f",
+      "value": 0.23,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58094140,
+      "offset": 58097100,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58094140,
+      "offset": 58097124,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58094140,
+      "offset": 58097148,
+      "format": "f64",
+      "bytes": "fca9f1d24d62603f",
+      "value": 0.002,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58094140,
+      "offset": 58097156,
+      "format": "f64",
+      "bytes": "2b8716d9cef7ef3f",
+      "value": 0.999,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58094140,
+      "offset": 58097164,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58519995,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58520003,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58520011,
+      "format": "f64",
+      "bytes": "9a9999999999c93f",
+      "value": 0.2,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58520019,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58520027,
+      "format": "f64",
+      "bytes": "0000000000001040",
+      "value": 4.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58520035,
+      "format": "f64",
+      "bytes": "0000000000002040",
+      "value": 8.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58520043,
+      "format": "f64",
+      "bytes": "666666666666d63f",
+      "value": 0.35,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58520051,
+      "format": "f64",
+      "bytes": "333333333333e33f",
+      "value": 0.6,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58520059,
+      "format": "f64",
+      "bytes": "333333333333d33f",
+      "value": 0.3,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58520067,
+      "format": "f64",
+      "bytes": "9a9999999999d93f",
+      "value": 0.4,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58520075,
+      "format": "f64",
+      "bytes": "9a9999999999b93f",
+      "value": 0.1,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58520083,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58520115,
+      "format": "f64",
+      "bytes": "7b14ae47e17a743f",
+      "value": 0.005,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58520155,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58520171,
+      "format": "f64",
+      "bytes": "7b14ae47e17aa43f",
+      "value": 0.04,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58520179,
+      "format": "f64",
+      "bytes": "0000000000002440",
+      "value": 10.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58495995,
+      "offset": 58520187,
+      "format": "f64",
+      "bytes": "000000000000f83f",
+      "value": 1.5,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58556168,
+      "offset": 58559336,
+      "format": "f64",
+      "bytes": "0000000000001040",
+      "value": 4.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58556168,
+      "offset": 58559344,
+      "format": "f64",
+      "bytes": "0000000000000840",
+      "value": 3.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58569300,
+      "offset": 58570588,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58571899,
+      "offset": 58573299,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58575275,
+      "offset": 58575587,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58576281,
+      "offset": 58576841,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58616162,
+      "offset": 58618546,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58616162,
+      "offset": 58618554,
+      "format": "f64",
+      "bytes": "7b14ae47e17a843f",
+      "value": 0.01,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58616162,
+      "offset": 58618562,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58626195,
+      "offset": 58632939,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 58730228,
+      "offset": 58731428,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 63128782,
+      "offset": 63129126,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "No matching tyre radius fallback"
+    },
+    {
+      "function_offset": 63130378,
+      "offset": 63130722,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 63541757,
+      "offset": 63541973,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected embedded scalar read; interpretation requires instruction context"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126600,
+      "format": "f64",
+      "bytes": "333333333333d33f",
+      "value": 0.3,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126608,
+      "format": "f64",
+      "bytes": "7b14ae47e17ac43f",
+      "value": 0.16,
+      "name": "Tyre table thickness"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126640,
+      "format": "f64",
+      "bytes": "c3f5285c8fc2d53f",
+      "value": 0.34,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126688,
+      "format": "f64",
+      "bytes": "1f85eb51b81ed53f",
+      "value": 0.33,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126728,
+      "format": "f64",
+      "bytes": "0ad7a3703d0ad73f",
+      "value": 0.36,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126760,
+      "format": "f64",
+      "bytes": "f6285c8fc2f5d83f",
+      "value": 0.39,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126816,
+      "format": "f64",
+      "bytes": "d7a3703d0ad7d33f",
+      "value": 0.31,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126840,
+      "format": "f64",
+      "bytes": "85eb51b81e85db3f",
+      "value": 0.43,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126872,
+      "format": "f64",
+      "bytes": "d7a3703d0ad7f33f",
+      "value": 1.24,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126880,
+      "format": "f64",
+      "bytes": "9a9999999999e93f",
+      "value": 0.8,
+      "name": "Tyre table thickness"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126904,
+      "format": "f64",
+      "bytes": "0ad7a3703d0af33f",
+      "value": 1.19,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126912,
+      "format": "f64",
+      "bytes": "333333333333eb3f",
+      "value": 0.85,
+      "name": "Tyre table thickness"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126936,
+      "format": "f64",
+      "bytes": "1f85eb51b81ef53f",
+      "value": 1.32,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126968,
+      "format": "f64",
+      "bytes": "b81e85eb51b8f23f",
+      "value": 1.17,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126976,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Tyre table thickness"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127000,
+      "format": "f64",
+      "bytes": "a4703d0ad7a3f83f",
+      "value": 1.54,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127032,
+      "format": "f64",
+      "bytes": "3d0ad7a3703dfa3f",
+      "value": 1.64,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127040,
+      "format": "f64",
+      "bytes": "0000000000000240",
+      "value": 2.25,
+      "name": "Tyre table thickness"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127072,
+      "format": "f64",
+      "bytes": "b81e85eb51b8fa3f",
+      "value": 1.67,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127080,
+      "format": "f64",
+      "bytes": "cdcccccccccc0040",
+      "value": 2.1,
+      "name": "Tyre table thickness"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127104,
+      "format": "f64",
+      "bytes": "5c8fc2f5285ce73f",
+      "value": 0.73,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127112,
+      "format": "f64",
+      "bytes": "666666666666e63f",
+      "value": 0.7,
+      "name": "Tyre table thickness"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127144,
+      "format": "f64",
+      "bytes": "ec51b81e85ebe13f",
+      "value": 0.56,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127176,
+      "format": "f64",
+      "bytes": "d7a3703d0ad7e33f",
+      "value": 0.62,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127240,
+      "format": "f64",
+      "bytes": "000000000000d03f",
+      "value": 0.25,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127248,
+      "format": "f64",
+      "bytes": "1f85eb51b81ec53f",
+      "value": 0.165,
+      "name": "Tyre table thickness"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127272,
+      "format": "f64",
+      "bytes": "333333333333e33f",
+      "value": 0.6,
+      "name": "Tyre table radius"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127280,
+      "format": "f64",
+      "bytes": "ec51b81e85ebd13f",
+      "value": 0.28,
+      "name": "Tyre table thickness"
+    }
+  ],
+  "strings": [
+    {
+      "function_offset": 63120176,
+      "offset": 63126584,
+      "text": "wheel_car"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126616,
+      "text": "wheel_van"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126626,
+      "text": "wheel_5_prong"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126648,
+      "text": "wheel_5_prong_tread"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126668,
+      "text": "wheel_rim_20"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126696,
+      "text": "wheel_rim_20_tread"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126715,
+      "text": "wheel_rim_22"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126736,
+      "text": "wheel_rim_22_tread"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126768,
+      "text": "wheel_rim_24"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126781,
+      "text": "wheel_rim_24_tread"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126800,
+      "text": "wheel_quadbike"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126824,
+      "text": "wheel4x4"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126848,
+      "text": "wheel_construction"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126888,
+      "text": "wheel_tractor_a"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126920,
+      "text": "wheel_tractor_b"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126944,
+      "text": "wheel_construction_lws"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63126984,
+      "text": "wheel_loader"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127008,
+      "text": "wheel_earthmover"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127048,
+      "text": "wheel_heavyloader"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127088,
+      "text": "wheel_truck"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127120,
+      "text": "wheel_truck_out_a"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127152,
+      "text": "wheel_truck_out_b"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127184,
+      "text": "wheel_truck_in_a"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127201,
+      "text": "wheel_truck_in_b"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127218,
+      "text": "wheel_helicopter"
+    },
+    {
+      "function_offset": 63120176,
+      "offset": 63127256,
+      "text": "wheel_plane"
+    }
+  ],
+  "call_examples": [
+    {
+      "function_offset": 53480653,
+      "instruction": 53481001,
+      "bytes": "ffd3",
+      "slot_address": 53481093,
+      "kind": 6,
+      "symbol": "() server_scene.get_world_gas_content (server_scene, vec3, server_scene.vehicle_gas_content)"
+    },
+    {
+      "function_offset": 53480653,
+      "instruction": 53481027,
+      "bytes": "ff10",
+      "slot_address": 53481101,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_gas_content.equalize_contents (server_scene.vehicle_gas_content, server_scene.vehicle_gas_content)"
+    },
+    {
+      "function_offset": 54923963,
+      "instruction": 54924105,
+      "bytes": "ffd3",
+      "slot_address": 54924627,
+      "kind": 6,
+      "symbol": "() server_scene.get_world_gas_content (server_scene, vec3, server_scene.vehicle_gas_content)"
+    },
+    {
+      "function_offset": 54923963,
+      "instruction": 54924134,
+      "bytes": "ff13",
+      "slot_address": 54924635,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_gas_content.equalize_contents (server_scene.vehicle_gas_content, server_scene.vehicle_gas_content)"
+    },
+    {
+      "function_offset": 55163671,
+      "instruction": 55163996,
+      "bytes": "ff5500",
+      "slot_address": 55164503,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_gas_content.blend_contents_temperatures (server_scene.vehicle_gas_content, server_scene.vehicle_gas_content, const f64)"
+    },
+    {
+      "function_offset": 55186207,
+      "instruction": 55186597,
+      "bytes": "ff5500",
+      "slot_address": 55187127,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_gas_content.blend_contents_temperatures (server_scene.vehicle_gas_content, server_scene.vehicle_liquid_content, const f64)"
+    },
+    {
+      "function_offset": 55206303,
+      "instruction": 55206741,
+      "bytes": "ff5500",
+      "slot_address": 55207271,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_liquid_content.blend_contents_temperatures (server_scene.vehicle_liquid_content, server_scene.vehicle_liquid_content, const f64)"
+    },
+    {
+      "function_offset": 56467809,
+      "instruction": 56468010,
+      "bytes": "ffd3",
+      "slot_address": 56468257,
+      "kind": 6,
+      "symbol": "() server_scene.get_world_liquid_content (server_scene, vec3, server_scene.vehicle_liquid_content)"
+    },
+    {
+      "function_offset": 56467809,
+      "instruction": 56468039,
+      "bytes": "ff13",
+      "slot_address": 56468265,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_liquid_content.equalize_contents (server_scene.vehicle_liquid_content, server_scene.vehicle_liquid_content)"
+    },
+    {
+      "function_offset": 58553453,
+      "instruction": 58553521,
+      "bytes": "ff5500",
+      "slot_address": 58553533,
+      "kind": 4,
+      "symbol": "() vehicle_util.blend_contents_temperatures (const f64, f64, const f64, f64, const f64)"
+    },
+    {
+      "function_offset": 58554079,
+      "instruction": 58554147,
+      "bytes": "ff5500",
+      "slot_address": 58554159,
+      "kind": 4,
+      "symbol": "() vehicle_util.blend_contents_temperatures (const f64, f64, const f64, f64, const f64)"
+    },
+    {
+      "function_offset": 58718124,
+      "instruction": 58718192,
+      "bytes": "ff5500",
+      "slot_address": 58718204,
+      "kind": 4,
+      "symbol": "() vehicle_util.blend_contents_temperatures (const f64, f64, const f64, f64, const f64)"
+    }
+  ],
+  "limits": "Exact selected static bytes/identities; not proof of prose, complete behavior or executed dispatch."
+}
