@@ -5,7 +5,7 @@ Source: `scripts/research/`. Python 3.12+ standard library; Ghidra exports addit
 | Tool | Responsibility and limits |
 | --- | --- |
 | `baseline.py` 1.1.0 | Resource checks; one worker/BelowNormal; full inventory, selective copies, two-pass source hashes, actual-format identification; not an atomic snapshot |
-| `gcl_index.py` 1.3.0 | Bounded length prefixes, operands, code/allocation fields, zero-slot checks; local SQLite function/reference search; not a full GCL parser |
+| `gcl_index.py` 1.4.0 | Bounded length prefixes, operands, code/allocation fields, zero-slot checks and template-qualified signatures; not a full GCL parser |
 | `catalog.py` 1.0.0 | All parseable data-directory JSON; original definitions, JSON Pointers, hashes, FTS; no guessed defaults |
 | `system_map.py` | 15 topic leads and common question queues; keyword counts are not understanding |
 | `export_plan.py` | Verify database/input hashes, unique signature, and code hash before planning selected exports |
@@ -21,6 +21,7 @@ Source: `scripts/research/`. Python 3.12+ standard library; Ghidra exports addit
 | `check_offline_evidence.py` | Independent matching-source checks of selected published records, constants, strings, and call bytes; not a proof of prose semantics |
 | `test_code_trace.py` | Synthetic dataflow boundaries, tampering/failure controls, literal distinctions, reader and evidence-checker tests |
 | `static_models.py`, `test_static_models.py` | Selected explanatory arithmetic and conservation/order/boundary counterexamples; not a game simulator or runtime acceptance |
+| `powertrain_models.py`, `test_powertrain_models.py` | Selected torque-island, motor, alternator, swashplate, rotor and distance-only ground-effect arithmetic; explicit model-domain guards; not a native physics solver |
 
 ## New baseline
 

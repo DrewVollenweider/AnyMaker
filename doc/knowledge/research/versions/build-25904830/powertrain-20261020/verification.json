@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "date": "2026-10-20",
+  "source_check": {
+    "schema": 1,
+    "date": "2026-10-20",
+    "installed_buildid": "25904830",
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "definition_files_checked": 2968,
+    "definition_file_mismatches": [],
+    "rechecked_for": "powertrain-20261020"
+  },
+  "selected_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "d50e9288592c2f2ef55dfcd3b042433e4d61242247104796249a0b4e7f3e855d",
+    "function_records_checked": 238,
+    "constants_checked": 45,
+    "strings_checked": 0,
+    "call_instruction_examples_checked": 5,
+    "limitations": "Exact static identities/bytes only; virtual target binding and prose semantics are not proven by this checker."
+  },
+  "reflection_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "69d24f7374cb557ca6d809758e932f2ea7b16b88cdd5aa0eec839d6664571fca",
+    "table_records_checked": 8084,
+    "selected_type_identities_checked": 227,
+    "enum_label_lists_checked": 0,
+    "fields_checked": 88,
+    "virtual_declarations_checked": 224,
+    "limits": "Static descriptor declarations and identities only. Not executed dispatch, full storage ABI, units, lifecycle semantics or whole-game understanding."
+  },
+  "reader_counts": {
+    "functions": 611,
+    "identical_exports_deduplicated": 2,
+    "instructions_byte_checked": 103166,
+    "slot_derived_calls": 5317,
+    "unresolved_calls": 4140
+  },
+  "selected_counts": {
+    "code_identities": 238,
+    "constants": 45,
+    "call_examples": 5,
+    "tick_types": 224,
+    "shipped_tick_types": 208,
+    "unique_tick_implementations": 156,
+    "reflected_types": 227,
+    "fields": 88,
+    "virtuals": 224,
+    "reader_instruction_bytes": 597691
+  },
+  "research_tool_tests_passed": 101,
+  "test_log_sha256": "1cf8cc1ece1cfbec62b672d8ef2edfdf47c6d0e6729a09e7048b6897d65688d0",
+  "game_executed": false,
+  "installation_and_active_saves_edited": false,
+  "limits": "Selected static traces, input identity, declared metadata and synthetic arithmetic invariants. Complete semantic review, native math/physics intrinsics, runtime dispatch and the whole-game audit remain unfinished."
+}

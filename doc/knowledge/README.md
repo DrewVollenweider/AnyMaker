@@ -2,7 +2,9 @@
 
 Whole-game research started October 18: [versioned research hub](research/README.md), [coverage and gaps](research/COVERAGE.md), [Opening/Hatch implementation trace](research/SEALING.md), and [restart instructions](research/HANDOFF.md). This extends the historical engineering archive below; whole-game understanding and runtime verification remain incomplete.
 
-October 20: [component construction, reflection and geometry](research/COMPONENTS-TYPES-20261020.md) adds the complete declared 8,084-entry type table, inherited component declarations, core native defaults, interface directions/indexes and current geometry helpers. The selected reader now contains 394 functions. Full-system behavior remains under investigation.
+Latest October 20 findings: [torque, electric machines, jets and helicopter rotors](research/POWERTRAIN-20261020.md). The reader now contains 611 selected functions, including every declared component update implementation. Selected traces cover shared shaft brakes, ratio-dependent load, motor demand, alternator efficiency, jet-chain validation, swashplate mixing and rotor/ground-effect arithmetic. Full-system behavior remains under investigation.
+
+Earlier October 20 foundation: [component construction, reflection and geometry](research/COMPONENTS-TYPES-20261020.md) adds the complete declared 8,084-entry type table, inherited component declarations, core native defaults, interface directions/indexes and current geometry helpers. That reader contained 394 functions.
 
 October 19 scope expanded to **all systems and past research**: [full audit register](research/AUDIT-REGISTER.md) and [findings including the October 17-18 truck/helicopter records](research/FULL-AUDIT-20261019.md). That checkpoint's reader contained 153 functions. Indexed scope remains separate from actual understanding. The rejected helicopter inset stays rejected; later static checks are not successful gameplay tests.
 

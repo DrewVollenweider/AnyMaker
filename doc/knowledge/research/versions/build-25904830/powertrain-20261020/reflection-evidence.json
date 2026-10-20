@@ -1,0 +1,3884 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "table": {
+    "offset": 66399263,
+    "end": 82528301,
+    "records": 8084,
+    "sha256": "5d619ecd6c69220d0e873d73e012dd301038f4eb911d859486db58c386b60a8e"
+  },
+  "types": [
+    {
+      "name": "server_scene.vehicle_component",
+      "base": "replication.master.object_events",
+      "offset": 77918907,
+      "length": 16414,
+      "descriptor_sha256": "20c3d9aad4db25ce63daa8f425d75253c3fdf249c402abb0ad756d6cec0b6e42",
+      "size": 480,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.acceleration_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 77935321,
+      "length": 16084,
+      "descriptor_sha256": "c444613b21d4780f7d96b2304d5545310fb4a316b173f1885da48b6c4c0fcada",
+      "size": 568,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.air_filter",
+      "base": "server_scene.vehicle_component",
+      "offset": 77951590,
+      "length": 16242,
+      "descriptor_sha256": "80f6df1eb696390eddbd1dfa47c9c85d507e461cf15ec7922691d5f94561d3f5",
+      "size": 760,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.air_manifold",
+      "base": "server_scene.vehicle_component",
+      "offset": 77967931,
+      "length": 15986,
+      "descriptor_sha256": "8db1b4e74aa360e44312be7fc517bc037e0a8388e16213d3edb9e8dd37547e08",
+      "size": 640,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.alternator",
+      "base": "server_scene.vehicle_component",
+      "offset": 77984656,
+      "length": 16282,
+      "descriptor_sha256": "46e0044ea69804ad54ab4858abba55a86cabfd4321a409e6be5cf0b426bf304b",
+      "size": 736,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.altitude_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 78001031,
+      "length": 15965,
+      "descriptor_sha256": "2973e323d2c936a3f185f4ca76dff4f335458252ccd912773c1d4fffe0847927",
+      "size": 544,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.ammo_belt",
+      "base": "server_scene.vehicle_component",
+      "offset": 78021557,
+      "length": 15932,
+      "descriptor_sha256": "9a3edb064664aba02b9e5dbb8bdbd41422336c662cb01c53088439361bc6cc57",
+      "size": 728,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.ammo_belt_flexible",
+      "base": "server_scene.vehicle_component.ammo_belt",
+      "offset": 78040321,
+      "length": 17692,
+      "descriptor_sha256": "21258bec910d61e5022f4b8f9a38ed2364198bb9220365d475c5cc2540887d0a",
+      "size": 888,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.ammo_belt_interface",
+      "base": "server_scene.vehicle_component.ammo_belt",
+      "offset": 78059011,
+      "length": 17011,
+      "descriptor_sha256": "7fb448104aab33a752763263bf4f5b78d5d01df00e5899e6dcd5c2f0d1dd1d73",
+      "size": 752,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.ammo_belt_magazine",
+      "base": "server_scene.vehicle_component.ammo_belt",
+      "offset": 78076022,
+      "length": 16055,
+      "descriptor_sha256": "e2f79f3f88e32b0a8a7e8b56f193a8ce6b4b9e6f9a4015d67fde8866cf4ee718",
+      "size": 728,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.ammo_belt_motor",
+      "base": "server_scene.vehicle_component.ammo_belt",
+      "offset": 78092077,
+      "length": 16225,
+      "descriptor_sha256": "c1d9cbe247f967671642d15095c607802c3d73bef7fb74c3b110bc9249f624e8",
+      "size": 816,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.ammo_belt_straight",
+      "base": "server_scene.vehicle_component.ammo_belt",
+      "offset": 78108302,
+      "length": 16091,
+      "descriptor_sha256": "abb590e7381f18da79dfe2c8e116ecaced4ba903ed225d19b60f606a69c54f5e",
+      "size": 736,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.ammo_belt_turn",
+      "base": "server_scene.vehicle_component.ammo_belt",
+      "offset": 78124393,
+      "length": 16047,
+      "descriptor_sha256": "f1bb73ae842c54494e8fceb5cb332be50e4bb28e803ffa94c652dc627fe6ad30",
+      "size": 736,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.antenna",
+      "base": "server_scene.vehicle_component",
+      "offset": 78140440,
+      "length": 16563,
+      "descriptor_sha256": "e8b697457a0a5470ce936962561420bd6e865bba84afe8114628689a172c9adc",
+      "size": 912,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.autocannon",
+      "base": "server_scene.vehicle_component",
+      "offset": 78157003,
+      "length": 16130,
+      "descriptor_sha256": "6b8e6d81751b21c0f8a390ee6cc641bbad2211bc092fbc989983137db4913be5",
+      "size": 784,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.battery",
+      "base": "server_scene.vehicle_component",
+      "offset": 78173133,
+      "length": 16310,
+      "descriptor_sha256": "8436204f037e7cff54a76760db72dbb73eefffd5931b7fc1afaa069a9a6f569d",
+      "size": 784,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.boat_propeller",
+      "base": "server_scene.vehicle_component",
+      "offset": 78189443,
+      "length": 15982,
+      "descriptor_sha256": "9a5ffeacf86705f8c067c86cb045fdcb8e229f9185b980dd8983671f4bb96000",
+      "size": 640,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.brake",
+      "base": "server_scene.vehicle_component",
+      "offset": 78205425,
+      "length": 15842,
+      "descriptor_sha256": "87cd66d93b8fb771ba3f6a5c525df461b54e0f29540fe209cfdfc505df1a4161",
+      "size": 624,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.building",
+      "base": "server_scene.vehicle_component",
+      "offset": 78221267,
+      "length": 15551,
+      "descriptor_sha256": "a7f46d209a8acbfcdab986cfc7dc85e48c6c3072cd3c2d876b595787eff935fe",
+      "size": 480,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.building_door",
+      "base": "server_scene.vehicle_component",
+      "offset": 78236818,
+      "length": 16573,
+      "descriptor_sha256": "674bfc8f6b51f884788acf3ef95418d3bad7b28f49fc149d99708bb2a2abf4a1",
+      "size": 616,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.building_door_armoured",
+      "base": "server_scene.vehicle_component",
+      "offset": 78253391,
+      "length": 16813,
+      "descriptor_sha256": "1c828c6b794dbe8b2c9f96a6fed78354b346a54f851e7df0b782f9c7f1207db5",
+      "size": 632,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.building_door_double",
+      "base": "server_scene.vehicle_component.building_door",
+      "offset": 78270204,
+      "length": 16388,
+      "descriptor_sha256": "910ffdb3c9b2a5bc46d9b37333c0c6b7bea3b95c69fa7463e8b2b536b7729f0d",
+      "size": 648,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.building_door_garage",
+      "base": "server_scene.vehicle_component.building_door",
+      "offset": 78286592,
+      "length": 16402,
+      "descriptor_sha256": "6c6029e1cb8dbef990226f7de32205ccfcc28c9766e1a6d06e01516f75acd0b4",
+      "size": 648,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.building_foundation",
+      "base": "server_scene.vehicle_component",
+      "offset": 78302994,
+      "length": 15606,
+      "descriptor_sha256": "ad4975d364d0eec6bf8a9c860744c810e1add8a34adbf5472d6b9997d57ad45a",
+      "size": 480,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.building_window",
+      "base": "server_scene.vehicle_component.building",
+      "offset": 78320299,
+      "length": 16050,
+      "descriptor_sha256": "0f91fdbff3d0b3536e2c80255812d332ec0935875de14c66ee37a460d06dc5f7",
+      "size": 576,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.button",
+      "base": "server_scene.vehicle_component",
+      "offset": 78336442,
+      "length": 15889,
+      "descriptor_sha256": "b1dfd8401d8b70b2355ef50820ffc7c55a04b371acb1880ca69305a3a80f7b84",
+      "size": 608,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.button_additive",
+      "base": "server_scene.vehicle_component",
+      "offset": 78352331,
+      "length": 16242,
+      "descriptor_sha256": "b80a77b426bf2f4afe2724ff7f703fbcbf74c9a4ace65dc47c1a3f62a58d63eb",
+      "size": 648,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.button_knob",
+      "base": "server_scene.vehicle_component",
+      "offset": 78368573,
+      "length": 16043,
+      "descriptor_sha256": "371844c3ac10f9d2d77b5348f2b62795ef1653385c6c61bde795c2a182520f65",
+      "size": 640,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.button_slider",
+      "base": "server_scene.vehicle_component",
+      "offset": 78384616,
+      "length": 16127,
+      "descriptor_sha256": "72368d3b3e029de56bb23b29265b4f4ef61d6ac1e9d591111d0ba992cb103004",
+      "size": 624,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.button_switch",
+      "base": "server_scene.vehicle_component",
+      "offset": 78400743,
+      "length": 16036,
+      "descriptor_sha256": "2df497bac645192ee7e767880bc014ed556bc4d582c0357fe1eb39e951c0f155",
+      "size": 608,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.button_switch_covered",
+      "base": "server_scene.vehicle_component",
+      "offset": 78416779,
+      "length": 16415,
+      "descriptor_sha256": "08ed858fea8d3030871702082fed532201a08a633eb9c0c98ea9bb8bd8b754f0",
+      "size": 648,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.button_switch_key",
+      "base": "server_scene.vehicle_component",
+      "offset": 78433194,
+      "length": 16251,
+      "descriptor_sha256": "c6ed950cb151af41e37dc2912b69142968e721996eb0af7763fccfb67fcb3e36",
+      "size": 624,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.cannon",
+      "base": "server_scene.vehicle_component",
+      "offset": 78449539,
+      "length": 16148,
+      "descriptor_sha256": "9fbf47664623f6a831ca291925f2082254a0e8b7df460a64721675cbed4314eb",
+      "size": 784,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.catalytic",
+      "base": "server_scene.vehicle_component",
+      "offset": 78465687,
+      "length": 15907,
+      "descriptor_sha256": "bc526d0a1dee3114eb3043f8cfb622bb7014effa2673267ec7eea88fc0c2f52c",
+      "size": 592,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.clutch",
+      "base": "server_scene.vehicle_component",
+      "offset": 78481594,
+      "length": 15974,
+      "descriptor_sha256": "798f11ad7e60fcd6e72649c9deffbed3d4db407c50e6f2e46044f67f1786f2d8",
+      "size": 640,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.compass_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 78497568,
+      "length": 15950,
+      "descriptor_sha256": "db77e0cba1d965f21e5e2a38a5f586d318b89940f6a69ae71413afca8d4cf17e",
+      "size": 544,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.control_surface",
+      "base": "server_scene.vehicle_component",
+      "offset": 78514058,
+      "length": 16138,
+      "descriptor_sha256": "43a97d05b7b19fe8cf68166b4d6d54d74e3a0965f51fe6c9c9e9d5f333823d2d",
+      "size": 680,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.coolant_manifold",
+      "base": "server_scene.vehicle_component",
+      "offset": 78530394,
+      "length": 15784,
+      "descriptor_sha256": "1679bb3b09b584cff988ddfbe6276a409c080553c2f10ae76ee0f397c348da22",
+      "size": 560,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.data_bracket",
+      "base": "server_scene.vehicle_component",
+      "offset": 78546178,
+      "length": 15787,
+      "descriptor_sha256": "3a049adef403b1318e54ead6a82a2a5a0d86d275901c0f66af86a5d9b85c13af",
+      "size": 576,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.data_junction",
+      "base": "server_scene.vehicle_component",
+      "offset": 78561965,
+      "length": 15720,
+      "descriptor_sha256": "411d72395b281ffa5b5a94cf3fb5869c4694f6674130e68f1ef6b7aa5b6334a0",
+      "size": 520,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.data_port",
+      "base": "server_scene.vehicle_component",
+      "offset": 78577685,
+      "length": 15793,
+      "descriptor_sha256": "e8e8a0fc61d21054d870c82fdced35e7afa2fff2e668e1779b9a6beb02ff97c4",
+      "size": 536,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.dial",
+      "base": "server_scene.vehicle_component",
+      "offset": 78593478,
+      "length": 15958,
+      "descriptor_sha256": "9dde7cd63bb517312f0b43669ecbd917e284e10fdc0faa49dec0d0afc51c2b3d",
+      "size": 664,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.dial_compass",
+      "base": "server_scene.vehicle_component",
+      "offset": 78609436,
+      "length": 16158,
+      "descriptor_sha256": "ba6fb9ce1c200195805eef7e7c2d274cd8b179f7064bcf399a91229cf69b256b",
+      "size": 664,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.dial_dual",
+      "base": "server_scene.vehicle_component",
+      "offset": 78625594,
+      "length": 16235,
+      "descriptor_sha256": "e03bd35b732b385ffa3a1fd12390bf68ff9deba4fd1fdfc2281ff6c3eff374fc",
+      "size": 744,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.dial_gauge",
+      "base": "server_scene.vehicle_component",
+      "offset": 78641829,
+      "length": 16108,
+      "descriptor_sha256": "44b3263c84068454ae7865a24ae3ceb51d75eb1c02df48a77a52d4139a1aeb5e",
+      "size": 664,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.dial_range",
+      "base": "server_scene.vehicle_component",
+      "offset": 78657937,
+      "length": 16108,
+      "descriptor_sha256": "e0fa69be55e00681f96577210d68d4cae702ad2af2ae3faaa9e48039fc2f89ad",
+      "size": 664,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.differential_gearbox",
+      "base": "server_scene.vehicle_component",
+      "offset": 78674045,
+      "length": 16237,
+      "descriptor_sha256": "9c30009e4d627d5932f0d5d93af88161e0f28f0f6f4aab455acc382941eeb3f9",
+      "size": 592,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.drive_shaft",
+      "base": "server_scene.vehicle_component",
+      "offset": 78690282,
+      "length": 15909,
+      "descriptor_sha256": "7202a0a194afce72a90f69e32c6d979f270447a00a0d8650a10c496272960c61",
+      "size": 592,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.electric_bracket",
+      "base": "server_scene.vehicle_component",
+      "offset": 78706386,
+      "length": 15855,
+      "descriptor_sha256": "6acaeaff07b9c482b6649381d0cce463540a48f563b32960834593fd06a466ec",
+      "size": 608,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.electric_junction",
+      "base": "server_scene.vehicle_component",
+      "offset": 78722241,
+      "length": 15772,
+      "descriptor_sha256": "3e6c6d29f871efb47ba6bab661a8043036b64b93aab2dcb9cb22f9b143366bbc",
+      "size": 528,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.electric_port",
+      "base": "server_scene.vehicle_component",
+      "offset": 78738013,
+      "length": 15869,
+      "descriptor_sha256": "1d9699551d17e720705c2dad3f836f57e8929efe686f9d2d19c87dcf0f1e7f6a",
+      "size": 552,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.electric_relay",
+      "base": "server_scene.vehicle_component",
+      "offset": 78753882,
+      "length": 16221,
+      "descriptor_sha256": "47e27de5d5c88afd36c3c02415828933617aa86cd95594cd26ac978abc290132",
+      "size": 624,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.engine",
+      "base": "server_scene.vehicle_component",
+      "offset": 78773910,
+      "length": 17400,
+      "descriptor_sha256": "f85c9aca74ca0dc385176a0b05f5fb4fda5a8d64f12c274374b91bc3dd253978",
+      "size": 1560,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.engine_wheel",
+      "base": "server_scene.vehicle_component",
+      "offset": 78791310,
+      "length": 16070,
+      "descriptor_sha256": "58b2688a3ff75e41cc232dfc2da13201f7bd876b97fff1732d480b7a4aef155c",
+      "size": 632,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.engine_wheel_b",
+      "base": "server_scene.vehicle_component.engine_wheel",
+      "offset": 78807380,
+      "length": 15858,
+      "descriptor_sha256": "f6f822f1d96f9155b74712f5f5c66ce236164e4ad9da04e2bba52678990fe3dc",
+      "size": 632,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.engine_wheel_c",
+      "base": "server_scene.vehicle_component.engine_wheel",
+      "offset": 78823238,
+      "length": 15858,
+      "descriptor_sha256": "672165a30784545dd2d9b1d29792da9a79c958cc687638702f9c3646d826e227",
+      "size": 632,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.entity_interface",
+      "base": "server_scene.vehicle_component",
+      "offset": 78839096,
+      "length": 16351,
+      "descriptor_sha256": "a197da871e64d9bafca4e0f44af7881a58c755eafccd5630aae3a489756ad08c",
+      "size": 632,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.exhaust_manifold",
+      "base": "server_scene.vehicle_component",
+      "offset": 78857297,
+      "length": 16031,
+      "descriptor_sha256": "04b4141a5128a780965d71d21bcd5a7a1a2df728740ec902d9fc766087edeb37",
+      "size": 608,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.flight_stick",
+      "base": "server_scene.vehicle_component",
+      "offset": 78873925,
+      "length": 16788,
+      "descriptor_sha256": "1b859bf7a56f9df186878dfbf6ea6b5798a0e675e06db5fbe8f1d7e6650b4952",
+      "size": 912,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.flight_stick_jet",
+      "base": "server_scene.vehicle_component",
+      "offset": 78890713,
+      "length": 16886,
+      "descriptor_sha256": "1cce21f31ae8ea240e35249b0494fa121f8cb6090b0af808e6be6ad772cb8043",
+      "size": 912,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.flight_yoke",
+      "base": "server_scene.vehicle_component",
+      "offset": 78907599,
+      "length": 16731,
+      "descriptor_sha256": "47495fd469b2ed2d34279ca5c94c6c83c4776a221df2d18ac5fe2f214c2a5748",
+      "size": 912,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.force_emitter_collective",
+      "base": "server_scene.vehicle_component",
+      "offset": 78925186,
+      "length": 17025,
+      "descriptor_sha256": "00f9c1750bdf45b0a950eb0c3368c40065170b38f4bef9c3475beba943f4f836",
+      "size": 1208,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.force_emitter_propeller",
+      "base": "server_scene.vehicle_component",
+      "offset": 78942211,
+      "length": 16857,
+      "descriptor_sha256": "678dae78aa8653d62f6c288537e9f433091dd80117461956e1e2d5eea1990750",
+      "size": 1176,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.force_emitter_swashplate",
+      "base": "server_scene.vehicle_component",
+      "offset": 78959068,
+      "length": 17150,
+      "descriptor_sha256": "716f5fbbf45c709e31f6c30f58d0da7bac3f83a6e28bb313ed03369650d2f4a6",
+      "size": 1272,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.fuel_manifold",
+      "base": "server_scene.vehicle_component",
+      "offset": 78976218,
+      "length": 16021,
+      "descriptor_sha256": "b2fd6a87db0fe6b37bb8434683015eb3bcecb00ac527701f9d56f4b746ad5cb5",
+      "size": 808,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.furniture",
+      "base": "server_scene.vehicle_component",
+      "offset": 78992239,
+      "length": 15536,
+      "descriptor_sha256": "7aec7d47ddc8b2a682e64461a51f3ecc16c9b0ce133fb926418580524808d6e3",
+      "size": 480,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.fusebox",
+      "base": "server_scene.vehicle_component",
+      "offset": 79007775,
+      "length": 16187,
+      "descriptor_sha256": "c1fe88b5789e8754d795c5b0c932c81813e7356e5b93c79ee389886c7b247d17",
+      "size": 776,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_bracket",
+      "base": "server_scene.vehicle_component",
+      "offset": 79023962,
+      "length": 15770,
+      "descriptor_sha256": "42d2a208e508d2658856e8c7b5096145f144647877a1cb3c988923fc362e2a7a",
+      "size": 608,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_junction_t",
+      "base": "server_scene.vehicle_component",
+      "offset": 79039732,
+      "length": 15863,
+      "descriptor_sha256": "3b9dde88e2858eb1b0e712678aff361f99e97236301b1000e2c7422179e0fae2",
+      "size": 672,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_junction_x",
+      "base": "server_scene.vehicle_component",
+      "offset": 79055595,
+      "length": 15917,
+      "descriptor_sha256": "db876120da5dae99f369714267f6c33f2426687697d6f1ed18dc42cefdb55143",
+      "size": 736,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_port",
+      "base": "server_scene.vehicle_component",
+      "offset": 79071512,
+      "length": 15774,
+      "descriptor_sha256": "9a0f209fa650eb6f1b590ae6fb4d2760d2f093f347990c20bf2bb1bbac403f1a",
+      "size": 552,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_pressure_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 79087286,
+      "length": 16228,
+      "descriptor_sha256": "f0b879310e322f65cf9dd8b7cc6efead0a94b610c9bd83305856ca49b5139f25",
+      "size": 608,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_pump",
+      "base": "server_scene.vehicle_component",
+      "offset": 79103514,
+      "length": 16227,
+      "descriptor_sha256": "cf1bf1aaf1e6a032f87226263466c731b641b18d6674bae4efd8d1b971844b2d",
+      "size": 792,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_pump_centrifugal",
+      "base": "server_scene.vehicle_component",
+      "offset": 79119741,
+      "length": 16661,
+      "descriptor_sha256": "70d932907589a85782f2c29abbdb3fa9f37fee428348085b0d3e47c4fbe069e9",
+      "size": 920,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_tank",
+      "base": "server_scene.vehicle_component",
+      "offset": 79136402,
+      "length": 15983,
+      "descriptor_sha256": "0e746ad99adc14da22388b6f25fb75ce9b560b70b6dcfc01475e0c97c4694e3b",
+      "size": 608,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_temperature_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 79152385,
+      "length": 16338,
+      "descriptor_sha256": "16defc4b2928c5ffc39376a7d60057bb881c5a5707a4dc38fa69c4a22c4e893a",
+      "size": 720,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_valve_straight",
+      "base": "server_scene.vehicle_component",
+      "offset": 79168723,
+      "length": 16480,
+      "descriptor_sha256": "708f77cb4f153ebc67e1a1fb703c05df96f71167c6a926ee8d7f632a782fdf69",
+      "size": 744,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_valve_t",
+      "base": "server_scene.vehicle_component",
+      "offset": 79185203,
+      "length": 16311,
+      "descriptor_sha256": "790551a5e42df0e06f9ec1032096ac8af58a82a9ae4e615f2973862da262d064",
+      "size": 808,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_vent",
+      "base": "server_scene.vehicle_component",
+      "offset": 79201514,
+      "length": 15906,
+      "descriptor_sha256": "85db426ff0e4970c89c3081864cf34c8af5ef234cde0d045e3a94d2562c353e6",
+      "size": 696,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_vent_b",
+      "base": "server_scene.vehicle_component",
+      "offset": 79217420,
+      "length": 15940,
+      "descriptor_sha256": "97916609a0d38c9d5a729743c34f7e8faf1fed209d957b1e1bc4ea1eef15da35",
+      "size": 696,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gear_track",
+      "base": "server_scene.vehicle_component",
+      "offset": 79233885,
+      "length": 15750,
+      "descriptor_sha256": "58bdb71e4082bc4b07d90fa23ed9d0eb6b37d55a663ddaf713419bb811d74748",
+      "size": 544,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gearbox",
+      "base": "server_scene.vehicle_component",
+      "offset": 79249635,
+      "length": 16456,
+      "descriptor_sha256": "c49d0f3d33bbf8a4bc62a13c057a85c515b03d72cb958981868265404123abd0",
+      "size": 704,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gearbox_b",
+      "base": "server_scene.vehicle_component",
+      "offset": 79266091,
+      "length": 16645,
+      "descriptor_sha256": "03b6d3bff36ac713026b829d49abae998a6abdc5c9ff395d1eb4fad7e2ff0448",
+      "size": 824,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gearbox_c",
+      "base": "server_scene.vehicle_component.gearbox_b",
+      "offset": 79282736,
+      "length": 15980,
+      "descriptor_sha256": "0e6c79f98e43d74c86fcdd03234566e16ee63278d5f0ed4244e0228963dcf51f",
+      "size": 824,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gearbox_fixed_ratio",
+      "base": "server_scene.vehicle_component",
+      "offset": 79298716,
+      "length": 16392,
+      "descriptor_sha256": "4469f24ad8cf64283c9f6c576e4115f9c80a8ec53d27d1aef707dd3e69391daf",
+      "size": 624,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.gyro_rotation_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 79315778,
+      "length": 16065,
+      "descriptor_sha256": "172cce9cc5fc5bcb4f3c0f5c043c0527b4a51b47227fcffacf1f381350366dc1",
+      "size": 544,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.handbrake",
+      "base": "server_scene.vehicle_component",
+      "offset": 79331843,
+      "length": 16197,
+      "descriptor_sha256": "fdb58fa62d538b7796f1bd3c6adab71f10c81741f64d3eca8bae5c82c5c77e44",
+      "size": 664,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.handle",
+      "base": "server_scene.vehicle_component",
+      "offset": 79348581,
+      "length": 15674,
+      "descriptor_sha256": "ffef5611279f0a42ec2d1789073565bf2ed60ba3345e459aee723ae3900fd679",
+      "size": 528,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.heat_exchanger_gas_gas",
+      "base": "server_scene.vehicle_component",
+      "offset": 79364255,
+      "length": 16335,
+      "descriptor_sha256": "3c7eb3c429efe01a8b8f2a5d964e7884c089c0e9176c71d1a782d7c726db2b1a",
+      "size": 648,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.heat_exchanger_gas_liquid",
+      "base": "server_scene.vehicle_component",
+      "offset": 79380590,
+      "length": 16426,
+      "descriptor_sha256": "e1e5e202834dc2f05ad33f2feae151560d6d38743c9f3b4bdc6d570d1a2f103d",
+      "size": 824,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.heat_exchanger_liquid_liquid",
+      "base": "server_scene.vehicle_component",
+      "offset": 79397016,
+      "length": 16517,
+      "descriptor_sha256": "d8677df90ebd4fee0d388f412153e18e6d7c586fd9abb5070928f94337018b2f",
+      "size": 1000,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.hinge_knuckle",
+      "base": "server_scene.vehicle_component",
+      "offset": 79413634,
+      "length": 16257,
+      "descriptor_sha256": "177c60bafad5464db8dedeafc0da5b7b78128610489cc7a70079b4a3543ea782",
+      "size": 544,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.hinge_pin",
+      "base": "server_scene.vehicle_component",
+      "offset": 79429996,
+      "length": 16275,
+      "descriptor_sha256": "175e3cb184f250691cc90a4836b2cfddca3fa99eb2877956c9169a1eb172a1c6",
+      "size": 568,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.horn",
+      "base": "server_scene.vehicle_component",
+      "offset": 79446271,
+      "length": 15991,
+      "descriptor_sha256": "51aad719e716a7ef019941dd186627701c0f99b8ddc67d3d53f20ba8497a26fe",
+      "size": 672,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.horn_klaxon",
+      "base": "server_scene.vehicle_component",
+      "offset": 79462262,
+      "length": 16194,
+      "descriptor_sha256": "8d03813bf642f71041ae2cf257d932af9f1be6675c267698dbd9122923d74303",
+      "size": 672,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.hydraulic_actuator",
+      "base": "server_scene.vehicle_component",
+      "offset": 79478456,
+      "length": 16312,
+      "descriptor_sha256": "25bfd8ffcabd0cbc7f90f55b66c217e1643f2f47298c06cf4bc3d9915c62ee6c",
+      "size": 808,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.hydraulic_cylinder_connector",
+      "base": "server_scene.vehicle_component",
+      "offset": 79494893,
+      "length": 16567,
+      "descriptor_sha256": "cf07e81c2faeedbb7decffc153918a1e0c0ea9c2f26810018a192634ba64d4c3",
+      "size": 592,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.hydraulic_cylinder_connector_2_2",
+      "base": "server_scene.vehicle_component.hydraulic_cylinder_connector",
+      "offset": 79511460,
+      "length": 16272,
+      "descriptor_sha256": "e7a46ddfbc63501c7356a068c32ed303b8dd2b057f3ebe91945f84eba3af0c27",
+      "size": 592,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.hydraulic_cylinder_connector_3_3",
+      "base": "server_scene.vehicle_component.hydraulic_cylinder_connector",
+      "offset": 79527732,
+      "length": 16272,
+      "descriptor_sha256": "fb6d0289f3369bb6c51b48953c5c4104c46076d6292f3d99152f992c6c8de172",
+      "size": 592,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "base": "server_scene.vehicle_component",
+      "offset": 79544124,
+      "length": 18064,
+      "descriptor_sha256": "d8a73e272a405a5ecf7b66ba03060afc4072923c92ddd2d01611ef52c36abf93",
+      "size": 1352,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.hydraulic_cylinder_connector_base_2_2",
+      "base": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "offset": 79562188,
+      "length": 17331,
+      "descriptor_sha256": "713911993a1fd663611a17bbacb3853937b717881873fe3f474a52b38d3e2f8f",
+      "size": 1352,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.hydraulic_cylinder_connector_base_3_3",
+      "base": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "offset": 79579519,
+      "length": 17331,
+      "descriptor_sha256": "680fbd31fb49541e40bf0e1ebf5ce4f3f4fadf714392637c52c4ce3e90fa0927",
+      "size": 1352,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.hydraulic_motor",
+      "base": "server_scene.vehicle_component",
+      "offset": 79596850,
+      "length": 16439,
+      "descriptor_sha256": "12ca2ab0f27d78a03b3819e18029a889c0cbfe3962c8cbe74617f72af0cd1707",
+      "size": 1128,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.indicator",
+      "base": "server_scene.vehicle_component",
+      "offset": 79613289,
+      "length": 15978,
+      "descriptor_sha256": "157a5f09287af90d7ca549f5f7732f1978279561cf07e085494f5e140cbf2098",
+      "size": 616,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.interface_data",
+      "base": "server_scene.vehicle_component",
+      "offset": 79629373,
+      "length": 16787,
+      "descriptor_sha256": "9b727bfac5655518493b33b9ba7287ae7c6680a6e37581485b7a37b05d890e97",
+      "size": 592,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.interface_electric",
+      "base": "server_scene.vehicle_component",
+      "offset": 79646270,
+      "length": 16943,
+      "descriptor_sha256": "21f1c2c431be811a281bb8602cd56703e01b71b3e82109c655351f27f6592564",
+      "size": 608,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.interface_gas",
+      "base": "server_scene.vehicle_component",
+      "offset": 79663318,
+      "length": 16747,
+      "descriptor_sha256": "d1a629c10e1b0d214c8d0ad2eeeb37ecf32eb5a0c5f209db9c800d5544ef75e8",
+      "size": 608,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.interface_liquid",
+      "base": "server_scene.vehicle_component",
+      "offset": 79680173,
+      "length": 16864,
+      "descriptor_sha256": "b29c8af73c19bb402efc64dbadc82da22704a74dba0ff9f932ccf3c817376502",
+      "size": 624,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.interface_mechanical_in",
+      "base": "server_scene.vehicle_component",
+      "offset": 79697153,
+      "length": 17187,
+      "descriptor_sha256": "4b187429cb35af3950e7f021942e20e79af027f3ffb741a11d7a534b0cf9b54f",
+      "size": 576,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.interface_mechanical_out",
+      "base": "server_scene.vehicle_component",
+      "offset": 79714455,
+      "length": 17224,
+      "descriptor_sha256": "3629199a9089a36fe25e51067ccecfa2b0155b9a3a41e6bda2d28645eb43f058",
+      "size": 576,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.interface_torque",
+      "base": "server_scene.vehicle_component",
+      "offset": 79731787,
+      "length": 16821,
+      "descriptor_sha256": "6a9f4dc2f06646dc2d43e02ae67829be287b13daf88b2f737147fcbf36a17eeb",
+      "size": 568,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.inventory",
+      "base": "server_scene.vehicle_component",
+      "offset": 79752950,
+      "length": 16422,
+      "descriptor_sha256": "e7262bd872a9b813b9fd21e9e9be7d02ef30244640f06ba0f51d7d1093658c6c",
+      "size": 616,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.jet_engine_combustion",
+      "base": "server_scene.vehicle_component",
+      "offset": 79773075,
+      "length": 18329,
+      "descriptor_sha256": "c33df20b675f4cfcf764214b6b5986340eb8f4d3f452fcc23caf721197f6f107",
+      "size": 1208,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.jet_engine_compressor",
+      "base": "server_scene.vehicle_component",
+      "offset": 79791404,
+      "length": 17150,
+      "descriptor_sha256": "cffcb521457a53506543a4cdaf38f1daa079e99f450ed27ff964df8ef45e3e27",
+      "size": 976,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.jet_engine_exhaust",
+      "base": "server_scene.vehicle_component",
+      "offset": 79808554,
+      "length": 16992,
+      "descriptor_sha256": "be668dce0983bf01a55af833c93a77e9032dd8cad05e7269b13827f1d547259c",
+      "size": 784,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.jet_engine_fuel_manifold",
+      "base": "server_scene.vehicle_component",
+      "offset": 79825546,
+      "length": 16313,
+      "descriptor_sha256": "dc3ff0efdf4d75270bc2debbf2fc6049061b95d763ddfbc4b4cde38d02058ab4",
+      "size": 840,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.jet_engine_gearbox",
+      "base": "server_scene.vehicle_component",
+      "offset": 79841859,
+      "length": 16672,
+      "descriptor_sha256": "492972672ee53355ae2b8aead8fac29603767bd98d95effbe50a245185175cb8",
+      "size": 872,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.jet_engine_gearbox_nose",
+      "base": "server_scene.vehicle_component",
+      "offset": 79858531,
+      "length": 16627,
+      "descriptor_sha256": "f2e137f5856287675bca2fefef2caef0737a0505222220130cb7c3dd1ff5f531",
+      "size": 624,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.jet_engine_particle_separator",
+      "base": "server_scene.vehicle_component",
+      "offset": 79875158,
+      "length": 17092,
+      "descriptor_sha256": "1ced35820af7b28869ae111c1a24445665c5eab1ff09e5b07f45c8eb5de4a0ad",
+      "size": 984,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.keycard_reader",
+      "base": "server_scene.vehicle_component",
+      "offset": 79894029,
+      "length": 16352,
+      "descriptor_sha256": "0018853c792d742301849124f7238e484e6732f0b2bf0c352adee669b8fd5e2c",
+      "size": 632,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.ladder",
+      "base": "server_scene.vehicle_component",
+      "offset": 79911019,
+      "length": 15730,
+      "descriptor_sha256": "e07884d49039a5f012853e3cf8c70d329f0dd3fd06e15d9ed9de3bc374a4bbc6",
+      "size": 720,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.landing_gear",
+      "base": "server_scene.vehicle_component",
+      "offset": 79926749,
+      "length": 16192,
+      "descriptor_sha256": "928a79e2c8a73884d443bee9b7d69573143c88c5ea258002526c5aaf065f403f",
+      "size": 1272,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.landing_gear_dual",
+      "base": "server_scene.vehicle_component",
+      "offset": 79942941,
+      "length": 16426,
+      "descriptor_sha256": "2194a5aa9eea10ff1ca3d6c17552809cd5e53b0f69fded297f659d72e168c681",
+      "size": 2008,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.landing_gear_retractable",
+      "base": "server_scene.vehicle_component",
+      "offset": 79959367,
+      "length": 16630,
+      "descriptor_sha256": "4ff18e47fdc88e57a1246a1823490fa34ed6bf494ff7cab4c1a9e0ae68020783",
+      "size": 2024,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.latch_handle",
+      "base": "server_scene.vehicle_component",
+      "offset": 79976102,
+      "length": 16823,
+      "descriptor_sha256": "1251791dc9c81b0f2271957017f4237930a29840a85c6bd81395501a40741d00",
+      "size": 680,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.latch_knuckle",
+      "base": "server_scene.vehicle_component",
+      "offset": 79992925,
+      "length": 16332,
+      "descriptor_sha256": "f92ce87d598e8a01b31cc9902f776b0c913087001818640caf2e67b265ed1003",
+      "size": 576,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.latch_pin",
+      "base": "server_scene.vehicle_component",
+      "offset": 80009257,
+      "length": 16604,
+      "descriptor_sha256": "8dafef0148f8cb45394371d7447200c551b63d9d2aa905a78b63dee4e61d2fb1",
+      "size": 664,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.lever_switch",
+      "base": "server_scene.vehicle_component",
+      "offset": 80025861,
+      "length": 16013,
+      "descriptor_sha256": "68affb343820952836a8964407da69a07c6cbbbb32b8d0c21b5508658b74a8a7",
+      "size": 608,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.lever_switch_curve",
+      "base": "server_scene.vehicle_component",
+      "offset": 80041874,
+      "length": 16249,
+      "descriptor_sha256": "ceeb034f0db350c7e5c16c818e4fb1a951ac0b02f07593c9182ff61619eb24b2",
+      "size": 616,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.lever_switch_large",
+      "base": "server_scene.vehicle_component",
+      "offset": 80058123,
+      "length": 16249,
+      "descriptor_sha256": "e161d7af06e396df10bf2e81ee9bd6b60d8ef2ce5f7c69477f6397e7c970c86d",
+      "size": 616,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.light_omni",
+      "base": "server_scene.vehicle_component",
+      "offset": 80074372,
+      "length": 16281,
+      "descriptor_sha256": "f4a3bf566885761914ee27eda6728e749300b03dc4ae023b972af79ce34400e4",
+      "size": 680,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.light_rotate",
+      "base": "server_scene.vehicle_component",
+      "offset": 80090653,
+      "length": 16428,
+      "descriptor_sha256": "f71b26a6f23234f2e28e84ef5d51d9cb7803e522525919ca9c27c48a4c863f27",
+      "size": 728,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.light_spot",
+      "base": "server_scene.vehicle_component",
+      "offset": 80107081,
+      "length": 16535,
+      "descriptor_sha256": "9b70aa1924fe2810563eddf45570a7af492aa0fcaeefe3cdea62a0ea36e4f20e",
+      "size": 840,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_bracket",
+      "base": "server_scene.vehicle_component",
+      "offset": 80123616,
+      "length": 15821,
+      "descriptor_sha256": "73313c34a46dff15f43cb527c88723db43f4872b2af6b0f0e5cf517b4b50e71e",
+      "size": 640,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_fill_port",
+      "base": "server_scene.vehicle_component",
+      "offset": 80139437,
+      "length": 15737,
+      "descriptor_sha256": "f5eb6d5be224448c4cf76d21d8652a49c15877581c5694f6b8298d0be2e71445",
+      "size": 488,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_junction_t",
+      "base": "server_scene.vehicle_component",
+      "offset": 80155174,
+      "length": 15920,
+      "descriptor_sha256": "04bac98272732022bab48790abd24fa23ae91b8eeafcfc9d94222bc1026ece98",
+      "size": 720,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_junction_x",
+      "base": "server_scene.vehicle_component",
+      "offset": 80171094,
+      "length": 15980,
+      "descriptor_sha256": "19807190b054d83ef2da81fe70db17fe8e41fcaa8a3702cd6961e82f37092fc7",
+      "size": 800,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_nozzle",
+      "base": "server_scene.vehicle_component",
+      "offset": 80187074,
+      "length": 15934,
+      "descriptor_sha256": "23920d52548ea8622690803d0ffb08c4af4705b6ad2c615aee03f2fe44c572d8",
+      "size": 840,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_port",
+      "base": "server_scene.vehicle_component",
+      "offset": 80203008,
+      "length": 15831,
+      "descriptor_sha256": "72252cd6e116b0f4d927b9b110fef4cccdd16f22b2edb430ae272d0c818a135f",
+      "size": 568,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_pressure_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 80218839,
+      "length": 16315,
+      "descriptor_sha256": "685504614006c8573e494d4bdd4d064e0eda18b14ea2137cc34d29dd98337f56",
+      "size": 624,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_pump",
+      "base": "server_scene.vehicle_component",
+      "offset": 80235154,
+      "length": 16396,
+      "descriptor_sha256": "3de860c17325ff7944a0970585899b8348bb7dd37239007edeaedec89dd37e03",
+      "size": 1152,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_tank",
+      "base": "server_scene.vehicle_component",
+      "offset": 80251550,
+      "length": 16754,
+      "descriptor_sha256": "1c55df3e93f19d397d1e3eb746433f010413f28de133bd42a0af1318fddd40bb",
+      "size": 856,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_temperature_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 80268304,
+      "length": 16487,
+      "descriptor_sha256": "7e8e37903e0dc1dccb9f5eb203c40288e063a7b62d751b74ae1e75040d3b4d50",
+      "size": 928,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_valve_straight",
+      "base": "server_scene.vehicle_component",
+      "offset": 80284791,
+      "length": 16591,
+      "descriptor_sha256": "e6a528d3680231ca21684e1e50e999e8b832a345c1b89c3c73637b0a7203d4e1",
+      "size": 776,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_valve_t",
+      "base": "server_scene.vehicle_component",
+      "offset": 80301382,
+      "length": 16428,
+      "descriptor_sha256": "5a9a72a8480dd98d247557b04c707074a6a7d3c70b7181ef64007c9e1e379735",
+      "size": 856,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_vent",
+      "base": "server_scene.vehicle_component",
+      "offset": 80317810,
+      "length": 15900,
+      "descriptor_sha256": "222ed95d16a33cf6aa56ded1d15aa0d5b97d82800603593ccbe08dcb32f8a287",
+      "size": 840,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.mechanical_bracket",
+      "base": "server_scene.vehicle_component",
+      "offset": 80333710,
+      "length": 15877,
+      "descriptor_sha256": "69e1e691909a77f30aec61503a1086d3d12f2d3149ad87800ab518cf0fcc7c60",
+      "size": 544,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.mechanical_handle",
+      "base": "server_scene.vehicle_component",
+      "offset": 80349587,
+      "length": 16409,
+      "descriptor_sha256": "f2e881c3a1e3fe424f9093f09478d738db0595cb790802f2fadd0543d6a2cc60",
+      "size": 656,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.mechanical_junction",
+      "base": "server_scene.vehicle_component",
+      "offset": 80365996,
+      "length": 15957,
+      "descriptor_sha256": "09cd8dba8db988eae72548cb0c82e6f0fc1dcb1710c56e5809f42af89160e566",
+      "size": 576,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.mechanical_junction_abs",
+      "base": "server_scene.vehicle_component",
+      "offset": 80381953,
+      "length": 15942,
+      "descriptor_sha256": "ff2d73beae4d44d5cc8d642469fa20bf55a859753e1a368b249cbcd301b1a44e",
+      "size": 544,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.mechanical_junction_add",
+      "base": "server_scene.vehicle_component",
+      "offset": 80397895,
+      "length": 16007,
+      "descriptor_sha256": "bf9940f6929ec116fe9063c608bdcf8a273a3a0d2c6b3580f6ea2f7ad96f0adc",
+      "size": 576,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.mechanical_junction_invert",
+      "base": "server_scene.vehicle_component",
+      "offset": 80413902,
+      "length": 15981,
+      "descriptor_sha256": "36ffd20417195c8acd6511eb6cd3fa53c144201601089547848944aa3e027f8f",
+      "size": 544,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.mechanical_junction_max",
+      "base": "server_scene.vehicle_component",
+      "offset": 80429883,
+      "length": 16007,
+      "descriptor_sha256": "48c114c13e3b2d9a190aa59019db014a51c1715df45a6d4a3ef7f4056db61d78",
+      "size": 576,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.mechanical_junction_min",
+      "base": "server_scene.vehicle_component",
+      "offset": 80445890,
+      "length": 16007,
+      "descriptor_sha256": "22949418c04053ae80c6dc5fe943e7450090f5ce704aa05e2e446c547c3353fc",
+      "size": 576,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.mechanical_junction_offset",
+      "base": "server_scene.vehicle_component",
+      "offset": 80461897,
+      "length": 16112,
+      "descriptor_sha256": "39b7257195664df323add29dd92a0aa5270fff701b3de5830083d91049b660a3",
+      "size": 552,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.mechanical_junction_scale",
+      "base": "server_scene.vehicle_component",
+      "offset": 80478009,
+      "length": 16094,
+      "descriptor_sha256": "fc88d65e4b6a2f07f581930c0f3ba36f30f5728507761aa4356ba42d06552124",
+      "size": 552,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.mechanical_junction_set_reset",
+      "base": "server_scene.vehicle_component",
+      "offset": 80494103,
+      "length": 16243,
+      "descriptor_sha256": "1276ba7d0e2d0f7b150e6a4fe2a389e0bc7074e5473ecbf775b5bf86763e36ea",
+      "size": 584,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.mechanical_junction_toggle",
+      "base": "server_scene.vehicle_component",
+      "offset": 80510346,
+      "length": 16098,
+      "descriptor_sha256": "975e8b8685a93d7498f75b0ae1b55ed83b09ee52d3b3c361b43fdfee98926c4f",
+      "size": 552,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.microcontroller",
+      "base": "server_scene.vehicle_component",
+      "offset": 80530655,
+      "length": 26563,
+      "descriptor_sha256": "5d95ce0bd3a7492fb3eaf9e93bdbfb3001b28126e7be8b6fcb727aa7133787bc",
+      "size": 1408,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.microphone",
+      "base": "server_scene.vehicle_component",
+      "offset": 80577000,
+      "length": 15941,
+      "descriptor_sha256": "625227ca2098b8258fd8906897e2a01041f90d9383724c7815eb12129a9711e3",
+      "size": 568,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.motor",
+      "base": "server_scene.vehicle_component",
+      "offset": 80592941,
+      "length": 16242,
+      "descriptor_sha256": "632cd090c0032007f86b6a64c5caaab192f3b956a99ccfa2a27b99f11b216232",
+      "size": 744,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.mounting_knuckle",
+      "base": "server_scene.vehicle_component",
+      "offset": 80609287,
+      "length": 16444,
+      "descriptor_sha256": "7444ee4cf249091c7609b469b0031af75af67b243c18039811799b94242c9d02",
+      "size": 552,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.mounting_pin",
+      "base": "server_scene.vehicle_component",
+      "offset": 80625839,
+      "length": 16326,
+      "descriptor_sha256": "a45be711356c2b159cb0410965e5d15f82e8d1fe20cac48c113b6d063bcd0b32",
+      "size": 552,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.oil_filter",
+      "base": "server_scene.vehicle_component",
+      "offset": 80642165,
+      "length": 16615,
+      "descriptor_sha256": "6ca48e7cbb2693c216dac4ae96f60e4a8c13e45a5d76ed2d5ff4743fb441ba64",
+      "size": 1208,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.oil_manifold",
+      "base": "server_scene.vehicle_component",
+      "offset": 80658780,
+      "length": 15732,
+      "descriptor_sha256": "cf44a4e3b34628f371dfe8bf80d955a0136c1b381fcbcfde5efa4641d0ca2e34",
+      "size": 560,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.pulley",
+      "base": "server_scene.vehicle_component",
+      "offset": 80674512,
+      "length": 15769,
+      "descriptor_sha256": "20217a8a8268d44cd749942e723c25f993fa4598b032ec2457cfb13f748a9189",
+      "size": 544,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.pulley_corner",
+      "base": "server_scene.vehicle_component.pulley",
+      "offset": 80690281,
+      "length": 15653,
+      "descriptor_sha256": "165b7d3c249d638ea8027d59751db61d609584badb683a70f307ce7dd9966991",
+      "size": 544,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.pulley_straight",
+      "base": "server_scene.vehicle_component.pulley",
+      "offset": 80705934,
+      "length": 15663,
+      "descriptor_sha256": "fcd963a197439df159b44c0fcfa9213417cbe352488a2f6ba21b08f70cc1d80a",
+      "size": 544,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.pulley_wheel",
+      "base": "server_scene.vehicle_component",
+      "offset": 80721597,
+      "length": 16006,
+      "descriptor_sha256": "c92af37f6d3d71f49d3a13e33fa289c791b469c6c2a086b1dfa00f0d396fa8d0",
+      "size": 624,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.radiator",
+      "base": "server_scene.vehicle_component",
+      "offset": 80738240,
+      "length": 16164,
+      "descriptor_sha256": "3005d2c40b29d9dc9ee4e7ad52d9691171ca7cec833e2740225a1ec8bd48ac13",
+      "size": 872,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.radiator_fan",
+      "base": "server_scene.vehicle_component",
+      "offset": 80754504,
+      "length": 16179,
+      "descriptor_sha256": "4172222a58d5a53ce74c2be6a69dba4ef6f2c2350837d637308cad5586055a64",
+      "size": 640,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.rail",
+      "base": "server_scene.vehicle_component",
+      "offset": 80771212,
+      "length": 16104,
+      "descriptor_sha256": "16fa8b287cd753efbdecbe5a7e38d145b758f61eafe5c9d011a0103fdcfafb5d",
+      "size": 552,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.rail_ballscrew",
+      "base": "server_scene.vehicle_component",
+      "offset": 80788555,
+      "length": 16552,
+      "descriptor_sha256": "ed4a4df651b8ce0d870d993f6382f5ecb4f20fd31b388d019383b2698b5834d9",
+      "size": 592,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.rail_ballscrew_slider",
+      "base": "server_scene.vehicle_component",
+      "offset": 80805973,
+      "length": 16596,
+      "descriptor_sha256": "778d2d7f40a632b5f3b98686400f96e42952fd19b4ae40b82096e3a96a0990b6",
+      "size": 552,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.rail_slider",
+      "base": "server_scene.vehicle_component",
+      "offset": 80822665,
+      "length": 16252,
+      "descriptor_sha256": "3b48ad5b51fa4f7ec535584f2a182814c3054ee7452d22473c1252d03e162847",
+      "size": 576,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_fixed",
+      "base": "server_scene.vehicle_component",
+      "offset": 80838917,
+      "length": 17328,
+      "descriptor_sha256": "7b5ef64a2450d53e7d824bab30ee80acd6ef42df1929ac478407272a1f1a225a",
+      "size": 984,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_fixed_large",
+      "base": "server_scene.vehicle_component.roller_wheel_fixed",
+      "offset": 80856245,
+      "length": 16594,
+      "descriptor_sha256": "2cb7e96286206d6d0bc8593c07e062eda93af2b251c51b6be4792738b9ad92ed",
+      "size": 984,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_fixed_large_narrow",
+      "base": "server_scene.vehicle_component.roller_wheel_fixed",
+      "offset": 80872839,
+      "length": 16643,
+      "descriptor_sha256": "ac299a943c8cc716ec7755e7c8c48d4c3e6c20312d416897106ca425bfc4c5d1",
+      "size": 984,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_fixed_large_wide",
+      "base": "server_scene.vehicle_component.roller_wheel_fixed",
+      "offset": 80889482,
+      "length": 16629,
+      "descriptor_sha256": "864eecee6157d768793714ba50657b34819317a08bf4cc32c880c48e87e27fdc",
+      "size": 984,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_fixed_small",
+      "base": "server_scene.vehicle_component.roller_wheel_fixed",
+      "offset": 80906111,
+      "length": 16594,
+      "descriptor_sha256": "1326c6659db07d451648d715409657fd7f0f25a4b5ab57353c3c4f639c9cc20d",
+      "size": 984,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_fixed_small_narrow",
+      "base": "server_scene.vehicle_component.roller_wheel_fixed",
+      "offset": 80922705,
+      "length": 16643,
+      "descriptor_sha256": "de8d3434c7e03de4bfdf6c82209fe634e8212e021eb7c4c77a618d50f3394963",
+      "size": 984,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_fixed_small_wide",
+      "base": "server_scene.vehicle_component.roller_wheel_fixed",
+      "offset": 80939348,
+      "length": 16629,
+      "descriptor_sha256": "3771233df7227053cffad37b8ba718ad4a6c1bb9eb44dc1e627c96cfcd398b57",
+      "size": 984,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_suspension",
+      "base": "server_scene.vehicle_component",
+      "offset": 80955977,
+      "length": 17798,
+      "descriptor_sha256": "8430f8245daa0f906dd313c7495c682bd47079f925a2319c7197864ca1a34032",
+      "size": 1032,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_suspension_large",
+      "base": "server_scene.vehicle_component.roller_wheel_suspension",
+      "offset": 80973775,
+      "length": 17003,
+      "descriptor_sha256": "1c64d919c6d71797da423fd1e43a7f7114f4716fc373f6e800a177a560258110",
+      "size": 1032,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_suspension_large_narrow",
+      "base": "server_scene.vehicle_component.roller_wheel_suspension",
+      "offset": 80990778,
+      "length": 17066,
+      "descriptor_sha256": "f6babdef9256357962ea01f7fd691a5c9ade9a4140d283eb9b1342e92a5ba691",
+      "size": 1032,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_suspension_large_wide",
+      "base": "server_scene.vehicle_component.roller_wheel_suspension",
+      "offset": 81007844,
+      "length": 17048,
+      "descriptor_sha256": "07f944302d7dc823480498d935350b723160a1bdf28422a5a09e2934f9f161fb",
+      "size": 1032,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_suspension_small",
+      "base": "server_scene.vehicle_component.roller_wheel_suspension",
+      "offset": 81024892,
+      "length": 17003,
+      "descriptor_sha256": "35d124ebc696aac5352070635136c49eea0c276b76624dd12d7c997b67ef3db4",
+      "size": 1032,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_suspension_small_narrow",
+      "base": "server_scene.vehicle_component.roller_wheel_suspension",
+      "offset": 81041895,
+      "length": 17066,
+      "descriptor_sha256": "9558f2d010fc997ecf6c02059f87a1c885aac24e9a10ed2b062290e163ec44eb",
+      "size": 1032,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.roller_wheel_suspension_small_wide",
+      "base": "server_scene.vehicle_component.roller_wheel_suspension",
+      "offset": 81058961,
+      "length": 17048,
+      "descriptor_sha256": "6b618c5dec77a333a5e66b97ec2075e1c77584d40bf8306ec9214b78d105af7e",
+      "size": 1032,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.rope_hook",
+      "base": "server_scene.vehicle_component",
+      "offset": 81076009,
+      "length": 15713,
+      "descriptor_sha256": "e30a8bc23e8435dbaa04fd64bc30bae5c3c87274d03d1af1dedaea25705e7705",
+      "size": 512,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.seat",
+      "base": "server_scene.vehicle_component",
+      "offset": 81093610,
+      "length": 16054,
+      "descriptor_sha256": "5f98878cdd5e38a989081942c5dce96f1e141fc31fa9e25e4fb54f7771b461fd",
+      "size": 624,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.seven_segment",
+      "base": "server_scene.vehicle_component",
+      "offset": 81110211,
+      "length": 16120,
+      "descriptor_sha256": "87e1fe08ca37e1402526ed9330be3cfad57cb51e4c7accaa6b66a0ac42d625c2",
+      "size": 632,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.shell_holder",
+      "base": "server_scene.vehicle_component",
+      "offset": 81126331,
+      "length": 16210,
+      "descriptor_sha256": "749c832fdb72bca5db2088e65871d56cb1690fd31b26470557f24b938145da8e",
+      "size": 632,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.shell_holder_120mm",
+      "base": "server_scene.vehicle_component.shell_holder",
+      "offset": 81142541,
+      "length": 16203,
+      "descriptor_sha256": "603b4eb249e881227313b93731909c00106a044ea3f2fbd03f627c3dc0207f78",
+      "size": 632,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.shell_holder_40mm",
+      "base": "server_scene.vehicle_component.shell_holder",
+      "offset": 81158744,
+      "length": 16186,
+      "descriptor_sha256": "ebd531bcacf46fdf94a384b5c0f45fbd66917a5cddde3b6d7a3523a3a52b5a67",
+      "size": 632,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.short_shifter",
+      "base": "server_scene.vehicle_component",
+      "offset": 81174930,
+      "length": 16368,
+      "descriptor_sha256": "b192d8f944ff79f624ca2cb89b59a4473d873934c8233426c2469dd0bfeaba04",
+      "size": 656,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.smoke_discharger",
+      "base": "server_scene.vehicle_component",
+      "offset": 81191298,
+      "length": 16154,
+      "descriptor_sha256": "b62607255b232d63cd27b8bf3d71233e5e0c2a4769887f409c43518bb94418db",
+      "size": 664,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.solar_panel",
+      "base": "server_scene.vehicle_component",
+      "offset": 81207452,
+      "length": 16198,
+      "descriptor_sha256": "a679155d94fff868ac91e5d162c4c320f25cd306ee26458774823befe6ca57c8",
+      "size": 624,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.speaker",
+      "base": "server_scene.vehicle_component",
+      "offset": 81223650,
+      "length": 15893,
+      "descriptor_sha256": "7aa00cd52ccfdd6f8c1ec97147c89f9fc1c2cae36f04a13725f1279a7e1244fe",
+      "size": 592,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.sprocket",
+      "base": "server_scene.vehicle_component",
+      "offset": 81239543,
+      "length": 16247,
+      "descriptor_sha256": "0b57bb3fcb401adc2667ac65f052802b5da3615d8fe2faeda6ac85721429e39d",
+      "size": 648,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.sprocket_large",
+      "base": "server_scene.vehicle_component.sprocket",
+      "offset": 81255790,
+      "length": 16075,
+      "descriptor_sha256": "e7a62c7ca9bc33866d91f016f62a4d952f755118a9eb2d2abf995a140d5acad8",
+      "size": 648,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.sprocket_large_narrow",
+      "base": "server_scene.vehicle_component.sprocket",
+      "offset": 81271865,
+      "length": 16124,
+      "descriptor_sha256": "f3e3a4faee5e3e803ef6c4d5864dfc6b226189ac533a49b29050e478713625eb",
+      "size": 648,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.sprocket_large_wide",
+      "base": "server_scene.vehicle_component.sprocket",
+      "offset": 81287989,
+      "length": 16110,
+      "descriptor_sha256": "373ad21efae1435a45b63c981bc96d88b8837ab0990898676bfee8ab59a4c30b",
+      "size": 648,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.sprocket_small",
+      "base": "server_scene.vehicle_component.sprocket",
+      "offset": 81304099,
+      "length": 16075,
+      "descriptor_sha256": "3911d9c2a58a08abd1cc22ecf0f9fefb6a4809bb7718fd34061f7da235516a1b",
+      "size": 648,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.sprocket_small_narrow",
+      "base": "server_scene.vehicle_component.sprocket",
+      "offset": 81320174,
+      "length": 16124,
+      "descriptor_sha256": "68a3e3dcc46df0be3edb7a0e16640de7773684076e308fcc5be5bfb55e011364",
+      "size": 648,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.sprocket_small_wide",
+      "base": "server_scene.vehicle_component.sprocket",
+      "offset": 81336298,
+      "length": 16110,
+      "descriptor_sha256": "7e2ce830e12bca98363ab215dd8d1970c70cb03dbd4b97a5a50c80fb6545416a",
+      "size": 648,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.steering_linkage",
+      "base": "server_scene.vehicle_component",
+      "offset": 81352408,
+      "length": 15890,
+      "descriptor_sha256": "db20b2333643eeac4aba6073e24d2854aa0d9e8e4c34123adb0912735efdaef4",
+      "size": 576,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.steering_wheel",
+      "base": "server_scene.vehicle_component",
+      "offset": 81368298,
+      "length": 17038,
+      "descriptor_sha256": "3b34207852565808e9456797df664d64a913093264a20f1067e91ba84a7fcda8",
+      "size": 1000,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.stepper_motor",
+      "base": "server_scene.vehicle_component",
+      "offset": 81385336,
+      "length": 16039,
+      "descriptor_sha256": "0b8ac20cbc141ef1c5212fe213f8646a5b8bcc70b9a4c0c83d54ba1b48093d0c",
+      "size": 576,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.throttle",
+      "base": "server_scene.vehicle_component",
+      "offset": 81401375,
+      "length": 16268,
+      "descriptor_sha256": "c752adeb1d8bd81a0512deb1ac2066af51485a75d51804b54c3349a6cb4fcd9f",
+      "size": 688,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.throttle_gear",
+      "base": "server_scene.vehicle_component",
+      "offset": 81417643,
+      "length": 16434,
+      "descriptor_sha256": "fde2e56f76e2d15b4d94e8f7d1260738830bb9ba62372340efc1598c46b6ecce",
+      "size": 696,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.throttle_slide",
+      "base": "server_scene.vehicle_component",
+      "offset": 81434077,
+      "length": 16478,
+      "descriptor_sha256": "6773a41b5f2757c7688bb3773909cee2cd67b0cc21164bb044f9efc6303593f5",
+      "size": 688,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.tilt_sensor",
+      "base": "server_scene.vehicle_component",
+      "offset": 81450555,
+      "length": 15877,
+      "descriptor_sha256": "53fa9e6facd3e622cf0deaaf40387cda613cf7134fa342e611b980b7ab4919cc",
+      "size": 544,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.tool_wall",
+      "base": "server_scene.vehicle_component",
+      "offset": 81470774,
+      "length": 15961,
+      "descriptor_sha256": "5ed148eeaaa091572e5f2b66cff9114e63d1f97220a94e9227a221a266ddf5e1",
+      "size": 592,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.tow_bar",
+      "base": "server_scene.vehicle_component",
+      "offset": 81488735,
+      "length": 16414,
+      "descriptor_sha256": "fccbeedae48c1bae16d9bed781f1ccab2e4ef25f12dfed98fa2c918357ef2dd2",
+      "size": 608,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.tow_hitch",
+      "base": "server_scene.vehicle_component",
+      "offset": 81505248,
+      "length": 16579,
+      "descriptor_sha256": "3256045a2dfbf07a4c182f841ab20242b439c1080205f2ab219fe35f881e2280",
+      "size": 640,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.train_wheel",
+      "base": "server_scene.vehicle_component",
+      "offset": 81521827,
+      "length": 18054,
+      "descriptor_sha256": "859ab2407102486c7a168e49bb9ce5cd293309811c3be85c232f0077e451b8f4",
+      "size": 904,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.weapon_mount",
+      "base": "server_scene.vehicle_component",
+      "offset": 81539881,
+      "length": 16182,
+      "descriptor_sha256": "da2e88da9e0fa6cc73b51b03c38a8ad7fbb680885492958f72b67d2fb1c47aec",
+      "size": 848,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.weapon_mount_pintle",
+      "base": "server_scene.vehicle_component",
+      "offset": 81556063,
+      "length": 17093,
+      "descriptor_sha256": "2050bf03527e498814ffff3e09f02c7177fddbe7de0bcd1f0bed10ee0517018e",
+      "size": 1152,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.weight_block",
+      "base": "server_scene.vehicle_component",
+      "offset": 81573156,
+      "length": 15545,
+      "descriptor_sha256": "e47f1d21b7e0edce036fae885bf2c9a7c5f6005ef032f5fb3e53442584c1a740",
+      "size": 480,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.wheel",
+      "base": "server_scene.vehicle_component",
+      "offset": 81588701,
+      "length": 16426,
+      "descriptor_sha256": "1697bd5d33ba1c2df5aca1d80862142e29a9e6e2f7842007e3f0f88ca9fa167a",
+      "size": 1504,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.wheel_hydraulic",
+      "base": "server_scene.vehicle_component",
+      "offset": 81605127,
+      "length": 17134,
+      "descriptor_sha256": "1b5d8a3bafd845c501957d7d87d2c65f7ba2de5884eb47e2e9fc165644b081cb",
+      "size": 2184,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.wheel_mount",
+      "base": "server_scene.vehicle_component",
+      "offset": 81622261,
+      "length": 16101,
+      "descriptor_sha256": "82dc0a191739a44c395404272b840614b86c141ca64c2d58fa21a6c2967bee97",
+      "size": 648,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.winch",
+      "base": "server_scene.vehicle_component",
+      "offset": 81638362,
+      "length": 15831,
+      "descriptor_sha256": "26a4b6a77c487d531c10c8d6aac88e732f7c598674986b9e544d3441842f472c",
+      "size": 608,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_element.rotor",
+      "base": "replication.master.composite",
+      "offset": 81682036,
+      "length": 3319,
+      "descriptor_sha256": "a664e42a83dd760cb020683f7c6bcd14ea27594ea8dd94fa3d5cfcee5756aac5",
+      "size": 600,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_torque_link",
+      "base": "",
+      "offset": 81749758,
+      "length": 411,
+      "descriptor_sha256": "ee4eae71e4faa62157292d5d0d4f8655380beb59bee25b4bccdf3757b750b650",
+      "size": 16,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_torque_node",
+      "base": "",
+      "offset": 81750269,
+      "length": 639,
+      "descriptor_sha256": "4da7de78b041e2ce86dd12c98ac2d9befb64e60ca9bf2e84ece6921e9347f5c3",
+      "size": 104,
+      "alignment": 8
+    }
+  ],
+  "enums": [],
+  "fields": [
+    {
+      "type": "server_scene.vehicle_torque_node",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component>",
+        "name": "m_component",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.vehicle_torque_node",
+      "field": {
+        "type": "s32",
+        "name": "m_surface_index",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.vehicle_torque_node",
+      "field": {
+        "type": "f64",
+        "name": "m_rps",
+        "offset": 16
+      }
+    },
+    {
+      "type": "server_scene.vehicle_torque_node",
+      "field": {
+        "type": "f64",
+        "name": "m_mass",
+        "offset": 24
+      }
+    },
+    {
+      "type": "server_scene.vehicle_torque_node",
+      "field": {
+        "type": "f64",
+        "name": "m_vehicle_mass_factor",
+        "offset": 32
+      }
+    },
+    {
+      "type": "server_scene.vehicle_torque_node",
+      "field": {
+        "type": "f64",
+        "name": "m_vehicle_mass_max",
+        "offset": 40
+      }
+    },
+    {
+      "type": "server_scene.vehicle_torque_node",
+      "field": {
+        "type": "f64",
+        "name": "m_gear_ratio",
+        "offset": 48
+      }
+    },
+    {
+      "type": "server_scene.vehicle_torque_node",
+      "field": {
+        "type": "f64",
+        "name": "m_clutch_factor",
+        "offset": 56
+      }
+    },
+    {
+      "type": "server_scene.vehicle_torque_node",
+      "field": {
+        "type": "f64",
+        "name": "m_brake_factor",
+        "offset": 64
+      }
+    },
+    {
+      "type": "server_scene.vehicle_torque_node",
+      "field": {
+        "type": "ptr<server_scene.vehicle_torque_node>",
+        "name": "m_adjacent",
+        "offset": 72
+      }
+    },
+    {
+      "type": "server_scene.vehicle_torque_node",
+      "field": {
+        "type": "f64",
+        "name": "m_delta_rps",
+        "offset": 80
+      }
+    },
+    {
+      "type": "server_scene.vehicle_torque_node",
+      "field": {
+        "type": "ptr<server_scene.vehicle_torque_node.island>",
+        "name": "m_island",
+        "offset": 88
+      }
+    },
+    {
+      "type": "server_scene.vehicle_torque_node",
+      "field": {
+        "type": "f64",
+        "name": "m_island_gear_ratio",
+        "offset": 96
+      }
+    },
+    {
+      "type": "server_scene.vehicle_torque_link",
+      "field": {
+        "type": "s32",
+        "name": "m_index_0",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.vehicle_torque_link",
+      "field": {
+        "type": "s32",
+        "name": "m_index_1",
+        "offset": 4
+      }
+    },
+    {
+      "type": "server_scene.vehicle_torque_link",
+      "field": {
+        "type": "f64",
+        "name": "m_gear_ratio",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "ptr<vehicle_element_definition.rotor>",
+        "name": "m_definition",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_blade_count",
+        "offset": 16
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "replication.master.property_f64",
+        "name": "m_blade_length",
+        "offset": 48
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "replication.master.property_f64_compressed_s8",
+        "name": "m_prop_rps",
+        "offset": 88
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "replication.master.property_f64_compressed_s8",
+        "name": "m_render_roll_delta",
+        "offset": 136
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "replication.master.property_f64_compressed_s8",
+        "name": "m_render_collective",
+        "offset": 184
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "replication.master.property_f64_compressed_s8",
+        "name": "m_render_pitch",
+        "offset": 232
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "m_audio_factor",
+        "offset": 280
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "m_audio_speed",
+        "offset": 328
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "array<server_scene.vehicle_element.rotor.blade>",
+        "name": "m_blades",
+        "offset": 376
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "bool",
+        "name": "m_is_rebuild_physics",
+        "offset": 408
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "physics.object",
+        "name": "m_physics_blades",
+        "offset": 416
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "f64",
+        "name": "m_prop_rotation",
+        "offset": 432
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "f64",
+        "name": "m_input_collective",
+        "offset": 440
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "f64",
+        "name": "m_input_pitch",
+        "offset": 448
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "f64",
+        "name": "m_input_roll",
+        "offset": 456
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "f64",
+        "name": "m_rps",
+        "offset": 464
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "f64",
+        "name": "m_display_force",
+        "offset": 472
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "f64",
+        "name": "m_ground_effect_factor",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "array<physics_util.impulse_activator>",
+        "name": "_m_impulse_activators",
+        "offset": 488
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "physics_util.impulse_activator",
+        "name": "_m_ground_effect_impulse_activator",
+        "offset": 520
+      }
+    },
+    {
+      "type": "server_scene.vehicle_element.rotor",
+      "field": {
+        "type": "physics_util.impulse_activator",
+        "name": "_m_ground_effect_object_impulse_activator",
+        "offset": 560
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.force_emitter_swashplate",
+      "field": {
+        "type": "server_scene.vehicle_mechanical_node_in",
+        "name": "m_logic_pitch",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.force_emitter_swashplate",
+      "field": {
+        "type": "server_scene.vehicle_mechanical_node_in",
+        "name": "m_logic_roll_l",
+        "offset": 512
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.force_emitter_swashplate",
+      "field": {
+        "type": "server_scene.vehicle_mechanical_node_in",
+        "name": "m_logic_roll_r",
+        "offset": 544
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.force_emitter_swashplate",
+      "field": {
+        "type": "server_scene.vehicle_torque_data",
+        "name": "m_torque_data",
+        "offset": 576
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.force_emitter_swashplate",
+      "field": {
+        "type": "server_scene.vehicle_element.rotor",
+        "name": "m_element_rotor",
+        "offset": 640
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.force_emitter_swashplate",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "_m_sound_index",
+        "offset": 1240
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.motor",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "m_factor",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.motor",
+      "field": {
+        "type": "server_scene.vehicle_torque_data",
+        "name": "m_torque_data",
+        "offset": 528
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.motor",
+      "field": {
+        "type": "server_scene.vehicle_electric_node_group",
+        "name": "m_electric_nodes",
+        "offset": 592
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.motor",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 640
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.motor",
+      "field": {
+        "type": "bool",
+        "name": "m_is_reverse",
+        "offset": 680
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.motor",
+      "field": {
+        "type": "bool",
+        "name": "m_is_reverse_data",
+        "offset": 681
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.motor",
+      "field": {
+        "type": "f64",
+        "name": "m_output_power_factor",
+        "offset": 688
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.motor",
+      "field": {
+        "type": "f64",
+        "name": "m_target_rps",
+        "offset": 696
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.motor",
+      "field": {
+        "type": "f64",
+        "name": "m_power_factor",
+        "offset": 704
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.motor",
+      "field": {
+        "type": "f64",
+        "name": "m_display_electric_consumption",
+        "offset": 712
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.motor",
+      "field": {
+        "type": "f64",
+        "name": "m_consume_electric_factor",
+        "offset": 720
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.motor",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 728
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "replication.master.property_f64_compressed_s8",
+        "name": "m_display_rps",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "m_factor_speed",
+        "offset": 528
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "replication.master.property_f64_compressed_u8",
+        "name": "m_factor_power",
+        "offset": 576
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_damage",
+        "offset": 624
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "_m_sound_index",
+        "offset": 656
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component>",
+        "name": "m_jet_engine_upstream",
+        "offset": 688
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component>",
+        "name": "m_jet_engine_downstream",
+        "offset": 696
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "vector<ptr<server_scene.vehicle_component.jet_engine_fuel_manifold>>",
+        "name": "m_fuel_manifolds",
+        "offset": 704
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "server_scene.vehicle_liquid_content_volume",
+        "name": "m_content_lubricant",
+        "offset": 744
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component.jet_engine_compressor>",
+        "name": "m_component_compressor",
+        "offset": 976
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component.jet_engine_exhaust>",
+        "name": "m_component_exhaust",
+        "offset": 984
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component.jet_engine_particle_separator>",
+        "name": "m_component_particle_separator",
+        "offset": 992
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "vector<ptr<server_scene.vehicle_component.jet_engine_gearbox>>",
+        "name": "m_component_gearboxes",
+        "offset": 1000
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component.jet_engine_gearbox_nose>",
+        "name": "m_component_nose_gearbox",
+        "offset": 1040
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 1048
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "bool",
+        "name": "m_is_jet_engine_rebuild",
+        "offset": 1088
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "bool",
+        "name": "m_is_jet_engine_valid",
+        "offset": 1089
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "f64",
+        "name": "m_total_mass",
+        "offset": 1096
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "s32",
+        "name": "m_element_count",
+        "offset": 1104
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "f64",
+        "name": "m_rps",
+        "offset": 1112
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "s32",
+        "name": "m_volume",
+        "offset": 1120
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "f64",
+        "name": "m_temperature",
+        "offset": 1128
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "s32",
+        "name": "m_manifold_count_lubricant",
+        "offset": 1136
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "s32",
+        "name": "m_damage",
+        "offset": 1140
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "f64",
+        "name": "m_damage_factor",
+        "offset": 1144
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "bool",
+        "name": "m_is_apply_damage",
+        "offset": 1152
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "bool",
+        "name": "m_is_clear_damage",
+        "offset": 1153
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "f64",
+        "name": "m_display_throttle",
+        "offset": 1160
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "f64",
+        "name": "m_display_fuel_factor",
+        "offset": 1168
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "f64",
+        "name": "m_display_fuel_flow",
+        "offset": 1176
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "f64",
+        "name": "m_display_torque",
+        "offset": 1184
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 1192
+      }
+    }
+  ],
+  "virtuals": [
+    {
+      "type": "server_scene.vehicle_component",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.acceleration_sensor",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.acceleration_sensor.tick (server_scene.vehicle_component.acceleration_sensor, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.air_filter",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.air_filter.tick (server_scene.vehicle_component.air_filter, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.air_manifold",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.alternator",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.alternator.tick (server_scene.vehicle_component.alternator, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.altitude_sensor",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.altitude_sensor.tick (server_scene.vehicle_component.altitude_sensor, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.ammo_belt",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.ammo_belt.tick (server_scene.vehicle_component.ammo_belt, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.ammo_belt_flexible",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.ammo_belt_flexible.tick (server_scene.vehicle_component.ammo_belt_flexible, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.ammo_belt_interface",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.ammo_belt_interface.tick (server_scene.vehicle_component.ammo_belt_interface, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.ammo_belt_magazine",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.ammo_belt_magazine.tick (server_scene.vehicle_component.ammo_belt_magazine, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.ammo_belt_motor",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.ammo_belt_motor.tick (server_scene.vehicle_component.ammo_belt_motor, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.ammo_belt_straight",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.ammo_belt_straight.tick (server_scene.vehicle_component.ammo_belt_straight, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.ammo_belt_turn",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.ammo_belt_turn.tick (server_scene.vehicle_component.ammo_belt_turn, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.antenna",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.antenna.tick (server_scene.vehicle_component.antenna, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.autocannon",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.autocannon.tick (server_scene.vehicle_component.autocannon, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.battery",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.battery.tick (server_scene.vehicle_component.battery, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.boat_propeller",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.boat_propeller.tick (server_scene.vehicle_component.boat_propeller, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.brake",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.brake.tick (server_scene.vehicle_component.brake, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.building",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.building_door",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.building_door.tick (server_scene.vehicle_component.building_door, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.building_door_armoured",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.building_door_armoured.tick (server_scene.vehicle_component.building_door_armoured, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.building_door_double",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.building_door_double.tick (server_scene.vehicle_component.building_door_double, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.building_door_garage",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.building_door_garage.tick (server_scene.vehicle_component.building_door_garage, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.building_foundation",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.building_window",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.button",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.button_additive",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.button_additive.tick (server_scene.vehicle_component.button_additive, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.button_knob",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.button_slider",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.button_slider.tick (server_scene.vehicle_component.button_slider, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.button_switch",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.button_switch_covered",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.button_switch_covered.tick (server_scene.vehicle_component.button_switch_covered, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.button_switch_key",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.button_switch_key.tick (server_scene.vehicle_component.button_switch_key, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.cannon",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.cannon.tick (server_scene.vehicle_component.cannon, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.catalytic",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.catalytic.tick (server_scene.vehicle_component.catalytic, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.clutch",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.clutch.tick (server_scene.vehicle_component.clutch, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.compass_sensor",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.compass_sensor.tick (server_scene.vehicle_component.compass_sensor, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.control_surface",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.control_surface.tick (server_scene.vehicle_component.control_surface, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.coolant_manifold",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.data_bracket",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.data_junction",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.data_port",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.dial",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.dial.tick (server_scene.vehicle_component.dial, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.dial_compass",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.dial_compass.tick (server_scene.vehicle_component.dial_compass, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.dial_dual",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.dial_dual.tick (server_scene.vehicle_component.dial_dual, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.dial_gauge",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.dial_gauge.tick (server_scene.vehicle_component.dial_gauge, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.dial_range",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.dial_range.tick (server_scene.vehicle_component.dial_range, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.differential_gearbox",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.differential_gearbox.tick (server_scene.vehicle_component.differential_gearbox, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.drive_shaft",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.drive_shaft.tick (server_scene.vehicle_component.drive_shaft, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.electric_bracket",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.electric_junction",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.electric_port",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.electric_relay",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.electric_relay.tick (server_scene.vehicle_component.electric_relay, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.engine",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.engine.tick (server_scene.vehicle_component.engine, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.engine_wheel",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.engine_wheel.tick (server_scene.vehicle_component.engine_wheel, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.engine_wheel_b",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.engine_wheel.tick (server_scene.vehicle_component.engine_wheel, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.engine_wheel_c",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.engine_wheel.tick (server_scene.vehicle_component.engine_wheel, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.entity_interface",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.entity_interface.tick (server_scene.vehicle_component.entity_interface, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.exhaust_manifold",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.flight_stick",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.flight_stick.tick (server_scene.vehicle_component.flight_stick, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.flight_stick_jet",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.flight_yoke",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.force_emitter_collective",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.force_emitter_collective.tick (server_scene.vehicle_component.force_emitter_collective, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.force_emitter_propeller",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.force_emitter_propeller.tick (server_scene.vehicle_component.force_emitter_propeller, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.force_emitter_swashplate",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.force_emitter_swashplate.tick (server_scene.vehicle_component.force_emitter_swashplate, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.fuel_manifold",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.fuel_manifold.tick (server_scene.vehicle_component.fuel_manifold, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.furniture",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.fusebox",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.fusebox.tick (server_scene.vehicle_component.fusebox, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_bracket",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_junction_t",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_junction_x",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_port",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_pressure_sensor",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.gas_pressure_sensor.tick (server_scene.vehicle_component.gas_pressure_sensor, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_pump",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.gas_pump.tick (server_scene.vehicle_component.gas_pump, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_pump_centrifugal",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.gas_pump_centrifugal.tick (server_scene.vehicle_component.gas_pump_centrifugal, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_tank",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.gas_tank.tick (server_scene.vehicle_component.gas_tank, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_temperature_sensor",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_valve_straight",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.gas_valve_straight.tick (server_scene.vehicle_component.gas_valve_straight, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_valve_t",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.gas_valve_t.tick (server_scene.vehicle_component.gas_valve_t, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_vent",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.gas_vent.tick (server_scene.vehicle_component.gas_vent, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gas_vent_b",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.gas_vent_b.tick (server_scene.vehicle_component.gas_vent_b, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gear_track",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gearbox",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.gearbox.tick (server_scene.vehicle_component.gearbox, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gearbox_b",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.gearbox_b.tick (server_scene.vehicle_component.gearbox_b, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gearbox_c",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.gearbox_b.tick (server_scene.vehicle_component.gearbox_b, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gearbox_fixed_ratio",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.gearbox_fixed_ratio.tick (server_scene.vehicle_component.gearbox_fixed_ratio, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.gyro_rotation_sensor",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.gyro_rotation_sensor.tick (server_scene.vehicle_component.gyro_rotation_sensor, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.handbrake",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.handbrake.tick (server_scene.vehicle_component.handbrake, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.handle",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.heat_exchanger_gas_gas",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.heat_exchanger_gas_gas.tick (server_scene.vehicle_component.heat_exchanger_gas_gas, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.heat_exchanger_gas_liquid",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.heat_exchanger_gas_liquid.tick (server_scene.vehicle_component.heat_exchanger_gas_liquid, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.heat_exchanger_liquid_liquid",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.heat_exchanger_liquid_liquid.tick (server_scene.vehicle_component.heat_exchanger_liquid_liquid, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hinge_knuckle",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hinge_pin",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.hinge_pin.tick (server_scene.vehicle_component.hinge_pin, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.horn",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.horn.tick (server_scene.vehicle_component.horn, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.horn_klaxon",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.horn_klaxon.tick (server_scene.vehicle_component.horn_klaxon, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_actuator",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.hydraulic_actuator.tick (server_scene.vehicle_component.hydraulic_actuator, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_2_2",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_3_3",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.tick (server_scene.vehicle_component.hydraulic_cylinder_connector_base, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base_2_2",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.tick (server_scene.vehicle_component.hydraulic_cylinder_connector_base, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_cylinder_connector_base_3_3",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.hydraulic_cylinder_connector_base.tick (server_scene.vehicle_component.hydraulic_cylinder_connector_base, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.hydraulic_motor",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.hydraulic_motor.tick (server_scene.vehicle_component.hydraulic_motor, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.indicator",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.indicator.tick (server_scene.vehicle_component.indicator, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.interface_data",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.interface_data.tick (server_scene.vehicle_component.interface_data, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.interface_electric",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.interface_electric.tick (server_scene.vehicle_component.interface_electric, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.interface_gas",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.interface_gas.tick (server_scene.vehicle_component.interface_gas, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.interface_liquid",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.interface_liquid.tick (server_scene.vehicle_component.interface_liquid, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.interface_mechanical_in",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.interface_mechanical_in.tick (server_scene.vehicle_component.interface_mechanical_in, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.interface_mechanical_out",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.interface_mechanical_out.tick (server_scene.vehicle_component.interface_mechanical_out, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.interface_torque",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.interface_torque.tick (server_scene.vehicle_component.interface_torque, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.inventory",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.inventory.tick (server_scene.vehicle_component.inventory, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_combustion",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.jet_engine_combustion.tick (server_scene.vehicle_component.jet_engine_combustion, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_compressor",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.jet_engine_compressor.tick (server_scene.vehicle_component.jet_engine_compressor, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_exhaust",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.jet_engine_exhaust.tick (server_scene.vehicle_component.jet_engine_exhaust, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_fuel_manifold",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.jet_engine_fuel_manifold.tick (server_scene.vehicle_component.jet_engine_fuel_manifold, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_gearbox",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.jet_engine_gearbox.tick (server_scene.vehicle_component.jet_engine_gearbox, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_gearbox_nose",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.jet_engine_gearbox_nose.tick (server_scene.vehicle_component.jet_engine_gearbox_nose, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.jet_engine_particle_separator",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.jet_engine_particle_separator.tick (server_scene.vehicle_component.jet_engine_particle_separator, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.keycard_reader",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.keycard_reader.tick (server_scene.vehicle_component.keycard_reader, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.ladder",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.ladder.tick (server_scene.vehicle_component.ladder, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.landing_gear",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.landing_gear.tick (server_scene.vehicle_component.landing_gear, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.landing_gear_dual",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.landing_gear_dual.tick (server_scene.vehicle_component.landing_gear_dual, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.landing_gear_retractable",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.landing_gear_retractable.tick (server_scene.vehicle_component.landing_gear_retractable, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_handle",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.latch_handle.tick (server_scene.vehicle_component.latch_handle, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_knuckle",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_pin",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.latch_pin.tick (server_scene.vehicle_component.latch_pin, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.lever_switch",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.lever_switch_curve",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.lever_switch_curve.tick (server_scene.vehicle_component.lever_switch_curve, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.lever_switch_large",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.lever_switch_large.tick (server_scene.vehicle_component.lever_switch_large, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.light_omni",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.light_omni.tick (server_scene.vehicle_component.light_omni, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.light_rotate",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.light_rotate.tick (server_scene.vehicle_component.light_rotate, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.light_spot",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.light_spot.tick (server_scene.vehicle_component.light_spot, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_bracket",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_fill_port",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_junction_t",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_junction_x",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_nozzle",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.liquid_nozzle.tick (server_scene.vehicle_component.liquid_nozzle, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_port",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_pressure_sensor",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.liquid_pressure_sensor.tick (server_scene.vehicle_component.liquid_pressure_sensor, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_pump",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.liquid_pump.tick (server_scene.vehicle_component.liquid_pump, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_tank",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.liquid_tank.tick (server_scene.vehicle_component.liquid_tank, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_temperature_sensor",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.liquid_temperature_sensor.tick (server_scene.vehicle_component.liquid_temperature_sensor, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_valve_straight",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.liquid_valve_straight.tick (server_scene.vehicle_component.liquid_valve_straight, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_valve_t",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.liquid_valve_t.tick (server_scene.vehicle_component.liquid_valve_t, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_vent",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.liquid_vent.tick (server_scene.vehicle_component.liquid_vent, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.mechanical_bracket",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.mechanical_bracket.tick (server_scene.vehicle_component.mechanical_bracket, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.mechanical_handle",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.mechanical_handle.tick (server_scene.vehicle_component.mechanical_handle, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.mechanical_junction",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.mechanical_junction.tick (server_scene.vehicle_component.mechanical_junction, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.mechanical_junction_abs",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.mechanical_junction_abs.tick (server_scene.vehicle_component.mechanical_junction_abs, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.mechanical_junction_add",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.mechanical_junction_add.tick (server_scene.vehicle_component.mechanical_junction_add, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.mechanical_junction_invert",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.mechanical_junction_invert.tick (server_scene.vehicle_component.mechanical_junction_invert, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.mechanical_junction_max",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.mechanical_junction_max.tick (server_scene.vehicle_component.mechanical_junction_max, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.mechanical_junction_min",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.mechanical_junction_min.tick (server_scene.vehicle_component.mechanical_junction_min, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.mechanical_junction_offset",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.mechanical_junction_offset.tick (server_scene.vehicle_component.mechanical_junction_offset, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.mechanical_junction_scale",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.mechanical_junction_scale.tick (server_scene.vehicle_component.mechanical_junction_scale, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.mechanical_junction_set_reset",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.mechanical_junction_set_reset.tick (server_scene.vehicle_component.mechanical_junction_set_reset, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.mechanical_junction_toggle",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.mechanical_junction_toggle.tick (server_scene.vehicle_component.mechanical_junction_toggle, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.microcontroller.tick (server_scene.vehicle_component.microcontroller, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.microphone",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.microphone.tick (server_scene.vehicle_component.microphone, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.motor",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.motor.tick (server_scene.vehicle_component.motor, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.mounting_knuckle",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.mounting_pin",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.mounting_pin.tick (server_scene.vehicle_component.mounting_pin, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.oil_filter",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.oil_filter.tick (server_scene.vehicle_component.oil_filter, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.oil_manifold",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.pulley",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.pulley.tick (server_scene.vehicle_component.pulley, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.pulley_corner",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.pulley.tick (server_scene.vehicle_component.pulley, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.pulley_straight",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.pulley.tick (server_scene.vehicle_component.pulley, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.pulley_wheel",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.pulley_wheel.tick (server_scene.vehicle_component.pulley_wheel, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.radiator",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.radiator.tick (server_scene.vehicle_component.radiator, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.radiator_fan",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.radiator_fan.tick (server_scene.vehicle_component.radiator_fan, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.rail",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.rail.tick (server_scene.vehicle_component.rail, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_ballscrew",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.rail_ballscrew.tick (server_scene.vehicle_component.rail_ballscrew, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_ballscrew_slider",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.rail_ballscrew_slider.tick (server_scene.vehicle_component.rail_ballscrew_slider, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_slider",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.rail_slider.tick (server_scene.vehicle_component.rail_slider, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed_large",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed_large_narrow",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed_large_wide",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed_small",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed_small_narrow",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_fixed_small_wide",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_suspension.tick (server_scene.vehicle_component.roller_wheel_suspension, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_large",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_suspension.tick (server_scene.vehicle_component.roller_wheel_suspension, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_large_narrow",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_suspension.tick (server_scene.vehicle_component.roller_wheel_suspension, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_large_wide",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_suspension.tick (server_scene.vehicle_component.roller_wheel_suspension, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_small",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_suspension.tick (server_scene.vehicle_component.roller_wheel_suspension, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_small_narrow",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_suspension.tick (server_scene.vehicle_component.roller_wheel_suspension, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.roller_wheel_suspension_small_wide",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.roller_wheel_suspension.tick (server_scene.vehicle_component.roller_wheel_suspension, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.rope_hook",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.seat",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.seat.tick (server_scene.vehicle_component.seat, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.seven_segment",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.seven_segment.tick (server_scene.vehicle_component.seven_segment, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.shell_holder",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.shell_holder.tick (server_scene.vehicle_component.shell_holder, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.shell_holder_120mm",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.shell_holder.tick (server_scene.vehicle_component.shell_holder, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.shell_holder_40mm",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.shell_holder.tick (server_scene.vehicle_component.shell_holder, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.short_shifter",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.short_shifter.tick (server_scene.vehicle_component.short_shifter, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.smoke_discharger",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.smoke_discharger.tick (server_scene.vehicle_component.smoke_discharger, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.solar_panel",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.solar_panel.tick (server_scene.vehicle_component.solar_panel, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.speaker",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.sprocket",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.sprocket.tick (server_scene.vehicle_component.sprocket, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.sprocket_large",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.sprocket.tick (server_scene.vehicle_component.sprocket, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.sprocket_large_narrow",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.sprocket.tick (server_scene.vehicle_component.sprocket, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.sprocket_large_wide",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.sprocket.tick (server_scene.vehicle_component.sprocket, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.sprocket_small",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.sprocket.tick (server_scene.vehicle_component.sprocket, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.sprocket_small_narrow",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.sprocket.tick (server_scene.vehicle_component.sprocket, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.sprocket_small_wide",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.sprocket.tick (server_scene.vehicle_component.sprocket, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.steering_linkage",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.steering_linkage.tick (server_scene.vehicle_component.steering_linkage, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.steering_wheel",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.steering_wheel.tick (server_scene.vehicle_component.steering_wheel, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.stepper_motor",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.stepper_motor.tick (server_scene.vehicle_component.stepper_motor, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.throttle",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.throttle.tick (server_scene.vehicle_component.throttle, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.throttle_gear",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.throttle_gear.tick (server_scene.vehicle_component.throttle_gear, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.throttle_slide",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.throttle_slide.tick (server_scene.vehicle_component.throttle_slide, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.tilt_sensor",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tilt_sensor.tick (server_scene.vehicle_component.tilt_sensor, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.tool_wall",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tool_wall.tick (server_scene.vehicle_component.tool_wall, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_bar",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tow_bar.tick (server_scene.vehicle_component.tow_bar, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_hitch",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tow_hitch.tick (server_scene.vehicle_component.tow_hitch, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.train_wheel",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.train_wheel.tick (server_scene.vehicle_component.train_wheel, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.weapon_mount",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.weapon_mount.tick (server_scene.vehicle_component.weapon_mount, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.weapon_mount_pintle",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.weapon_mount_pintle.tick (server_scene.vehicle_component.weapon_mount_pintle, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.weight_block",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.tick (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.wheel.tick (server_scene.vehicle_component.wheel, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel_hydraulic",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.wheel_hydraulic.tick (server_scene.vehicle_component.wheel_hydraulic, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.wheel_mount",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.wheel_mount.tick (server_scene.vehicle_component.wheel_mount, server_scene.vehicle, server_scene)"
+    },
+    {
+      "type": "server_scene.vehicle_component.winch",
+      "slot": 20,
+      "signature": "() server_scene.vehicle_component.winch.tick (server_scene.vehicle_component.winch, server_scene.vehicle, server_scene)"
+    }
+  ]
+}

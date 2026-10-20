@@ -2,12 +2,14 @@
 
 Measurements in this checkpoint apply to build 25904830. Keyword counts come from the [machine-readable system index](versions/build-25904830/system-map.json), with overlapping topics and template expansion; they cannot be converted into a percentage of understanding.
 
-Current continuation: [component types/construction/geometry](COMPONENTS-TYPES-20261020.md). Scanner 1.4 retains all earlier records and adds 58 template-qualified functions. The current local index has 37,140 functions; reflection now supplies declared class/enum/method/field information. Historical rows below remain measurements of their own checkpoints.
+Current continuation: [torque/electric machines/jets/rotors](POWERTRAIN-20261020.md), following [component types/construction/geometry](COMPONENTS-TYPES-20261020.md). All declared component update methods are available, with selected coherent behavior chains reviewed. The current local index has 37,140 functions; reflection supplies declared class/enum/method/field information. Historical rows below remain measurements of their own checkpoints.
 
 Latest scope supersedes the earlier topic-only queue: [full-game audit register](AUDIT-REGISTER.md), [new findings and historical review](FULL-AUDIT-20261019.md), [complete indexed scope accounting](versions/build-25904830/full-audit-20261019/scope-summary.json), and [every component class group](versions/build-25904830/full-audit-20261019/component-audit.json). The table below retains chronological measurements; they must not be summed blindly because later readers include earlier exports.
 
 | Dimension | Completed | Does not establish |
 | --- | --- | --- |
+| Component update access | All 156 distinct declared update implementations across 224 types; all 598 shipped definition IDs retained | Complete review of their behavior or availability of compiled-only classes |
+| Torque/propulsion follow-up | 611-function reader/103,166 instructions/597,691 bytes; 101 synthetic tests; selected solver, motor, alternator, jet and rotor traces | Full contact/track/aerodynamic/thermal models, native intrinsic behavior or game-runtime acceptance |
 | Installation files | 10,813/10,813, two-pass SHA-256 | Understanding of every file's internal structure |
 | Snapshot | 4,833 verified code/data/document copies | A complete ROM copy or atomic disk snapshot |
 | Formats | Full JSON syntax validation; PE/GCL/mesh/TXTR/ATLA/Ogg/font identification | Complete parsing; 1,843 binary data files remain unknown |
