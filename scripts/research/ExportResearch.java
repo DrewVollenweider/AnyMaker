@@ -10,8 +10,80 @@ import ghidra.app.script.GhidraScript;
 import ghidra.program.model.address.*;
 import ghidra.program.model.listing.*;
 import ghidra.program.model.symbol.SourceType;
+import ghidra.program.model.symbol.Reference;
+import ghidra.program.model.pcode.*;
 
 public class ExportResearch extends GhidraScript {
+  private static String json(String value) {
+    if (value == null) return "null";
+    StringBuilder s = new StringBuilder("\"");
+    for (char c : value.toCharArray()) {
+      switch (c) {
+        case '"': s.append("\\\""); break;
+        case '\\': s.append("\\\\"); break;
+        case '\n': s.append("\\n"); break;
+        case '\r': s.append("\\r"); break;
+        case '\t': s.append("\\t"); break;
+        default:
+          if (c < 32) s.append(String.format("\\u%04x", (int)c));
+          else s.append(c);
+      }
+    }
+    return s.append('"').toString();
+  }
+
+  private static String varnode(Varnode v) {
+    if (v == null) return "null";
+    return "{\"space\":" + json(v.getAddress().getAddressSpace().getName()) +
+      ",\"offset\":" + json(Long.toUnsignedString(v.getOffset())) +
+      ",\"size\":" + v.getSize() + ",\"constant\":" + v.isConstant() +
+      ",\"register\":" + v.isRegister() + ",\"unique\":" + v.isUnique() + "}";
+  }
+
+  private void exportFacts(Path path, String[] plan, AddressSet body, boolean completed) throws Exception {
+    StringBuilder s = new StringBuilder("{\"schema\":1,\"signature\":").append(json(plan[4]))
+      .append(",\"code_offset\":").append(plan[1]).append(",\"code_size\":").append(plan[2])
+      .append(",\"export_name\":").append(json(plan[3])).append(",\"decompile_completed\":")
+      .append(completed).append(",\"instructions\":[");
+    boolean first = true;
+    InstructionIterator it = currentProgram.getListing().getInstructions(body, true);
+    while (it.hasNext()) {
+      monitor.checkCancelled();
+      Instruction ins = it.next();
+      if (!first) s.append(','); first = false;
+      StringBuilder hex = new StringBuilder();
+      for (byte b : ins.getBytes()) hex.append(String.format("%02x", b & 255));
+      s.append("{\"address\":").append(json(Long.toUnsignedString(ins.getAddress().getOffset())))
+        .append(",\"bytes\":").append(json(hex.toString())).append(",\"mnemonic\":")
+        .append(json(ins.getMnemonicString())).append(",\"text\":").append(json(ins.toString()))
+        .append(",\"flow_type\":").append(json(ins.getFlowType().toString()))
+        .append(",\"fallthrough\":").append(ins.getFallThrough() == null ? "null" :
+          json(Long.toUnsignedString(ins.getFallThrough().getOffset()))).append(",\"references\":[");
+      boolean firstRef = true;
+      for (Reference ref : currentProgram.getReferenceManager().getReferencesFrom(ins.getAddress())) {
+        if (!firstRef) s.append(','); firstRef = false;
+        s.append("{\"space\":").append(json(ref.getToAddress().getAddressSpace().getName()))
+          .append(",\"target\":").append(json(Long.toUnsignedString(ref.getToAddress().getOffset())))
+          .append(",\"type\":").append(json(ref.getReferenceType().toString()))
+          .append(",\"operand\":").append(ref.getOperandIndex()).append('}');
+      }
+      s.append("],\"pcode\":[");
+      boolean firstOp = true;
+      for (PcodeOp op : ins.getPcode()) {
+        if (!firstOp) s.append(','); firstOp = false;
+        s.append("{\"opcode\":").append(json(op.getMnemonic())).append(",\"output\":")
+          .append(varnode(op.getOutput())).append(",\"inputs\":[");
+        for (int i = 0; i < op.getNumInputs(); i++) {
+          if (i > 0) s.append(','); s.append(varnode(op.getInput(i)));
+        }
+        s.append("]}");
+      }
+      s.append("]}");
+    }
+    s.append("]}\n");
+    Files.writeString(path, s.toString(), StandardCharsets.UTF_8, StandardOpenOption.CREATE_NEW);
+  }
+
   public void run() throws Exception {
     String[] args = getScriptArgs();
     if (args.length != 2) throw new IllegalArgumentException("plan.tsv output-directory");
@@ -50,6 +122,7 @@ public class ExportResearch extends GhidraScript {
         DecompileResults result = decompiler.decompileFunction(f, 60, monitor);
         String text = result.decompileCompleted() ? result.getDecompiledFunction().getC() : "ERROR: " + result.getErrorMessage();
         Files.writeString(out.resolve(p[3] + ".c"), text, StandardCharsets.UTF_8, StandardOpenOption.CREATE_NEW);
+        exportFacts(out.resolve(p[3] + ".facts.json"), p, body, result.decompileCompleted());
         println("RESEARCH_EXPORT " + p[3] + " decompiled=" + result.decompileCompleted());
       }
     } finally { decompiler.dispose(); }

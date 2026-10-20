@@ -15,6 +15,7 @@ def run(source,database,out,runtime,project_root,terms):
  if project_root.exists():raise FileExistsError(project_root)
  if any(p.startswith('.') or any(c in p for c in '{}') for p in project_root.parts):
   raise ValueError('Use a Ghidra-compatible project path, e.g. a plain temporary directory')
+ out.parent.mkdir(parents=True,exist_ok=True)
  budget=resources(out.parent)
  if budget.get('memory_available_bytes',10**10)<4*1024**3:raise MemoryError('Require 4 GiB available')
  ghidras=list((runtime/'ghidra').glob('ghidra_*'))

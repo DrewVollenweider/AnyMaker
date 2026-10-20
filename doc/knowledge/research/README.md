@@ -1,5 +1,7 @@
 # Whole-game research
 
+Latest continuation: [offline code reader and implementation findings, 2026-10-19](OFFLINE-20261019.md). New tools connect instruction bytes, p-code operand dependencies, searchable decompilation, and independently checkable selected evidence. The user requested research without required in-game testing; continue offline and label remaining unknowns explicitly. Historical runtime protocols remain reference plans, not a gate for this assignment.
+
 2026-10-18 (America/New_York). This is the first whole-game baseline checkpoint of an ongoing research system, not a claim to understand the entire game. Start with [coverage](COVERAGE.md), [versions](VERSIONS.md), and [handoff](HANDOFF.md), then search through the [system index](versions/build-25904830/system-map.json). The existing [engineering findings](../CURRENT-FACTS.md) and acceptance records remain applicable within their own version and evidence boundaries.
 
 This checkpoint completed a two-pass SHA-256 inventory of the entire installation, an isolated snapshot, review of existing research, definition indexes, GCL function-record/reference indexes, historical-address relocation checks, and an initial detailed static investigation of the Opening/Hatch sealing path. The game was never launched, attached to, or controlled. Installation files and active saves were untouched. Runtime experiments have not been performed.
@@ -10,7 +12,7 @@ This checkpoint completed a two-pass SHA-256 inventory of the entire installatio
 2. Query original fields in the definition database. Preserve omitted fields as omitted; do not invent defaults.
 3. Find functions by full signature in the GCL database, follow symbol references to callers, and inspect original code and disassembly. A symbol reference is not an executed call.
 4. Inspect representative native files, distinguishing loaded state, static connections, and historical runtime acceptance.
-5. State findings and limits using the [evidence categories](#evidence-categories). Move runtime ambiguities into [experiment protocols](EXPERIMENTS.md).
+5. State findings and limits using the [evidence categories](#evidence-categories). Continue investigating ambiguities offline; historical [experiment protocols](EXPERIMENTS.md) remain optional future plans, not required user testing.
 6. Record reproducible commands, input hashes, results, counterexamples, and next steps. Keep full decompilations, binaries, ROM copies, and personal saves local.
 
 ## Search and tools
@@ -24,7 +26,7 @@ python scripts/research/gcl_index.py query "$r/gcl/index.sqlite" hatch_manager
 python scripts/research/gcl_index.py query "$r/gcl/index.sqlite" hatch_manager.tick --callers
 python scripts/research/catalog.py query "$r/catalog/definitions.sqlite" 'microcontroller OR battery'
 python scripts/research/system_map.py "$r/gcl/index.sqlite" "$r/catalog/definitions.sqlite" "$r/system-map.json"
-python -m unittest discover -s scripts/research -p test_research.py -v
+python -m unittest discover -s scripts/research -p 'test_*.py' -v
 ```
 
 `gcl/index.sqlite` stores full local signatures, code ranges/hashes, relocation operands, global/source-file tables, and reference-resolution status. `catalog/definitions.sqlite` stores definition JSON, JSON Pointers, source/normalized-definition hashes, and full-text search. Retrieve original records through `functions.record` and `definitions.json`; the lightweight component index does not republish complete definitions.
@@ -44,4 +46,4 @@ python -m unittest discover -s scripts/research -p test_research.py -v
 
 Record confidence separately from evidence category. Function counts, keyword hits, successful decompilation, and passing static checks do not count as system runtime acceptance.
 
-The substantive new behavioral findings are in [Opening/Hatch](SEALING.md). There is currently no whole-game units table, complete type recovery, complete GCL container grammar, general runtime telemetry, or universal decompiler.
+Behavioral findings are in [Opening/Hatch](SEALING.md) and the [offline electrical, pump, and microcontroller investigation](OFFLINE-20261019.md). There is currently no whole-game units table, complete type recovery, complete GCL container grammar, general runtime telemetry, or universal decompiler.

@@ -1,0 +1,639 @@
+{
+  "schema": 1,
+  "build": "25904830",
+  "date": "2026-10-19",
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "() server_scene.vehicle_component.battery.post_load (server_scene.vehicle_component.battery, server_scene)",
+      "signature_offset": 53806161,
+      "code_offset": 53807073,
+      "code_size": 456,
+      "code_sha256": "e2ffdd80a4c2537017c56fb34d320382d9ed1026d0d3d54bce676ef6111c17ac",
+      "instructions_byte_checked": 105,
+      "slot_derived_calls": 7,
+      "unresolved_calls": 0
+    },
+    {
+      "signature": "() server_scene.vehicle_component.battery.tick (server_scene.vehicle_component.battery, server_scene.vehicle, server_scene)",
+      "signature_offset": 53813208,
+      "code_offset": 53814304,
+      "code_size": 688,
+      "code_sha256": "e27a724e84807bc07f3bb2c22532159df177e2d42114c6cfa1bb05f4f2010f9f",
+      "instructions_byte_checked": 148,
+      "slot_derived_calls": 8,
+      "unresolved_calls": 0
+    },
+    {
+      "signature": "() server_scene.vehicle_component.electric_relay.tick (server_scene.vehicle_component.electric_relay, server_scene.vehicle, server_scene)",
+      "signature_offset": 54399189,
+      "code_offset": 54399739,
+      "code_size": 272,
+      "code_sha256": "ec085a1c18782eb3cb399abfa8d8dfa8a8fc8ec5f1dd2eed86d945785b3e8c86",
+      "instructions_byte_checked": 59,
+      "slot_derived_calls": 4,
+      "unresolved_calls": 1
+    },
+    {
+      "signature": "() server_scene.vehicle_component.electric_relay.parse_save_data (server_scene.vehicle_component.electric_relay, server_scene.save_data.parser)",
+      "signature_offset": 54393326,
+      "code_offset": 54393927,
+      "code_size": 520,
+      "code_sha256": "a6297b5baff42fa60419e042b838e356800a59f1a0a7441c3626ad8875f9370d",
+      "instructions_byte_checked": 87,
+      "slot_derived_calls": 3,
+      "unresolved_calls": 6
+    },
+    {
+      "signature": "(bool) server_scene.vehicle_electric_node.consume_binary (server_scene.vehicle_electric_node, const f64)",
+      "signature_offset": 58232852,
+      "code_offset": 58232976,
+      "code_size": 249,
+      "code_sha256": "140e5d93ea8ef841e7832d8fc752098aafede086ba226a081eecebe8e3567558",
+      "instructions_byte_checked": 57,
+      "slot_derived_calls": 0,
+      "unresolved_calls": 0
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_electric_node.consume_factor (server_scene.vehicle_electric_node, const f64)",
+      "signature_offset": 58233567,
+      "code_offset": 58233735,
+      "code_size": 344,
+      "code_sha256": "a37d7aad64e5c5b2a1034f707db3da17c3a810e3f4f5e860369399e5a4900f67",
+      "instructions_byte_checked": 79,
+      "slot_derived_calls": 1,
+      "unresolved_calls": 0
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_pump.create (server_scene.vehicle_component.liquid_pump, server_scene.vehicle)",
+      "signature_offset": 56354711,
+      "code_offset": 56355754,
+      "code_size": 608,
+      "code_sha256": "9f6c7a5565a6529dfd4f1d4d205bd60f7f46f1609373ad76fc6f91503d13999a",
+      "instructions_byte_checked": 118,
+      "slot_derived_calls": 8,
+      "unresolved_calls": 1
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_pump.tick (server_scene.vehicle_component.liquid_pump, server_scene.vehicle, server_scene)",
+      "signature_offset": 56367356,
+      "code_offset": 56368934,
+      "code_size": 3016,
+      "code_sha256": "007840c05a6c421e6367e6087acb677a0cf5395285ab7d046023f84317a2ba55",
+      "instructions_byte_checked": 466,
+      "slot_derived_calls": 23,
+      "unresolved_calls": 14
+    },
+    {
+      "signature": "(ptr<bool>) server_scene.vehicle_component.liquid_pump.get_data_bool (server_scene.vehicle_component.liquid_pump, const string)",
+      "signature_offset": 56357555,
+      "code_offset": 56357853,
+      "code_size": 256,
+      "code_sha256": "2781b8da9fe5616b935c9100791033b27ba657e630c2bfac8ef2dec6fede45c7",
+      "instructions_byte_checked": 49,
+      "slot_derived_calls": 1,
+      "unresolved_calls": 2
+    },
+    {
+      "signature": "() server_scene.vehicle_liquid_content_volume.create (server_scene.vehicle_liquid_content_volume, server_scene.vehicle, server_scene.vehicle_component, const vehicle_util.grid_origin_dir, const s32, const f64)",
+      "signature_offset": 58738268,
+      "code_offset": 58740995,
+      "code_size": 7688,
+      "code_sha256": "a763c07023290c74ff07856fbae02050de065c3d12c243d013417886641765b1",
+      "instructions_byte_checked": 1136,
+      "slot_derived_calls": 31,
+      "unresolved_calls": 85
+    },
+    {
+      "signature": "() server_scene.vehicle_liquid_content_volume.tick (server_scene.vehicle_liquid_content_volume, server_scene.vehicle, const f64)",
+      "signature_offset": 58754741,
+      "code_offset": 58756407,
+      "code_size": 3896,
+      "code_sha256": "d5f57d52c76ff3f3d5016801926667fc75d803c5dcdb61431bce329a7a7b9d47",
+      "instructions_byte_checked": 605,
+      "slot_derived_calls": 45,
+      "unresolved_calls": 30
+    },
+    {
+      "signature": "() server_scene.vehicle_component.microcontroller.tick (server_scene.vehicle_component.microcontroller, server_scene.vehicle, server_scene)",
+      "signature_offset": 56804022,
+      "code_offset": 56807623,
+      "code_size": 2896,
+      "code_sha256": "3a93277c7ed8f914f05b93c813a9fb40e56d1bf6b6a6dfe2a8f5946e47959584",
+      "instructions_byte_checked": 552,
+      "slot_derived_calls": 29,
+      "unresolved_calls": 8
+    },
+    {
+      "signature": "() server_scene.vehicle_component.microcontroller._move_cursor_to_start (server_scene.vehicle_component.microcontroller)",
+      "signature_offset": 56630390,
+      "code_offset": 56632336,
+      "code_size": 1288,
+      "code_sha256": "abdbd8a9736143c6b82320cdfe98db549f617eeb20e2989cc5fdd8fc5f59ae79",
+      "instructions_byte_checked": 225,
+      "slot_derived_calls": 8,
+      "unresolved_calls": 10
+    },
+    {
+      "signature": "() server_scene_script.element_if.execute (server_scene_script.element_if)",
+      "signature_offset": 59802135,
+      "code_offset": 59803839,
+      "code_size": 1744,
+      "code_sha256": "86f59f49259d08d9eafd5c4adf7fb93a1c8b40536c75a81f956d16b19cc73d53",
+      "instructions_byte_checked": 341,
+      "slot_derived_calls": 19,
+      "unresolved_calls": 6
+    },
+    {
+      "signature": "() server_scene_script.element_execute_function.execute (server_scene_script.element_execute_function)",
+      "signature_offset": 59693723,
+      "code_offset": 59695718,
+      "code_size": 1248,
+      "code_sha256": "3030e835a05caf571c5287496d25148d4c4d84b3ff7acc4be7318f2cc85ca7f6",
+      "instructions_byte_checked": 218,
+      "slot_derived_calls": 16,
+      "unresolved_calls": 6
+    },
+    {
+      "signature": "() server_scene_script.element_operation_divide.execute (server_scene_script.element_operation_divide)",
+      "signature_offset": 60053198,
+      "code_offset": 60053797,
+      "code_size": 872,
+      "code_sha256": "3e44ab1ed27d66276560af9e3b48739023176c9402126172d54b873288528ed5",
+      "instructions_byte_checked": 208,
+      "slot_derived_calls": 11,
+      "unresolved_calls": 0
+    },
+    {
+      "signature": "(bool) server_scene_script.parser.parse_on_tick (server_scene_script.parser, server_scene.vehicle_component.microcontroller, server_scene_script.token_stream)",
+      "signature_offset": 60790155,
+      "code_offset": 60791536,
+      "code_size": 1016,
+      "code_sha256": "0d9eb4c863a0a8ec97e1c3f16142e1883f79f0c87f7f51e78dc74b2f51785223",
+      "instructions_byte_checked": 178,
+      "slot_derived_calls": 5,
+      "unresolved_calls": 9
+    },
+    {
+      "signature": "(bool) vehicle_util.thresholded_input (bool, const f64)",
+      "signature_offset": 63711254,
+      "code_offset": 63711329,
+      "code_size": 288,
+      "code_sha256": "0208a75eef2484ba3a1f04f5f04d39e3b433b0aed4d7eed5afae4f88187aad28",
+      "instructions_byte_checked": 59,
+      "slot_derived_calls": 0,
+      "unresolved_calls": 0
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_content.set (server_scene.vehicle_electric_content, const f64)",
+      "signature_offset": 58222000,
+      "code_offset": 58222115,
+      "code_size": 35,
+      "code_sha256": "6c35c2e35a52c1d4e3d1bee8fe97a1a83e1fe96955ab6d33acaaba64ac541964",
+      "instructions_byte_checked": 9,
+      "slot_derived_calls": 0,
+      "unresolved_calls": 0
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_content.set (server_scene.vehicle_electric_content, const f64, const f64)",
+      "signature_offset": 58222359,
+      "code_offset": 58222485,
+      "code_size": 41,
+      "code_sha256": "926b5797cfd559af14032d4d413e5452d6954006647b19b5466982f56767a2bf",
+      "instructions_byte_checked": 10,
+      "slot_derived_calls": 0,
+      "unresolved_calls": 0
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_content.parse_save_data (server_scene.vehicle_electric_content, server_scene.save_data.parser)",
+      "signature_offset": 58221057,
+      "code_offset": 58221399,
+      "code_size": 328,
+      "code_sha256": "fa2702b4475a208f89b01f7d93b56d66ea12800ddac15454cbf9338aa7dee181",
+      "instructions_byte_checked": 60,
+      "slot_derived_calls": 3,
+      "unresolved_calls": 3
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_node.container.pre_build (server_scene.vehicle_electric_node.container, server_scene.vehicle, server_scene.connections_manager)",
+      "signature_offset": 58260875,
+      "code_offset": 58266905,
+      "code_size": 7448,
+      "code_sha256": "202677c3f469283a1bcf9d3b93542bf70392c5668f00ae8468174f2760478a9e",
+      "instructions_byte_checked": 1184,
+      "slot_derived_calls": 42,
+      "unresolved_calls": 65
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_node.container.post_build (server_scene.vehicle_electric_node.container)",
+      "signature_offset": 58254555,
+      "code_offset": 58256785,
+      "code_size": 2232,
+      "code_sha256": "d3b1f27c8f5198d966327b91dca8aa64c9b451ef504a9156675cb40fdd2eb720",
+      "instructions_byte_checked": 384,
+      "slot_derived_calls": 23,
+      "unresolved_calls": 5
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_pump.get_properties (server_scene.vehicle_component.liquid_pump, server_scene.peer.property_data)",
+      "signature_offset": 56359947,
+      "code_offset": 56360608,
+      "code_size": 344,
+      "code_sha256": "49347b226342488a722e4b485aa793c09930c335b6a6c312959004f066cc357d",
+      "instructions_byte_checked": 69,
+      "slot_derived_calls": 2,
+      "unresolved_calls": 1
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_pump.parse_save_data (server_scene.vehicle_component.liquid_pump, server_scene.save_data.parser)",
+      "signature_offset": 56362761,
+      "code_offset": 56363657,
+      "code_size": 1104,
+      "code_sha256": "d682f8e35c41a53f73f725c8fcad9eb0387c05a4f1bc1af6628ccc780a498fce",
+      "instructions_byte_checked": 169,
+      "slot_derived_calls": 6,
+      "unresolved_calls": 12
+    },
+    {
+      "signature": "() server_scene_script.element.run (server_scene_script.element, ptr<server_scene_script.element>, server_scene.vehicle_component.microcontroller_execution_context, bool)",
+      "signature_offset": 59467606,
+      "code_offset": 59468029,
+      "code_size": 192,
+      "code_sha256": "d3c7d6383ddbe9aad5dbc1f70747aea467e8a91b3a5d36641088a705d9ac16e9",
+      "instructions_byte_checked": 43,
+      "slot_derived_calls": 0,
+      "unresolved_calls": 2
+    },
+    {
+      "signature": "(bool) server_scene_script.element.step (server_scene_script.element, ptr<server_scene_script.element>, server_scene.vehicle_component.microcontroller_execution_context, bool, bool, const bool, const bool, const bool)",
+      "signature_offset": 59469202,
+      "code_offset": 59470302,
+      "code_size": 800,
+      "code_sha256": "c257cc49e41145746d7deea406d29357eb30996fd95da28d777d9ab5fd955467",
+      "instructions_byte_checked": 161,
+      "slot_derived_calls": 2,
+      "unresolved_calls": 3
+    },
+    {
+      "signature": "() server_scene.vehicle_data_analogue.reset (server_scene.vehicle_data_analogue)",
+      "signature_offset": 58131505,
+      "code_offset": 58131605,
+      "code_size": 56,
+      "code_sha256": "bc0d54345b9655d239ca6b5ab8a33d0ddc54eb619356c3c6929592b6dbc6850e",
+      "instructions_byte_checked": 8,
+      "slot_derived_calls": 0,
+      "unresolved_calls": 0
+    },
+    {
+      "signature": "() server_scene.vehicle_component.microcontroller.get_properties (server_scene.vehicle_component.microcontroller, server_scene.peer.property_data)",
+      "signature_offset": 56735817,
+      "code_offset": 56736167,
+      "code_size": 128,
+      "code_sha256": "1ca44ea92151196bdb78b8061d488d27157dc8673eb8fd318c0910d1f6686ab9",
+      "instructions_byte_checked": 26,
+      "slot_derived_calls": 0,
+      "unresolved_calls": 1
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 58232976,
+      "offset": 58233216,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "binary_consume_zero"
+    },
+    {
+      "function_offset": 58233735,
+      "offset": 58234071,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "factor_consume_zero"
+    },
+    {
+      "function_offset": 63711329,
+      "offset": 63711577,
+      "format": "f64",
+      "bytes": "000000000000d0bf",
+      "value": -0.25,
+      "name": "relay_reset_negative_boundary"
+    },
+    {
+      "function_offset": 63711329,
+      "offset": 63711585,
+      "format": "f64",
+      "bytes": "000000000000d03f",
+      "value": 0.25,
+      "name": "relay_reset_positive_boundary"
+    },
+    {
+      "function_offset": 63711329,
+      "offset": 63711601,
+      "format": "f64",
+      "bytes": "000000000000e8bf",
+      "value": -0.75,
+      "name": "relay_set_negative_boundary"
+    },
+    {
+      "function_offset": 63711329,
+      "offset": 63711609,
+      "format": "f64",
+      "bytes": "000000000000e83f",
+      "value": 0.75,
+      "name": "relay_set_positive_boundary"
+    },
+    {
+      "function_offset": 56807623,
+      "offset": 56810487,
+      "format": "f64",
+      "bytes": "0000000000002440",
+      "value": 10.0,
+      "name": "microcontroller_base_power"
+    },
+    {
+      "function_offset": 56807623,
+      "offset": 56810495,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "microcontroller_no_power_fraction"
+    },
+    {
+      "function_offset": 56807623,
+      "offset": 56810503,
+      "format": "f64",
+      "bytes": "7b14ae47e17a843f",
+      "value": 0.01,
+      "name": "microcontroller_execution_fraction_threshold"
+    },
+    {
+      "function_offset": 56368934,
+      "offset": 56371902,
+      "format": "f64",
+      "bytes": "333333333333e33f",
+      "value": 0.6,
+      "name": "pump_power_denominator"
+    },
+    {
+      "function_offset": 56368934,
+      "offset": 56371910,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "pump_reversed_sign"
+    },
+    {
+      "function_offset": 56368934,
+      "offset": 56371918,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "pump_unreversed_sign"
+    },
+    {
+      "function_offset": 56368934,
+      "offset": 56371926,
+      "format": "f64",
+      "bytes": "9a9999999999b93f",
+      "value": 0.1,
+      "name": "pump_head_coefficient"
+    },
+    {
+      "function_offset": 56368934,
+      "offset": 56371934,
+      "format": "f64",
+      "bytes": "2d431cebe2361a3f",
+      "value": 0.0001,
+      "name": "pump_pressure_denominator_floor"
+    },
+    {
+      "function_offset": 56368934,
+      "offset": 56371942,
+      "format": "f64",
+      "bytes": "9a9999999999d93f",
+      "value": 0.4,
+      "name": "pump_transfer_coefficient"
+    },
+    {
+      "function_offset": 56363657,
+      "offset": 56364707,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "pump_reverse_default_false"
+    },
+    {
+      "function_offset": 56363657,
+      "offset": 56364753,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "pump_flow_factor_default"
+    }
+  ],
+  "strings": [
+    {
+      "function_offset": 56363657,
+      "offset": 56364708,
+      "text": "content_0"
+    },
+    {
+      "function_offset": 56363657,
+      "offset": 56364718,
+      "text": "content_1"
+    },
+    {
+      "function_offset": 56363657,
+      "offset": 56364728,
+      "text": "is_reverse"
+    },
+    {
+      "function_offset": 56363657,
+      "offset": 56364739,
+      "text": "flow_factor"
+    }
+  ],
+  "call_examples": [
+    {
+      "function_offset": 53807073,
+      "instruction": 53807507,
+      "bytes": "ff10",
+      "slot_address": 53807577,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_electric_content.set (server_scene.vehicle_electric_content, const f64, const f64)"
+    },
+    {
+      "function_offset": 53814304,
+      "instruction": 53814384,
+      "bytes": "ff5500",
+      "slot_address": 53814992,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_electric_content.set (server_scene.vehicle_electric_content, const f64, const f64)"
+    },
+    {
+      "function_offset": 54399739,
+      "instruction": 54399795,
+      "bytes": "ff5500",
+      "slot_address": 54400011,
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_mechanical_node_in.read (const server_scene.vehicle_mechanical_node_in)"
+    },
+    {
+      "function_offset": 54393927,
+      "instruction": 54393984,
+      "bytes": "ff5500",
+      "slot_address": 54394447,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_component.parse_save_data (server_scene.vehicle_component, server_scene.save_data.parser)"
+    },
+    {
+      "function_offset": 58233735,
+      "instruction": 58233947,
+      "bytes": "ff16",
+      "slot_address": 58234079,
+      "kind": 4,
+      "symbol": "(f64) math.min (const f64, const f64)"
+    },
+    {
+      "function_offset": 56355754,
+      "instruction": 56355806,
+      "bytes": "ff5500",
+      "slot_address": 56356362,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_component.create (server_scene.vehicle_component, server_scene.vehicle)"
+    },
+    {
+      "function_offset": 56368934,
+      "instruction": 56369008,
+      "bytes": "ff5500",
+      "slot_address": 56371950,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_liquid_node>) server_scene.vehicle_liquid_node_group_pair.get_0 (server_scene.vehicle_liquid_node_group_pair)"
+    },
+    {
+      "function_offset": 56357853,
+      "instruction": 56357920,
+      "bytes": "ff5500",
+      "slot_address": 56358109,
+      "kind": 4,
+      "symbol": "() $string_ctor_cstr (string, const uptr)"
+    },
+    {
+      "function_offset": 58740995,
+      "instruction": 58741204,
+      "bytes": "ff13",
+      "slot_address": 58748683,
+      "kind": 4,
+      "symbol": "(uptr) vector<vehicle_component_definition.inspection_geometry>.begin (const vector<vehicle_component_definition.inspection_geometry>)"
+    },
+    {
+      "function_offset": 58756407,
+      "instruction": 58756479,
+      "bytes": "ff13",
+      "slot_address": 58760303,
+      "kind": 4,
+      "symbol": "() ctor (vec3)"
+    },
+    {
+      "function_offset": 56807623,
+      "instruction": 56807724,
+      "bytes": "ff13",
+      "slot_address": 56810519,
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle_electric_node_group.is_fully_connected (server_scene.vehicle_electric_node_group)"
+    },
+    {
+      "function_offset": 56632336,
+      "instruction": 56632570,
+      "bytes": "ff10",
+      "slot_address": 56633640,
+      "kind": 4,
+      "symbol": "(ptr<ref<server_scene_script.element>>) vector<ref<server_scene_script.element>>.value (const vector<ref<server_scene_script.element>>, const uptr)"
+    },
+    {
+      "function_offset": 59803839,
+      "instruction": 59804301,
+      "bytes": "ff10",
+      "slot_address": 59805623,
+      "kind": 4,
+      "symbol": "(ptr<ref<server_scene_script.element>>) vector<ref<server_scene_script.element>>.value (const vector<ref<server_scene_script.element>>, const uptr)"
+    },
+    {
+      "function_offset": 59695718,
+      "instruction": 59695947,
+      "bytes": "ff10",
+      "slot_address": 59696982,
+      "kind": 4,
+      "symbol": "(ptr<ref<server_scene_script.element>>) vector<ref<server_scene_script.element>>.value (const vector<ref<server_scene_script.element>>, const uptr)"
+    },
+    {
+      "function_offset": 60053797,
+      "instruction": 60054549,
+      "bytes": "ff10",
+      "slot_address": 60054709,
+      "kind": 4,
+      "symbol": "(f64) math.abs (const f64)"
+    },
+    {
+      "function_offset": 60791536,
+      "instruction": 60791641,
+      "bytes": "ff16",
+      "slot_address": 60792552,
+      "kind": 4,
+      "symbol": "(bool) server_scene_script.token_stream.consume (server_scene_script.token_stream, const server_scene_script.e_token_type)"
+    },
+    {
+      "function_offset": 58221399,
+      "instruction": 58221456,
+      "bytes": "ff5500",
+      "slot_address": 58221727,
+      "kind": 4,
+      "symbol": "() $string_ctor_cstr (string, const uptr)"
+    },
+    {
+      "function_offset": 58266905,
+      "instruction": 58267040,
+      "bytes": "ff13",
+      "slot_address": 58274353,
+      "kind": 4,
+      "symbol": "(uptr) vector<ptr<server_scene.vehicle_electric_node>>.begin (const vector<ptr<server_scene.vehicle_electric_node>>)"
+    },
+    {
+      "function_offset": 58256785,
+      "instruction": 58256922,
+      "bytes": "ff10",
+      "slot_address": 58259025,
+      "kind": 4,
+      "symbol": "(uptr) vector<ref<server_scene.vehicle_electric_island>>.end (const vector<ref<server_scene.vehicle_electric_island>>)"
+    },
+    {
+      "function_offset": 56363657,
+      "instruction": 56363714,
+      "bytes": "ff5500",
+      "slot_address": 56364761,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_component.parse_save_data (server_scene.vehicle_component, server_scene.save_data.parser)"
+    },
+    {
+      "function_offset": 59470302,
+      "instruction": 59470554,
+      "bytes": "41ff1424",
+      "slot_address": 59471102,
+      "kind": 4,
+      "symbol": "(bool) server_scene_script_util.is_execute_step (const ptr<server_scene_script.element>, const ptr<server_scene_script.element>, server_scene.vehicle_component.microcontroller_execution_context, const bool, const bool)"
+    }
+  ],
+  "counts": {
+    "functions": 29,
+    "instructions_byte_checked": 6813,
+    "slot_derived_calls": 297,
+    "unresolved_calls": 270
+  },
+  "limits": [
+    "Selected instruction bytes were compared with the exact source by check_exports.py and trace_code.py.",
+    "Call examples establish symbol-slot dependency, not a proven dynamically bound target.",
+    "No game execution, original-file modification, runtime telemetry, or complete source recovery is claimed."
+  ]
+}

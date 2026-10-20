@@ -9,13 +9,17 @@ Source: `scripts/research/`. Python 3.12+ standard library; Ghidra exports addit
 | `catalog.py` 1.0.0 | All parseable data-directory JSON; original definitions, JSON Pointers, hashes, FTS; no guessed defaults |
 | `system_map.py` | 15 topic leads and common question queues; keyword counts are not understanding |
 | `export_plan.py` | Verify database/input hashes, unique signature, and code hash before planning selected exports |
-| `ExportResearch.java` | Local Ghidra disassembly, pointer-slot annotations, approximate pseudocode; no original-file patches or guessed structure types |
+| `ExportResearch.java` | Local Ghidra disassembly, pointer-slot annotations, approximate pseudocode, machine facts/raw p-code; no original-file patches or guessed structure types |
 | `run_export.py` | Reuse archived launcher arguments; explicit runtime/project paths; 2 GiB heap, one worker, BelowNormal; disable whole-file autoanalysis; verify actual products |
 | `check_exports.py` | Compare every exported instruction with original bytes/range; does not prove pseudocode semantics |
 | `check_static_evidence.py` | Reparse 18 recorded functions and individually verify format/value/raw bytes of 13 constants |
 | `check_historical.py` | Historical range hashes and current full-signature relocation; changed hashes do not prove changed mechanics |
 | `compare_builds.py` | Compare installation inventories, definition fields, and function-record hashes; distinguish omitted/null/boolean/numeric |
 | `test_research.py` | Original synthetic fixtures, all truncation points, bad slots/metadata, changing sources, format/suffix conflicts, omissions/type differences |
+| `trace_code.py` | Source/record/assembly byte audit, conservative local operand dependencies, actual embedded reads and separate address previews; not a complete call graph |
+| `code_reader.py` | SQLite full-text reader over selected C/assembly/evidence; source-bound build with incomplete/overwrite rejection |
+| `check_offline_evidence.py` | Independent matching-source checks of selected published records, constants, strings, and call bytes; not a proof of prose semantics |
+| `test_code_trace.py` | Synthetic dataflow boundaries, tampering/failure controls, literal distinctions, reader and evidence-checker tests |
 
 ## New baseline
 
@@ -38,6 +42,23 @@ python scripts/research/run_export.py "$r/snapshot/bin/game.gcl" "$r/gcl/index.s
 The runner binds the index to source SHA and records Java version, Ghidra properties/script hashes, and resources. Original slots remain unrelocated; readable labels do not mean function-pointer types are recovered. GCL code_size includes constants/padding; do not linearly disassemble every byte and count it as valid instructions.
 
 This checkpoint exported 18 functions and checked 6,599 instructions. The new runner also passed an actual smoke test on one previously exported node-match function, without increasing the unique-function count. Full output and Ghidra projects remain local.
+
+## Offline reader and evidence checks
+
+The [2026-10-19 continuation](OFFLINE-20261019.md) exported 29 additional distinct functions in two new batches. It checked 6,813 instructions/39,264 bytes and created a searchable reader with 297 slot-derived call dependencies and 270 unresolved calls. A dependency is not a proven virtual callee. Use a matching source/index and new export/output paths; `$e1` and `$e2` identify the two completed `run_export.py` output directories.
+
+```powershell
+python scripts/research/trace_code.py "$r/snapshot/bin/game.gcl" "$r/gcl/index.sqlite" "$e1" "$r/trace.json"
+python scripts/research/code_reader.py build "$r/snapshot/bin/game.gcl" "$r/gcl/index.sqlite" "$r/reader" "$e1" "$e2"
+python scripts/research/code_reader.py search "$r/reader/code.sqlite" 'consume_factor OR liquid_pump'
+python scripts/research/code_reader.py show "$r/reader/code.sqlite" 56368934 --section constants
+python scripts/research/code_reader.py show "$r/reader/code.sqlite" 56368934 --section calls
+python scripts/research/code_reader.py show "$r/reader/code.sqlite" 56368934 --section c
+python scripts/research/check_offline_evidence.py "$r/snapshot/bin/game.gcl" doc/knowledge/research/versions/build-25904830/offline-20261019/evidence.json --output "$r/evidence-check.json"
+python -m unittest discover -s scripts/research -p 'test_*.py' -v
+```
+
+The reader and checks use Python standard-library modules, including SQLite FTS5 in the verified runtime. Ghidra/JDK are required only to produce new exports. No game launch, attachment, or in-game test is required. Full exports/databases contain proprietary code and stay outside Git. This continuation passed 42 tests and checked 29 selected function identities, 17 constants, four strings, and 21 call-instruction examples. These counts supplement the historical validation paragraph below.
 
 ## Updates and historical records
 

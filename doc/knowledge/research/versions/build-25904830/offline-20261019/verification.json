@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "date": "2026-10-19",
+  "research_tests_passed": 42,
+  "selected_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "d50e9288592c2f2ef55dfcd3b042433e4d61242247104796249a0b4e7f3e855d",
+    "function_records_checked": 29,
+    "constants_checked": 17,
+    "strings_checked": 4,
+    "call_instruction_examples_checked": 21,
+    "limitations": "Exact static identities/bytes only; virtual target binding and prose semantics are not proven by this checker."
+  },
+  "tools_sha256": {
+    "scripts/research/ExportResearch.java": "c8e5e52e140ca6f591d4644d9a0468c605d7526bee6e1ba69714bc316d021ca9",
+    "scripts/research/run_export.py": "95a59f1d788964e0535251fa26a177d82392cac001f25f51347ec5a6c6a5ac66",
+    "scripts/research/trace_code.py": "63dd75b077715e4d90c299378e5275efb6baa12ef7bfca05e238fc63b604c624",
+    "scripts/research/code_reader.py": "3461c19d566d0db2a80130005885d82284e3e8ee30e12f6e86a4f6f51146cf63",
+    "scripts/research/check_offline_evidence.py": "d50e9288592c2f2ef55dfcd3b042433e4d61242247104796249a0b4e7f3e855d",
+    "scripts/research/test_code_trace.py": "64745fa36dcd92cb4660375be853f9dbf149c9a29410eb8a1717f9b1de4772d1"
+  },
+  "game_executed": false,
+  "installation_and_saves_edited": false,
+  "limits": "Offline tool tests and exact byte checks; no runtime acceptance or complete dynamic call resolution claimed."
+}
