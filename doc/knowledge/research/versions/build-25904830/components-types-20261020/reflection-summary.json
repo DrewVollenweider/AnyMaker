@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "tool_version": "1.0.0",
+  "tool_sha256": "73ca97530a4cdfa33638eb59943948b20c8b6ee615555d2def4bfb23389e5c98",
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "scan_start": 66398861,
+  "table_offset": 66399263,
+  "table_end": 82528301,
+  "table_bytes": 16129038,
+  "prefix_bytes_unparsed": 402,
+  "descriptors": 8084,
+  "structures": 7633,
+  "enums": 451,
+  "ambiguous_names": {
+    "ptr<client_scene.creative_dome>": 2,
+    "ptr<client_scene.peer.inspection_data.microcontroller_element>": 2
+  },
+  "fields_starting_at_reported_size": [
+    {
+      "type": "server.replicator_context",
+      "field": "m_data",
+      "field_type": "server.replicator_context.data",
+      "offset": 16
+    },
+    {
+      "type": "server_scene.vehicle_component.microcontroller",
+      "field": "_m_script_parser",
+      "field_type": "server_scene_script.parser",
+      "offset": 1408
+    }
+  ],
+  "complete_storage_widths_checked": false,
+  "rejected_candidates": {
+    "Invalid descriptor text length": 1
+  },
+  "limits": "Observed kinds 13/14 only; flags and unknown zero-list meaning unresolved. Descriptor vtable/lifecycle names are declarations, not executed runtime calls or complete ABI recovery."
+}

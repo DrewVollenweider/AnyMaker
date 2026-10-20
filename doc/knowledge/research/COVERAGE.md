@@ -2,6 +2,8 @@
 
 Measurements in this checkpoint apply to build 25904830. Keyword counts come from the [machine-readable system index](versions/build-25904830/system-map.json), with overlapping topics and template expansion; they cannot be converted into a percentage of understanding.
 
+Current continuation: [component types/construction/geometry](COMPONENTS-TYPES-20261020.md). Scanner 1.4 retains all earlier records and adds 58 template-qualified functions. The current local index has 37,140 functions; reflection now supplies declared class/enum/method/field information. Historical rows below remain measurements of their own checkpoints.
+
 Latest scope supersedes the earlier topic-only queue: [full-game audit register](AUDIT-REGISTER.md), [new findings and historical review](FULL-AUDIT-20261019.md), [complete indexed scope accounting](versions/build-25904830/full-audit-20261019/scope-summary.json), and [every component class group](versions/build-25904830/full-audit-20261019/component-audit.json). The table below retains chronological measurements; they must not be summed blindly because later readers include earlier exports.
 
 | Dimension | Completed | Does not establish |
@@ -22,6 +24,10 @@ Latest scope supersedes the earlier topic-only queue: [full-game audit register]
 | Full-game scope follow-up | All 1,737 definitions/379 source-class groups; 598 components/207 named classes; all 37,082 records/4,364 owner groups retained | Class binding, default recovery or understanding of every indexed item; 15,049 method-name leads remain unclassified |
 | Expanded combined reader | 153 unique functions/43,027 instructions/253,345 bytes; 60 synthetic tool tests | Whole-game decompilation, ABI recovery, all virtual targets or all prose interpretations |
 | Historical creation recheck | Six later truck/heli reports recovered; five archived files re-audited | The rejected heli inset still passes the basic audit; the cleaned giant export retains a frame-only grouping warning |
+| Function parser refresh | 37,140 bounded records; all previous 37,082 unchanged; 58 additional template-qualified functions | Complete GCL/container/loader coverage or understanding of the new bodies |
+| Declared reflection table | All 8,084 counted entries parsed through EOF: 7,633 structures, 451 enums | Complete runtime ABI, flag meanings, intrinsic implementations or ambiguity resolution for two repeated pointer names |
+| Component construction | All 207 named shipped classes have declarations/constructors; 211 non-root initialization parents agree with declarations | Complete specialized behavior of every class, every variant or every declared method |
+| Current selected reader | 394 unique functions/58,665 instructions/339,395 original instruction bytes | Whole-game semantic completion; 2,269 indirect sites remain unresolved |
 | System map | 15 topics with definition/code leads and question queues | Explanations of 15 systems |
 | Detailed investigation | Opening/Hatch matching -> sealing flag -> water-flow branch | Player passage, all geometry/dynamic states, or runtime acceptance |
 | New runtime experiments | **0** | Testing of any new game behavior |
@@ -31,7 +37,7 @@ Latest scope supersedes the earlier topic-only queue: [full-game audit register]
 | System | Current reliable entry point | Remaining work |
 | --- | --- | --- |
 | Building/coordinates/welding/structural islands | Current edge/plate/component adjacency, reciprocal attachment registration, and base-grid plate-facing checks; earlier mounting auditor | All inclined/contact cases, stable topology mutation, strength/destruction and split scheduling |
-| Components/interfaces/accessories/defaults | All 598 definitions, field presence, and interface-type index | Native parser defaults, compatibility of every variant, instance state |
+| Components/interfaces/accessories/defaults | All 598 definitions; reflected class/enum/field information, constructor paths, generic fallback and core parser/geometry defaults | Remaining defaults/intrinsics, complete variant compatibility and specialized instance behavior |
 | Physics/collision/damage/repair | PE/GCL physics leads and existing constraint research | Collision shapes, constraint parameters/failure, damage/repair state machines |
 | Engines/torque/gears/clutches/wheels/belts/tracks | Current combustion engine speed gates, manifold throttle combining, staged damage, oil/thermal paths, raw channel versus tooltip conversions | Full calibration/load model, other engine classes, complete durability and all drive variants |
 | Electrical | Consumer calls are sequential within component updates; pending demand debited in following pre-build proportionally across sources; relay hysteresis | Stable component-vector construction across loads/splits, generator/redistribution losses, complete solver |

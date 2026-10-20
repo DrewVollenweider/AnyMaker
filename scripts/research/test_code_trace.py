@@ -31,6 +31,13 @@ R=vn('register',0);U=vn('unique',20);M=vn('ram',SLOT)
 class DataflowTests(unittest.TestCase):
     def run_flow(self,instructions):return trace.interpret(instructions,SLOTS)
 
+    def test_candidate_cache_never_selects_one_ambiguous_signature(self):
+        rows=[('unique',10,4),('ambiguous',20,5),('ambiguous',30,6),('ambiguous',40,7)]
+        targets=trace.candidate_index(rows)
+        self.assertEqual(targets['unique'],{'code_offset':10,'code_size':4})
+        self.assertIsNone(targets['ambiguous'])
+        self.assertIsNone(targets.get('absent'))
+
     def test_slot_memory_copy_then_indirect_call(self):
         calls,reads=self.run_flow([ins(1,op('COPY',R,M)),ins(2,op('CALLIND',None,R))])
         self.assertEqual(calls[0]['resolution'],'slot-derived-in-local-block')

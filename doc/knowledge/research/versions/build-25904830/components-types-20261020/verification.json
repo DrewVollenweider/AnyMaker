@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "date": "2026-10-20",
+  "source_check": {
+    "schema": 1,
+    "date": "2026-10-20",
+    "installed_buildid": "25904830",
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "definition_files_checked": 2968,
+    "definition_file_mismatches": []
+  },
+  "selected_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "d50e9288592c2f2ef55dfcd3b042433e4d61242247104796249a0b4e7f3e855d",
+    "function_records_checked": 242,
+    "constants_checked": 24,
+    "strings_checked": 14,
+    "call_instruction_examples_checked": 7,
+    "limitations": "Exact static identities/bytes only; virtual target binding and prose semantics are not proven by this checker."
+  },
+  "reflection_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "69d24f7374cb557ca6d809758e932f2ea7b16b88cdd5aa0eec839d6664571fca",
+    "table_records_checked": 8084,
+    "selected_type_identities_checked": 234,
+    "enum_label_lists_checked": 6,
+    "fields_checked": 31,
+    "virtual_declarations_checked": 8,
+    "limits": "Static descriptor declarations and identities only. Not executed dispatch, full storage ABI, units, lifecycle semantics or whole-game understanding."
+  },
+  "reader_counts": {
+    "functions": 394,
+    "identical_exports_deduplicated": 1,
+    "instructions_byte_checked": 58665,
+    "slot_derived_calls": 3203,
+    "unresolved_calls": 2269
+  },
+  "reader_instruction_bytes_checked": 339395,
+  "research_tool_tests_passed": 89,
+  "research_tool_test_log_sha256": "839a9c8ec16ac73e1730cfd604a26ce633a427eaec959d6ac0fc840b412394fa",
+  "scope_summary": {
+    "function_records": 37140,
+    "method_owner_groups": 4385,
+    "unparsed_signatures": 0,
+    "topic_name_leads_overlapping": {
+      "building": 842,
+      "components": 4679,
+      "controls": 2229,
+      "doors": 271,
+      "electric": 572,
+      "fluids": 1428,
+      "input_audio_ui": 3177,
+      "multiplayer": 4666,
+      "physics": 1607,
+      "powertrain": 1382,
+      "rendering": 3000,
+      "saves": 1203,
+      "scripts": 2265,
+      "survival": 2964,
+      "unclassified": 15050,
+      "world": 4577
+    },
+    "reader_identity_matches": 394,
+    "all_definition_records": 1737,
+    "definition_source_class_groups": 379,
+    "component_definitions": 598,
+    "explicit_component_classes": 207,
+    "component_definitions_with_omitted_class": 4,
+    "class_groups_with_same_name_owner": 203
+  },
+  "reflection_summary": {
+    "schema": 1,
+    "tool_version": "1.0.0",
+    "tool_sha256": "73ca97530a4cdfa33638eb59943948b20c8b6ee615555d2def4bfb23389e5c98",
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "scan_start": 66398861,
+    "table_offset": 66399263,
+    "table_end": 82528301,
+    "table_bytes": 16129038,
+    "prefix_bytes_unparsed": 402,
+    "descriptors": 8084,
+    "structures": 7633,
+    "enums": 451,
+    "ambiguous_names": {
+      "ptr<client_scene.creative_dome>": 2,
+      "ptr<client_scene.peer.inspection_data.microcontroller_element>": 2
+    },
+    "fields_starting_at_reported_size": [
+      {
+        "type": "server.replicator_context",
+        "field": "m_data",
+        "field_type": "server.replicator_context.data",
+        "offset": 16
+      },
+      {
+        "type": "server_scene.vehicle_component.microcontroller",
+        "field": "_m_script_parser",
+        "field_type": "server_scene_script.parser",
+        "offset": 1408
+      }
+    ],
+    "complete_storage_widths_checked": false,
+    "rejected_candidates": {
+      "Invalid descriptor text length": 1
+    },
+    "limits": "Observed kinds 13/14 only; flags and unknown zero-list meaning unresolved. Descriptor vtable/lifecycle names are declarations, not executed runtime calls or complete ABI recovery."
+  },
+  "selected_counts": {
+    "combined_instruction_bytes": 339395,
+    "functions": 242,
+    "constants": 24,
+    "strings": 14,
+    "calls": 7,
+    "component_types": 224,
+    "constructor_types": 212,
+    "reflected_type_claims": 234,
+    "enum_claims": 6,
+    "field_claims": 31,
+    "virtual_claims": 8
+  },
+  "function_records_indexed": 37140,
+  "game_executed": false,
+  "installation_and_active_saves_edited": false,
+  "limits": "Static identity/bytes, declared metadata, selected prefix/arithmetic traces and synthetic checks. Full component behavior, storage ABI, runtime dispatch and the whole-game audit remain incomplete."
+}

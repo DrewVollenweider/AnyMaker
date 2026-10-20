@@ -17,8 +17,36 @@ import sys
 
 from baseline import resources, sha, write
 
-VERSION = '1.3.0'
-SIGNATURE = re.compile(rb'^\([^\x00-\x1f]*\) [^\x00-\x20]+ \([^\x00-\x1f]*\)$')
+VERSION = '1.4.0'
+SIGNATURE = re.compile(rb'^\([^\x00-\x1f]*\) [^\x00-\x1f]+ \([^\x00-\x1f]*\)$')
+
+
+def valid_signature(raw):
+    """Allow spaces in template arguments, never in a plain qualified name."""
+    if not SIGNATURE.fullmatch(raw):return False
+    try:value=raw.decode('utf-8')
+    except UnicodeDecodeError:return False
+    depth=0;end=None
+    for index,char in enumerate(value):
+        depth+=(char=='(')-(char==')')
+        if depth==0:
+            end=index;break
+    if end is None or value[end+1:end+2]!=' ':return False
+    rest=value[end+2:];angle=0;split=None
+    for index,char in enumerate(rest):
+        if char=='<':angle+=1
+        elif char=='>':
+            angle-=1
+            if angle<0:return False
+        elif char.isspace() and angle==0:
+            if rest[index:index+2]==' (':split=index;break
+            return False
+    if split is None or split==0 or angle:return False
+    depth=0
+    for index,char in enumerate(rest[split+1:]):
+        depth+=(char=='(')-(char==')')
+        if depth<0 or depth==0 and index!=len(rest[split+1:])-1:return False
+    return depth==0
 
 
 class Reader:
@@ -64,7 +92,7 @@ def header(b):
 def record(b, pos):
     r = Reader(b, pos - 4)
     signature = r.text()
-    if not SIGNATURE.fullmatch(signature.encode()):
+    if not valid_signature(signature.encode()):
         raise ValueError('not a function signature')
     m0, m1, count = r.u32(), r.u32(), r.u32()
     if not (0 < m0 < 256 and m0 & 1):
@@ -113,7 +141,7 @@ def scan(b):
         if not 5 < n < 65536 or pos + n > len(b):
             continue
         s = b[pos:pos+n]
-        if not SIGNATURE.fullmatch(s):
+        if not valid_signature(s):
             continue
         try:
             found.append(record(b, pos))

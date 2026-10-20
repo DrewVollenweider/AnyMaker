@@ -2,7 +2,7 @@
 
 Scope expanded on 2026-10-19: research every game system and revisit earlier work. This register is a work queue, not a completion certificate. Research stays offline; no new gameplay test is required from the user. Build 25904830 and source hashes remain mandatory boundaries.
 
-Start with the [latest findings](FULL-AUDIT-20261019.md), [scope accounting](versions/build-25904830/full-audit-20261019/scope-summary.json), and [every component class group](versions/build-25904830/full-audit-20261019/component-audit.json). Full local method indexes retain all 37,082 indexed functions, including 15,049 unclassified name leads. Names and export counts cannot establish implementation behavior.
+Start with the [current component/type findings](COMPONENTS-TYPES-20261020.md), [component declarations and constructor evidence](versions/build-25904830/components-types-20261020/component-bindings.json), and [earlier full-scope findings](FULL-AUDIT-20261019.md). The refreshed local index retains 37,140 bounded functions, including all previous 37,082 records; 15,050 method-name leads remain unclassified. The reflection parser reads the declared 8,084-entry table. Names, declarations and export counts cannot establish complete implementation behavior.
 
 ## Required review for every component and mechanic
 
@@ -14,14 +14,14 @@ Start with the [latest findings](FULL-AUDIT-20261019.md), [scope accounting](ver
 6. Separate render geometry, collision, structural connectivity and buoyancy. Record counterexamples and incomplete paths.
 7. Reconcile older claims with matching-build evidence. Preserve user observations at their actual scope; never convert an old successful snapshot into endurance proof.
 
-All 207 named component classes and the omitted-class group remain individually reviewable. The public component audit deliberately leaves semantic status pending even when selected methods were exported. Counts do not silently promote a whole class to understood.
+All 207 named component classes now have reflected declarations and constructor evidence, and the omitted-class group's base fallback is traced. They remain individually reviewable for specialized behavior. The earlier public class-count audit remains historical; it deliberately did not infer semantic status from exports. Counts do not silently promote a whole class to understood.
 
 ## Systems and dependencies
 
 | Area | Current evidence | Required continuation |
 | --- | --- | --- |
 | Coordinates, nodes, edges, plates, grids and islands | Current 8 cm grid, support offsets, thickness, graph traversal and attachment tests; historical native tools | Full inclined/equivalent-grid cases, split/merge/weld scheduling, strength, destruction, topology mutation and graph rebuilding |
-| Components, accessories and interfaces | All 598 definitions indexed; exact-owner name candidates for 203 classes; fitted-item oil filter and battery paths sampled | Resolve omitted/generic/inherited classes, every variant's parser defaults, interface compatibility and mounting/accessory behavior |
+| Components, accessories and interfaces | All 598 definitions; all 207 named classes matched to reflection/constructors; generic fallback, inherited declarations and core parser/geometry defaults traced | Full variant behavior, remaining defaults/intrinsics, every interface compatibility and mounting/accessory state |
 | Physics, collision, constraints and damage | Current vehicle compound-shape builder exported; selected actor impact arithmetic; historical constraint leads | Complete shapes/material flags, player capsule interaction, mass/inertia, constraints, friction, breakage, repair and collision scheduling |
 | Combustion and drivetrain | Current engine gates/thermal/oil paths; gearboxes, discrete clutch and positive-only shift correction | Full torque solver, ratios and losses, loads, all engine sizes, wheels, hydraulic truck wheels, belts, tracks, differentials and brakes |
 | Flight, jets, rotors and marine propulsion | Jet combustion/compressor exports; collective input, control-surface and propeller branches sampled | Complete jet assembly/start/thrust, rotor force/torque/axis behavior, swashplate, aerodynamic calibration and water/air transitions |
@@ -36,7 +36,7 @@ All 207 named component classes and the omitted-class group remain individually 
 | Multiplayer, authority and synchronization | Peer seat-input fields, server unlock messaging and replication leads | Ownership and validation, authority transfers, update order, loss/reconnect behavior, persistence, host/client differences and version handling |
 | Rendering, assets, materials and animation | Existing Mesh/asset pipeline, current plate geometry and collision distinction | All asset variants/formats, dynamic assembly, texture/material semantics, animations, visibility, lighting, particles and performance |
 | Input, audio, UI, localization and journal | Historical digital pedals; current seat getters; shipped audio/localization resources | Complete input mapping/device origin, bindings, spatial audio/event timing, UI states/settings, manuals/journal and translation completeness |
-| Residual code and data | Every indexed function retained, with unmatched leads explicit | Classify remaining helpers/platform/library/generated code and unidentified data; never infer feature absence from a zero keyword count |
+| Residual code and data | All 37,140 indexed functions retained; declared reflection table parsed to EOF, with aliases/flags/layout boundaries preserved | Remaining GCL debug/loader/intrinsic rules, unmatched helpers/library code and unidentified data; never infer feature absence from a zero keyword count |
 
 ## Earlier work that must remain in scope
 

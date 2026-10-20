@@ -67,13 +67,26 @@ The [engine/structure follow-up](OFFLINE-ENGINE-STRUCTURE-20261019.md) adds anot
 
 ## Updates and historical records
 
+The [2026-10-20 component/type checkpoint](COMPONENTS-TYPES-20261020.md) adds a counted reflection-table parser/query tool, constructor-prefix tracer, explicit-input geometry models and a selected declaration checker. Full reflection databases stay local. Scanner 1.4 accepts template-qualified function names containing spaces; rebuild the GCL index after changing parser source because export planning verifies its tool hash. Source bytes/build did not change. Tracer 1.1 caches signature candidates once while preserving duplicates as unresolved; before/after constructor evidence matches.
+
+```powershell
+python scripts/research/reflection_index.py build "$r/snapshot/bin/game.gcl" "$r/gcl/index.sqlite" "$r/reflection"
+python scripts/research/reflection_index.py show "$r/reflection/types.sqlite" server_scene.vehicle_component.gearbox_c --section methods
+python scripts/research/reflection_index.py show "$r/reflection/types.sqlite" vehicle_component_definition.e_logic_node_type --section enum
+python scripts/research/constructor_trace.py "$r/snapshot/bin/game.gcl" "$r/gcl/index.sqlite" "$e1" "$r/constructors"
+python scripts/research/component_geometry.py
+python scripts/research/check_reflection_evidence.py "$r/snapshot/bin/game.gcl" doc/knowledge/research/versions/build-25904830/components-types-20261020/reflection-evidence.json --output "$r/reflection-check.json"
+```
+
+Reflection requires a bounded, counted table ending exactly at EOF; arbitrary descriptor-looking strings are insufficient. Unknown flags/list meaning, duplicate names/labels and boundary fields remain explicit. Constructor analysis stops at branches/gaps, distinguishes field constructors from same-address base initialization, clears call-clobbered state and does not recover the complete ABI or vtable execution. Geometry models require explicit inputs rather than inventing unrecovered vector defaults or native validation limits.
+
 The [full-game audit](FULL-AUDIT-20261019.md) adds `audit_scope.py` for exhaustive accounting over the supplied GCL/definition indexes. It retains unclassified names and omitted classes, checks a reader's completion/source identity, and emits local function/class/definition-group queues. Public summaries deliberately omit the full method inventory. No class is automatically marked understood.
 
 ```powershell
 python scripts/research/audit_scope.py "$r/gcl/index.sqlite" "$r/catalog/definitions.sqlite" "$r/scope" --reader "$r/reader/code.sqlite"
 ```
 
-Reader 1.1 accepts identical repeated exports after auditing every batch, counts each function's instructions once, and reports deduplicated exports. Identity, approximate C, assembly and evidence must all match; conflicting duplicates are rejected and the reader stays incomplete. Use a fresh output after a failed build. The latest nine-batch reader has 153 functions/43,027 instructions/253,345 bytes. All 60 synthetic research-tool tests passed, including duplicate conflict and scope-accounting failure controls. The evidence checker input for this follow-up is `versions/build-25904830/full-audit-20261019/evidence.json`.
+Reader 1.1 accepts identical repeated exports after auditing every batch, counts each function's instructions once, and reports deduplicated exports. Identity, approximate C, assembly and evidence must all match; conflicting duplicates are rejected and the reader stays incomplete. Use a fresh output after a failed build. That nine-batch checkpoint reader had 153 functions/43,027 instructions/253,345 bytes. Its 60 synthetic research-tool tests passed, including duplicate conflict and scope-accounting failure controls. Its evidence checker input is `versions/build-25904830/full-audit-20261019/evidence.json`.
 
 ```powershell
 python scripts/research/check_historical.py "$r/snapshot/bin/game.gcl" "$r/gcl/index.sqlite" "<directory-of-selected-evidence-json>" "$r/historical-check.json"

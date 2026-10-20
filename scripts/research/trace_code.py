@@ -19,7 +19,18 @@ import struct
 from baseline import sha, write
 from gcl_index import record as parse_record
 
-VERSION = '1.0.0'
+VERSION = '1.1.0'
+
+
+def candidate_index(rows):
+    """Cache exact signatures once; duplicate signatures remain unresolved."""
+    result={}
+    for signature,offset,size in rows:
+        if signature in result:
+            result[signature]=None
+        else:
+            result[signature]={'code_offset':offset,'code_size':size}
+    return result
 
 
 def node_key(node):
@@ -241,6 +252,7 @@ def audit(source, database, folder, output):
         expected = json.loads(db.execute("SELECT value FROM provenance WHERE key='source_sha256'").fetchone()[0])
         if expected != digest or meta['source_sha256'] != digest:
             raise ValueError('Index/export/source mismatch')
+        targets=candidate_index(db.execute('SELECT signature,code_offset,code_size FROM functions'))
         if not 0 < len(meta['records']) <= 256:
             raise ValueError('Select at most 256 functions per evidence bundle')
         results = []
@@ -259,11 +271,8 @@ def audit(source, database, folder, output):
             calls, reads = interpret(instructions, slots)
             for call in calls:
                 symbol = call.get('symbol')
-                rows = db.execute('SELECT code_offset,code_size FROM functions WHERE signature=?', (symbol,)).fetchall() if symbol else []
-                if len(rows) == 1 and call.get('kind') in (4, 6):
-                    call['target_record_candidate'] = {'code_offset':rows[0][0], 'code_size':rows[0][1]}
-                elif symbol:
-                    call['target_record_candidate'] = None
+                if symbol:
+                    call['target_record_candidate'] = targets.get(symbol) if call.get('kind') in (4,6) else None
             results.append({'signature':rec['signature'], 'code_offset':rec['code_offset'],
                 'code_sha256':rec['code_sha256'], 'export_name':name, 'facts_sha256':sha(factpath),
                 'instructions_byte_checked':len(instructions), 'call_sites':calls,

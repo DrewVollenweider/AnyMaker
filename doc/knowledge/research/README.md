@@ -1,6 +1,8 @@
 # Whole-game research
 
-Latest continuation: [full-game scope and new traces](FULL-AUDIT-20261019.md), with an [audit register covering every system and past subject](AUDIT-REGISTER.md). It accounts for all indexed records and 207 named component classes, adds current gearbox/filter/weather/propulsion/survival/save traces, and recovers the later truck/helicopter records. The combined reader now covers 153 selected functions. Full-game semantic understanding remains incomplete. Continue offline without requiring in-game testing, and retain unresolved bindings and historical failures explicitly.
+Latest checkpoint: [component construction, reflection and geometry](COMPONENTS-TYPES-20261020.md). The current parser reads the complete declared 8,084-entry reflection table and indexes 37,140 bounded function records, preserving all earlier records. All 207 shipped named component classes have reflected declarations and constructor-prefix evidence; specialized behavior remains separately reviewable. The combined reader contains 394 selected functions. The full-game audit remains active and incomplete.
+
+Previous checkpoint: [full-game scope and new traces](FULL-AUDIT-20261019.md), with an [audit register covering every system and past subject](AUDIT-REGISTER.md). It accounted for the then-indexed records and 207 named component classes, added gearbox/filter/weather/propulsion/survival/save traces, and recovered the later truck/helicopter records. Its combined reader covered 153 selected functions. Continue offline without requiring in-game testing, retaining unresolved bindings and historical failures explicitly.
 
 Earlier checkpoints: [engines, edges and plates](OFFLINE-ENGINE-STRUCTURE-20261019.md), [electrical/liquid/script systems](OFFLINE-SYSTEMS-20261019.md), and the [offline reader](OFFLINE-20261019.md). Historical runtime protocols remain reference plans, not a gate for this assignment.
 

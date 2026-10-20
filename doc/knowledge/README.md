@@ -2,7 +2,9 @@
 
 Whole-game research started October 18: [versioned research hub](research/README.md), [coverage and gaps](research/COVERAGE.md), [Opening/Hatch implementation trace](research/SEALING.md), and [restart instructions](research/HANDOFF.md). This extends the historical engineering archive below; whole-game understanding and runtime verification remain incomplete.
 
-October 19 scope now includes **all systems and past research**: [full audit register](research/AUDIT-REGISTER.md) and [latest findings, including the October 17-18 truck/helicopter records](research/FULL-AUDIT-20261019.md). The combined selected-code reader has 153 functions; complete indexed scope is accounted for separately from actual understanding. The rejected helicopter inset remains rejected, and later static checks are not promoted to successful gameplay tests.
+October 20: [component construction, reflection and geometry](research/COMPONENTS-TYPES-20261020.md) adds the complete declared 8,084-entry type table, inherited component declarations, core native defaults, interface directions/indexes and current geometry helpers. The selected reader now contains 394 functions. Full-system behavior remains under investigation.
+
+October 19 scope expanded to **all systems and past research**: [full audit register](research/AUDIT-REGISTER.md) and [findings including the October 17-18 truck/helicopter records](research/FULL-AUDIT-20261019.md). That checkpoint's reader contained 153 functions. Indexed scope remains separate from actual understanding. The rejected helicopter inset stays rejected; later static checks are not successful gameplay tests.
 
 Updated 16 October 2026. This is the accumulated project knowledge from **11–16 October**, including the pedestal petrol engine, **compact inline-four / CPE1Running**, giant-engine circulation and working test vehicle. It complements the existing browser-builder documentation.
 

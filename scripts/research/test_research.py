@@ -36,6 +36,15 @@ def fixture(extra=0):
 
 
 class GclTests(unittest.TestCase):
+    def test_template_qualified_name_spaces_are_valid_but_plain_name_spaces_are_not(self):
+        old='() research.example (const s32)'
+        new='() research.container<s32, f64>.example (const s32)'
+        raw=text(new)+fixture()[len(text(old)):]
+        result,_=gcl.scan(raw)
+        self.assertEqual([row['signature'] for row in result],[new])
+        self.assertFalse(gcl.valid_signature(b'() research.bad name (const s32)'))
+        self.assertFalse(gcl.valid_signature(b'() research.container<s32, f64.example ()'))
+
     def test_export_plan_binds_source_and_parser_versions(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);source=root/'input.gcl';source.write_bytes(fixture())
