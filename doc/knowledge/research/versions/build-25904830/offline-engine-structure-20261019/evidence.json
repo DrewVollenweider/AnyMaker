@@ -1,0 +1,594 @@
+{
+  "schema": 1,
+  "date": "2026-10-19",
+  "build": "25904830",
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "() server_scene.vehicle_component.engine.tick (server_scene.vehicle_component.engine, server_scene.vehicle, server_scene)",
+      "signature_offset": 54492916,
+      "code_offset": 54501350,
+      "code_size": 11856,
+      "code_sha256": "2f8cab8374e952562c5c7e7584b9a7b0fc1756d310f1a2dea6b7fb1d108cf4b4"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.engine.create (server_scene.vehicle_component.engine, server_scene.vehicle)",
+      "signature_offset": 54469208,
+      "code_offset": 54469900,
+      "code_size": 416,
+      "code_sha256": "63c954571dc0982ecd41388f0751559879e04e93f3282fe6230309f3593313ab"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.engine.parse_save_data (server_scene.vehicle_component.engine, server_scene.save_data.parser)",
+      "signature_offset": 54475786,
+      "code_offset": 54476812,
+      "code_size": 1704,
+      "code_sha256": "1f14b2ade57c174172ad3a866ea825592237f478a0e9e3ca829760aeae154ea7"
+    },
+    {
+      "signature": "(ptr<f64>) server_scene.vehicle_component.engine.get_data_f64 (server_scene.vehicle_component.engine, const string)",
+      "signature_offset": 54471177,
+      "code_offset": 54471463,
+      "code_size": 1464,
+      "code_sha256": "04d4daf50bc915959c884ec8771f05fb0aec21369569a431a6e085fec60c0507"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.engine.add_mating_component (server_scene.vehicle_component.engine, server_scene.vehicle, const s32, server_scene.vehicle_component, const s32)",
+      "signature_offset": 54451581,
+      "code_offset": 54454733,
+      "code_size": 1680,
+      "code_sha256": "f434d648cf5bf7fe7eca0e4da475d031d22aa6868f8fc3dedd2773706f64bbe5"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.engine.build_tooltip_data (server_scene.vehicle_component.engine, server_scene.peer.inspection_data.vehicle)",
+      "signature_offset": 54458881,
+      "code_offset": 54461074,
+      "code_size": 6536,
+      "code_sha256": "1e45336ff9a4a18455f393ae694fb1bcd1f72a24d821d14a8289876863fe6d54"
+    },
+    {
+      "signature": "() server_scene.vehicle_edge.create_island_links (server_scene.vehicle_edge, server_scene.vehicle)",
+      "signature_offset": 58205373,
+      "code_offset": 58207708,
+      "code_size": 1944,
+      "code_sha256": "84297c04b49c2b7b6b8695771880e81808bf90eab1fc7384e905e0aca63594af"
+    },
+    {
+      "signature": "() server_scene.vehicle_plate.create_island_links (server_scene.vehicle_plate, server_scene.vehicle)",
+      "signature_offset": 59061060,
+      "code_offset": 59065172,
+      "code_size": 1880,
+      "code_sha256": "bec91cb7b64bb1bc4298a3df02e17e824f3fb9715f77c238c2532dfbd14c584e"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.create_island_links (server_scene.vehicle_component, server_scene.vehicle)",
+      "signature_offset": 54221152,
+      "code_offset": 54223153,
+      "code_size": 1864,
+      "code_sha256": "6d45d669adec825af1425a9e1bff7f2810b55b98d222bd64b0cbb2c7bc9b44f6"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle.test_component_attaches_to_vehicle (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition)",
+      "signature_offset": 53314072,
+      "code_offset": 53314581,
+      "code_size": 152,
+      "code_sha256": "7f406e6613deb077bf65a283e4f9b3c24d3c2183fbb0c51ccd83929eb6ad8517"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle.test_component_attaches_to_vehicle (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const ptr<vehicle_util.attach_component_hit_data>)",
+      "signature_offset": 53315101,
+      "code_offset": 53315661,
+      "code_size": 160,
+      "code_sha256": "9da12e3523e1ca3d37e87d49c36eadb1bca91d3061d40de57769982f71b3c14e"
+    },
+    {
+      "signature": "() server_scene.vehicle._flood_island (server_scene.vehicle, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)",
+      "signature_offset": 52524956,
+      "code_offset": 52526963,
+      "code_size": 1520,
+      "code_sha256": "466932ffdd183fd72fc7f9f86593840ae7d0a25d0759e517dfc0bf4c60911331"
+    },
+    {
+      "signature": "() server_scene.vehicle._flood_islands (server_scene.vehicle)",
+      "signature_offset": 52529371,
+      "code_offset": 52533957,
+      "code_size": 1936,
+      "code_sha256": "da110ba7f6eb84ef1d9c7178f1a0f6ce4da52815acb0b34e9eabaf4eea89ce58"
+    },
+    {
+      "signature": "() server_scene.vehicle._flood_islands (server_scene.vehicle, server_scene.vehicle_edge, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)",
+      "signature_offset": 52536732,
+      "code_offset": 52539235,
+      "code_size": 1424,
+      "code_sha256": "cafe184f0af9420802d0c6071cf9f5965233ea71dc1c0c91c9c27187d31fd5b1"
+    },
+    {
+      "signature": "() server_scene.vehicle._flood_islands (server_scene.vehicle, server_scene.vehicle_plate, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)",
+      "signature_offset": 52541725,
+      "code_offset": 52543833,
+      "code_size": 688,
+      "code_sha256": "3d1a92e1f56de92bf71b13bfaf4bf2e8d34c199a1b422bbf404c183e90ac1438"
+    },
+    {
+      "signature": "() server_scene.vehicle._flood_islands (server_scene.vehicle, server_scene.vehicle_component, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)",
+      "signature_offset": 52545290,
+      "code_offset": 52547798,
+      "code_size": 944,
+      "code_sha256": "49f1f7b99a938e7baebea4298d2589294861e46d787204081faf1a7f74eec807"
+    },
+    {
+      "signature": "() server_scene.vehicle._rebuild_islands (server_scene.vehicle, server_scene, const bool)",
+      "signature_offset": 52578719,
+      "code_offset": 52579586,
+      "code_size": 2416,
+      "code_sha256": "da74ae4e499a81c642a7105ac8f8077beb3c2bd17d9a3ef8dd4a4e5b0397e550"
+    },
+    {
+      "signature": "(vec3) vehicle_plate_util.get_plate_node_surface_offset (const vec3_s32, const vec3, const s32)",
+      "signature_offset": 63454819,
+      "code_offset": 63455641,
+      "code_size": 2304,
+      "code_sha256": "d6ee9d56ae839836532b7ff6600fc53800fe5f06438c3a1d8f17409b073bc140"
+    },
+    {
+      "signature": "() vehicle_plate_util._g_plate_node_corners.$ctor ()",
+      "signature_offset": 63221419,
+      "code_offset": 63221745,
+      "code_size": 640,
+      "code_sha256": "0dd89a475fa9433733b60548a95f1a941dbb19d34f9f8fd977d362e7e934185a"
+    },
+    {
+      "signature": "() G_VEHICLE_PLATE_THICKNESS.$ctor ()",
+      "signature_offset": 275715,
+      "code_offset": 275805,
+      "code_size": 32,
+      "code_sha256": "c030362aa2cabf7445fda8dacbd38ecc17ceae67c9d27fd4be9e2a8a3da2a6d6"
+    },
+    {
+      "signature": "(collision.plane) server_scene.vehicle_plate.get_plane (const server_scene.vehicle_plate)",
+      "signature_offset": 59085871,
+      "code_offset": 59086069,
+      "code_size": 112,
+      "code_sha256": "66f73e798b8fb14673a033cf85704b5010b581b8632cb48208595fb3d85af540"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_plate.calculate_surface_area (const server_scene.vehicle_plate)",
+      "signature_offset": 59058175,
+      "code_offset": 59058881,
+      "code_size": 1664,
+      "code_sha256": "2db397ab7b8a3df63c9d174990d5c9351c77746cfe0edb598c32b9b5819773da"
+    },
+    {
+      "signature": "() vehicle_plate_util.add_static_geometry (const vector<vec3_s32>, const vec3, const s32, const s32, const vec3_s32, const s32, const vehicle_plate_util.e_plate_type, const s32, const e_vehicle_glass_state, const vector<vec3_s32>, vehicle_plates_edges_builder)",
+      "signature_offset": 63374340,
+      "code_offset": 63375987,
+      "code_size": 1648,
+      "code_sha256": "cca1c85b26cd805318d3b45a7b93e9e996e3dcc68994d156b6e55bcf93719727"
+    },
+    {
+      "signature": "(bool) vehicle_util.test_component_attaches_to_vehicle<server_scene> (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const ptr<vehicle_util.attach_component_hit_data>)",
+      "signature_offset": 65654078,
+      "code_offset": 65662243,
+      "code_size": 24032,
+      "code_sha256": "3ab1b49f2efa9a00cbb68a1cc77726f9b1ffc2e1b09359c0c14fbb7b8731285c"
+    },
+    {
+      "signature": "(bool) vehicle_plate_util.get_is_physics_plate (const vehicle_plate_util.e_plate_type)",
+      "signature_offset": 63404347,
+      "code_offset": 63404453,
+      "code_size": 44,
+      "code_sha256": "0726148b159163b4e2456ede41a67c15f1a242624accc68039abff6e123ad745"
+    },
+    {
+      "signature": "(bool) vehicle_plate_util.get_is_physics_plate (const vehicle_plate_util.e_plate_type, const e_vehicle_glass_state)",
+      "signature_offset": 63404663,
+      "code_offset": 63404892,
+      "code_size": 136,
+      "code_sha256": "8f01b9ad20c015210629bc1a55482adfb10d09f6c7e1696a5af520f06a3534ba"
+    },
+    {
+      "signature": "() G_VEHICLE_GRID_SIZE.$ctor ()",
+      "signature_offset": 271524,
+      "code_offset": 271602,
+      "code_size": 32,
+      "code_sha256": "b8fe5f027019f2f3891444cce2e9a8919c0b0f21bd6b626950347b31aec5f04d"
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 271602,
+      "offset": 271626,
+      "format": "f64",
+      "bytes": "7b14ae47e17ab43f",
+      "value": 0.08,
+      "name": "native grid size"
+    },
+    {
+      "function_offset": 275805,
+      "offset": 275829,
+      "format": "f64",
+      "bytes": "7b14ae47e17a843f",
+      "value": 0.01,
+      "name": "plate thickness"
+    },
+    {
+      "function_offset": 63455641,
+      "offset": 63457889,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "default support multiplier"
+    },
+    {
+      "function_offset": 63455641,
+      "offset": 63457897,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "large support size selector"
+    },
+    {
+      "function_offset": 63455641,
+      "offset": 63457905,
+      "format": "f64",
+      "bytes": "0000000000000840",
+      "value": 3.0,
+      "name": "large support multiplier"
+    },
+    {
+      "function_offset": 63455641,
+      "offset": 63457913,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "support half factor"
+    },
+    {
+      "function_offset": 63404453,
+      "offset": 63404493,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "non-physics plate type"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54513094,
+      "format": "f64",
+      "bytes": "0000000000001840",
+      "value": 6.0,
+      "name": "combustion lower RPS gate"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54513070,
+      "format": "f64",
+      "bytes": "000000000040bf40",
+      "value": 8000.0,
+      "name": "combustion upper RPM gate"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54513078,
+      "format": "f64",
+      "bytes": "0000000000004e40",
+      "value": 60.0,
+      "name": "RPM per RPS"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54512998,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "damage stage one energy multiplier"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54513126,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "second damage stage"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54513142,
+      "format": "f64",
+      "bytes": "f168e388b5f8e43e",
+      "value": 1e-05,
+      "name": "clean to dirty lubricant factor"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54513158,
+      "format": "f64",
+      "bytes": "2d431cebe2361a3f",
+      "value": 0.0001,
+      "name": "damage increment and damaged-fluid move request"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54513174,
+      "format": "f64",
+      "bytes": "0000000000006440",
+      "value": 160.0,
+      "name": "overheat threshold"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54513022,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "lubrication availability multiplier"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54513006,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "unit clamp"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54513014,
+      "format": "f64",
+      "bytes": "0000000000002440",
+      "value": 10.0,
+      "name": "intake pressure clamp upper"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54513030,
+      "format": "f64",
+      "bytes": "0000000000001040",
+      "value": 4.0,
+      "name": "exhaust reduction lower"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54513038,
+      "format": "f64",
+      "bytes": "0000000000003440",
+      "value": 20.0,
+      "name": "exhaust reduction upper"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54513046,
+      "format": "f64",
+      "bytes": "0000000080847e41",
+      "value": 32000000.0,
+      "name": "fuel energy coefficient"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54513054,
+      "format": "f64",
+      "bytes": "333333333333d33f",
+      "value": 0.3,
+      "name": "fuel conversion multiplier"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54513062,
+      "format": "s32",
+      "bytes": "90010000",
+      "value": 400,
+      "name": "volume power coefficient"
+    },
+    {
+      "function_offset": 54501350,
+      "offset": 54513198,
+      "format": "f64",
+      "bytes": "7b14ae47e17ab43f",
+      "value": 0.08,
+      "name": "final speed damping coefficient"
+    }
+  ],
+  "strings": [
+    {
+      "function_offset": 54476812,
+      "offset": 54478404,
+      "text": "user_defined_alias"
+    },
+    {
+      "function_offset": 54476812,
+      "offset": 54478423,
+      "text": "rps"
+    },
+    {
+      "function_offset": 54476812,
+      "offset": 54478436,
+      "text": "temperature"
+    },
+    {
+      "function_offset": 54476812,
+      "offset": 54478448,
+      "text": "sound"
+    },
+    {
+      "function_offset": 54476812,
+      "offset": 54478454,
+      "text": "damage"
+    },
+    {
+      "function_offset": 54476812,
+      "offset": 54478461,
+      "text": "damage_factor"
+    },
+    {
+      "function_offset": 54476812,
+      "offset": 54478475,
+      "text": "content_lubricant"
+    },
+    {
+      "function_offset": 54476812,
+      "offset": 54478493,
+      "text": "content_coolant"
+    },
+    {
+      "function_offset": 54471463,
+      "offset": 54472871,
+      "text": "rps"
+    },
+    {
+      "function_offset": 54471463,
+      "offset": 54472875,
+      "text": "throttle"
+    },
+    {
+      "function_offset": 54471463,
+      "offset": 54472884,
+      "text": "temperature"
+    },
+    {
+      "function_offset": 54471463,
+      "offset": 54472896,
+      "text": "fuel_flow"
+    },
+    {
+      "function_offset": 54471463,
+      "offset": 54472906,
+      "text": "air_flow"
+    },
+    {
+      "function_offset": 54471463,
+      "offset": 54472915,
+      "text": "torque"
+    }
+  ],
+  "call_examples": [
+    {
+      "function_offset": 54501350,
+      "instruction": 54511292,
+      "bytes": "ff10",
+      "slot_address": 54513278,
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_torque_node.get_rps (const server_scene.vehicle_torque_node)"
+    },
+    {
+      "function_offset": 54501350,
+      "instruction": 54507028,
+      "bytes": "ff13",
+      "slot_address": 54513582,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_gas_content.modify_content (server_scene.vehicle_gas_content, const server_scene.e_vehicle_gas_type, const f64, const f64)"
+    },
+    {
+      "function_offset": 54501350,
+      "instruction": 54510575,
+      "bytes": "ff13",
+      "slot_address": 54513710,
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_liquid_content.move_content (server_scene.vehicle_liquid_content, server_scene.vehicle_liquid_content, const f64)"
+    },
+    {
+      "function_offset": 54501350,
+      "instruction": 54509991,
+      "bytes": "ff13",
+      "slot_address": 54513670,
+      "kind": 4,
+      "symbol": "() weather_manager.blend_temperature_towards_ambient (weather_manager, const server_scene, const mat34, f64, const f64)"
+    },
+    {
+      "function_offset": 54223153,
+      "instruction": 54223617,
+      "bytes": "41ff12",
+      "slot_address": 54225049,
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle.test_component_attaches_to_vehicle (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const ptr<vehicle_util.attach_component_hit_data>)"
+    },
+    {
+      "function_offset": 54223153,
+      "instruction": 54223887,
+      "bytes": "ff10",
+      "slot_address": 54225081,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_edge>) server_scene.vehicle.get_edge_by_id (server_scene.vehicle, const s32)"
+    },
+    {
+      "function_offset": 54223153,
+      "instruction": 54224321,
+      "bytes": "ff10",
+      "slot_address": 54225121,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate>) server_scene.vehicle.get_plate_by_id (server_scene.vehicle, const s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65677611,
+      "bytes": "ff13",
+      "slot_address": 65686747,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_vectors_opposite_direction_s32 (const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65680141,
+      "bytes": "ff5500",
+      "slot_address": 65686763,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_2d_rectangle_intersect_triangle_s32 (const vec2_s32, const vec2_s32, const vec2_s32, const vec2_s32, const vec2_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65681688,
+      "bytes": "ff16",
+      "slot_address": 65686787,
+      "kind": 4,
+      "symbol": "(bool) vehicle_grid_util.test_grids_equivalent (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 63375987,
+      "instruction": 63376568,
+      "bytes": "ff13",
+      "slot_address": 63377667,
+      "kind": 4,
+      "symbol": "(vec3) vehicle_plate_util.get_plate_node_surface_offset (const vec3_s32, const vec3, const s32)"
+    },
+    {
+      "function_offset": 63375987,
+      "instruction": 63376971,
+      "bytes": "41ff16",
+      "slot_address": 63377691,
+      "kind": 4,
+      "symbol": "() vehicle_plate_util.add_geometry_inner_opening (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const s32, const vec3_s32, const s32, vehicle_plates_edges_builder)"
+    },
+    {
+      "function_offset": 63375987,
+      "instruction": 63377514,
+      "bytes": "41ff12",
+      "slot_address": 63377723,
+      "kind": 4,
+      "symbol": "() vehicle_plate_util.add_geometry_outer (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const vec3_s32, const s32, vehicle_plates_edges_builder)"
+    },
+    {
+      "function_offset": 63455641,
+      "instruction": 63455724,
+      "bytes": "ff13",
+      "slot_address": 63457945,
+      "kind": 4,
+      "symbol": "(s32) vehicle_util.get_nonzero_axis_count (const vec3_s32)"
+    },
+    {
+      "function_offset": 63455641,
+      "instruction": 63456508,
+      "bytes": "ff13",
+      "slot_address": 63458025,
+      "kind": 4,
+      "symbol": "(f64) vec3.get_dot (const vec3, const vec3)"
+    }
+  ],
+  "new_export_counts": {
+    "functions": 27,
+    "instructions_byte_checked": 11186,
+    "instruction_bytes_checked": 68043
+  },
+  "limits": [
+    "Selected static identities/bytes only; no game runtime acceptance or complete collision/thermal model.",
+    "Slot-derived calls identify local dependencies, not proven dynamic target bindings."
+  ]
+}

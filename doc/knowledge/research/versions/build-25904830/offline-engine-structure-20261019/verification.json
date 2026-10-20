@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "date": "2026-10-19",
+  "selected_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "d50e9288592c2f2ef55dfcd3b042433e4d61242247104796249a0b4e7f3e855d",
+    "function_records_checked": 27,
+    "constants_checked": 24,
+    "strings_checked": 14,
+    "call_instruction_examples_checked": 15,
+    "limitations": "Exact static identities/bytes only; virtual target binding and prose semantics are not proven by this checker."
+  },
+  "reader_counts": {
+    "functions": 92,
+    "instructions_byte_checked": 25041,
+    "slot_derived_calls": 1203,
+    "unresolved_calls": 935
+  },
+  "new_exports": {
+    "functions": 27,
+    "instructions_byte_checked": 11186,
+    "instruction_bytes_checked": 68043
+  },
+  "research_implementation_changed": false,
+  "previous_research_tests_passed": 51,
+  "research_tests_rerun": false,
+  "game_executed": false,
+  "installation_and_saves_edited": false,
+  "limits": "Instruction/source identity and selected-byte checks; not a proof of all prose semantics, ABI, runtime target binding or complete collision/thermal behavior."
+}

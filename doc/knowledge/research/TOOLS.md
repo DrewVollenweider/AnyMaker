@@ -63,6 +63,8 @@ The reader and checks use Python standard-library modules, including SQLite FTS5
 
 The [systems follow-up](OFFLINE-SYSTEMS-20261019.md) adds two further batches: 36 functions, 7,042 instructions/38,015 bytes. Build a new reader from all four distinct export directories to obtain 65 functions/13,855 instructions. `python scripts/research/static_models.py` prints illustrative electrical and liquid calculations without game execution. All 51 research-tool tests passed; the new selected evidence checks 44 identities, 13 constants, four strings and 20 call examples. Use `versions/build-25904830/offline-systems-20261019/evidence.json` as the checker input for this follow-up. Models have an explicitly narrower scope than the native network solver.
 
+The [engine/structure follow-up](OFFLINE-ENGINE-STRUCTURE-20261019.md) adds another two batches: 27 functions, 11,186 instructions/68,043 bytes. A reader built from all six distinct batches contains 92 functions/25,041 instructions. Its selected-evidence input is `versions/build-25904830/offline-engine-structure-20261019/evidence.json`: 27 identities, 24 constants, 14 strings, 15 call examples checked. No research implementation changed, so the prior 51-test suite was not repeated; the new validation is byte/evidence/documentation checking. Earlier engine generators and cardinal structural-mount audits remain useful within their documented limits.
+
 ## Updates and historical records
 
 ```powershell

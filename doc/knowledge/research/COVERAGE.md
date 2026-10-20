@@ -16,6 +16,7 @@ Measurements in this checkpoint apply to build 25904830. Keyword counts come fro
 | Offline call-use traces | 297 local operand-slot dependencies at call sites; 270 unresolved indirect calls | A resolved runtime call graph; a kind 6 displacement is not necessarily a direct function pointer |
 | Offline selected evidence | 29 record identities, 17 constants, four strings, 21 call examples checked; 42 research-tool tests | Automated proof of prose semantics or game-runtime acceptance |
 | Offline systems follow-up | 36 further functions/7,042 instructions/38,015 bytes; combined reader 65 functions/13,855 instructions; 51 tests | Complete component ordering, all conservation edge cases, or a whole-program script budget |
+| Engine/structure follow-up | 27 further functions/11,186 instructions/68,043 bytes; combined reader 92 functions/25,041 instructions | Complete engine calibration, all contact/collision cases, or structural strength thresholds |
 | System map | 15 topics with definition/code leads and question queues | Explanations of 15 systems |
 | Detailed investigation | Opening/Hatch matching -> sealing flag -> water-flow branch | Player passage, all geometry/dynamic states, or runtime acceptance |
 | New runtime experiments | **0** | Testing of any new game behavior |
@@ -24,10 +25,10 @@ Measurements in this checkpoint apply to build 25904830. Keyword counts come fro
 
 | System | Current reliable entry point | Remaining work |
 | --- | --- | --- |
-| Building/coordinates/welding/structural islands | Existing grid/island research; historical signatures relocated this checkpoint | Current call paths, all contact tolerances, destruction/island-split scheduling |
+| Building/coordinates/welding/structural islands | Current edge/plate/component adjacency, reciprocal attachment registration, and base-grid plate-facing checks; earlier mounting auditor | All inclined/contact cases, stable topology mutation, strength/destruction and split scheduling |
 | Components/interfaces/accessories/defaults | All 598 definitions, field presence, and interface-type index | Native parser defaults, compatibility of every variant, instance state |
 | Physics/collision/damage/repair | PE/GCL physics leads and existing constraint research | Collision shapes, constraint parameters/failure, damage/repair state machines |
-| Engines/torque/gears/clutches/wheels/belts/tracks | Accepted engines/vehicles and historical native traces | Current per-class review, load/durability, all sizes and wheel arrangements |
+| Engines/torque/gears/clutches/wheels/belts/tracks | Current combustion engine speed gates, manifold throttle combining, staged damage, oil/thermal paths, raw channel versus tooltip conversions | Full calibration/load model, other engine classes, complete durability and all drive variants |
 | Electrical | Consumer calls are sequential within component updates; pending demand debited in following pre-build proportionally across sources; relay hysteresis | Stable component-vector construction across loads/splits, generator/redistribution losses, complete solver |
 | Liquid/gas/temperature/cooling | Native 0.5 L/voxel capacity factor; overfill pressure surrogate and level/static-bias head; conservative direct mixture transfers and equalization | Multi-source edge cases, all units/species labels, sources/sinks, all variants and thermal equilibrium |
 | Doors/openings/hatches/latches/rails/actuators | New sealing path; historical mechanical/hydraulic connections | Collision/player passage, independent latch experiment, dynamic boundaries |
@@ -37,7 +38,7 @@ Measurements in this checkpoint apply to build 25904830. Keyword counts come fro
 | World/buildings/bunkers/environment | All data JSON; tile/dungeon source leads | Generation/seeds/environment state; vegetation binaries |
 | Saves/creations/metadata/versions | Accepted native examples; raw-field preservation tools | Current parse/save defaults, migration, world-versus-creation differences |
 | Multiplayer | Server/client/replication global leads | Authority, ownership, synchronization order, disconnect/reconnect persistence |
-| Rendering/materials/dynamic assembly/animation | Existing Mesh/binding/resource tools and format identification | All current formats, dynamic assembly, comparison with runtime visuals |
+| Rendering/materials/dynamic assembly/animation | Existing Mesh tools; current plate support offsets, 1 cm thickness and type dispatch | Full outer/sloped/window geometry, collision, dynamic assembly, runtime visual comparison |
 | Input/audio/UI/translations/journal | Historical digital-input evidence; audio descriptors and translation identification | Complete input mapping, audio timing, UI/journal logic |
 
 Each topic still needs inputs/outputs, units/coordinates, defaults/thresholds, state transitions, update order, dependencies, serialization omissions, failure modes, implementation evidence, and experiments. Keyword hits do not promote unfinished work to completed status.
