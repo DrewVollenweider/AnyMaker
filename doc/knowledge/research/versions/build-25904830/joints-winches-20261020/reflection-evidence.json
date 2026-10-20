@@ -1,0 +1,894 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "table": {
+    "offset": 66399263,
+    "end": 82528301,
+    "records": 8084,
+    "sha256": "5d619ecd6c69220d0e873d73e012dd301038f4eb911d859486db58c386b60a8e"
+  },
+  "types": [
+    {
+      "name": "server_scene.vehicle_component.constraint_link",
+      "base": "",
+      "offset": 78513518,
+      "length": 540,
+      "descriptor_sha256": "59e8bfe9ec3a3f8ce7a6d3eaebf62f804d70b1fdc7ad6f4779fe150a96060f30",
+      "size": 16,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.hinge_pin",
+      "base": "server_scene.vehicle_component",
+      "offset": 79429996,
+      "length": 16275,
+      "descriptor_sha256": "175e3cb184f250691cc90a4836b2cfddca3fa99eb2877956c9169a1eb172a1c6",
+      "size": 568,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.mounting_pin",
+      "base": "server_scene.vehicle_component",
+      "offset": 80625839,
+      "length": 16326,
+      "descriptor_sha256": "a45be711356c2b159cb0410965e5d15f82e8d1fe20cac48c113b6d063bcd0b32",
+      "size": 552,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.latch_pin",
+      "base": "server_scene.vehicle_component",
+      "offset": 80009257,
+      "length": 16604,
+      "descriptor_sha256": "8dafef0148f8cb45394371d7447200c551b63d9d2aa905a78b63dee4e61d2fb1",
+      "size": 664,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.latch_handle",
+      "base": "server_scene.vehicle_component",
+      "offset": 79976102,
+      "length": 16823,
+      "descriptor_sha256": "1251791dc9c81b0f2271957017f4237930a29840a85c6bd81395501a40741d00",
+      "size": 680,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.rail",
+      "base": "server_scene.vehicle_component",
+      "offset": 80771212,
+      "length": 16104,
+      "descriptor_sha256": "16fa8b287cd753efbdecbe5a7e38d145b758f61eafe5c9d011a0103fdcfafb5d",
+      "size": 552,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.rail_slider",
+      "base": "server_scene.vehicle_component",
+      "offset": 80822665,
+      "length": 16252,
+      "descriptor_sha256": "3b48ad5b51fa4f7ec535584f2a182814c3054ee7452d22473c1252d03e162847",
+      "size": 576,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.rail_ballscrew",
+      "base": "server_scene.vehicle_component",
+      "offset": 80788555,
+      "length": 16552,
+      "descriptor_sha256": "ed4a4df651b8ce0d870d993f6382f5ecb4f20fd31b388d019383b2698b5834d9",
+      "size": 592,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.rail_ballscrew_slider",
+      "base": "server_scene.vehicle_component",
+      "offset": 80805973,
+      "length": 16596,
+      "descriptor_sha256": "778d2d7f40a632b5f3b98686400f96e42952fd19b4ae40b82096e3a96a0990b6",
+      "size": 552,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.tow_bar",
+      "base": "server_scene.vehicle_component",
+      "offset": 81488735,
+      "length": 16414,
+      "descriptor_sha256": "fccbeedae48c1bae16d9bed781f1ccab2e4ef25f12dfed98fa2c918357ef2dd2",
+      "size": 608,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.tow_hitch",
+      "base": "server_scene.vehicle_component",
+      "offset": 81505248,
+      "length": 16579,
+      "descriptor_sha256": "3256045a2dfbf07a4c182f841ab20242b439c1080205f2ab219fe35f881e2280",
+      "size": 640,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.winch",
+      "base": "server_scene.vehicle_component",
+      "offset": 81638362,
+      "length": 15831,
+      "descriptor_sha256": "26a4b6a77c487d531c10c8d6aac88e732f7c598674986b9e544d3441842f472c",
+      "size": 608,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.rope",
+      "base": "replication.master.object_events",
+      "offset": 77727856,
+      "length": 1757,
+      "descriptor_sha256": "182b981c6e4593ecbe2b7584878f1f529cf86f10c795ce89f5bb1b32015f0e17",
+      "size": 728,
+      "alignment": 8
+    },
+    {
+      "name": "vehicle_component_definition",
+      "base": "",
+      "offset": 82324625,
+      "length": 6248,
+      "descriptor_sha256": "1774d2f983ea15c1a085bd263b14d832d0178a35e56f635cb58e5359359fed45",
+      "size": 1912,
+      "alignment": 8
+    }
+  ],
+  "enums": [],
+  "fields": [
+    {
+      "type": "server_scene.vehicle_component.constraint_link",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component>",
+        "name": "m_component",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.constraint_link",
+      "field": {
+        "type": "s32",
+        "name": "m_vehicle_id",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.constraint_link",
+      "field": {
+        "type": "s32",
+        "name": "m_tier",
+        "offset": 12
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hinge_pin",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_connected",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hinge_pin",
+      "field": {
+        "type": "physics.constraint.hinge",
+        "name": "_m_constraint",
+        "offset": 512
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hinge_pin",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component.hinge_knuckle>",
+        "name": "m_connected_component",
+        "offset": 528
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hinge_pin",
+      "field": {
+        "type": "s32",
+        "name": "m_connected_vehicle_id",
+        "offset": 536
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hinge_pin",
+      "field": {
+        "type": "s32",
+        "name": "m_connected_component_id",
+        "offset": 540
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hinge_pin",
+      "field": {
+        "type": "f64",
+        "name": "m_angle_min",
+        "offset": 544
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hinge_pin",
+      "field": {
+        "type": "f64",
+        "name": "m_angle_max",
+        "offset": 552
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.hinge_pin",
+      "field": {
+        "type": "bool",
+        "name": "m_is_constraint_suppressed",
+        "offset": 560
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.mounting_pin",
+      "field": {
+        "type": "physics.constraint.fixed",
+        "name": "_m_constraint",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.mounting_pin",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component.mounting_knuckle>",
+        "name": "m_connected_component",
+        "offset": 496
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.mounting_pin",
+      "field": {
+        "type": "s32",
+        "name": "m_connected_vehicle_id",
+        "offset": 504
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.mounting_pin",
+      "field": {
+        "type": "s32",
+        "name": "m_connected_component_id",
+        "offset": 508
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.mounting_pin",
+      "field": {
+        "type": "s32",
+        "name": "m_constraint_orientation_index",
+        "offset": 512
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.mounting_pin",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_connected",
+        "offset": 520
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_pin",
+      "field": {
+        "type": "server_scene.vehicle_mechanical_node_in",
+        "name": "m_logic_disconnect",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_pin",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 512
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_pin",
+      "field": {
+        "type": "physics.constraint.fixed",
+        "name": "_m_constraint",
+        "offset": 552
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_pin",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component.latch_knuckle>",
+        "name": "m_connected_component",
+        "offset": 568
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_pin",
+      "field": {
+        "type": "s32",
+        "name": "m_connected_vehicle_id",
+        "offset": 576
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_pin",
+      "field": {
+        "type": "s32",
+        "name": "m_connected_component_id",
+        "offset": 580
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_pin",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 584
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_pin",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_activated",
+        "offset": 600
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_pin",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_connected",
+        "offset": 632
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_handle",
+      "field": {
+        "type": "server_scene.vehicle_element.handle",
+        "name": "m_element_handle",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_handle",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 528
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_handle",
+      "field": {
+        "type": "physics.constraint.fixed",
+        "name": "_m_constraint",
+        "offset": 568
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_handle",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component.latch_knuckle>",
+        "name": "m_connected_component",
+        "offset": 584
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_handle",
+      "field": {
+        "type": "s32",
+        "name": "m_connected_vehicle_id",
+        "offset": 592
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_handle",
+      "field": {
+        "type": "s32",
+        "name": "m_connected_component_id",
+        "offset": 596
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_handle",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 600
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_handle",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_activated",
+        "offset": 616
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.latch_handle",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_connected",
+        "offset": 648
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail",
+      "field": {
+        "type": "server_scene.vehicle_mechanical_node_in",
+        "name": "m_logic_disconnect",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail",
+      "field": {
+        "type": "vector<server_scene.vehicle_component.rail.slider_data>",
+        "name": "m_connected_components",
+        "offset": 512
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_slider",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_connected",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_slider",
+      "field": {
+        "type": "server_scene.vehicle_mechanical_node_in",
+        "name": "m_logic_disconnect",
+        "offset": 512
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_slider",
+      "field": {
+        "type": "physics.constraint.slider",
+        "name": "_m_constraint",
+        "offset": 544
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_slider",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component.rail>",
+        "name": "m_connected_component",
+        "offset": 560
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_slider",
+      "field": {
+        "type": "s32",
+        "name": "m_connected_vehicle_id",
+        "offset": 568
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_slider",
+      "field": {
+        "type": "s32",
+        "name": "m_connected_component_id",
+        "offset": 572
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_ballscrew",
+      "field": {
+        "type": "server_scene.vehicle_torque_data",
+        "name": "m_torque_data",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_ballscrew",
+      "field": {
+        "type": "vector<server_scene.vehicle_component.rail_ballscrew.slider_data>",
+        "name": "m_connected_components",
+        "offset": 544
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_ballscrew",
+      "field": {
+        "type": "f64",
+        "name": "_m_slide_distance_pending",
+        "offset": 584
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_ballscrew_slider",
+      "field": {
+        "type": "server_scene.vehicle_mechanical_node_in",
+        "name": "m_logic_disconnect",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_ballscrew_slider",
+      "field": {
+        "type": "physics.constraint.slider",
+        "name": "_m_constraint",
+        "offset": 512
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_ballscrew_slider",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component.rail_ballscrew>",
+        "name": "m_connected_component",
+        "offset": 528
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_ballscrew_slider",
+      "field": {
+        "type": "s32",
+        "name": "m_connected_vehicle_id",
+        "offset": 536
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_ballscrew_slider",
+      "field": {
+        "type": "s32",
+        "name": "m_connected_component_id",
+        "offset": 540
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.rail_ballscrew_slider",
+      "field": {
+        "type": "f64",
+        "name": "m_slide_position",
+        "offset": 544
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_bar",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_bar",
+      "field": {
+        "type": "physics.constraint.point",
+        "name": "_m_constraint",
+        "offset": 520
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_bar",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component.tow_hitch>",
+        "name": "m_connected_component",
+        "offset": 536
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_bar",
+      "field": {
+        "type": "s32",
+        "name": "m_connected_vehicle_id",
+        "offset": 544
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_bar",
+      "field": {
+        "type": "s32",
+        "name": "m_connected_component_id",
+        "offset": 548
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_bar",
+      "field": {
+        "type": "s32",
+        "name": "m_connection_cooldown",
+        "offset": 552
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_bar",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 560
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_bar",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_connected",
+        "offset": 576
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_hitch",
+      "field": {
+        "type": "server_scene.vehicle_mechanical_node_in",
+        "name": "m_logic_disconnect",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_hitch",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 512
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_hitch",
+      "field": {
+        "type": "physics.constraint.point",
+        "name": "_m_constraint",
+        "offset": 552
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_hitch",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component.tow_bar>",
+        "name": "m_connected_component",
+        "offset": 568
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_hitch",
+      "field": {
+        "type": "s32",
+        "name": "m_connected_vehicle_id",
+        "offset": 576
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_hitch",
+      "field": {
+        "type": "s32",
+        "name": "m_connected_component_id",
+        "offset": 580
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_hitch",
+      "field": {
+        "type": "s32",
+        "name": "m_connection_cooldown",
+        "offset": 584
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_hitch",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 592
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.tow_hitch",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_connected",
+        "offset": 608
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.winch",
+      "field": {
+        "type": "server_scene.vehicle_torque_data",
+        "name": "m_torque_data",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.winch",
+      "field": {
+        "type": "server_scene.vehicle_mechanical_node_in",
+        "name": "m_logic_clutch",
+        "offset": 544
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.winch",
+      "field": {
+        "type": "server_scene.vehicle_element.rope_attach_point",
+        "name": "m_rope_attach_point",
+        "offset": 576
+      }
+    },
+    {
+      "type": "server_scene.rope",
+      "field": {
+        "type": "s32",
+        "name": "m_id",
+        "offset": 64
+      }
+    },
+    {
+      "type": "server_scene.rope",
+      "field": {
+        "type": "server_scene.item_world_ref",
+        "name": "m_item_world",
+        "offset": 72
+      }
+    },
+    {
+      "type": "server_scene.rope",
+      "field": {
+        "type": "server_scene.rope.connection_point",
+        "name": "m_connection_a",
+        "offset": 120
+      }
+    },
+    {
+      "type": "server_scene.rope",
+      "field": {
+        "type": "server_scene.rope.connection_point",
+        "name": "m_connection_b",
+        "offset": 256
+      }
+    },
+    {
+      "type": "server_scene.rope",
+      "field": {
+        "type": "replication.master.property_f64",
+        "name": "m_length",
+        "offset": 392
+      }
+    },
+    {
+      "type": "server_scene.rope",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_color_index",
+        "offset": 432
+      }
+    },
+    {
+      "type": "server_scene.rope",
+      "field": {
+        "type": "server_scene.rope.physics",
+        "name": "m_physics",
+        "offset": 464
+      }
+    },
+    {
+      "type": "server_scene.rope",
+      "field": {
+        "type": "bool",
+        "name": "m_is_rebuild_physics",
+        "offset": 624
+      }
+    },
+    {
+      "type": "server_scene.rope",
+      "field": {
+        "type": "mat34",
+        "name": "m_transform",
+        "offset": 632
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "vec3",
+        "name": "m_center_stretch_grid",
+        "offset": 384
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "vec3_s32",
+        "name": "m_constraint_position",
+        "offset": 752
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "vec3",
+        "name": "m_constraint_offset",
+        "offset": 768
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "vector<mat33_s32>",
+        "name": "m_constraint_orientations",
+        "offset": 792
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "e_vehicle_component_surface_dir",
+        "name": "m_hinge_constraint_axis",
+        "offset": 1076
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_hinge_constraint_limit_min",
+        "offset": 1080
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_hinge_constraint_limit_max",
+        "offset": 1088
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "string",
+        "name": "m_tow_hitch_definition_id_other",
+        "offset": 1728
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "bool",
+        "name": "m_tow_hitch_is_parent",
+        "offset": 1744
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "e_vehicle_component_surface_dir",
+        "name": "m_tow_hitch_direction",
+        "offset": 1748
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_tow_hitch_constraint_dot_min",
+        "offset": 1752
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "ptr<const vehicle_component_definition>",
+        "name": "m_tow_hitch_definition_other",
+        "offset": 1760
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "vec3",
+        "name": "m_door_hinge_constraint_pos",
+        "offset": 1864
+      }
+    }
+  ],
+  "virtuals": []
+}

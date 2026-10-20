@@ -1,5 +1,7 @@
 # Whole-game research
 
+Latest continuation: [hinges, mounts, latches, rails, tow links and winches](JOINTS-WINCHES-20261020.md). Per-peer tiers, release/capture gates, slider construction, ballscrew motor arithmetic and rope endpoint stretch are traced. The reader has 1,110 functions/154,167 checked instructions/877,643 bytes; all 143 research tests pass. Native solver units and full joint lifecycle remain open, along with the full-game audit.
+
 Latest continuation: [hydraulic cylinders, track contact and native raycast ordering](ACTUATORS-TRACKS-RAYCAST-20261020.md). The reader has 1,093 functions/149,791 checked instructions; 135 synthetic tests pass. New findings cover chamber bounds/update order, cylinder-size geometry, multibody cleanup, distinct roller contact, hit sorting and native generic erase. Loader specialization remains explicit; whole-game semantic review is incomplete.
 
 Previous continuation: [wheel contact, gas circulation, heat and selected native helpers](CONTACT-FLUIDS-NATIVE-20261020.md). That checkpoint added suspension/grip arithmetic, pressure-released truck brakes, gas overload temperature differences, exchanger/world-sampling paths and selected native vector/math registrations.

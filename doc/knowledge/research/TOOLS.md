@@ -25,6 +25,7 @@ Source: `scripts/research/`. Python 3.12+ standard library; Ghidra exports addit
 | `contact_models.py`, `test_contact_models.py` | Selected wheel load/grip, tangent cap and pressure-brake arithmetic; excludes casts, topology, support motion and native physics |
 | `gas_thermal_models.py`, `test_gas_thermal_models.py` | Ordinary gas transfer, explicit pair/vector temperature difference and quantity-weighted heat blend; not a whole-network simulator |
 | `actuator_models.py`, `test_actuator_models.py` | Selected two-chamber quantity bounds, pre-correction capacity writes and size-dependent geometry; not a native constraint/force solver |
+| `joint_models.py`, `test_joint_models.py` | Selected per-peer constraint tiers, hinge interval repair, ballscrew brake/target/mass and winch length gates; ordinary-domain guards; excludes native constraint/rope physics and complete lifecycle |
 | `native_image.py`, `test_native_image.py` | Bounded read-only x64 PE mapping, exception-directory ranges, signature strings and relative-byte-pattern leads; patterns do not establish bindings |
 | `native_export.py` 1.1.0, `ExportNative.java`, `test_native_export.py` | Static selected native spans through existing Ghidra; explicit assembly-only mode; exact source/range/artifact/instruction checks; manual spans and exception entries do not guarantee full function boundaries or ABI |
 

@@ -1,5 +1,7 @@
 # Handoff and restart
 
+Current continuation: [hinges, mounts, latches, rails, tow links and winches](JOINTS-WINCHES-20261020.md). Reader: 1,110 functions/154,167 instructions/877,643 bytes; 143 tests pass. Hinge suppression is a maximum tier per peer body. Ordinary slider release is 1.0, ballscrew slider release 0.5. Ballscrew repeatedly writes brake; winch retains any blocked-rope brake within its loop. Rope stretch uses endpoint distance. Preserve these distinctions and unresolved lifecycle/native limits. Continue controls/sensors/data and every remaining full-register area. Broad goal remains active.
+
 Current continuation: [hydraulic cylinders, tracks and raycast ordering](ACTUATORS-TRACKS-RAYCAST-20261020.md). Reader 1,093 functions/149,791 instructions/852,045 bytes; 135 synthetic tests pass. Preserve pre-correction chamber-capacity writes and the distinctions between ordinary wheels, fixed/suspension rollers and sprockets. Native exporter 1.1 supports explicit assembly-only work; failed C remains failed. Exception entries can be adjacent fragments, and generic loader specialization remains explicit. Continue all remaining moving-joint families and the full register. Broad goal remains active.
 
 Previous continuation: [contact, fluids and native helpers](CONTACT-FLUIDS-NATIVE-20261020.md). Read the gas pair/vector temperature distinction before reusing models. Exact local/publication paths are in workspace RESEARCH-HANDOFF.md.

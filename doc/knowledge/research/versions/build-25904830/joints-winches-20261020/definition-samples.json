@@ -1,0 +1,224 @@
+{
+  "schema": 1,
+  "definitions": [
+    {
+      "id": "hinge_pin",
+      "class_name": "hinge_pin",
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/117",
+      "definition_sha256": "9784f7a765088f209bf50631f75700970ba0af79e29c043cbdef78950490718d",
+      "selected_fields": {
+        "constraint_orientations": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0
+          ]
+        ],
+        "hinge_constraint_limit_max": 3.141592653589793,
+        "hinge_constraint_limit_min": 0.0,
+        "hinge_definition_id_other": "hinge_knuckle",
+        "hinge_direction": 1
+      }
+    },
+    {
+      "id": "mounting_pin",
+      "class_name": "mounting_pin",
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/148",
+      "definition_sha256": "70f0a1b19844915bb24091a04f70153680c4127284bd33edeb07891beb31d1e6",
+      "selected_fields": {
+        "constraint_orientations": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            1,
+            0,
+            -1,
+            0,
+            0
+          ]
+        ],
+        "mounting_pin_definition_id_other": "mounting_knuckle"
+      }
+    },
+    {
+      "id": "rail",
+      "class_name": "rail",
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/139",
+      "definition_sha256": "c4eb7d2a37bc7deeb596b2afe45e19375e6684a1a2426da08d1380843cb61286",
+      "selected_fields": {
+        "constraint_orientations": [],
+        "rail_definition_id_other": "rail_slider"
+      }
+    },
+    {
+      "id": "rail_ballscrew",
+      "class_name": "rail_ballscrew",
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/123",
+      "definition_sha256": "aeec9bed80e1bf770eb18d74b43f6b1b463e1812f91ef70954623d1893224447",
+      "selected_fields": {
+        "center_stretch": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "constraint_orientations": [],
+        "rail_ballscrew_definition_id_other": "rail_ballscrew_slider"
+      }
+    },
+    {
+      "id": "tow_bar",
+      "class_name": "tow_bar",
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/49",
+      "definition_sha256": "c339c9f28bc4e7625d95ff78a5e6918ba1e60d70ec0a2adc4f855e56ba74501e",
+      "selected_fields": {
+        "constraint_orientations": [],
+        "tow_hitch_definition_id_other": "tow_hitch"
+      }
+    },
+    {
+      "id": "tow_hitch",
+      "class_name": "tow_hitch",
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/50",
+      "definition_sha256": "bc24fcd4602928c54c98c7f3e06d740c4eb1c5f80cbd308ffc7d7c7787c267f6",
+      "selected_fields": {
+        "constraint_orientations": [],
+        "tow_hitch_definition_id_other": "tow_bar"
+      }
+    },
+    {
+      "id": "truck_hitch",
+      "class_name": "tow_hitch",
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/42",
+      "definition_sha256": "f7299f8ed3e18ec8b96af8aeb9e5860d14a1f55a53114ccdd221eb46aa71e3e5",
+      "selected_fields": {
+        "constraint_orientations": [],
+        "constraint_position": [
+          0,
+          1,
+          0
+        ],
+        "tow_hitch_definition_id_other": "truck_hitch_kingpin"
+      }
+    },
+    {
+      "id": "truck_hitch_kingpin",
+      "class_name": "tow_bar",
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/43",
+      "definition_sha256": "883126c0dce6197cf108cb5ee9679b205d99716c3dba859ca9a7729fe3289b6a",
+      "selected_fields": {
+        "constraint_orientations": [
+          [
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "constraint_position": [
+          0,
+          1,
+          0
+        ],
+        "tow_hitch_definition_id_other": "truck_hitch"
+      }
+    },
+    {
+      "id": "winch",
+      "class_name": "winch",
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/13",
+      "definition_sha256": "6be35f2b26af6fdeac84e544f28d6de85e0c2d0d8bb5ab25b73c802e0f7c72e6",
+      "selected_fields": {
+        "constraint_orientations": []
+      }
+    }
+  ],
+  "limits": "Selected literal fields; omitted fields are not guessed defaults."
+}

@@ -1,5 +1,7 @@
 # Anymaker engineering knowledge — start here
 
+Newest research: [hinges, mounts, latches, rails, tow links and winches](research/JOINTS-WINCHES-20261020.md). Findings include per-body-pair hinge suppression, distinct release thresholds, ballscrew list-order effects, point-constraint ownership and winch length/stretch gates. The reader has 1,110 functions; all 143 research tests pass. Whole-game semantic review remains incomplete.
+
 Newest research: [hydraulic cylinders, tracks and native raycast ordering](research/ACTUATORS-TRACKS-RAYCAST-20261020.md). This traces two-chamber extension bounds, size-dependent capacity/geometry, body-pair constraint cleanup, separate roller contact and native hit sorting. The current reader has 1,093 functions; 135 research-tool tests pass. Whole-game semantic review remains incomplete.
 
 Previous continuation: [wheel contact, gas/thermal behavior and native helpers](research/CONTACT-FLUIDS-NATIVE-20261020.md), including pressure-released truck brakes, tyre calibration, gas-temperature overload differences and exchanger/world sampling.

@@ -1,0 +1,784 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "() server_scene.rope.g_max_length.$ctor ()",
+      "signature_offset": 51091303,
+      "code_offset": 51091403,
+      "code_size": 32,
+      "code_sha256": "0ac982ab33b8da09437d59c439919c120ffdae4bd5cd679d9a4c1f044cdddb97"
+    },
+    {
+      "signature": "() server_scene.rope.g_min_length.$ctor ()",
+      "signature_offset": 51091743,
+      "code_offset": 51091843,
+      "code_size": 32,
+      "code_sha256": "75d70596855935cae3912c880870ebe14428a8ffb5a8f09d5863a1e64f915840"
+    },
+    {
+      "signature": "(f64) server_scene.rope.get_stretch_factor (server_scene.rope, server_scene)",
+      "signature_offset": 51093771,
+      "code_offset": 51094075,
+      "code_size": 200,
+      "code_sha256": "10e5976597fcbc9b9fb48d253e0badcb38a3477eef1be6979af332b5db983c71"
+    },
+    {
+      "signature": "(f64) server_scene.rope.get_world_length (server_scene.rope, server_scene)",
+      "signature_offset": 51094524,
+      "code_offset": 51095346,
+      "code_size": 1624,
+      "code_sha256": "ea0910456a5d03bcb11a5a40f73d23e09dd14c090ee7c11c07ec3b503447cad5"
+    },
+    {
+      "signature": "() server_scene.rope.physics.g_stretch_factor_max.$ctor ()",
+      "signature_offset": 51129801,
+      "code_offset": 51129933,
+      "code_size": 32,
+      "code_sha256": "183ed211c08b7542cf907ad182f9b35a4b2308f88fa74b61ad071bb4da311272"
+    },
+    {
+      "signature": "() server_scene.vehicle._update_constraint_tiers (server_scene.vehicle)",
+      "signature_offset": 52673516,
+      "code_offset": 52674950,
+      "code_size": 728,
+      "code_sha256": "515821b3dc4f1e3ea355db685b411ed933762743bab63c628db7297b9f0e0259"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hinge_knuckle.gather_constraint_links (server_scene.vehicle_component.hinge_knuckle, vector<server_scene.vehicle_component.constraint_link>)",
+      "signature_offset": 55213977,
+      "code_offset": 55214354,
+      "code_size": 136,
+      "code_sha256": "f817494f99ac85d8018c0ac80da01457b3d7ceddc0b75f295f8b519fe0dee11a"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hinge_pin.connect_multibody (server_scene.vehicle_component.hinge_pin, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+      "signature_offset": 55238846,
+      "code_offset": 55241004,
+      "code_size": 6024,
+      "code_sha256": "12fd093eacbd9a358015ea5069fe32b9afb645d8e711b165bcc493ebc86ca8df"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hinge_pin.disconnect_multibody (server_scene.vehicle_component.hinge_pin, physics.scene)",
+      "signature_offset": 55256692,
+      "code_offset": 55257857,
+      "code_size": 960,
+      "code_sha256": "e9ee1c6679825a62a0c932b0480f4b14cbaf9b53840affa9598b2b5fe3b5ded8"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hinge_pin.gather_constraint_links (server_scene.vehicle_component.hinge_pin, vector<server_scene.vehicle_component.constraint_link>)",
+      "signature_offset": 55259483,
+      "code_offset": 55259852,
+      "code_size": 136,
+      "code_sha256": "29343dc5151ed2ba1705294b509e988a5296de94b384c931d5ed5377f8e925ae"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hinge_pin.interact_end (server_scene.vehicle_component.hinge_pin, server, server_scene, server_peer.data, client_peer.data.event.vehicle_component_interact_end)",
+      "signature_offset": 55262037,
+      "code_offset": 55264472,
+      "code_size": 2824,
+      "code_sha256": "91f1eff6407e0c9373fb391bbe13f372df7313decd7dcfbc696a2cf8babe566a"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hinge_pin.notify_constraint_tier (server_scene.vehicle_component.hinge_pin, const s32, const s32)",
+      "signature_offset": 55268460,
+      "code_offset": 55268611,
+      "code_size": 132,
+      "code_sha256": "e164ee3d4e4f63c0ad3b30acf3e7afb9d841a739c978db3b740152f921823f77"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hinge_pin.parse_save_data (server_scene.vehicle_component.hinge_pin, server_scene.save_data.parser)",
+      "signature_offset": 55269708,
+      "code_offset": 55270291,
+      "code_size": 808,
+      "code_sha256": "f84f7be0d598f23be62569e5f4a5f328a01f9c98f2fa1850eb0e4a17a43975c6"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.hinge_pin.tick (server_scene.vehicle_component.hinge_pin, server_scene.vehicle, server_scene)",
+      "signature_offset": 55280829,
+      "code_offset": 55282013,
+      "code_size": 1304,
+      "code_sha256": "62e1b2ce829b04450147baec9c24913857b5ffbc589a606eb553a27e71a4a394"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle_component.latch_handle.can_connect (const server_scene.vehicle_component.latch_handle)",
+      "signature_offset": 56092969,
+      "code_offset": 56093103,
+      "code_size": 34,
+      "code_sha256": "65bd16f226763d0c806fb5b96ab596ea5cec1f9009d685cefb46e376383eebb4"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.latch_handle.connect_multibody (server_scene.vehicle_component.latch_handle, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+      "signature_offset": 56093331,
+      "code_offset": 56094682,
+      "code_size": 2488,
+      "code_sha256": "a29a025ba4399e48788346bab4c3005be206112f491aa767cbe50d8f64680d8c"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.latch_handle.gather_constraint_links (server_scene.vehicle_component.latch_handle, vector<server_scene.vehicle_component.constraint_link>)",
+      "signature_offset": 56101134,
+      "code_offset": 56101509,
+      "code_size": 136,
+      "code_sha256": "2df648492f653f2919d8eb388552ad204656d8f3c494f5ae3545e7b11afe8dce"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.latch_handle.tick_multibody (server_scene.vehicle_component.latch_handle, server_scene.vehicle, server_scene)",
+      "signature_offset": 56127413,
+      "code_offset": 56130449,
+      "code_size": 4256,
+      "code_sha256": "52c8be65c7c9e52afbd826c909646afb1cc22aa38ca5de316ce8d4b957db70d4"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.latch_knuckle.gather_constraint_links (server_scene.vehicle_component.latch_knuckle, vector<server_scene.vehicle_component.constraint_link>)",
+      "signature_offset": 56143975,
+      "code_offset": 56144352,
+      "code_size": 136,
+      "code_sha256": "7bd21b77a7c96b50c2e1f1b34a5402e63b436712ee9dc5876c8794eee2d22d2e"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle_component.latch_pin.can_connect (const server_scene.vehicle_component.latch_pin)",
+      "signature_offset": 56158464,
+      "code_offset": 56158592,
+      "code_size": 34,
+      "code_sha256": "8301b50eab608691a2056ffc03d7b4eef2f0eda27e4f7e074cc0a6080037ef6c"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.latch_pin.gather_constraint_links (server_scene.vehicle_component.latch_pin, vector<server_scene.vehicle_component.constraint_link>)",
+      "signature_offset": 56168210,
+      "code_offset": 56168579,
+      "code_size": 136,
+      "code_sha256": "3e01a684e0dc35774e812ae40e40c0b462c7ebeca24df1952a68423bf6435e98"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.latch_pin.tick (server_scene.vehicle_component.latch_pin, server_scene.vehicle, server_scene)",
+      "signature_offset": 56185037,
+      "code_offset": 56185555,
+      "code_size": 304,
+      "code_sha256": "6bb87c62ab7eb2565723323eeeb5a8ca1647137f624ea2abd5997746db910e2f"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.latch_pin.tick_multibody (server_scene.vehicle_component.latch_pin, server_scene.vehicle, server_scene)",
+      "signature_offset": 56186229,
+      "code_offset": 56189241,
+      "code_size": 4256,
+      "code_sha256": "19fb3b31c3cd2c8a2f3bb4bc88cc5da8a98e15d564045f2989dcf006ff0d7cd3"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.mounting_knuckle.gather_constraint_links (server_scene.vehicle_component.mounting_knuckle, vector<server_scene.vehicle_component.constraint_link>)",
+      "signature_offset": 56993136,
+      "code_offset": 56993519,
+      "code_size": 136,
+      "code_sha256": "2d72e216023efd2c72e6b2f5185edb589c7b74e644c1b68570eb96b8b0634a88"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.mounting_pin.connect_multibody (server_scene.vehicle_component.mounting_pin, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+      "signature_offset": 57018190,
+      "code_offset": 57019740,
+      "code_size": 2976,
+      "code_sha256": "2652d83ea967714e18b30d94bd2b93089c78e614f86ae2b5754091cc8656a260"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.mounting_pin.gather_constraint_links (server_scene.vehicle_component.mounting_pin, vector<server_scene.vehicle_component.constraint_link>)",
+      "signature_offset": 57029810,
+      "code_offset": 57030185,
+      "code_size": 136,
+      "code_sha256": "2d72e216023efd2c72e6b2f5185edb589c7b74e644c1b68570eb96b8b0634a88"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.mounting_pin.parse_save_data (server_scene.vehicle_component.mounting_pin, server_scene.save_data.parser)",
+      "signature_offset": 57043457,
+      "code_offset": 57043932,
+      "code_size": 624,
+      "code_sha256": "525fbd0dacffa75d5cff6fdeebdbb949c9f7d0382e6d62f0f96258e099a1dfb4"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.mounting_pin.tick (server_scene.vehicle_component.mounting_pin, server_scene.vehicle, server_scene)",
+      "signature_offset": 57054771,
+      "code_offset": 57055362,
+      "code_size": 552,
+      "code_sha256": "21a9fa96b13987f6f7f9c89587530381455ee242b7935ce20e15cf755b12a675"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.rail.add_slider (server_scene.vehicle_component.rail, const ptr<server_scene.vehicle_component.rail_slider>)",
+      "signature_offset": 57174805,
+      "code_offset": 57175928,
+      "code_size": 472,
+      "code_sha256": "d2c6ee4d424b02fdeba1737c4831151496199b499c031150c2258df77e3489d4"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.rail.remove_slider (server_scene.vehicle_component.rail, const ptr<server_scene.vehicle_component.rail_slider>)",
+      "signature_offset": 57196985,
+      "code_offset": 57198215,
+      "code_size": 312,
+      "code_sha256": "cdac73ab8361a11b28ccd9d7ac12e4b5e56821c8094869df595262d4121a2248"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.rail.tick (server_scene.vehicle_component.rail, server_scene.vehicle, server_scene)",
+      "signature_offset": 57199980,
+      "code_offset": 57200343,
+      "code_size": 168,
+      "code_sha256": "47d1d680582333bf775ac2b3692ff8741a67bedc6b6626e7cc9c2d2fb77d2661"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.rail_ballscrew.add_slider (server_scene.vehicle_component.rail_ballscrew, const ptr<server_scene.vehicle_component.rail_ballscrew_slider>)",
+      "signature_offset": 57210852,
+      "code_offset": 57212145,
+      "code_size": 472,
+      "code_sha256": "d12d1d50ba360908c9b24fdec04eac114ebb2a595c8306abf4f6d0f41574ab50"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.rail_ballscrew.remove_slider (server_scene.vehicle_component.rail_ballscrew, const ptr<server_scene.vehicle_component.rail_ballscrew_slider>)",
+      "signature_offset": 57234972,
+      "code_offset": 57236382,
+      "code_size": 312,
+      "code_sha256": "69b892c83f7aaf441c6b86524eb760344c0fb89d82ad0f928fafbb7d9fbfff76"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.rail_ballscrew.tick (server_scene.vehicle_component.rail_ballscrew, server_scene.vehicle, server_scene)",
+      "signature_offset": 57238227,
+      "code_offset": 57240738,
+      "code_size": 2448,
+      "code_sha256": "f78948256950af83b77a6379b99961f6c5072f576552861969c32814f9c7fd96"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.rail_ballscrew_slider.connect_multibody (server_scene.vehicle_component.rail_ballscrew_slider, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+      "signature_offset": 57246115,
+      "code_offset": 57247667,
+      "code_size": 2664,
+      "code_sha256": "4b99349f39f01c53612f54a63a4fd35fdd7e534841f6cbad1562ba2280940b07"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.rail_ballscrew_slider.tick (server_scene.vehicle_component.rail_ballscrew_slider, server_scene.vehicle, server_scene)",
+      "signature_offset": 57265452,
+      "code_offset": 57266275,
+      "code_size": 680,
+      "code_sha256": "94933139cd8b838f3ae21187fcc0334513861b08aaa04bb9b82b2a0ebb621c7f"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.rail_ballscrew_slider.update_slider (server_scene.vehicle_component.rail_ballscrew_slider, f64, f64, f64)",
+      "signature_offset": 57267563,
+      "code_offset": 57267975,
+      "code_size": 248,
+      "code_sha256": "93c1c7088e2ca3478a23c7bc16c76927dd74910aa4239cd1503aa1f03e2b6dec"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.rail_slider.connect_multibody (server_scene.vehicle_component.rail_slider, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+      "signature_offset": 57270022,
+      "code_offset": 57271360,
+      "code_size": 2696,
+      "code_sha256": "115f511b2986ba95e5443fb3afaebc1e10d45be94392a0658c56121dc5f4017d"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.rail_slider.disconnect_multibody (server_scene.vehicle_component.rail_slider, physics.scene)",
+      "signature_offset": 57276750,
+      "code_offset": 57277414,
+      "code_size": 528,
+      "code_sha256": "52e60cb787828b81bcbaf92e3cee6fb30fd8358e4d978eb879322347aa738555"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.rail_slider.tick (server_scene.vehicle_component.rail_slider, server_scene.vehicle, server_scene)",
+      "signature_offset": 57300463,
+      "code_offset": 57301246,
+      "code_size": 680,
+      "code_sha256": "69b91a923effe6e117a43ebbcdf9b616be0e156bf08f879aa07c7bbe5e7efcd0"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle_component.tow_bar.can_connect (const server_scene.vehicle_component.tow_bar)",
+      "signature_offset": 57819148,
+      "code_offset": 57819272,
+      "code_size": 34,
+      "code_sha256": "f2a482533299e3277f3ea06c8563240e416cfdc308f9376f1585650a3adcf4f2"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.tow_bar.connect_multibody (server_scene.vehicle_component.tow_bar, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+      "signature_offset": 57819490,
+      "code_offset": 57820649,
+      "code_size": 1928,
+      "code_sha256": "936a05cafae93c4ae397c8f1788fc7acd37c488f454b86384e13ab637b62b573"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.tow_bar.disconnect_multibody (server_scene.vehicle_component.tow_bar, physics.scene)",
+      "signature_offset": 57827331,
+      "code_offset": 57828198,
+      "code_size": 736,
+      "code_sha256": "a4230c493fd93968f90fa454460bc6728605eba14cb310d5c36aba074ecbad31"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.tow_bar.tick_multibody (server_scene.vehicle_component.tow_bar, server_scene.vehicle, server_scene)",
+      "signature_offset": 57845496,
+      "code_offset": 57848259,
+      "code_size": 4824,
+      "code_sha256": "8f728550912a227ab31249afad2babe5ab95ab90634be78a51e4b1b06f61d7ab"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle_component.tow_hitch.can_connect (const server_scene.vehicle_component.tow_hitch)",
+      "signature_offset": 57857701,
+      "code_offset": 57857935,
+      "code_size": 144,
+      "code_sha256": "f9bf4746d6ed7fc83d4d7ebace0e00e2ef0b935c872bb5b9d480c10e8a62e259"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.tow_hitch.connect_multibody (server_scene.vehicle_component.tow_hitch, physics.scene, const ptr<server_scene.vehicle_component>, server_scene.vehicle, server_scene.vehicle)",
+      "signature_offset": 57858275,
+      "code_offset": 57859436,
+      "code_size": 1928,
+      "code_sha256": "bc892c566cd37450e444bc17b59fb3769e00c2d2786366ccdde9cc79c58010c4"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.tow_hitch.disconnect_multibody (server_scene.vehicle_component.tow_hitch, physics.scene)",
+      "signature_offset": 57866790,
+      "code_offset": 57867657,
+      "code_size": 736,
+      "code_sha256": "e9760fd3790a5182a3191224cf77452f01bbd2d2bf9efb39329ca88e78514588"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.tow_hitch.tick (server_scene.vehicle_component.tow_hitch, server_scene.vehicle, server_scene)",
+      "signature_offset": 57884461,
+      "code_offset": 57884989,
+      "code_size": 232,
+      "code_sha256": "55b09e23a98ff95a3bd4bcafd2e6990481437ed28293df5b9ef940c83b8905ab"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.tow_hitch.tick_multibody (server_scene.vehicle_component.tow_hitch, server_scene.vehicle, server_scene)",
+      "signature_offset": 57885523,
+      "code_offset": 57888296,
+      "code_size": 4824,
+      "code_sha256": "b2f7989785994028cba726c2cecb3b23e9ade2fe5fbe55dff7f36de64f3bc6f1"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.winch.tick (server_scene.vehicle_component.winch, server_scene.vehicle, server_scene)",
+      "signature_offset": 58123822,
+      "code_offset": 58126118,
+      "code_size": 2320,
+      "code_sha256": "5ec11dd621b874ea14f65407f03c4c174a47949767bcc7e4c90cf2ec6a49d17f"
+    },
+    {
+      "signature": "() server_scene.vehicle_torque_node.set_brake_factor (server_scene.vehicle_torque_node, const f64)",
+      "signature_offset": 59231359,
+      "code_offset": 59231477,
+      "code_size": 27,
+      "code_sha256": "07f4939b6033e356bc9c3b5de6c111dbdd77d6f39771fe82ec3db6eb49c28900"
+    },
+    {
+      "signature": "(vec3) vehicle_component_definition.get_constraint_position (const vehicle_component_definition)",
+      "signature_offset": 62564487,
+      "code_offset": 62564822,
+      "code_size": 304,
+      "code_sha256": "14195d4735cf886cb4f0f44b64b3c2c3851c3b23caff0dcedd609d95d6e409c4"
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 55241004,
+      "offset": 55246996,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 55241004,
+      "offset": 55247004,
+      "format": "f64",
+      "bytes": "7b14ae47e17a843f",
+      "value": 0.01,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 55282013,
+      "offset": 55283301,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 55282013,
+      "offset": 55283309,
+      "format": "f64",
+      "bytes": "7b14ae47e17a843f",
+      "value": 0.01,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 56185555,
+      "offset": 56185843,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 56130449,
+      "offset": 56134689,
+      "format": "f64",
+      "bytes": "666666666666e63f",
+      "value": 0.7,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 56189241,
+      "offset": 56193481,
+      "format": "f64",
+      "bytes": "666666666666e63f",
+      "value": 0.7,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 57200343,
+      "offset": 57200503,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 57301246,
+      "offset": 57301918,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 57266275,
+      "offset": 57266947,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 57247667,
+      "offset": 57250315,
+      "format": "f64",
+      "bytes": "0000000000003440",
+      "value": 20.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 57247667,
+      "offset": 57250323,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 57267975,
+      "offset": 57268207,
+      "format": "f64",
+      "bytes": "0000000000003440",
+      "value": 20.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 57267975,
+      "offset": 57268215,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 57240738,
+      "offset": 57243130,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 57240738,
+      "offset": 57243138,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 57240738,
+      "offset": 57243146,
+      "format": "f64",
+      "bytes": "0000000000002440",
+      "value": 10.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 57240738,
+      "offset": 57243154,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 57240738,
+      "offset": 57243162,
+      "format": "f64",
+      "bytes": "ae47e17a14aeef3f",
+      "value": 0.99,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 57240738,
+      "offset": 57243170,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 57240738,
+      "offset": 57243178,
+      "format": "f64",
+      "bytes": "2d431cebe2361a3f",
+      "value": 0.0001,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 57884989,
+      "offset": 57885213,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 58126118,
+      "offset": 58128382,
+      "format": "f64",
+      "bytes": "0000000000002440",
+      "value": 10.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 58126118,
+      "offset": 58128390,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 58126118,
+      "offset": 58128398,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 58126118,
+      "offset": 58128406,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 58126118,
+      "offset": 58128414,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 58126118,
+      "offset": 58128422,
+      "format": "f64",
+      "bytes": "ae47e17a14aeef3f",
+      "value": 0.99,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 51091403,
+      "offset": 51091427,
+      "format": "f64",
+      "bytes": "0000000000003440",
+      "value": 20.0,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 51091843,
+      "offset": 51091867,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 51129933,
+      "offset": 51129957,
+      "format": "f64",
+      "bytes": "333333333333f33f",
+      "value": 1.2,
+      "name": "Selected reviewed scalar"
+    },
+    {
+      "function_offset": 55268611,
+      "offset": 55268739,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Selected tier/default/cooldown integer"
+    },
+    {
+      "function_offset": 55259852,
+      "offset": 55259980,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Selected tier/default/cooldown integer"
+    },
+    {
+      "function_offset": 55214354,
+      "offset": 55214482,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Selected tier/default/cooldown integer"
+    },
+    {
+      "function_offset": 56101509,
+      "offset": 56101637,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Selected tier/default/cooldown integer"
+    },
+    {
+      "function_offset": 56144352,
+      "offset": 56144480,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Selected tier/default/cooldown integer"
+    },
+    {
+      "function_offset": 56168579,
+      "offset": 56168707,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Selected tier/default/cooldown integer"
+    },
+    {
+      "function_offset": 56993519,
+      "offset": 56993647,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Selected tier/default/cooldown integer"
+    },
+    {
+      "function_offset": 57030185,
+      "offset": 57030313,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Selected tier/default/cooldown integer"
+    },
+    {
+      "function_offset": 57043932,
+      "offset": 57044548,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Selected tier/default/cooldown integer"
+    },
+    {
+      "function_offset": 57848259,
+      "offset": 57853075,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Selected tier/default/cooldown integer"
+    },
+    {
+      "function_offset": 57848259,
+      "offset": 57853079,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Selected tier/default/cooldown integer"
+    },
+    {
+      "function_offset": 57888296,
+      "offset": 57893112,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Selected tier/default/cooldown integer"
+    },
+    {
+      "function_offset": 57888296,
+      "offset": 57893116,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Selected tier/default/cooldown integer"
+    }
+  ],
+  "strings": [],
+  "call_examples": [
+    {
+      "function_offset": 51094075,
+      "instruction": 51094152,
+      "bytes": "ffd5",
+      "slot_address": 51094275,
+      "kind": 6,
+      "symbol": "(f64) server_scene.rope.get_world_length (server_scene.rope, server_scene)"
+    },
+    {
+      "function_offset": 55241004,
+      "instruction": 55241523,
+      "bytes": "ff5500",
+      "slot_address": 55247052,
+      "kind": 4,
+      "symbol": "() physics.object.set_is_collision_enabled (const physics.object, const physics.object, const bool)"
+    },
+    {
+      "function_offset": 55257857,
+      "instruction": 55258237,
+      "bytes": "ff13",
+      "slot_address": 55258849,
+      "kind": 4,
+      "symbol": "() physics.object.set_is_collision_enabled (const physics.object, const physics.object, const bool)"
+    },
+    {
+      "function_offset": 56094682,
+      "instruction": 56095015,
+      "bytes": "ff17",
+      "slot_address": 56097186,
+      "kind": 4,
+      "symbol": "() physics.object.set_is_collision_enabled (const physics.object, const physics.object, const bool)"
+    },
+    {
+      "function_offset": 57019740,
+      "instruction": 57020246,
+      "bytes": "ff5500",
+      "slot_address": 57022740,
+      "kind": 4,
+      "symbol": "() physics.object.set_is_collision_enabled (const physics.object, const physics.object, const bool)"
+    },
+    {
+      "function_offset": 57247667,
+      "instruction": 57250200,
+      "bytes": "ff13",
+      "slot_address": 57250467,
+      "kind": 4,
+      "symbol": "() physics.constraint.slider.set_motor (const physics.constraint.slider, const f64, const f64, const f64)"
+    },
+    {
+      "function_offset": 58126118,
+      "instruction": 58127776,
+      "bytes": "ffd0",
+      "slot_address": 58128590,
+      "kind": 6,
+      "symbol": "(f64) server_scene.rope.get_stretch_factor (server_scene.rope, server_scene)"
+    }
+  ],
+  "limits": "Selected source identities and exact scalar/call bytes; not automatic proof of prose, dispatch, native units or runtime acceptance."
+}

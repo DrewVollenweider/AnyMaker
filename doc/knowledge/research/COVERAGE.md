@@ -1,5 +1,7 @@
 # Coverage and gaps
 
+Newest continuation: [joints and winches](JOINTS-WINCHES-20261020.md). Selected hinge/mount/latch/rail/tow/winch chains now have source/field evidence and eight arithmetic tests. Reader: 1,110 functions/154,167 checked instructions/877,643 bytes. Suite: 143 tests. This adds reviewed behavior at the stated scope; it does not close all moving joints, loaded states, tool compatibility or other audit domains.
+
 Newest continuation: [hydraulic cylinders, tracks and native raycast ordering](ACTUATORS-TRACKS-RAYCAST-20261020.md). The reader has 1,093 functions/149,791 checked instructions/852,045 bytes and 135 synthetic tests pass. Cylinder chamber/geometry/body cleanup, distinct roller contact and selected raycast sorting/erase paths are reviewed. Full native loader specialization, all actuator families and whole-game semantics remain open. The [previous contact/gas/native checkpoint](CONTACT-FLUIDS-NATIVE-20261020.md) remains applicable at its stated scope.
 
 Measurements in this checkpoint apply to build 25904830. Keyword counts come from the [machine-readable system index](versions/build-25904830/system-map.json), with overlapping topics and template expansion; they cannot be converted into a percentage of understanding.
