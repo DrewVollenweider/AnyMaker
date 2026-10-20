@@ -1,0 +1,1645 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "() client_scene.particle_effect.g_wind_damping_factor.$ctor ()",
+      "signature_offset": 11476621,
+      "code_offset": 11476761,
+      "code_size": 32,
+      "code_sha256": "144f8dc46c2643dd98fb7fee16502ff6f13088f5d6f607e8011c17e119aa40b8"
+    },
+    {
+      "signature": "() ctor (server_scene.occlusion_sphere)",
+      "signature_offset": 24224859,
+      "code_offset": 24224940,
+      "code_size": 112,
+      "code_sha256": "8d8798d8c2020ec96a369526910e82a108e58ce80ffc0a3c1c839bd67c861aaf"
+    },
+    {
+      "signature": "() g_max_spawned_actors.$ctor ()",
+      "signature_offset": 29077943,
+      "code_offset": 29078023,
+      "code_size": 24,
+      "code_sha256": "dda346c5b89c057dfd79698b4df15d1d5ebec409acfd561bbc70c1cdad585612"
+    },
+    {
+      "signature": "() g_server_tick_rate_s32.$ctor ()",
+      "signature_offset": 29089194,
+      "code_offset": 29089278,
+      "code_size": 24,
+      "code_sha256": "3afff7c838de536517d7a2ecd8a89fabefeaf0fde630a9e87f2a5463ccaab8ba"
+    },
+    {
+      "signature": "() g_spawn_creature_exclusion_range.$ctor ()",
+      "signature_offset": 29091692,
+      "code_offset": 29091796,
+      "code_size": 32,
+      "code_sha256": "16d3b56b2befeb5eb6706b48d9507037d31f37724dadc64ae56c02af7f6efbbc"
+    },
+    {
+      "signature": "() g_zombie_horde_size.$ctor ()",
+      "signature_offset": 29123356,
+      "code_offset": 29123434,
+      "code_size": 24,
+      "code_sha256": "286056f1a6529a3a52d0ae201be3518429dfe772e640345d615b4d959a4acc88"
+    },
+    {
+      "signature": "() inventory_util.G_HOTBAR_SLOT_COUNT.$ctor ()",
+      "signature_offset": 29554959,
+      "code_offset": 29555067,
+      "code_size": 24,
+      "code_sha256": "b4e1d93b94b14ea8359e4ca696ac54115becf00e0bf80ab3ec983409d2d507e6"
+    },
+    {
+      "signature": "() server_scene.actor.ai_locomotion._tick_behaviour (server_scene.actor.ai_locomotion, server_scene.actor, const navigation.navmesh, const server_scene, const f64, server_scene.actor_inputs, bool)",
+      "signature_offset": 40822630,
+      "code_offset": 40823990,
+      "code_size": 808,
+      "code_sha256": "dd36dda4559f583543ff13247e17d14557ff79dd76016a68cf8929821e0ddff3"
+    },
+    {
+      "signature": "(bool) server_scene.actor.get_is_unobstructed (const server_scene.actor, const physics.scene, const server_scene, const vec3)",
+      "signature_offset": 41208900,
+      "code_offset": 41211025,
+      "code_size": 3488,
+      "code_sha256": "623d136aa05da5c3edc5b3ba7236c940283578554c86c165a59723d02bbd2174"
+    },
+    {
+      "signature": "(bool) server_scene.actor.get_is_unobstructed (const server_scene.actor, const physics.scene, const server_scene, const server_scene.vehicle)",
+      "signature_offset": 41216090,
+      "code_offset": 41218111,
+      "code_size": 3456,
+      "code_sha256": "a3b2502a6f35002316d39273afa2c36590c3d5b9a9db75f72ebdec53185e37e4"
+    },
+    {
+      "signature": "() server_scene.actor_character.ai_combat_controller._equip_item (server_scene.actor_character.ai_combat_controller, server_scene.actor_character, const s32)",
+      "signature_offset": 41420603,
+      "code_offset": 41421678,
+      "code_size": 1072,
+      "code_sha256": "b02feb6b6278c05bd2797b96bfac3c54daedb679b7dfc83770ae96e46c19c8dd"
+    },
+    {
+      "signature": "(ptr<server_scene.item_world.gun>) server_scene.actor_character.ai_combat_controller._get_current_equipped_gun (server_scene.actor_character.ai_combat_controller, server_scene.actor_character)",
+      "signature_offset": 41423632,
+      "code_offset": 41424254,
+      "code_size": 448,
+      "code_sha256": "03b39122dfdb272e0b917511d010b2ff716caedfd1f668d9563b147f32c8e8b6"
+    },
+    {
+      "signature": "(ptr<server_scene.item_world.melee>) server_scene.actor_character.ai_combat_controller._get_current_equipped_melee (server_scene.actor_character.ai_combat_controller, server_scene.actor_character)",
+      "signature_offset": 41425354,
+      "code_offset": 41425982,
+      "code_size": 448,
+      "code_sha256": "6786ab3d71fc580bf47b93cd33723bdfa47e1f40ad64be91ce1ced579edcb01b"
+    },
+    {
+      "signature": "(ptr<server_scene.item_world.torch_base>) server_scene.actor_character.ai_combat_controller._get_current_equipped_torch (server_scene.actor_character.ai_combat_controller, server_scene.actor_character)",
+      "signature_offset": 41427086,
+      "code_offset": 41427724,
+      "code_size": 448,
+      "code_sha256": "2d3c83d4e2459542864eb80a7d2fb9cafd724496e3fe33d23fb622da17c30851"
+    },
+    {
+      "signature": "() server_scene.actor_character.ai_combat_controller._set_ads (server_scene.actor_character.ai_combat_controller, server_scene.actor_character, const bool)",
+      "signature_offset": 41430493,
+      "code_offset": 41430788,
+      "code_size": 104,
+      "code_sha256": "b1a49c2514eb701ddd17b0efb473bc7bf27c48b1344e7ba1c2f27da6ee26b5aa"
+    },
+    {
+      "signature": "() server_scene.actor_character.ai_combat_controller._update_gun_torch_state (server_scene.actor_character.ai_combat_controller, server, server_scene, server_scene.actor, server_scene.item_world.gun, const bool)",
+      "signature_offset": 41431174,
+      "code_offset": 41434464,
+      "code_size": 2688,
+      "code_sha256": "e07d4441b3d220201bd69707d11491d82939ebd8b22f5e685205e79dc3088e6a"
+    },
+    {
+      "signature": "(bool) server_scene.actor_character.ai_combat_controller.has_gun (const server_scene.actor_character.ai_combat_controller)",
+      "signature_offset": 41446996,
+      "code_offset": 41447138,
+      "code_size": 44,
+      "code_sha256": "d5300e2595305dd3a4d96171ffd051ec4403c123033c379c41ef0373ef110cba"
+    },
+    {
+      "signature": "(bool) server_scene.actor_character.ai_combat_controller.has_melee (const server_scene.actor_character.ai_combat_controller)",
+      "signature_offset": 41447384,
+      "code_offset": 41447528,
+      "code_size": 44,
+      "code_sha256": "9933e177abf0da952231232be02cc24e1eb0a4629b2b33b2fc901044a9928812"
+    },
+    {
+      "signature": "(bool) server_scene.actor_character.ai_combat_controller.has_torch (const server_scene.actor_character.ai_combat_controller)",
+      "signature_offset": 41447776,
+      "code_offset": 41447920,
+      "code_size": 44,
+      "code_sha256": "6a0392e71fc20919f043275b05252ee844e5f39771c25ce487d2d2452ad0c174"
+    },
+    {
+      "signature": "() server_scene.actor_character.ai_combat_controller.tick (server_scene.actor_character.ai_combat_controller, server_scene.actor_character, server, server_scene)",
+      "signature_offset": 41453699,
+      "code_offset": 41459691,
+      "code_size": 9744,
+      "code_sha256": "5edd3ae37876e91e4d886b932f60a4500e2e224d55d0321af292ae18cab66320"
+    },
+    {
+      "signature": "(s32) server_scene.actor_character.ai_utility.get_best_item_id_gun (server_scene.actor_character)",
+      "signature_offset": 41730265,
+      "code_offset": 41730943,
+      "code_size": 584,
+      "code_sha256": "4fb9ad01b0292c8e60e0d60721bc8ad9d6fef52ff2c9aee06439222ef1945729"
+    },
+    {
+      "signature": "(s32) server_scene.actor_character.ai_utility.get_best_item_id_melee (server_scene.actor_character)",
+      "signature_offset": 41732314,
+      "code_offset": 41732996,
+      "code_size": 584,
+      "code_sha256": "4fb9ad01b0292c8e60e0d60721bc8ad9d6fef52ff2c9aee06439222ef1945729"
+    },
+    {
+      "signature": "(s32) server_scene.actor_character.ai_utility.get_best_item_id_torch (server_scene.actor_character)",
+      "signature_offset": 41734373,
+      "code_offset": 41735060,
+      "code_size": 584,
+      "code_sha256": "4fb9ad01b0292c8e60e0d60721bc8ad9d6fef52ff2c9aee06439222ef1945729"
+    },
+    {
+      "signature": "(bool) server_scene.actor_character.ai_utility.should_torch_be_switched_on (const server_scene.actor_character, const f64)",
+      "signature_offset": 41760989,
+      "code_offset": 41761270,
+      "code_size": 224,
+      "code_sha256": "f8a310ab2bbb1aa321b56ce158088926222f0fb8049aeae373d2b1e4546d1c5b"
+    },
+    {
+      "signature": "() server_scene.item_world.battery_cell.g_energy_capacity.$ctor ()",
+      "signature_offset": 47508128,
+      "code_offset": 47508332,
+      "code_size": 48,
+      "code_sha256": "37f99881ae488aa653881b4c0a27120498073a114717279e30bdb76fd10a5d1b"
+    },
+    {
+      "signature": "() server_scene.item_world.battery_cell.reset_energy (server_scene.item_world.battery_cell)",
+      "signature_offset": 47510583,
+      "code_offset": 47510875,
+      "code_size": 96,
+      "code_sha256": "9c6196c6d3e290b039e8b227420eb8df7ac909c6c69032399d9c80cef415fe41"
+    },
+    {
+      "signature": "() server_scene.item_world.grenade_smoke.parse_save_data (server_scene.item_world.grenade_smoke, server_scene.save_data.parser)",
+      "signature_offset": 47634294,
+      "code_offset": 47634887,
+      "code_size": 800,
+      "code_sha256": "faad56ab7660efafefb706cf8bbfca6b474cf528b42b65ad6f30506798b6d5e9"
+    },
+    {
+      "signature": "() server_scene.item_world.grenade_smoke.tick (server_scene.item_world.grenade_smoke, server_scene, const mat34, const server_scene.item_world.tick_context, const s32)",
+      "signature_offset": 47636865,
+      "code_offset": 47639155,
+      "code_size": 2520,
+      "code_sha256": "a310e817ff9858a87e2abf04d5e03c31b670c4a5fcd44a76d0e147ecd7a3bdbf"
+    },
+    {
+      "signature": "(s32) server_scene.item_world.gun.get_ammo_remaining (server_scene.item_world.gun)",
+      "signature_offset": 47646745,
+      "code_offset": 47647557,
+      "code_size": 672,
+      "code_sha256": "64f1ec28c2967050ca6a70b5fb1008f1ec426541f7b19a72c29be47d5bec4198"
+    },
+    {
+      "signature": "(f64) server_scene.item_world.gun.get_fire_cooldown (const server_scene.item_world.gun)",
+      "signature_offset": 47648897,
+      "code_offset": 47649004,
+      "code_size": 48,
+      "code_sha256": "88a8235f2715314fe75b8d22d1b153f6403c30ef118062c0873f01e4f625290e"
+    },
+    {
+      "signature": "(bool) server_scene.item_world.gun.get_is_internal_magazine (const server_scene.item_world.gun)",
+      "signature_offset": 47649219,
+      "code_offset": 47649334,
+      "code_size": 33,
+      "code_sha256": "5882fb904ea04cfe9eb27443b99d3b0b449ad373a57b576b134ce5958aaab561"
+    },
+    {
+      "signature": "(bool) server_scene.item_world.gun.get_is_repeat_firing (const server_scene.item_world.gun)",
+      "signature_offset": 47649542,
+      "code_offset": 47649653,
+      "code_size": 33,
+      "code_sha256": "5882fb904ea04cfe9eb27443b99d3b0b449ad373a57b576b134ce5958aaab561"
+    },
+    {
+      "signature": "(string) server_scene.item_world.gun.get_magazine_definition_id (const server_scene.item_world.gun)",
+      "signature_offset": 47649857,
+      "code_offset": 47650027,
+      "code_size": 72,
+      "code_sha256": "8eefc893973a7bd4d8732719caecf456562d68d889a4d2d18681a7c639ddac3d"
+    },
+    {
+      "signature": "(vec3) server_scene.item_world.gun.get_muzzle_velocity (const server_scene.item_world.gun)",
+      "signature_offset": 47650286,
+      "code_offset": 47650473,
+      "code_size": 104,
+      "code_sha256": "208ddc0b10d61695b6635eb20fb23aaf7bae2d789434c85c213512a5f845ac11"
+    },
+    {
+      "signature": "(e_projectile_type) server_scene.item_world.gun.get_projectile_type (const server_scene.item_world.gun)",
+      "signature_offset": 47651087,
+      "code_offset": 47651210,
+      "code_size": 36,
+      "code_sha256": "2daf5a8566e0ec0ba72653297b42ca8ab10b5807115cecf9b08a8dfe6ea44de2"
+    },
+    {
+      "signature": "() server_scene.item_world.gun.on_use_self (server_scene.item_world.gun, server, server_scene, server_scene.actor, const s32, bool)",
+      "signature_offset": 47652436,
+      "code_offset": 47656301,
+      "code_size": 5760,
+      "code_sha256": "0da3232d0444d53b6e3c127227a6d07ad1d38ed1bc87625f4ed76d5e210db990"
+    },
+    {
+      "signature": "() server_scene.item_world.gun.tick (server_scene.item_world.gun, server_scene, const mat34, const server_scene.item_world.tick_context, const s32)",
+      "signature_offset": 47671110,
+      "code_offset": 47672216,
+      "code_size": 992,
+      "code_sha256": "4f5531729c632338760ee721f7b7f2ef78993f631a0bf364c71ce22f03334125"
+    },
+    {
+      "signature": "(f64) server_scene.item_world.melee.get_damage (const server_scene.item_world.melee)",
+      "signature_offset": 48023256,
+      "code_offset": 48023360,
+      "code_size": 48,
+      "code_sha256": "2f77d3134ba91f8c0195174045f3a1a8fe7a2573eaba1c29946a14bbfaf1c4e5"
+    },
+    {
+      "signature": "() server_scene.item_world.melee.on_use_self (server_scene.item_world.melee, server, server_scene, server_scene.actor, const s32, bool)",
+      "signature_offset": 48024075,
+      "code_offset": 48029096,
+      "code_size": 6176,
+      "code_sha256": "e8a505c8fb76f2e84b6d2e3b931c306020a50010b75b9c4db5e6a83762e69568"
+    },
+    {
+      "signature": "() server_scene.item_world.smoke_discharger_grenade.parse_save_data (server_scene.item_world.smoke_discharger_grenade, server_scene.save_data.parser)",
+      "signature_offset": 48190273,
+      "code_offset": 48191004,
+      "code_size": 800,
+      "code_sha256": "59ca3182fae13d2a530ea80689b5f4fbf7efa8b798432decab789fe0198ef3a7"
+    },
+    {
+      "signature": "() server_scene.item_world.smoke_discharger_grenade.tick (server_scene.item_world.smoke_discharger_grenade, server_scene, const mat34, const server_scene.item_world.tick_context, const s32)",
+      "signature_offset": 48192984,
+      "code_offset": 48195391,
+      "code_size": 2984,
+      "code_sha256": "ad0a5f3f5675c5b2ba5c5251293684a401bacd04300f3f0b83f3ccc5a440b0eb"
+    },
+    {
+      "signature": "(bool) server_scene.occlusion_smoke_grenade_manager.is_hit_occlusion_sphere (const server_scene.occlusion_smoke_grenade_manager, const collision.ray)",
+      "signature_offset": 48464596,
+      "code_offset": 48465605,
+      "code_size": 664,
+      "code_sha256": "f14ec37062c9e115dd0b35caaa85f5e1122700792ef39986731a1807a7beffa8"
+    },
+    {
+      "signature": "() server_scene.occlusion_smoke_grenade_manager.push_sphere (server_scene.occlusion_smoke_grenade_manager, const vec3, const vec3, const f64, const f64)",
+      "signature_offset": 48466843,
+      "code_offset": 48467359,
+      "code_size": 320,
+      "code_sha256": "438e7416a7e86589d0019abcc0ef5027ef272b716d83b3be4d53df1ecc916347"
+    },
+    {
+      "signature": "() server_scene.occlusion_smoke_grenade_manager.tick (server_scene.occlusion_smoke_grenade_manager, server_scene)",
+      "signature_offset": 48468168,
+      "code_offset": 48468969,
+      "code_size": 280,
+      "code_sha256": "f3a3312ca7fb263c9163fc3e86a4862cc7293266846307fed8e24d2e61d1c480"
+    },
+    {
+      "signature": "(collision.sphere) server_scene.occlusion_sphere.get_collision_sphere (const server_scene.occlusion_sphere)",
+      "signature_offset": 48470733,
+      "code_offset": 48471077,
+      "code_size": 192,
+      "code_sha256": "8cf998690cce087071169d50659455b68b27b4744873858703013c2d4e6c7a46"
+    },
+    {
+      "signature": "() server_scene.occlusion_sphere.tick (server_scene.occlusion_sphere, server_scene)",
+      "signature_offset": 48471598,
+      "code_offset": 48472558,
+      "code_size": 768,
+      "code_sha256": "94053eae66813cbd4ae101862d6565b5fe1fdc147609ecd7f596eea11875ce3f"
+    },
+    {
+      "signature": "() server_scene.zombie_horde_controller.create (server_scene.zombie_horde_controller, server_scene, const vec3)",
+      "signature_offset": 59380781,
+      "code_offset": 59381791,
+      "code_size": 1136,
+      "code_sha256": "392105ec33d5280566ada379161ae0a96dce59d3d621fcb51f6feebe29bd5f19"
+    },
+    {
+      "signature": "() server_scene.zombie_horde_controller.destroy (server_scene.zombie_horde_controller)",
+      "signature_offset": 59383564,
+      "code_offset": 59383712,
+      "code_size": 32,
+      "code_sha256": "f06e0d562a1adc36133a05a3ae2e58b4ae38a1a353b6acb196916250a889e0ac"
+    },
+    {
+      "signature": "(bool) server_scene.zombie_horde_controller.is_destroy_horde (server_scene.zombie_horde_controller, const server_scene)",
+      "signature_offset": 59383932,
+      "code_offset": 59384296,
+      "code_size": 288,
+      "code_sha256": "0ba5c3f15216048fa611754ad9a7b18e51145e4645c67828d20fb0c7fce38b4f"
+    },
+    {
+      "signature": "() server_scene.zombie_horde_controller.tick (server_scene.zombie_horde_controller, server_scene)",
+      "signature_offset": 59384919,
+      "code_offset": 59385792,
+      "code_size": 736,
+      "code_sha256": "6519fbe141a63f0e26b871cc672964dcc142a24c8ed36c84c8a140e18c997cab"
+    },
+    {
+      "signature": "() server_scene.zombie_horde_manager.spawn_horde (server_scene.zombie_horde_manager, server_scene)",
+      "signature_offset": 59389455,
+      "code_offset": 59392429,
+      "code_size": 2376,
+      "code_sha256": "70c6e51130ac060e7e9baf9cde13d2bfb4fb9da633b81dc13a41ec150a81ab6a"
+    },
+    {
+      "signature": "() server_scene.zombie_horde_manager.tick (server_scene.zombie_horde_manager, server_scene)",
+      "signature_offset": 59396161,
+      "code_offset": 59397474,
+      "code_size": 480,
+      "code_sha256": "58a2008fe96ea7fb7b32153984106e960be62e2f8d4f155c32380416786cec2d"
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 41459691,
+      "offset": 41469339,
+      "format": "f64",
+      "bytes": "9a9999999999c93f",
+      "value": 0.2,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469347,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469371,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469387,
+      "format": "f64",
+      "bytes": "000000000000c03f",
+      "value": 0.125,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469403,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41761270,
+      "offset": 41761470,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41761270,
+      "offset": 41761478,
+      "format": "f64",
+      "bytes": "9a9999999999a9bf",
+      "value": -0.05,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41761270,
+      "offset": 41761486,
+      "format": "f64",
+      "bytes": "9a9999999999a93f",
+      "value": 0.05,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 47656301,
+      "offset": 47662005,
+      "format": "f64",
+      "bytes": "0000000000406f40",
+      "value": 250.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 47656301,
+      "offset": 47662013,
+      "format": "f64",
+      "bytes": "9a9999999999c93f",
+      "value": 0.2,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 47656301,
+      "offset": 47662029,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 47656301,
+      "offset": 47662037,
+      "format": "f64",
+      "bytes": "3bdf4f8d976e92bf",
+      "value": -0.018,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 47656301,
+      "offset": 47662045,
+      "format": "f64",
+      "bytes": "85eb51b81e85db3f",
+      "value": 0.43,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48029096,
+      "offset": 48035200,
+      "format": "f64",
+      "bytes": "333333333333f33f",
+      "value": 1.2,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48029096,
+      "offset": 48035208,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48029096,
+      "offset": 48035216,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48029096,
+      "offset": 48035256,
+      "format": "f64",
+      "bytes": "7b14ae47e17a943f",
+      "value": 0.02,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48029096,
+      "offset": 48035264,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48468969,
+      "offset": 48469241,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48472558,
+      "offset": 48473302,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48472558,
+      "offset": 48473310,
+      "format": "f64",
+      "bytes": "9a9999999999e93f",
+      "value": 0.8,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48472558,
+      "offset": 48473318,
+      "format": "f64",
+      "bytes": "9a9999999999b93f",
+      "value": 0.1,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 24224940,
+      "offset": 24225044,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 11476761,
+      "offset": 11476785,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 47508332,
+      "offset": 47508372,
+      "format": "f64",
+      "bytes": "fca9f1d24d62903f",
+      "value": 0.016,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 59381791,
+      "offset": 59382895,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 59381791,
+      "offset": 59382903,
+      "format": "f64",
+      "bytes": "0000000000001440",
+      "value": 5.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 59381791,
+      "offset": 59382911,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 59392429,
+      "offset": 59394797,
+      "format": "f64",
+      "bytes": "0000000000002040",
+      "value": 8.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 29091796,
+      "offset": 29091820,
+      "format": "f64",
+      "bytes": "0000000000006940",
+      "value": 200.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 47649004,
+      "offset": 47649044,
+      "format": "f64",
+      "bytes": "b81e85eb51b89e3f",
+      "value": 0.03,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 47650473,
+      "offset": 47650561,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 47650473,
+      "offset": 47650569,
+      "format": "f64",
+      "bytes": "0000000000007940",
+      "value": 400.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48023360,
+      "offset": 48023400,
+      "format": "f64",
+      "bytes": "666666666666f63f",
+      "value": 1.4,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 47639155,
+      "offset": 47641635,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 47639155,
+      "offset": 47641651,
+      "format": "f64",
+      "bytes": "0000000000003840",
+      "value": 24.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 47639155,
+      "offset": 47641659,
+      "format": "f64",
+      "bytes": "9a9999999999c93f",
+      "value": 0.2,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 47639155,
+      "offset": 47641667,
+      "format": "f64",
+      "bytes": "7b14ae47e17a943f",
+      "value": 0.02,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48195391,
+      "offset": 48198319,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48195391,
+      "offset": 48198327,
+      "format": "f64",
+      "bytes": "0000000000001440",
+      "value": 5.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48195391,
+      "offset": 48198335,
+      "format": "f64",
+      "bytes": "0000000000002440",
+      "value": 10.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48195391,
+      "offset": 48198351,
+      "format": "f64",
+      "bytes": "0000000000003840",
+      "value": 24.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48195391,
+      "offset": 48198359,
+      "format": "f64",
+      "bytes": "9a9999999999c93f",
+      "value": 0.2,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48195391,
+      "offset": 48198367,
+      "format": "f64",
+      "bytes": "7b14ae47e17a943f",
+      "value": 0.02,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 47634887,
+      "offset": 47635647,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 48191004,
+      "offset": 48191780,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed calibration or boundary"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469327,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469331,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469335,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469347,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469355,
+      "format": "s32",
+      "bytes": "05000000",
+      "value": 5,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469359,
+      "format": "s32",
+      "bytes": "09000000",
+      "value": 9,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469363,
+      "format": "s32",
+      "bytes": "0b000000",
+      "value": 11,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469367,
+      "format": "s32",
+      "bytes": "04000000",
+      "value": 4,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469379,
+      "format": "s32",
+      "bytes": "06000000",
+      "value": 6,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469383,
+      "format": "s32",
+      "bytes": "07000000",
+      "value": 7,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469395,
+      "format": "s32",
+      "bytes": "08000000",
+      "value": 8,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469411,
+      "format": "s32",
+      "bytes": "0a000000",
+      "value": 10,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41421678,
+      "offset": 41422742,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41421678,
+      "offset": 41422746,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41730943,
+      "offset": 41731519,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41732996,
+      "offset": 41733572,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41735060,
+      "offset": 41735636,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41761270,
+      "offset": 41761462,
+      "format": "s32",
+      "bytes": "e8030000",
+      "value": 1000,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41761270,
+      "offset": 41761466,
+      "format": "s32",
+      "bytes": "d0070000",
+      "value": 2000,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 47656301,
+      "offset": 47661997,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 47656301,
+      "offset": 47662021,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 47656301,
+      "offset": 47662025,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 47656301,
+      "offset": 47662053,
+      "format": "s32",
+      "bytes": "04000000",
+      "value": 4,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 47656301,
+      "offset": 47662057,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 47647557,
+      "offset": 47648221,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 47647557,
+      "offset": 47648225,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 47672216,
+      "offset": 47673192,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 47672216,
+      "offset": 47673196,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 47672216,
+      "offset": 47673200,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 48029096,
+      "offset": 48035192,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 48029096,
+      "offset": 48035196,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 48029096,
+      "offset": 48035224,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 48029096,
+      "offset": 48035228,
+      "format": "s32",
+      "bytes": "08000000",
+      "value": 8,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 48029096,
+      "offset": 48035232,
+      "format": "s32",
+      "bytes": "04000000",
+      "value": 4,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 48029096,
+      "offset": 48035236,
+      "format": "s32",
+      "bytes": "06000000",
+      "value": 6,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 48029096,
+      "offset": 48035240,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 48029096,
+      "offset": 48035244,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 48029096,
+      "offset": 48035248,
+      "format": "s32",
+      "bytes": "05000000",
+      "value": 5,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 59381791,
+      "offset": 59382887,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 59381791,
+      "offset": 59382919,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 59384296,
+      "offset": 59384568,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 59384296,
+      "offset": 59384576,
+      "format": "s32",
+      "bytes": "05000000",
+      "value": 5,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 59385792,
+      "offset": 59386520,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 59392429,
+      "offset": 59394765,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 59392429,
+      "offset": 59394769,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 59392429,
+      "offset": 59394773,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 59392429,
+      "offset": 59394777,
+      "format": "s32",
+      "bytes": "4f000000",
+      "value": 79,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 59392429,
+      "offset": 59394781,
+      "format": "s32",
+      "bytes": "e9000000",
+      "value": 233,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 59392429,
+      "offset": 59394785,
+      "format": "s32",
+      "bytes": "3b000000",
+      "value": 59,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 59392429,
+      "offset": 59394789,
+      "format": "s32",
+      "bytes": "97000000",
+      "value": 151,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 59392429,
+      "offset": 59394793,
+      "format": "s32",
+      "bytes": "91010000",
+      "value": 401,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 59397474,
+      "offset": 59397946,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 29123434,
+      "offset": 29123450,
+      "format": "s32",
+      "bytes": "19000000",
+      "value": 25,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 29555067,
+      "offset": 29555083,
+      "format": "s32",
+      "bytes": "0a000000",
+      "value": 10,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 29078023,
+      "offset": 29078039,
+      "format": "s32",
+      "bytes": "2c010000",
+      "value": 300,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 29089278,
+      "offset": 29089294,
+      "format": "s32",
+      "bytes": "3c000000",
+      "value": 60,
+      "name": "Reviewed enum/count/timer/seed coefficient"
+    },
+    {
+      "function_offset": 41459691,
+      "offset": 41469323,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Reviewed boolean"
+    },
+    {
+      "function_offset": 47649334,
+      "offset": 47649366,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Reviewed boolean"
+    },
+    {
+      "function_offset": 47649653,
+      "offset": 47649685,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Reviewed boolean"
+    },
+    {
+      "function_offset": 59384296,
+      "offset": 59384572,
+      "format": "u8",
+      "bytes": "01",
+      "value": 1,
+      "name": "Reviewed boolean"
+    },
+    {
+      "function_offset": 48465605,
+      "offset": 48466261,
+      "format": "u8",
+      "bytes": "01",
+      "value": 1,
+      "name": "Reviewed boolean"
+    },
+    {
+      "function_offset": 48465605,
+      "offset": 48466262,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Reviewed boolean"
+    }
+  ],
+  "strings": [
+    {
+      "function_offset": 41459691,
+      "offset": 41469415,
+      "text": "battery_cell"
+    },
+    {
+      "function_offset": 41434464,
+      "offset": 41437132,
+      "text": "battery_cell"
+    },
+    {
+      "function_offset": 47650027,
+      "offset": 47650075,
+      "text": "machine_pistol_magazine"
+    },
+    {
+      "function_offset": 59381791,
+      "offset": 59382871,
+      "text": "zombie_basic"
+    },
+    {
+      "function_offset": 47634887,
+      "offset": 47635623,
+      "text": "pin_pulled"
+    },
+    {
+      "function_offset": 47634887,
+      "offset": 47635634,
+      "text": "fuse_time"
+    },
+    {
+      "function_offset": 47634887,
+      "offset": 47635655,
+      "text": "release_smoke"
+    },
+    {
+      "function_offset": 47634887,
+      "offset": 47635669,
+      "text": "smoke_time"
+    },
+    {
+      "function_offset": 48191004,
+      "offset": 48191740,
+      "text": "release_smoke"
+    },
+    {
+      "function_offset": 48191004,
+      "offset": 48191754,
+      "text": "is_triggered"
+    },
+    {
+      "function_offset": 48191004,
+      "offset": 48191767,
+      "text": "fuse_time"
+    },
+    {
+      "function_offset": 48191004,
+      "offset": 48191788,
+      "text": "smoke_time"
+    }
+  ],
+  "call_examples": [
+    {
+      "function_offset": 41434464,
+      "instruction": 41435557,
+      "bytes": "ffd0",
+      "slot_address": 41437224,
+      "kind": 6,
+      "symbol": "() server_scene.item_world.torch_base.on_use_self (server_scene.item_world.torch_base, server, server_scene, server_scene.actor, const s32, bool)"
+    },
+    {
+      "function_offset": 41434464,
+      "instruction": 41435783,
+      "bytes": "ffd3",
+      "slot_address": 41437248,
+      "kind": 6,
+      "symbol": "(ref<server_scene.item_world>) server_scene.inventory.destroy_item (server_scene.inventory, const s32)"
+    },
+    {
+      "function_offset": 41434464,
+      "instruction": 41436091,
+      "bytes": "ffd0",
+      "slot_address": 41437224,
+      "kind": 6,
+      "symbol": "() server_scene.item_world.torch_base.on_use_self (server_scene.item_world.torch_base, server, server_scene, server_scene.actor, const s32, bool)"
+    },
+    {
+      "function_offset": 41434464,
+      "instruction": 41436335,
+      "bytes": "ffd3",
+      "slot_address": 41437248,
+      "kind": 6,
+      "symbol": "(ref<server_scene.item_world>) server_scene.inventory.destroy_item (server_scene.inventory, const s32)"
+    },
+    {
+      "function_offset": 41434464,
+      "instruction": 41436712,
+      "bytes": "ff13",
+      "slot_address": 41437296,
+      "kind": 4,
+      "symbol": "(ref<server_scene.item_world>) server_scene.item_world.create_item (const inventory_definition, server_scene)"
+    },
+    {
+      "function_offset": 41434464,
+      "instruction": 41436917,
+      "bytes": "ffd3",
+      "slot_address": 41437312,
+      "kind": 6,
+      "symbol": "(ptr<server_scene.item_world_grid>) server_scene.item_world_grid_container.create_item (server_scene.item_world_grid_container, server_scene, ref<server_scene.item_world>, const s32, const vec2_s32, const s32)"
+    },
+    {
+      "function_offset": 41434464,
+      "instruction": 41437052,
+      "bytes": "ffd0",
+      "slot_address": 41437328,
+      "kind": 6,
+      "symbol": "() server_scene.item_world.battery_cell.reset_energy (server_scene.item_world.battery_cell)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41459805,
+      "bytes": "ff13",
+      "slot_address": 41469435,
+      "kind": 4,
+      "symbol": "(s32) server_scene.actor_character.ai_utility.get_best_item_id_gun (server_scene.actor_character)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41459837,
+      "bytes": "ff13",
+      "slot_address": 41469443,
+      "kind": 4,
+      "symbol": "(s32) server_scene.actor_character.ai_utility.get_best_item_id_melee (server_scene.actor_character)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41459869,
+      "bytes": "ff13",
+      "slot_address": 41469451,
+      "kind": 4,
+      "symbol": "(s32) server_scene.actor_character.ai_utility.get_best_item_id_torch (server_scene.actor_character)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41461803,
+      "bytes": "ffd0",
+      "slot_address": 41469571,
+      "kind": 6,
+      "symbol": "() server_scene.item_world.gun.on_use_self (server_scene.item_world.gun, server, server_scene, server_scene.actor, const s32, bool)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41462044,
+      "bytes": "ffd0",
+      "slot_address": 41469595,
+      "kind": 6,
+      "symbol": "(ref<server_scene.item_world>) server_scene.inventory.destroy_item (server_scene.inventory, const s32)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41462744,
+      "bytes": "ffd0",
+      "slot_address": 41469571,
+      "kind": 6,
+      "symbol": "() server_scene.item_world.gun.on_use_self (server_scene.item_world.gun, server, server_scene, server_scene.actor, const s32, bool)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41462985,
+      "bytes": "ffd0",
+      "slot_address": 41469595,
+      "kind": 6,
+      "symbol": "(ref<server_scene.item_world>) server_scene.inventory.destroy_item (server_scene.inventory, const s32)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41463724,
+      "bytes": "ffd0",
+      "slot_address": 41469691,
+      "kind": 6,
+      "symbol": "() server_scene.item_world_grid_container.destroy_item (server_scene.item_world_grid_container, server_scene, const s32)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41464101,
+      "bytes": "ff10",
+      "slot_address": 41469731,
+      "kind": 4,
+      "symbol": "(ref<server_scene.item_world>) server_scene.item_world.create_item (const inventory_definition, server_scene)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41465163,
+      "bytes": "ffd0",
+      "slot_address": 41469571,
+      "kind": 6,
+      "symbol": "() server_scene.item_world.gun.on_use_self (server_scene.item_world.gun, server, server_scene, server_scene.actor, const s32, bool)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41465404,
+      "bytes": "ffd0",
+      "slot_address": 41469595,
+      "kind": 6,
+      "symbol": "(ref<server_scene.item_world>) server_scene.inventory.destroy_item (server_scene.inventory, const s32)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41466097,
+      "bytes": "ffd0",
+      "slot_address": 41469787,
+      "kind": 6,
+      "symbol": "() server_scene.item_world.melee.on_use_self (server_scene.item_world.melee, server, server_scene, server_scene.actor, const s32, bool)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41466332,
+      "bytes": "ffd0",
+      "slot_address": 41469595,
+      "kind": 6,
+      "symbol": "(ref<server_scene.item_world>) server_scene.inventory.destroy_item (server_scene.inventory, const s32)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41466836,
+      "bytes": "ffd0",
+      "slot_address": 41469787,
+      "kind": 6,
+      "symbol": "() server_scene.item_world.melee.on_use_self (server_scene.item_world.melee, server, server_scene, server_scene.actor, const s32, bool)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41467059,
+      "bytes": "ffd0",
+      "slot_address": 41469595,
+      "kind": 6,
+      "symbol": "(ref<server_scene.item_world>) server_scene.inventory.destroy_item (server_scene.inventory, const s32)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41467899,
+      "bytes": "ffd0",
+      "slot_address": 41469811,
+      "kind": 6,
+      "symbol": "() server_scene.item_world.torch_base.on_use_self (server_scene.item_world.torch_base, server, server_scene, server_scene.actor, const s32, bool)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41468140,
+      "bytes": "ffd0",
+      "slot_address": 41469595,
+      "kind": 6,
+      "symbol": "(ref<server_scene.item_world>) server_scene.inventory.destroy_item (server_scene.inventory, const s32)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41468593,
+      "bytes": "ff10",
+      "slot_address": 41469731,
+      "kind": 4,
+      "symbol": "(ref<server_scene.item_world>) server_scene.item_world.create_item (const inventory_definition, server_scene)"
+    },
+    {
+      "function_offset": 41459691,
+      "instruction": 41469060,
+      "bytes": "ffd0",
+      "slot_address": 41469835,
+      "kind": 6,
+      "symbol": "() server_scene.item_world.battery_cell.reset_energy (server_scene.item_world.battery_cell)"
+    },
+    {
+      "function_offset": 47639155,
+      "instruction": 47640014,
+      "bytes": "ff16",
+      "slot_address": 47641723,
+      "kind": 4,
+      "symbol": "() server_scene.occlusion_smoke_grenade_manager.push_sphere (server_scene.occlusion_smoke_grenade_manager, const vec3, const vec3, const f64, const f64)"
+    },
+    {
+      "function_offset": 47639155,
+      "instruction": 47641025,
+      "bytes": "ffd0",
+      "slot_address": 47641811,
+      "kind": 6,
+      "symbol": "() server_scene.item_world_grid_container.destroy_item (server_scene.item_world_grid_container, server_scene, const s32)"
+    },
+    {
+      "function_offset": 47639155,
+      "instruction": 47641167,
+      "bytes": "ffd0",
+      "slot_address": 47641819,
+      "kind": 6,
+      "symbol": "() server_scene.item_floor_container.destroy_item (server_scene.item_floor_container, physics.scene, server_scene, const s32)"
+    },
+    {
+      "function_offset": 47639155,
+      "instruction": 47641404,
+      "bytes": "ffd0",
+      "slot_address": 47641835,
+      "kind": 6,
+      "symbol": "(ref<server_scene.item_world>) server_scene.inventory.destroy_item (server_scene.inventory, const s32)"
+    },
+    {
+      "function_offset": 47639155,
+      "instruction": 47641596,
+      "bytes": "ffd0",
+      "slot_address": 47641851,
+      "kind": 6,
+      "symbol": "(bool) server_scene.vehicle_component.destroy_item (server_scene.vehicle_component, server_scene, const s32)"
+    },
+    {
+      "function_offset": 47656301,
+      "instruction": 47659030,
+      "bytes": "41ffd2",
+      "slot_address": 47662261,
+      "kind": 6,
+      "symbol": "(ptr<server_scene.projectile>) server_scene.projectile_manager.add_projectile (server_scene.projectile_manager, const vec3, const vec3, const e_projectile_type, const bool, const s32)"
+    },
+    {
+      "function_offset": 47656301,
+      "instruction": 47660994,
+      "bytes": "ffd0",
+      "slot_address": 47662357,
+      "kind": 6,
+      "symbol": "(ref<server_scene.item_world>) server_scene.inventory.destroy_item (server_scene.inventory, const s32)"
+    },
+    {
+      "function_offset": 48195391,
+      "instruction": 48196006,
+      "bytes": "ff13",
+      "slot_address": 48198415,
+      "kind": 4,
+      "symbol": "() server_scene.occlusion_smoke_grenade_manager.push_sphere (server_scene.occlusion_smoke_grenade_manager, const vec3, const vec3, const f64, const f64)"
+    },
+    {
+      "function_offset": 48195391,
+      "instruction": 48196697,
+      "bytes": "ff16",
+      "slot_address": 48198415,
+      "kind": 4,
+      "symbol": "() server_scene.occlusion_smoke_grenade_manager.push_sphere (server_scene.occlusion_smoke_grenade_manager, const vec3, const vec3, const f64, const f64)"
+    },
+    {
+      "function_offset": 48195391,
+      "instruction": 48197702,
+      "bytes": "ffd0",
+      "slot_address": 48198519,
+      "kind": 6,
+      "symbol": "() server_scene.item_world_grid_container.destroy_item (server_scene.item_world_grid_container, server_scene, const s32)"
+    },
+    {
+      "function_offset": 48195391,
+      "instruction": 48197850,
+      "bytes": "ffd0",
+      "slot_address": 48198527,
+      "kind": 6,
+      "symbol": "() server_scene.item_floor_container.destroy_item (server_scene.item_floor_container, physics.scene, server_scene, const s32)"
+    },
+    {
+      "function_offset": 48195391,
+      "instruction": 48198093,
+      "bytes": "ffd0",
+      "slot_address": 48198543,
+      "kind": 6,
+      "symbol": "(ref<server_scene.item_world>) server_scene.inventory.destroy_item (server_scene.inventory, const s32)"
+    },
+    {
+      "function_offset": 48195391,
+      "instruction": 48198279,
+      "bytes": "ffd0",
+      "slot_address": 48198559,
+      "kind": 6,
+      "symbol": "(bool) server_scene.vehicle_component.destroy_item (server_scene.vehicle_component, server_scene, const s32)"
+    },
+    {
+      "function_offset": 48465605,
+      "instruction": 48466044,
+      "bytes": "ff13",
+      "slot_address": 48466317,
+      "kind": 4,
+      "symbol": "(bool) collision.test3d_ray_intersect_sphere (const collision.ray, const collision.sphere, collision.hit_data)"
+    },
+    {
+      "function_offset": 48468969,
+      "instruction": 48469142,
+      "bytes": "ff13",
+      "slot_address": 48469273,
+      "kind": 4,
+      "symbol": "() server_scene.occlusion_sphere.tick (server_scene.occlusion_sphere, server_scene)"
+    },
+    {
+      "function_offset": 59392429,
+      "instruction": 59394697,
+      "bytes": "ff10",
+      "slot_address": 59395053,
+      "kind": 4,
+      "symbol": "() server_scene.zombie_horde_controller.create (server_scene.zombie_horde_controller, server_scene, const vec3)"
+    },
+    {
+      "function_offset": 59397474,
+      "instruction": 59397927,
+      "bytes": "ff10",
+      "slot_address": 59398026,
+      "kind": 4,
+      "symbol": "() server_scene.zombie_horde_manager.spawn_horde (server_scene.zombie_horde_manager, server_scene)"
+    }
+  ],
+  "limits": "Selected exact identities/bytes; concrete variants, complete weapons/projectiles/AI/authority/lifecycle remain open."
+}

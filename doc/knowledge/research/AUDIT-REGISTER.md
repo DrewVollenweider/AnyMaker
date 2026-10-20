@@ -1,5 +1,7 @@
 # Full-game audit register
 
+Latest selected findings: [character combat, smoke and hordes](COMBAT-SMOKE-HORDES-20261020.md). NPC equipment/timing, shared weapon entry points, smoke drift/emitters/native ray extent and horde lifecycle entry points are traced. Concrete weapon/AI variants, projectiles/armour, all producers, native contracts and every other open area remain unfinished. Selected exported methods do not certify full semantics.
+
 Latest selected findings: [creatures, sensing and ambient spawning](CREATURES-SENSING-SPAWN-20261020.md). All 40 definitions have selected default/factory records; shared sensing and ambient spawn/despawn chains are traced. Complete behavior, combat, navigation, all producers, native contracts, lifecycle and every other open area remain unfinished. Export and variant counts do not certify semantic completion.
 
 Latest selected findings: [survival and scene scheduling](SURVIVAL-SCHEDULE-20261020.md). Authority-dependent character eligibility, vital thresholds/precision, condition cadence, stamina/oxygen, clothing/temperature and selected damage are now traced. Complete actors/creatures/AI/combat, outer scheduling/world/persistence and all other open areas remain unfinished. Reader counts do not certify semantic completion.

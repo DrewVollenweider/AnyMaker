@@ -1,5 +1,7 @@
 # Whole-game research
 
+Latest continuation: [character combat, smoke and hordes](COMBAT-SMOKE-HORDES-20261020.md). Includes equipment/timing, shared weapon entry points, smoke emitters/lifetime and a native ray/sphere binding, plus horde creation/flocking/cleanup. Reader: 1,275 functions/184,600 checked instructions/1,042,178 bytes. Complete variants, projectile/armour physics, AI states and every other open register area remain in scope.
+
 Latest continuation: [creatures, sensing and ambient spawning](CREATURES-SENSING-SPAWN-20261020.md). Includes selected records for all 40 creature definitions, actor/vehicle sensing differences, sight filters, timing and ambient placement/despawn gates. Reader: 1,228 functions/176,005 checked instructions/996,711 bytes; 159 tests pass. Complete AI/combat/navigation and every other open register area remain in scope.
 
 Latest continuation: [survival and scene scheduling](SURVIVAL-SCHEDULE-20261020.md). Selected actor eligibility, vital thresholds/precision, clothing wetness, body temperature and damage paths are traced. Reader: 1,191 functions/167,289 checked instructions/947,427 bytes; all 151 tests pass. Complete actors/AI/combat, world, saves/authority, vehicles/native/compiler and all other open register areas remain in scope.

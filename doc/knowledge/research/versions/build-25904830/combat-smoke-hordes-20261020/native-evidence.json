@@ -1,0 +1,283 @@
+{
+  "schema": 1,
+  "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+  "batches": [
+    {
+      "batch": "08",
+      "plan": {
+        "schema": 1,
+        "tool_version": "1.1.0",
+        "mode": "assembly-only",
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "image_base": 5368709120,
+        "spans": [
+          {
+            "begin_rva": 1153296,
+            "end_rva": 1163106,
+            "va": 5369862416,
+            "file_offset": 1150224,
+            "size": 9810,
+            "unwind_rva": 5793288,
+            "bound_kind": "exception_directory_range_not_complete_function_inventory",
+            "name": "native_119910",
+            "span_sha256": "35f48964314b131348bc4f0a33b02142106e0fe1ee54ba5d6c1109bd8e2a67e5"
+          }
+        ],
+        "limits": "Selected static spans only. Manual bounds, native signatures, ABI and runtime dispatch require separate evidence."
+      },
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 1,
+        "instructions_byte_checked": 2219,
+        "instruction_bytes_checked": 9810,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof.",
+        "pseudocode_requested": false
+      }
+    },
+    {
+      "batch": "09",
+      "plan": {
+        "schema": 1,
+        "tool_version": "1.1.0",
+        "mode": "decompile",
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "image_base": 5368709120,
+        "spans": [
+          {
+            "begin_rva": 1167200,
+            "end_rva": 1167237,
+            "va": 5369876320,
+            "file_offset": 1164128,
+            "size": 37,
+            "unwind_rva": 5696584,
+            "bound_kind": "exception_directory_range_not_complete_function_inventory",
+            "name": "native_11cf60",
+            "span_sha256": "3fccb262cf95403ccebd120ab5261b00cf681b11ce44d9dc259cd77d3fcc7c08"
+          }
+        ],
+        "limits": "Selected static spans only. Manual bounds, native signatures, ABI and runtime dispatch require separate evidence."
+      },
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 1,
+        "instructions_byte_checked": 13,
+        "instruction_bytes_checked": 37,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    },
+    {
+      "batch": "10",
+      "plan": {
+        "schema": 1,
+        "tool_version": "1.1.0",
+        "mode": "decompile",
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "image_base": 5368709120,
+        "spans": [
+          {
+            "begin_rva": 48032,
+            "end_rva": 48905,
+            "va": 5368757152,
+            "file_offset": 44960,
+            "size": 873,
+            "unwind_rva": 5701184,
+            "bound_kind": "exception_directory_range_not_complete_function_inventory",
+            "name": "native_bba0",
+            "span_sha256": "80ccb617aa274d87144c0c1b474b24eb270f34c70cf7ce3f8fb8bde386f6e5be"
+          }
+        ],
+        "limits": "Selected static spans only. Manual bounds, native signatures, ABI and runtime dispatch require separate evidence."
+      },
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 1,
+        "instructions_byte_checked": 197,
+        "instruction_bytes_checked": 873,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    }
+  ],
+  "binding": {
+    "signature": "(bool) collision.test3d_ray_intersect_sphere (const collision.ray, const collision.sphere, collision.hit_data)",
+    "string_rva": 5468112,
+    "wrapper_rva": 1167200,
+    "implementation_rva": 48032,
+    "registration_examples": [
+      {
+        "rva": 1161437,
+        "bytes": "0f2805ecb64100",
+        "assembly": "MOVAPS XMM0,xmmword ptr [0x140536fd0]"
+      },
+      {
+        "rva": 1161444,
+        "bytes": "0f1101",
+        "assembly": "MOVUPS xmmword ptr [RCX],XMM0"
+      },
+      {
+        "rva": 1161617,
+        "bytes": "488d05c8150000",
+        "assembly": "LEA RAX,[0x14011cf60]"
+      },
+      {
+        "rva": 1161624,
+        "bytes": "48894328",
+        "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+      },
+      {
+        "rva": 1161646,
+        "bytes": "488d05ab150000",
+        "assembly": "LEA RAX,[0x14011cf60]"
+      },
+      {
+        "rva": 1161653,
+        "bytes": "488901",
+        "assembly": "MOV qword ptr [RCX],RAX"
+      }
+    ],
+    "wrapper_examples": [
+      {
+        "rva": 1167206,
+        "bytes": "498bc0",
+        "assembly": "MOV RAX,R8"
+      },
+      {
+        "rva": 1167209,
+        "bytes": "4c8bd2",
+        "assembly": "MOV R10,RDX"
+      },
+      {
+        "rva": 1167212,
+        "bytes": "488bd9",
+        "assembly": "MOV RBX,RCX"
+      },
+      {
+        "rva": 1167215,
+        "bytes": "488bd0",
+        "assembly": "MOV RDX,RAX"
+      },
+      {
+        "rva": 1167218,
+        "bytes": "498bca",
+        "assembly": "MOV RCX,R10"
+      },
+      {
+        "rva": 1167221,
+        "bytes": "4d8bc1",
+        "assembly": "MOV R8,R9"
+      },
+      {
+        "rva": 1167224,
+        "bytes": "e823eceeff",
+        "assembly": "CALL 0x14000bba0"
+      },
+      {
+        "rva": 1167229,
+        "bytes": "8803",
+        "assembly": "MOV byte ptr [RBX],AL"
+      }
+    ],
+    "intersection_examples": [
+      {
+        "rva": 48289,
+        "bytes": "f20f5905cfa05400",
+        "assembly": "MULSD XMM0,qword ptr [0x140555d78]"
+      },
+      {
+        "rva": 48320,
+        "bytes": "0f87fc010000",
+        "assembly": "JA 0x14000bec2"
+      },
+      {
+        "rva": 48389,
+        "bytes": "f2440f5905ca9f5400",
+        "assembly": "MULSD XMM8,qword ptr [0x140555cd8]"
+      },
+      {
+        "rva": 48402,
+        "bytes": "f2450f5ed4",
+        "assembly": "DIVSD XMM10,XMM12"
+      },
+      {
+        "rva": 48407,
+        "bytes": "f2450f5ec8",
+        "assembly": "DIVSD XMM9,XMM8"
+      },
+      {
+        "rva": 48431,
+        "bytes": "66450f2fd9",
+        "assembly": "COMISD XMM11,XMM9"
+      },
+      {
+        "rva": 48436,
+        "bytes": "0f8788010000",
+        "assembly": "JA 0x14000bec2"
+      },
+      {
+        "rva": 48442,
+        "bytes": "66450f2fda",
+        "assembly": "COMISD XMM11,XMM10"
+      },
+      {
+        "rva": 48447,
+        "bytes": "0f86c0000000",
+        "assembly": "JBE 0x14000be05"
+      },
+      {
+        "rva": 48621,
+        "bytes": "b001",
+        "assembly": "MOV AL,0x1"
+      },
+      {
+        "rva": 48813,
+        "bytes": "b001",
+        "assembly": "MOV AL,0x1"
+      },
+      {
+        "rva": 48834,
+        "bytes": "32c0",
+        "assembly": "XOR AL,AL"
+      }
+    ]
+  },
+  "constants": [
+    {
+      "rva": 5594328,
+      "file_offset": 5588696,
+      "bytes": "000000000000e03f",
+      "format": "f64",
+      "value": 0.5
+    },
+    {
+      "rva": 5594488,
+      "file_offset": 5588856,
+      "bytes": "0000000000001040",
+      "format": "f64",
+      "value": 4.0
+    },
+    {
+      "rva": 5598544,
+      "file_offset": 5592912,
+      "bytes": "0000000000000080",
+      "format": "f64",
+      "value": -0.0
+    },
+    {
+      "rva": 5595488,
+      "file_offset": 5589856,
+      "bytes": "000000000000f03f",
+      "format": "f64",
+      "value": 1.0
+    },
+    {
+      "rva": 5595496,
+      "file_offset": 5589864,
+      "bytes": "0000000000000000",
+      "format": "f64",
+      "value": 0.0
+    }
+  ],
+  "limits": "Selected registration, wrapper and complete bounded intersection span checked. Full native loader/ABI, degenerate numeric inputs and whole-game semantics remain open."
+}

@@ -1,5 +1,7 @@
 # Anymaker engineering knowledge — start here
 
+Newest research: [character combat, weapon entry points, smoke and hordes](research/COMBAT-SMOKE-HORDES-20261020.md). Traced hotbar-order equipment choice, NPC reload/battery behavior, smoke drift/lifetime and its unbounded forward-ray sight check, plus the separate horde producer. Complete concrete weapons/brains/projectiles remain open. Reader: 1,275 functions; latest tool suite: 159 passing tests.
+
 Newest research: [creatures, sensing and ambient spawning](research/CREATURES-SENSING-SPAWN-20261020.md). All 40 creature definitions have selected factory/default records. Sensing, sight, spawn pools and placement/despawn gates are traced; complete brains/combat/navigation remain open. Reader: 1,228 functions; all 159 research tests pass.
 
 Newest research: [survival, clothing, damage and scene scheduling](research/SURVIVAL-SCHEDULE-20261020.md). New findings distinguish authority/eligibility gates, 61-call condition cadence, 50% vital warnings, full-precision internal reserves, stamina edges and separate rain/wind protection. Reader: 1,191 functions; all 151 research tests pass. Full-game review remains incomplete.

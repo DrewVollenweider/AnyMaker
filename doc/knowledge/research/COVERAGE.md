@@ -1,5 +1,7 @@
 # Coverage and gaps
 
+Newest continuation: [character combat, smoke and hordes](COMBAT-SMOKE-HORDES-20261020.md). Selected NPC equipment/reload, weapon entry points, smoke lifetime/emission/native intersection and horde chains are traced. Reader: 1,275 functions/184,600 instructions/1,042,178 bytes. Complete concrete weapons/projectiles/armour, creature brains/navigation and lifecycle remain unfinished.
+
 Newest continuation: [creatures, sensing and ambient spawning](CREATURES-SENSING-SPAWN-20261020.md). Selected chains cover 40 variant records, factory naming, sensor eligibility/ranges, sight geometry/filters, ambient pools and spawn/despawn gates. Reader: 1,228 functions/176,005 instructions/996,711 bytes; 159 tests. Individual brains, native geometry/RNG, horde/dungeon producers and complete lifecycle remain unfinished.
 
 Newest continuation: [survival and scene scheduling](SURVIVAL-SCHEDULE-20261020.md). Reviewed chains include peer authority gates, condition cadence, vital storage and thresholds, stamina/oxygen, clothing/temperature and selected damage. Reader: 1,191 functions/167,289 instructions/947,427 bytes; 151 tests. Full character movement, actor variants, combat/death, outer scheduling and world systems remain unfinished.

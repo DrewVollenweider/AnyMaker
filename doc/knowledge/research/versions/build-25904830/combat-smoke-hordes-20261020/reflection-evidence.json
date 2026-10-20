@@ -1,0 +1,934 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "table": {
+    "offset": 66399263,
+    "end": 82528301,
+    "records": 8084,
+    "sha256": "5d619ecd6c69220d0e873d73e012dd301038f4eb911d859486db58c386b60a8e"
+  },
+  "types": [
+    {
+      "name": "server_scene.actor_character.ai_combat_controller",
+      "base": "",
+      "offset": 75611821,
+      "length": 1195,
+      "descriptor_sha256": "97a9f9b77e60ccdda921e0027536ce25d90840d18aa78c572a088c9cf768def8",
+      "size": 80,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.actor_character.ai_combat_controller.e_equip_weapon_type",
+      "base": "",
+      "offset": 75613289,
+      "length": 158,
+      "descriptor_sha256": "0c0b93e3c98cb00c69bde884c406ea9a7dd56c2b9e04233bc0d1d9c85563184a",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "server_scene.actor_character.ai_combat_controller.e_state",
+      "base": "",
+      "offset": 75613447,
+      "length": 317,
+      "descriptor_sha256": "e2711ddaffda8dd9577022d17e97b6a0bc2056d6983be1c2b2aa36dedbacd98b",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "server_scene.actor",
+      "base": "replication.master.object_events",
+      "offset": 75522095,
+      "length": 12629,
+      "descriptor_sha256": "ba7e24a87ce49445a36bfaa871915693f712c15696616d34a41bb0bade2b9aae",
+      "size": 504,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.actor_character",
+      "base": "server_scene.actor",
+      "offset": 75593321,
+      "length": 18120,
+      "descriptor_sha256": "c4376efc04a250873c92f50b1539c890e8986d29a81fab3af4f8fe986a8acdab",
+      "size": 3872,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.item_world.gun",
+      "base": "server_scene.item_world.container",
+      "offset": 76501690,
+      "length": 5099,
+      "descriptor_sha256": "cc76b751335748738a01daf039f2c6d17c1517ccc880deeb1fd6efd89e641d78",
+      "size": 328,
+      "alignment": 8
+    },
+    {
+      "name": "inventory_definition",
+      "base": "",
+      "offset": 74738349,
+      "length": 1297,
+      "descriptor_sha256": "bb13af35a3f06d5bec9bfd553c2754cd6a310debdebf03ca1b5f568b8f193fc1",
+      "size": 1080,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.occlusion_sphere",
+      "base": "",
+      "offset": 77134655,
+      "length": 446,
+      "descriptor_sha256": "5bd7c051af89dbfe397eec81cca046907fa3360cbb1118a6ec25764d6781a9a3",
+      "size": 72,
+      "alignment": 8
+    },
+    {
+      "name": "collision.ray",
+      "base": "",
+      "offset": 74389700,
+      "length": 251,
+      "descriptor_sha256": "d96deb9c19b122bd63a0ba01ba88c02de5dcc9331971108bba5fcddbe1f1efe9",
+      "size": 48,
+      "alignment": 8
+    },
+    {
+      "name": "collision.sphere",
+      "base": "",
+      "offset": 74389951,
+      "length": 271,
+      "descriptor_sha256": "774679fbe7fdbd5b2c863ec6ca3e7f713c526756aadd99e4b09e9e1030a8d273",
+      "size": 32,
+      "alignment": 8
+    },
+    {
+      "name": "collision.hit_data",
+      "base": "",
+      "offset": 74388265,
+      "length": 317,
+      "descriptor_sha256": "a2d2d53ebac819d7175938473c07728ae1989c7c1949fb339ad050ea2a42816a",
+      "size": 56,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.zombie_horde_controller",
+      "base": "",
+      "offset": 81752961,
+      "length": 221,
+      "descriptor_sha256": "26e00696263ece708f5a0ab8030e030c214fcca22107293bf26ddd0dac099c9a",
+      "size": 40,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.zombie_horde_manager",
+      "base": "",
+      "offset": 81753182,
+      "length": 250,
+      "descriptor_sha256": "bc67e841360c391ae7cb603a0c2a622f4e92feb1c2b176e03ff14f96b087b73d",
+      "size": 40,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.actor.e_logical_flags",
+      "base": "",
+      "offset": 75573292,
+      "length": 138,
+      "descriptor_sha256": "e3e8176f2da9dfa9a134e1e2450438741ad3227cc5bdefc68117b6c0b438fb49",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "server_scene",
+      "base": "replication.master.object_events",
+      "offset": 75514302,
+      "length": 7793,
+      "descriptor_sha256": "3ce42513de7e816526344a8090e4df228a98a6c311641c557eee479e72356b3e",
+      "size": 5520,
+      "alignment": 8
+    },
+    {
+      "name": "e_gamemode",
+      "base": "",
+      "offset": 74454993,
+      "length": 101,
+      "descriptor_sha256": "74202d7256bbe27fe3b2d1a2d90856fa4a805ccb0a3e1be08a30b75c2f841741",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "e_physics_group",
+      "base": "",
+      "offset": 74484529,
+      "length": 188,
+      "descriptor_sha256": "3b3ee4d5e23b21ebaec326ce20be9f0fce65fec2a8aa7689fe725015bca12027",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "server_scene.item_world.grenade_smoke",
+      "base": "server_scene.item_world",
+      "offset": 76497600,
+      "length": 4090,
+      "descriptor_sha256": "3774425325152b04684ae737856dee4aeacc3700cf1a0ae047bf625712e552ba",
+      "size": 232,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.item_world.smoke_discharger_grenade",
+      "base": "server_scene.item_world.component_accessory",
+      "offset": 76984855,
+      "length": 4152,
+      "descriptor_sha256": "ab6734ca144fbc161f6c6e3eb19b86321c6cc9fe793f833d8f111c63fa4321dd",
+      "size": 208,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.item_world.tick_context",
+      "base": "",
+      "offset": 77005030,
+      "length": 619,
+      "descriptor_sha256": "4b0e47229c106570443e213371c3131bc9f28ea1bfce125a1180c049bba31a48",
+      "size": 40,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.item_world.melee.hit",
+      "base": "",
+      "offset": 76890803,
+      "length": 530,
+      "descriptor_sha256": "9d2e3cf86886f7f5f173b88d90faa1c459945493b6923b02adc1051051953068",
+      "size": 56,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.actor_raycast_result",
+      "base": "",
+      "offset": 75924702,
+      "length": 552,
+      "descriptor_sha256": "17fe7e1fc6cc3d7b0cd30d7a44fb65574d103ff7417aa7c46e4ab410015016dd",
+      "size": 80,
+      "alignment": 8
+    },
+    {
+      "name": "e_melee_hit_type",
+      "base": "",
+      "offset": 74483504,
+      "length": 143,
+      "descriptor_sha256": "5bfcccfccb72ff74c187e1a05bed104ccf4b33626745992266bdbb8803c34fb3",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "physics.raycast_hit",
+      "base": "",
+      "offset": 75018113,
+      "length": 354,
+      "descriptor_sha256": "8159c60e79e6a1d1d0958aa041a08ff90dd87ccc82b75161a1fa10408a8beef1",
+      "size": 72,
+      "alignment": 8
+    }
+  ],
+  "enums": [
+    {
+      "type": "server_scene.actor_character.ai_combat_controller.e_equip_weapon_type",
+      "labels": [
+        "none",
+        "gun",
+        "melee",
+        "torch"
+      ]
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller.e_state",
+      "labels": [
+        "idle",
+        "equipping_gun",
+        "equipped_gun",
+        "reloading",
+        "attacking_gun",
+        "equipping_melee",
+        "equipped_melee",
+        "begin_attacking_melee",
+        "attacking_melee",
+        "equipping_torch",
+        "equipped_torch",
+        "unequipping"
+      ]
+    },
+    {
+      "type": "server_scene.actor.e_logical_flags",
+      "labels": [
+        "is_pseudo_object_spawned",
+        "is_horde_spawned"
+      ]
+    },
+    {
+      "type": "e_gamemode",
+      "labels": [
+        "survival",
+        "creative",
+        "sandbox"
+      ]
+    },
+    {
+      "type": "e_physics_group",
+      "labels": [
+        "terrain",
+        "tree",
+        "character",
+        "vehicle",
+        "prop",
+        "item",
+        "ragdoll",
+        "effect",
+        "entity",
+        "rope",
+        "buoyancy_volume"
+      ]
+    },
+    {
+      "type": "e_melee_hit_type",
+      "labels": [
+        "none",
+        "terrain",
+        "tree",
+        "vehicle",
+        "actor",
+        "actor_armour",
+        "prop"
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "server_scene.actor_character.ai_combat_controller.e_equip_weapon_type",
+        "name": "_m_equip_weapon_type",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_attack",
+        "offset": 4
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_target_visible",
+        "offset": 5
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "s32",
+        "name": "_m_best_item_id_gun",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "s32",
+        "name": "_m_best_item_id_melee",
+        "offset": 12
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "s32",
+        "name": "_m_best_item_id_torch",
+        "offset": 16
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "server_scene.actor_character.ai_combat_controller.e_state",
+        "name": "_m_state",
+        "offset": 20
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "s32",
+        "name": "_m_equipped_item_id_gun",
+        "offset": 24
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "s32",
+        "name": "_m_equipped_item_id_melee",
+        "offset": 28
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "s32",
+        "name": "_m_equipped_item_id_torch",
+        "offset": 32
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_attack_ready",
+        "offset": 36
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_reloading",
+        "offset": 37
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "s32",
+        "name": "_m_cooldown_reload",
+        "offset": 40
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "f64",
+        "name": "_m_cooldown_attack",
+        "offset": 48
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "f64",
+        "name": "_m_cooldown_attack_charging",
+        "offset": 56
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "s32",
+        "name": "_m_cooldown_equip",
+        "offset": 64
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "s32",
+        "name": "_m_ads_counter",
+        "offset": 68
+      }
+    },
+    {
+      "type": "server_scene.actor_character.ai_combat_controller",
+      "field": {
+        "type": "s32",
+        "name": "_m_burst_rounds_remaining",
+        "offset": 72
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "s32",
+        "name": "m_id",
+        "offset": 64
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "mat34",
+        "name": "m_transform",
+        "offset": 336
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "ptr<server_scene.peer>",
+        "name": "m_peer_authority",
+        "offset": 432
+      }
+    },
+    {
+      "type": "server_scene.actor",
+      "field": {
+        "type": "bitset",
+        "name": "m_server_flags",
+        "offset": 496
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "server_scene.inventory",
+        "name": "m_inventory",
+        "offset": 1920
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "server_scene.inventory_hotbar",
+        "name": "m_hotbar",
+        "offset": 2168
+      }
+    },
+    {
+      "type": "server_scene.actor_character",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_ads",
+        "offset": 3280
+      }
+    },
+    {
+      "type": "server_scene.item_world.gun",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_chambered",
+        "offset": 256
+      }
+    },
+    {
+      "type": "server_scene.item_world.gun",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_ammo_count_internal_magazine",
+        "offset": 288
+      }
+    },
+    {
+      "type": "server_scene.item_world.gun",
+      "field": {
+        "type": "s32",
+        "name": "_m_magazine_id",
+        "offset": 320
+      }
+    },
+    {
+      "type": "inventory_definition",
+      "field": {
+        "type": "s32",
+        "name": "m_ammo_capacity",
+        "offset": 1064
+      }
+    },
+    {
+      "type": "server_scene.occlusion_sphere",
+      "field": {
+        "type": "vec3",
+        "name": "m_position",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.occlusion_sphere",
+      "field": {
+        "type": "vec3",
+        "name": "m_velocity",
+        "offset": 24
+      }
+    },
+    {
+      "type": "server_scene.occlusion_sphere",
+      "field": {
+        "type": "f64",
+        "name": "m_radius_min",
+        "offset": 48
+      }
+    },
+    {
+      "type": "server_scene.occlusion_sphere",
+      "field": {
+        "type": "f64",
+        "name": "m_radius_max",
+        "offset": 56
+      }
+    },
+    {
+      "type": "server_scene.occlusion_sphere",
+      "field": {
+        "type": "f64",
+        "name": "m_lifetime",
+        "offset": 64
+      }
+    },
+    {
+      "type": "collision.ray",
+      "field": {
+        "type": "vec3",
+        "name": "m_origin",
+        "offset": 0
+      }
+    },
+    {
+      "type": "collision.ray",
+      "field": {
+        "type": "vec3",
+        "name": "m_normal",
+        "offset": 24
+      }
+    },
+    {
+      "type": "collision.sphere",
+      "field": {
+        "type": "vec3",
+        "name": "m_center",
+        "offset": 0
+      }
+    },
+    {
+      "type": "collision.sphere",
+      "field": {
+        "type": "f64",
+        "name": "m_radius",
+        "offset": 24
+      }
+    },
+    {
+      "type": "collision.hit_data",
+      "field": {
+        "type": "vec3",
+        "name": "m_position",
+        "offset": 0
+      }
+    },
+    {
+      "type": "collision.hit_data",
+      "field": {
+        "type": "vec3",
+        "name": "m_normal",
+        "offset": 24
+      }
+    },
+    {
+      "type": "collision.hit_data",
+      "field": {
+        "type": "f64",
+        "name": "m_hit_distance",
+        "offset": 48
+      }
+    },
+    {
+      "type": "server_scene.zombie_horde_controller",
+      "field": {
+        "type": "vector<s32>",
+        "name": "m_horde_actors",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.zombie_horde_manager",
+      "field": {
+        "type": "vector<server_scene.zombie_horde_controller>",
+        "name": "m_horde_controllers",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene",
+      "field": {
+        "type": "s32",
+        "name": "m_version",
+        "offset": 64
+      }
+    },
+    {
+      "type": "server_scene",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_world_seed",
+        "offset": 72
+      }
+    },
+    {
+      "type": "server_scene",
+      "field": {
+        "type": "replication.master.property_enum<e_gamemode>",
+        "name": "m_gamemode",
+        "offset": 136
+      }
+    },
+    {
+      "type": "server_scene",
+      "field": {
+        "type": "server_scene.actor.container",
+        "name": "m_actors",
+        "offset": 592
+      }
+    },
+    {
+      "type": "server_scene",
+      "field": {
+        "type": "server_scene.occlusion_smoke_grenade_manager",
+        "name": "m_occlusion_smoke_grenade_manager",
+        "offset": 5096
+      }
+    },
+    {
+      "type": "server_scene.item_world.grenade_smoke",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_pin_pulled",
+        "offset": 144
+      }
+    },
+    {
+      "type": "server_scene.item_world.grenade_smoke",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_release_smoke",
+        "offset": 176
+      }
+    },
+    {
+      "type": "server_scene.item_world.grenade_smoke",
+      "field": {
+        "type": "f64",
+        "name": "m_fuse_time",
+        "offset": 208
+      }
+    },
+    {
+      "type": "server_scene.item_world.grenade_smoke",
+      "field": {
+        "type": "f64",
+        "name": "m_smoke_time",
+        "offset": 216
+      }
+    },
+    {
+      "type": "server_scene.item_world.grenade_smoke",
+      "field": {
+        "type": "f64",
+        "name": "m_occlusion_sphere_time",
+        "offset": 224
+      }
+    },
+    {
+      "type": "server_scene.item_world.smoke_discharger_grenade",
+      "field": {
+        "type": "replication.master.property_bool",
+        "name": "m_is_release_smoke",
+        "offset": 144
+      }
+    },
+    {
+      "type": "server_scene.item_world.smoke_discharger_grenade",
+      "field": {
+        "type": "bool",
+        "name": "m_is_triggered",
+        "offset": 176
+      }
+    },
+    {
+      "type": "server_scene.item_world.smoke_discharger_grenade",
+      "field": {
+        "type": "f64",
+        "name": "m_fuse_time",
+        "offset": 184
+      }
+    },
+    {
+      "type": "server_scene.item_world.smoke_discharger_grenade",
+      "field": {
+        "type": "f64",
+        "name": "m_smoke_time",
+        "offset": 192
+      }
+    },
+    {
+      "type": "server_scene.item_world.smoke_discharger_grenade",
+      "field": {
+        "type": "f64",
+        "name": "m_occlusion_sphere_time",
+        "offset": 200
+      }
+    },
+    {
+      "type": "server_scene.item_world.tick_context",
+      "field": {
+        "type": "inventory_item_util.e_item_location_type",
+        "name": "m_location",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.item_world.tick_context",
+      "field": {
+        "type": "ptr<server_scene.actor>",
+        "name": "m_actor",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.item_world.tick_context",
+      "field": {
+        "type": "ptr<server_scene.item_floor>",
+        "name": "m_item_floor",
+        "offset": 16
+      }
+    },
+    {
+      "type": "server_scene.item_world.tick_context",
+      "field": {
+        "type": "ptr<server_scene.vehicle_component>",
+        "name": "m_vehicle_component",
+        "offset": 24
+      }
+    },
+    {
+      "type": "server_scene.item_world.tick_context",
+      "field": {
+        "type": "bool",
+        "name": "m_is_item_visible",
+        "offset": 32
+      }
+    },
+    {
+      "type": "server_scene.item_world.melee.hit",
+      "field": {
+        "type": "f64",
+        "name": "m_hit_dist_sq",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.item_world.melee.hit",
+      "field": {
+        "type": "e_melee_hit_type",
+        "name": "m_hit_type",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.item_world.melee.hit",
+      "field": {
+        "type": "ptr<const physics.object>",
+        "name": "m_physics_object",
+        "offset": 16
+      }
+    },
+    {
+      "type": "server_scene.item_world.melee.hit",
+      "field": {
+        "type": "ptr<server_scene.actor>",
+        "name": "m_actor",
+        "offset": 24
+      }
+    },
+    {
+      "type": "server_scene.item_world.melee.hit",
+      "field": {
+        "type": "vec3",
+        "name": "m_position",
+        "offset": 32
+      }
+    },
+    {
+      "type": "server_scene.actor_raycast_result",
+      "field": {
+        "type": "ptr<server_scene.actor>",
+        "name": "m_actor",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.actor_raycast_result",
+      "field": {
+        "type": "s32",
+        "name": "m_actor_id",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.actor_raycast_result",
+      "field": {
+        "type": "f64",
+        "name": "m_hit_dist_sq",
+        "offset": 16
+      }
+    },
+    {
+      "type": "server_scene.actor_raycast_result",
+      "field": {
+        "type": "vec3",
+        "name": "m_hit_position",
+        "offset": 24
+      }
+    },
+    {
+      "type": "server_scene.actor_raycast_result",
+      "field": {
+        "type": "vec3",
+        "name": "m_hit_normal",
+        "offset": 48
+      }
+    },
+    {
+      "type": "server_scene.actor_raycast_result",
+      "field": {
+        "type": "s32",
+        "name": "m_bone_index",
+        "offset": 72
+      }
+    },
+    {
+      "type": "server_scene.actor_raycast_result",
+      "field": {
+        "type": "s32",
+        "name": "m_armour_index",
+        "offset": 76
+      }
+    },
+    {
+      "type": "physics.raycast_hit",
+      "field": {
+        "type": "physics.object",
+        "name": "m_object",
+        "offset": 0
+      }
+    },
+    {
+      "type": "physics.raycast_hit",
+      "field": {
+        "type": "f64",
+        "name": "m_distance",
+        "offset": 16
+      }
+    },
+    {
+      "type": "physics.raycast_hit",
+      "field": {
+        "type": "vec3",
+        "name": "m_position",
+        "offset": 24
+      }
+    },
+    {
+      "type": "physics.raycast_hit",
+      "field": {
+        "type": "vec3",
+        "name": "m_normal",
+        "offset": 48
+      }
+    }
+  ],
+  "virtuals": []
+}
