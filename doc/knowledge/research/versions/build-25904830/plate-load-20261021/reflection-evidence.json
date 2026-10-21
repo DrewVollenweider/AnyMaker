@@ -1,0 +1,815 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "table": {
+    "offset": 66399263,
+    "end": 82528301,
+    "records": 8084,
+    "sha256": "5d619ecd6c69220d0e873d73e012dd301038f4eb911d859486db58c386b60a8e"
+  },
+  "types": [
+    {
+      "name": "server_scene.save_data.vehicle_plate",
+      "base": "",
+      "offset": 77781906,
+      "length": 478,
+      "descriptor_sha256": "085710d190a3242febf3fb86370fa390fd8c8240a5f0c4cf7024821a2cf15670",
+      "size": 112,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.save_data.vehicle_node",
+      "base": "",
+      "offset": 77781500,
+      "length": 406,
+      "descriptor_sha256": "d54259c4858d132688afd1fae78dc6e7c7afc7698e9cc8fbc7443b366ce1701b",
+      "size": 16,
+      "alignment": 4
+    },
+    {
+      "name": "server_scene.save_data.vehicle_edge",
+      "base": "",
+      "offset": 77778083,
+      "length": 452,
+      "descriptor_sha256": "d23abaa252621c10303193048318decbe59e33f56c5b424b5e5471e827c5ccc9",
+      "size": 16,
+      "alignment": 4
+    },
+    {
+      "name": "server_scene.vehicle_plate",
+      "base": "replication.master.object",
+      "offset": 81735307,
+      "length": 2205,
+      "descriptor_sha256": "54584381e3faf13f167bfb82889a124540d602d882be48450b6acd3494084eb1",
+      "size": 664,
+      "alignment": 8
+    },
+    {
+      "name": "client_scene.vehicle_plate",
+      "base": "replication.slave.object",
+      "offset": 74148717,
+      "length": 3076,
+      "descriptor_sha256": "749dfa7e90cf3bc56d09afc5fb0b5d688eade0743fd5e42066b7c03d83227fc6",
+      "size": 336,
+      "alignment": 8
+    },
+    {
+      "name": "client_scene.vehicle",
+      "base": "replication.slave.object",
+      "offset": 70592378,
+      "length": 7908,
+      "descriptor_sha256": "4ae3132e005bd6f010e90ed908539615251cbd6fecc11c9e9140062ea16941c5",
+      "size": 2448,
+      "alignment": 8
+    },
+    {
+      "name": "vehicle_geometry",
+      "base": "",
+      "offset": 82351951,
+      "length": 2480,
+      "descriptor_sha256": "b280caf1bb7703a6bcc269be513ad824e805fd67b2c70cc8a56e00ce4b500a05",
+      "size": 752,
+      "alignment": 8
+    }
+  ],
+  "enums": [],
+  "fields": [
+    {
+      "type": "server_scene.save_data.vehicle_plate",
+      "field": {
+        "type": "s32",
+        "name": "m_id",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.save_data.vehicle_plate",
+      "field": {
+        "type": "vector<s32>",
+        "name": "m_node_ids",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.save_data.vehicle_plate",
+      "field": {
+        "type": "s32",
+        "name": "m_color_front",
+        "offset": 48
+      }
+    },
+    {
+      "type": "server_scene.save_data.vehicle_plate",
+      "field": {
+        "type": "s32",
+        "name": "m_color_back",
+        "offset": 52
+      }
+    },
+    {
+      "type": "server_scene.save_data.vehicle_plate",
+      "field": {
+        "type": "vehicle_plate_util.e_plate_type",
+        "name": "m_type",
+        "offset": 56
+      }
+    },
+    {
+      "type": "server_scene.save_data.vehicle_plate",
+      "field": {
+        "type": "bool",
+        "name": "m_is_opening",
+        "offset": 60
+      }
+    },
+    {
+      "type": "server_scene.save_data.vehicle_plate",
+      "field": {
+        "type": "s32",
+        "name": "m_size",
+        "offset": 64
+      }
+    },
+    {
+      "type": "server_scene.save_data.vehicle_plate",
+      "field": {
+        "type": "e_vehicle_glass_state",
+        "name": "m_glass_state",
+        "offset": 68
+      }
+    },
+    {
+      "type": "server_scene.save_data.vehicle_plate",
+      "field": {
+        "type": "vector<vec3_s32>",
+        "name": "m_glass_impacts",
+        "offset": 72
+      }
+    },
+    {
+      "type": "server_scene.save_data.vehicle_node",
+      "field": {
+        "type": "s32",
+        "name": "m_id",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.save_data.vehicle_node",
+      "field": {
+        "type": "vec3_s32",
+        "name": "m_position",
+        "offset": 4
+      }
+    },
+    {
+      "type": "server_scene.save_data.vehicle_edge",
+      "field": {
+        "type": "s32",
+        "name": "m_node_id_0",
+        "offset": 0
+      }
+    },
+    {
+      "type": "server_scene.save_data.vehicle_edge",
+      "field": {
+        "type": "s32",
+        "name": "m_node_id_1",
+        "offset": 4
+      }
+    },
+    {
+      "type": "server_scene.save_data.vehicle_edge",
+      "field": {
+        "type": "s32",
+        "name": "m_color",
+        "offset": 8
+      }
+    },
+    {
+      "type": "server_scene.save_data.vehicle_edge",
+      "field": {
+        "type": "s32",
+        "name": "m_size",
+        "offset": 12
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "s32",
+        "name": "m_id",
+        "offset": 24
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.container_vector_ref<server_scene.vehicle_plate_node>",
+        "name": "m_nodes",
+        "offset": 32
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.container_vector_ref<server_scene.vehicle_plate_edge>",
+        "name": "m_edges",
+        "offset": 144
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.property_vec3_s32",
+        "name": "m_dir",
+        "offset": 256
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.property_vec3_s32",
+        "name": "m_position",
+        "offset": 296
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_size",
+        "offset": 336
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.property_enum<vehicle_plate_util.e_plate_type>",
+        "name": "m_type",
+        "offset": 368
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_color_front",
+        "offset": 400
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_color_back",
+        "offset": 432
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.property_enum<e_vehicle_glass_state>",
+        "name": "m_glass_state",
+        "offset": 464
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "array<replication.master.property_vec3_s32>",
+        "name": "m_glass_impacts",
+        "offset": 496
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_glass_impact_count",
+        "offset": 528
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "bool",
+        "name": "m_is_removed",
+        "offset": 560
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "vec3",
+        "name": "m_normal",
+        "offset": 568
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "f64",
+        "name": "m_plane_origin_distance",
+        "offset": 592
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "ref<server_scene.vehicle_octree.element_plate>",
+        "name": "m_octree_element",
+        "offset": 600
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "vector<ptr<server_scene.vehicle_component>>",
+        "name": "m_island_linked_components",
+        "offset": 616
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "s32",
+        "name": "m_island_index",
+        "offset": 656
+      }
+    },
+    {
+      "type": "client_scene.vehicle_plate",
+      "field": {
+        "type": "s32",
+        "name": "m_id",
+        "offset": 8
+      }
+    },
+    {
+      "type": "client_scene.vehicle_plate",
+      "field": {
+        "type": "replication.slave.container_vector_ref<client_scene.vehicle_plate_node>",
+        "name": "m_nodes",
+        "offset": 16
+      }
+    },
+    {
+      "type": "client_scene.vehicle_plate",
+      "field": {
+        "type": "replication.slave.container_vector_ref<client_scene.vehicle_plate_edge>",
+        "name": "m_edges",
+        "offset": 64
+      }
+    },
+    {
+      "type": "client_scene.vehicle_plate",
+      "field": {
+        "type": "replication.slave.property_vec3_s32",
+        "name": "m_dir",
+        "offset": 112
+      }
+    },
+    {
+      "type": "client_scene.vehicle_plate",
+      "field": {
+        "type": "replication.slave.property_vec3_s32",
+        "name": "m_position",
+        "offset": 136
+      }
+    },
+    {
+      "type": "client_scene.vehicle_plate",
+      "field": {
+        "type": "replication.slave.property_s32",
+        "name": "m_size",
+        "offset": 160
+      }
+    },
+    {
+      "type": "client_scene.vehicle_plate",
+      "field": {
+        "type": "replication.slave.property_enum<vehicle_plate_util.e_plate_type>",
+        "name": "m_type",
+        "offset": 176
+      }
+    },
+    {
+      "type": "client_scene.vehicle_plate",
+      "field": {
+        "type": "replication.slave.property_s32",
+        "name": "m_color_front",
+        "offset": 192
+      }
+    },
+    {
+      "type": "client_scene.vehicle_plate",
+      "field": {
+        "type": "replication.slave.property_s32",
+        "name": "m_color_back",
+        "offset": 208
+      }
+    },
+    {
+      "type": "client_scene.vehicle_plate",
+      "field": {
+        "type": "replication.slave.property_enum<e_vehicle_glass_state>",
+        "name": "m_glass_state",
+        "offset": 224
+      }
+    },
+    {
+      "type": "client_scene.vehicle_plate",
+      "field": {
+        "type": "array<replication.slave.property_vec3_s32>",
+        "name": "m_glass_impacts",
+        "offset": 240
+      }
+    },
+    {
+      "type": "client_scene.vehicle_plate",
+      "field": {
+        "type": "replication.slave.property_s32",
+        "name": "m_glass_impact_count",
+        "offset": 272
+      }
+    },
+    {
+      "type": "client_scene.vehicle_plate",
+      "field": {
+        "type": "vec3",
+        "name": "m_normal",
+        "offset": 288
+      }
+    },
+    {
+      "type": "client_scene.vehicle_plate",
+      "field": {
+        "type": "f64",
+        "name": "m_plane_origin_distance",
+        "offset": 312
+      }
+    },
+    {
+      "type": "client_scene.vehicle_plate",
+      "field": {
+        "type": "ref<client_scene.vehicle_octree.element_plate>",
+        "name": "m_octree_element",
+        "offset": 320
+      }
+    },
+    {
+      "type": "client_scene.vehicle",
+      "field": {
+        "type": "vector<s32>",
+        "name": "m_pending_split_vehicles",
+        "offset": 744
+      }
+    },
+    {
+      "type": "client_scene.vehicle",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_rebuild_physics",
+        "offset": 2328
+      }
+    },
+    {
+      "type": "client_scene.vehicle",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_rebuild_geometry",
+        "offset": 2329
+      }
+    },
+    {
+      "type": "client_scene.vehicle",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_rebuild_geometry_paint",
+        "offset": 2330
+      }
+    },
+    {
+      "type": "client_scene.vehicle",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_rebuild_geometry_plates_edges",
+        "offset": 2331
+      }
+    },
+    {
+      "type": "client_scene.vehicle",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_rebuild_belts",
+        "offset": 2332
+      }
+    },
+    {
+      "type": "client_scene.vehicle",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_rebuild_electrics",
+        "offset": 2333
+      }
+    },
+    {
+      "type": "client_scene.vehicle",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_rebuild_mechanicals",
+        "offset": 2334
+      }
+    },
+    {
+      "type": "client_scene.vehicle",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_rebuild_liquid",
+        "offset": 2335
+      }
+    },
+    {
+      "type": "client_scene.vehicle",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_rebuild_gas",
+        "offset": 2336
+      }
+    },
+    {
+      "type": "client_scene.vehicle",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_rebuild_data",
+        "offset": 2337
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.geometry_buffer>",
+        "name": "m_geometry_buffer_pending_solid",
+        "offset": 0
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.geometry_buffer>",
+        "name": "m_geometry_buffer_pending_glass",
+        "offset": 16
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.geometry_buffer>",
+        "name": "m_geometry_buffer_pending_glass_crack",
+        "offset": 32
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.geometry_buffer>",
+        "name": "m_geometry_buffer_pending_paint",
+        "offset": 48
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.geometry_buffer>",
+        "name": "m_geometry_buffer_pending_plates",
+        "offset": 64
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.geometry_buffer>",
+        "name": "m_geometry_buffer_pending_plates_glass",
+        "offset": 80
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.geometry_buffer>",
+        "name": "m_geometry_buffer_pending_plates_glass_crack",
+        "offset": 96
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.geometry_buffer>",
+        "name": "m_geometry_buffer_pending_edges",
+        "offset": 112
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.geometry_buffer>",
+        "name": "m_geometry_buffer_pending_electric",
+        "offset": 128
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.geometry_buffer>",
+        "name": "m_geometry_buffer_pending_mechanical",
+        "offset": 144
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.geometry_buffer>",
+        "name": "m_geometry_buffer_pending_liquid",
+        "offset": 160
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.geometry_buffer>",
+        "name": "m_geometry_buffer_pending_gas",
+        "offset": 176
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.geometry_buffer>",
+        "name": "m_geometry_buffer_pending_data",
+        "offset": 192
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.resource_geometry>",
+        "name": "m_geometry_solid",
+        "offset": 208
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.resource_geometry>",
+        "name": "m_geometry_glass",
+        "offset": 224
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.resource_geometry>",
+        "name": "m_geometry_glass_crack",
+        "offset": 240
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.resource_geometry>",
+        "name": "m_geometry_paint",
+        "offset": 256
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.resource_geometry>",
+        "name": "m_geometry_plates",
+        "offset": 272
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.resource_geometry>",
+        "name": "m_geometry_plates_glass",
+        "offset": 288
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.resource_geometry>",
+        "name": "m_geometry_plates_glass_crack",
+        "offset": 304
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.resource_geometry>",
+        "name": "m_geometry_edges",
+        "offset": 320
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.resource_geometry>",
+        "name": "m_geometry_electric",
+        "offset": 336
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.resource_geometry>",
+        "name": "m_geometry_mechanical",
+        "offset": 352
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.resource_geometry>",
+        "name": "m_geometry_liquid",
+        "offset": 368
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.resource_geometry>",
+        "name": "m_geometry_gas",
+        "offset": 384
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "ref<application.graphics.resource_geometry>",
+        "name": "m_geometry_data",
+        "offset": 400
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "collision.aab",
+        "name": "m_bounds_solid",
+        "offset": 416
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "collision.aab",
+        "name": "m_bounds_glass",
+        "offset": 464
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "collision.aab",
+        "name": "m_bounds_paint",
+        "offset": 512
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "collision.aab",
+        "name": "m_bounds_plates",
+        "offset": 560
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "collision.aab",
+        "name": "m_bounds_plates_glass",
+        "offset": 608
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "collision.aab",
+        "name": "m_bounds_edges",
+        "offset": 656
+      }
+    },
+    {
+      "type": "vehicle_geometry",
+      "field": {
+        "type": "collision.aab",
+        "name": "m_bounds",
+        "offset": 704
+      }
+    }
+  ],
+  "virtuals": []
+}

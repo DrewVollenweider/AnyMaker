@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "date": "2026-10-21",
+  "source_check": {
+    "schema": 1,
+    "date": "2026-10-20",
+    "installed_buildid": "25904830",
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "definition_files_checked": 2968,
+    "definition_file_mismatches": [],
+    "rechecked_for": "plate-load-20261021"
+  },
+  "pe_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+  "selected_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "d50e9288592c2f2ef55dfcd3b042433e4d61242247104796249a0b4e7f3e855d",
+    "function_records_checked": 32,
+    "constants_checked": 18,
+    "strings_checked": 14,
+    "call_instruction_examples_checked": 164,
+    "limitations": "Exact static identities/bytes only; virtual target binding and prose semantics are not proven by this checker."
+  },
+  "reflection_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "69d24f7374cb557ca6d809758e932f2ea7b16b88cdd5aa0eec839d6664571fca",
+    "table_records_checked": 8084,
+    "selected_type_identities_checked": 7,
+    "enum_label_lists_checked": 0,
+    "fields_checked": 92,
+    "virtual_declarations_checked": 0,
+    "limits": "Static descriptor declarations and identities only. Not executed dispatch, full storage ABI, units, lifecycle semantics or whole-game understanding."
+  },
+  "reader_counts": {
+    "functions": 1492,
+    "identical_exports_deduplicated": 6,
+    "instructions_byte_checked": 215549,
+    "slot_derived_calls": 10541,
+    "unresolved_calls": 8192
+  },
+  "reader_instruction_bytes": 1217324,
+  "archive_samples_rechecked": 5,
+  "archive_input_hashes_unchanged": true,
+  "selected_counts": {
+    "function_identities": 32,
+    "constants": 18,
+    "strings": 14,
+    "calls": 164,
+    "reflected_types": 7,
+    "fields": 92,
+    "archive_samples": 5
+  },
+  "research_tool_tests_passed": 181,
+  "tests_rerun_this_checkpoint": true,
+  "test_log_sha256": "2b1414b600f0e4b7c06028245a6ecebfa279cbc391c77c5e873607d743e28b68",
+  "game_executed": false,
+  "installation_and_active_saves_edited": false,
+  "limits": "Source identities/bytes and selected plate creation/save/client lifecycle; archive checks remain scoped. Complete placement, clipping/render/collision/native contracts and all-system semantics remain incomplete."
+}

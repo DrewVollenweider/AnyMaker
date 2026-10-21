@@ -1,5 +1,7 @@
 # Tools, reproduction, and maintenance
 
+New read-only creation tool: [plate_reconstruction.py](../../../scripts/research/plate_reconstruction.py), explained in [plate creation/load/render lifecycle](PLATE-LOAD-20261021.md). Run `python scripts/research/plate_reconstruction.py creation.data --output plate-audit.json` from the repository root; output must be a new file. It checks selected plate reference, direction, planarity and first-edge-size rules, preserves fresh-load duplicate-edge behavior and distinguishes opposed skins from same-facing loops. It is not complete native-load or rendering acceptance. Ten new tests bring the full research suite to 181.
+
 New vehicle helper module: [attachment_geometry.py](../../../scripts/research/attachment_geometry.py), documented in [attachment surfaces and contact boundaries](VEHICLE-ATTACHMENTS-20261021.md). Import its explicit-input surface_bounds, voxel_overlap, grids_equivalent, sampled_line_rectangle, sampled_triangle_rectangle and compiled_triangle_rectangle functions. The last function preserves the reviewed repeated-corner behavior; none is a complete mounting/save validator. Run `python -m unittest discover -s scripts/research -p 'test_*.py' -v` from the repository root. All 171 tests pass at this checkpoint.
 
 Source: `scripts/research/`. Python 3.12+ standard library; Ghidra exports additionally use an existing isolated Ghidra/JDK. Outputs refuse overwrites and game files remain read-only. Never create output directories inside the active installation.

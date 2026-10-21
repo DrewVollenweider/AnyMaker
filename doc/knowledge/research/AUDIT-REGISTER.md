@@ -1,5 +1,7 @@
 # Full-game audit register
 
+Latest selected vehicle findings: [plate creation/load/render lifecycle](PLATE-LOAD-20261021.md). Plate boundary creation, facing fallback, fresh-load edge deduplication, first-edge sizing, paint remapping and selected client rebuild/buffer paths are traced. A read-only reconstruction audit and five scoped archive checks supplement the earlier mounting tools. No historical rejected build or complete loader/render path is promoted to accepted. Vehicle systems remain the priority.
+
 New selected vehicle chain: [attachment surfaces and contact boundaries](VEHICLE-ATTACHMENTS-20261021.md). Complete recovered predicate review and supporting surface/intersection helpers add evidence for frame equality, support-facing gates and contact edge cases. The reusable helper model passes independent counterexample tests; complete geometry/candidate/variant/native-load semantics remain unfinished. Keep vehicle systems as the active priority.
 
 Priority override, October 21: the user is primarily interested in vehicle engineering and least interested in projectiles, explosions and AI. Work first on attachment/body splitting, plates/edges, cabin surfaces and save integrity; then engines/drivetrain, fluid/thermal/gas, electrical, controls, suspension/steering, flight and marine systems. [The current structural checkpoint](VEHICLE-STRUCTURE-20261021.md) traces selected removal/split/remap/update chains. It does not close these domains. Preserve the full register, but park the combat/AI queue at low priority.

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "tool_version": "1.0.0",
+  "samples": [
+    {
+      "sample": "helicopter_before_inset",
+      "sha256": "eeb5489af06e5e8635614feff2271dd4aa5b0db3007340f725172877e6c5ee10",
+      "summary": {
+        "bodies": 1,
+        "plates": 325,
+        "reference_failures": 0,
+        "unresolved": 0,
+        "warning_count": 0
+      },
+      "warning_categories": {},
+      "shared_loop_groups": 128,
+      "same_facing_loop_groups": 0
+    },
+    {
+      "sample": "rejected_generated_inset",
+      "sha256": "d151f01fb4bb09e431922bd15a3631bc435ed4ebf6bdc2b8f70527e90a9297c4",
+      "summary": {
+        "bodies": 1,
+        "plates": 342,
+        "reference_failures": 0,
+        "unresolved": 0,
+        "warning_count": 0
+      },
+      "warning_categories": {},
+      "shared_loop_groups": 83,
+      "same_facing_loop_groups": 0
+    },
+    {
+      "sample": "user_reported_corrupt_copy",
+      "sha256": "d151f01fb4bb09e431922bd15a3631bc435ed4ebf6bdc2b8f70527e90a9297c4",
+      "summary": {
+        "bodies": 1,
+        "plates": 342,
+        "reference_failures": 0,
+        "unresolved": 0,
+        "warning_count": 0
+      },
+      "warning_categories": {},
+      "shared_loop_groups": 83,
+      "same_facing_loop_groups": 0
+    },
+    {
+      "sample": "later_rear_shell",
+      "sha256": "929e191f4202640740394a1869468c9ea4e35832085ae6bada249fe694b4c409",
+      "summary": {
+        "bodies": 1,
+        "plates": 403,
+        "reference_failures": 0,
+        "unresolved": 0,
+        "warning_count": 0
+      },
+      "warning_categories": {},
+      "shared_loop_groups": 105,
+      "same_facing_loop_groups": 0
+    },
+    {
+      "sample": "accepted_compact_i4_running",
+      "sha256": "65a2cfc700ffa32c9244ac3452b4640af7496e1ed5c75a8383ef2711c6c4a7ed",
+      "summary": {
+        "bodies": 1,
+        "plates": 1,
+        "reference_failures": 0,
+        "unresolved": 0,
+        "warning_count": 0
+      },
+      "warning_categories": {},
+      "shared_loop_groups": 0,
+      "same_facing_loop_groups": 0
+    }
+  ],
+  "limits": "Read-only reference/direction/size and loop diagnostics; all zero findings are scoped, including the rejected helicopter. No new game acceptance or root-cause claim."
+}

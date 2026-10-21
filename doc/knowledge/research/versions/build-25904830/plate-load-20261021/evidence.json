@@ -1,0 +1,1763 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "() client_scene.vehicle._rebuild (client_scene.vehicle, physics.scene, const vehicle_component_definition_container)",
+      "signature_offset": 15647105,
+      "code_offset": 15648309,
+      "code_size": 808,
+      "code_sha256": "6c18d608684c8d8bf677f9a4de08c6eeff5980458674cad0b28b4a82c4c78c85"
+    },
+    {
+      "signature": "() client_scene.vehicle._rebuild_geometry (client_scene.vehicle, const vehicle_component_definition_container)",
+      "signature_offset": 15657416,
+      "code_offset": 15659850,
+      "code_size": 1192,
+      "code_sha256": "82f71b446f3c2f70218e88972d98e7780802baddb07ae4b836f5891047eacae1"
+    },
+    {
+      "signature": "() client_scene.vehicle._rebuild_geometry_paint (client_scene.vehicle)",
+      "signature_offset": 15661911,
+      "code_offset": 15663459,
+      "code_size": 896,
+      "code_sha256": "26420221282ea15bcd03633dcad0c719ea819a0453af6bef4c6f651c540400b8"
+    },
+    {
+      "signature": "() client_scene.vehicle._rebuild_geometry_plates_edges (client_scene.vehicle)",
+      "signature_offset": 15664978,
+      "code_offset": 15667609,
+      "code_size": 1416,
+      "code_sha256": "2182398b4e124d804f16518386a1c4ebd3b814ba11f0c7093b3d6d51a0cd3f5a"
+    },
+    {
+      "signature": "() client_scene.vehicle.tick (client_scene.vehicle, client, client_scene, const f64, const f64, const vec3)",
+      "signature_offset": 16019654,
+      "code_offset": 16024717,
+      "code_size": 5752,
+      "code_sha256": "7d18e641738b8cb2b1a9b542f449676a6f6c79dd16175763d49478cba358e06e"
+    },
+    {
+      "signature": "() client_scene.vehicle_plate.container.create_object (client_scene.vehicle_plate.container, replication.slave.replicator_context, client_scene.vehicle_plate)",
+      "signature_offset": 20260804,
+      "code_offset": 20263885,
+      "code_size": 1880,
+      "code_sha256": "d17921c46bb1af5a839caaecfb82c2cf82c9e90f400ed6b4daebae9e45ce1acd"
+    },
+    {
+      "signature": "() client_scene.vehicle_plate.container.destroy_object (client_scene.vehicle_plate.container, replication.slave.replicator_context, client_scene.vehicle_plate)",
+      "signature_offset": 20266562,
+      "code_offset": 20268553,
+      "code_size": 1352,
+      "code_sha256": "5757c40dd7dcdd5d71c88b9df0557e2199a795fb6e652641b7dd10132aee10ca"
+    },
+    {
+      "signature": "() client_scene.vehicle_plate.replicate (client_scene.vehicle_plate, replication.slave.replicator)",
+      "signature_offset": 20326728,
+      "code_offset": 20328391,
+      "code_size": 2416,
+      "code_sha256": "2e50da2ded09c9fe43b0fd0c22868faa9918f21f8f8faf5cfad3ecaa89cf672a"
+    },
+    {
+      "signature": "() server_scene.save_data.vehicle.create_data_from_vehicle (server_scene.save_data.vehicle, const server_scene.vehicle, server_scene.save_data.definition_table)",
+      "signature_offset": 51712678,
+      "code_offset": 51730643,
+      "code_size": 10056,
+      "code_sha256": "79f8231856bfe53a9bbebd3c37da6538badf302f1926b7a9e639989c4dce4e67"
+    },
+    {
+      "signature": "() server_scene.save_data.vehicle.create_vehicle_from_data (server_scene.save_data.vehicle, server_scene.vehicle)",
+      "signature_offset": 51746107,
+      "code_offset": 51761852,
+      "code_size": 8352,
+      "code_sha256": "08eb3c7c2495a7104699c1e72034c163a74c870cd3a46feae5335fb786c1a96b"
+    },
+    {
+      "signature": "() server_scene.save_data.vehicle_edge.parse_save_data (server_scene.save_data.vehicle_edge, server_scene.save_data.parser)",
+      "signature_offset": 51797420,
+      "code_offset": 51797909,
+      "code_size": 752,
+      "code_sha256": "005d59e18a01665dc501e9fc343ac6590ec5b2282738e53f74882d9d677b3f77"
+    },
+    {
+      "signature": "() server_scene.save_data.vehicle_node.parse_save_data (server_scene.save_data.vehicle_node, server_scene.save_data.parser)",
+      "signature_offset": 51817981,
+      "code_offset": 51818528,
+      "code_size": 408,
+      "code_sha256": "5e63c7d4d312623d85e0419967ebb93440375790fceb765dbc82436a0b023367"
+    },
+    {
+      "signature": "() server_scene.save_data.vehicle_plate.parse_save_data (server_scene.save_data.vehicle_plate, server_scene.save_data.parser)",
+      "signature_offset": 51819229,
+      "code_offset": 51820491,
+      "code_size": 1640,
+      "code_sha256": "141292bd116e316ef223698ca178d74b4daaa1f4210f51a9a0093cf6b08ee32c"
+    },
+    {
+      "signature": "(ptr<server_scene.vehicle_edge>) server_scene.vehicle.add_edge (server_scene.vehicle, server_scene.vehicle_node, server_scene.vehicle_node, const s32, const s32, const bool)",
+      "signature_offset": 52695963,
+      "code_offset": 52698203,
+      "code_size": 1848,
+      "code_sha256": "b1c31e9d2e5abde489116a37075a9a54721963b000ff61956e5019b5d01e6eb0"
+    },
+    {
+      "signature": "(ptr<server_scene.vehicle_plate>) server_scene.vehicle.add_plate (server_scene.vehicle, const vector<s32>, const bool, const vehicle_plate_util.e_plate_type)",
+      "signature_offset": 52718894,
+      "code_offset": 52719463,
+      "code_size": 328,
+      "code_sha256": "9f97e8557b45a954ce9a32a1cab7b01c74f8b07b8bc3abce90bb53c97e245212"
+    },
+    {
+      "signature": "(ptr<server_scene.vehicle_plate>) server_scene.vehicle.add_plate (server_scene.vehicle, const vector<s32>, const bool, const vehicle_plate_util.e_plate_type, const s32, const s32)",
+      "signature_offset": 52720124,
+      "code_offset": 52721127,
+      "code_size": 720,
+      "code_sha256": "e3d9aaa1bb8b0cab831aa6dfde9006224349d4d822cea99bf931974ec9b7d8a4"
+    },
+    {
+      "signature": "(ptr<server_scene.vehicle_plate>) server_scene.vehicle.add_plate (server_scene.vehicle, const vector<ptr<server_scene.vehicle_node>>, const bool)",
+      "signature_offset": 52728980,
+      "code_offset": 52729564,
+      "code_size": 312,
+      "code_sha256": "021e6cfab9e6b2aa482954b67b4fc4a269d07edd59805b936f786e23878b999c"
+    },
+    {
+      "signature": "(ptr<server_scene.vehicle_plate>) server_scene.vehicle.add_plate (server_scene.vehicle, const vector<ptr<server_scene.vehicle_node>>, const bool, const vehicle_plate_util.e_plate_type, const s32, const s32)",
+      "signature_offset": 52730178,
+      "code_offset": 52734497,
+      "code_size": 4152,
+      "code_sha256": "5737d4932b644ca054f80d77422bebae49d5678d22ab9a27ee38a58516d44cd4"
+    },
+    {
+      "signature": "() server_scene.vehicle.clear_plate_adjacent (server_scene.vehicle, server_scene.vehicle_plate, const s32)",
+      "signature_offset": 52820769,
+      "code_offset": 52821015,
+      "code_size": 48,
+      "code_sha256": "5f0bc5ac2df626dd32104734851767762f84287721899e0889d01b5ced2f6e6d"
+    },
+    {
+      "signature": "() server_scene.vehicle.create (server_scene.vehicle, physics.scene, server_scene.environment_tile_container)",
+      "signature_offset": 52933989,
+      "code_offset": 52935402,
+      "code_size": 1312,
+      "code_sha256": "cf3669acf09b16da1a50b9ee2195d6c1459d7990d15cf87de7a52acdb5446260"
+    },
+    {
+      "signature": "(ptr<server_scene.vehicle_edge>) server_scene.vehicle.find_edge (server_scene.vehicle, const s32, const s32)",
+      "signature_offset": 53028292,
+      "code_offset": 53028542,
+      "code_size": 56,
+      "code_sha256": "b78008ec4d44e342a47a8bbd5df74a4cc7e784d7a67f57189453d7b081f184b1"
+    },
+    {
+      "signature": "() server_scene.vehicle.remove_plate (server_scene.vehicle, server_scene.vehicle_plate, s32)",
+      "signature_offset": 53268044,
+      "code_offset": 53273079,
+      "code_size": 2864,
+      "code_sha256": "b9c01c0c4a01042f76d780e9c5ae9a6f50689c95aa7156122d548df243c80da7"
+    },
+    {
+      "signature": "() server_scene.vehicle.set_plate_adjacent (server_scene.vehicle, server_scene.vehicle_plate, const s32, server_scene.vehicle_plate, const s32)",
+      "signature_offset": 53281466,
+      "code_offset": 53281786,
+      "code_size": 80,
+      "code_sha256": "765c5e42ae54d11d3918956341eafe12d05a4a2cacb83af55f55feeef9fcbf02"
+    },
+    {
+      "signature": "() server_scene.vehicle.tick (server_scene.vehicle, server_scene, const bool)",
+      "signature_offset": 53319068,
+      "code_offset": 53321058,
+      "code_size": 1504,
+      "code_sha256": "853a67038d9011fcc6c06576bd0b61edb6e140d1b3558b3c35184ea7a546149d"
+    },
+    {
+      "signature": "(bool) vehicle_geometry._update_pending_geometry (vehicle_geometry, ref<application.graphics.resource_geometry>, ref<application.graphics.geometry_buffer>, const string)",
+      "signature_offset": 63148429,
+      "code_offset": 63149088,
+      "code_size": 408,
+      "code_sha256": "8adc0f3679b1f0422aa1594e6f3fe3964ae776e4fb76e2c5d5ea92d75f241559"
+    },
+    {
+      "signature": "() vehicle_geometry.update_pending_geometry (vehicle_geometry)",
+      "signature_offset": 63151953,
+      "code_offset": 63152355,
+      "code_size": 3160,
+      "code_sha256": "0fab128a1351656b115e392cb10f28ba2b2de89ceb93af1faa0a798306b86c18"
+    },
+    {
+      "signature": "(vec3_s32) vehicle_plate_util.calculate_plate_dir (const vector<vec3_s32>)",
+      "signature_offset": 63378853,
+      "code_offset": 63379396,
+      "code_size": 1880,
+      "code_sha256": "c9b96130f5b9e6f31daa9ad5e5b82ef564ec3ff76edd53c8dee2b6adfeba30f2"
+    },
+    {
+      "signature": "() vehicle_plates_edges_builder.build (const vehicle_plates_edges_builder, vehicle_geometry)",
+      "signature_offset": 63503004,
+      "code_offset": 63503803,
+      "code_size": 840,
+      "code_sha256": "aa9ea830eaff1689c8d74e456c414a2617d7f6684109faca00a4fc246f64bcd8"
+    },
+    {
+      "signature": "() vehicle_util.build_plate_adjacencies<server_scene> (server_scene.vehicle, server_scene.vehicle_plate, const ptr<server_scene.vehicle_plate>)",
+      "signature_offset": 65507158,
+      "code_offset": 65510638,
+      "code_size": 3064,
+      "code_sha256": "668ca30ee666a52089f00fb033d7fd90f951179ee6d37eabfb7baaf3b8edce14"
+    },
+    {
+      "signature": "() vehicle_util.clear_plate_adjacent<server_scene> (server_scene.vehicle, server_scene.vehicle_plate, const s32)",
+      "signature_offset": 65564957,
+      "code_offset": 65565637,
+      "code_size": 568,
+      "code_sha256": "6d1169f27676f2b1a46e84436badaf96cd332924224e059a025f0f51864c5042"
+    },
+    {
+      "signature": "(ptr<server_scene.vehicle_edge>) vehicle_util.find_edge<server_scene> (server_scene.vehicle, const s32, const s32)",
+      "signature_offset": 65576346,
+      "code_offset": 65577661,
+      "code_size": 776,
+      "code_sha256": "2a4b8fccaefb8207fe04ba9dbe2c855d23f39e4edc59c57026007c9390212b0a"
+    },
+    {
+      "signature": "() vehicle_util.set_plate_adjacent<server_scene> (server_scene.vehicle, server_scene.vehicle_plate, const s32, server_scene.vehicle_plate, const s32)",
+      "signature_offset": 65651072,
+      "code_offset": 65651789,
+      "code_size": 1080,
+      "code_sha256": "2c814fb9cae34332aa585d6cac5067b3f286a992f4c47bedf1f43cd443179270"
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 52734497,
+      "offset": 52738625,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 52734497,
+      "offset": 52738629,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 52734497,
+      "offset": 52738633,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 63379396,
+      "offset": 63381260,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 63379396,
+      "offset": 63381264,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 63379396,
+      "offset": 63381268,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 65565637,
+      "offset": 65566197,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 65651789,
+      "offset": 65652861,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 51820491,
+      "offset": 51822063,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 51761852,
+      "offset": 51770200,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 51730643,
+      "offset": 51740687,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 51797909,
+      "offset": 51798641,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 51818528,
+      "offset": 51818924,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 63149088,
+      "offset": 63149488,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 52698203,
+      "offset": 52700043,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 51761852,
+      "offset": 51770196,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 51730643,
+      "offset": 51740683,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Reviewed creation/loader/default calibration"
+    },
+    {
+      "function_offset": 63149088,
+      "offset": 63149492,
+      "format": "u8",
+      "bytes": "01",
+      "value": 1,
+      "name": "Reviewed creation/loader/default calibration"
+    }
+  ],
+  "strings": [
+    {
+      "function_offset": 51820491,
+      "offset": 51822059,
+      "text": "id"
+    },
+    {
+      "function_offset": 51820491,
+      "offset": 51822067,
+      "text": "nodes"
+    },
+    {
+      "function_offset": 51820491,
+      "offset": 51822073,
+      "text": "col_front"
+    },
+    {
+      "function_offset": 51820491,
+      "offset": 51822083,
+      "text": "col_back"
+    },
+    {
+      "function_offset": 51820491,
+      "offset": 51822092,
+      "text": "type"
+    },
+    {
+      "function_offset": 51820491,
+      "offset": 51822097,
+      "text": "size"
+    },
+    {
+      "function_offset": 51820491,
+      "offset": 51822102,
+      "text": "glass_state"
+    },
+    {
+      "function_offset": 51820491,
+      "offset": 51822114,
+      "text": "glass_impacts"
+    },
+    {
+      "function_offset": 51797909,
+      "offset": 51798637,
+      "text": "n0"
+    },
+    {
+      "function_offset": 51797909,
+      "offset": 51798645,
+      "text": "n1"
+    },
+    {
+      "function_offset": 51797909,
+      "offset": 51798648,
+      "text": "col"
+    },
+    {
+      "function_offset": 51797909,
+      "offset": 51798652,
+      "text": "s"
+    },
+    {
+      "function_offset": 51818528,
+      "offset": 51818920,
+      "text": "id"
+    },
+    {
+      "function_offset": 51818528,
+      "offset": 51818928,
+      "text": "pos"
+    }
+  ],
+  "call_examples": [
+    {
+      "function_offset": 15648309,
+      "instruction": 15648389,
+      "bytes": "ffd3",
+      "slot_address": 15649117,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle._rebuild_physics (client_scene.vehicle, physics.scene)"
+    },
+    {
+      "function_offset": 15648309,
+      "instruction": 15648428,
+      "bytes": "ffd2",
+      "slot_address": 15649125,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle._rebuild_buoyancy (client_scene.vehicle)"
+    },
+    {
+      "function_offset": 15648309,
+      "instruction": 15648467,
+      "bytes": "ffd2",
+      "slot_address": 15649133,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle._rebuild_bounds (client_scene.vehicle)"
+    },
+    {
+      "function_offset": 15648309,
+      "instruction": 15648550,
+      "bytes": "ffd3",
+      "slot_address": 15649141,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle._rebuild_geometry (client_scene.vehicle, const vehicle_component_definition_container)"
+    },
+    {
+      "function_offset": 15648309,
+      "instruction": 15648625,
+      "bytes": "ffd2",
+      "slot_address": 15649149,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle._rebuild_geometry_paint (client_scene.vehicle)"
+    },
+    {
+      "function_offset": 15648309,
+      "instruction": 15648700,
+      "bytes": "ffd2",
+      "slot_address": 15649157,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle._rebuild_geometry_plates_edges (client_scene.vehicle)"
+    },
+    {
+      "function_offset": 15648309,
+      "instruction": 15648763,
+      "bytes": "ff13",
+      "slot_address": 15649165,
+      "kind": 4,
+      "symbol": "() client_scene.vehicle_electric.rebuild (client_scene.vehicle_electric, client_scene.vehicle)"
+    },
+    {
+      "function_offset": 15648309,
+      "instruction": 15648826,
+      "bytes": "ff13",
+      "slot_address": 15649173,
+      "kind": 4,
+      "symbol": "() client_scene.vehicle_mechanical.rebuild (client_scene.vehicle_mechanical, client_scene.vehicle)"
+    },
+    {
+      "function_offset": 15648309,
+      "instruction": 15648889,
+      "bytes": "ff13",
+      "slot_address": 15649181,
+      "kind": 4,
+      "symbol": "() client_scene.vehicle_liquid.rebuild (client_scene.vehicle_liquid, client_scene.vehicle)"
+    },
+    {
+      "function_offset": 15648309,
+      "instruction": 15648952,
+      "bytes": "ff13",
+      "slot_address": 15649189,
+      "kind": 4,
+      "symbol": "() client_scene.vehicle_gas.rebuild (client_scene.vehicle_gas, client_scene.vehicle)"
+    },
+    {
+      "function_offset": 15648309,
+      "instruction": 15649015,
+      "bytes": "ff13",
+      "slot_address": 15649197,
+      "kind": 4,
+      "symbol": "() client_scene.vehicle_data.rebuild (client_scene.vehicle_data, client_scene.vehicle)"
+    },
+    {
+      "function_offset": 15648309,
+      "instruction": 15649071,
+      "bytes": "ff12",
+      "slot_address": 15649205,
+      "kind": 4,
+      "symbol": "() client_scene.vehicle_belt.rebuild (client_scene.vehicle)"
+    },
+    {
+      "function_offset": 15659850,
+      "instruction": 15660450,
+      "bytes": "ffd0",
+      "slot_address": 15661114,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle_component.add_static_geometry (const client_scene.vehicle_component, const vehicle_component_definition_container, vehicle_component_mesh_builder)"
+    },
+    {
+      "function_offset": 15663459,
+      "instruction": 15663724,
+      "bytes": "ff10",
+      "slot_address": 15664387,
+      "kind": 4,
+      "symbol": "(ptr<ref<client_scene.vehicle_plate_paint>>) replication.slave.container_vector_ref_virtual<client_scene.vehicle_plate_paint>.value (const replication.slave.container_vector_ref_virtual<client_scene.vehicle_plate_paint>, const uptr)"
+    },
+    {
+      "function_offset": 15663459,
+      "instruction": 15663793,
+      "bytes": "ffd0",
+      "slot_address": 15664395,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle_plate_paint.add_paint_geometry (const client_scene.vehicle_plate_paint, const client_scene.vehicle, vehicle_paint_builder)"
+    },
+    {
+      "function_offset": 15663459,
+      "instruction": 15663818,
+      "bytes": "ff10",
+      "slot_address": 15664403,
+      "kind": 4,
+      "symbol": "(uptr) replication.slave.container_vector_ref_virtual<client_scene.vehicle_plate_paint>.next (const replication.slave.container_vector_ref_virtual<client_scene.vehicle_plate_paint>, const uptr)"
+    },
+    {
+      "function_offset": 15667609,
+      "instruction": 15668170,
+      "bytes": "ffd0",
+      "slot_address": 15669097,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle_edge.add_static_geometry (const client_scene.vehicle_edge, const client_scene.vehicle, vehicle_plates_edges_builder)"
+    },
+    {
+      "function_offset": 15667609,
+      "instruction": 15668374,
+      "bytes": "ff10",
+      "slot_address": 15669129,
+      "kind": 4,
+      "symbol": "(ptr<ref<client_scene.vehicle_plate>>) replication.slave.container_vector_ref_virtual<client_scene.vehicle_plate>.value (const replication.slave.container_vector_ref_virtual<client_scene.vehicle_plate>, const uptr)"
+    },
+    {
+      "function_offset": 15667609,
+      "instruction": 15668451,
+      "bytes": "ffd0",
+      "slot_address": 15669137,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle_plate.add_static_geometry (const client_scene.vehicle_plate, const client_scene.vehicle, const s32, vehicle_plates_edges_builder)"
+    },
+    {
+      "function_offset": 15667609,
+      "instruction": 15668473,
+      "bytes": "ff10",
+      "slot_address": 15669145,
+      "kind": 4,
+      "symbol": "(uptr) replication.slave.container_vector_ref_virtual<client_scene.vehicle_plate>.next (const replication.slave.container_vector_ref_virtual<client_scene.vehicle_plate>, const uptr)"
+    },
+    {
+      "function_offset": 15667609,
+      "instruction": 15668926,
+      "bytes": "ff10",
+      "slot_address": 15669217,
+      "kind": 4,
+      "symbol": "() dtor (vehicle_plates_edges_builder)"
+    },
+    {
+      "function_offset": 16024717,
+      "instruction": 16024933,
+      "bytes": "ffd5",
+      "slot_address": 16030477,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle._rebuild (client_scene.vehicle, physics.scene, const vehicle_component_definition_container)"
+    },
+    {
+      "function_offset": 16024717,
+      "instruction": 16024962,
+      "bytes": "ff12",
+      "slot_address": 16030485,
+      "kind": 4,
+      "symbol": "() vehicle_geometry.update_pending_geometry (vehicle_geometry)"
+    },
+    {
+      "function_offset": 16024717,
+      "instruction": 16024986,
+      "bytes": "ff12",
+      "slot_address": 16030493,
+      "kind": 4,
+      "symbol": "() client_scene.vehicle.belt_geometry.container.update_pending_geometry (client_scene.vehicle.belt_geometry.container)"
+    },
+    {
+      "function_offset": 16024717,
+      "instruction": 16025032,
+      "bytes": "ff12",
+      "slot_address": 16030501,
+      "kind": 4,
+      "symbol": "() vehicle_buoyancy.update_pending_geometry (vehicle_buoyancy)"
+    },
+    {
+      "function_offset": 20263885,
+      "instruction": 20264886,
+      "bytes": "ff10",
+      "slot_address": 20265845,
+      "kind": 4,
+      "symbol": "(ptr<client_scene.vehicle_plate_node>) replication.slave.container_vector_ref<client_scene.vehicle_plate_node>.value (const replication.slave.container_vector_ref<client_scene.vehicle_plate_node>, const uptr)"
+    },
+    {
+      "function_offset": 20263885,
+      "instruction": 20265018,
+      "bytes": "ff10",
+      "slot_address": 20265869,
+      "kind": 4,
+      "symbol": "(uptr) replication.slave.container_vector_ref<client_scene.vehicle_plate_node>.next (const replication.slave.container_vector_ref<client_scene.vehicle_plate_node>, const uptr)"
+    },
+    {
+      "function_offset": 20263885,
+      "instruction": 20265230,
+      "bytes": "ff10",
+      "slot_address": 20265893,
+      "kind": 4,
+      "symbol": "(ptr<client_scene.vehicle_plate_edge>) replication.slave.container_vector_ref<client_scene.vehicle_plate_edge>.value (const replication.slave.container_vector_ref<client_scene.vehicle_plate_edge>, const uptr)"
+    },
+    {
+      "function_offset": 20263885,
+      "instruction": 20265373,
+      "bytes": "ff10",
+      "slot_address": 20265909,
+      "kind": 4,
+      "symbol": "(uptr) replication.slave.container_vector_ref<client_scene.vehicle_plate_edge>.next (const replication.slave.container_vector_ref<client_scene.vehicle_plate_edge>, const uptr)"
+    },
+    {
+      "function_offset": 20263885,
+      "instruction": 20265423,
+      "bytes": "ff5500",
+      "slot_address": 20265917,
+      "kind": 4,
+      "symbol": "() client_scene.vehicle.build_plate_adjacencies (client_scene.vehicle, client_scene.vehicle_plate, const ptr<client_scene.vehicle_plate>)"
+    },
+    {
+      "function_offset": 20263885,
+      "instruction": 20265701,
+      "bytes": "ffd0",
+      "slot_address": 20265965,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle.set_flag_rebuild_physics (client_scene.vehicle)"
+    },
+    {
+      "function_offset": 20263885,
+      "instruction": 20265741,
+      "bytes": "ffd0",
+      "slot_address": 20265973,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle.set_flag_rebuild_geometry_plates_edges (client_scene.vehicle)"
+    },
+    {
+      "function_offset": 20268553,
+      "instruction": 20268834,
+      "bytes": "ff10",
+      "slot_address": 20269929,
+      "kind": 4,
+      "symbol": "(ptr<client_scene.vehicle_plate_edge>) replication.slave.container_vector_ref<client_scene.vehicle_plate_edge>.value (const replication.slave.container_vector_ref<client_scene.vehicle_plate_edge>, const uptr)"
+    },
+    {
+      "function_offset": 20268553,
+      "instruction": 20269283,
+      "bytes": "ff10",
+      "slot_address": 20269985,
+      "kind": 4,
+      "symbol": "(uptr) replication.slave.container_vector_ref<client_scene.vehicle_plate_edge>.next (const replication.slave.container_vector_ref<client_scene.vehicle_plate_edge>, const uptr)"
+    },
+    {
+      "function_offset": 20268553,
+      "instruction": 20269339,
+      "bytes": "ff13",
+      "slot_address": 20269993,
+      "kind": 4,
+      "symbol": "() client_scene.vehicle.clear_plate_adjacencies (client_scene.vehicle, client_scene.vehicle_plate)"
+    },
+    {
+      "function_offset": 20268553,
+      "instruction": 20269568,
+      "bytes": "ff5500",
+      "slot_address": 20270001,
+      "kind": 4,
+      "symbol": "(ptr<client_scene.vehicle_plate>) client_scene.vehicle.get_plate_by_id (client_scene.vehicle, const s32)"
+    },
+    {
+      "function_offset": 20268553,
+      "instruction": 20269654,
+      "bytes": "ff5500",
+      "slot_address": 20270009,
+      "kind": 4,
+      "symbol": "() client_scene.vehicle.rebuild_plate_adjacencies (client_scene.vehicle, client_scene.vehicle_plate, const ptr<client_scene.vehicle_plate>)"
+    },
+    {
+      "function_offset": 20268553,
+      "instruction": 20269821,
+      "bytes": "ffd0",
+      "slot_address": 20270025,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle.set_flag_rebuild_physics (client_scene.vehicle)"
+    },
+    {
+      "function_offset": 20268553,
+      "instruction": 20269861,
+      "bytes": "ffd0",
+      "slot_address": 20270033,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle.set_flag_rebuild_geometry_plates_edges (client_scene.vehicle)"
+    },
+    {
+      "function_offset": 20328391,
+      "instruction": 20328862,
+      "bytes": "ffd3",
+      "slot_address": 20330839,
+      "kind": 6,
+      "symbol": "(ptr<const vehicle_plate_util.e_plate_type>) replication.slave.property_enum<vehicle_plate_util.e_plate_type>.get (const replication.slave.property_enum<vehicle_plate_util.e_plate_type>)"
+    },
+    {
+      "function_offset": 20328391,
+      "instruction": 20328996,
+      "bytes": "ffd0",
+      "slot_address": 20330847,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle.set_flag_rebuild_geometry_plates_edges (client_scene.vehicle)"
+    },
+    {
+      "function_offset": 20328391,
+      "instruction": 20329124,
+      "bytes": "ffd3",
+      "slot_address": 20330839,
+      "kind": 6,
+      "symbol": "(ptr<const vehicle_plate_util.e_plate_type>) replication.slave.property_enum<vehicle_plate_util.e_plate_type>.get (const replication.slave.property_enum<vehicle_plate_util.e_plate_type>)"
+    },
+    {
+      "function_offset": 20328391,
+      "instruction": 20329252,
+      "bytes": "ffd0",
+      "slot_address": 20330863,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle.set_flag_rebuild_physics (client_scene.vehicle)"
+    },
+    {
+      "function_offset": 20328391,
+      "instruction": 20329631,
+      "bytes": "ffd0",
+      "slot_address": 20330847,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle.set_flag_rebuild_geometry_plates_edges (client_scene.vehicle)"
+    },
+    {
+      "function_offset": 20328391,
+      "instruction": 20329877,
+      "bytes": "ffd0",
+      "slot_address": 20330847,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle.set_flag_rebuild_geometry_plates_edges (client_scene.vehicle)"
+    },
+    {
+      "function_offset": 20328391,
+      "instruction": 20329932,
+      "bytes": "ffd3",
+      "slot_address": 20330839,
+      "kind": 6,
+      "symbol": "(ptr<const vehicle_plate_util.e_plate_type>) replication.slave.property_enum<vehicle_plate_util.e_plate_type>.get (const replication.slave.property_enum<vehicle_plate_util.e_plate_type>)"
+    },
+    {
+      "function_offset": 20328391,
+      "instruction": 20330043,
+      "bytes": "ffd3",
+      "slot_address": 20330839,
+      "kind": 6,
+      "symbol": "(ptr<const vehicle_plate_util.e_plate_type>) replication.slave.property_enum<vehicle_plate_util.e_plate_type>.get (const replication.slave.property_enum<vehicle_plate_util.e_plate_type>)"
+    },
+    {
+      "function_offset": 20328391,
+      "instruction": 20330138,
+      "bytes": "ff10",
+      "slot_address": 20330879,
+      "kind": 4,
+      "symbol": "(bool) vehicle_plate_util.get_is_physics_plate (const vehicle_plate_util.e_plate_type, const e_vehicle_glass_state)"
+    },
+    {
+      "function_offset": 20328391,
+      "instruction": 20330206,
+      "bytes": "ffd0",
+      "slot_address": 20330863,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle.set_flag_rebuild_physics (client_scene.vehicle)"
+    },
+    {
+      "function_offset": 20328391,
+      "instruction": 20330779,
+      "bytes": "ffd0",
+      "slot_address": 20330847,
+      "kind": 6,
+      "symbol": "() client_scene.vehicle.set_flag_rebuild_geometry_plates_edges (client_scene.vehicle)"
+    },
+    {
+      "function_offset": 51730643,
+      "instruction": 51732135,
+      "bytes": "ff10",
+      "slot_address": 51740851,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate>) replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>.value (const replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>, const uptr)"
+    },
+    {
+      "function_offset": 51730643,
+      "instruction": 51732180,
+      "bytes": "ff5500",
+      "slot_address": 51740859,
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle.get_is_removed (const server_scene.vehicle, const server_scene.vehicle_plate)"
+    },
+    {
+      "function_offset": 51730643,
+      "instruction": 51732237,
+      "bytes": "ff13",
+      "slot_address": 51740867,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.save_data.vehicle_plate>) vector<server_scene.save_data.vehicle_plate>.push_back (vector<server_scene.save_data.vehicle_plate>)"
+    },
+    {
+      "function_offset": 51730643,
+      "instruction": 51732473,
+      "bytes": "ffd0",
+      "slot_address": 51740875,
+      "kind": 6,
+      "symbol": "(ptr<const vehicle_plate_util.e_plate_type>) replication.master.property_enum<vehicle_plate_util.e_plate_type>.get (const replication.master.property_enum<vehicle_plate_util.e_plate_type>)"
+    },
+    {
+      "function_offset": 51730643,
+      "instruction": 51733243,
+      "bytes": "ff10",
+      "slot_address": 51740939,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_node>) replication.master.container_vector_ref<server_scene.vehicle_plate_node>.value (const replication.master.container_vector_ref<server_scene.vehicle_plate_node>, const uptr)"
+    },
+    {
+      "function_offset": 51730643,
+      "instruction": 51733402,
+      "bytes": "ff10",
+      "slot_address": 51740955,
+      "kind": 4,
+      "symbol": "(uptr) replication.master.container_vector_ref<server_scene.vehicle_plate_node>.next (const replication.master.container_vector_ref<server_scene.vehicle_plate_node>, const uptr)"
+    },
+    {
+      "function_offset": 51730643,
+      "instruction": 51733440,
+      "bytes": "ff10",
+      "slot_address": 51740971,
+      "kind": 4,
+      "symbol": "(uptr) replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>.next (const replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>, const uptr)"
+    },
+    {
+      "function_offset": 51730643,
+      "instruction": 51733664,
+      "bytes": "ff10",
+      "slot_address": 51740995,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_paint>) replication.master.container_vector_ref_virtual<server_scene.vehicle_plate_paint>.value (const replication.master.container_vector_ref_virtual<server_scene.vehicle_plate_paint>, const uptr)"
+    },
+    {
+      "function_offset": 51730643,
+      "instruction": 51733696,
+      "bytes": "ff13",
+      "slot_address": 51741003,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.save_data.vehicle_plate_paint>) vector<server_scene.save_data.vehicle_plate_paint>.push_back (vector<server_scene.save_data.vehicle_plate_paint>)"
+    },
+    {
+      "function_offset": 51730643,
+      "instruction": 51733746,
+      "bytes": "ff10",
+      "slot_address": 51741011,
+      "kind": 4,
+      "symbol": "(uptr) replication.master.container_vector_ref_virtual<server_scene.vehicle_plate_paint>.next (const replication.master.container_vector_ref_virtual<server_scene.vehicle_plate_paint>, const uptr)"
+    },
+    {
+      "function_offset": 51761852,
+      "instruction": 51763591,
+      "bytes": "ff10",
+      "slot_address": 51770396,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.save_data.vehicle_plate>) vector<server_scene.save_data.vehicle_plate>.value (const vector<server_scene.save_data.vehicle_plate>, const uptr)"
+    },
+    {
+      "function_offset": 51761852,
+      "instruction": 51763711,
+      "bytes": "ffd3",
+      "slot_address": 51770404,
+      "kind": 6,
+      "symbol": "(ptr<server_scene.vehicle_plate>) server_scene.vehicle.add_plate (server_scene.vehicle, const vector<s32>, const bool, const vehicle_plate_util.e_plate_type, const s32, const s32)"
+    },
+    {
+      "function_offset": 51761852,
+      "instruction": 51764332,
+      "bytes": "ff10",
+      "slot_address": 51770476,
+      "kind": 4,
+      "symbol": "(uptr) vector<server_scene.save_data.vehicle_plate>.next (const vector<server_scene.save_data.vehicle_plate>, const uptr)"
+    },
+    {
+      "function_offset": 51761852,
+      "instruction": 51764556,
+      "bytes": "ff10",
+      "slot_address": 51770508,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.save_data.vehicle_plate_paint>) vector<server_scene.save_data.vehicle_plate_paint>.value (const vector<server_scene.save_data.vehicle_plate_paint>, const uptr)"
+    },
+    {
+      "function_offset": 51761852,
+      "instruction": 51764923,
+      "bytes": "ffd3",
+      "slot_address": 51770540,
+      "kind": 6,
+      "symbol": "() replication.master.container_vector_ref_virtual<server_scene.vehicle_plate_paint>.push (replication.master.container_vector_ref_virtual<server_scene.vehicle_plate_paint>, ref<server_scene.vehicle_plate_paint>)"
+    },
+    {
+      "function_offset": 51761852,
+      "instruction": 51764961,
+      "bytes": "ff10",
+      "slot_address": 51770548,
+      "kind": 4,
+      "symbol": "(uptr) vector<server_scene.save_data.vehicle_plate_paint>.next (const vector<server_scene.save_data.vehicle_plate_paint>, const uptr)"
+    },
+    {
+      "function_offset": 51761852,
+      "instruction": 51766168,
+      "bytes": "ff13",
+      "slot_address": 51770708,
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle.can_add_electric_link (const server_scene.vehicle, const s32, const s32, const s32, const s32)"
+    },
+    {
+      "function_offset": 51761852,
+      "instruction": 51766656,
+      "bytes": "ff5500",
+      "slot_address": 51770764,
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle.can_add_mechanical_link (const server_scene.vehicle, const s32, const s32, const s32, const s32)"
+    },
+    {
+      "function_offset": 51761852,
+      "instruction": 51767149,
+      "bytes": "ff10",
+      "slot_address": 51770820,
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle.can_add_liquid_link (const server_scene.vehicle, const s32, const s32, const s32, const s32)"
+    },
+    {
+      "function_offset": 51761852,
+      "instruction": 51767636,
+      "bytes": "ff13",
+      "slot_address": 51770876,
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle.can_add_gas_link (const server_scene.vehicle, const s32, const s32, const s32, const s32)"
+    },
+    {
+      "function_offset": 51761852,
+      "instruction": 51768137,
+      "bytes": "ff5500",
+      "slot_address": 51770932,
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle.can_add_belt_link (const server_scene.vehicle, const s32, const s32, const s32, const s32)"
+    },
+    {
+      "function_offset": 51761852,
+      "instruction": 51768593,
+      "bytes": "ff5500",
+      "slot_address": 51770988,
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle.can_add_data_link (const server_scene.vehicle, const s32, const s32, const s32, const s32)"
+    },
+    {
+      "function_offset": 51820491,
+      "instruction": 51821452,
+      "bytes": "ff13",
+      "slot_address": 51822195,
+      "kind": 4,
+      "symbol": "() server_scene.save_data.parser.parse_enum<vehicle_plate_util.e_plate_type> (server_scene.save_data.parser, const string, vehicle_plate_util.e_plate_type, const vehicle_plate_util.e_plate_type)"
+    },
+    {
+      "function_offset": 52698203,
+      "instruction": 52699527,
+      "bytes": "ffd3",
+      "slot_address": 52700139,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.collapse_node (server_scene.vehicle, server_scene.vehicle_node)"
+    },
+    {
+      "function_offset": 52698203,
+      "instruction": 52699590,
+      "bytes": "ffd3",
+      "slot_address": 52700139,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.collapse_node (server_scene.vehicle, server_scene.vehicle_node)"
+    },
+    {
+      "function_offset": 52734497,
+      "instruction": 52735601,
+      "bytes": "ffd0",
+      "slot_address": 52738737,
+      "kind": 6,
+      "symbol": "(ptr<server_scene.vehicle_plate_node>) replication.master.container_vector_ref<server_scene.vehicle_plate_node>.push (replication.master.container_vector_ref<server_scene.vehicle_plate_node>)"
+    },
+    {
+      "function_offset": 52734497,
+      "instruction": 52735683,
+      "bytes": "ffd3",
+      "slot_address": 52738745,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_plate_node.set (server_scene.vehicle_plate_node, replication.master.container_vector_ref<server_scene.vehicle_plate_node>, const s32)"
+    },
+    {
+      "function_offset": 52734497,
+      "instruction": 52736158,
+      "bytes": "ff10",
+      "slot_address": 52738809,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_node>) operator_aa (const replication.master.container_vector_ref<server_scene.vehicle_plate_node>, const s32)"
+    },
+    {
+      "function_offset": 52734497,
+      "instruction": 52736632,
+      "bytes": "ff10",
+      "slot_address": 52738809,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_node>) operator_aa (const replication.master.container_vector_ref<server_scene.vehicle_plate_node>, const s32)"
+    },
+    {
+      "function_offset": 52734497,
+      "instruction": 52736916,
+      "bytes": "ffd0",
+      "slot_address": 52738865,
+      "kind": 6,
+      "symbol": "() replication.master.property_enum<vehicle_plate_util.e_plate_type>.set (replication.master.property_enum<vehicle_plate_util.e_plate_type>, const vehicle_plate_util.e_plate_type)"
+    },
+    {
+      "function_offset": 52734497,
+      "instruction": 52737094,
+      "bytes": "ffd0",
+      "slot_address": 52738881,
+      "kind": 6,
+      "symbol": "(s32) replication.master.container_vector_ref<server_scene.vehicle_plate_node>.size (const replication.master.container_vector_ref<server_scene.vehicle_plate_node>)"
+    },
+    {
+      "function_offset": 52734497,
+      "instruction": 52737151,
+      "bytes": "ff10",
+      "slot_address": 52738809,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_node>) operator_aa (const replication.master.container_vector_ref<server_scene.vehicle_plate_node>, const s32)"
+    },
+    {
+      "function_offset": 52734497,
+      "instruction": 52737863,
+      "bytes": "ffd0",
+      "slot_address": 52738905,
+      "kind": 6,
+      "symbol": "(ptr<server_scene.vehicle_plate_edge>) replication.master.container_vector_ref<server_scene.vehicle_plate_edge>.push (replication.master.container_vector_ref<server_scene.vehicle_plate_edge>)"
+    },
+    {
+      "function_offset": 52734497,
+      "instruction": 52738041,
+      "bytes": "ff10",
+      "slot_address": 52738921,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_edge>) operator_aa (const replication.master.container_vector_ref<server_scene.vehicle_plate_edge>, const s32)"
+    },
+    {
+      "function_offset": 52734497,
+      "instruction": 52738212,
+      "bytes": "ff10",
+      "slot_address": 52738929,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle.build_plate_adjacencies (server_scene.vehicle, server_scene.vehicle_plate, const ptr<server_scene.vehicle_plate>)"
+    },
+    {
+      "function_offset": 52734497,
+      "instruction": 52738361,
+      "bytes": "ff10",
+      "slot_address": 52738937,
+      "kind": 4,
+      "symbol": "() ctor (server_scene.vehicle_octree.element_plate, server_scene.vehicle_plate)"
+    },
+    {
+      "function_offset": 52734497,
+      "instruction": 52738485,
+      "bytes": "ffd0",
+      "slot_address": 52738953,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_plate.create_island_links (server_scene.vehicle_plate, server_scene.vehicle)"
+    },
+    {
+      "function_offset": 52821015,
+      "instruction": 52821050,
+      "bytes": "ff10",
+      "slot_address": 52821063,
+      "kind": 4,
+      "symbol": "() vehicle_util.clear_plate_adjacent<server_scene> (server_scene.vehicle, server_scene.vehicle_plate, const s32)"
+    },
+    {
+      "function_offset": 52935402,
+      "instruction": 52936257,
+      "bytes": "ffd2",
+      "slot_address": 52936834,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.rebuild_component_bounds (server_scene.vehicle)"
+    },
+    {
+      "function_offset": 52935402,
+      "instruction": 52936296,
+      "bytes": "ffd2",
+      "slot_address": 52936842,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.rebuild_nodes_bounds (server_scene.vehicle)"
+    },
+    {
+      "function_offset": 53028542,
+      "instruction": 53028585,
+      "bytes": "ff10",
+      "slot_address": 53028598,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_edge>) vehicle_util.find_edge<server_scene> (server_scene.vehicle, const s32, const s32)"
+    },
+    {
+      "function_offset": 53273079,
+      "instruction": 53273167,
+      "bytes": "ff16",
+      "slot_address": 53275943,
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle.get_is_removed (const server_scene.vehicle, const server_scene.vehicle_plate)"
+    },
+    {
+      "function_offset": 53273079,
+      "instruction": 53273509,
+      "bytes": "ff10",
+      "slot_address": 53275991,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_node>) replication.master.container_vector_ref<server_scene.vehicle_plate_node>.value (const replication.master.container_vector_ref<server_scene.vehicle_plate_node>, const uptr)"
+    },
+    {
+      "function_offset": 53273079,
+      "instruction": 53273750,
+      "bytes": "ff10",
+      "slot_address": 53276023,
+      "kind": 4,
+      "symbol": "(uptr) replication.master.container_vector_ref<server_scene.vehicle_plate_node>.next (const replication.master.container_vector_ref<server_scene.vehicle_plate_node>, const uptr)"
+    },
+    {
+      "function_offset": 53273079,
+      "instruction": 53274557,
+      "bytes": "ff10",
+      "slot_address": 53276127,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_edge>) replication.master.container_vector_ref<server_scene.vehicle_plate_edge>.value (const replication.master.container_vector_ref<server_scene.vehicle_plate_edge>, const uptr)"
+    },
+    {
+      "function_offset": 53273079,
+      "instruction": 53274983,
+      "bytes": "ff10",
+      "slot_address": 53276183,
+      "kind": 4,
+      "symbol": "(uptr) replication.master.container_vector_ref<server_scene.vehicle_plate_edge>.next (const replication.master.container_vector_ref<server_scene.vehicle_plate_edge>, const uptr)"
+    },
+    {
+      "function_offset": 53273079,
+      "instruction": 53275189,
+      "bytes": "ff10",
+      "slot_address": 53276215,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_paint>) replication.master.container_vector_ref_virtual<server_scene.vehicle_plate_paint>.value (const replication.master.container_vector_ref_virtual<server_scene.vehicle_plate_paint>, const uptr)"
+    },
+    {
+      "function_offset": 53273079,
+      "instruction": 53275300,
+      "bytes": "ff10",
+      "slot_address": 53276231,
+      "kind": 4,
+      "symbol": "(uptr) replication.master.container_vector_ref_virtual<server_scene.vehicle_plate_paint>.next (const replication.master.container_vector_ref_virtual<server_scene.vehicle_plate_paint>, const uptr)"
+    },
+    {
+      "function_offset": 53273079,
+      "instruction": 53275330,
+      "bytes": "ff10",
+      "slot_address": 53276239,
+      "kind": 4,
+      "symbol": "(uptr) replication.master.container_vector_ref_virtual<server_scene.vehicle_plate_paint>.erase (replication.master.container_vector_ref_virtual<server_scene.vehicle_plate_paint>, const uptr)"
+    },
+    {
+      "function_offset": 53273079,
+      "instruction": 53275369,
+      "bytes": "ff5500",
+      "slot_address": 53276247,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle.clear_plate_adjacencies (server_scene.vehicle, server_scene.vehicle_plate)"
+    },
+    {
+      "function_offset": 53273079,
+      "instruction": 53275634,
+      "bytes": "ff10",
+      "slot_address": 53276255,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate>) server_scene.vehicle.get_plate_by_id (server_scene.vehicle, const s32)"
+    },
+    {
+      "function_offset": 53273079,
+      "instruction": 53275715,
+      "bytes": "ff5500",
+      "slot_address": 53276263,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle.rebuild_plate_adjacencies (server_scene.vehicle, server_scene.vehicle_plate, const ptr<server_scene.vehicle_plate>)"
+    },
+    {
+      "function_offset": 53273079,
+      "instruction": 53275793,
+      "bytes": "ffd2",
+      "slot_address": 53276271,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.set_flag_rebuild_physics (server_scene.vehicle)"
+    },
+    {
+      "function_offset": 53281786,
+      "instruction": 53281851,
+      "bytes": "ff13",
+      "slot_address": 53281866,
+      "kind": 4,
+      "symbol": "() vehicle_util.set_plate_adjacent<server_scene> (server_scene.vehicle, server_scene.vehicle_plate, const s32, server_scene.vehicle_plate, const s32)"
+    },
+    {
+      "function_offset": 53321058,
+      "instruction": 53321374,
+      "bytes": "ff5500",
+      "slot_address": 53322578,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._rebuild_islands (server_scene.vehicle, server_scene, const bool)"
+    },
+    {
+      "function_offset": 53321058,
+      "instruction": 53321457,
+      "bytes": "ffd2",
+      "slot_address": 53322586,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.rebuild_component_bounds (server_scene.vehicle)"
+    },
+    {
+      "function_offset": 53321058,
+      "instruction": 53321496,
+      "bytes": "ffd2",
+      "slot_address": 53322594,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.rebuild_nodes_bounds (server_scene.vehicle)"
+    },
+    {
+      "function_offset": 53321058,
+      "instruction": 53321535,
+      "bytes": "ffd2",
+      "slot_address": 53322602,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle._rebuild_physics_motion_state (server_scene.vehicle)"
+    },
+    {
+      "function_offset": 53321058,
+      "instruction": 53321601,
+      "bytes": "ffd5",
+      "slot_address": 53322610,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle._rebuild_physics (server_scene.vehicle, physics.scene, server_scene.environment_tile_container)"
+    },
+    {
+      "function_offset": 53321058,
+      "instruction": 53321888,
+      "bytes": "ffd0",
+      "slot_address": 53322642,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.rebuild_constraints (server_scene.vehicle_component, server_scene)"
+    },
+    {
+      "function_offset": 53321058,
+      "instruction": 53322080,
+      "bytes": "ffd5",
+      "slot_address": 53322674,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle._rebuild_buoyancy (server_scene.vehicle, physics.scene, server_scene.vehicle_buoyancy_hatch_manager)"
+    },
+    {
+      "function_offset": 53321058,
+      "instruction": 53322170,
+      "bytes": "ffd5",
+      "slot_address": 53322682,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle._rebuild_constraints_internal (server_scene.vehicle, physics.scene)"
+    },
+    {
+      "function_offset": 63149088,
+      "instruction": 63149206,
+      "bytes": "ff5500",
+      "slot_address": 63149504,
+      "kind": 4,
+      "symbol": "() application.graphics.destroy_resource_geometry (const application.graphics, ref<application.graphics.resource_geometry>)"
+    },
+    {
+      "function_offset": 63149088,
+      "instruction": 63149322,
+      "bytes": "ff5500",
+      "slot_address": 63149520,
+      "kind": 4,
+      "symbol": "(s32) application.graphics.geometry_buffer.get_vertex_count (const application.graphics.geometry_buffer)"
+    },
+    {
+      "function_offset": 63149088,
+      "instruction": 63149395,
+      "bytes": "ff13",
+      "slot_address": 63149528,
+      "kind": 4,
+      "symbol": "(ref<application.graphics.resource_geometry>) application.graphics.create_resource_geometry (const application.graphics, application.graphics.geometry_buffer, const string)"
+    },
+    {
+      "function_offset": 63152355,
+      "instruction": 63152466,
+      "bytes": "ff5500",
+      "slot_address": 63155523,
+      "kind": 4,
+      "symbol": "(bool) vehicle_geometry._update_pending_geometry (vehicle_geometry, ref<application.graphics.resource_geometry>, ref<application.graphics.geometry_buffer>, const string)"
+    },
+    {
+      "function_offset": 63152355,
+      "instruction": 63152691,
+      "bytes": "ff5500",
+      "slot_address": 63155523,
+      "kind": 4,
+      "symbol": "(bool) vehicle_geometry._update_pending_geometry (vehicle_geometry, ref<application.graphics.resource_geometry>, ref<application.graphics.geometry_buffer>, const string)"
+    },
+    {
+      "function_offset": 63152355,
+      "instruction": 63152916,
+      "bytes": "ff5500",
+      "slot_address": 63155523,
+      "kind": 4,
+      "symbol": "(bool) vehicle_geometry._update_pending_geometry (vehicle_geometry, ref<application.graphics.resource_geometry>, ref<application.graphics.geometry_buffer>, const string)"
+    },
+    {
+      "function_offset": 63152355,
+      "instruction": 63153141,
+      "bytes": "ff5500",
+      "slot_address": 63155523,
+      "kind": 4,
+      "symbol": "(bool) vehicle_geometry._update_pending_geometry (vehicle_geometry, ref<application.graphics.resource_geometry>, ref<application.graphics.geometry_buffer>, const string)"
+    },
+    {
+      "function_offset": 63152355,
+      "instruction": 63153366,
+      "bytes": "ff5500",
+      "slot_address": 63155523,
+      "kind": 4,
+      "symbol": "(bool) vehicle_geometry._update_pending_geometry (vehicle_geometry, ref<application.graphics.resource_geometry>, ref<application.graphics.geometry_buffer>, const string)"
+    },
+    {
+      "function_offset": 63152355,
+      "instruction": 63153591,
+      "bytes": "ff5500",
+      "slot_address": 63155523,
+      "kind": 4,
+      "symbol": "(bool) vehicle_geometry._update_pending_geometry (vehicle_geometry, ref<application.graphics.resource_geometry>, ref<application.graphics.geometry_buffer>, const string)"
+    },
+    {
+      "function_offset": 63152355,
+      "instruction": 63153816,
+      "bytes": "ff5500",
+      "slot_address": 63155523,
+      "kind": 4,
+      "symbol": "(bool) vehicle_geometry._update_pending_geometry (vehicle_geometry, ref<application.graphics.resource_geometry>, ref<application.graphics.geometry_buffer>, const string)"
+    },
+    {
+      "function_offset": 63152355,
+      "instruction": 63154041,
+      "bytes": "ff5500",
+      "slot_address": 63155523,
+      "kind": 4,
+      "symbol": "(bool) vehicle_geometry._update_pending_geometry (vehicle_geometry, ref<application.graphics.resource_geometry>, ref<application.graphics.geometry_buffer>, const string)"
+    },
+    {
+      "function_offset": 63152355,
+      "instruction": 63154245,
+      "bytes": "ff5500",
+      "slot_address": 63155523,
+      "kind": 4,
+      "symbol": "(bool) vehicle_geometry._update_pending_geometry (vehicle_geometry, ref<application.graphics.resource_geometry>, ref<application.graphics.geometry_buffer>, const string)"
+    },
+    {
+      "function_offset": 63152355,
+      "instruction": 63154449,
+      "bytes": "ff5500",
+      "slot_address": 63155523,
+      "kind": 4,
+      "symbol": "(bool) vehicle_geometry._update_pending_geometry (vehicle_geometry, ref<application.graphics.resource_geometry>, ref<application.graphics.geometry_buffer>, const string)"
+    },
+    {
+      "function_offset": 63152355,
+      "instruction": 63154671,
+      "bytes": "ff5500",
+      "slot_address": 63155523,
+      "kind": 4,
+      "symbol": "(bool) vehicle_geometry._update_pending_geometry (vehicle_geometry, ref<application.graphics.resource_geometry>, ref<application.graphics.geometry_buffer>, const string)"
+    },
+    {
+      "function_offset": 63152355,
+      "instruction": 63154899,
+      "bytes": "ff5500",
+      "slot_address": 63155523,
+      "kind": 4,
+      "symbol": "(bool) vehicle_geometry._update_pending_geometry (vehicle_geometry, ref<application.graphics.resource_geometry>, ref<application.graphics.geometry_buffer>, const string)"
+    },
+    {
+      "function_offset": 63152355,
+      "instruction": 63155127,
+      "bytes": "ff5500",
+      "slot_address": 63155523,
+      "kind": 4,
+      "symbol": "(bool) vehicle_geometry._update_pending_geometry (vehicle_geometry, ref<application.graphics.resource_geometry>, ref<application.graphics.geometry_buffer>, const string)"
+    },
+    {
+      "function_offset": 63152355,
+      "instruction": 63155276,
+      "bytes": "ff10",
+      "slot_address": 63155539,
+      "kind": 4,
+      "symbol": "() vehicle_geometry._rebuild_bounds (vehicle_geometry)"
+    },
+    {
+      "function_offset": 63503803,
+      "instruction": 63504029,
+      "bytes": "ff10",
+      "slot_address": 63504675,
+      "kind": 4,
+      "symbol": "() vehicle_plates_edges_builder.build_geometry_buffer (const vehicle_plates_edges_builder, const vector<vehicle_plates_edges_builder.triangle>, application.graphics.geometry_buffer, collision.aab)"
+    },
+    {
+      "function_offset": 63503803,
+      "instruction": 63504253,
+      "bytes": "ff5500",
+      "slot_address": 63504683,
+      "kind": 4,
+      "symbol": "() vehicle_plates_edges_builder.build_geometry_buffer_glass (const vehicle_plates_edges_builder, application.graphics.geometry_buffer, collision.aab)"
+    },
+    {
+      "function_offset": 63503803,
+      "instruction": 63504446,
+      "bytes": "ff10",
+      "slot_address": 63504675,
+      "kind": 4,
+      "symbol": "() vehicle_plates_edges_builder.build_geometry_buffer (const vehicle_plates_edges_builder, const vector<vehicle_plates_edges_builder.triangle>, application.graphics.geometry_buffer, collision.aab)"
+    },
+    {
+      "function_offset": 63503803,
+      "instruction": 63504628,
+      "bytes": "ff10",
+      "slot_address": 63504691,
+      "kind": 4,
+      "symbol": "() vehicle_glass_crack_build_geometry_buffer (const vector<vehicle_glass_crack_triangle>, application.graphics.geometry_buffer)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65510916,
+      "bytes": "ff10",
+      "slot_address": 65513718,
+      "kind": 4,
+      "symbol": "(s32) replication.master.container_vector_ref<server_scene.vehicle_plate_edge>.key (const replication.master.container_vector_ref<server_scene.vehicle_plate_edge>, const uptr)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65510949,
+      "bytes": "ff10",
+      "slot_address": 65513726,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_edge>) replication.master.container_vector_ref<server_scene.vehicle_plate_edge>.value (const replication.master.container_vector_ref<server_scene.vehicle_plate_edge>, const uptr)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65511233,
+      "bytes": "ff10",
+      "slot_address": 65513758,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate>) replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>.value (const replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>, const uptr)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65511291,
+      "bytes": "ff13",
+      "slot_address": 65513766,
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle.get_is_removed (const server_scene.vehicle, const server_scene.vehicle_plate)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65511882,
+      "bytes": "ff10",
+      "slot_address": 65513718,
+      "kind": 4,
+      "symbol": "(s32) replication.master.container_vector_ref<server_scene.vehicle_plate_edge>.key (const replication.master.container_vector_ref<server_scene.vehicle_plate_edge>, const uptr)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65511912,
+      "bytes": "ff10",
+      "slot_address": 65513726,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_edge>) replication.master.container_vector_ref<server_scene.vehicle_plate_edge>.value (const replication.master.container_vector_ref<server_scene.vehicle_plate_edge>, const uptr)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65512083,
+      "bytes": "ff13",
+      "slot_address": 65513798,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_node>) operator_aa (const replication.master.container_vector_ref<server_scene.vehicle_plate_node>, const s32)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65512207,
+      "bytes": "ffd3",
+      "slot_address": 65513806,
+      "kind": 6,
+      "symbol": "(s32) replication.master.container_vector_ref<server_scene.vehicle_plate_node>.size (const replication.master.container_vector_ref<server_scene.vehicle_plate_node>)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65512280,
+      "bytes": "ff13",
+      "slot_address": 65513798,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_node>) operator_aa (const replication.master.container_vector_ref<server_scene.vehicle_plate_node>, const s32)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65512386,
+      "bytes": "ff13",
+      "slot_address": 65513798,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_node>) operator_aa (const replication.master.container_vector_ref<server_scene.vehicle_plate_node>, const s32)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65512643,
+      "bytes": "ff13",
+      "slot_address": 65513798,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_node>) operator_aa (const replication.master.container_vector_ref<server_scene.vehicle_plate_node>, const s32)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65512862,
+      "bytes": "ff5500",
+      "slot_address": 65513814,
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle.get_angle_between_plates_on_edge (const server_scene.vehicle, const server_scene.vehicle_plate, const server_scene.vehicle_plate, const s32)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65513002,
+      "bytes": "ff10",
+      "slot_address": 65513822,
+      "kind": 4,
+      "symbol": "(uptr) replication.master.container_vector_ref<server_scene.vehicle_plate_edge>.next (const replication.master.container_vector_ref<server_scene.vehicle_plate_edge>, const uptr)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65513053,
+      "bytes": "ff10",
+      "slot_address": 65513838,
+      "kind": 4,
+      "symbol": "(uptr) replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>.next (const replication.master.container_vector_ref_virtual<server_scene.vehicle_plate>, const uptr)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65513165,
+      "bytes": "ff13",
+      "slot_address": 65513854,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate>) server_scene.vehicle.get_plate_by_id (server_scene.vehicle, const s32)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65513283,
+      "bytes": "ff5500",
+      "slot_address": 65513814,
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle.get_angle_between_plates_on_edge (const server_scene.vehicle, const server_scene.vehicle_plate, const server_scene.vehicle_plate, const s32)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65513415,
+      "bytes": "ff13",
+      "slot_address": 65513854,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate>) server_scene.vehicle.get_plate_by_id (server_scene.vehicle, const s32)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65513509,
+      "bytes": "ff5500",
+      "slot_address": 65513814,
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle.get_angle_between_plates_on_edge (const server_scene.vehicle, const server_scene.vehicle_plate, const server_scene.vehicle_plate, const s32)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65513631,
+      "bytes": "ff17",
+      "slot_address": 65513862,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle.set_plate_adjacent (server_scene.vehicle, server_scene.vehicle_plate, const s32, server_scene.vehicle_plate, const s32)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65513664,
+      "bytes": "ff10",
+      "slot_address": 65513822,
+      "kind": 4,
+      "symbol": "(uptr) replication.master.container_vector_ref<server_scene.vehicle_plate_edge>.next (const replication.master.container_vector_ref<server_scene.vehicle_plate_edge>, const uptr)"
+    },
+    {
+      "function_offset": 65565637,
+      "instruction": 65565750,
+      "bytes": "ffd5",
+      "slot_address": 65566205,
+      "kind": 6,
+      "symbol": "(s32) replication.master.container_vector_ref<server_scene.vehicle_plate_edge>.size (const replication.master.container_vector_ref<server_scene.vehicle_plate_edge>)"
+    },
+    {
+      "function_offset": 65565637,
+      "instruction": 65565868,
+      "bytes": "ff5500",
+      "slot_address": 65566213,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_edge>) operator_aa (const replication.master.container_vector_ref<server_scene.vehicle_plate_edge>, const s32)"
+    },
+    {
+      "function_offset": 65565637,
+      "instruction": 65566089,
+      "bytes": "ff10",
+      "slot_address": 65566221,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate>) server_scene.vehicle.get_plate_by_id (server_scene.vehicle, const s32)"
+    },
+    {
+      "function_offset": 65565637,
+      "instruction": 65566164,
+      "bytes": "ff10",
+      "slot_address": 65566229,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle.clear_plate_adjacent (server_scene.vehicle, server_scene.vehicle_plate, const s32)"
+    },
+    {
+      "function_offset": 65651789,
+      "instruction": 65651936,
+      "bytes": "ffd6",
+      "slot_address": 65652869,
+      "kind": 6,
+      "symbol": "(s32) replication.master.container_vector_ref<server_scene.vehicle_plate_edge>.size (const replication.master.container_vector_ref<server_scene.vehicle_plate_edge>)"
+    },
+    {
+      "function_offset": 65651789,
+      "instruction": 65652080,
+      "bytes": "ff16",
+      "slot_address": 65652877,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_edge>) operator_aa (const replication.master.container_vector_ref<server_scene.vehicle_plate_edge>, const s32)"
+    },
+    {
+      "function_offset": 65651789,
+      "instruction": 65652302,
+      "bytes": "ff16",
+      "slot_address": 65652877,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_edge>) operator_aa (const replication.master.container_vector_ref<server_scene.vehicle_plate_edge>, const s32)"
+    },
+    {
+      "function_offset": 65651789,
+      "instruction": 65652352,
+      "bytes": "ff13",
+      "slot_address": 65652885,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate>) server_scene.vehicle.get_plate_by_id (server_scene.vehicle, const s32)"
+    },
+    {
+      "function_offset": 65651789,
+      "instruction": 65652458,
+      "bytes": "ff16",
+      "slot_address": 65652893,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle.clear_plate_adjacent (server_scene.vehicle, server_scene.vehicle_plate, const s32)"
+    },
+    {
+      "function_offset": 65651789,
+      "instruction": 65652677,
+      "bytes": "ff13",
+      "slot_address": 65652877,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_plate_edge>) operator_aa (const replication.master.container_vector_ref<server_scene.vehicle_plate_edge>, const s32)"
+    },
+    {
+      "function_offset": 65651789,
+      "instruction": 65652747,
+      "bytes": "ff13",
+      "slot_address": 65652893,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle.clear_plate_adjacent (server_scene.vehicle, server_scene.vehicle_plate, const s32)"
+    }
+  ],
+  "limits": "Selected plate creation/save/render lifecycle. Not complete placement validity, renderer/native graphics contracts or a diagnosis of historical phantom geometry."
+}

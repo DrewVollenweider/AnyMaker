@@ -1,5 +1,7 @@
 # Anymaker engineering knowledge — start here
 
+Latest vehicle checkpoint: [plate creation, native reconstruction and mesh replacement](research/PLATE-LOAD-20261021.md). Ordered boundary loops determine facing and first-edge size; loading remaps plate IDs and rebuilds plates, while client mesh replacement has separate lifecycle flags. The new read-only plate audit has 10 tests; full suite 181. Historical helicopter phantom geometry remains unresolved.
+
 Latest vehicle research: [attachment surfaces and contact boundaries](research/VEHICLE-ATTACHMENTS-20261021.md). Surface extension, component/beam/plate gates and integer versus floating-point intersection behavior now have source evidence and a reusable offline model. All 171 research-tool tests pass; complete native mounting/save acceptance remains open.
 
 Vehicle engineering is the active research priority as of October 21: [structural connectivity, splitting and update lifecycle](research/VEHICLE-STRUCTURE-20261021.md). Continue attachment, plates/edges and save integrity, followed by powertrain, fluids, electrical, controls, suspension, flight and marine systems. Projectiles, explosions and AI are low priority. The full audit remains incomplete.
