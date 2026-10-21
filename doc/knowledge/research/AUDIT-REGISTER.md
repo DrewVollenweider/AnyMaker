@@ -1,6 +1,6 @@
 # Full-game audit register
 
-Latest selected vehicle findings: [body mass, liquid ballast and crash damage](BODY-MASS-20261021.md). All 598 density declarations/defaults audited; tank/flooded-surface secondary bodies, native mass conversions, torque-container mass handoff and normal crash impulse/removal gates have selected evidence. No complete mass/inertia estimator, universal beam-strength rule or runtime acceptance is claimed. Full vehicle-first audit remains incomplete.
+Latest selected vehicle findings: [primitive mass, compound inertia and tank lifecycle](MASS-PROPERTIES-20261021.md). Actual shape virtuals and selected compound centre/aggregation now have native evidence and tested explicit-input calculations. The hull constructor integration and complete creation mass pipeline remain unfinished. No percentage is inferred from recovered function counts; vehicle engineering remains the priority.
 
 Latest selected vehicle findings: [plate placement/strips/native angles](PLATE-PLACEMENT-20261021.md). Both placement utility branches, turn-consistency limits, shared ordered-edge conflicts, frame suitability and perimeter variants are traced. Two native vec3 angle bindings have selected registration/body evidence; complete loader ABI and exceptional inputs remain open. Continue vehicle systems; combat/projectiles/AI remain parked.
 

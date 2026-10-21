@@ -1,6 +1,6 @@
 # Coverage and gaps
 
-Latest vehicle continuation: [body mass/ballast/crash damage](BODY-MASS-20261021.md). Selected evidence: 13 GCL identities/36 constants/19 calls/two conversion instructions, eight reflected types/38 fields/two enums, density declarations/defaults for 598 definitions. Fifteen successful native spans include explicit disassembly-only registration and manual leaves/split ranges. Reader 1,539 functions/233,693 instructions/1,328,404 bytes. Complete inertia/solver, ballast lifecycle and damage variants remain open.
+Latest vehicle continuation: [primitive/compound mass and tank lifecycle](MASS-PROPERTIES-20261021.md). Six GCL identities/19 selected calls, 28 checked native export spans (including reused registration and superseded prefixes), 12 table slots, 17 f32 constants and three API registrations. Box/sphere/capsule and explicit compound calculations have 18 new tests; full suite 222. Reader 1,543 functions/233,869 instructions/1,329,154 bytes. Complete hull integration, creation mass reconstruction, solver and remaining vehicle chains stay open.
 
 Latest vehicle continuation: [plate placement/strips/native angles](PLATE-PLACEMENT-20261021.md). Evidence: 23 GCL identities/49 constants/27 calls, four native spans/276 instructions/1,345 bytes, two selected native bindings. Reader: 1,530 functions/229,223 instructions/1,301,220 independently summed bytes. The turn-consistency helper is not a complete coplanarity/simple-polygon validator. Complete caller/authority/adjacency and body physics remain open; 204 tests pass.
 

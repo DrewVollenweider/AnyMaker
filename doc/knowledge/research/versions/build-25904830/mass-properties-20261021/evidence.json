@@ -1,0 +1,206 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "() server_scene.vehicle_component.liquid_tank._rebuild_fluid_physics (server_scene.vehicle_component.liquid_tank, server_scene)",
+      "signature_offset": 56380711,
+      "code_offset": 56382798,
+      "code_size": 2248,
+      "code_sha256": "3d42bad24c498ec6ebeab8fbac82fa628af1823bcc8af984473fc8a228e4aae0"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_tank.create (server_scene.vehicle_component.liquid_tank, server_scene.vehicle)",
+      "signature_offset": 56392378,
+      "code_offset": 56392986,
+      "code_size": 208,
+      "code_sha256": "1701d57aa5e725b6579d5dc6120456c1870f4dad1dde9be8aca930c0f3225a0e"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_tank.destroy (server_scene.vehicle_component.liquid_tank, server_scene.vehicle, server_scene)",
+      "signature_offset": 56393460,
+      "code_offset": 56394328,
+      "code_size": 408,
+      "code_sha256": "cdc99664f8c91dab28a43aa9a5298d271ad801ebd01e6b3e539f126cad12e40a"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_tank.post_load (server_scene.vehicle_component.liquid_tank, server_scene)",
+      "signature_offset": 56400163,
+      "code_offset": 56400432,
+      "code_size": 80,
+      "code_sha256": "1e7cf7ec0121220266aaa51ba72612f9bfe16326a657e8734a19f12cf98f687e"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_tank.remap_ids (server_scene.vehicle_component.liquid_tank, server_scene, const server_scene.vehicle_island.id_map)",
+      "signature_offset": 56400740,
+      "code_offset": 56401051,
+      "code_size": 80,
+      "code_sha256": "1c743982543c4ef0f23784a4bbd1389025adf3221fad88f204b90f169842ef7a"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_tank.tick (server_scene.vehicle_component.liquid_tank, server_scene.vehicle, server_scene)",
+      "signature_offset": 56403215,
+      "code_offset": 56405131,
+      "code_size": 3088,
+      "code_sha256": "1da32fe0bb7e67aa925b6374ac17a58e649422433be6805e4f2aba9ecb3bc470"
+    }
+  ],
+  "constants": [],
+  "strings": [],
+  "call_examples": [
+    {
+      "function_offset": 56382798,
+      "instruction": 56382924,
+      "bytes": "ff5500",
+      "slot_address": 56385054,
+      "kind": 4,
+      "symbol": "() physics.scene.remove_constraint (physics.scene, physics.constraint)"
+    },
+    {
+      "function_offset": 56382798,
+      "instruction": 56382962,
+      "bytes": "ff13",
+      "slot_address": 56385062,
+      "kind": 4,
+      "symbol": "(bool) physics.constraint.get_is_created (const physics.constraint)"
+    },
+    {
+      "function_offset": 56382798,
+      "instruction": 56383019,
+      "bytes": "ff5500",
+      "slot_address": 56385070,
+      "kind": 4,
+      "symbol": "() physics.scene.destroy_constraint (physics.scene, physics.constraint)"
+    },
+    {
+      "function_offset": 56382798,
+      "instruction": 56383114,
+      "bytes": "ff5500",
+      "slot_address": 56385086,
+      "kind": 4,
+      "symbol": "() physics.scene.remove_object (physics.scene, physics.object)"
+    },
+    {
+      "function_offset": 56382798,
+      "instruction": 56383152,
+      "bytes": "ff13",
+      "slot_address": 56385094,
+      "kind": 4,
+      "symbol": "(bool) physics.object.get_is_created (const physics.object)"
+    },
+    {
+      "function_offset": 56382798,
+      "instruction": 56383209,
+      "bytes": "ff5500",
+      "slot_address": 56385102,
+      "kind": 4,
+      "symbol": "() physics.scene.destroy_object (physics.scene, physics.object)"
+    },
+    {
+      "function_offset": 56382798,
+      "instruction": 56384322,
+      "bytes": "ff17",
+      "slot_address": 56385230,
+      "kind": 4,
+      "symbol": "(physics.object) physics.scene.create_object_box (physics.scene, const mat34, const vec3, const physics.e_motion_type, const f64)"
+    },
+    {
+      "function_offset": 56382798,
+      "instruction": 56384767,
+      "bytes": "41ff13",
+      "slot_address": 56385270,
+      "kind": 4,
+      "symbol": "(physics.constraint.distance) physics.scene.create_constraint_distance (physics.scene, const physics.object, const physics.object, const vec3, const vec3, const f64, const f64)"
+    },
+    {
+      "function_offset": 56392986,
+      "instruction": 56393031,
+      "bytes": "ff5500",
+      "slot_address": 56393194,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_component.create (server_scene.vehicle_component, server_scene.vehicle)"
+    },
+    {
+      "function_offset": 56392986,
+      "instruction": 56393169,
+      "bytes": "ff13",
+      "slot_address": 56393210,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_liquid_content_volume.create (server_scene.vehicle_liquid_content_volume, server_scene.vehicle, server_scene.vehicle_component, const vehicle_util.grid_origin_dir, const s32, const f64)"
+    },
+    {
+      "function_offset": 56394328,
+      "instruction": 56394438,
+      "bytes": "ff13",
+      "slot_address": 56394744,
+      "kind": 4,
+      "symbol": "() physics.scene.remove_constraint (physics.scene, physics.constraint)"
+    },
+    {
+      "function_offset": 56394328,
+      "instruction": 56394472,
+      "bytes": "ff13",
+      "slot_address": 56394752,
+      "kind": 4,
+      "symbol": "(bool) physics.constraint.get_is_created (const physics.constraint)"
+    },
+    {
+      "function_offset": 56394328,
+      "instruction": 56394520,
+      "bytes": "ff13",
+      "slot_address": 56394760,
+      "kind": 4,
+      "symbol": "() physics.scene.destroy_constraint (physics.scene, physics.constraint)"
+    },
+    {
+      "function_offset": 56394328,
+      "instruction": 56394602,
+      "bytes": "ff13",
+      "slot_address": 56394776,
+      "kind": 4,
+      "symbol": "() physics.scene.remove_object (physics.scene, physics.object)"
+    },
+    {
+      "function_offset": 56394328,
+      "instruction": 56394636,
+      "bytes": "ff13",
+      "slot_address": 56394784,
+      "kind": 4,
+      "symbol": "(bool) physics.object.get_is_created (const physics.object)"
+    },
+    {
+      "function_offset": 56394328,
+      "instruction": 56394684,
+      "bytes": "ff13",
+      "slot_address": 56394792,
+      "kind": 4,
+      "symbol": "() physics.scene.destroy_object (physics.scene, physics.object)"
+    },
+    {
+      "function_offset": 56394328,
+      "instruction": 56394722,
+      "bytes": "ff10",
+      "slot_address": 56394800,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_component.destroy (server_scene.vehicle_component, server_scene.vehicle, server_scene)"
+    },
+    {
+      "function_offset": 56405131,
+      "instruction": 56406071,
+      "bytes": "ff13",
+      "slot_address": 56408299,
+      "kind": 4,
+      "symbol": "(bool) physics.object.get_is_created (const physics.object)"
+    },
+    {
+      "function_offset": 56405131,
+      "instruction": 56406323,
+      "bytes": "ff13",
+      "slot_address": 56408339,
+      "kind": 4,
+      "symbol": "(bool) physics.constraint.get_is_created (const physics.constraint)"
+    }
+  ],
+  "assembly_examples": [],
+  "limits": "Selected tank lifecycle wrappers and prior rebuild/tick identities. Initial content defaults, full split/save caller chains and fluid/constraint solver contracts remain open."
+}

@@ -1,0 +1,147 @@
+{
+  "schema": 1,
+  "date": "2026-10-21",
+  "source_check": {
+    "schema": 1,
+    "date": "2026-10-20",
+    "installed_buildid": "25904830",
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "definition_files_checked": 2968,
+    "definition_file_mismatches": [],
+    "rechecked_for": "mass-properties-20261021"
+  },
+  "pe_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+  "selected_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "d50e9288592c2f2ef55dfcd3b042433e4d61242247104796249a0b4e7f3e855d",
+    "function_records_checked": 6,
+    "constants_checked": 0,
+    "strings_checked": 0,
+    "call_instruction_examples_checked": 19,
+    "limitations": "Exact static identities/bytes only; virtual target binding and prose semantics are not proven by this checker."
+  },
+  "native_export_checks": [
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 1,
+      "instructions_byte_checked": 6683,
+      "instruction_bytes_checked": 33324,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof.",
+      "pseudocode_requested": false
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 3,
+      "instructions_byte_checked": 328,
+      "instruction_bytes_checked": 1189,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 3,
+      "instructions_byte_checked": 1749,
+      "instruction_bytes_checked": 7815,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 2,
+      "instructions_byte_checked": 80,
+      "instruction_bytes_checked": 313,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 1,
+      "instructions_byte_checked": 26,
+      "instruction_bytes_checked": 104,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 5,
+      "instructions_byte_checked": 383,
+      "instruction_bytes_checked": 1426,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 3,
+      "instructions_byte_checked": 263,
+      "instruction_bytes_checked": 1021,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 2,
+      "instructions_byte_checked": 328,
+      "instruction_bytes_checked": 1251,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 2,
+      "instructions_byte_checked": 773,
+      "instruction_bytes_checked": 3221,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 2,
+      "instructions_byte_checked": 192,
+      "instruction_bytes_checked": 808,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 4,
+      "instructions_byte_checked": 493,
+      "instruction_bytes_checked": 1985,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    }
+  ],
+  "native_registration_instruction_examples": 66,
+  "vtable_slots_checked": 12,
+  "native_f32_scalars_checked": 17,
+  "helper_constants_match_native": true,
+  "reader_counts": {
+    "functions": 1543,
+    "identical_exports_deduplicated": 7,
+    "instructions_byte_checked": 233869,
+    "slot_derived_calls": 11442,
+    "unresolved_calls": 9256
+  },
+  "reader_instruction_bytes": 1329154,
+  "selected_counts": {
+    "function_identities": 6,
+    "calls": 19,
+    "native_spans": 28,
+    "native_instructions": 11298,
+    "native_bytes": 52457,
+    "native_bindings": 3,
+    "registration_examples": 66,
+    "vtable_slots": 12,
+    "selected_native_instructions": 15,
+    "native_scalars": 17,
+    "reader_bytes": 1329154
+  },
+  "research_tool_tests_passed": 222,
+  "new_mass_properties_tests": 18,
+  "tests_rerun_this_checkpoint": true,
+  "test_log_sha256": "f8beb5b709bb3b3b6d71a5d5939df6606114f78f6ddba3e53bf15a986a4345d3",
+  "game_executed": false,
+  "installation_and_active_saves_edited": false,
+  "limits": "Explicit primitive and compound calculations plus selected tank callbacks. No bit-exact native/solver emulation or complete creation mass estimator. Hull integration and remaining vehicle chains unfinished."
+}

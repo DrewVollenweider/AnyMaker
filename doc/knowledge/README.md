@@ -1,6 +1,6 @@
 # Anymaker engineering knowledge — start here
 
-Latest vehicle checkpoint: [mass, liquid ballast and crash damage](research/BODY-MASS-20261021.md). Audited density declarations for all 598 components, traced separate constrained liquid ballast, selected native mass/property conversions and normal crash impulse gates. Complete native shape inertia/solver and component damage variants remain open. The public executable tools are unchanged at the 204-test baseline.
+Latest vehicle checkpoint: [primitive mass, compound inertia and tank lifecycle](research/MASS-PROPERTIES-20261021.md). New offline shape and weight/balance helper covers boxes, spheres, capsules and explicit child assemblies. Native mass/centre paths and selected tank lifecycle callbacks are traced; full creation geometry integration remains open. All 222 research-tool tests pass.
 
 Latest vehicle checkpoint: [plate placement, perimeter strips and native angles](research/PLATE-PLACEMENT-20261021.md). Client/server placement adds boundary, turn-consistency, window/opening and same-facing shared-edge checks. Native vec3 angle projection/sign/fallback and 1 cm frame/4 cm inset now have selected evidence. Eleven new model tests; full suite 204. Complete validity/authority and native physics remain open.
 

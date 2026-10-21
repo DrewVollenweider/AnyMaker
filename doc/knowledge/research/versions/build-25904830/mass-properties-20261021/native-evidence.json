@@ -1,0 +1,1138 @@
+{
+  "schema": 1,
+  "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+  "image_base": 5368709120,
+  "batches": [
+    {
+      "batch": "16",
+      "selected_spans": [
+        {
+          "begin_rva": 1320144,
+          "end_rva": 1353468,
+          "va": 5370029264,
+          "file_offset": 1317072,
+          "size": 33324,
+          "unwind_rva": 5802036,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_1424d0",
+          "span_sha256": "b875fafd68e857e9d868ef5d570559755934a65228b2f34b46499461049b1b2c"
+        }
+      ],
+      "mode": "assembly-only",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 1,
+        "instructions_byte_checked": 6683,
+        "instruction_bytes_checked": 33324,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof.",
+        "pseudocode_requested": false
+      }
+    },
+    {
+      "batch": "19",
+      "selected_spans": [
+        {
+          "begin_rva": 2303968,
+          "end_rva": 2304183,
+          "va": 5371013088,
+          "file_offset": 2300896,
+          "size": 215,
+          "unwind_rva": 5887292,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_2327e0",
+          "span_sha256": "c379f269de8d3957d9ea48c4667a92fbf25fc32f109ac011ee5963c1983aab03"
+        },
+        {
+          "begin_rva": 2290896,
+          "end_rva": 2291120,
+          "va": 5371000016,
+          "file_offset": 2287824,
+          "size": 224,
+          "unwind_rva": 5886244,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_22f4d0",
+          "span_sha256": "f156098090106e82815546e9553d747ed51cc3163b5e59c1bac552b26cc32e31"
+        },
+        {
+          "begin_rva": 2161760,
+          "end_rva": 2162513,
+          "va": 5370870880,
+          "file_offset": 2158688,
+          "size": 753,
+          "unwind_rva": 5878624,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_20fc60",
+          "span_sha256": "135c50d2738001a7b8ea9e3320aaff3522c088ebf49d4c15c01af6f2cb01c21a"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 3,
+        "instructions_byte_checked": 328,
+        "instruction_bytes_checked": 1189,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    },
+    {
+      "batch": "20",
+      "selected_spans": [
+        {
+          "begin_rva": 2291120,
+          "end_rva": 2291444,
+          "va": 5371000240,
+          "file_offset": 2288048,
+          "size": 324,
+          "unwind_rva": 5886284,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_22f5b0",
+          "span_sha256": "273d0fd21fdec62170b0a84a8d79794791106fac9c896503cc3930fec37c7ee2"
+        },
+        {
+          "begin_rva": 2304192,
+          "end_rva": 2311377,
+          "va": 5371013312,
+          "file_offset": 2301120,
+          "size": 7185,
+          "unwind_rva": 5887332,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_2328c0",
+          "span_sha256": "d1246ad1191650a8b0371ece15dadfee6cdef4943ece7a231703c4ea3f505a89"
+        },
+        {
+          "begin_rva": 2163296,
+          "end_rva": 2163602,
+          "va": 5370872416,
+          "file_offset": 2160224,
+          "size": 306,
+          "unwind_rva": 5878796,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_210260",
+          "span_sha256": "170edb1286ef0e1286f14d6032585705dd95f9a213e9a9f070bb73827a4ae2bd"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 3,
+        "instructions_byte_checked": 1749,
+        "instruction_bytes_checked": 7815,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    },
+    {
+      "batch": "21",
+      "selected_spans": [
+        {
+          "begin_rva": 2291856,
+          "end_rva": 2292053,
+          "va": 5371000976,
+          "file_offset": 2288784,
+          "size": 197,
+          "unwind_rva": 5886348,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_22f890",
+          "span_sha256": "6b29c1e966d81db6f36e8e8c6a94d09d395f99350125c7ee2281de7057000e25"
+        },
+        {
+          "begin_rva": 2175456,
+          "end_rva": 2175572,
+          "va": 5370884576,
+          "file_offset": 2172384,
+          "size": 116,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_2131e0",
+          "span_sha256": "afc2d582401eb651bf1633c9b30d4a5be96f5009a92443b9b13b7727735247af"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 2,
+        "instructions_byte_checked": 80,
+        "instruction_bytes_checked": 313,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    },
+    {
+      "batch": "22",
+      "selected_spans": [
+        {
+          "begin_rva": 2311392,
+          "end_rva": 2311496,
+          "va": 5371020512,
+          "file_offset": 2308320,
+          "size": 104,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_2344e0",
+          "span_sha256": "f0baea992e6b8210ff9b0b762ab751a3d27613ad27c980f641b50002f49f3d08"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 1,
+        "instructions_byte_checked": 26,
+        "instruction_bytes_checked": 104,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    },
+    {
+      "batch": "23",
+      "selected_spans": [
+        {
+          "begin_rva": 1356368,
+          "end_rva": 1356508,
+          "va": 5370065488,
+          "file_offset": 1353296,
+          "size": 140,
+          "unwind_rva": 5803916,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_14b250",
+          "span_sha256": "acadb8206f9e47ca544b7ebc7824f13cd0e8f2f22df71c3efdc17d3f8a6fad44"
+        },
+        {
+          "begin_rva": 1362032,
+          "end_rva": 1362037,
+          "va": 5370071152,
+          "file_offset": 1358960,
+          "size": 5,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_14c870",
+          "span_sha256": "7536c50bd168a3fb5cc43b4feef977def41719b935b40c75b055c81570d3058a"
+        },
+        {
+          "begin_rva": 1367616,
+          "end_rva": 1367621,
+          "va": 5370076736,
+          "file_offset": 1364544,
+          "size": 5,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_14de40",
+          "span_sha256": "d60ff30f053bab090e98747d7f726d778bb16d7d5fd37af5fd4b1e844bb372b5"
+        },
+        {
+          "begin_rva": 1109600,
+          "end_rva": 1110368,
+          "va": 5369818720,
+          "file_offset": 1106528,
+          "size": 768,
+          "unwind_rva": 5787920,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_10ee60",
+          "span_sha256": "96a1d06528a7b24128a410e7e0a880f7103ab31c86d438f4834bf420959e41b2"
+        },
+        {
+          "begin_rva": 1105984,
+          "end_rva": 1106492,
+          "va": 5369815104,
+          "file_offset": 1102912,
+          "size": 508,
+          "unwind_rva": 5787380,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_10e040",
+          "span_sha256": "ad2bd10fc92e84fbfdc9ca91872c675f32e0837459f5fa50b202ce08cfa3735c"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 5,
+        "instructions_byte_checked": 383,
+        "instruction_bytes_checked": 1426,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    },
+    {
+      "batch": "24",
+      "selected_spans": [
+        {
+          "begin_rva": 2658240,
+          "end_rva": 2658331,
+          "va": 5371367360,
+          "file_offset": 2655168,
+          "size": 91,
+          "unwind_rva": 5908772,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_288fc0",
+          "span_sha256": "fb16e078fd89410e6bdde1dd8266cd8a67dc3f2bc41b03d7046b3e3a0be3244b"
+        },
+        {
+          "begin_rva": 1117952,
+          "end_rva": 1118803,
+          "va": 5369827072,
+          "file_offset": 1114880,
+          "size": 851,
+          "unwind_rva": 5789452,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_110f00",
+          "span_sha256": "0faa0332fb0ee37d22c37b1a9531c59fd1c9dcee28ca6515f217c5792430e28f"
+        },
+        {
+          "begin_rva": 1109232,
+          "end_rva": 1109313,
+          "va": 5369818352,
+          "file_offset": 1106160,
+          "size": 81,
+          "unwind_rva": 5787860,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_10ecf0",
+          "span_sha256": "9948105520115743e4c1d32cf2bf08ebcfcbc1528490eb7c740c223641e1009b"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 3,
+        "instructions_byte_checked": 263,
+        "instruction_bytes_checked": 1021,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    },
+    {
+      "batch": "25",
+      "selected_spans": [
+        {
+          "begin_rva": 2657344,
+          "end_rva": 2658234,
+          "va": 5371366464,
+          "file_offset": 2654272,
+          "size": 890,
+          "unwind_rva": 5908624,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_288c40",
+          "span_sha256": "5513489e3e3f596ae615147dbb90c12bde1a5196fc30bb1898e7235871683005"
+        },
+        {
+          "begin_rva": 1109232,
+          "end_rva": 1109594,
+          "va": 5369818352,
+          "file_offset": 1106160,
+          "size": 362,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_10ecf0",
+          "span_sha256": "363a0967499af9a8458a1bfc396969d092c48b4b8b7b6a9ff2213485f15696ed"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 2,
+        "instructions_byte_checked": 328,
+        "instruction_bytes_checked": 1251,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    },
+    {
+      "batch": "26",
+      "selected_spans": [
+        {
+          "begin_rva": 2659328,
+          "end_rva": 2662278,
+          "va": 5371368448,
+          "file_offset": 2656256,
+          "size": 2950,
+          "unwind_rva": 5908876,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_289400",
+          "span_sha256": "051fb02b3aea00757a1facdebc7834d531a89bfefeeab211ea270569356606ec"
+        },
+        {
+          "begin_rva": 2802032,
+          "end_rva": 2802303,
+          "va": 5371511152,
+          "file_offset": 2798960,
+          "size": 271,
+          "unwind_rva": 5918452,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_2ac170",
+          "span_sha256": "52296d83502dbc2eff4acc0a9dc3a9f594d39037881a6f5931f9ae5a17eea9e1"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 2,
+        "instructions_byte_checked": 773,
+        "instruction_bytes_checked": 3221,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    },
+    {
+      "batch": "27",
+      "selected_spans": [
+        {
+          "begin_rva": 2635312,
+          "end_rva": 2635402,
+          "va": 5371344432,
+          "file_offset": 2632240,
+          "size": 90,
+          "unwind_rva": 5906532,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_283630",
+          "span_sha256": "cea9c0b13cca640d6f4234f2cce8f6b69ac57cd44a0bd7c42a7ee68d57cf5014"
+        },
+        {
+          "begin_rva": 2802304,
+          "end_rva": 2803022,
+          "va": 5371511424,
+          "file_offset": 2799232,
+          "size": 718,
+          "unwind_rva": 5918504,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_2ac280",
+          "span_sha256": "ae140449d4f0aecf08c638dd984529e75edc4831c6478cbba01bba06179764ad"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 2,
+        "instructions_byte_checked": 192,
+        "instruction_bytes_checked": 808,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    },
+    {
+      "batch": "28",
+      "selected_spans": [
+        {
+          "begin_rva": 2635312,
+          "end_rva": 2636586,
+          "va": 5371344432,
+          "file_offset": 2632240,
+          "size": 1274,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_283630",
+          "span_sha256": "bd21aab615adb2bd6399a42aefe2d40a1b964927cc082f645f22a0fa325030a2"
+        },
+        {
+          "begin_rva": 2655664,
+          "end_rva": 2656353,
+          "va": 5371364784,
+          "file_offset": 2652592,
+          "size": 689,
+          "unwind_rva": 5908300,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_2885b0",
+          "span_sha256": "09974ae39503d31a2f1e16177f966ac80ec4721549a7f0700822730095aefc6e"
+        },
+        {
+          "begin_rva": 2101664,
+          "end_rva": 2101675,
+          "va": 5370810784,
+          "file_offset": 2098592,
+          "size": 11,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_2011a0",
+          "span_sha256": "8395c116dcd51489822149710b48112deb126c6310f2fa2e70e61b3d555f0b53"
+        },
+        {
+          "begin_rva": 2179184,
+          "end_rva": 2179195,
+          "va": 5370888304,
+          "file_offset": 2176112,
+          "size": 11,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_214070",
+          "span_sha256": "dd4164af6b3fade858226c68708958afc68331b13faa9f95b1f7acc9cbbdee6d"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 4,
+        "instructions_byte_checked": 493,
+        "instruction_bytes_checked": 1985,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    }
+  ],
+  "selected_bindings": [
+    {
+      "signature": "(physics.object) physics.scene.create_object_compound (physics.scene, const mat34, const physics.compound_shape, const physics.e_motion_type, const f64)",
+      "string_rva": 5522448,
+      "string_bytes": "28706879736963732e6f626a6563742920706879736963732e7363656e652e6372656174655f6f626a6563745f636f6d706f756e642028706879736963732e7363656e652c20636f6e7374206d617433342c20636f6e737420706879736963732e636f6d706f756e645f73686170652c20636f6e737420706879736963732e655f6d6f74696f6e5f747970652c20636f6e7374206636342900",
+      "target_rva": 1356368,
+      "registration_rva": 1320144,
+      "selected_instructions": [
+        {
+          "rva": 1327493,
+          "bytes": "0f280584024000",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140544410]"
+        },
+        {
+          "rva": 1327500,
+          "bytes": "0f1101",
+          "assembly": "MOVUPS xmmword ptr [RCX],XMM0"
+        },
+        {
+          "rva": 1327503,
+          "bytes": "0f280d8a024000",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x140544420]"
+        },
+        {
+          "rva": 1327510,
+          "bytes": "0f114910",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x10],XMM1"
+        },
+        {
+          "rva": 1327514,
+          "bytes": "0f28058f024000",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140544430]"
+        },
+        {
+          "rva": 1327521,
+          "bytes": "0f114120",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x20],XMM0"
+        },
+        {
+          "rva": 1327525,
+          "bytes": "0f280d94024000",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x140544440]"
+        },
+        {
+          "rva": 1327532,
+          "bytes": "0f114930",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x30],XMM1"
+        },
+        {
+          "rva": 1327536,
+          "bytes": "0f280599024000",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140544450]"
+        },
+        {
+          "rva": 1327543,
+          "bytes": "0f114140",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x40],XMM0"
+        },
+        {
+          "rva": 1327547,
+          "bytes": "0f280d9e024000",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x140544460]"
+        },
+        {
+          "rva": 1327554,
+          "bytes": "0f114950",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x50],XMM1"
+        },
+        {
+          "rva": 1327558,
+          "bytes": "0f2805a3024000",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140544470]"
+        },
+        {
+          "rva": 1327565,
+          "bytes": "0f114160",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x60],XMM0"
+        },
+        {
+          "rva": 1327569,
+          "bytes": "0f280da8024000",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x140544480]"
+        },
+        {
+          "rva": 1327576,
+          "bytes": "0f114970",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x70],XMM1"
+        },
+        {
+          "rva": 1327580,
+          "bytes": "0f2805ad024000",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140544490]"
+        },
+        {
+          "rva": 1327587,
+          "bytes": "0f118180000000",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x80],XMM0"
+        },
+        {
+          "rva": 1327594,
+          "bytes": "f20f1005ae024000",
+          "assembly": "MOVSD XMM0,qword ptr [0x1405444a0]"
+        },
+        {
+          "rva": 1327602,
+          "bytes": "f20f118190000000",
+          "assembly": "MOVSD qword ptr [RCX + 0x90],XMM0"
+        },
+        {
+          "rva": 1327610,
+          "bytes": "0fb605a7024000",
+          "assembly": "MOVZX EAX,byte ptr [0x1405444a8]"
+        },
+        {
+          "rva": 1327617,
+          "bytes": "888198000000",
+          "assembly": "MOV byte ptr [RCX + 0x98],AL"
+        },
+        {
+          "rva": 1327707,
+          "bytes": "488d05ee6f0000",
+          "assembly": "LEA RAX,[0x14014b250]"
+        },
+        {
+          "rva": 1327714,
+          "bytes": "48894328",
+          "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+        },
+        {
+          "rva": 1327739,
+          "bytes": "488d05ce6f0000",
+          "assembly": "LEA RAX,[0x14014b250]"
+        },
+        {
+          "rva": 1327746,
+          "bytes": "488901",
+          "assembly": "MOV qword ptr [RCX],RAX"
+        }
+      ]
+    },
+    {
+      "signature": "() physics.object.set_shape (physics.object, const physics.compound_shape)",
+      "string_rva": 5529680,
+      "string_bytes": "282920706879736963732e6f626a6563742e7365745f73686170652028706879736963732e6f626a6563742c20636f6e737420706879736963732e636f6d706f756e645f73686170652900",
+      "target_rva": 1362032,
+      "registration_rva": 1320144,
+      "selected_instructions": [
+        {
+          "rva": 1346632,
+          "bytes": "0f280501d43f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140546050]"
+        },
+        {
+          "rva": 1346639,
+          "bytes": "0f1101",
+          "assembly": "MOVUPS xmmword ptr [RCX],XMM0"
+        },
+        {
+          "rva": 1346642,
+          "bytes": "0f280d07d43f00",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x140546060]"
+        },
+        {
+          "rva": 1346649,
+          "bytes": "0f114910",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x10],XMM1"
+        },
+        {
+          "rva": 1346653,
+          "bytes": "0f28050cd43f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140546070]"
+        },
+        {
+          "rva": 1346660,
+          "bytes": "0f114120",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x20],XMM0"
+        },
+        {
+          "rva": 1346664,
+          "bytes": "0f280d11d43f00",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x140546080]"
+        },
+        {
+          "rva": 1346671,
+          "bytes": "0f114930",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x30],XMM1"
+        },
+        {
+          "rva": 1346675,
+          "bytes": "f20f100515d43f00",
+          "assembly": "MOVSD XMM0,qword ptr [0x140546090]"
+        },
+        {
+          "rva": 1346683,
+          "bytes": "f20f114140",
+          "assembly": "MOVSD qword ptr [RCX + 0x40],XMM0"
+        },
+        {
+          "rva": 1346688,
+          "bytes": "0fb70511d43f00",
+          "assembly": "MOVZX EAX,word ptr [0x140546098]"
+        },
+        {
+          "rva": 1346695,
+          "bytes": "66894148",
+          "assembly": "MOV word ptr [RCX + 0x48],AX"
+        },
+        {
+          "rva": 1346699,
+          "bytes": "0fb60508d43f00",
+          "assembly": "MOVZX EAX,byte ptr [0x14054609a]"
+        },
+        {
+          "rva": 1346706,
+          "bytes": "88414a",
+          "assembly": "MOV byte ptr [RCX + 0x4a],AL"
+        },
+        {
+          "rva": 1346793,
+          "bytes": "488d05803b0000",
+          "assembly": "LEA RAX,[0x14014c870]"
+        },
+        {
+          "rva": 1346800,
+          "bytes": "48894328",
+          "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+        },
+        {
+          "rva": 1346825,
+          "bytes": "488d05603b0000",
+          "assembly": "LEA RAX,[0x14014c870]"
+        },
+        {
+          "rva": 1346832,
+          "bytes": "488901",
+          "assembly": "MOV qword ptr [RCX],RAX"
+        }
+      ]
+    },
+    {
+      "signature": "() physics.compound_shape.add_shape (physics.compound_shape, const mat34, const physics.shape)",
+      "string_rva": 5531712,
+      "string_bytes": "282920706879736963732e636f6d706f756e645f73686170652e6164645f73686170652028706879736963732e636f6d706f756e645f73686170652c20636f6e7374206d617433342c20636f6e737420706879736963732e73686170652900",
+      "target_rva": 1367616,
+      "registration_rva": 1320144,
+      "selected_instructions": [
+        {
+          "rva": 1353191,
+          "bytes": "0f280552c23f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140546840]"
+        },
+        {
+          "rva": 1353198,
+          "bytes": "0f1101",
+          "assembly": "MOVUPS xmmword ptr [RCX],XMM0"
+        },
+        {
+          "rva": 1353201,
+          "bytes": "0f280d58c23f00",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x140546850]"
+        },
+        {
+          "rva": 1353208,
+          "bytes": "0f114910",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x10],XMM1"
+        },
+        {
+          "rva": 1353212,
+          "bytes": "0f28055dc23f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140546860]"
+        },
+        {
+          "rva": 1353219,
+          "bytes": "0f114120",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x20],XMM0"
+        },
+        {
+          "rva": 1353223,
+          "bytes": "0f280d62c23f00",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x140546870]"
+        },
+        {
+          "rva": 1353230,
+          "bytes": "0f114930",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x30],XMM1"
+        },
+        {
+          "rva": 1353234,
+          "bytes": "0f280567c23f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140546880]"
+        },
+        {
+          "rva": 1353241,
+          "bytes": "0f114140",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x40],XMM0"
+        },
+        {
+          "rva": 1353245,
+          "bytes": "f20f10056bc23f00",
+          "assembly": "MOVSD XMM0,qword ptr [0x140546890]"
+        },
+        {
+          "rva": 1353253,
+          "bytes": "f20f114150",
+          "assembly": "MOVSD qword ptr [RCX + 0x50],XMM0"
+        },
+        {
+          "rva": 1353258,
+          "bytes": "8b0568c23f00",
+          "assembly": "MOV EAX,dword ptr [0x140546898]"
+        },
+        {
+          "rva": 1353264,
+          "bytes": "894158",
+          "assembly": "MOV dword ptr [RCX + 0x58],EAX"
+        },
+        {
+          "rva": 1353267,
+          "bytes": "0fb70562c23f00",
+          "assembly": "MOVZX EAX,word ptr [0x14054689c]"
+        },
+        {
+          "rva": 1353274,
+          "bytes": "6689415c",
+          "assembly": "MOV word ptr [RCX + 0x5c],AX"
+        },
+        {
+          "rva": 1353278,
+          "bytes": "0fb60559c23f00",
+          "assembly": "MOVZX EAX,byte ptr [0x14054689e]"
+        },
+        {
+          "rva": 1353285,
+          "bytes": "88415e",
+          "assembly": "MOV byte ptr [RCX + 0x5e],AL"
+        },
+        {
+          "rva": 1353372,
+          "bytes": "488d059d370000",
+          "assembly": "LEA RAX,[0x14014de40]"
+        },
+        {
+          "rva": 1353379,
+          "bytes": "48894328",
+          "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+        },
+        {
+          "rva": 1353404,
+          "bytes": "488d057d370000",
+          "assembly": "LEA RAX,[0x14014de40]"
+        },
+        {
+          "rva": 1353411,
+          "bytes": "488901",
+          "assembly": "MOV qword ptr [RCX],RAX"
+        }
+      ]
+    }
+  ],
+  "vtables": [
+    {
+      "name": "hull settings factory",
+      "table_rva": 5292592,
+      "slot": 24,
+      "target_rva": 2303968,
+      "bytes": "e027234001000000"
+    },
+    {
+      "name": "box settings factory",
+      "table_rva": 5164456,
+      "slot": 24,
+      "target_rva": 2290896,
+      "bytes": "d0f4224001000000"
+    },
+    {
+      "name": "capsule settings factory",
+      "table_rva": 4995168,
+      "slot": 24,
+      "target_rva": 2161760,
+      "bytes": "60fc204001000000"
+    },
+    {
+      "name": "compound settings factory",
+      "table_rva": 5165936,
+      "slot": 24,
+      "target_rva": 2658240,
+      "bytes": "c08f284001000000"
+    },
+    {
+      "name": "capsule mass properties",
+      "table_rva": 5562960,
+      "slot": 56,
+      "target_rva": 2163296,
+      "bytes": "6002214001000000"
+    },
+    {
+      "name": "box mass properties",
+      "table_rva": 5566656,
+      "slot": 56,
+      "target_rva": 2291856,
+      "bytes": "90f8224001000000"
+    },
+    {
+      "name": "sphere mass properties",
+      "table_rva": 5166680,
+      "slot": 56,
+      "target_rva": 2175456,
+      "bytes": "e031214001000000"
+    },
+    {
+      "name": "hull mass properties",
+      "table_rva": 5567288,
+      "slot": 56,
+      "target_rva": 2311392,
+      "bytes": "e044234001000000"
+    },
+    {
+      "name": "compound mass properties",
+      "table_rva": 5574720,
+      "slot": 56,
+      "target_rva": 2635312,
+      "bytes": "3036284001000000"
+    },
+    {
+      "name": "transformed child mass properties",
+      "table_rva": 5576704,
+      "slot": 56,
+      "target_rva": 2802304,
+      "bytes": "80c22a4001000000"
+    },
+    {
+      "name": "compound centre accessor",
+      "table_rva": 5574720,
+      "slot": 16,
+      "target_rva": 2101664,
+      "bytes": "a011204001000000"
+    },
+    {
+      "name": "transformed child centre accessor",
+      "table_rva": 5576704,
+      "slot": 16,
+      "target_rva": 2179184,
+      "bytes": "7040214001000000"
+    }
+  ],
+  "selected_instructions": [
+    {
+      "reason": "Selected constructor table assignment",
+      "batch": "19",
+      "rva": 2161986,
+      "bytes": "488d0d0fd92d00",
+      "assembly": "LEA RCX,[0x1404ed658]"
+    },
+    {
+      "reason": "Selected constructor table assignment",
+      "batch": "19",
+      "rva": 2161993,
+      "bytes": "488908",
+      "assembly": "MOV qword ptr [RAX],RCX"
+    },
+    {
+      "reason": "Selected constructor table assignment",
+      "batch": "19",
+      "rva": 2162166,
+      "bytes": "488d0553e43300",
+      "assembly": "LEA RAX,[0x14054e250]"
+    },
+    {
+      "reason": "Selected constructor table assignment",
+      "batch": "19",
+      "rva": 2162173,
+      "bytes": "488907",
+      "assembly": "MOV qword ptr [RDI],RAX"
+    },
+    {
+      "reason": "Selected constructor table assignment",
+      "batch": "20",
+      "rva": 2291208,
+      "bytes": "488d05b1fa3100",
+      "assembly": "LEA RAX,[0x14054f0c0]"
+    },
+    {
+      "reason": "Selected constructor table assignment",
+      "batch": "20",
+      "rva": 2291215,
+      "bytes": "488901",
+      "assembly": "MOV qword ptr [RCX],RAX"
+    },
+    {
+      "reason": "Selected constructor table assignment",
+      "batch": "20",
+      "rva": 2304396,
+      "bytes": "488d05a5c93100",
+      "assembly": "LEA RAX,[0x14054f338]"
+    },
+    {
+      "reason": "Selected constructor table assignment",
+      "batch": "20",
+      "rva": 2304403,
+      "bytes": "488901",
+      "assembly": "MOV qword ptr [RCX],RAX"
+    },
+    {
+      "reason": "Selected constructor table assignment",
+      "batch": "26",
+      "rva": 2659542,
+      "bytes": "488d05637b2c00",
+      "assembly": "LEA RAX,[0x140551040]"
+    },
+    {
+      "reason": "Selected constructor table assignment",
+      "batch": "26",
+      "rva": 2659549,
+      "bytes": "488901",
+      "assembly": "MOV qword ptr [RCX],RAX"
+    },
+    {
+      "reason": "Selected constructor table assignment",
+      "batch": "26",
+      "rva": 2802068,
+      "bytes": "488d0565562a00",
+      "assembly": "LEA RAX,[0x140551800]"
+    },
+    {
+      "reason": "Selected constructor table assignment",
+      "batch": "26",
+      "rva": 2802075,
+      "bytes": "488903",
+      "assembly": "MOV qword ptr [RBX],RAX"
+    },
+    {
+      "reason": "Zero-length sphere density 1000 versus positive capsule density copy",
+      "batch": "19",
+      "rva": 2161979,
+      "bytes": "c7402800007a44",
+      "assembly": "MOV dword ptr [RAX + 0x28],0x447a0000"
+    },
+    {
+      "reason": "Zero-length sphere density 1000 versus positive capsule density copy",
+      "batch": "19",
+      "rva": 2162160,
+      "bytes": "8b4548",
+      "assembly": "MOV EAX,dword ptr [RBP + 0x48]"
+    },
+    {
+      "reason": "Zero-length sphere density 1000 versus positive capsule density copy",
+      "batch": "19",
+      "rva": 2162163,
+      "bytes": "894728",
+      "assembly": "MOV dword ptr [RDI + 0x28],EAX"
+    }
+  ],
+  "scalars": [
+    {
+      "rva": 5594012,
+      "format": "f32",
+      "bytes": "0000003f",
+      "value": 0.5
+    },
+    {
+      "rva": 5594440,
+      "format": "f32",
+      "bytes": "920a0640",
+      "value": 2.094395160675049
+    },
+    {
+      "rva": 5594560,
+      "format": "f32",
+      "bytes": "db0f4940",
+      "value": 3.1415927410125732
+    },
+    {
+      "rva": 5594632,
+      "format": "f32",
+      "bytes": "00008040",
+      "value": 4.0
+    },
+    {
+      "rva": 5594664,
+      "format": "f32",
+      "bytes": "0000a040",
+      "value": 5.0
+    },
+    {
+      "rva": 5594056,
+      "format": "f32",
+      "bytes": "0000403f",
+      "value": 0.75
+    },
+    {
+      "rva": 5594732,
+      "format": "f32",
+      "bytes": "00004041",
+      "value": 12.0
+    },
+    {
+      "rva": 5594648,
+      "format": "f32",
+      "bytes": "920a8640",
+      "value": 4.188790321350098
+    },
+    {
+      "rva": 5593976,
+      "format": "f32",
+      "bytes": "cdcccc3e",
+      "value": 0.4000000059604645
+    },
+    {
+      "rva": 5598176,
+      "format": "f32",
+      "bytes": "00000040",
+      "value": 2.0
+    },
+    {
+      "rva": 5598180,
+      "format": "f32",
+      "bytes": "00000040",
+      "value": 2.0
+    },
+    {
+      "rva": 5598184,
+      "format": "f32",
+      "bytes": "00000040",
+      "value": 2.0
+    },
+    {
+      "rva": 5594164,
+      "format": "f32",
+      "bytes": "0000803f",
+      "value": 1.0
+    },
+    {
+      "rva": 5597808,
+      "format": "f32",
+      "bytes": "00000000",
+      "value": 0.0
+    },
+    {
+      "rva": 5597812,
+      "format": "f32",
+      "bytes": "00000000",
+      "value": 0.0
+    },
+    {
+      "rva": 5597816,
+      "format": "f32",
+      "bytes": "00000000",
+      "value": 0.0
+    },
+    {
+      "rva": 5597820,
+      "format": "f32",
+      "bytes": "0000803f",
+      "value": 1.0
+    }
+  ],
+  "review_scope": {
+    "full_selected_methods": "Primitive mass methods; capsule and primitive settings factories; selected compound settings factory, child setup and complete mass method; transformed-child constructor/mass; selected tank wrappers.",
+    "partial_constructor_review": [
+      "Hull constructor native_2328c0 prefix and selected cache stores, not full integration algorithm.",
+      "Compound constructor native_289400 prefix through mass-weighted centre and recentering, not full BVH construction."
+    ],
+    "prefixes_superseded": [
+      "Batch24 native_10ecf0 covers only first split entry; complete reviewed manual span in batch25.",
+      "Batch27 native_283630 covers only first split entry; complete reviewed manual span in batch28."
+    ],
+    "limits": "Static byte checks do not prove recovered ABI, every CFG edge, native tensor/solver precision or normal reachability of zero-length capsule settings."
+  }
+}
