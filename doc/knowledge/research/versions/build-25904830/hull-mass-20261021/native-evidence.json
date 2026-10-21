@@ -1,0 +1,363 @@
+{
+  "schema": 1,
+  "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+  "image_base": 5368709120,
+  "batches": [
+    {
+      "batch": "20",
+      "selected_spans": [
+        {
+          "begin_rva": 2304192,
+          "end_rva": 2311377,
+          "va": 5371013312,
+          "file_offset": 2301120,
+          "size": 7185,
+          "unwind_rva": 5887332,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_2328c0",
+          "span_sha256": "d1246ad1191650a8b0371ece15dadfee6cdef4943ece7a231703c4ea3f505a89"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 1,
+        "instructions_byte_checked": 1597,
+        "instruction_bytes_checked": 7185,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    },
+    {
+      "batch": "22",
+      "selected_spans": [
+        {
+          "begin_rva": 2311392,
+          "end_rva": 2311496,
+          "va": 5371020512,
+          "file_offset": 2308320,
+          "size": 104,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_2344e0",
+          "span_sha256": "f0baea992e6b8210ff9b0b762ab751a3d27613ad27c980f641b50002f49f3d08"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 1,
+        "instructions_byte_checked": 26,
+        "instruction_bytes_checked": 104,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    },
+    {
+      "batch": "28",
+      "selected_spans": [
+        {
+          "begin_rva": 2179184,
+          "end_rva": 2179195,
+          "va": 5370888304,
+          "file_offset": 2176112,
+          "size": 11,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_214070",
+          "span_sha256": "dd4164af6b3fade858226c68708958afc68331b13faa9f95b1f7acc9cbbdee6d"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 1,
+        "instructions_byte_checked": 4,
+        "instruction_bytes_checked": 11,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    },
+    {
+      "batch": "29",
+      "selected_spans": [
+        {
+          "begin_rva": 2873488,
+          "end_rva": 2873950,
+          "va": 5371582608,
+          "file_offset": 2870416,
+          "size": 462,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_2bd890",
+          "span_sha256": "29bbcbb95d984a098097a34d63146ead67532b17dd2a032d5ae3b18b2e992036"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 1,
+        "instructions_byte_checked": 125,
+        "instruction_bytes_checked": 462,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    },
+    {
+      "batch": "30",
+      "selected_spans": [
+        {
+          "begin_rva": 2864480,
+          "end_rva": 2870040,
+          "va": 5371573600,
+          "file_offset": 2861408,
+          "size": 5560,
+          "unwind_rva": 5922652,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_2bb560",
+          "span_sha256": "9cd49b1689fb437c41d5aee84f87d03068f254b3941515c3c820ba20438532f3"
+        },
+        {
+          "begin_rva": 2873952,
+          "end_rva": 2874664,
+          "va": 5371583072,
+          "file_offset": 2870880,
+          "size": 712,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_2bda60",
+          "span_sha256": "bae0f66b889f21edd3453d3e3b97bb815a33c0a87b33f80f1a87f1b1ff3b2b1f"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 2,
+        "instructions_byte_checked": 1716,
+        "instruction_bytes_checked": 6272,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    }
+  ],
+  "selected_bindings": [],
+  "vtables": [
+    {
+      "name": "hull centre",
+      "table_rva": 5567288,
+      "slot": 16,
+      "target_rva": 2179184,
+      "bytes": "7040214001000000"
+    },
+    {
+      "name": "hull mass properties",
+      "table_rva": 5567288,
+      "slot": 56,
+      "target_rva": 2311392,
+      "bytes": "e044234001000000"
+    }
+  ],
+  "selected_instructions": [
+    {
+      "rva": 2305158,
+      "bytes": "4c8d7730",
+      "assembly": "LEA R14,[RDI + 0x30]",
+      "reason": "Constructor passes cached centre and unit-density mass coefficient to signed-volume helper"
+    },
+    {
+      "rva": 2305162,
+      "bytes": "4c8d8704010000",
+      "assembly": "LEA R8,[RDI + 0x104]",
+      "reason": "Constructor passes cached centre and unit-density mass coefficient to signed-volume helper"
+    },
+    {
+      "rva": 2305169,
+      "bytes": "498bd6",
+      "assembly": "MOV RDX,R14",
+      "reason": "Constructor passes cached centre and unit-density mass coefficient to signed-volume helper"
+    },
+    {
+      "rva": 2305172,
+      "bytes": "488d8d70010000",
+      "assembly": "LEA RCX,[RBP + 0x170]",
+      "reason": "Constructor passes cached centre and unit-density mass coefficient to signed-volume helper"
+    },
+    {
+      "rva": 2305179,
+      "bytes": "e8f0ab0800",
+      "assembly": "CALL 0x1402bd890",
+      "reason": "Constructor passes cached centre and unit-density mass coefficient to signed-volume helper"
+    }
+  ],
+  "scalars": [
+    {
+      "rva": 5593576,
+      "format": "f32",
+      "bytes": "00000034",
+      "value": 1.1920928955078125e-07
+    },
+    {
+      "rva": 5594632,
+      "format": "f32",
+      "bytes": "00008040",
+      "value": 4.0
+    },
+    {
+      "rva": 5594680,
+      "format": "f32",
+      "bytes": "0000c040",
+      "value": 6.0
+    },
+    {
+      "rva": 5595744,
+      "format": "f32",
+      "bytes": "8988883c",
+      "value": 0.01666666753590107
+    },
+    {
+      "rva": 5595748,
+      "format": "f32",
+      "bytes": "8988083c",
+      "value": 0.008333333767950535
+    },
+    {
+      "rva": 5595752,
+      "format": "f32",
+      "bytes": "8988083c",
+      "value": 0.008333333767950535
+    },
+    {
+      "rva": 5595756,
+      "format": "f32",
+      "bytes": "00000000",
+      "value": 0.0
+    },
+    {
+      "rva": 5595760,
+      "format": "f32",
+      "bytes": "8988083c",
+      "value": 0.008333333767950535
+    },
+    {
+      "rva": 5595764,
+      "format": "f32",
+      "bytes": "8988883c",
+      "value": 0.01666666753590107
+    },
+    {
+      "rva": 5595768,
+      "format": "f32",
+      "bytes": "8988083c",
+      "value": 0.008333333767950535
+    },
+    {
+      "rva": 5595772,
+      "format": "f32",
+      "bytes": "00000000",
+      "value": 0.0
+    },
+    {
+      "rva": 5595776,
+      "format": "f32",
+      "bytes": "8988083c",
+      "value": 0.008333333767950535
+    },
+    {
+      "rva": 5595780,
+      "format": "f32",
+      "bytes": "8988083c",
+      "value": 0.008333333767950535
+    },
+    {
+      "rva": 5595784,
+      "format": "f32",
+      "bytes": "8988883c",
+      "value": 0.01666666753590107
+    },
+    {
+      "rva": 5595788,
+      "format": "f32",
+      "bytes": "00000000",
+      "value": 0.0
+    },
+    {
+      "rva": 5595296,
+      "format": "f32",
+      "bytes": "0000803f",
+      "value": 1.0
+    },
+    {
+      "rva": 5595300,
+      "format": "f32",
+      "bytes": "00000000",
+      "value": 0.0
+    },
+    {
+      "rva": 5595304,
+      "format": "f32",
+      "bytes": "00000000",
+      "value": 0.0
+    },
+    {
+      "rva": 5595308,
+      "format": "f32",
+      "bytes": "00000000",
+      "value": 0.0
+    },
+    {
+      "rva": 5595440,
+      "format": "f32",
+      "bytes": "00000000",
+      "value": 0.0
+    },
+    {
+      "rva": 5595444,
+      "format": "f32",
+      "bytes": "0000803f",
+      "value": 1.0
+    },
+    {
+      "rva": 5595448,
+      "format": "f32",
+      "bytes": "00000000",
+      "value": 0.0
+    },
+    {
+      "rva": 5595452,
+      "format": "f32",
+      "bytes": "00000000",
+      "value": 0.0
+    },
+    {
+      "rva": 5595792,
+      "format": "f32",
+      "bytes": "00000000",
+      "value": 0.0
+    },
+    {
+      "rva": 5595796,
+      "format": "f32",
+      "bytes": "00000000",
+      "value": 0.0
+    },
+    {
+      "rva": 5595800,
+      "format": "f32",
+      "bytes": "0000803f",
+      "value": 1.0
+    },
+    {
+      "rva": 5595804,
+      "format": "f32",
+      "bytes": "00000000",
+      "value": 0.0
+    }
+  ],
+  "review_scope": {
+    "constructor": "All 1382 approximate C lines of native_2328c0 read. Centre/volume, centred second moment and cached density-scaled properties reviewed; later face storage/adjacency/radius bounds observed, not a complete geometric equivalence proof.",
+    "volume_helper": "native_2bd890 complete reviewed manual union of five adjacent PE ranges, ending at 0x2bda5e. Positive-volume centre accumulation and epsilon fallback reviewed.",
+    "error_helper": "native_2bda60 complete reviewed manual union of three adjacent PE ranges; selected approximation-error checks read.",
+    "hull_generation": "native_2bb560 only prefix through first point selection reviewed; native_2baf70 and other hull-building callees remain open. No point-cloud-to-native-hull emulator supplied.",
+    "limits": "Exact selected byte checks are not original symbols, recovered ABI, complete CFG, bit-exact arithmetic, complete topology validation or gameplay acceptance."
+  }
+}

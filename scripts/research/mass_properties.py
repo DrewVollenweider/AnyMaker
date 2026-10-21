@@ -1,4 +1,4 @@
-"""Selected build-25904830 native primitive mass and inertia models.
+"""Selected build-25904830 primitive and compound mass/inertia models.
 
 Lengths are explicit metre inputs, density is the native shape coefficient.
 Results describe the primitive about its own centre in its local axes.
@@ -10,7 +10,7 @@ from dataclasses import dataclass
 import math
 import struct
 
-VERSION = '1.0.0'
+VERSION = '1.1.0'
 
 
 def _f32(bits):
@@ -29,12 +29,18 @@ class MassProperties:
     inertia_diagonal: tuple
 
 
+@dataclass(frozen=True)
+class TensorMassProperties:
+    mass: float
+    inertia: tuple
+
+
 IDENTITY = ((1.,0.,0.),(0.,1.,0.),(0.,0.,1.))
 
 
 @dataclass(frozen=True)
 class Child:
-    properties: MassProperties
+    properties: MassProperties | TensorMassProperties
     center: tuple = (0.,0.,0.)
     rotation: tuple = IDENTITY
 
@@ -115,7 +121,7 @@ def _vector(values):
 
 
 def combine(children):
-    """Combine explicit primitive properties about the mass-weighted centre.
+    """Combine explicit local mass properties about the mass-weighted centre.
 
     Child.center is the already transformed child COM, not a creation origin.
     Rotation is an explicit row-major proper orthonormal local-to-parent 3x3
@@ -126,9 +132,19 @@ def combine(children):
     checked = []
     for child in children:
         mass = _scalar(child.properties.mass)
-        diagonal = _vector(child.properties.inertia_diagonal)
-        if any(x < 0 for x in diagonal):
-            raise ValueError('Expected nonnegative principal inertia')
+        if isinstance(child.properties,MassProperties):
+            diagonal = _vector(child.properties.inertia_diagonal)
+            tensor = tuple(tuple(diagonal[i] if i==j else 0. for j in range(3)) for i in range(3))
+        elif isinstance(child.properties,TensorMassProperties):
+            tensor = tuple(_vector(row) for row in child.properties.inertia)
+            if len(tensor)!=3:
+                raise ValueError('Expected a three-row inertia tensor')
+            if any(abs(tensor[i][j]-tensor[j][i])>1e-9 for i in range(3) for j in range(3)):
+                raise ValueError('Expected a symmetric inertia tensor')
+        else:
+            raise ValueError('Expected explicit diagonal or tensor mass properties')
+        if any(tensor[i][i]<0 for i in range(3)):
+            raise ValueError('Expected nonnegative diagonal inertia')
         center = _vector(child.center)
         rotation = tuple(_vector(row) for row in child.rotation)
         if len(rotation) != 3:
@@ -141,18 +157,18 @@ def combine(children):
         determinant = a[0]*(b[1]*c[2]-b[2]*c[1])-a[1]*(b[0]*c[2]-b[2]*c[0])+a[2]*(b[0]*c[1]-b[1]*c[0])
         if abs(determinant-1) > 1e-9:
             raise ValueError('Model requires a proper rotation')
-        checked.append((mass,diagonal,center,rotation))
+        checked.append((mass,tensor,center,rotation))
     if not checked:
         raise ValueError('Supply at least one child')
     mass = sum(c[0] for c in checked)
     center = tuple(sum(m*p[i] for m,_,p,_ in checked)/mass for i in range(3))
     inertia = [[0.]*3 for _ in range(3)]
-    for m,diagonal,p,r in checked:
+    for m,tensor,p,r in checked:
         d = tuple(p[i]-center[i] for i in range(3))
         d2 = sum(x*x for x in d)
         for i in range(3):
             for j in range(3):
-                rotated = sum(r[i][k]*diagonal[k]*r[j][k] for k in range(3))
+                rotated = sum(r[i][k]*tensor[k][l]*r[j][l] for k in range(3) for l in range(3))
                 inertia[i][j] += rotated+m*((d2 if i==j else 0)-d[i]*d[j])
     values = (mass,*center,*(x for row in inertia for x in row))
     if not all(math.isfinite(x) for x in values):

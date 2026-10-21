@@ -2,6 +2,8 @@
 
 2026-10-21; build 25904830. GCL SHA-256 `626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355`; isolated PE SHA-256 `5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0`. Continues [body mass and ballast](BODY-MASS-20261021.md). No game execution or installation/active-save changes.
 
+Follow-up: [hull integration and vehicle structure weights](HULL-MASS-20261021.md) now identifies the cached hull coefficient as signed volume, traces its centred inertia integration, and extends the tools with full-tensor support. Native hull generation and complete creation integration remain open.
+
 ## What this adds for vehicle building
 
 The native primitive mass methods and selected compound assembly path now support an offline helper for explicit shapes, positions and rotations. This helps compare packaging choices and rotational inertia before building. It is **not yet a complete creation-file mass estimator**: component collision zones, eligibility, hull integration, separate bodies and all creation transforms must still be reconstructed.

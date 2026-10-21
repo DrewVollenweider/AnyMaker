@@ -2,7 +2,7 @@
 import math
 import unittest
 
-from mass_properties import Child,MassProperties,box,capsule_y,combine,sphere
+from mass_properties import Child,MassProperties,TensorMassProperties,box,capsule_y,combine,sphere
 
 
 class MassPropertiesTests(unittest.TestCase):
@@ -138,6 +138,18 @@ class MassPropertiesTests(unittest.TestCase):
                          [Child(MassProperties(1,(-1,0,0)))]]:
             with self.assertRaises(ValueError):
                 combine(children)
+
+    def test_full_tensor_rotation_keeps_off_diagonal_entries(self):
+        p = TensorMassProperties(1,((2,1,0),(1,3,0),(0,0,4)))
+        rotation = ((0,-1,0),(1,0,0),(0,0,1))
+        result = combine([Child(p,rotation=rotation)])
+        self.assertEqual(result.inertia,((3,-1,0),(-1,2,0),(0,0,4)))
+
+    def test_invalid_tensor_structure_and_symmetry(self):
+        for tensor in [((1,0,0),(0,1,0)),((1,2,0),(1,1,0),(0,0,1)),
+                       ((math.nan,0,0),(0,1,0),(0,0,1))]:
+            with self.assertRaises(ValueError):
+                combine([Child(TensorMassProperties(1,tensor))])
 
 
 if __name__ == '__main__':

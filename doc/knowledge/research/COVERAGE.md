@@ -1,6 +1,6 @@
 # Coverage and gaps
 
-Latest vehicle continuation: [primitive/compound mass and tank lifecycle](MASS-PROPERTIES-20261021.md). Six GCL identities/19 selected calls, 28 checked native export spans (including reused registration and superseded prefixes), 12 table slots, 17 f32 constants and three API registrations. Box/sphere/capsule and explicit compound calculations have 18 new tests; full suite 222. Reader 1,543 functions/233,869 instructions/1,329,154 bytes. Complete hull integration, creation mass reconstruction, solver and remaining vehicle chains stay open.
+Latest vehicle continuation: [hull mass integration, plate slabs and edge capsules](HULL-MASS-20261021.md). Three GCL identities/nine constants/12 calls/three global references/13 assembly examples; six selected native spans / 3,468 instructions / 14,034 bytes/two table slots/27 f32 constants. Selected hull centre, signed volume and inertia integration closed; native hull generation/margins and complete creation geometry remain open. Seventeen new tests; full suite 239. Reader unchanged 1,543/233,869/1,329,154 bytes.
 
 Latest vehicle continuation: [plate placement/strips/native angles](PLATE-PLACEMENT-20261021.md). Evidence: 23 GCL identities/49 constants/27 calls, four native spans/276 instructions/1,345 bytes, two selected native bindings. Reader: 1,530 functions/229,223 instructions/1,301,220 independently summed bytes. The turn-consistency helper is not a complete coplanarity/simple-polygon validator. Complete caller/authority/adjacency and body physics remain open; 204 tests pass.
 

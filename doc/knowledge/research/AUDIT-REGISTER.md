@@ -1,6 +1,6 @@
 # Full-game audit register
 
-Latest selected vehicle findings: [primitive mass, compound inertia and tank lifecycle](MASS-PROPERTIES-20261021.md). Actual shape virtuals and selected compound centre/aggregation now have native evidence and tested explicit-input calculations. The hull constructor integration and complete creation mass pipeline remain unfinished. No percentage is inferred from recovered function counts; vehicle engineering remains the priority.
+Latest selected vehicle findings: [hull mass integration and structure weights](HULL-MASS-20261021.md). Signed volume/centre, native second-moment coefficients and cached hull density scaling traced. Source-derived plate-slab and edge-capsule contributions supplement primitive/compound calculations. Full native hull generation/degeneracy/margins, geometry eligibility and creation transforms remain unfinished. Vehicle systems stay ahead of parked combat/AI subjects.
 
 Latest selected vehicle findings: [plate placement/strips/native angles](PLATE-PLACEMENT-20261021.md). Both placement utility branches, turn-consistency limits, shared ordered-edge conflicts, frame suitability and perimeter variants are traced. Two native vec3 angle bindings have selected registration/body evidence; complete loader ABI and exceptional inputs remain open. Continue vehicle systems; combat/projectiles/AI remain parked.
 

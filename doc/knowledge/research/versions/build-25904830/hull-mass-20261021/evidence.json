@@ -1,0 +1,301 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "() G_VEHICLE_EDGE_DENSITY.$ctor ()",
+      "signature_offset": 269858,
+      "code_offset": 269942,
+      "code_size": 32,
+      "code_sha256": "69d0dcbdc2d7b2cdd7f79c1cb8ad498254e7dfb2d38694dede5db1bbc877d2be"
+    },
+    {
+      "signature": "() G_VEHICLE_PLATE_DENSITY.$ctor ()",
+      "signature_offset": 272363,
+      "code_offset": 272449,
+      "code_size": 32,
+      "code_sha256": "4d55557600317a1d0be6c3462b714c586b0e7178bd0bd2376297129ac7303270"
+    },
+    {
+      "signature": "() server_scene.vehicle.build_physics_shape (server_scene.vehicle, physics.compound_shape, s32, s32)",
+      "signature_offset": 52748413,
+      "code_offset": 52757266,
+      "code_size": 20704,
+      "code_sha256": "a05f32e05dd8c01e7874a48e807e377f9219bcdb4b3b24fdaf72d2533df4cac5"
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 269942,
+      "offset": 269966,
+      "format": "f64",
+      "bytes": "0000000000408f40",
+      "value": 1000.0,
+      "name": "Selected density, edge radius and plate slab constants; unused scaled density temporary not substituted for capsule call argument"
+    },
+    {
+      "function_offset": 272449,
+      "offset": 272473,
+      "format": "f64",
+      "bytes": "0000000000007940",
+      "value": 400.0,
+      "name": "Selected density, edge radius and plate slab constants; unused scaled density temporary not substituted for capsule call argument"
+    },
+    {
+      "function_offset": 52757266,
+      "offset": 52777882,
+      "format": "f64",
+      "bytes": "9a9999999999a93f",
+      "value": 0.05,
+      "name": "Selected density, edge radius and plate slab constants; unused scaled density temporary not substituted for capsule call argument"
+    },
+    {
+      "function_offset": 52757266,
+      "offset": 52777890,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Selected density, edge radius and plate slab constants; unused scaled density temporary not substituted for capsule call argument"
+    },
+    {
+      "function_offset": 52757266,
+      "offset": 52777930,
+      "format": "f64",
+      "bytes": "0000000000000840",
+      "value": 3.0,
+      "name": "Selected density, edge radius and plate slab constants; unused scaled density temporary not substituted for capsule call argument"
+    },
+    {
+      "function_offset": 52757266,
+      "offset": 52777962,
+      "format": "f64",
+      "bytes": "0000000000002240",
+      "value": 9.0,
+      "name": "Selected density, edge radius and plate slab constants; unused scaled density temporary not substituted for capsule call argument"
+    },
+    {
+      "function_offset": 52757266,
+      "offset": 52777938,
+      "format": "f64",
+      "bytes": "666666666666d63f",
+      "value": 0.35,
+      "name": "Selected density, edge radius and plate slab constants; unused scaled density temporary not substituted for capsule call argument"
+    },
+    {
+      "function_offset": 52757266,
+      "offset": 52777946,
+      "format": "f64",
+      "bytes": "cdccccccccccdc3f",
+      "value": 0.45,
+      "name": "Selected density, edge radius and plate slab constants; unused scaled density temporary not substituted for capsule call argument"
+    },
+    {
+      "function_offset": 52757266,
+      "offset": 52777922,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Selected density, edge radius and plate slab constants; unused scaled density temporary not substituted for capsule call argument"
+    }
+  ],
+  "strings": [],
+  "call_examples": [
+    {
+      "function_offset": 52757266,
+      "instruction": 52765950,
+      "bytes": "ffd5",
+      "slot_address": 52778482,
+      "kind": 6,
+      "symbol": "(collision.aab) server_scene.vehicle_component.get_zone_bounds_local_to_grid (const server_scene.vehicle_component, const vehicle_component_definition.zone, const f64)"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52770040,
+      "bytes": "ff16",
+      "slot_address": 52778554,
+      "kind": 4,
+      "symbol": "() physics.shape.create_capsule (physics.shape, const f64, const f64, const vec3, const f64)"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52770147,
+      "bytes": "ff5500",
+      "slot_address": 52778562,
+      "kind": 4,
+      "symbol": "() physics.compound_shape.add_shape (physics.compound_shape, const mat34, const physics.shape)"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52772885,
+      "bytes": "ff5500",
+      "slot_address": 52778602,
+      "kind": 4,
+      "symbol": "() physics.shape.create_convex_hull (physics.shape, const vector<vec3>, const vec3, const f64)"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52773042,
+      "bytes": "ff5500",
+      "slot_address": 52778562,
+      "kind": 4,
+      "symbol": "() physics.compound_shape.add_shape (physics.compound_shape, const mat34, const physics.shape)"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52774346,
+      "bytes": "ffd3",
+      "slot_address": 52778482,
+      "kind": 6,
+      "symbol": "(collision.aab) server_scene.vehicle_component.get_zone_bounds_local_to_grid (const server_scene.vehicle_component, const vehicle_component_definition.zone, const f64)"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52774619,
+      "bytes": "ff10",
+      "slot_address": 52778618,
+      "kind": 4,
+      "symbol": "() physics.shape.create_box (physics.shape, const vec3, const vec3, const f64)"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52775242,
+      "bytes": "ff5500",
+      "slot_address": 52778562,
+      "kind": 4,
+      "symbol": "() physics.compound_shape.add_shape (physics.compound_shape, const mat34, const physics.shape)"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52776610,
+      "bytes": "ffd3",
+      "slot_address": 52778482,
+      "kind": 6,
+      "symbol": "(collision.aab) server_scene.vehicle_component.get_zone_bounds_local_to_grid (const server_scene.vehicle_component, const vehicle_component_definition.zone, const f64)"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52776771,
+      "bytes": "ff10",
+      "slot_address": 52778618,
+      "kind": 4,
+      "symbol": "() physics.shape.create_box (physics.shape, const vec3, const vec3, const f64)"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52777122,
+      "bytes": "ff5500",
+      "slot_address": 52778562,
+      "kind": 4,
+      "symbol": "() physics.compound_shape.add_shape (physics.compound_shape, const mat34, const physics.shape)"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52777758,
+      "bytes": "ff10",
+      "slot_address": 52778562,
+      "kind": 4,
+      "symbol": "() physics.compound_shape.add_shape (physics.compound_shape, const mat34, const physics.shape)"
+    }
+  ],
+  "global_references": [
+    {
+      "function_offset": 52757266,
+      "kind": 3,
+      "symbol": "G_VEHICLE_GRID_SIZE",
+      "slot_offset": 20856
+    },
+    {
+      "function_offset": 52757266,
+      "kind": 3,
+      "symbol": "G_VEHICLE_EDGE_DENSITY",
+      "slot_offset": 21272
+    },
+    {
+      "function_offset": 52757266,
+      "kind": 3,
+      "symbol": "G_VEHICLE_PLATE_DENSITY",
+      "slot_offset": 21328
+    }
+  ],
+  "assembly_examples": [
+    {
+      "function_offset": 52757266,
+      "instruction": 52769962,
+      "bytes": "488b0579210000",
+      "assembly": "MOV RAX,qword ptr [0x0325562a]"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52769969,
+      "bytes": "488d8c24c0130000",
+      "assembly": "LEA RCX,[RSP + 0x13c0]"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52769977,
+      "bytes": "f20f108424d8000000",
+      "assembly": "MOVSD XMM0,qword ptr [RSP + 0xd8]"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52769986,
+      "bytes": "f20f118424e8130000",
+      "assembly": "MOVSD qword ptr [RSP + 0x13e8],XMM0"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52769995,
+      "bytes": "488d9424e8130000",
+      "assembly": "LEA RDX,[RSP + 0x13e8]"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52770003,
+      "bytes": "488d9c24e8120000",
+      "assembly": "LEA RBX,[RSP + 0x12e8]"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52770011,
+      "bytes": "488dac24d0130000",
+      "assembly": "LEA RBP,[RSP + 0x13d0]"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52770019,
+      "bytes": "488d00",
+      "assembly": "LEA RAX,[RAX]"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52770022,
+      "bytes": "488b354d210000",
+      "assembly": "MOV RSI,qword ptr [0x0325563a]"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52770029,
+      "bytes": "4889442420",
+      "assembly": "MOV qword ptr [RSP + 0x20],RAX"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52770034,
+      "bytes": "4989d8",
+      "assembly": "MOV R8,RBX"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52770037,
+      "bytes": "4989e9",
+      "assembly": "MOV R9,RBP"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52770040,
+      "bytes": "ff16",
+      "assembly": "CALL qword ptr [RSI]"
+    }
+  ],
+  "limits": "Selected physics-shape construction identities and literal constants, not a complete creation geometry/eligibility or native hull-generation proof."
+}
