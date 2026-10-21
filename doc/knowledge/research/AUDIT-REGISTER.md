@@ -1,5 +1,7 @@
 # Full-game audit register
 
+Latest selected vehicle findings: [body mass, liquid ballast and crash damage](BODY-MASS-20261021.md). All 598 density declarations/defaults audited; tank/flooded-surface secondary bodies, native mass conversions, torque-container mass handoff and normal crash impulse/removal gates have selected evidence. No complete mass/inertia estimator, universal beam-strength rule or runtime acceptance is claimed. Full vehicle-first audit remains incomplete.
+
 Latest selected vehicle findings: [plate placement/strips/native angles](PLATE-PLACEMENT-20261021.md). Both placement utility branches, turn-consistency limits, shared ordered-edge conflicts, frame suitability and perimeter variants are traced. Two native vec3 angle bindings have selected registration/body evidence; complete loader ABI and exceptional inputs remain open. Continue vehicle systems; combat/projectiles/AI remain parked.
 
 Latest selected vehicle findings: [plate surfaces/clipping/collision inputs](PLATE-SURFACES-20261021.md). Solid triangle fans, ordered clipping/coordinate interpolation, orientation-dependent plane construction and server convex-hull input offsets have selected source evidence. Native hull/contact margins and full placement/perimeter contracts remain open. Continue vehicle engineering; combat/projectiles/AI remain low priority.

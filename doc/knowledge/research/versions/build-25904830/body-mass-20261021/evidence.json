@@ -1,0 +1,557 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "() G_VEHICLE_EDGE_DENSITY.$ctor ()",
+      "signature_offset": 269858,
+      "code_offset": 269942,
+      "code_size": 32,
+      "code_sha256": "69d0dcbdc2d7b2cdd7f79c1cb8ad498254e7dfb2d38694dede5db1bbc877d2be"
+    },
+    {
+      "signature": "() G_VEHICLE_PLATE_DENSITY.$ctor ()",
+      "signature_offset": 272363,
+      "code_offset": 272449,
+      "code_size": 32,
+      "code_sha256": "4d55557600317a1d0be6c3462b714c586b0e7178bd0bd2376297129ac7303270"
+    },
+    {
+      "signature": "() server_scene.vehicle.build (server_scene.vehicle, server_scene.connections_manager)",
+      "signature_offset": 52740779,
+      "code_offset": 52741190,
+      "code_size": 200,
+      "code_sha256": "242798fb71c5d222ad3e3b1dd5a2d20c301ea0046f3c8d89e75e92f0fe3a899c"
+    },
+    {
+      "signature": "() server_scene.vehicle.build_physics_shape (server_scene.vehicle, physics.compound_shape, s32, s32)",
+      "signature_offset": 52748413,
+      "code_offset": 52757266,
+      "code_size": 20704,
+      "code_sha256": "a05f32e05dd8c01e7874a48e807e377f9219bcdb4b3b24fdaf72d2533df4cac5"
+    },
+    {
+      "signature": "() server_scene.vehicle.damage_destructive (server_scene.vehicle, server_scene, const s32, const vec3_s32)",
+      "signature_offset": 52945886,
+      "code_offset": 52951564,
+      "code_size": 14832,
+      "code_sha256": "626cf3d3bf00999f39e65d8d005f78a5d573a3adbaa3022f52a76a3110885cb3"
+    },
+    {
+      "signature": "() server_scene.vehicle.damage_functional (server_scene.vehicle, const s32, const vec3_s32)",
+      "signature_offset": 52980767,
+      "code_offset": 52986438,
+      "code_size": 6232,
+      "code_sha256": "4ca5892d3313d29395ca8018cebc7b7075eacd93c01cb2a7c9218514282a3347"
+    },
+    {
+      "signature": "() server_scene.vehicle.on_physics_contact_added (server_scene.vehicle, server_scene, physics.collision_data_object, physics.collision_data_object, const vector<physics.collision_estimation_impulse>, const ptr<application_physics_user_data>)",
+      "signature_offset": 53187092,
+      "code_offset": 53189119,
+      "code_size": 2896,
+      "code_sha256": "a3242b9edbcd7250d81db6ba5b122e6b12652926666552c1c728220cffbe9607"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_tank._rebuild_fluid_physics (server_scene.vehicle_component.liquid_tank, server_scene)",
+      "signature_offset": 56380711,
+      "code_offset": 56382798,
+      "code_size": 2248,
+      "code_sha256": "3d42bad24c498ec6ebeab8fbac82fa628af1823bcc8af984473fc8a228e4aae0"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_tank.tick (server_scene.vehicle_component.liquid_tank, server_scene.vehicle, server_scene)",
+      "signature_offset": 56403215,
+      "code_offset": 56405131,
+      "code_size": 3088,
+      "code_sha256": "1da32fe0bb7e67aa925b6374ac17a58e649422433be6805e4f2aba9ecb3bc470"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_liquid_content._get_fluid_density (const server_scene.vehicle_liquid_content, const server_scene.e_vehicle_liquid_type)",
+      "signature_offset": 58717129,
+      "code_offset": 58717295,
+      "code_size": 216,
+      "code_sha256": "d1768b710a2f9bb6c90a6ed5d90a6e161ff9178f35bcf22451053ae710ce567f"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_liquid_content.get_fluid_mass (const server_scene.vehicle_liquid_content)",
+      "signature_offset": 58732927,
+      "code_offset": 58733303,
+      "code_size": 224,
+      "code_sha256": "ea42610d28fe21a898cda9ea5e21becbc3af34a459027f7468e94384a57ec5e7"
+    },
+    {
+      "signature": "() vehicle_buoyancy.surface.update_physics (vehicle_buoyancy.surface)",
+      "signature_offset": 62372223,
+      "code_offset": 62372884,
+      "code_size": 456,
+      "code_sha256": "8af073802f57c8f665a204766d582a02d153c34564528733997d0363eb845438"
+    },
+    {
+      "signature": "() vehicle_buoyancy.update_server (vehicle_buoyancy, physics.object, const bool, const bool)",
+      "signature_offset": 62377178,
+      "code_offset": 62378384,
+      "code_size": 504,
+      "code_sha256": "cbae23d0be6b901377bb3ac2e27c23d0c03ddcab0370dfff51f69fd84cd471e0"
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 269942,
+      "offset": 269966,
+      "format": "f64",
+      "bytes": "0000000000408f40",
+      "value": 1000.0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 272449,
+      "offset": 272473,
+      "format": "f64",
+      "bytes": "0000000000007940",
+      "value": 400.0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 56405131,
+      "offset": 56408155,
+      "format": "f64",
+      "bytes": "0000000000002440",
+      "value": 10.0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 56405131,
+      "offset": 56408179,
+      "format": "f64",
+      "bytes": "7b14ae47e17a843f",
+      "value": 0.01,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 56405131,
+      "offset": 56408187,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 58717295,
+      "offset": 58717479,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 58717295,
+      "offset": 58717495,
+      "format": "f64",
+      "bytes": "9a9999999999e93f",
+      "value": 0.8,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 56382798,
+      "offset": 56385006,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 56382798,
+      "offset": 56385014,
+      "format": "f64",
+      "bytes": "9a9999999999b93f",
+      "value": 0.1,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 56382798,
+      "offset": 56385030,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 56382798,
+      "offset": 56385038,
+      "format": "f64",
+      "bytes": "7b14ae47e17a843f",
+      "value": 0.01,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 53189119,
+      "offset": 53191951,
+      "format": "f64",
+      "bytes": "000000000040af40",
+      "value": 4000.0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 53189119,
+      "offset": 53191959,
+      "format": "f64",
+      "bytes": "000000000088c340",
+      "value": 10000.0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 53189119,
+      "offset": 53191967,
+      "format": "f64",
+      "bytes": "2d431cebe2364a3f",
+      "value": 0.0008,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 53189119,
+      "offset": 53191975,
+      "format": "f64",
+      "bytes": "2d431cebe2362a3f",
+      "value": 0.0002,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 53189119,
+      "offset": 53191991,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 53189119,
+      "offset": 53191999,
+      "format": "f64",
+      "bytes": "0000000000407f40",
+      "value": 500.0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 53189119,
+      "offset": 53192007,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 62372884,
+      "offset": 62373316,
+      "format": "f64",
+      "bytes": "7b14ae47e17a843f",
+      "value": 0.01,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 62372884,
+      "offset": 62373324,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 62372884,
+      "offset": 62373332,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 56405131,
+      "offset": 56408147,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 56405131,
+      "offset": 56408167,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 56405131,
+      "offset": 56408171,
+      "format": "s32",
+      "bytes": "3c000000",
+      "value": 60,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 58717295,
+      "offset": 58717471,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 58717295,
+      "offset": 58717487,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 58717295,
+      "offset": 58717503,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 58717295,
+      "offset": 58717507,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 53189119,
+      "offset": 53191983,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 53189119,
+      "offset": 53191987,
+      "format": "s32",
+      "bytes": "05000000",
+      "value": 5,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 53189119,
+      "offset": 53191951,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 52951564,
+      "offset": 52966388,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 52951564,
+      "offset": 52966392,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 52986438,
+      "offset": 52992630,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 52986438,
+      "offset": 52992634,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    },
+    {
+      "function_offset": 52986438,
+      "offset": 52992638,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed density/ballast/contact calibration; overlapping typed views preserved"
+    }
+  ],
+  "strings": [],
+  "call_examples": [
+    {
+      "function_offset": 52741190,
+      "instruction": 52741297,
+      "bytes": "ff13",
+      "slot_address": 52741398,
+      "kind": 4,
+      "symbol": "(f64) physics.object.get_mass (const physics.object)"
+    },
+    {
+      "function_offset": 52951564,
+      "instruction": 52965745,
+      "bytes": "ffd3",
+      "slot_address": 52966748,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.remove_edge (server_scene.vehicle, server_scene.vehicle_edge, s32, s32)"
+    },
+    {
+      "function_offset": 52951564,
+      "instruction": 52966123,
+      "bytes": "ffd3",
+      "slot_address": 52966796,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.remove_plate (server_scene.vehicle, server_scene.vehicle_plate, s32)"
+    },
+    {
+      "function_offset": 52951564,
+      "instruction": 52966223,
+      "bytes": "ffd2",
+      "slot_address": 52966820,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.set_flag_rebuild_physics (server_scene.vehicle)"
+    },
+    {
+      "function_offset": 52986438,
+      "instruction": 52987768,
+      "bytes": "ffd0",
+      "slot_address": 52992774,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.apply_damage (server_scene.vehicle_component)"
+    },
+    {
+      "function_offset": 52986438,
+      "instruction": 52989349,
+      "bytes": "ffd0",
+      "slot_address": 52992886,
+      "kind": 6,
+      "symbol": "(bool) server_scene.vehicle_component.get_is_damage_glass (const server_scene.vehicle_component)"
+    },
+    {
+      "function_offset": 52986438,
+      "instruction": 52989417,
+      "bytes": "ffd0",
+      "slot_address": 52992894,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.apply_damage_glass (server_scene.vehicle_component, const vec3_s32)"
+    },
+    {
+      "function_offset": 52986438,
+      "instruction": 52990361,
+      "bytes": "ffd2",
+      "slot_address": 52992990,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.set_flag_rebuild_physics (server_scene.vehicle)"
+    },
+    {
+      "function_offset": 53189119,
+      "instruction": 53189328,
+      "bytes": "ffd0",
+      "slot_address": 53192015,
+      "kind": 6,
+      "symbol": "(bool) server_scene.actor_creature.can_apply_physics_damage_to_vehicles (const server_scene.actor_creature)"
+    },
+    {
+      "function_offset": 53189119,
+      "instruction": 53191716,
+      "bytes": "ffd6",
+      "slot_address": 53192183,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.damage_destructive (server_scene.vehicle, server_scene, const s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 53189119,
+      "instruction": 53191776,
+      "bytes": "ffd5",
+      "slot_address": 53192191,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.damage_functional (server_scene.vehicle, const s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 56382798,
+      "instruction": 56384322,
+      "bytes": "ff17",
+      "slot_address": 56385230,
+      "kind": 4,
+      "symbol": "(physics.object) physics.scene.create_object_box (physics.scene, const mat34, const vec3, const physics.e_motion_type, const f64)"
+    },
+    {
+      "function_offset": 56382798,
+      "instruction": 56384767,
+      "bytes": "41ff13",
+      "slot_address": 56385270,
+      "kind": 4,
+      "symbol": "(physics.constraint.distance) physics.scene.create_constraint_distance (physics.scene, const physics.object, const physics.object, const vec3, const vec3, const f64, const f64)"
+    },
+    {
+      "function_offset": 56405131,
+      "instruction": 56406192,
+      "bytes": "ff13",
+      "slot_address": 56408315,
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_liquid_content.get_fluid_mass (const server_scene.vehicle_liquid_content)"
+    },
+    {
+      "function_offset": 56405131,
+      "instruction": 56406291,
+      "bytes": "ff13",
+      "slot_address": 56408331,
+      "kind": 4,
+      "symbol": "() physics.object.set_mass (physics.object, const f64)"
+    },
+    {
+      "function_offset": 58733303,
+      "instruction": 58733443,
+      "bytes": "ff10",
+      "slot_address": 58733543,
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_liquid_content._get_fluid_density (const server_scene.vehicle_liquid_content, const server_scene.e_vehicle_liquid_type)"
+    },
+    {
+      "function_offset": 62372884,
+      "instruction": 62373090,
+      "bytes": "ff13",
+      "slot_address": 62373372,
+      "kind": 4,
+      "symbol": "() physics.object.set_mass (physics.object, const f64)"
+    },
+    {
+      "function_offset": 62378384,
+      "instruction": 62378579,
+      "bytes": "ff5500",
+      "slot_address": 62378912,
+      "kind": 4,
+      "symbol": "(vec3) physics.object.get_center_of_mass (const physics.object)"
+    },
+    {
+      "function_offset": 62378384,
+      "instruction": 62378618,
+      "bytes": "ff5500",
+      "slot_address": 62378920,
+      "kind": 4,
+      "symbol": "(f64) physics.object.get_mass (const physics.object)"
+    }
+  ],
+  "assembly_examples": [
+    {
+      "function_offset": 53189119,
+      "instruction": 53190918,
+      "bytes": "f20f2dc0",
+      "assembly": "CVTSD2SI EAX,XMM0"
+    },
+    {
+      "function_offset": 53189119,
+      "instruction": 53190972,
+      "bytes": "f20f2dc0",
+      "assembly": "CVTSD2SI EAX,XMM0"
+    }
+  ],
+  "limits": "Selected static physics/ballast/crash paths; no complete SI/tensor/solver, component overrides or runtime acceptance."
+}

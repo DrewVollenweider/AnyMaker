@@ -1,5 +1,7 @@
 # Whole-game research
 
+Latest vehicle research: [mass, liquid ballast and crash damage](BODY-MASS-20261021.md). Density audit covers all 598 component records; selected tank and buoyancy bodies differ from dry chassis mass. Native mass getter/setter and shape conversion bindings plus ordinary crash damage gates are traced. Reader: 1,539 functions/233,693 instructions/1,328,404 independently summed bytes. Tools unchanged; previous 204 tests remain the baseline. Full audit active/incomplete, vehicles first.
+
 Latest vehicle research: [plate placement, perimeter strips and native angles](PLATE-PLACEMENT-20261021.md). Traced both placement predicates, signed-turn limits, window/opening suitability and orientation-specific strips; followed selected native vec3 angles through registration and their mathematical callee. Reader: 1,530 functions/229,223 instructions/1,301,220 bytes. All 204 research-tool tests pass. Full audit remains active and incomplete; vehicles are the priority.
 
 Latest vehicle research: [plate surfaces, clipping and collision inputs](PLATE-SURFACES-20261021.md). Traced solid-face winding, orientation-dependent clipping planes, parallel-coordinate interpolation and distinct server hull inputs. Reader: 1,507 functions/220,625 instructions/1,248,373 independently summed bytes. Twelve new helper tests; all 193 research tests pass. Vehicle-first full audit remains active and incomplete.

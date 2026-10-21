@@ -1,0 +1,413 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "table": {
+    "offset": 66399263,
+    "end": 82528301,
+    "records": 8084,
+    "sha256": "5d619ecd6c69220d0e873d73e012dd301038f4eb911d859486db58c386b60a8e"
+  },
+  "types": [
+    {
+      "name": "physics.collision_estimation_impulse",
+      "base": "",
+      "offset": 75013245,
+      "length": 396,
+      "descriptor_sha256": "d1ef90dfeabea57d6ff4333e52e09a4e781d02c240f70a5abacaf26ba53fc0c7",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "physics.collision_data_object",
+      "base": "",
+      "offset": 75012906,
+      "length": 339,
+      "descriptor_sha256": "8f5f46ea5a3b01281511359a6861545fefb89b06f1fb6544af9ed77193ff3e76",
+      "size": 136,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_tank",
+      "base": "server_scene.vehicle_component",
+      "offset": 80251550,
+      "length": 16754,
+      "descriptor_sha256": "1c55df3e93f19d397d1e3eb746433f010413f28de133bd42a0af1318fddd40bb",
+      "size": 856,
+      "alignment": 8
+    },
+    {
+      "name": "vehicle_buoyancy.surface",
+      "base": "",
+      "offset": 82319015,
+      "length": 789,
+      "descriptor_sha256": "6b03f62a71481fff07c81418ffb811b6ece6cd50b90d72a186f4de1672fbde1d",
+      "size": 264,
+      "alignment": 8
+    },
+    {
+      "name": "vehicle_component_definition",
+      "base": "",
+      "offset": 82324625,
+      "length": 6248,
+      "descriptor_sha256": "1774d2f983ea15c1a085bd263b14d832d0178a35e56f635cb58e5359359fed45",
+      "size": 1912,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.vehicle",
+      "base": "replication.master.object_events",
+      "offset": 77873717,
+      "length": 15417,
+      "descriptor_sha256": "b43d221735bd8dff64b9163cc3550e77b3e807d74ab7f748e4ded44228a573d1",
+      "size": 2928,
+      "alignment": 8
+    },
+    {
+      "name": "server_scene.e_vehicle_liquid_type",
+      "base": "",
+      "offset": 76233167,
+      "length": 129,
+      "descriptor_sha256": "40d5bdea2950557a8e30aabe468a9cf00b8e442a08d0e282d34af59968ab8ec3",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "vehicle_util.e_vehicle_flag",
+      "base": "",
+      "offset": 82360900,
+      "length": 210,
+      "descriptor_sha256": "aabf38743f2f72b003376d16b5fbc601fb4028c555944d332f0eaf16f53b0a6e",
+      "size": 4,
+      "alignment": 4
+    }
+  ],
+  "fields": [
+    {
+      "type": "physics.collision_estimation_impulse",
+      "field": {
+        "type": "f32",
+        "name": "m_contact_impulse",
+        "offset": 0
+      }
+    },
+    {
+      "type": "physics.collision_data_object",
+      "field": {
+        "type": "physics.object",
+        "name": "m_object",
+        "offset": 0
+      }
+    },
+    {
+      "type": "physics.collision_data_object",
+      "field": {
+        "type": "vec3",
+        "name": "m_position",
+        "offset": 16
+      }
+    },
+    {
+      "type": "physics.collision_data_object",
+      "field": {
+        "type": "vec3",
+        "name": "m_normal",
+        "offset": 40
+      }
+    },
+    {
+      "type": "physics.collision_data_object",
+      "field": {
+        "type": "vec3",
+        "name": "m_linear_velocity",
+        "offset": 64
+      }
+    },
+    {
+      "type": "physics.collision_data_object",
+      "field": {
+        "type": "vec3",
+        "name": "m_angular_velocity",
+        "offset": 88
+      }
+    },
+    {
+      "type": "physics.collision_data_object",
+      "field": {
+        "type": "vec3",
+        "name": "m_tangent",
+        "offset": 112
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_tank",
+      "field": {
+        "type": "server_scene.vehicle_liquid_content_volume",
+        "name": "m_content",
+        "offset": 480
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_tank",
+      "field": {
+        "type": "server_scene.vehicle_data_node_group",
+        "name": "m_data_nodes",
+        "offset": 712
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_tank",
+      "field": {
+        "type": "bool",
+        "name": "m_is_set_empty",
+        "offset": 752
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_tank",
+      "field": {
+        "type": "bool",
+        "name": "m_is_set_water",
+        "offset": 753
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_tank",
+      "field": {
+        "type": "bool",
+        "name": "m_is_set_petrol",
+        "offset": 754
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_tank",
+      "field": {
+        "type": "bool",
+        "name": "m_is_set_oil",
+        "offset": 755
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_tank",
+      "field": {
+        "type": "string",
+        "name": "m_user_defined_alias",
+        "offset": 760
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_tank",
+      "field": {
+        "type": "physics.object",
+        "name": "_m_fluid_physics",
+        "offset": 776
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_tank",
+      "field": {
+        "type": "physics.constraint.distance",
+        "name": "_m_fluid_constraint",
+        "offset": 792
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_tank",
+      "field": {
+        "type": "s32",
+        "name": "_fluid_physics_update_counter",
+        "offset": 808
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_tank",
+      "field": {
+        "type": "f64",
+        "name": "m_pressure",
+        "offset": 816
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_tank",
+      "field": {
+        "type": "vec3",
+        "name": "_m_prev_vehicle_velocity",
+        "offset": 824
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_tank",
+      "field": {
+        "type": "bool",
+        "name": "_m_is_prev_vehicle_velocity_valid",
+        "offset": 848
+      }
+    },
+    {
+      "type": "server_scene.vehicle_component.liquid_tank",
+      "field": {
+        "type": "bool",
+        "name": "m_is_apply_damage",
+        "offset": 849
+      }
+    },
+    {
+      "type": "vehicle_buoyancy.surface",
+      "field": {
+        "type": "vector<s32>",
+        "name": "m_plate_indices",
+        "offset": 0
+      }
+    },
+    {
+      "type": "vehicle_buoyancy.surface",
+      "field": {
+        "type": "collision.aab",
+        "name": "m_bounds",
+        "offset": 40
+      }
+    },
+    {
+      "type": "vehicle_buoyancy.surface",
+      "field": {
+        "type": "ref<vehicle_buoyancy.octree>",
+        "name": "m_octree",
+        "offset": 88
+      }
+    },
+    {
+      "type": "vehicle_buoyancy.surface",
+      "field": {
+        "type": "f64",
+        "name": "m_total_surface_area",
+        "offset": 104
+      }
+    },
+    {
+      "type": "vehicle_buoyancy.surface",
+      "field": {
+        "type": "f64",
+        "name": "m_volume_total",
+        "offset": 112
+      }
+    },
+    {
+      "type": "vehicle_buoyancy.surface",
+      "field": {
+        "type": "f64",
+        "name": "m_volume_filled",
+        "offset": 120
+      }
+    },
+    {
+      "type": "vehicle_buoyancy.surface",
+      "field": {
+        "type": "bool",
+        "name": "m_is_internal",
+        "offset": 128
+      }
+    },
+    {
+      "type": "vehicle_buoyancy.surface",
+      "field": {
+        "type": "bool",
+        "name": "m_is_fill_with_current_ocean",
+        "offset": 129
+      }
+    },
+    {
+      "type": "vehicle_buoyancy.surface",
+      "field": {
+        "type": "vec3",
+        "name": "m_center_of_mass",
+        "offset": 136
+      }
+    },
+    {
+      "type": "vehicle_buoyancy.surface",
+      "field": {
+        "type": "vector<s32>",
+        "name": "m_surfaces_indices_prev",
+        "offset": 160
+      }
+    },
+    {
+      "type": "vehicle_buoyancy.surface",
+      "field": {
+        "type": "physics.object",
+        "name": "_m_volume_physics",
+        "offset": 200
+      }
+    },
+    {
+      "type": "vehicle_buoyancy.surface",
+      "field": {
+        "type": "physics.constraint.distance",
+        "name": "_m_volume_constraint",
+        "offset": 216
+      }
+    },
+    {
+      "type": "vehicle_buoyancy.surface",
+      "field": {
+        "type": "ref<application.graphics.geometry_buffer>",
+        "name": "m_geometry_buffer_pending_internal_volume",
+        "offset": 232
+      }
+    },
+    {
+      "type": "vehicle_buoyancy.surface",
+      "field": {
+        "type": "ref<application.graphics.resource_geometry>",
+        "name": "m_geometry_internal_volume",
+        "offset": 248
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "bool",
+        "name": "m_is_devolvable_component",
+        "offset": 435
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "f64",
+        "name": "m_density",
+        "offset": 584
+      }
+    },
+    {
+      "type": "server_scene.vehicle",
+      "field": {
+        "type": "s32",
+        "name": "m_spawn_protection",
+        "offset": 2908
+      }
+    }
+  ],
+  "enums": [
+    {
+      "type": "server_scene.e_vehicle_liquid_type",
+      "labels": [
+        "water",
+        "petrol",
+        "oil",
+        "pollutant"
+      ]
+    },
+    {
+      "type": "vehicle_util.e_vehicle_flag",
+      "labels": [
+        "prevent_editing",
+        "prevent_damage",
+        "is_dead_drop",
+        "is_spawn_dead_drop_cartridge",
+        "is_spawn_journal",
+        "is_starter_vehicle"
+      ]
+    }
+  ],
+  "virtuals": []
+}

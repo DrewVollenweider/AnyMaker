@@ -1,0 +1,992 @@
+{
+  "schema": 1,
+  "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+  "image_base": 5368709120,
+  "batches": [
+    {
+      "batch": "15",
+      "selected_spans": [
+        {
+          "begin_rva": 1359696,
+          "end_rva": 1359930,
+          "va": 5370068816,
+          "file_offset": 1356624,
+          "size": 234,
+          "unwind_rva": 5804624,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_14bf50",
+          "span_sha256": "a34019c8a59360cf17c4ffd6fc37521bc336c4fd03ab409f55e7c2f1a8e9b5c4"
+        },
+        {
+          "begin_rva": 1360048,
+          "end_rva": 1360128,
+          "va": 5370069168,
+          "file_offset": 1356976,
+          "size": 80,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_14c0b0",
+          "span_sha256": "030915f3c42ca35b66f03c7247611eafb938e767b55309abc2717a8042867217"
+        },
+        {
+          "begin_rva": 1362336,
+          "end_rva": 1362557,
+          "va": 5370071456,
+          "file_offset": 1359264,
+          "size": 221,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_14c9a0",
+          "span_sha256": "ad3be920ea5eb63939c67f70bc893307b83f4868010593915e391316e8c8d4ea"
+        },
+        {
+          "begin_rva": 1367568,
+          "end_rva": 1367584,
+          "va": 5370076688,
+          "file_offset": 1364496,
+          "size": 16,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_14de10",
+          "span_sha256": "87f3a9a989c265c50f4b7d0180e656e2e10e92e93083216e681405f70514f519"
+        },
+        {
+          "begin_rva": 1367584,
+          "end_rva": 1367616,
+          "va": 5370076704,
+          "file_offset": 1364512,
+          "size": 32,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_14de20",
+          "span_sha256": "0d947f257856c31c8cd2a3327c90662309599fd6eefd243a18ed4d67bad9241b"
+        },
+        {
+          "begin_rva": 1102496,
+          "end_rva": 1103159,
+          "va": 5369811616,
+          "file_offset": 1099424,
+          "size": 663,
+          "unwind_rva": 5786720,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_10d2a0",
+          "span_sha256": "67de650c8cbddb0e1d25566d445d5649cb6e7dee128746d5152ae5450192f44e"
+        },
+        {
+          "begin_rva": 1103168,
+          "end_rva": 1103815,
+          "va": 5369812288,
+          "file_offset": 1100096,
+          "size": 647,
+          "unwind_rva": 5786856,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_10d540",
+          "span_sha256": "8fdca0f6218e28e1b5b90a17f66dc3cc6f3740129bddc2554360cd4659580ceb"
+        },
+        {
+          "begin_rva": 1104944,
+          "end_rva": 1105815,
+          "va": 5369814064,
+          "file_offset": 1101872,
+          "size": 871,
+          "unwind_rva": 5787128,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_10dc30",
+          "span_sha256": "43fffb7c3f3682294b01d0cbf101bc8d2ce83f7237dc153ce7e6e60089744c04"
+        },
+        {
+          "begin_rva": 2104592,
+          "end_rva": 2106193,
+          "va": 5370813712,
+          "file_offset": 2101520,
+          "size": 1601,
+          "unwind_rva": 5872968,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_201d10",
+          "span_sha256": "e8713db9f3083862072cafa5b65590216a432e2925f4a11840c46c1a46eac777"
+        },
+        {
+          "begin_rva": 2387200,
+          "end_rva": 2387619,
+          "va": 5371096320,
+          "file_offset": 2384128,
+          "size": 419,
+          "unwind_rva": 5892372,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_246d00",
+          "span_sha256": "83a9b56be8bb4ccbfeaacde588098fa3662dd8c8f7b7462e0c8818f8ece10eb6"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 10,
+        "instructions_byte_checked": 1237,
+        "instruction_bytes_checked": 4734,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    },
+    {
+      "batch": "16",
+      "selected_spans": [
+        {
+          "begin_rva": 1320144,
+          "end_rva": 1353468,
+          "va": 5370029264,
+          "file_offset": 1317072,
+          "size": 33324,
+          "unwind_rva": 5802036,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_1424d0",
+          "span_sha256": "b875fafd68e857e9d868ef5d570559755934a65228b2f34b46499461049b1b2c"
+        }
+      ],
+      "mode": "assembly-only",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 1,
+        "instructions_byte_checked": 6683,
+        "instruction_bytes_checked": 33324,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof.",
+        "pseudocode_requested": false
+      }
+    },
+    {
+      "batch": "18",
+      "selected_spans": [
+        {
+          "begin_rva": 1359504,
+          "end_rva": 1359616,
+          "va": 5370068624,
+          "file_offset": 1356432,
+          "size": 112,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_14be90",
+          "span_sha256": "aab697de5e9afa5d4f218ab4147e2c48b96b99c93cd11e5dec50ab63b45f0987"
+        },
+        {
+          "begin_rva": 1366352,
+          "end_rva": 1366368,
+          "va": 5370075472,
+          "file_offset": 1363280,
+          "size": 16,
+          "unwind_rva": null,
+          "bound_kind": "manual_span_not_recovered_boundary",
+          "name": "native_14d950",
+          "span_sha256": "05f4b54fc16218c8cccff47456553b0c498f285fe46bbe2af674a882a9137b36"
+        },
+        {
+          "begin_rva": 1102128,
+          "end_rva": 1102489,
+          "va": 5369811248,
+          "file_offset": 1099056,
+          "size": 361,
+          "unwind_rva": 5786632,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_10d130",
+          "span_sha256": "a981f3aa810d1a8921dad414737e638791e265318f9cca2a0c69568df84fdb9a"
+        },
+        {
+          "begin_rva": 1366624,
+          "end_rva": 1366912,
+          "va": 5370075744,
+          "file_offset": 1363552,
+          "size": 288,
+          "unwind_rva": 5805264,
+          "bound_kind": "exception_directory_range_not_complete_function_inventory",
+          "name": "native_14da60",
+          "span_sha256": "56b30c92cf2a755ba777d978348751dec21eef76325367aaa8f95913c8d79219"
+        }
+      ],
+      "mode": "decompile",
+      "verification": {
+        "schema": 1,
+        "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+        "spans": 4,
+        "instructions_byte_checked": 173,
+        "instruction_bytes_checked": 754,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    }
+  ],
+  "selected_bindings": [
+    {
+      "signature": "(f64) physics.object.get_mass (const physics.object)",
+      "string_rva": 5527784,
+      "string_bytes": "286636342920706879736963732e6f626a6563742e6765745f6d6173732028636f6e737420706879736963732e6f626a6563742900",
+      "target_rva": 1359696,
+      "registration_rva": 1320144,
+      "selected_instructions": [
+        {
+          "rva": 1340494,
+          "bytes": "0f100593e43f00",
+          "assembly": "MOVUPS XMM0,xmmword ptr [0x1405458e8]"
+        },
+        {
+          "rva": 1340501,
+          "bytes": "0f1101",
+          "assembly": "MOVUPS xmmword ptr [RCX],XMM0"
+        },
+        {
+          "rva": 1340504,
+          "bytes": "0f100d99e43f00",
+          "assembly": "MOVUPS XMM1,xmmword ptr [0x1405458f8]"
+        },
+        {
+          "rva": 1340511,
+          "bytes": "0f114910",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x10],XMM1"
+        },
+        {
+          "rva": 1340515,
+          "bytes": "0f10059ee43f00",
+          "assembly": "MOVUPS XMM0,xmmword ptr [0x140545908]"
+        },
+        {
+          "rva": 1340522,
+          "bytes": "0f114120",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x20],XMM0"
+        },
+        {
+          "rva": 1340526,
+          "bytes": "8b05a4e43f00",
+          "assembly": "MOV EAX,dword ptr [0x140545918]"
+        },
+        {
+          "rva": 1340532,
+          "bytes": "894130",
+          "assembly": "MOV dword ptr [RCX + 0x30],EAX"
+        },
+        {
+          "rva": 1340535,
+          "bytes": "0fb6059ee43f00",
+          "assembly": "MOVZX EAX,byte ptr [0x14054591c]"
+        },
+        {
+          "rva": 1340542,
+          "bytes": "884134",
+          "assembly": "MOV byte ptr [RCX + 0x34],AL"
+        },
+        {
+          "rva": 1340629,
+          "bytes": "488d05744a0000",
+          "assembly": "LEA RAX,[0x14014bf50]"
+        },
+        {
+          "rva": 1340636,
+          "bytes": "48894328",
+          "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+        },
+        {
+          "rva": 1340661,
+          "bytes": "488d05544a0000",
+          "assembly": "LEA RAX,[0x14014bf50]"
+        },
+        {
+          "rva": 1340668,
+          "bytes": "488901",
+          "assembly": "MOV qword ptr [RCX],RAX"
+        }
+      ],
+      "status": "Selected registration literal construction and both pointer stores; no complete loader/ABI"
+    },
+    {
+      "signature": "(vec3) physics.object.get_center_of_mass (const physics.object)",
+      "string_rva": 5527920,
+      "string_bytes": "28766563332920706879736963732e6f626a6563742e6765745f63656e7465725f6f665f6d6173732028636f6e737420706879736963732e6f626a6563742900",
+      "target_rva": 1360048,
+      "registration_rva": 1320144,
+      "selected_instructions": [
+        {
+          "rva": 1340992,
+          "bytes": "0f280529e33f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140545970]"
+        },
+        {
+          "rva": 1340999,
+          "bytes": "0f1100",
+          "assembly": "MOVUPS xmmword ptr [RAX],XMM0"
+        },
+        {
+          "rva": 1341002,
+          "bytes": "0f280d2fe33f00",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x140545980]"
+        },
+        {
+          "rva": 1341009,
+          "bytes": "0f114810",
+          "assembly": "MOVUPS xmmword ptr [RAX + 0x10],XMM1"
+        },
+        {
+          "rva": 1341013,
+          "bytes": "0f280534e33f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140545990]"
+        },
+        {
+          "rva": 1341020,
+          "bytes": "0f114020",
+          "assembly": "MOVUPS xmmword ptr [RAX + 0x20],XMM0"
+        },
+        {
+          "rva": 1341024,
+          "bytes": "0f280d39e33f00",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x1405459a0]"
+        },
+        {
+          "rva": 1341031,
+          "bytes": "0f114830",
+          "assembly": "MOVUPS xmmword ptr [RAX + 0x30],XMM1"
+        },
+        {
+          "rva": 1341119,
+          "bytes": "488d05ea490000",
+          "assembly": "LEA RAX,[0x14014c0b0]"
+        },
+        {
+          "rva": 1341126,
+          "bytes": "48894328",
+          "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+        },
+        {
+          "rva": 1341151,
+          "bytes": "488d05ca490000",
+          "assembly": "LEA RAX,[0x14014c0b0]"
+        },
+        {
+          "rva": 1341158,
+          "bytes": "488901",
+          "assembly": "MOV qword ptr [RCX],RAX"
+        }
+      ],
+      "status": "Selected registration literal construction and both pointer stores; no complete loader/ABI"
+    },
+    {
+      "signature": "() physics.object.set_mass (physics.object, const f64)",
+      "string_rva": 5529840,
+      "string_bytes": "282920706879736963732e6f626a6563742e7365745f6d6173732028706879736963732e6f626a6563742c20636f6e7374206636342900",
+      "target_rva": 1362336,
+      "registration_rva": 1320144,
+      "selected_instructions": [
+        {
+          "rva": 1347133,
+          "bytes": "0f1005acd23f00",
+          "assembly": "MOVUPS XMM0,xmmword ptr [0x1405460f0]"
+        },
+        {
+          "rva": 1347140,
+          "bytes": "0f1101",
+          "assembly": "MOVUPS xmmword ptr [RCX],XMM0"
+        },
+        {
+          "rva": 1347143,
+          "bytes": "0f100db2d23f00",
+          "assembly": "MOVUPS XMM1,xmmword ptr [0x140546100]"
+        },
+        {
+          "rva": 1347150,
+          "bytes": "0f114910",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x10],XMM1"
+        },
+        {
+          "rva": 1347154,
+          "bytes": "0f1005b7d23f00",
+          "assembly": "MOVUPS XMM0,xmmword ptr [0x140546110]"
+        },
+        {
+          "rva": 1347161,
+          "bytes": "0f114120",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x20],XMM0"
+        },
+        {
+          "rva": 1347165,
+          "bytes": "8b05bdd23f00",
+          "assembly": "MOV EAX,dword ptr [0x140546120]"
+        },
+        {
+          "rva": 1347171,
+          "bytes": "894130",
+          "assembly": "MOV dword ptr [RCX + 0x30],EAX"
+        },
+        {
+          "rva": 1347174,
+          "bytes": "0fb705b7d23f00",
+          "assembly": "MOVZX EAX,word ptr [0x140546124]"
+        },
+        {
+          "rva": 1347181,
+          "bytes": "66894134",
+          "assembly": "MOV word ptr [RCX + 0x34],AX"
+        },
+        {
+          "rva": 1347185,
+          "bytes": "0fb605aed23f00",
+          "assembly": "MOVZX EAX,byte ptr [0x140546126]"
+        },
+        {
+          "rva": 1347192,
+          "bytes": "884136",
+          "assembly": "MOV byte ptr [RCX + 0x36],AL"
+        },
+        {
+          "rva": 1347279,
+          "bytes": "488d05ca3a0000",
+          "assembly": "LEA RAX,[0x14014c9a0]"
+        },
+        {
+          "rva": 1347286,
+          "bytes": "48894328",
+          "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+        },
+        {
+          "rva": 1347311,
+          "bytes": "488d05aa3a0000",
+          "assembly": "LEA RAX,[0x14014c9a0]"
+        },
+        {
+          "rva": 1347318,
+          "bytes": "488901",
+          "assembly": "MOV qword ptr [RCX],RAX"
+        }
+      ],
+      "status": "Selected registration literal construction and both pointer stores; no complete loader/ABI"
+    },
+    {
+      "signature": "(mat34) physics.object.get_transform (const physics.object)",
+      "string_rva": 5527440,
+      "string_bytes": "286d617433342920706879736963732e6f626a6563742e6765745f7472616e73666f726d2028636f6e737420706879736963732e6f626a6563742900",
+      "target_rva": 1359504,
+      "registration_rva": 1320144,
+      "selected_instructions": [
+        {
+          "rva": 1339255,
+          "bytes": "0f100512e83f00",
+          "assembly": "MOVUPS XMM0,xmmword ptr [0x140545790]"
+        },
+        {
+          "rva": 1339262,
+          "bytes": "0f1101",
+          "assembly": "MOVUPS xmmword ptr [RCX],XMM0"
+        },
+        {
+          "rva": 1339265,
+          "bytes": "0f100d18e83f00",
+          "assembly": "MOVUPS XMM1,xmmword ptr [0x1405457a0]"
+        },
+        {
+          "rva": 1339272,
+          "bytes": "0f114910",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x10],XMM1"
+        },
+        {
+          "rva": 1339276,
+          "bytes": "0f10051de83f00",
+          "assembly": "MOVUPS XMM0,xmmword ptr [0x1405457b0]"
+        },
+        {
+          "rva": 1339283,
+          "bytes": "0f114120",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x20],XMM0"
+        },
+        {
+          "rva": 1339287,
+          "bytes": "f20f100521e83f00",
+          "assembly": "MOVSD XMM0,qword ptr [0x1405457c0]"
+        },
+        {
+          "rva": 1339295,
+          "bytes": "f20f114130",
+          "assembly": "MOVSD qword ptr [RCX + 0x30],XMM0"
+        },
+        {
+          "rva": 1339300,
+          "bytes": "8b051ee83f00",
+          "assembly": "MOV EAX,dword ptr [0x1405457c8]"
+        },
+        {
+          "rva": 1339306,
+          "bytes": "894138",
+          "assembly": "MOV dword ptr [RCX + 0x38],EAX"
+        },
+        {
+          "rva": 1339393,
+          "bytes": "488d05884e0000",
+          "assembly": "LEA RAX,[0x14014be90]"
+        },
+        {
+          "rva": 1339400,
+          "bytes": "48894328",
+          "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+        },
+        {
+          "rva": 1339425,
+          "bytes": "488d05684e0000",
+          "assembly": "LEA RAX,[0x14014be90]"
+        },
+        {
+          "rva": 1339432,
+          "bytes": "488901",
+          "assembly": "MOV qword ptr [RCX],RAX"
+        }
+      ],
+      "status": "Selected registration literal construction and both pointer stores; no complete loader/ABI"
+    },
+    {
+      "signature": "() physics.shape.create_box (physics.shape, const vec3, const vec3, const f64)",
+      "string_rva": 5530960,
+      "string_bytes": "282920706879736963732e73686170652e6372656174655f626f782028706879736963732e73686170652c20636f6e737420766563332c20636f6e737420766563332c20636f6e7374206636342900",
+      "target_rva": 1366352,
+      "registration_rva": 1320144,
+      "selected_instructions": [
+        {
+          "rva": 1351053,
+          "bytes": "0f2805bcc73f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140546550]"
+        },
+        {
+          "rva": 1351060,
+          "bytes": "0f1101",
+          "assembly": "MOVUPS xmmword ptr [RCX],XMM0"
+        },
+        {
+          "rva": 1351063,
+          "bytes": "0f280dc2c73f00",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x140546560]"
+        },
+        {
+          "rva": 1351070,
+          "bytes": "0f114910",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x10],XMM1"
+        },
+        {
+          "rva": 1351074,
+          "bytes": "0f2805c7c73f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140546570]"
+        },
+        {
+          "rva": 1351081,
+          "bytes": "0f114120",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x20],XMM0"
+        },
+        {
+          "rva": 1351085,
+          "bytes": "0f280dccc73f00",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x140546580]"
+        },
+        {
+          "rva": 1351092,
+          "bytes": "0f114930",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x30],XMM1"
+        },
+        {
+          "rva": 1351096,
+          "bytes": "f20f1005d0c73f00",
+          "assembly": "MOVSD XMM0,qword ptr [0x140546590]"
+        },
+        {
+          "rva": 1351104,
+          "bytes": "f20f114140",
+          "assembly": "MOVSD qword ptr [RCX + 0x40],XMM0"
+        },
+        {
+          "rva": 1351109,
+          "bytes": "8b05cdc73f00",
+          "assembly": "MOV EAX,dword ptr [0x140546598]"
+        },
+        {
+          "rva": 1351115,
+          "bytes": "894148",
+          "assembly": "MOV dword ptr [RCX + 0x48],EAX"
+        },
+        {
+          "rva": 1351118,
+          "bytes": "0fb705c7c73f00",
+          "assembly": "MOVZX EAX,word ptr [0x14054659c]"
+        },
+        {
+          "rva": 1351125,
+          "bytes": "6689414c",
+          "assembly": "MOV word ptr [RCX + 0x4c],AX"
+        },
+        {
+          "rva": 1351129,
+          "bytes": "0fb605bec73f00",
+          "assembly": "MOVZX EAX,byte ptr [0x14054659e]"
+        },
+        {
+          "rva": 1351136,
+          "bytes": "88414e",
+          "assembly": "MOV byte ptr [RCX + 0x4e],AL"
+        },
+        {
+          "rva": 1351223,
+          "bytes": "488d05123b0000",
+          "assembly": "LEA RAX,[0x14014d950]"
+        },
+        {
+          "rva": 1351230,
+          "bytes": "48894328",
+          "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+        },
+        {
+          "rva": 1351255,
+          "bytes": "488d05f23a0000",
+          "assembly": "LEA RAX,[0x14014d950]"
+        },
+        {
+          "rva": 1351262,
+          "bytes": "488901",
+          "assembly": "MOV qword ptr [RCX],RAX"
+        }
+      ],
+      "status": "Selected registration literal construction and both pointer stores; no complete loader/ABI"
+    },
+    {
+      "signature": "() physics.shape.create_capsule (physics.shape, const f64, const f64, const vec3, const f64)",
+      "string_rva": 5531136,
+      "string_bytes": "282920706879736963732e73686170652e6372656174655f63617073756c652028706879736963732e73686170652c20636f6e7374206636342c20636f6e7374206636342c20636f6e737420766563332c20636f6e7374206636342900",
+      "target_rva": 1366624,
+      "registration_rva": 1320144,
+      "selected_instructions": [
+        {
+          "rva": 1351573,
+          "bytes": "0f280564c63f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140546600]"
+        },
+        {
+          "rva": 1351580,
+          "bytes": "0f1101",
+          "assembly": "MOVUPS xmmword ptr [RCX],XMM0"
+        },
+        {
+          "rva": 1351583,
+          "bytes": "0f280d6ac63f00",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x140546610]"
+        },
+        {
+          "rva": 1351590,
+          "bytes": "0f114910",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x10],XMM1"
+        },
+        {
+          "rva": 1351594,
+          "bytes": "0f28056fc63f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140546620]"
+        },
+        {
+          "rva": 1351601,
+          "bytes": "0f114120",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x20],XMM0"
+        },
+        {
+          "rva": 1351605,
+          "bytes": "0f280d74c63f00",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x140546630]"
+        },
+        {
+          "rva": 1351612,
+          "bytes": "0f114930",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x30],XMM1"
+        },
+        {
+          "rva": 1351616,
+          "bytes": "0f280579c63f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140546640]"
+        },
+        {
+          "rva": 1351623,
+          "bytes": "0f114140",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x40],XMM0"
+        },
+        {
+          "rva": 1351627,
+          "bytes": "f20f10057dc63f00",
+          "assembly": "MOVSD XMM0,qword ptr [0x140546650]"
+        },
+        {
+          "rva": 1351635,
+          "bytes": "f20f114150",
+          "assembly": "MOVSD qword ptr [RCX + 0x50],XMM0"
+        },
+        {
+          "rva": 1351640,
+          "bytes": "8b057ac63f00",
+          "assembly": "MOV EAX,dword ptr [0x140546658]"
+        },
+        {
+          "rva": 1351646,
+          "bytes": "894158",
+          "assembly": "MOV dword ptr [RCX + 0x58],EAX"
+        },
+        {
+          "rva": 1351649,
+          "bytes": "0fb60574c63f00",
+          "assembly": "MOVZX EAX,byte ptr [0x14054665c]"
+        },
+        {
+          "rva": 1351656,
+          "bytes": "88415c",
+          "assembly": "MOV byte ptr [RCX + 0x5c],AL"
+        },
+        {
+          "rva": 1351743,
+          "bytes": "488d051a3a0000",
+          "assembly": "LEA RAX,[0x14014da60]"
+        },
+        {
+          "rva": 1351750,
+          "bytes": "48894328",
+          "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+        },
+        {
+          "rva": 1351775,
+          "bytes": "488d05fa390000",
+          "assembly": "LEA RAX,[0x14014da60]"
+        },
+        {
+          "rva": 1351782,
+          "bytes": "488901",
+          "assembly": "MOV qword ptr [RCX],RAX"
+        }
+      ],
+      "status": "Selected registration literal construction and both pointer stores; no complete loader/ABI"
+    },
+    {
+      "signature": "() physics.shape.create_convex_hull (physics.shape, const vector<vec3>, const vec3, const f64)",
+      "string_rva": 5531440,
+      "string_bytes": "282920706879736963732e73686170652e6372656174655f636f6e7665785f68756c6c2028706879736963732e73686170652c20636f6e737420766563746f723c766563333e2c20636f6e737420766563332c20636f6e7374206636342900",
+      "target_rva": 1367568,
+      "registration_rva": 1320144,
+      "selected_instructions": [
+        {
+          "rva": 1352377,
+          "bytes": "0f280570c43f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140546730]"
+        },
+        {
+          "rva": 1352384,
+          "bytes": "0f1101",
+          "assembly": "MOVUPS xmmword ptr [RCX],XMM0"
+        },
+        {
+          "rva": 1352387,
+          "bytes": "0f280d76c43f00",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x140546740]"
+        },
+        {
+          "rva": 1352394,
+          "bytes": "0f114910",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x10],XMM1"
+        },
+        {
+          "rva": 1352398,
+          "bytes": "0f28057bc43f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140546750]"
+        },
+        {
+          "rva": 1352405,
+          "bytes": "0f114120",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x20],XMM0"
+        },
+        {
+          "rva": 1352409,
+          "bytes": "0f280d80c43f00",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x140546760]"
+        },
+        {
+          "rva": 1352416,
+          "bytes": "0f114930",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x30],XMM1"
+        },
+        {
+          "rva": 1352420,
+          "bytes": "0f280585c43f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140546770]"
+        },
+        {
+          "rva": 1352427,
+          "bytes": "0f114140",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x40],XMM0"
+        },
+        {
+          "rva": 1352431,
+          "bytes": "f20f100589c43f00",
+          "assembly": "MOVSD XMM0,qword ptr [0x140546780]"
+        },
+        {
+          "rva": 1352439,
+          "bytes": "f20f114150",
+          "assembly": "MOVSD qword ptr [RCX + 0x50],XMM0"
+        },
+        {
+          "rva": 1352444,
+          "bytes": "8b0586c43f00",
+          "assembly": "MOV EAX,dword ptr [0x140546788]"
+        },
+        {
+          "rva": 1352450,
+          "bytes": "894158",
+          "assembly": "MOV dword ptr [RCX + 0x58],EAX"
+        },
+        {
+          "rva": 1352453,
+          "bytes": "0fb70580c43f00",
+          "assembly": "MOVZX EAX,word ptr [0x14054678c]"
+        },
+        {
+          "rva": 1352460,
+          "bytes": "6689415c",
+          "assembly": "MOV word ptr [RCX + 0x5c],AX"
+        },
+        {
+          "rva": 1352464,
+          "bytes": "0fb60577c43f00",
+          "assembly": "MOVZX EAX,byte ptr [0x14054678e]"
+        },
+        {
+          "rva": 1352471,
+          "bytes": "88415e",
+          "assembly": "MOV byte ptr [RCX + 0x5e],AL"
+        },
+        {
+          "rva": 1352558,
+          "bytes": "488d059b3a0000",
+          "assembly": "LEA RAX,[0x14014de10]"
+        },
+        {
+          "rva": 1352565,
+          "bytes": "48894328",
+          "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+        },
+        {
+          "rva": 1352590,
+          "bytes": "488d057b3a0000",
+          "assembly": "LEA RAX,[0x14014de10]"
+        },
+        {
+          "rva": 1352597,
+          "bytes": "488901",
+          "assembly": "MOV qword ptr [RCX],RAX"
+        }
+      ],
+      "status": "Selected registration literal construction and both pointer stores; no complete loader/ABI"
+    },
+    {
+      "signature": "() physics.shape.create_convex_hull (physics.shape, const array<vec3>, const vec3, const f64)",
+      "string_rva": 5531536,
+      "string_bytes": "282920706879736963732e73686170652e6372656174655f636f6e7665785f68756c6c2028706879736963732e73686170652c20636f6e73742061727261793c766563333e2c20636f6e737420766563332c20636f6e7374206636342900",
+      "target_rva": 1367584,
+      "registration_rva": 1320144,
+      "selected_instructions": [
+        {
+          "rva": 1352659,
+          "bytes": "0f2805b6c33f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x140546790]"
+        },
+        {
+          "rva": 1352666,
+          "bytes": "0f1101",
+          "assembly": "MOVUPS xmmword ptr [RCX],XMM0"
+        },
+        {
+          "rva": 1352669,
+          "bytes": "0f280dbcc33f00",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x1405467a0]"
+        },
+        {
+          "rva": 1352676,
+          "bytes": "0f114910",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x10],XMM1"
+        },
+        {
+          "rva": 1352680,
+          "bytes": "0f2805c1c33f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x1405467b0]"
+        },
+        {
+          "rva": 1352687,
+          "bytes": "0f114120",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x20],XMM0"
+        },
+        {
+          "rva": 1352691,
+          "bytes": "0f280dc6c33f00",
+          "assembly": "MOVAPS XMM1,xmmword ptr [0x1405467c0]"
+        },
+        {
+          "rva": 1352698,
+          "bytes": "0f114930",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x30],XMM1"
+        },
+        {
+          "rva": 1352702,
+          "bytes": "0f2805cbc33f00",
+          "assembly": "MOVAPS XMM0,xmmword ptr [0x1405467d0]"
+        },
+        {
+          "rva": 1352709,
+          "bytes": "0f114140",
+          "assembly": "MOVUPS xmmword ptr [RCX + 0x40],XMM0"
+        },
+        {
+          "rva": 1352713,
+          "bytes": "f20f1005cfc33f00",
+          "assembly": "MOVSD XMM0,qword ptr [0x1405467e0]"
+        },
+        {
+          "rva": 1352721,
+          "bytes": "f20f114150",
+          "assembly": "MOVSD qword ptr [RCX + 0x50],XMM0"
+        },
+        {
+          "rva": 1352726,
+          "bytes": "8b05ccc33f00",
+          "assembly": "MOV EAX,dword ptr [0x1405467e8]"
+        },
+        {
+          "rva": 1352732,
+          "bytes": "894158",
+          "assembly": "MOV dword ptr [RCX + 0x58],EAX"
+        },
+        {
+          "rva": 1352735,
+          "bytes": "0fb705c6c33f00",
+          "assembly": "MOVZX EAX,word ptr [0x1405467ec]"
+        },
+        {
+          "rva": 1352742,
+          "bytes": "6689415c",
+          "assembly": "MOV word ptr [RCX + 0x5c],AX"
+        },
+        {
+          "rva": 1352830,
+          "bytes": "488d059b390000",
+          "assembly": "LEA RAX,[0x14014de20]"
+        },
+        {
+          "rva": 1352837,
+          "bytes": "48894328",
+          "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+        },
+        {
+          "rva": 1352862,
+          "bytes": "488d057b390000",
+          "assembly": "LEA RAX,[0x14014de20]"
+        },
+        {
+          "rva": 1352869,
+          "bytes": "488901",
+          "assembly": "MOV qword ptr [RCX],RAX"
+        }
+      ],
+      "status": "Selected registration literal construction and both pointer stores; no complete loader/ABI"
+    }
+  ],
+  "failed_probe_batches_excluded": [
+    "14",
+    "17"
+  ],
+  "limits": "Successful selected byte/bounds checks only. Manual leaf/split spans remain explicit; native mass/inertia virtual implementations and solver contracts remain incomplete."
+}
