@@ -1,5 +1,7 @@
 # Coverage and gaps
 
+Latest vehicle continuation: [plate surfaces/clipping/collision inputs](PLATE-SURFACES-20261021.md). Selected evidence: 17 functions/23 constants/one string/50 calls, two reflected types/six fields. Reader access: 1,507 functions/220,625 instructions/1,248,373 bytes. Native convex hulls/margins, full valid placement, outer strip helpers and other vehicle domains remain open. New geometry models are scoped; 193 tests pass.
+
 Latest vehicle continuation: [plate creation/load/render lifecycle](PLATE-LOAD-20261021.md). Reader access: 1,492 functions/215,549 instructions/1,217,324 independently summed bytes. Selected evidence: 32 functions/18 constants/14 strings/164 calls and seven reflected types/92 fields. Ten new reconstruction tests; full suite 181. Five archive audits are scoped reference/geometry checks, not complete loader/render acceptance. Valid placement rules, clipping/collision, full invalidation and all other vehicle domains remain open.
 
 Latest selected vehicle findings: [attachment surfaces and contact boundaries](VEHICLE-ATTACHMENTS-20261021.md). Reader access: 1,463 functions/206,138 instructions/1,163,700 independently summed bytes. Selected evidence: 29 function identities, 37 constants, 46 calls and 33 assembly arguments; six reflected types/21 fields/two enums. Surface/contact helpers have a 12-test model; full research suite 171. Candidate gathering, parser/defaults, valid placement constraints, render/load reconstruction and complete vehicle variants remain open.

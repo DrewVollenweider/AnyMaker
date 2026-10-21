@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "date": "2026-10-21",
+  "source_check": {
+    "schema": 1,
+    "date": "2026-10-20",
+    "installed_buildid": "25904830",
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "definition_files_checked": 2968,
+    "definition_file_mismatches": [],
+    "rechecked_for": "plate-surfaces-20261021"
+  },
+  "pe_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+  "selected_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "d50e9288592c2f2ef55dfcd3b042433e4d61242247104796249a0b4e7f3e855d",
+    "function_records_checked": 17,
+    "constants_checked": 23,
+    "strings_checked": 1,
+    "call_instruction_examples_checked": 50,
+    "limitations": "Exact static identities/bytes only; virtual target binding and prose semantics are not proven by this checker."
+  },
+  "reflection_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "69d24f7374cb557ca6d809758e932f2ea7b16b88cdd5aa0eec839d6664571fca",
+    "table_records_checked": 8084,
+    "selected_type_identities_checked": 2,
+    "enum_label_lists_checked": 0,
+    "fields_checked": 6,
+    "virtual_declarations_checked": 0,
+    "limits": "Static descriptor declarations and identities only. Not executed dispatch, full storage ABI, units, lifecycle semantics or whole-game understanding."
+  },
+  "reader_counts": {
+    "functions": 1507,
+    "identical_exports_deduplicated": 6,
+    "instructions_byte_checked": 220625,
+    "slot_derived_calls": 10808,
+    "unresolved_calls": 8503
+  },
+  "reader_instruction_bytes": 1248373,
+  "selected_counts": {
+    "function_identities": 17,
+    "constants": 23,
+    "strings": 1,
+    "calls": 50,
+    "types": 2,
+    "fields": 6
+  },
+  "research_tool_tests_passed": 193,
+  "tests_rerun_this_checkpoint": true,
+  "test_log_sha256": "2a093a667504162afaf6945c43d45fee8e9381a6f82fdbcb890e75c9dcae267e",
+  "game_executed": false,
+  "installation_and_active_saves_edited": false,
+  "limits": "Selected plate surface/clipping and physics point inputs. No complete placement/native hull/margin/outer strip contracts, game acceptance or historical phantom diagnosis."
+}

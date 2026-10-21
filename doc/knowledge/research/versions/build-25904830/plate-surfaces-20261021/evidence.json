@@ -1,0 +1,721 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "() ctor (vehicle_plate_util.clipping_plane, const vec2, const vec2, const vec2)",
+      "signature_offset": 24921011,
+      "code_offset": 24921261,
+      "code_size": 288,
+      "code_sha256": "85b1be9e12048f409c715c1c4fdf35fa0240f74910747c120d3511c342703fad"
+    },
+    {
+      "signature": "() server_scene.vehicle._rebuild_physics (server_scene.vehicle, physics.scene, server_scene.environment_tile_container)",
+      "signature_offset": 52582637,
+      "code_offset": 52583124,
+      "code_size": 264,
+      "code_sha256": "8a2c3c22be06d578571f63a2cb7eb13c90edbd1baf08fd0441862ad6eea44ac6"
+    },
+    {
+      "signature": "() server_scene.vehicle._rebuild_physics_motion_state (server_scene.vehicle)",
+      "signature_offset": 52583856,
+      "code_offset": 52584577,
+      "code_size": 304,
+      "code_sha256": "59dc8080e0f76c125a9d346b53cc9a01d0cbe0b4b78fead554ae02b0f3a43791"
+    },
+    {
+      "signature": "() server_scene.vehicle.build_physics_shape (server_scene.vehicle, physics.compound_shape, s32, s32)",
+      "signature_offset": 52748413,
+      "code_offset": 52757266,
+      "code_size": 20704,
+      "code_sha256": "a05f32e05dd8c01e7874a48e807e377f9219bcdb4b3b24fdaf72d2533df4cac5"
+    },
+    {
+      "signature": "() server_scene.vehicle.create_physics_from_shape (server_scene.vehicle, physics.scene, server_scene.environment_tile_container, physics.compound_shape)",
+      "signature_offset": 52937523,
+      "code_offset": 52939940,
+      "code_size": 2984,
+      "code_sha256": "9ae8e91dd451d96a7d1dd37d9498654b43413794e0b6b16f7d93fa38915a53af"
+    },
+    {
+      "signature": "() vehicle_plate_util._clip_convex_shape_to_plate_plane (const vector<vec2>, const vehicle_plate_util.clipping_plane, vector<vec2>)",
+      "signature_offset": 63214991,
+      "code_offset": 63215559,
+      "code_size": 1240,
+      "code_sha256": "42f3c7cc6d91b0f10821de402b955318c499aa3af32d9a5b488de921bbac560b"
+    },
+    {
+      "signature": "() vehicle_plate_util._clip_convex_shape_to_plate_plane (const vector<vec2>, const vector<vec2>, const vehicle_plate_util.clipping_plane, vector<vec2>, vector<vec2>)",
+      "signature_offset": 63217557,
+      "code_offset": 63218159,
+      "code_size": 1976,
+      "code_sha256": "88aa15e02db1c544e485133de59c7c78f151080017386f0c3c203da7d804ba00"
+    },
+    {
+      "signature": "() vehicle_plate_util.add_geometry_inner_solid (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const s32, vehicle_plates_edges_builder)",
+      "signature_offset": 63302055,
+      "code_offset": 63302744,
+      "code_size": 2560,
+      "code_sha256": "659d65e318b27dde74108dc044a979bb492f095be27619d3da3c2e92da225cb6"
+    },
+    {
+      "signature": "() vehicle_plate_util.add_geometry_outer (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const vec3_s32, const s32, vehicle_plates_edges_builder)",
+      "signature_offset": 63343472,
+      "code_offset": 63344115,
+      "code_size": 512,
+      "code_sha256": "bbb15077072ec735fbd625f81f67bd5841045a1be25d1553ed0ed8bf8b2dcd25"
+    },
+    {
+      "signature": "() vehicle_plate_util.add_static_geometry (const vector<vec3_s32>, const vec3, const s32, const s32, const vec3_s32, const s32, const vehicle_plate_util.e_plate_type, const s32, const e_vehicle_glass_state, const vector<vec3_s32>, vehicle_plates_edges_builder)",
+      "signature_offset": 63374340,
+      "code_offset": 63375987,
+      "code_size": 1648,
+      "code_sha256": "cca1c85b26cd805318d3b45a7b93e9e996e3dcc68994d156b6e55bcf93719727"
+    },
+    {
+      "signature": "() vehicle_plate_util.clip_convex_shape_to_plate_planes (const vector<vec2>, const vector<vehicle_plate_util.clipping_plane>, vector<vec2>)",
+      "signature_offset": 63382930,
+      "code_offset": 63384346,
+      "code_size": 808,
+      "code_sha256": "af90b306a5a171f65825b300c32f7fb69f137c2f39e00d37da5d88b1d10f484c"
+    },
+    {
+      "signature": "() vehicle_plate_util.clip_convex_shape_to_plate_planes (const vector<vec2>, const vector<vec2>, const vector<vehicle_plate_util.clipping_plane>, vector<vec2>, vector<vec2>)",
+      "signature_offset": 63385857,
+      "code_offset": 63387505,
+      "code_size": 1680,
+      "code_sha256": "1a3bd9fa980736dd07b6f68eb7ca91a5291fe65a8a575d70e80bc2758d7ad6ac"
+    },
+    {
+      "signature": "() vehicle_plate_util.get_plate_clipping_planes_inner (const vector<vec3_s32>, const vec3_s32, const vec3, const f64, const s32, vector<vehicle_plate_util.clipping_plane>)",
+      "signature_offset": 63423138,
+      "code_offset": 63424596,
+      "code_size": 3344,
+      "code_sha256": "70a43a723a8e41c99375b96e6a1da70df1637a4dd52551b11b33ecb8c14f8daf"
+    },
+    {
+      "signature": "() vehicle_plate_util.get_plate_clipping_planes_outer (const vector<vec3_s32>, const vec3_s32, const vec3, const f64, const s32, vector<vehicle_plate_util.clipping_plane>)",
+      "signature_offset": 63429605,
+      "code_offset": 63431577,
+      "code_size": 14328,
+      "code_sha256": "65c690a1cf3e4af2f40b67e2bfa16532759079bfbdb3fc313189496887dc3174"
+    },
+    {
+      "signature": "() vehicle_plate_util.get_plate_grid (const vec3_s32, const vec3, const s32, const f64, vec3, vec3, vec3)",
+      "signature_offset": 63451658,
+      "code_offset": 63451963,
+      "code_size": 224,
+      "code_sha256": "2feb05e149d259e136c3545e0543924b8a673525f591c9c5536ad29900b38cce"
+    },
+    {
+      "signature": "() vehicle_plate_util.get_plate_grid_axes (const vec3, vec3, vec3)",
+      "signature_offset": 63452545,
+      "code_offset": 63452860,
+      "code_size": 608,
+      "code_sha256": "9b80392ca146fbfd9204e14e319526d2ecff27847bea506ea5c964fc14f9cd42"
+    },
+    {
+      "signature": "(vec3) vehicle_plate_util.get_plate_grid_origin (const vec3_s32, const vec3, const f64, const s32)",
+      "signature_offset": 63453820,
+      "code_offset": 63454188,
+      "code_size": 336,
+      "code_sha256": "845fbf44427c437311611f1a0d00f9a55bf37eab9b764f7b4101f9ff64429929"
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 63424596,
+      "offset": 63427916,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63424596,
+      "offset": 63427920,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63424596,
+      "offset": 63427924,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63431577,
+      "offset": 63445849,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63431577,
+      "offset": 63445853,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63431577,
+      "offset": 63445857,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63431577,
+      "offset": 63445897,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63302744,
+      "offset": 63305296,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63302744,
+      "offset": 63305300,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63344115,
+      "offset": 63344611,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63344115,
+      "offset": 63344615,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63215559,
+      "offset": 63216791,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63218159,
+      "offset": 63220127,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63424596,
+      "offset": 63427932,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63431577,
+      "offset": 63445865,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63431577,
+      "offset": 63445873,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63431577,
+      "offset": 63445881,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63431577,
+      "offset": 63445889,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63452860,
+      "offset": 63453444,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63452860,
+      "offset": 63453452,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 63452860,
+      "offset": 63453460,
+      "format": "f64",
+      "bytes": "cdccccccccccec3f",
+      "value": 0.9,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 52757266,
+      "offset": 52777938,
+      "format": "f64",
+      "bytes": "666666666666d63f",
+      "value": 0.35,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    },
+    {
+      "function_offset": 52757266,
+      "offset": 52777946,
+      "format": "f64",
+      "bytes": "cdccccccccccdc3f",
+      "value": 0.45,
+      "name": "Reviewed clipping/grid/fan/collision calibration"
+    }
+  ],
+  "strings": [
+    {
+      "function_offset": 63387505,
+      "offset": 63389073,
+      "text": "vehicle_plate_util.clip_convex_shape_to_plate_planes: clipping requires same number of points and coords"
+    }
+  ],
+  "call_examples": [
+    {
+      "function_offset": 52583124,
+      "instruction": 52583258,
+      "bytes": "ffd5",
+      "slot_address": 52583396,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.build_physics_shape (server_scene.vehicle, physics.compound_shape, s32, s32)"
+    },
+    {
+      "function_offset": 52757266,
+      "instruction": 52772885,
+      "bytes": "ff5500",
+      "slot_address": 52778602,
+      "kind": 4,
+      "symbol": "() physics.shape.create_convex_hull (physics.shape, const vector<vec3>, const vec3, const f64)"
+    },
+    {
+      "function_offset": 63302744,
+      "instruction": 63304537,
+      "bytes": "41ff12",
+      "slot_address": 63305368,
+      "kind": 4,
+      "symbol": "() vehicle_plates_edges_builder.add_plate_triangle (vehicle_plates_edges_builder, const vec3, const vec3, const vec3, const vec3, const s32)"
+    },
+    {
+      "function_offset": 63344115,
+      "instruction": 63344413,
+      "bytes": "ff17",
+      "slot_address": 63344635,
+      "kind": 4,
+      "symbol": "() vehicle_plate_util.add_geometry_outer_1_axis (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const s32, vehicle_plates_edges_builder)"
+    },
+    {
+      "function_offset": 63344115,
+      "instruction": 63344554,
+      "bytes": "41ff12",
+      "slot_address": 63344643,
+      "kind": 4,
+      "symbol": "() vehicle_plate_util.add_geometry_outer_2_axis (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const vec3_s32, const s32, vehicle_plates_edges_builder)"
+    },
+    {
+      "function_offset": 63375987,
+      "instruction": 63376568,
+      "bytes": "ff13",
+      "slot_address": 63377667,
+      "kind": 4,
+      "symbol": "(vec3) vehicle_plate_util.get_plate_node_surface_offset (const vec3_s32, const vec3, const s32)"
+    },
+    {
+      "function_offset": 63375987,
+      "instruction": 63376971,
+      "bytes": "41ff16",
+      "slot_address": 63377691,
+      "kind": 4,
+      "symbol": "() vehicle_plate_util.add_geometry_inner_opening (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const s32, const vec3_s32, const s32, vehicle_plates_edges_builder)"
+    },
+    {
+      "function_offset": 63375987,
+      "instruction": 63377152,
+      "bytes": "41ff17",
+      "slot_address": 63377699,
+      "kind": 4,
+      "symbol": "() vehicle_plate_util.add_geometry_inner_window (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const s32, const vec3_s32, const s32, const e_vehicle_glass_state, const vector<vec3_s32>, vehicle_plates_edges_builder)"
+    },
+    {
+      "function_offset": 63375987,
+      "instruction": 63377298,
+      "bytes": "41ff16",
+      "slot_address": 63377707,
+      "kind": 4,
+      "symbol": "() vehicle_plate_util.add_geometry_inner_hatch (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const s32, const vec3_s32, const s32, vehicle_plates_edges_builder)"
+    },
+    {
+      "function_offset": 63375987,
+      "instruction": 63377396,
+      "bytes": "41ff12",
+      "slot_address": 63377715,
+      "kind": 4,
+      "symbol": "() vehicle_plate_util.add_geometry_inner_solid (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const s32, vehicle_plates_edges_builder)"
+    },
+    {
+      "function_offset": 63375987,
+      "instruction": 63377514,
+      "bytes": "41ff12",
+      "slot_address": 63377723,
+      "kind": 4,
+      "symbol": "() vehicle_plate_util.add_geometry_outer (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const vec3_s32, const s32, vehicle_plates_edges_builder)"
+    },
+    {
+      "function_offset": 63384346,
+      "instruction": 63384947,
+      "bytes": "ff10",
+      "slot_address": 63385226,
+      "kind": 4,
+      "symbol": "(uptr) vector<vehicle_plate_util.clipping_plane>.end (const vector<vehicle_plate_util.clipping_plane>)"
+    },
+    {
+      "function_offset": 63384346,
+      "instruction": 63384996,
+      "bytes": "ff10",
+      "slot_address": 63385234,
+      "kind": 4,
+      "symbol": "(s32) vector<vehicle_plate_util.clipping_plane>.key (const vector<vehicle_plate_util.clipping_plane>, const uptr)"
+    },
+    {
+      "function_offset": 63384346,
+      "instruction": 63385023,
+      "bytes": "ff10",
+      "slot_address": 63385242,
+      "kind": 4,
+      "symbol": "(ptr<vehicle_plate_util.clipping_plane>) vector<vehicle_plate_util.clipping_plane>.value (const vector<vehicle_plate_util.clipping_plane>, const uptr)"
+    },
+    {
+      "function_offset": 63384346,
+      "instruction": 63385065,
+      "bytes": "ff13",
+      "slot_address": 63385250,
+      "kind": 4,
+      "symbol": "() vehicle_plate_util._clip_convex_shape_to_plate_plane (const vector<vec2>, const vehicle_plate_util.clipping_plane, vector<vec2>)"
+    },
+    {
+      "function_offset": 63384346,
+      "instruction": 63385118,
+      "bytes": "ff10",
+      "slot_address": 63385266,
+      "kind": 4,
+      "symbol": "(uptr) vector<vehicle_plate_util.clipping_plane>.next (const vector<vehicle_plate_util.clipping_plane>, const uptr)"
+    },
+    {
+      "function_offset": 63387505,
+      "instruction": 63388797,
+      "bytes": "ff10",
+      "slot_address": 63389289,
+      "kind": 4,
+      "symbol": "(uptr) vector<vehicle_plate_util.clipping_plane>.end (const vector<vehicle_plate_util.clipping_plane>)"
+    },
+    {
+      "function_offset": 63387505,
+      "instruction": 63388852,
+      "bytes": "ff10",
+      "slot_address": 63389297,
+      "kind": 4,
+      "symbol": "(s32) vector<vehicle_plate_util.clipping_plane>.key (const vector<vehicle_plate_util.clipping_plane>, const uptr)"
+    },
+    {
+      "function_offset": 63387505,
+      "instruction": 63388885,
+      "bytes": "ff10",
+      "slot_address": 63389305,
+      "kind": 4,
+      "symbol": "(ptr<vehicle_plate_util.clipping_plane>) vector<vehicle_plate_util.clipping_plane>.value (const vector<vehicle_plate_util.clipping_plane>, const uptr)"
+    },
+    {
+      "function_offset": 63387505,
+      "instruction": 63388943,
+      "bytes": "ff16",
+      "slot_address": 63389313,
+      "kind": 4,
+      "symbol": "() vehicle_plate_util._clip_convex_shape_to_plate_plane (const vector<vec2>, const vector<vec2>, const vehicle_plate_util.clipping_plane, vector<vec2>, vector<vec2>)"
+    },
+    {
+      "function_offset": 63387505,
+      "instruction": 63389019,
+      "bytes": "ff10",
+      "slot_address": 63389329,
+      "kind": 4,
+      "symbol": "(uptr) vector<vehicle_plate_util.clipping_plane>.next (const vector<vehicle_plate_util.clipping_plane>, const uptr)"
+    },
+    {
+      "function_offset": 63424596,
+      "instruction": 63425015,
+      "bytes": "41ff13",
+      "slot_address": 63427956,
+      "kind": 4,
+      "symbol": "() vehicle_plate_util.get_plate_grid (const vec3_s32, const vec3, const s32, const f64, vec3, vec3, vec3)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63431996,
+      "bytes": "41ff13",
+      "slot_address": 63445921,
+      "kind": 4,
+      "symbol": "() vehicle_plate_util.get_plate_grid (const vec3_s32, const vec3, const s32, const f64, vec3, vec3, vec3)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63432154,
+      "bytes": "ff13",
+      "slot_address": 63445937,
+      "kind": 4,
+      "symbol": "(vec3) vehicle_plate_util.get_plate_node_surface_offset (const vec3_s32, const vec3, const s32)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63436453,
+      "bytes": "ff10",
+      "slot_address": 63446105,
+      "kind": 4,
+      "symbol": "(ptr<vehicle_plate_util.clipping_plane>) vector<vehicle_plate_util.clipping_plane>.push_back (vector<vehicle_plate_util.clipping_plane>)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63436563,
+      "bytes": "ff10",
+      "slot_address": 63446121,
+      "kind": 4,
+      "symbol": "() dtor (vehicle_plate_util.clipping_plane)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63436599,
+      "bytes": "ff10",
+      "slot_address": 63446129,
+      "kind": 4,
+      "symbol": "() ctor (vehicle_plate_util.clipping_plane, const vec2, const vec2, const vec2)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63436661,
+      "bytes": "ff10",
+      "slot_address": 63446105,
+      "kind": 4,
+      "symbol": "(ptr<vehicle_plate_util.clipping_plane>) vector<vehicle_plate_util.clipping_plane>.push_back (vector<vehicle_plate_util.clipping_plane>)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63436771,
+      "bytes": "ff10",
+      "slot_address": 63446121,
+      "kind": 4,
+      "symbol": "() dtor (vehicle_plate_util.clipping_plane)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63436807,
+      "bytes": "ff10",
+      "slot_address": 63446129,
+      "kind": 4,
+      "symbol": "() ctor (vehicle_plate_util.clipping_plane, const vec2, const vec2, const vec2)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63436869,
+      "bytes": "ff10",
+      "slot_address": 63446105,
+      "kind": 4,
+      "symbol": "(ptr<vehicle_plate_util.clipping_plane>) vector<vehicle_plate_util.clipping_plane>.push_back (vector<vehicle_plate_util.clipping_plane>)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63436979,
+      "bytes": "ff10",
+      "slot_address": 63446121,
+      "kind": 4,
+      "symbol": "() dtor (vehicle_plate_util.clipping_plane)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63437015,
+      "bytes": "ff10",
+      "slot_address": 63446129,
+      "kind": 4,
+      "symbol": "() ctor (vehicle_plate_util.clipping_plane, const vec2, const vec2, const vec2)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63437077,
+      "bytes": "ff10",
+      "slot_address": 63446105,
+      "kind": 4,
+      "symbol": "(ptr<vehicle_plate_util.clipping_plane>) vector<vehicle_plate_util.clipping_plane>.push_back (vector<vehicle_plate_util.clipping_plane>)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63437187,
+      "bytes": "ff10",
+      "slot_address": 63446121,
+      "kind": 4,
+      "symbol": "() dtor (vehicle_plate_util.clipping_plane)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63437223,
+      "bytes": "ff10",
+      "slot_address": 63446129,
+      "kind": 4,
+      "symbol": "() ctor (vehicle_plate_util.clipping_plane, const vec2, const vec2, const vec2)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63442329,
+      "bytes": "ff10",
+      "slot_address": 63446105,
+      "kind": 4,
+      "symbol": "(ptr<vehicle_plate_util.clipping_plane>) vector<vehicle_plate_util.clipping_plane>.push_back (vector<vehicle_plate_util.clipping_plane>)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63442439,
+      "bytes": "ff10",
+      "slot_address": 63446121,
+      "kind": 4,
+      "symbol": "() dtor (vehicle_plate_util.clipping_plane)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63442475,
+      "bytes": "ff10",
+      "slot_address": 63446129,
+      "kind": 4,
+      "symbol": "() ctor (vehicle_plate_util.clipping_plane, const vec2, const vec2, const vec2)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63442537,
+      "bytes": "ff10",
+      "slot_address": 63446105,
+      "kind": 4,
+      "symbol": "(ptr<vehicle_plate_util.clipping_plane>) vector<vehicle_plate_util.clipping_plane>.push_back (vector<vehicle_plate_util.clipping_plane>)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63442647,
+      "bytes": "ff10",
+      "slot_address": 63446121,
+      "kind": 4,
+      "symbol": "() dtor (vehicle_plate_util.clipping_plane)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63442683,
+      "bytes": "ff10",
+      "slot_address": 63446129,
+      "kind": 4,
+      "symbol": "() ctor (vehicle_plate_util.clipping_plane, const vec2, const vec2, const vec2)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63442750,
+      "bytes": "ff10",
+      "slot_address": 63446105,
+      "kind": 4,
+      "symbol": "(ptr<vehicle_plate_util.clipping_plane>) vector<vehicle_plate_util.clipping_plane>.push_back (vector<vehicle_plate_util.clipping_plane>)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63442860,
+      "bytes": "ff10",
+      "slot_address": 63446121,
+      "kind": 4,
+      "symbol": "() dtor (vehicle_plate_util.clipping_plane)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63442896,
+      "bytes": "ff10",
+      "slot_address": 63446129,
+      "kind": 4,
+      "symbol": "() ctor (vehicle_plate_util.clipping_plane, const vec2, const vec2, const vec2)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63442958,
+      "bytes": "ff10",
+      "slot_address": 63446105,
+      "kind": 4,
+      "symbol": "(ptr<vehicle_plate_util.clipping_plane>) vector<vehicle_plate_util.clipping_plane>.push_back (vector<vehicle_plate_util.clipping_plane>)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63443068,
+      "bytes": "ff10",
+      "slot_address": 63446121,
+      "kind": 4,
+      "symbol": "() dtor (vehicle_plate_util.clipping_plane)"
+    },
+    {
+      "function_offset": 63431577,
+      "instruction": 63443104,
+      "bytes": "ff10",
+      "slot_address": 63446129,
+      "kind": 4,
+      "symbol": "() ctor (vehicle_plate_util.clipping_plane, const vec2, const vec2, const vec2)"
+    },
+    {
+      "function_offset": 63451963,
+      "instruction": 63452081,
+      "bytes": "ff17",
+      "slot_address": 63452187,
+      "kind": 4,
+      "symbol": "() vehicle_plate_util.get_plate_grid_axes (const vec3, vec3, vec3)"
+    },
+    {
+      "function_offset": 63451963,
+      "instruction": 63452169,
+      "bytes": "ff5500",
+      "slot_address": 63452195,
+      "kind": 4,
+      "symbol": "(vec3) vehicle_plate_util.get_plate_grid_origin (const vec3_s32, const vec3, const f64, const s32)"
+    }
+  ],
+  "limits": "Selected surface/clipping and server hull inputs; native hull/margins, complete placement/strips/eligibility remain open. No game testing or historical phantom diagnosis."
+}

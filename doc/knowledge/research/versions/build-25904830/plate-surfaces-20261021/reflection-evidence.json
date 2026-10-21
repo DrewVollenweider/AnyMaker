@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "table": {
+    "offset": 66399263,
+    "end": 82528301,
+    "records": 8084,
+    "sha256": "5d619ecd6c69220d0e873d73e012dd301038f4eb911d859486db58c386b60a8e"
+  },
+  "types": [
+    {
+      "name": "server_scene.vehicle_plate",
+      "base": "replication.master.object",
+      "offset": 81735307,
+      "length": 2205,
+      "descriptor_sha256": "54584381e3faf13f167bfb82889a124540d602d882be48450b6acd3494084eb1",
+      "size": 664,
+      "alignment": 8
+    },
+    {
+      "name": "vehicle_plate_util.clipping_plane",
+      "base": "",
+      "offset": 82357101,
+      "length": 442,
+      "descriptor_sha256": "b2685ff0fda0c829638512c222f0cbfccbd3d89c2655f75a43f079cac88d5c39",
+      "size": 56,
+      "alignment": 8
+    }
+  ],
+  "enums": [],
+  "fields": [
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "vec3",
+        "name": "m_normal",
+        "offset": 568
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "f64",
+        "name": "m_plane_origin_distance",
+        "offset": 592
+      }
+    },
+    {
+      "type": "vehicle_plate_util.clipping_plane",
+      "field": {
+        "type": "vec2",
+        "name": "m_pos",
+        "offset": 0
+      }
+    },
+    {
+      "type": "vehicle_plate_util.clipping_plane",
+      "field": {
+        "type": "vec2",
+        "name": "m_edge",
+        "offset": 16
+      }
+    },
+    {
+      "type": "vehicle_plate_util.clipping_plane",
+      "field": {
+        "type": "vec2",
+        "name": "m_normal",
+        "offset": 32
+      }
+    },
+    {
+      "type": "vehicle_plate_util.clipping_plane",
+      "field": {
+        "type": "f64",
+        "name": "m_origin_distance",
+        "offset": 48
+      }
+    }
+  ],
+  "virtuals": []
+}

@@ -1,5 +1,7 @@
 # Anymaker engineering knowledge — start here
 
+Latest vehicle checkpoint: [plate surfaces, clipping and collision inputs](research/PLATE-SURFACES-20261021.md). Visible solid faces use opposed triangle fans; server physics plates supply offset point clouds to a native convex-hull builder. Clipping preserves parallel coordinates. New pure geometry helpers have 12 tests; full suite 193. Complete hull/placement/strip contracts remain open.
+
 Latest vehicle checkpoint: [plate creation, native reconstruction and mesh replacement](research/PLATE-LOAD-20261021.md). Ordered boundary loops determine facing and first-edge size; loading remaps plate IDs and rebuilds plates, while client mesh replacement has separate lifecycle flags. The new read-only plate audit has 10 tests; full suite 181. Historical helicopter phantom geometry remains unresolved.
 
 Latest vehicle research: [attachment surfaces and contact boundaries](research/VEHICLE-ATTACHMENTS-20261021.md). Surface extension, component/beam/plate gates and integer versus floating-point intersection behavior now have source evidence and a reusable offline model. All 171 research-tool tests pass; complete native mounting/save acceptance remains open.
