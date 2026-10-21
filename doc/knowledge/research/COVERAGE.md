@@ -1,5 +1,7 @@
 # Coverage and gaps
 
+Current vehicle-priority checkpoint: [structural connectivity, splitting and update lifecycle](VEHICLE-STRUCTURE-20261021.md). Selected traversal, reciprocal links, removal, split/remap and update/post-load scheduling are traced. Local reader: 1,440 functions/201,934 checked instructions/1,141,198 independently summed bytes. This includes earlier exports and parked work, not 1,440 fully understood methods. Full contact, structural strength, collision/render/load/replication and vehicle variants remain unfinished. No defensible overall mechanics-completion percentage is established.
+
 Newest continuation: [character combat, smoke and hordes](COMBAT-SMOKE-HORDES-20261020.md). Selected NPC equipment/reload, weapon entry points, smoke lifetime/emission/native intersection and horde chains are traced. Reader: 1,275 functions/184,600 instructions/1,042,178 bytes. Complete concrete weapons/projectiles/armour, creature brains/navigation and lifecycle remain unfinished.
 
 Newest continuation: [creatures, sensing and ambient spawning](CREATURES-SENSING-SPAWN-20261020.md). Selected chains cover 40 variant records, factory naming, sensor eligibility/ranges, sight geometry/filters, ambient pools and spawn/despawn gates. Reader: 1,228 functions/176,005 instructions/996,711 bytes; 159 tests. Individual brains, native geometry/RNG, horde/dungeon producers and complete lifecycle remain unfinished.

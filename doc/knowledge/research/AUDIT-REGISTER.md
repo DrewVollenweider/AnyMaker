@@ -1,5 +1,7 @@
 # Full-game audit register
 
+Priority override, October 21: the user is primarily interested in vehicle engineering and least interested in projectiles, explosions and AI. Work first on attachment/body splitting, plates/edges, cabin surfaces and save integrity; then engines/drivetrain, fluid/thermal/gas, electrical, controls, suspension/steering, flight and marine systems. [The current structural checkpoint](VEHICLE-STRUCTURE-20261021.md) traces selected removal/split/remap/update chains. It does not close these domains. Preserve the full register, but park the combat/AI queue at low priority.
+
 Latest selected findings: [character combat, smoke and hordes](COMBAT-SMOKE-HORDES-20261020.md). NPC equipment/timing, shared weapon entry points, smoke drift/emitters/native ray extent and horde lifecycle entry points are traced. Concrete weapon/AI variants, projectiles/armour, all producers, native contracts and every other open area remain unfinished. Selected exported methods do not certify full semantics.
 
 Latest selected findings: [creatures, sensing and ambient spawning](CREATURES-SENSING-SPAWN-20261020.md). All 40 definitions have selected default/factory records; shared sensing and ambient spawn/despawn chains are traced. Complete behavior, combat, navigation, all producers, native contracts, lifecycle and every other open area remain unfinished. Export and variant counts do not certify semantic completion.

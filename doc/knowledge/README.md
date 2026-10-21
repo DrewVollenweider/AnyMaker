@@ -1,5 +1,7 @@
 # Anymaker engineering knowledge — start here
 
+Vehicle engineering is the active research priority as of October 21: [structural connectivity, splitting and update lifecycle](research/VEHICLE-STRUCTURE-20261021.md). Continue attachment, plates/edges and save integrity, followed by powertrain, fluids, electrical, controls, suspension, flight and marine systems. Projectiles, explosions and AI are low priority. The full audit remains incomplete.
+
 Newest research: [character combat, weapon entry points, smoke and hordes](research/COMBAT-SMOKE-HORDES-20261020.md). Traced hotbar-order equipment choice, NPC reload/battery behavior, smoke drift/lifetime and its unbounded forward-ray sight check, plus the separate horde producer. Complete concrete weapons/brains/projectiles remain open. Reader: 1,275 functions; latest tool suite: 159 passing tests.
 
 Newest research: [creatures, sensing and ambient spawning](research/CREATURES-SENSING-SPAWN-20261020.md). All 40 creature definitions have selected factory/default records. Sensing, sight, spawn pools and placement/despawn gates are traced; complete brains/combat/navigation remain open. Reader: 1,228 functions; all 159 research tests pass.

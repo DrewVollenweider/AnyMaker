@@ -1,0 +1,1040 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "() server_scene.vehicle._flood_island (server_scene.vehicle, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)",
+      "signature_offset": 52524956,
+      "code_offset": 52526963,
+      "code_size": 1520,
+      "code_sha256": "466932ffdd183fd72fc7f9f86593840ae7d0a25d0759e517dfc0bf4c60911331"
+    },
+    {
+      "signature": "() server_scene.vehicle._flood_islands (server_scene.vehicle)",
+      "signature_offset": 52529371,
+      "code_offset": 52533957,
+      "code_size": 1936,
+      "code_sha256": "da110ba7f6eb84ef1d9c7178f1a0f6ce4da52815acb0b34e9eabaf4eea89ce58"
+    },
+    {
+      "signature": "() server_scene.vehicle._flood_islands (server_scene.vehicle, server_scene.vehicle_edge, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)",
+      "signature_offset": 52536732,
+      "code_offset": 52539235,
+      "code_size": 1424,
+      "code_sha256": "cafe184f0af9420802d0c6071cf9f5965233ea71dc1c0c91c9c27187d31fd5b1"
+    },
+    {
+      "signature": "() server_scene.vehicle._flood_islands (server_scene.vehicle, server_scene.vehicle_plate, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)",
+      "signature_offset": 52541725,
+      "code_offset": 52543833,
+      "code_size": 688,
+      "code_sha256": "3d1a92e1f56de92bf71b13bfaf4bf2e8d34c199a1b422bbf404c183e90ac1438"
+    },
+    {
+      "signature": "() server_scene.vehicle._flood_islands (server_scene.vehicle, server_scene.vehicle_component, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)",
+      "signature_offset": 52545290,
+      "code_offset": 52547798,
+      "code_size": 944,
+      "code_sha256": "49f1f7b99a938e7baebea4298d2589294861e46d787204081faf1a7f74eec807"
+    },
+    {
+      "signature": "() server_scene.vehicle._flood_islands_component (server_scene.vehicle, server_scene.vehicle_component, const s32, s32)",
+      "signature_offset": 52549645,
+      "code_offset": 52550585,
+      "code_size": 416,
+      "code_sha256": "30ba2f91c27ce24883e5c709e35bc1c7bc6b817d0176f445d9aa5fbbd9dc18f1"
+    },
+    {
+      "signature": "() server_scene.vehicle._flood_islands_edge (server_scene.vehicle, server_scene.vehicle_edge, const s32, s32)",
+      "signature_offset": 52551619,
+      "code_offset": 52552544,
+      "code_size": 416,
+      "code_sha256": "30ba2f91c27ce24883e5c709e35bc1c7bc6b817d0176f445d9aa5fbbd9dc18f1"
+    },
+    {
+      "signature": "() server_scene.vehicle._flood_islands_plate (server_scene.vehicle, server_scene.vehicle_plate, const s32, s32)",
+      "signature_offset": 52553563,
+      "code_offset": 52554491,
+      "code_size": 416,
+      "code_sha256": "30ba2f91c27ce24883e5c709e35bc1c7bc6b817d0176f445d9aa5fbbd9dc18f1"
+    },
+    {
+      "signature": "() server_scene.vehicle._move_component_to_vehicle (server_scene, server_scene.vehicle, server_scene.vehicle, server_scene.vehicle_component, server_scene.vehicle_island.id_map, vector<ptr<server_scene.vehicle_component>>)",
+      "signature_offset": 52563659,
+      "code_offset": 52567209,
+      "code_size": 1848,
+      "code_sha256": "7dcfd51f9afbf465e69dc32c44d71213f55c7b34310f1ccbb88fdc38b158229d"
+    },
+    {
+      "signature": "() server_scene.vehicle._rebuild_islands (server_scene.vehicle, server_scene, const bool)",
+      "signature_offset": 52578719,
+      "code_offset": 52579586,
+      "code_size": 2416,
+      "code_sha256": "da74ae4e499a81c642a7105ac8f8077beb3c2bd17d9a3ef8dd4a4e5b0397e550"
+    },
+    {
+      "signature": "() server_scene.vehicle._reset_island_indices (server_scene.vehicle)",
+      "signature_offset": 52585231,
+      "code_offset": 52589302,
+      "code_size": 1096,
+      "code_sha256": "289e55622344be45890d9a75bdce64d4291e84f41ff6f1fdf2c0128e55262471"
+    },
+    {
+      "signature": "() server_scene.vehicle._split_islands (server_scene.vehicle, server_scene)",
+      "signature_offset": 52596552,
+      "code_offset": 52623865,
+      "code_size": 26528,
+      "code_sha256": "3ad021742c0e7214c9d14d83a4e4f7ce47c7fe8a404ca0b388ad610c80b4a9b3"
+    },
+    {
+      "signature": "() server_scene.vehicle.clean_removed (server_scene.vehicle)",
+      "signature_offset": 52814141,
+      "code_offset": 52818004,
+      "code_size": 1360,
+      "code_sha256": "a3d59b0d4444e06397b2ed47ebb5d0bf5a824c3e8b6b43da8dc04d11dda42db2"
+    },
+    {
+      "signature": "() server_scene.vehicle.clear_plate_adjacencies (server_scene.vehicle, server_scene.vehicle_plate)",
+      "signature_offset": 52820284,
+      "code_offset": 52820514,
+      "code_size": 40,
+      "code_sha256": "8323a60fba918773f955665d201ec13feba90f6c15a2b2390df65b5def41e5be"
+    },
+    {
+      "signature": "() server_scene.vehicle.post_load (server_scene.vehicle, server_scene)",
+      "signature_offset": 53211313,
+      "code_offset": 53212996,
+      "code_size": 440,
+      "code_sha256": "8e673d51fde4778d0033f4132592069230336bdc9fa83ccbc4443556e68cba63"
+    },
+    {
+      "signature": "() server_scene.vehicle.push_event_pending_split_vehicle (server_scene.vehicle, const s32)",
+      "signature_offset": 53221233,
+      "code_offset": 53221650,
+      "code_size": 192,
+      "code_sha256": "61f8b7eab1e73a6990d7a1e53d9be4bfa28a36233dc5fd939cee72131dee724c"
+    },
+    {
+      "signature": "() server_scene.vehicle.rebuild_plate_adjacencies (server_scene.vehicle, server_scene.vehicle_plate, const ptr<server_scene.vehicle_plate>)",
+      "signature_offset": 53235422,
+      "code_offset": 53235734,
+      "code_size": 48,
+      "code_sha256": "5f0bc5ac2df626dd32104734851767762f84287721899e0889d01b5ced2f6e6d"
+    },
+    {
+      "signature": "() server_scene.vehicle.remove_edge (server_scene.vehicle, server_scene.vehicle_edge, s32, s32)",
+      "signature_offset": 53243641,
+      "code_offset": 53243871,
+      "code_size": 128,
+      "code_sha256": "9665beea651b1f7656016dcfcc14d7ff197dd2e9951cbe265b876b7514ced12f"
+    },
+    {
+      "signature": "() server_scene.vehicle.remove_edge (server_scene.vehicle, server_scene.vehicle_edge, const bool, s32, s32)",
+      "signature_offset": 53244281,
+      "code_offset": 53247730,
+      "code_size": 2400,
+      "code_sha256": "d63c1e35848b8b8ce628bc83279066961bdbf02b4a46e3d4fe3b3fdde0b49208"
+    },
+    {
+      "signature": "() server_scene.vehicle.remove_plate (server_scene.vehicle, server_scene.vehicle_plate, s32)",
+      "signature_offset": 53268044,
+      "code_offset": 53273079,
+      "code_size": 2864,
+      "code_sha256": "b9c01c0c4a01042f76d780e9c5ae9a6f50689c95aa7156122d548df243c80da7"
+    },
+    {
+      "signature": "() server_scene.vehicle.set_flag_clean_removed (server_scene.vehicle)",
+      "signature_offset": 53279740,
+      "code_offset": 53279829,
+      "code_size": 33,
+      "code_sha256": "d134da71cbe0ec0f915b92b74f8cfa9bbc1699c3ef2bcf53e7b6a3dc7d05d152"
+    },
+    {
+      "signature": "() server_scene.vehicle.set_flag_rebuild_islands (server_scene.vehicle)",
+      "signature_offset": 53280607,
+      "code_offset": 53280698,
+      "code_size": 33,
+      "code_sha256": "c1b61bfa03b285fbdc10038573180c6064a94b9f341c251982e49acbb175ba2a"
+    },
+    {
+      "signature": "() server_scene.vehicle.tick (server_scene.vehicle, server_scene, const bool)",
+      "signature_offset": 53319068,
+      "code_offset": 53321058,
+      "code_size": 1504,
+      "code_sha256": "853a67038d9011fcc6c06576bd0b61edb6e140d1b3558b3c35184ea7a546149d"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.create_island_links (server_scene.vehicle_component, server_scene.vehicle)",
+      "signature_offset": 54221152,
+      "code_offset": 54223153,
+      "code_size": 1864,
+      "code_sha256": "6d45d669adec825af1425a9e1bff7f2810b55b98d222bd64b0cbb2c7bc9b44f6"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.destroy_island_links (server_scene.vehicle_component, server_scene.vehicle)",
+      "signature_offset": 54259864,
+      "code_offset": 54262123,
+      "code_size": 1792,
+      "code_sha256": "84c992ce78aca0d9c3f3b1ae829e502a006722f0309b367a3b4b6fc8f12b666e"
+    },
+    {
+      "signature": "() server_scene.vehicle_edge.create_island_links (server_scene.vehicle_edge, server_scene.vehicle)",
+      "signature_offset": 58205373,
+      "code_offset": 58207708,
+      "code_size": 1944,
+      "code_sha256": "84297c04b49c2b7b6b8695771880e81808bf90eab1fc7384e905e0aca63594af"
+    },
+    {
+      "signature": "() server_scene.vehicle_edge.destroy_island_links (server_scene.vehicle_edge)",
+      "signature_offset": 58216802,
+      "code_offset": 58218236,
+      "code_size": 1296,
+      "code_sha256": "16b0391bf75d2db236362dfc30db946978fc2e66f6ea292639c24997d4e49b65"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle_grid.empty (const server_scene.vehicle_grid)",
+      "signature_offset": 58677191,
+      "code_offset": 58677471,
+      "code_size": 96,
+      "code_sha256": "efe08ec3270174489f222407ddf1dd79c0c9341d82f7ecb6f3f0437ef339dc31"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle_island.id_map.remap_ids (const server_scene.vehicle_island.id_map, s32, s32)",
+      "signature_offset": 58705892,
+      "code_offset": 58706337,
+      "code_size": 288,
+      "code_sha256": "3ee2c1703b0c6cef5090c5daa18f3cf291e452fcb8daf64b8207e5fd57a5c6d6"
+    },
+    {
+      "signature": "() server_scene.vehicle_node.destroy_island_links (server_scene.vehicle_node)",
+      "signature_offset": 58913407,
+      "code_offset": 58913504,
+      "code_size": 13,
+      "code_sha256": "5adf4771ce8616e1cbeb7ff2de9da0d84e9065b90e64280bebd5d89e591e7c6b"
+    },
+    {
+      "signature": "() server_scene.vehicle_plate.create_island_links (server_scene.vehicle_plate, server_scene.vehicle)",
+      "signature_offset": 59061060,
+      "code_offset": 59065172,
+      "code_size": 1880,
+      "code_sha256": "bec91cb7b64bb1bc4298a3df02e17e824f3fb9715f77c238c2532dfbd14c584e"
+    },
+    {
+      "signature": "() server_scene.vehicle_plate.destroy_island_links (server_scene.vehicle_plate)",
+      "signature_offset": 59081582,
+      "code_offset": 59083958,
+      "code_size": 1168,
+      "code_sha256": "f60d4c98110457899a690676d17d4c75891425ddc5f3829b74a1dc8f93abb5f3"
+    },
+    {
+      "signature": "() vehicle_util.build_plate_adjacencies<server_scene> (server_scene.vehicle, server_scene.vehicle_plate, const ptr<server_scene.vehicle_plate>)",
+      "signature_offset": 65507158,
+      "code_offset": 65510638,
+      "code_size": 3064,
+      "code_sha256": "668ca30ee666a52089f00fb033d7fd90f951179ee6d37eabfb7baaf3b8edce14"
+    },
+    {
+      "signature": "() vehicle_util.clear_plate_adjacencies<server_scene> (server_scene.vehicle, server_scene.vehicle_plate)",
+      "signature_offset": 65562929,
+      "code_offset": 65564279,
+      "code_size": 296,
+      "code_sha256": "a5d403c40cfeb289461c3fc973b6ecaadc5fea6b5a9b0b94c64aa0bd185833da"
+    },
+    {
+      "signature": "() vehicle_util.rebuild_all_plate_adjacencies<server_scene> (server_scene.vehicle)",
+      "signature_offset": 65646454,
+      "code_offset": 65648697,
+      "code_size": 976,
+      "code_sha256": "607fc1e5c31ddc246a0e0c4db7a7a76940c71377f4f086d2501627461fe683a8"
+    },
+    {
+      "signature": "() vehicle_util.rebuild_plate_adjacencies<server_scene> (server_scene.vehicle, server_scene.vehicle_plate, const ptr<server_scene.vehicle_plate>)",
+      "signature_offset": 65650245,
+      "code_offset": 65650661,
+      "code_size": 104,
+      "code_sha256": "240ad3eab7c30604c09d2782dd956c95f15344b9adfd8f456d3689e076866b21"
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 52589302,
+      "offset": 52590394,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 52533957,
+      "offset": 52535877,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 52533957,
+      "offset": 52535881,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 52533957,
+      "offset": 52535885,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 52539235,
+      "offset": 52540651,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 52539235,
+      "offset": 52540655,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 52543833,
+      "offset": 52544513,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 52543833,
+      "offset": 52544517,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 52547798,
+      "offset": 52548734,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 52547798,
+      "offset": 52548738,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 52623865,
+      "offset": 52650321,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 52623865,
+      "offset": 52650325,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 52623865,
+      "offset": 52650329,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 65510638,
+      "offset": 65513694,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 65648697,
+      "offset": 65649665,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 65648697,
+      "offset": 65649669,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 53321058,
+      "offset": 53322546,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 53321058,
+      "offset": 53322550,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 58207708,
+      "offset": 58209644,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 59065172,
+      "offset": 59067044,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 58706337,
+      "offset": 58706621,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 53247730,
+      "offset": 53250118,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 53247730,
+      "offset": 53250122,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 53273079,
+      "offset": 53275939,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 52526963,
+      "offset": 52528475,
+      "format": "u8",
+      "bytes": "01",
+      "value": 1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 52526963,
+      "offset": 52528476,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 53212996,
+      "offset": 53213428,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 58706337,
+      "offset": 58706617,
+      "format": "u8",
+      "bytes": "01",
+      "value": 1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 58706337,
+      "offset": 58706620,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 52818004,
+      "offset": 52819356,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 52818004,
+      "offset": 52819357,
+      "format": "u8",
+      "bytes": "01",
+      "value": 1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 53247730,
+      "offset": 53250114,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 53247730,
+      "offset": 53250115,
+      "format": "u8",
+      "bytes": "01",
+      "value": 1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 53273079,
+      "offset": 53275935,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 53273079,
+      "offset": 53275936,
+      "format": "u8",
+      "bytes": "01",
+      "value": 1,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    },
+    {
+      "function_offset": 65510638,
+      "offset": 65513686,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Reviewed structural traversal/lifecycle calibration"
+    }
+  ],
+  "strings": [],
+  "call_examples": [
+    {
+      "function_offset": 52526963,
+      "instruction": 52527729,
+      "bytes": "41ff5500",
+      "slot_address": 52528523,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._flood_islands (server_scene.vehicle, server_scene.vehicle_plate, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)"
+    },
+    {
+      "function_offset": 52526963,
+      "instruction": 52528056,
+      "bytes": "41ff5500",
+      "slot_address": 52528547,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._flood_islands (server_scene.vehicle, server_scene.vehicle_edge, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)"
+    },
+    {
+      "function_offset": 52526963,
+      "instruction": 52528401,
+      "bytes": "41ff5500",
+      "slot_address": 52528571,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._flood_islands (server_scene.vehicle, server_scene.vehicle_component, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)"
+    },
+    {
+      "function_offset": 52533957,
+      "instruction": 52534542,
+      "bytes": "ff10",
+      "slot_address": 52535949,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._flood_islands_edge (server_scene.vehicle, server_scene.vehicle_edge, const s32, s32)"
+    },
+    {
+      "function_offset": 52533957,
+      "instruction": 52535149,
+      "bytes": "ff10",
+      "slot_address": 52536005,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._flood_islands_plate (server_scene.vehicle, server_scene.vehicle_plate, const s32, s32)"
+    },
+    {
+      "function_offset": 52533957,
+      "instruction": 52535795,
+      "bytes": "ff10",
+      "slot_address": 52536077,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._flood_islands_component (server_scene.vehicle, server_scene.vehicle_component, const s32, s32)"
+    },
+    {
+      "function_offset": 52550585,
+      "instruction": 52550838,
+      "bytes": "41ff13",
+      "slot_address": 52551025,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._flood_islands (server_scene.vehicle, server_scene.vehicle_component, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)"
+    },
+    {
+      "function_offset": 52550585,
+      "instruction": 52550931,
+      "bytes": "ff5500",
+      "slot_address": 52551033,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._flood_island (server_scene.vehicle, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)"
+    },
+    {
+      "function_offset": 52552544,
+      "instruction": 52552797,
+      "bytes": "41ff13",
+      "slot_address": 52552984,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._flood_islands (server_scene.vehicle, server_scene.vehicle_edge, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)"
+    },
+    {
+      "function_offset": 52552544,
+      "instruction": 52552890,
+      "bytes": "ff5500",
+      "slot_address": 52552992,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._flood_island (server_scene.vehicle, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)"
+    },
+    {
+      "function_offset": 52554491,
+      "instruction": 52554744,
+      "bytes": "41ff13",
+      "slot_address": 52554931,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._flood_islands (server_scene.vehicle, server_scene.vehicle_plate, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)"
+    },
+    {
+      "function_offset": 52554491,
+      "instruction": 52554837,
+      "bytes": "ff5500",
+      "slot_address": 52554939,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._flood_island (server_scene.vehicle, const s32, s32, vector<ptr<server_scene.vehicle_plate>>, vector<ptr<server_scene.vehicle_edge>>, vector<ptr<server_scene.vehicle_component>>)"
+    },
+    {
+      "function_offset": 52567209,
+      "instruction": 52567503,
+      "bytes": "ffd6",
+      "slot_address": 52569073,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.destroy_island_links (server_scene.vehicle_component, server_scene.vehicle)"
+    },
+    {
+      "function_offset": 52567209,
+      "instruction": 52568197,
+      "bytes": "ff17",
+      "slot_address": 52569153,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_island.id_map.set_id_mapping (server_scene.vehicle_island.id_map, const s32, const s32, const s32, const s32)"
+    },
+    {
+      "function_offset": 52567209,
+      "instruction": 52568283,
+      "bytes": "ff16",
+      "slot_address": 52569161,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_logic_node.mechanical.container.move_component_nodes (server_scene.vehicle_logic_node.mechanical.container, server_scene.vehicle_logic_node.mechanical.container, const s32, const s32)"
+    },
+    {
+      "function_offset": 52567209,
+      "instruction": 52568364,
+      "bytes": "ff16",
+      "slot_address": 52569169,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_electric_node.container.move_component_nodes (server_scene.vehicle_electric_node.container, server_scene.vehicle_electric_node.container, const server_scene.vehicle_component, const s32)"
+    },
+    {
+      "function_offset": 52567209,
+      "instruction": 52568432,
+      "bytes": "ff16",
+      "slot_address": 52569177,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_liquid_node.container.move_component_nodes (server_scene.vehicle_liquid_node.container, server_scene.vehicle_liquid_node.container, const s32, const s32)"
+    },
+    {
+      "function_offset": 52567209,
+      "instruction": 52568500,
+      "bytes": "ff16",
+      "slot_address": 52569185,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_gas_node.container.move_component_nodes (server_scene.vehicle_gas_node.container, server_scene.vehicle_gas_node.container, const s32, const s32)"
+    },
+    {
+      "function_offset": 52567209,
+      "instruction": 52568556,
+      "bytes": "ff5500",
+      "slot_address": 52569193,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_node_container.move_component_nodes (server_scene.vehicle_torque_node_container, server_scene.vehicle_torque_node_container, const server_scene.vehicle_component)"
+    },
+    {
+      "function_offset": 52567209,
+      "instruction": 52568651,
+      "bytes": "ff5500",
+      "slot_address": 52569201,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_data_node.container.move_component_nodes (server_scene.vehicle_data_node.container, server_scene.vehicle_data_node.container, const server_scene.vehicle_component, const s32)"
+    },
+    {
+      "function_offset": 52579586,
+      "instruction": 52580501,
+      "bytes": "ff12",
+      "slot_address": 52582074,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._reset_island_indices (server_scene.vehicle)"
+    },
+    {
+      "function_offset": 52579586,
+      "instruction": 52580521,
+      "bytes": "ff12",
+      "slot_address": 52582082,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._flood_islands (server_scene.vehicle)"
+    },
+    {
+      "function_offset": 52579586,
+      "instruction": 52581373,
+      "bytes": "ff13",
+      "slot_address": 52582098,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._split_islands (server_scene.vehicle, server_scene)"
+    },
+    {
+      "function_offset": 52623865,
+      "instruction": 52626580,
+      "bytes": "ff10",
+      "slot_address": 52650641,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_node>) server_scene.vehicle_island.node_map.remap_node (const server_scene.vehicle_island.node_map, const ptr<server_scene.vehicle_node>)"
+    },
+    {
+      "function_offset": 52623865,
+      "instruction": 52626620,
+      "bytes": "ff10",
+      "slot_address": 52650641,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_node>) server_scene.vehicle_island.node_map.remap_node (const server_scene.vehicle_island.node_map, const ptr<server_scene.vehicle_node>)"
+    },
+    {
+      "function_offset": 52623865,
+      "instruction": 52627724,
+      "bytes": "ff10",
+      "slot_address": 52650641,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_node>) server_scene.vehicle_island.node_map.remap_node (const server_scene.vehicle_island.node_map, const ptr<server_scene.vehicle_node>)"
+    },
+    {
+      "function_offset": 52623865,
+      "instruction": 52630229,
+      "bytes": "ffd3",
+      "slot_address": 52650977,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.remove_node (server_scene.vehicle, server_scene.vehicle_node)"
+    },
+    {
+      "function_offset": 52623865,
+      "instruction": 52630585,
+      "bytes": "ffd3",
+      "slot_address": 52651025,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.remove_edge (server_scene.vehicle, server_scene.vehicle_edge, s32, s32)"
+    },
+    {
+      "function_offset": 52623865,
+      "instruction": 52630920,
+      "bytes": "ffd3",
+      "slot_address": 52651073,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.remove_plate (server_scene.vehicle, server_scene.vehicle_plate, s32)"
+    },
+    {
+      "function_offset": 52623865,
+      "instruction": 52632157,
+      "bytes": "ff16",
+      "slot_address": 52651225,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._move_component_to_vehicle (server_scene, server_scene.vehicle, server_scene.vehicle, server_scene.vehicle_component, server_scene.vehicle_island.id_map, vector<ptr<server_scene.vehicle_component>>)"
+    },
+    {
+      "function_offset": 52623865,
+      "instruction": 52644997,
+      "bytes": "ffd0",
+      "slot_address": 52651689,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.remap_ids (server_scene.vehicle_component, server_scene, const server_scene.vehicle_island.id_map)"
+    },
+    {
+      "function_offset": 52623865,
+      "instruction": 52649754,
+      "bytes": "ffd2",
+      "slot_address": 52651905,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle._rebuild_physics_motion_state (server_scene.vehicle)"
+    },
+    {
+      "function_offset": 52623865,
+      "instruction": 52650082,
+      "bytes": "ffd0",
+      "slot_address": 52651905,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle._rebuild_physics_motion_state (server_scene.vehicle)"
+    },
+    {
+      "function_offset": 52623865,
+      "instruction": 52650138,
+      "bytes": "ffd0",
+      "slot_address": 52651921,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.post_load (server_scene.vehicle, server_scene)"
+    },
+    {
+      "function_offset": 52623865,
+      "instruction": 52650210,
+      "bytes": "ff10",
+      "slot_address": 52651929,
+      "kind": 4,
+      "symbol": "() dtor (server_scene.vehicle_island.id_map)"
+    },
+    {
+      "function_offset": 52623865,
+      "instruction": 52650227,
+      "bytes": "ff10",
+      "slot_address": 52651937,
+      "kind": 4,
+      "symbol": "() dtor (server_scene.vehicle_island.node_map)"
+    },
+    {
+      "function_offset": 52820514,
+      "instruction": 52820541,
+      "bytes": "ff10",
+      "slot_address": 52820554,
+      "kind": 4,
+      "symbol": "() vehicle_util.clear_plate_adjacencies<server_scene> (server_scene.vehicle, server_scene.vehicle_plate)"
+    },
+    {
+      "function_offset": 53212996,
+      "instruction": 53213387,
+      "bytes": "ffd0",
+      "slot_address": 53213492,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_grid.post_load (server_scene.vehicle_grid, server_scene)"
+    },
+    {
+      "function_offset": 53235734,
+      "instruction": 53235769,
+      "bytes": "ff10",
+      "slot_address": 53235782,
+      "kind": 4,
+      "symbol": "() vehicle_util.rebuild_plate_adjacencies<server_scene> (server_scene.vehicle, server_scene.vehicle_plate, const ptr<server_scene.vehicle_plate>)"
+    },
+    {
+      "function_offset": 53247730,
+      "instruction": 53249645,
+      "bytes": "ffd5",
+      "slot_address": 53250322,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.remove_node (server_scene.vehicle, server_scene.vehicle_node)"
+    },
+    {
+      "function_offset": 53247730,
+      "instruction": 53249878,
+      "bytes": "ffd5",
+      "slot_address": 53250322,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.remove_node (server_scene.vehicle, server_scene.vehicle_node)"
+    },
+    {
+      "function_offset": 53247730,
+      "instruction": 53250024,
+      "bytes": "ffd2",
+      "slot_address": 53250338,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.set_flag_rebuild_physics (server_scene.vehicle)"
+    },
+    {
+      "function_offset": 53273079,
+      "instruction": 53275369,
+      "bytes": "ff5500",
+      "slot_address": 53276247,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle.clear_plate_adjacencies (server_scene.vehicle, server_scene.vehicle_plate)"
+    },
+    {
+      "function_offset": 53273079,
+      "instruction": 53275715,
+      "bytes": "ff5500",
+      "slot_address": 53276263,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle.rebuild_plate_adjacencies (server_scene.vehicle, server_scene.vehicle_plate, const ptr<server_scene.vehicle_plate>)"
+    },
+    {
+      "function_offset": 53273079,
+      "instruction": 53275793,
+      "bytes": "ffd2",
+      "slot_address": 53276271,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.set_flag_rebuild_physics (server_scene.vehicle)"
+    },
+    {
+      "function_offset": 53321058,
+      "instruction": 53321374,
+      "bytes": "ff5500",
+      "slot_address": 53322578,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle._rebuild_islands (server_scene.vehicle, server_scene, const bool)"
+    },
+    {
+      "function_offset": 53321058,
+      "instruction": 53321535,
+      "bytes": "ffd2",
+      "slot_address": 53322602,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle._rebuild_physics_motion_state (server_scene.vehicle)"
+    },
+    {
+      "function_offset": 53321058,
+      "instruction": 53321601,
+      "bytes": "ffd5",
+      "slot_address": 53322610,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle._rebuild_physics (server_scene.vehicle, physics.scene, server_scene.environment_tile_container)"
+    },
+    {
+      "function_offset": 54223153,
+      "instruction": 54223617,
+      "bytes": "41ff12",
+      "slot_address": 54225049,
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle.test_component_attaches_to_vehicle (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const ptr<vehicle_util.attach_component_hit_data>)"
+    },
+    {
+      "function_offset": 58207708,
+      "instruction": 58209477,
+      "bytes": "ffd0",
+      "slot_address": 58209796,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.destroy_island_links (server_scene.vehicle_component, server_scene.vehicle)"
+    },
+    {
+      "function_offset": 58207708,
+      "instruction": 58209530,
+      "bytes": "ffd0",
+      "slot_address": 58209804,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.create_island_links (server_scene.vehicle_component, server_scene.vehicle)"
+    },
+    {
+      "function_offset": 58706337,
+      "instruction": 58706400,
+      "bytes": "ff13",
+      "slot_address": 58706625,
+      "kind": 4,
+      "symbol": "() ctor (server_scene.vehicle_island.id_map.data)"
+    },
+    {
+      "function_offset": 58706337,
+      "instruction": 58706464,
+      "bytes": "ff13",
+      "slot_address": 58706633,
+      "kind": 4,
+      "symbol": "(ptr<server_scene.vehicle_island.id_map.data>) operator_aa (const map<server_scene.vehicle_island.id_map.data, server_scene.vehicle_island.id_map.data>, const server_scene.vehicle_island.id_map.data)"
+    },
+    {
+      "function_offset": 58706337,
+      "instruction": 58706539,
+      "bytes": "ff10",
+      "slot_address": 58706641,
+      "kind": 4,
+      "symbol": "() dtor (server_scene.vehicle_island.id_map.data)"
+    },
+    {
+      "function_offset": 58706337,
+      "instruction": 58706599,
+      "bytes": "ff10",
+      "slot_address": 58706641,
+      "kind": 4,
+      "symbol": "() dtor (server_scene.vehicle_island.id_map.data)"
+    },
+    {
+      "function_offset": 59065172,
+      "instruction": 59066876,
+      "bytes": "ffd0",
+      "slot_address": 59067284,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.destroy_island_links (server_scene.vehicle_component, server_scene.vehicle)"
+    },
+    {
+      "function_offset": 59065172,
+      "instruction": 59066929,
+      "bytes": "ffd0",
+      "slot_address": 59067292,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.create_island_links (server_scene.vehicle_component, server_scene.vehicle)"
+    },
+    {
+      "function_offset": 65510638,
+      "instruction": 65513631,
+      "bytes": "ff17",
+      "slot_address": 65513862,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle.set_plate_adjacent (server_scene.vehicle, server_scene.vehicle_plate, const s32, server_scene.vehicle_plate, const s32)"
+    },
+    {
+      "function_offset": 65648697,
+      "instruction": 65649614,
+      "bytes": "ff13",
+      "slot_address": 65649761,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle.build_plate_adjacencies (server_scene.vehicle, server_scene.vehicle_plate, const ptr<server_scene.vehicle_plate>)"
+    },
+    {
+      "function_offset": 65650661,
+      "instruction": 65650716,
+      "bytes": "ff5500",
+      "slot_address": 65650765,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle.clear_plate_adjacencies (server_scene.vehicle, server_scene.vehicle_plate)"
+    },
+    {
+      "function_offset": 65650661,
+      "instruction": 65650750,
+      "bytes": "ff10",
+      "slot_address": 65650773,
+      "kind": 4,
+      "symbol": "() server_scene.vehicle.build_plate_adjacencies (server_scene.vehicle, server_scene.vehicle_plate, const ptr<server_scene.vehicle_plate>)"
+    }
+  ],
+  "limits": "Selected structural traversal/removal/split/update evidence. Complete contact predicates, rendering, malformed saves, load/replication and native solver contracts remain open."
+}

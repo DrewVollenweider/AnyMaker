@@ -1,5 +1,7 @@
 # Whole-game research
 
+Active priority, October 21: **systems for making vehicles**. [Structural connectivity, splitting and update lifecycle](VEHICLE-STRUCTURE-20261021.md) follows reciprocal attachment, object-count-based body retention, service-link remapping and deferred physics cleanup. Continue attachment/plates/edges/save integrity before powertrain, fluids, electrical, controls, suspension, flight and marine systems. Combat/projectile/AI work is parked at low priority. Reader: 1,440 functions/201,934 checked instructions/1,141,198 bytes; access coverage is not semantic completion.
+
 Latest continuation: [character combat, smoke and hordes](COMBAT-SMOKE-HORDES-20261020.md). Includes equipment/timing, shared weapon entry points, smoke emitters/lifetime and a native ray/sphere binding, plus horde creation/flocking/cleanup. Reader: 1,275 functions/184,600 checked instructions/1,042,178 bytes. Complete variants, projectile/armour physics, AI states and every other open register area remain in scope.
 
 Latest continuation: [creatures, sensing and ambient spawning](CREATURES-SENSING-SPAWN-20261020.md). Includes selected records for all 40 creature definitions, actor/vehicle sensing differences, sight filters, timing and ambient placement/despawn gates. Reader: 1,228 functions/176,005 checked instructions/996,711 bytes; 159 tests pass. Complete AI/combat/navigation and every other open register area remain in scope.
