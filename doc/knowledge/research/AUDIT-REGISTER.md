@@ -1,5 +1,7 @@
 # Full-game audit register
 
+Latest selected vehicle findings: [plate placement/strips/native angles](PLATE-PLACEMENT-20261021.md). Both placement utility branches, turn-consistency limits, shared ordered-edge conflicts, frame suitability and perimeter variants are traced. Two native vec3 angle bindings have selected registration/body evidence; complete loader ABI and exceptional inputs remain open. Continue vehicle systems; combat/projectiles/AI remain parked.
+
 Latest selected vehicle findings: [plate surfaces/clipping/collision inputs](PLATE-SURFACES-20261021.md). Solid triangle fans, ordered clipping/coordinate interpolation, orientation-dependent plane construction and server convex-hull input offsets have selected source evidence. Native hull/contact margins and full placement/perimeter contracts remain open. Continue vehicle engineering; combat/projectiles/AI remain low priority.
 
 Latest selected vehicle findings: [plate creation/load/render lifecycle](PLATE-LOAD-20261021.md). Plate boundary creation, facing fallback, fresh-load edge deduplication, first-edge sizing, paint remapping and selected client rebuild/buffer paths are traced. A read-only reconstruction audit and five scoped archive checks supplement the earlier mounting tools. No historical rejected build or complete loader/render path is promoted to accepted. Vehicle systems remain the priority.

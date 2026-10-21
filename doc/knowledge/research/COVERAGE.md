@@ -1,5 +1,7 @@
 # Coverage and gaps
 
+Latest vehicle continuation: [plate placement/strips/native angles](PLATE-PLACEMENT-20261021.md). Evidence: 23 GCL identities/49 constants/27 calls, four native spans/276 instructions/1,345 bytes, two selected native bindings. Reader: 1,530 functions/229,223 instructions/1,301,220 independently summed bytes. The turn-consistency helper is not a complete coplanarity/simple-polygon validator. Complete caller/authority/adjacency and body physics remain open; 204 tests pass.
+
 Latest vehicle continuation: [plate surfaces/clipping/collision inputs](PLATE-SURFACES-20261021.md). Selected evidence: 17 functions/23 constants/one string/50 calls, two reflected types/six fields. Reader access: 1,507 functions/220,625 instructions/1,248,373 bytes. Native convex hulls/margins, full valid placement, outer strip helpers and other vehicle domains remain open. New geometry models are scoped; 193 tests pass.
 
 Latest vehicle continuation: [plate creation/load/render lifecycle](PLATE-LOAD-20261021.md). Reader access: 1,492 functions/215,549 instructions/1,217,324 independently summed bytes. Selected evidence: 32 functions/18 constants/14 strings/164 calls and seven reflected types/92 fields. Ten new reconstruction tests; full suite 181. Five archive audits are scoped reference/geometry checks, not complete loader/render acceptance. Valid placement rules, clipping/collision, full invalidation and all other vehicle domains remain open.

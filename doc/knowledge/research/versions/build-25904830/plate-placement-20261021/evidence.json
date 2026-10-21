@@ -1,0 +1,781 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "() G_VEHICLE_PLATE_WINDOW_FRAME_WIDTH.$ctor ()",
+      "signature_offset": 276125,
+      "code_offset": 276233,
+      "code_size": 32,
+      "code_sha256": "c030362aa2cabf7445fda8dacbd38ecc17ceae67c9d27fd4be9e2a8a3da2a6d6"
+    },
+    {
+      "signature": "() G_VEHICLE_PLATE_WINDOW_INSET.$ctor ()",
+      "signature_offset": 276589,
+      "code_offset": 276712,
+      "code_size": 40,
+      "code_sha256": "e585c432385378780c473c420e52e57b2b6cf57fd6345c5dee98e6bf7715cade"
+    },
+    {
+      "signature": "(bool) client_scene.vehicle.can_add_plate (const client_scene.vehicle, const vector<s32>, const bool, const vehicle_plate_util.e_plate_type, const ptr<vehicle_util.blocking_hit_data>)",
+      "signature_offset": 15732066,
+      "code_offset": 15732514,
+      "code_size": 128,
+      "code_sha256": "dff70ad3c594f3d671e6de2e2cd5b5c1321ff6e52ec7f0e416037db5ed7324b2"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle.can_add_plate (const server_scene.vehicle, const vector<s32>, const bool, const vehicle_plate_util.e_plate_type, const ptr<vehicle_util.blocking_hit_data>)",
+      "signature_offset": 52801638,
+      "code_offset": 52802086,
+      "code_size": 128,
+      "code_sha256": "dff70ad3c594f3d671e6de2e2cd5b5c1321ff6e52ec7f0e416037db5ed7324b2"
+    },
+    {
+      "signature": "(vec3) server_scene.vehicle_node.get_pos (const server_scene.vehicle_node)",
+      "signature_offset": 58913664,
+      "code_offset": 58914066,
+      "code_size": 248,
+      "code_sha256": "eaa387f2c7e4195eddfd9f844c89fd882270c95ceb0e4cba2a48b260a550476f"
+    },
+    {
+      "signature": "() vehicle_plate_util.add_geometry_outer_1_axis (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const s32, vehicle_plates_edges_builder)",
+      "signature_offset": 63345168,
+      "code_offset": 63347330,
+      "code_size": 9528,
+      "code_sha256": "e35d86eeae0c0c1b383368255e8f63fcf1701f964a889ea015d4bad5a0c5600a"
+    },
+    {
+      "signature": "() vehicle_plate_util.add_geometry_outer_2_axis (const vector<vec3_s32>, const vec3, const vec3, const vec3, const vec3, const s32, const vec3_s32, const s32, vehicle_plates_edges_builder)",
+      "signature_offset": 63359707,
+      "code_offset": 63360918,
+      "code_size": 5168,
+      "code_sha256": "29dab81eb3548de52b939506bd312ed8c237bb4402502d83b12294eb1315a14f"
+    },
+    {
+      "signature": "(vec3) vehicle_plate_util.geometry._get_ray_plane_intersection (const vec3, const vec3, const vec3, const vec3)",
+      "signature_offset": 63390241,
+      "code_offset": 63390690,
+      "code_size": 656,
+      "code_sha256": "52d118352a5fb05a4a93769c0c5a023a0dac66a499735a6ba8e4ef669ae45b35"
+    },
+    {
+      "signature": "(vec3) vehicle_plate_util.geometry.get_edge_inner_line_pos_1_axis (const vec3, const vec3, const vec3, const vec3)",
+      "signature_offset": 63391797,
+      "code_offset": 63392243,
+      "code_size": 1736,
+      "code_sha256": "1d23540a29c6813c0371c52eda86a92be83f2996900f1b4fda1ca8b5dfa1f7be"
+    },
+    {
+      "signature": "(vec3) vehicle_plate_util.geometry.get_edge_line_inner_intersection_1_axis (const vec3, const vec3, const vec3, const vec3, const vec3, const vec3)",
+      "signature_offset": 63394465,
+      "code_offset": 63395253,
+      "code_size": 1912,
+      "code_sha256": "80b301f994aa8b6074f3db0ff04b2febc0c5f5e0bf34ce0a4c912a39c86827bc"
+    },
+    {
+      "signature": "(vec3) vehicle_plate_util.geometry.get_edge_line_outer_intersection_1_axis (const vec3, const vec3, const vec3, const vec3, const vec3, const vec3)",
+      "signature_offset": 63397950,
+      "code_offset": 63398738,
+      "code_size": 1912,
+      "code_sha256": "80b301f994aa8b6074f3db0ff04b2febc0c5f5e0bf34ce0a4c912a39c86827bc"
+    },
+    {
+      "signature": "(vec3) vehicle_plate_util.geometry.get_edge_outer_line_pos_1_axis (const vec3, const vec3, const vec3, const vec3)",
+      "signature_offset": 63401435,
+      "code_offset": 63401881,
+      "code_size": 1976,
+      "code_sha256": "49f89a87cd0b5839ea184648d74b2f749be06242b9d0be1d2f251a1079eb5f75"
+    },
+    {
+      "signature": "(bool) vehicle_plate_util.get_is_suitable_for_opening (const vec3_s32, const vec3, const s32, const vector<vec3_s32>)",
+      "signature_offset": 63405278,
+      "code_offset": 63405539,
+      "code_size": 80,
+      "code_sha256": "bfedccbe21f7d8f6803d9f28cb35218cd5506787be69a4de0486ef254678503a"
+    },
+    {
+      "signature": "(bool) vehicle_plate_util.get_is_suitable_for_window (const vec3_s32, const vec3, const s32, const vector<vec3_s32>)",
+      "signature_offset": 63405867,
+      "code_offset": 63407965,
+      "code_size": 10624,
+      "code_sha256": "2169aa71a63103c6a2ac477f0b660d68504c48b5f8c901f19195e92634f4b631"
+    },
+    {
+      "signature": "(bool) vehicle_plate_util.test_plate_intersect_aab (const vec3_s32, const vec3, const vector<vec3_s32>, const s32, const collision.aab)",
+      "signature_offset": 63467758,
+      "code_offset": 63468194,
+      "code_size": 296,
+      "code_sha256": "36d6905d16bf304e7705061df69cbdb96aad3101b43936cd87f4bdce7d86449b"
+    },
+    {
+      "signature": "(bool) vehicle_plate_util.test_plate_intersect_ob (const vec3_s32, const vec3, const vector<vec3_s32>, const s32, const collision.ob)",
+      "signature_offset": 63468823,
+      "code_offset": 63469817,
+      "code_size": 3136,
+      "code_sha256": "c3e742471fc2444846c35818ffa93fc069cc02645939740a1c3e9ccb0dd83904"
+    },
+    {
+      "signature": "() vehicle_util.clip_convex_shape_to_plane (const vector<vec3>, const collision.plane, const bool, vector<vec3>)",
+      "signature_offset": 63548417,
+      "code_offset": 63548966,
+      "code_size": 1352,
+      "code_sha256": "1292d0e0fb3cca8961d4cf896c583058b671e84accbdb15c9df55624fd6fdbdb"
+    },
+    {
+      "signature": "() vehicle_util.clip_convex_shape_to_planes (const vector<vec3>, const vector<collision.plane>, const bool, vector<vec3>)",
+      "signature_offset": 63551185,
+      "code_offset": 63552366,
+      "code_size": 808,
+      "code_sha256": "41d299719ac180a04f730c1bd574dd079374cd9aefdb9be88f8a5389b02e6263"
+    },
+    {
+      "signature": "(bool) vehicle_util.test_is_convex (const vector<vec3_s32>, const vec3)",
+      "signature_offset": 63697097,
+      "code_offset": 63697773,
+      "code_size": 2856,
+      "code_sha256": "4c96896ee90b5fb9fccbdb4da042dd546866e9a56865608fbfbe5dfacfb83dcc"
+    },
+    {
+      "signature": "(bool) vehicle_util.can_add_plate_node_ids<client_scene> (const client_scene.vehicle, const vector<s32>, const bool, const vehicle_plate_util.e_plate_type, const ptr<client_scene.vehicle_plate>, const ptr<vehicle_util.blocking_hit_data>)",
+      "signature_offset": 64050468,
+      "code_offset": 64051517,
+      "code_size": 840,
+      "code_sha256": "73b95786895aa26a3e1fcba62d73068af0fa82524e2f021bea0e4f5209136919"
+    },
+    {
+      "signature": "(bool) vehicle_util.can_add_plate<client_scene> (const client_scene.vehicle, const vector<vec3_s32>, const vehicle_plate_util.e_plate_type, const ptr<const client_scene.vehicle_plate>, const ptr<vehicle_util.blocking_hit_data>)",
+      "signature_offset": 64053088,
+      "code_offset": 64058882,
+      "code_size": 4504,
+      "code_sha256": "ca17471abe5a1212a68453a9771bd60754e3d56ae4c1a9d8f179b2192479af86"
+    },
+    {
+      "signature": "(bool) vehicle_util.can_add_plate_node_ids<server_scene> (const server_scene.vehicle, const vector<s32>, const bool, const vehicle_plate_util.e_plate_type, const ptr<server_scene.vehicle_plate>, const ptr<vehicle_util.blocking_hit_data>)",
+      "signature_offset": 65541620,
+      "code_offset": 65542671,
+      "code_size": 840,
+      "code_sha256": "781327b5c134aab583501b2580525015101e896c42b0a1cc25f7fb56af58441d"
+    },
+    {
+      "signature": "(bool) vehicle_util.can_add_plate<server_scene> (const server_scene.vehicle, const vector<vec3_s32>, const vehicle_plate_util.e_plate_type, const ptr<const server_scene.vehicle_plate>, const ptr<vehicle_util.blocking_hit_data>)",
+      "signature_offset": 65544242,
+      "code_offset": 65550238,
+      "code_size": 4456,
+      "code_sha256": "7120d42cb9e2c0a66a95094186310159904ead19876d44fead0d1566d2d96a6e"
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 65550238,
+      "offset": 65554678,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 65550238,
+      "offset": 65554682,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 65550238,
+      "offset": 65554686,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 65550238,
+      "offset": 65554690,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 64058882,
+      "offset": 64063370,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 64058882,
+      "offset": 64063374,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 64058882,
+      "offset": 64063378,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 64058882,
+      "offset": 64063382,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 65542671,
+      "offset": 65543503,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 65542671,
+      "offset": 65543507,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 64051517,
+      "offset": 64052349,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 64051517,
+      "offset": 64052353,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63697773,
+      "offset": 63700589,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63697773,
+      "offset": 63700593,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63697773,
+      "offset": 63700621,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63697773,
+      "offset": 63700625,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63347330,
+      "offset": 63356818,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63347330,
+      "offset": 63356822,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63347330,
+      "offset": 63356842,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63347330,
+      "offset": 63356846,
+      "format": "s32",
+      "bytes": "04000000",
+      "value": 4,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63347330,
+      "offset": 63356850,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63360918,
+      "offset": 63366046,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63360918,
+      "offset": 63366050,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63407965,
+      "offset": 63418541,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63407965,
+      "offset": 63418545,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63407965,
+      "offset": 63418557,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63697773,
+      "offset": 63700597,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63697773,
+      "offset": 63700605,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63697773,
+      "offset": 63700613,
+      "format": "f64",
+      "bytes": "ae47e17a14aeef3f",
+      "value": 0.99,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 276233,
+      "offset": 276257,
+      "format": "f64",
+      "bytes": "7b14ae47e17a843f",
+      "value": 0.01,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 276712,
+      "offset": 276744,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63347330,
+      "offset": 63356826,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63347330,
+      "offset": 63356834,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63360918,
+      "offset": 63366054,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63360918,
+      "offset": 63366062,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63360918,
+      "offset": 63366070,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63360918,
+      "offset": 63366078,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63392243,
+      "offset": 63393963,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63392243,
+      "offset": 63393971,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63401881,
+      "offset": 63403849,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63395253,
+      "offset": 63397157,
+      "format": "f64",
+      "bytes": "1d774a07ebffef3f",
+      "value": 0.99999,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63398738,
+      "offset": 63400642,
+      "format": "f64",
+      "bytes": "1d774a07ebffef3f",
+      "value": 0.99999,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63390690,
+      "offset": 63391338,
+      "format": "f64",
+      "bytes": "2d431cebe2361a3f",
+      "value": 0.0001,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63548966,
+      "offset": 63550302,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63548966,
+      "offset": 63550310,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63407965,
+      "offset": 63418549,
+      "format": "f64",
+      "bytes": "48afbc9af2d77a3e",
+      "value": 1e-07,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63407965,
+      "offset": 63418565,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63407965,
+      "offset": 63418573,
+      "format": "f64",
+      "bytes": "0000000000000040",
+      "value": 2.0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    },
+    {
+      "function_offset": 63407965,
+      "offset": 63418581,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed placement/perimeter/window calibration"
+    }
+  ],
+  "strings": [],
+  "call_examples": [
+    {
+      "function_offset": 15732514,
+      "instruction": 15732614,
+      "bytes": "ff16",
+      "slot_address": 15732642,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.can_add_plate_node_ids<client_scene> (const client_scene.vehicle, const vector<s32>, const bool, const vehicle_plate_util.e_plate_type, const ptr<client_scene.vehicle_plate>, const ptr<vehicle_util.blocking_hit_data>)"
+    },
+    {
+      "function_offset": 52802086,
+      "instruction": 52802186,
+      "bytes": "ff16",
+      "slot_address": 52802214,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.can_add_plate_node_ids<server_scene> (const server_scene.vehicle, const vector<s32>, const bool, const vehicle_plate_util.e_plate_type, const ptr<server_scene.vehicle_plate>, const ptr<vehicle_util.blocking_hit_data>)"
+    },
+    {
+      "function_offset": 63347330,
+      "instruction": 63355095,
+      "bytes": "ff5500",
+      "slot_address": 63357082,
+      "kind": 4,
+      "symbol": "() vehicle_util.clip_convex_shape_to_planes (const vector<vec3>, const vector<collision.plane>, const bool, vector<vec3>)"
+    },
+    {
+      "function_offset": 63347330,
+      "instruction": 63355623,
+      "bytes": "41ff17",
+      "slot_address": 63357098,
+      "kind": 4,
+      "symbol": "() vehicle_plates_edges_builder.add_plate_triangle (vehicle_plates_edges_builder, const vec3, const vec3, const vec3, const vec3, const s32)"
+    },
+    {
+      "function_offset": 63347330,
+      "instruction": 63356035,
+      "bytes": "41ff12",
+      "slot_address": 63357098,
+      "kind": 4,
+      "symbol": "() vehicle_plates_edges_builder.add_plate_triangle (vehicle_plates_edges_builder, const vec3, const vec3, const vec3, const vec3, const s32)"
+    },
+    {
+      "function_offset": 63360918,
+      "instruction": 63364349,
+      "bytes": "41ff5500",
+      "slot_address": 63366230,
+      "kind": 4,
+      "symbol": "() vehicle_plates_edges_builder.add_plate_triangle (vehicle_plates_edges_builder, const vec3, const vec3, const vec3, const vec3, const s32)"
+    },
+    {
+      "function_offset": 63360918,
+      "instruction": 63364732,
+      "bytes": "41ff13",
+      "slot_address": 63366230,
+      "kind": 4,
+      "symbol": "() vehicle_plates_edges_builder.add_plate_triangle (vehicle_plates_edges_builder, const vec3, const vec3, const vec3, const vec3, const s32)"
+    },
+    {
+      "function_offset": 63360918,
+      "instruction": 63364987,
+      "bytes": "41ff5500",
+      "slot_address": 63366230,
+      "kind": 4,
+      "symbol": "() vehicle_plates_edges_builder.add_plate_triangle (vehicle_plates_edges_builder, const vec3, const vec3, const vec3, const vec3, const s32)"
+    },
+    {
+      "function_offset": 63360918,
+      "instruction": 63365400,
+      "bytes": "41ff13",
+      "slot_address": 63366230,
+      "kind": 4,
+      "symbol": "() vehicle_plates_edges_builder.add_plate_triangle (vehicle_plates_edges_builder, const vec3, const vec3, const vec3, const vec3, const s32)"
+    },
+    {
+      "function_offset": 63405539,
+      "instruction": 63405604,
+      "bytes": "ff13",
+      "slot_address": 63405619,
+      "kind": 4,
+      "symbol": "(bool) vehicle_plate_util.get_is_suitable_for_window (const vec3_s32, const vec3, const s32, const vector<vec3_s32>)"
+    },
+    {
+      "function_offset": 63407965,
+      "instruction": 63408127,
+      "bytes": "ff13",
+      "slot_address": 63418597,
+      "kind": 4,
+      "symbol": "(vec3) vehicle_plate_util.get_plate_node_surface_offset (const vec3_s32, const vec3, const s32)"
+    },
+    {
+      "function_offset": 63407965,
+      "instruction": 63408678,
+      "bytes": "ff13",
+      "slot_address": 63418645,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_vectors_same_direction_s32 (const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 63469817,
+      "instruction": 63470001,
+      "bytes": "ff13",
+      "slot_address": 63472961,
+      "kind": 4,
+      "symbol": "(vec3) vehicle_plate_util.get_plate_node_surface_offset (const vec3_s32, const vec3, const s32)"
+    },
+    {
+      "function_offset": 63552366,
+      "instruction": 63553084,
+      "bytes": "ff5500",
+      "slot_address": 63553270,
+      "kind": 4,
+      "symbol": "() vehicle_util.clip_convex_shape_to_plane (const vector<vec3>, const collision.plane, const bool, vector<vec3>)"
+    },
+    {
+      "function_offset": 63697773,
+      "instruction": 63699833,
+      "bytes": "ff13",
+      "slot_address": 63700717,
+      "kind": 4,
+      "symbol": "(f64) vec3.get_angle (const vec3, const vec3, const vec3, const vec3)"
+    },
+    {
+      "function_offset": 64051517,
+      "instruction": 64052311,
+      "bytes": "ff5500",
+      "slot_address": 64052421,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.can_add_plate<client_scene> (const client_scene.vehicle, const vector<vec3_s32>, const vehicle_plate_util.e_plate_type, const ptr<const client_scene.vehicle_plate>, const ptr<vehicle_util.blocking_hit_data>)"
+    },
+    {
+      "function_offset": 64058882,
+      "instruction": 64060495,
+      "bytes": "ff13",
+      "slot_address": 64063530,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_is_convex (const vector<vec3_s32>, const vec3)"
+    },
+    {
+      "function_offset": 64058882,
+      "instruction": 64060725,
+      "bytes": "ff5500",
+      "slot_address": 64063546,
+      "kind": 4,
+      "symbol": "(bool) vehicle_plate_util.get_is_suitable_for_window (const vec3_s32, const vec3, const s32, const vector<vec3_s32>)"
+    },
+    {
+      "function_offset": 64058882,
+      "instruction": 64060953,
+      "bytes": "ff5500",
+      "slot_address": 64063554,
+      "kind": 4,
+      "symbol": "(bool) vehicle_plate_util.get_is_suitable_for_opening (const vec3_s32, const vec3, const s32, const vector<vec3_s32>)"
+    },
+    {
+      "function_offset": 64058882,
+      "instruction": 64061433,
+      "bytes": "ff10",
+      "slot_address": 64063602,
+      "kind": 4,
+      "symbol": "(bool) vehicle_plate_util.get_is_physics_plate (const vehicle_plate_util.e_plate_type)"
+    },
+    {
+      "function_offset": 64058882,
+      "instruction": 64061655,
+      "bytes": "ff10",
+      "slot_address": 64063618,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_vectors_same_direction_s32 (const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 65542671,
+      "instruction": 65543465,
+      "bytes": "ff5500",
+      "slot_address": 65543575,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.can_add_plate<server_scene> (const server_scene.vehicle, const vector<vec3_s32>, const vehicle_plate_util.e_plate_type, const ptr<const server_scene.vehicle_plate>, const ptr<vehicle_util.blocking_hit_data>)"
+    },
+    {
+      "function_offset": 65550238,
+      "instruction": 65551857,
+      "bytes": "ff13",
+      "slot_address": 65554838,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_is_convex (const vector<vec3_s32>, const vec3)"
+    },
+    {
+      "function_offset": 65550238,
+      "instruction": 65552071,
+      "bytes": "ff5500",
+      "slot_address": 65554854,
+      "kind": 4,
+      "symbol": "(bool) vehicle_plate_util.get_is_suitable_for_window (const vec3_s32, const vec3, const s32, const vector<vec3_s32>)"
+    },
+    {
+      "function_offset": 65550238,
+      "instruction": 65552283,
+      "bytes": "ff5500",
+      "slot_address": 65554862,
+      "kind": 4,
+      "symbol": "(bool) vehicle_plate_util.get_is_suitable_for_opening (const vec3_s32, const vec3, const s32, const vector<vec3_s32>)"
+    },
+    {
+      "function_offset": 65550238,
+      "instruction": 65552755,
+      "bytes": "ff10",
+      "slot_address": 65554910,
+      "kind": 4,
+      "symbol": "(bool) vehicle_plate_util.get_is_physics_plate (const vehicle_plate_util.e_plate_type)"
+    },
+    {
+      "function_offset": 65550238,
+      "instruction": 65552975,
+      "bytes": "ff10",
+      "slot_address": 65554926,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_vectors_same_direction_s32 (const vec3_s32, const vec3_s32)"
+    }
+  ],
+  "limits": "Selected exact identities/calibrations; complete mutation/authority/native collision and geometric validity remain open."
+}

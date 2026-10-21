@@ -1,5 +1,7 @@
 # Whole-game research
 
+Latest vehicle research: [plate placement, perimeter strips and native angles](PLATE-PLACEMENT-20261021.md). Traced both placement predicates, signed-turn limits, window/opening suitability and orientation-specific strips; followed selected native vec3 angles through registration and their mathematical callee. Reader: 1,530 functions/229,223 instructions/1,301,220 bytes. All 204 research-tool tests pass. Full audit remains active and incomplete; vehicles are the priority.
+
 Latest vehicle research: [plate surfaces, clipping and collision inputs](PLATE-SURFACES-20261021.md). Traced solid-face winding, orientation-dependent clipping planes, parallel-coordinate interpolation and distinct server hull inputs. Reader: 1,507 functions/220,625 instructions/1,248,373 independently summed bytes. Twelve new helper tests; all 193 research tests pass. Vehicle-first full audit remains active and incomplete.
 
 Latest vehicle research: [plate creation, native reconstruction and mesh replacement](PLATE-LOAD-20261021.md). Traced boundary-edge gates, facing fallback, saved-size reconstruction, paint ID remapping and client buffer replacement. Added a read-only plate audit; all 181 research tests pass. Five archived samples have zero findings within the new checks, including the rejected helicopter; this is not game acceptance. Reader: 1,492 functions/215,549 instructions/1,217,324 bytes. Vehicle-first priority and the incomplete full audit persist.

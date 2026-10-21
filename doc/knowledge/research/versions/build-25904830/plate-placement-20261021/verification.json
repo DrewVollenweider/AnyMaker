@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "date": "2026-10-21",
+  "source_check": {
+    "schema": 1,
+    "date": "2026-10-20",
+    "installed_buildid": "25904830",
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "definition_files_checked": 2968,
+    "definition_file_mismatches": [],
+    "rechecked_for": "plate-placement-20261021"
+  },
+  "pe_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+  "selected_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "d50e9288592c2f2ef55dfcd3b042433e4d61242247104796249a0b4e7f3e855d",
+    "function_records_checked": 23,
+    "constants_checked": 49,
+    "strings_checked": 0,
+    "call_instruction_examples_checked": 27,
+    "limitations": "Exact static identities/bytes only; virtual target binding and prose semantics are not proven by this checker."
+  },
+  "native_export_checks": [
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 2,
+      "instructions_byte_checked": 115,
+      "instruction_bytes_checked": 529,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 1,
+      "instructions_byte_checked": 30,
+      "instruction_bytes_checked": 146,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 1,
+      "instructions_byte_checked": 131,
+      "instruction_bytes_checked": 670,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    }
+  ],
+  "native_registration_instruction_examples": 30,
+  "native_scalars_checked": 9,
+  "native_strings_checked": 1,
+  "reader_counts": {
+    "functions": 1530,
+    "identical_exports_deduplicated": 6,
+    "instructions_byte_checked": 229223,
+    "slot_derived_calls": 11274,
+    "unresolved_calls": 8998
+  },
+  "reader_instruction_bytes": 1301220,
+  "selected_counts": {
+    "function_identities": 23,
+    "constants": 49,
+    "calls": 27,
+    "native_spans": 4,
+    "native_instructions": 276,
+    "native_bytes": 1345,
+    "native_bindings": 2,
+    "native_registration_examples": 30,
+    "native_scalars": 9,
+    "native_strings": 1
+  },
+  "research_tool_tests_passed": 204,
+  "tests_rerun_this_checkpoint": true,
+  "test_log_sha256": "e3128bb73c6f80acef46a4a31298cbc9d7e1097d12cbf42553b12b653ca9b074",
+  "game_executed": false,
+  "installation_and_active_saves_edited": false,
+  "limits": "Selected placement/perimeter and native-angle contracts; no whole-game semantics, full geometric validity, loader/authority/native physics completion or new game acceptance."
+}
