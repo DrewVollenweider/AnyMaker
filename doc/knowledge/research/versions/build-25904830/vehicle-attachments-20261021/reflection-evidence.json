@@ -1,0 +1,259 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "table": {
+    "offset": 66399263,
+    "end": 82528301,
+    "records": 8084,
+    "sha256": "5d619ecd6c69220d0e873d73e012dd301038f4eb911d859486db58c386b60a8e"
+  },
+  "types": [
+    {
+      "name": "vehicle_component_definition",
+      "base": "",
+      "offset": 82324625,
+      "length": 6248,
+      "descriptor_sha256": "1774d2f983ea15c1a085bd263b14d832d0178a35e56f635cb58e5359359fed45",
+      "size": 1912,
+      "alignment": 8
+    },
+    {
+      "name": "vehicle_component_definition.surface",
+      "base": "",
+      "offset": 82335775,
+      "length": 667,
+      "descriptor_sha256": "f26ad4759f96fb3ce22001e9b0250893bf1c4b31a0916e256bd6fb5817a98a18",
+      "size": 72,
+      "alignment": 8
+    },
+    {
+      "name": "e_vehicle_component_surface_dir",
+      "base": "",
+      "offset": 74496848,
+      "length": 141,
+      "descriptor_sha256": "604afac1bc46ed8d27119a9fdbe641641e84248c0f30c7e4bb8491a490983992",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "vehicle_util.grid_origin_dir",
+      "base": "",
+      "offset": 82361579,
+      "length": 363,
+      "descriptor_sha256": "0c87ccce24c844d755dfd3e841e1e03314762c822c8dcd305ccbeb2d4afc79e4",
+      "size": 24,
+      "alignment": 4
+    },
+    {
+      "name": "vehicle_plate_util.e_plate_type",
+      "base": "",
+      "offset": 82357543,
+      "length": 126,
+      "descriptor_sha256": "dbc8d87db326dab9c08884092fd6ee444b370959290b853b7f14daea443640d9",
+      "size": 4,
+      "alignment": 4
+    },
+    {
+      "name": "server_scene.vehicle_plate",
+      "base": "replication.master.object",
+      "offset": 81735307,
+      "length": 2205,
+      "descriptor_sha256": "54584381e3faf13f167bfb82889a124540d602d882be48450b6acd3494084eb1",
+      "size": 664,
+      "alignment": 8
+    }
+  ],
+  "enums": [
+    {
+      "type": "e_vehicle_component_surface_dir",
+      "labels": [
+        "x_neg",
+        "x_pos",
+        "y_neg",
+        "y_pos",
+        "z_neg",
+        "z_pos"
+      ]
+    },
+    {
+      "type": "vehicle_plate_util.e_plate_type",
+      "labels": [
+        "basic",
+        "window",
+        "opening",
+        "hatch"
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "vector<vehicle_component_definition.surface>",
+        "name": "m_surfaces",
+        "offset": 144
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "vec3",
+        "name": "m_center_stretch_grid",
+        "offset": 384
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "vec3_s32",
+        "name": "m_bounds_min",
+        "offset": 660
+      }
+    },
+    {
+      "type": "vehicle_component_definition",
+      "field": {
+        "type": "vec3_s32",
+        "name": "m_bounds_max",
+        "offset": 672
+      }
+    },
+    {
+      "type": "vehicle_component_definition.surface",
+      "field": {
+        "type": "string",
+        "name": "m_id",
+        "offset": 0
+      }
+    },
+    {
+      "type": "vehicle_component_definition.surface",
+      "field": {
+        "type": "vec3_s32",
+        "name": "m_position",
+        "offset": 16
+      }
+    },
+    {
+      "type": "vehicle_component_definition.surface",
+      "field": {
+        "type": "vec2_s32",
+        "name": "m_size",
+        "offset": 28
+      }
+    },
+    {
+      "type": "vehicle_component_definition.surface",
+      "field": {
+        "type": "e_vehicle_component_surface_dir",
+        "name": "m_direction",
+        "offset": 36
+      }
+    },
+    {
+      "type": "vehicle_component_definition.surface",
+      "field": {
+        "type": "s32",
+        "name": "m_rotation",
+        "offset": 40
+      }
+    },
+    {
+      "type": "vehicle_component_definition.surface",
+      "field": {
+        "type": "e_vehicle_component_surface_rotation_mode",
+        "name": "m_rotation_mode",
+        "offset": 44
+      }
+    },
+    {
+      "type": "vehicle_component_definition.surface",
+      "field": {
+        "type": "e_vehicle_component_surface_gender",
+        "name": "m_gender",
+        "offset": 48
+      }
+    },
+    {
+      "type": "vehicle_component_definition.surface",
+      "field": {
+        "type": "string",
+        "name": "m_type",
+        "offset": 56
+      }
+    },
+    {
+      "type": "vehicle_util.grid_origin_dir",
+      "field": {
+        "type": "vec3_s32",
+        "name": "_m_origin",
+        "offset": 0
+      }
+    },
+    {
+      "type": "vehicle_util.grid_origin_dir",
+      "field": {
+        "type": "vec3_s32",
+        "name": "_m_dir",
+        "offset": 12
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.container_vector_ref<server_scene.vehicle_plate_node>",
+        "name": "m_nodes",
+        "offset": 32
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.container_vector_ref<server_scene.vehicle_plate_edge>",
+        "name": "m_edges",
+        "offset": 144
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.property_vec3_s32",
+        "name": "m_dir",
+        "offset": 256
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.property_vec3_s32",
+        "name": "m_position",
+        "offset": 296
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.property_s32",
+        "name": "m_size",
+        "offset": 336
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.property_enum<vehicle_plate_util.e_plate_type>",
+        "name": "m_type",
+        "offset": 368
+      }
+    },
+    {
+      "type": "server_scene.vehicle_plate",
+      "field": {
+        "type": "replication.master.property_enum<e_vehicle_glass_state>",
+        "name": "m_glass_state",
+        "offset": 464
+      }
+    }
+  ],
+  "virtuals": []
+}

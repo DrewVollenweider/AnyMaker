@@ -1,5 +1,7 @@
 # Anymaker engineering knowledge — start here
 
+Latest vehicle research: [attachment surfaces and contact boundaries](research/VEHICLE-ATTACHMENTS-20261021.md). Surface extension, component/beam/plate gates and integer versus floating-point intersection behavior now have source evidence and a reusable offline model. All 171 research-tool tests pass; complete native mounting/save acceptance remains open.
+
 Vehicle engineering is the active research priority as of October 21: [structural connectivity, splitting and update lifecycle](research/VEHICLE-STRUCTURE-20261021.md). Continue attachment, plates/edges and save integrity, followed by powertrain, fluids, electrical, controls, suspension, flight and marine systems. Projectiles, explosions and AI are low priority. The full audit remains incomplete.
 
 Newest research: [character combat, weapon entry points, smoke and hordes](research/COMBAT-SMOKE-HORDES-20261020.md). Traced hotbar-order equipment choice, NPC reload/battery behavior, smoke drift/lifetime and its unbounded forward-ray sight check, plus the separate horde producer. Complete concrete weapons/brains/projectiles remain open. Reader: 1,275 functions; latest tool suite: 159 passing tests.

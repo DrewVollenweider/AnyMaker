@@ -1,5 +1,7 @@
 # Whole-game research
 
+Latest vehicle checkpoint: [attachment surfaces and contact boundaries](VEHICLE-ATTACHMENTS-20261021.md). The complete recovered server predicate and selected helpers were read; quarter-unit extension thresholds, frame/facing conditions, lattice sampling and repeated floating-test corner arguments are documented. New explicit-input geometry tools have 12 tests; full suite 171. Reader: 1,463 functions/206,138 instructions/1,163,700 bytes. Vehicle-first priority persists; full semantics remain incomplete.
+
 Active priority, October 21: **systems for making vehicles**. [Structural connectivity, splitting and update lifecycle](VEHICLE-STRUCTURE-20261021.md) follows reciprocal attachment, object-count-based body retention, service-link remapping and deferred physics cleanup. Continue attachment/plates/edges/save integrity before powertrain, fluids, electrical, controls, suspension, flight and marine systems. Combat/projectile/AI work is parked at low priority. Reader: 1,440 functions/201,934 checked instructions/1,141,198 bytes; access coverage is not semantic completion.
 
 Latest continuation: [character combat, smoke and hordes](COMBAT-SMOKE-HORDES-20261020.md). Includes equipment/timing, shared weapon entry points, smoke emitters/lifetime and a native ray/sphere binding, plus horde creation/flocking/cleanup. Reader: 1,275 functions/184,600 checked instructions/1,042,178 bytes. Complete variants, projectile/armour physics, AI states and every other open register area remain in scope.

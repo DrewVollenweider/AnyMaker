@@ -1,5 +1,7 @@
 # Coverage and gaps
 
+Latest selected vehicle findings: [attachment surfaces and contact boundaries](VEHICLE-ATTACHMENTS-20261021.md). Reader access: 1,463 functions/206,138 instructions/1,163,700 independently summed bytes. Selected evidence: 29 function identities, 37 constants, 46 calls and 33 assembly arguments; six reflected types/21 fields/two enums. Surface/contact helpers have a 12-test model; full research suite 171. Candidate gathering, parser/defaults, valid placement constraints, render/load reconstruction and complete vehicle variants remain open.
+
 Current vehicle-priority checkpoint: [structural connectivity, splitting and update lifecycle](VEHICLE-STRUCTURE-20261021.md). Selected traversal, reciprocal links, removal, split/remap and update/post-load scheduling are traced. Local reader: 1,440 functions/201,934 checked instructions/1,141,198 independently summed bytes. This includes earlier exports and parked work, not 1,440 fully understood methods. Full contact, structural strength, collision/render/load/replication and vehicle variants remain unfinished. No defensible overall mechanics-completion percentage is established.
 
 Newest continuation: [character combat, smoke and hordes](COMBAT-SMOKE-HORDES-20261020.md). Selected NPC equipment/reload, weapon entry points, smoke lifetime/emission/native intersection and horde chains are traced. Reader: 1,275 functions/184,600 instructions/1,042,178 bytes. Complete concrete weapons/projectiles/armour, creature brains/navigation and lifecycle remain unfinished.

@@ -1,0 +1,1079 @@
+{
+  "schema": 1,
+  "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+  "functions": [
+    {
+      "signature": "() G_VEHICLE_GRID_SIZE.$ctor ()",
+      "signature_offset": 271524,
+      "code_offset": 271602,
+      "code_size": 32,
+      "code_sha256": "b8fe5f027019f2f3891444cce2e9a8919c0b0f21bd6b626950347b31aec5f04d"
+    },
+    {
+      "signature": "() G_VEHICLE_PLATE_THICKNESS.$ctor ()",
+      "signature_offset": 275715,
+      "code_offset": 275805,
+      "code_size": 32,
+      "code_sha256": "c030362aa2cabf7445fda8dacbd38ecc17ceae67c9d27fd4be9e2a8a3da2a6d6"
+    },
+    {
+      "signature": "(bool) operator_eq (const vehicle_util.grid_origin_dir, const vehicle_util.grid_origin_dir)",
+      "signature_offset": 31299977,
+      "code_offset": 31300147,
+      "code_size": 192,
+      "code_sha256": "bf01a539c00793de33355ce18959402cef51f207169296a9047073bd8b9a42fa"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle.test_component_attaches_to_vehicle (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const ptr<vehicle_util.attach_component_hit_data>)",
+      "signature_offset": 53315101,
+      "code_offset": 53315661,
+      "code_size": 160,
+      "code_sha256": "9da12e3523e1ca3d37e87d49c36eadb1bca91d3061d40de57769982f71b3c14e"
+    },
+    {
+      "signature": "(vec3_s32) vehicle_component.get_surface_dir_normal (const e_vehicle_component_surface_dir)",
+      "signature_offset": 62412144,
+      "code_offset": 62412340,
+      "code_size": 520,
+      "code_sha256": "7235ac84097167d7a71ef15afafec588d40464f5fd4767cac64d9f88c9ef7c83"
+    },
+    {
+      "signature": "(e_vehicle_component_surface_dir) vehicle_component.get_surface_dir_rotated (const e_vehicle_component_surface_dir, const mat33_s32)",
+      "signature_offset": 62416588,
+      "code_offset": 62417053,
+      "code_size": 264,
+      "code_sha256": "b65bc965ed64967d2cc82ee67efe70f5582137ccbb97475c2d51e13bb3803151"
+    },
+    {
+      "signature": "() vehicle_component.get_surface_min_max (const e_vehicle_component_surface_dir, const vec3_s32, const vec2_s32, const vec3_s32, const vec3, vec3_s32, vec3_s32, vec2_s32)",
+      "signature_offset": 62419805,
+      "code_offset": 62420550,
+      "code_size": 5400,
+      "code_sha256": "4a6f05de041592c08b36d1c1e6924d4b9ce77d33c9b0b7e63fc88e625cbfdacb"
+    },
+    {
+      "signature": "() vehicle_component_util.get_component_surface_bounds_voxel_local_to_grid (const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const vehicle_component_definition.surface, vec3_s32, vec3_s32, vec2_s32)",
+      "signature_offset": 62943816,
+      "code_offset": 62944565,
+      "code_size": 816,
+      "code_sha256": "29175fcad24340dabe180271d1cd384e8d2838d80c99e63d4f53c9f5ff68b4f0"
+    },
+    {
+      "signature": "(bool) vehicle_grid_util.test_grids_equivalent (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)",
+      "signature_offset": 63198336,
+      "code_offset": 63198804,
+      "code_size": 560,
+      "code_sha256": "5b783219e237e6c71384370ab7d096f5a88c092d0b98e70d7ccdf2e64acd8a90"
+    },
+    {
+      "signature": "(bool) vehicle_plate_util.get_is_physics_plate (const vehicle_plate_util.e_plate_type)",
+      "signature_offset": 63404347,
+      "code_offset": 63404453,
+      "code_size": 44,
+      "code_sha256": "0726148b159163b4e2456ede41a67c15f1a242624accc68039abff6e123ad745"
+    },
+    {
+      "signature": "(vec3) vehicle_plate_util.get_plate_node_surface_offset (const vec3_s32, const vec3, const s32)",
+      "signature_offset": 63454819,
+      "code_offset": 63455641,
+      "code_size": 2304,
+      "code_sha256": "d6ee9d56ae839836532b7ff6600fc53800fe5f06438c3a1d8f17409b073bc140"
+    },
+    {
+      "signature": "() vehicle_util.get_axis_side_up (const vec3_s32, vec3_s32, vec3_s32)",
+      "signature_offset": 63622721,
+      "code_offset": 63622895,
+      "code_size": 536,
+      "code_sha256": "85727f6aedf52cac83c13d456c8b9e1767bc5113269435f2494033057fa4366c"
+    },
+    {
+      "signature": "() vehicle_util.get_nonzero_axes (const vec3_s32, vec3_s32, vec3_s32)",
+      "signature_offset": 63660027,
+      "code_offset": 63660259,
+      "code_size": 1000,
+      "code_sha256": "33f863673e208a6971193180fcddf8f4a05b2cf52d520055eb123010d4203fdb"
+    },
+    {
+      "signature": "(s32) vehicle_util.get_nonzero_axis_count (const vec3_s32)",
+      "signature_offset": 63662419,
+      "code_offset": 63662497,
+      "code_size": 224,
+      "code_sha256": "87c253641e91070034721f8c00a8d2703fc2c1774fdd6a2d17f2c16563af97be"
+    },
+    {
+      "signature": "(vec3_s32) vehicle_util.grid_origin_dir.get_dir (const vehicle_util.grid_origin_dir)",
+      "signature_offset": 63668768,
+      "code_offset": 63668914,
+      "code_size": 40,
+      "code_sha256": "472ed5f55f2fa1c1a1463fe5d40fc0ed9ac7eb87cddbbf47a830c4c823592db2"
+    },
+    {
+      "signature": "(bool) vehicle_util.grid_origin_dir.get_is_base_grid (const vehicle_util.grid_origin_dir)",
+      "signature_offset": 63669126,
+      "code_offset": 63669379,
+      "code_size": 352,
+      "code_sha256": "3da50d5a0c8521de4faff85ef7dc64eaf4c28869dad64ca71e50d3c91418a18f"
+    },
+    {
+      "signature": "(vec3_s32) vehicle_util.grid_origin_dir.get_origin (const vehicle_util.grid_origin_dir)",
+      "signature_offset": 63671538,
+      "code_offset": 63671687,
+      "code_size": 40,
+      "code_sha256": "82e8ea2a124ba7f059c870d440d706086b72a965157df52802b6610cb6a966ad"
+    },
+    {
+      "signature": "(mat34) vehicle_util.grid_origin_dir.get_transform (const vehicle_util.grid_origin_dir)",
+      "signature_offset": 63671910,
+      "code_offset": 63672764,
+      "code_size": 1280,
+      "code_sha256": "afe42e812ce3deabb754e7514f07316799db1ccdef1e7be441c683bf7a8031b8"
+    },
+    {
+      "signature": "(s32) vehicle_util.sign_or_zero (const s32)",
+      "signature_offset": 63678064,
+      "code_offset": 63678127,
+      "code_size": 108,
+      "code_sha256": "c682c9eef265e57df771461bc7602f5b1be9b9843cd50de34cf559429e7a3de6"
+    },
+    {
+      "signature": "(bool) vehicle_util.test_2d_point_inside_rectangle_s32 (const vec2_s32, const vec2_s32, const vec2_s32)",
+      "signature_offset": 63678355,
+      "code_offset": 63678478,
+      "code_size": 183,
+      "code_sha256": "7c0efb0e877966391b265129ea535be01fda4c16e0a28d06e981d51f864a5a25"
+    },
+    {
+      "signature": "(bool) vehicle_util.test_2d_rectangle_intersect_line_s32 (const vec2_s32, const vec2_s32, const vec2_s32, const vec2_s32)",
+      "signature_offset": 63681675,
+      "code_offset": 63682197,
+      "code_size": 1128,
+      "code_sha256": "891f269894c9e76113a7835363eb15696e00ea05e494b4dffa975858b11d337c"
+    },
+    {
+      "signature": "(bool) vehicle_util.test_2d_rectangle_intersect_triangle (const vec2, const vec2, const vec2, const vec2, const vec2)",
+      "signature_offset": 63684998,
+      "code_offset": 63685564,
+      "code_size": 4752,
+      "code_sha256": "6d6f1672221dbddc6008ef3ee83912485cb691aa2b2f47cbbe5a01bc4a9373a5"
+    },
+    {
+      "signature": "(bool) vehicle_util.test_2d_rectangle_intersect_triangle_s32 (const vec2_s32, const vec2_s32, const vec2_s32, const vec2_s32, const vec2_s32)",
+      "signature_offset": 63692037,
+      "code_offset": 63692561,
+      "code_size": 2264,
+      "code_sha256": "ac173aa1b80ca201e476392fc42b102d58ab14a061956206bb4232cfababd445"
+    },
+    {
+      "signature": "(bool) vehicle_util.test_vectors_opposite_direction_s32 (const vec3_s32, const vec3_s32)",
+      "signature_offset": 63704771,
+      "code_offset": 63705016,
+      "code_size": 552,
+      "code_sha256": "f4cbed2be055072007bae3d41f7e4a83868ce208c51f372c1c6c952ac710fd33"
+    },
+    {
+      "signature": "(bool) vehicle_util.test_vectors_parallel_s32 (const vec3_s32, const vec3_s32)",
+      "signature_offset": 63705792,
+      "code_offset": 63706130,
+      "code_size": 248,
+      "code_sha256": "e824d3d7b9620a408f309ab234a989d17367611f49b06313ad522e63e62b51e0"
+    },
+    {
+      "signature": "(bool) vehicle_util.test_vectors_same_direction_s32 (const vec3_s32, const vec3_s32)",
+      "signature_offset": 63706584,
+      "code_offset": 63706825,
+      "code_size": 552,
+      "code_sha256": "78b42e77764d56ddcb7e4475d78dabb762c4ca11fb91fe9376475711e7e32f20"
+    },
+    {
+      "signature": "(bool) vehicle_util.test_voxel_bounds_overlapping (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)",
+      "signature_offset": 63709793,
+      "code_offset": 63709927,
+      "code_size": 289,
+      "code_sha256": "1dbbda9315e5436dcccd0543f29b36807a24ce12953963385ff2088a67d11207"
+    },
+    {
+      "signature": "(f64) vehicle_util.get_angle_between_plates_on_edge<server_scene> (const server_scene.vehicle, const server_scene.vehicle_plate, const server_scene.vehicle_plate, const s32)",
+      "signature_offset": 65608036,
+      "code_offset": 65609123,
+      "code_size": 1504,
+      "code_sha256": "505cbc0c562b7967dcafc49ec26bc3393848ba75957db1bf4231e6aff5ff8d7a"
+    },
+    {
+      "signature": "(bool) vehicle_util.test_component_attaches_to_vehicle<server_scene> (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const ptr<vehicle_util.attach_component_hit_data>)",
+      "signature_offset": 65654078,
+      "code_offset": 65662243,
+      "code_size": 24032,
+      "code_sha256": "3ab1b49f2efa9a00cbb68a1cc77726f9b1ffc2e1b09359c0c14fbb7b8731285c"
+    }
+  ],
+  "constants": [
+    {
+      "function_offset": 65662243,
+      "offset": 65686251,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 65662243,
+      "offset": 65686255,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 65662243,
+      "offset": 65686259,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 65662243,
+      "offset": 65686263,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63198804,
+      "offset": 63199356,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63198804,
+      "offset": 63199360,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63669379,
+      "offset": 63669723,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63669379,
+      "offset": 63669727,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63682197,
+      "offset": 63683309,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63682197,
+      "offset": 63683313,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63682197,
+      "offset": 63683317,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63692561,
+      "offset": 63694817,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63692561,
+      "offset": 63694821,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 62420550,
+      "offset": 62425910,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 62420550,
+      "offset": 62425918,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 62420550,
+      "offset": 62425922,
+      "format": "s32",
+      "bytes": "02000000",
+      "value": 2,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 62420550,
+      "offset": 62425934,
+      "format": "s32",
+      "bytes": "03000000",
+      "value": 3,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 62420550,
+      "offset": 62425938,
+      "format": "s32",
+      "bytes": "05000000",
+      "value": 5,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 62420550,
+      "offset": 62425942,
+      "format": "s32",
+      "bytes": "04000000",
+      "value": 4,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63660259,
+      "offset": 63661243,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63660259,
+      "offset": 63661247,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63660259,
+      "offset": 63661251,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63622895,
+      "offset": 63623423,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63622895,
+      "offset": 63623427,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63678127,
+      "offset": 63678223,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63678127,
+      "offset": 63678227,
+      "format": "s32",
+      "bytes": "01000000",
+      "value": 1,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63678127,
+      "offset": 63678231,
+      "format": "s32",
+      "bytes": "ffffffff",
+      "value": -1,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63672764,
+      "offset": 63674028,
+      "format": "s32",
+      "bytes": "00000000",
+      "value": 0,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 65662243,
+      "offset": 65686267,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63685564,
+      "offset": 63690292,
+      "format": "f64",
+      "bytes": "0000000000000000",
+      "value": 0.0,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63685564,
+      "offset": 63690300,
+      "format": "f64",
+      "bytes": "000000000000f03f",
+      "value": 1.0,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63685564,
+      "offset": 63690308,
+      "format": "f64",
+      "bytes": "000000000000f0bf",
+      "value": -1.0,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 62420550,
+      "offset": 62425910,
+      "format": "f64",
+      "bytes": "000000000000d03f",
+      "value": 0.25,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 62420550,
+      "offset": 62425926,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63672764,
+      "offset": 63674036,
+      "format": "f64",
+      "bytes": "000000000000e03f",
+      "value": 0.5,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63685564,
+      "offset": 63690284,
+      "format": "u8",
+      "bytes": "00",
+      "value": 0,
+      "name": "Reviewed attachment geometry constant"
+    },
+    {
+      "function_offset": 63685564,
+      "offset": 63690288,
+      "format": "u8",
+      "bytes": "01",
+      "value": 1,
+      "name": "Reviewed attachment geometry constant"
+    }
+  ],
+  "strings": [],
+  "call_examples": [
+    {
+      "function_offset": 53315661,
+      "instruction": 53315795,
+      "bytes": "ff17",
+      "slot_address": 53315821,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_component_attaches_to_vehicle<server_scene> (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const ptr<vehicle_util.attach_component_hit_data>)"
+    },
+    {
+      "function_offset": 62417053,
+      "instruction": 62417269,
+      "bytes": "ff10",
+      "slot_address": 62417341,
+      "kind": 4,
+      "symbol": "(e_vehicle_component_surface_dir) vehicle_component.get_best_surface_dir (const vec3_s32)"
+    },
+    {
+      "function_offset": 62944565,
+      "instruction": 62944912,
+      "bytes": "ff17",
+      "slot_address": 62945389,
+      "kind": 4,
+      "symbol": "() vehicle_component.get_surface_min_max (const e_vehicle_component_surface_dir, const vec3_s32, const vec2_s32, const vec3_s32, const vec3, vec3_s32, vec3_s32, vec2_s32)"
+    },
+    {
+      "function_offset": 63198804,
+      "instruction": 63199114,
+      "bytes": "ff13",
+      "slot_address": 63199372,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_vectors_same_direction_s32 (const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 63672764,
+      "instruction": 63672826,
+      "bytes": "ff5500",
+      "slot_address": 63674044,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.grid_origin_dir.get_is_base_grid (const vehicle_util.grid_origin_dir)"
+    },
+    {
+      "function_offset": 63672764,
+      "instruction": 63672980,
+      "bytes": "ff13",
+      "slot_address": 63674076,
+      "kind": 4,
+      "symbol": "(mat33) vehicle_util.grid_origin_dir.get_orientation (const vehicle_util.grid_origin_dir)"
+    },
+    {
+      "function_offset": 63672764,
+      "instruction": 63673076,
+      "bytes": "ff13",
+      "slot_address": 63674092,
+      "kind": 4,
+      "symbol": "(vec3) vehicle_util.grid_origin_dir.get_normal (const vehicle_util.grid_origin_dir)"
+    },
+    {
+      "function_offset": 63672764,
+      "instruction": 63673188,
+      "bytes": "ff13",
+      "slot_address": 63674100,
+      "kind": 4,
+      "symbol": "(vec3) vehicle_plate_util.get_plate_node_surface_offset (const vec3_s32, const vec3, const s32)"
+    },
+    {
+      "function_offset": 63705016,
+      "instruction": 63705518,
+      "bytes": "ff10",
+      "slot_address": 63705576,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_vectors_parallel_s32 (const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 63706825,
+      "instruction": 63707327,
+      "bytes": "ff10",
+      "slot_address": 63707385,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_vectors_parallel_s32 (const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65663884,
+      "bytes": "41ff12",
+      "slot_address": 65686347,
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle_octree.boxcast (const server_scene.vehicle_octree, const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const vec3_s32, server_scene.vehicle_octree.boxcast_hit_data)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65664637,
+      "bytes": "ffd0",
+      "slot_address": 65686387,
+      "kind": 6,
+      "symbol": "(ptr<const vehicle_util.grid_origin_dir>) replication.master.property_grid_origin_dir.get (const replication.master.property_grid_origin_dir)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65664695,
+      "bytes": "ff13",
+      "slot_address": 65686395,
+      "kind": 4,
+      "symbol": "(bool) operator_eq (const vehicle_util.grid_origin_dir, const vehicle_util.grid_origin_dir)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65664934,
+      "bytes": "ff10",
+      "slot_address": 65686419,
+      "kind": 4,
+      "symbol": "(ptr<vehicle_component_definition.surface>) vector<vehicle_component_definition.surface>.value (const vector<vehicle_component_definition.surface>, const uptr)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65665209,
+      "bytes": "ff5500",
+      "slot_address": 65686435,
+      "kind": 4,
+      "symbol": "() vehicle_component_util.get_component_surface_bounds_voxel_local_to_grid (const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const vehicle_component_definition.surface, vec3_s32, vec3_s32, vec2_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65665261,
+      "bytes": "ff13",
+      "slot_address": 65686443,
+      "kind": 4,
+      "symbol": "(e_vehicle_component_surface_dir) vehicle_component.get_surface_dir_rotated (const e_vehicle_component_surface_dir, const mat33_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65665935,
+      "bytes": "ff10",
+      "slot_address": 65686419,
+      "kind": 4,
+      "symbol": "(ptr<vehicle_component_definition.surface>) vector<vehicle_component_definition.surface>.value (const vector<vehicle_component_definition.surface>, const uptr)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65666036,
+      "bytes": "ff13",
+      "slot_address": 65686443,
+      "kind": 4,
+      "symbol": "(e_vehicle_component_surface_dir) vehicle_component.get_surface_dir_rotated (const e_vehicle_component_surface_dir, const mat33_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65666312,
+      "bytes": "ffd3",
+      "slot_address": 65686475,
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.get_surface_bounds_voxel_local_to_grid (const server_scene.vehicle_component, const vehicle_component_definition.surface, vec3_s32, vec3_s32, vec2_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65666404,
+      "bytes": "ff16",
+      "slot_address": 65686483,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_voxel_bounds_overlapping (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65666764,
+      "bytes": "ff10",
+      "slot_address": 65686499,
+      "kind": 4,
+      "symbol": "(uptr) vector<vehicle_component_definition.surface>.next (const vector<vehicle_component_definition.surface>, const uptr)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65667405,
+      "bytes": "ff10",
+      "slot_address": 65686499,
+      "kind": 4,
+      "symbol": "(uptr) vector<vehicle_component_definition.surface>.next (const vector<vehicle_component_definition.surface>, const uptr)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65669565,
+      "bytes": "ff10",
+      "slot_address": 65686419,
+      "kind": 4,
+      "symbol": "(ptr<vehicle_component_definition.surface>) vector<vehicle_component_definition.surface>.value (const vector<vehicle_component_definition.surface>, const uptr)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65669840,
+      "bytes": "ff17",
+      "slot_address": 65686435,
+      "kind": 4,
+      "symbol": "() vehicle_component_util.get_component_surface_bounds_voxel_local_to_grid (const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const vehicle_component_definition.surface, vec3_s32, vec3_s32, vec2_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65669891,
+      "bytes": "ff13",
+      "slot_address": 65686443,
+      "kind": 4,
+      "symbol": "(e_vehicle_component_surface_dir) vehicle_component.get_surface_dir_rotated (const e_vehicle_component_surface_dir, const mat33_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65670412,
+      "bytes": "ff16",
+      "slot_address": 65686483,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_voxel_bounds_overlapping (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65670528,
+      "bytes": "ff16",
+      "slot_address": 65686483,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_voxel_bounds_overlapping (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65670975,
+      "bytes": "ff16",
+      "slot_address": 65686483,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_voxel_bounds_overlapping (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65671091,
+      "bytes": "ff16",
+      "slot_address": 65686483,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_voxel_bounds_overlapping (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65671966,
+      "bytes": "ff16",
+      "slot_address": 65686483,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_voxel_bounds_overlapping (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65672082,
+      "bytes": "ff16",
+      "slot_address": 65686483,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_voxel_bounds_overlapping (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65672988,
+      "bytes": "ff13",
+      "slot_address": 65686635,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_vectors_parallel_s32 (const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65673911,
+      "bytes": "ff16",
+      "slot_address": 65686651,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_2d_rectangle_intersect_line_s32 (const vec2_s32, const vec2_s32, const vec2_s32, const vec2_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65675266,
+      "bytes": "ff10",
+      "slot_address": 65686499,
+      "kind": 4,
+      "symbol": "(uptr) vector<vehicle_component_definition.surface>.next (const vector<vehicle_component_definition.surface>, const uptr)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65677107,
+      "bytes": "ff10",
+      "slot_address": 65686419,
+      "kind": 4,
+      "symbol": "(ptr<vehicle_component_definition.surface>) vector<vehicle_component_definition.surface>.value (const vector<vehicle_component_definition.surface>, const uptr)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65677382,
+      "bytes": "ff10",
+      "slot_address": 65686435,
+      "kind": 4,
+      "symbol": "() vehicle_component_util.get_component_surface_bounds_voxel_local_to_grid (const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const vehicle_component_definition.surface, vec3_s32, vec3_s32, vec2_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65677433,
+      "bytes": "ff13",
+      "slot_address": 65686443,
+      "kind": 4,
+      "symbol": "(e_vehicle_component_surface_dir) vehicle_component.get_surface_dir_rotated (const e_vehicle_component_surface_dir, const mat33_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65677611,
+      "bytes": "ff13",
+      "slot_address": 65686747,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_vectors_opposite_direction_s32 (const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65680141,
+      "bytes": "ff5500",
+      "slot_address": 65686763,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_2d_rectangle_intersect_triangle_s32 (const vec2_s32, const vec2_s32, const vec2_s32, const vec2_s32, const vec2_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65681089,
+      "bytes": "ff10",
+      "slot_address": 65686499,
+      "kind": 4,
+      "symbol": "(uptr) vector<vehicle_component_definition.surface>.next (const vector<vehicle_component_definition.surface>, const uptr)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65681688,
+      "bytes": "ff16",
+      "slot_address": 65686787,
+      "kind": 4,
+      "symbol": "(bool) vehicle_grid_util.test_grids_equivalent (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65682013,
+      "bytes": "ff10",
+      "slot_address": 65686419,
+      "kind": 4,
+      "symbol": "(ptr<vehicle_component_definition.surface>) vector<vehicle_component_definition.surface>.value (const vector<vehicle_component_definition.surface>, const uptr)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65682288,
+      "bytes": "ff5500",
+      "slot_address": 65686435,
+      "kind": 4,
+      "symbol": "() vehicle_component_util.get_component_surface_bounds_voxel_local_to_grid (const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const vehicle_component_definition.surface, vec3_s32, vec3_s32, vec2_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65682340,
+      "bytes": "ff13",
+      "slot_address": 65686443,
+      "kind": 4,
+      "symbol": "(e_vehicle_component_surface_dir) vehicle_component.get_surface_dir_rotated (const e_vehicle_component_surface_dir, const mat33_s32)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65684598,
+      "bytes": "ff5500",
+      "slot_address": 65686859,
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_2d_rectangle_intersect_triangle (const vec2, const vec2, const vec2, const vec2, const vec2)"
+    },
+    {
+      "function_offset": 65662243,
+      "instruction": 65685982,
+      "bytes": "ff10",
+      "slot_address": 65686499,
+      "kind": 4,
+      "symbol": "(uptr) vector<vehicle_component_definition.surface>.next (const vector<vehicle_component_definition.surface>, const uptr)"
+    }
+  ],
+  "assembly_examples": [
+    {
+      "function_offset": 63685564,
+      "instruction": 63686207,
+      "bytes": "488d8424f0020000",
+      "assembly": "LEA RAX,[RSP + 0x2f0]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686215,
+      "bytes": "488d32",
+      "assembly": "LEA RSI,[RDX]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686238,
+      "bytes": "4889c1",
+      "assembly": "MOV RCX,RAX"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686241,
+      "bytes": "4889f2",
+      "assembly": "MOV RDX,RSI"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686260,
+      "bytes": "ff17",
+      "assembly": "CALL qword ptr [RDI]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686262,
+      "bytes": "488d842400030000",
+      "assembly": "LEA RAX,[RSP + 0x300]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686270,
+      "bytes": "4c8b8424f8010000",
+      "assembly": "MOV R8,qword ptr [RSP + 0x1f8]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686278,
+      "bytes": "498d08",
+      "assembly": "LEA RCX,[R8]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686281,
+      "bytes": "488b9424f0010000",
+      "assembly": "MOV RDX,qword ptr [RSP + 0x1f0]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686289,
+      "bytes": "488d7208",
+      "assembly": "LEA RSI,[RDX + 0x8]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686308,
+      "bytes": "4889c1",
+      "assembly": "MOV RCX,RAX"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686311,
+      "bytes": "488b942400020000",
+      "assembly": "MOV RDX,qword ptr [RSP + 0x200]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686319,
+      "bytes": "4989f0",
+      "assembly": "MOV R8,RSI"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686322,
+      "bytes": "ff17",
+      "assembly": "CALL qword ptr [RDI]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686324,
+      "bytes": "488d842410030000",
+      "assembly": "LEA RAX,[RSP + 0x310]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686398,
+      "bytes": "ff10",
+      "assembly": "CALL qword ptr [RAX]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686400,
+      "bytes": "488d842420030000",
+      "assembly": "LEA RAX,[RSP + 0x320]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686408,
+      "bytes": "488b9424f0010000",
+      "assembly": "MOV RDX,qword ptr [RSP + 0x1f0]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686419,
+      "bytes": "4c8b8424f8010000",
+      "assembly": "MOV R8,qword ptr [RSP + 0x1f8]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686427,
+      "bytes": "4d8d4008",
+      "assembly": "LEA R8,[R8 + 0x8]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63686470,
+      "bytes": "ff10",
+      "assembly": "CALL qword ptr [RAX]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63687461,
+      "bytes": "4c8d8424f0020000",
+      "assembly": "LEA R8,[RSP + 0x2f0]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63687555,
+      "bytes": "4c8d842400030000",
+      "assembly": "LEA R8,[RSP + 0x300]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63687678,
+      "bytes": "4c8d842410030000",
+      "assembly": "LEA R8,[RSP + 0x310]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63687801,
+      "bytes": "4c8d842420030000",
+      "assembly": "LEA R8,[RSP + 0x320]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63688433,
+      "bytes": "4c8d842400030000",
+      "assembly": "LEA R8,[RSP + 0x300]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63688515,
+      "bytes": "4c8d842400030000",
+      "assembly": "LEA R8,[RSP + 0x300]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63688626,
+      "bytes": "4c8d842410030000",
+      "assembly": "LEA R8,[RSP + 0x310]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63688737,
+      "bytes": "4c8d842420030000",
+      "assembly": "LEA R8,[RSP + 0x320]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63689442,
+      "bytes": "4c8d842400030000",
+      "assembly": "LEA R8,[RSP + 0x300]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63689536,
+      "bytes": "4c8d842400030000",
+      "assembly": "LEA R8,[RSP + 0x300]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63689659,
+      "bytes": "4c8d842410030000",
+      "assembly": "LEA R8,[RSP + 0x310]"
+    },
+    {
+      "function_offset": 63685564,
+      "instruction": 63689782,
+      "bytes": "4c8d842420030000",
+      "assembly": "LEA R8,[RSP + 0x320]"
+    }
+  ],
+  "limits": "Selected source identities, attachment predicate/helpers and assembly argument evidence. Not full native ABI, loader/candidate gathering, component variants or native-save acceptance."
+}

@@ -1,5 +1,7 @@
 # Full-game audit register
 
+New selected vehicle chain: [attachment surfaces and contact boundaries](VEHICLE-ATTACHMENTS-20261021.md). Complete recovered predicate review and supporting surface/intersection helpers add evidence for frame equality, support-facing gates and contact edge cases. The reusable helper model passes independent counterexample tests; complete geometry/candidate/variant/native-load semantics remain unfinished. Keep vehicle systems as the active priority.
+
 Priority override, October 21: the user is primarily interested in vehicle engineering and least interested in projectiles, explosions and AI. Work first on attachment/body splitting, plates/edges, cabin surfaces and save integrity; then engines/drivetrain, fluid/thermal/gas, electrical, controls, suspension/steering, flight and marine systems. [The current structural checkpoint](VEHICLE-STRUCTURE-20261021.md) traces selected removal/split/remap/update chains. It does not close these domains. Preserve the full register, but park the combat/AI queue at low priority.
 
 Latest selected findings: [character combat, smoke and hordes](COMBAT-SMOKE-HORDES-20261020.md). NPC equipment/timing, shared weapon entry points, smoke drift/emitters/native ray extent and horde lifecycle entry points are traced. Concrete weapon/AI variants, projectiles/armour, all producers, native contracts and every other open area remain unfinished. Selected exported methods do not certify full semantics.

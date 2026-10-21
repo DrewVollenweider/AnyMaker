@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "date": "2026-10-21",
+  "source_check": {
+    "schema": 1,
+    "date": "2026-10-20",
+    "installed_buildid": "25904830",
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "definition_files_checked": 2968,
+    "definition_file_mismatches": [],
+    "rechecked_for": "vehicle-attachments-20261021"
+  },
+  "pe_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+  "selected_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "d50e9288592c2f2ef55dfcd3b042433e4d61242247104796249a0b4e7f3e855d",
+    "function_records_checked": 29,
+    "constants_checked": 37,
+    "strings_checked": 0,
+    "call_instruction_examples_checked": 46,
+    "limitations": "Exact static identities/bytes only; virtual target binding and prose semantics are not proven by this checker."
+  },
+  "reflection_evidence_check": {
+    "schema": 1,
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "tool_sha256": "69d24f7374cb557ca6d809758e932f2ea7b16b88cdd5aa0eec839d6664571fca",
+    "table_records_checked": 8084,
+    "selected_type_identities_checked": 6,
+    "enum_label_lists_checked": 2,
+    "fields_checked": 21,
+    "virtual_declarations_checked": 0,
+    "limits": "Static descriptor declarations and identities only. Not executed dispatch, full storage ABI, units, lifecycle semantics or whole-game understanding."
+  },
+  "reader_counts": {
+    "functions": 1463,
+    "identical_exports_deduplicated": 6,
+    "instructions_byte_checked": 206138,
+    "slot_derived_calls": 10036,
+    "unresolved_calls": 7851
+  },
+  "reader_instruction_bytes": 1163700,
+  "selected_assembly_examples_checked": 33,
+  "selected_counts": {
+    "function_identities": 29,
+    "constants": 37,
+    "calls": 46,
+    "assembly_examples": 33,
+    "reflected_types": 6,
+    "fields": 21,
+    "enums": 2
+  },
+  "research_tool_tests_passed": 171,
+  "tests_rerun_this_checkpoint": true,
+  "test_log_sha256": "e5dc4f6e25457b74546798a0589e9847abc983a15bc6641cf9e09d05a6c91f78",
+  "game_executed": false,
+  "installation_and_active_saves_edited": false,
+  "limits": "Source identities/bytes, attachment predicate/helpers and selected assembly arguments. Candidate gathering, full variants, rendering/load/replication/native solver and vehicle-system semantics remain incomplete."
+}
