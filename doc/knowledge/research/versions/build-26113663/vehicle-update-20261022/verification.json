@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "build": "26113663",
+  "date": "2026-10-22",
+  "installed_gcl_and_pe_match_snapshot": true,
+  "installed_definition_files_checked": 2968,
+  "comparison_archived_functions": 1543,
+  "current_reader_functions": 12,
+  "current_instructions_byte_checked": 8099,
+  "current_instruction_bytes": 51029,
+  "native_verifications": [
+    {
+      "schema": 1,
+      "source_sha256": "097e1167477587c51a3b93ab7e7843382d99d30010678c9bd89a2fee648fec23",
+      "spans": 1,
+      "instructions_byte_checked": 6790,
+      "instruction_bytes_checked": 33859,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof.",
+      "pseudocode_requested": false
+    },
+    {
+      "schema": 1,
+      "source_sha256": "097e1167477587c51a3b93ab7e7843382d99d30010678c9bd89a2fee648fec23",
+      "spans": 2,
+      "instructions_byte_checked": 116,
+      "instruction_bytes_checked": 455,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    }
+  ],
+  "research_tool_tests_passed": 277,
+  "new_comparison_tests": 10,
+  "test_log_sha256": "0c963610e95fe1dcee268f9c71888ec93007f2002e21f791befb45247ed37d8a",
+  "game_executed": false,
+  "installation_or_active_saves_edited": false,
+  "limits": "Local comparison does not transfer full semantics. Export availability and tests do not establish understanding of every method or in-game behavior."
+}

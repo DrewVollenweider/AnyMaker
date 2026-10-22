@@ -1,0 +1,1947 @@
+{
+  "schema": 1,
+  "date": "2026-10-22",
+  "build": "26113663",
+  "gcl_sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22",
+  "pe_sha256": "097e1167477587c51a3b93ab7e7843382d99d30010678c9bd89a2fee648fec23",
+  "comparison": {
+    "counts": {
+      "local_checks_match": 1464,
+      "instruction_bytes_changed": 45,
+      "code_size_changed": 25,
+      "missing": 8,
+      "references_changed": 1
+    },
+    "tool_version": "1.0.0",
+    "selected_functions": [
+      {
+        "signature": "() server_scene.vehicle.create_physics_from_shape (server_scene.vehicle, physics.scene, server_scene.environment_tile_container, physics.compound_shape)",
+        "old_offset": 52939940,
+        "new_offset": 52959384,
+        "old_code_sha256": "9ae8e91dd451d96a7d1dd37d9498654b43413794e0b6b16f7d93fa38915a53af",
+        "new_code_sha256": "e36efb983ac5090635989f793a66d40b54268ce851c87cd595304e79fafa4408",
+        "whole_code_equal": false,
+        "archived_instructions_checked": 506,
+        "archived_direct_reads_checked": 12,
+        "references_equal": false,
+        "status": "code_size_changed",
+        "new_local_checks_performed": false
+      },
+      {
+        "signature": "() server_scene.vehicle_component.engine.tick (server_scene.vehicle_component.engine, server_scene.vehicle, server_scene)",
+        "old_offset": 54501350,
+        "new_offset": 54524323,
+        "old_code_sha256": "2f8cab8374e952562c5c7e7584b9a7b0fc1756d310f1a2dea6b7fb1d108cf4b4",
+        "new_code_sha256": "ad5facd81be54fd1150c137ab0863d44825416024e0db44a0e862a298d7bb304",
+        "whole_code_equal": false,
+        "archived_instructions_checked": 1787,
+        "archived_direct_reads_checked": 91,
+        "references_equal": true,
+        "new_local_checks_performed": true,
+        "changed_instruction_offsets": [],
+        "changed_direct_read_offsets": [],
+        "unclassified_changed_bytes": 3,
+        "status": "local_checks_match"
+      },
+      {
+        "signature": "() server_scene.vehicle_component.gearbox.tick (server_scene.vehicle_component.gearbox, server_scene.vehicle, server_scene)",
+        "old_offset": 54983294,
+        "new_offset": 55006267,
+        "old_code_sha256": "a25cf7ae279958d7e810a3889ae8ce662e2a9ccad90bc90446a8a3dcf1459c33",
+        "new_code_sha256": "4a53c971701e9380b956e3941dbb7d1b649cc9fb7a5e1f120653b7fedf130bbb",
+        "whole_code_equal": false,
+        "archived_instructions_checked": 316,
+        "archived_direct_reads_checked": 22,
+        "references_equal": true,
+        "new_local_checks_performed": true,
+        "changed_instruction_offsets": [],
+        "changed_direct_read_offsets": [],
+        "unclassified_changed_bytes": 3,
+        "status": "local_checks_match"
+      },
+      {
+        "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)",
+        "old_offset": 57333489,
+        "new_offset": 57365473,
+        "old_code_sha256": "1e43c152c2e32dd56ada061a889d4d30c5e1d73385e20f55906248056d475f52",
+        "new_code_sha256": "600322891a025ac2e45f774a11c2f7facae09888aa26f131c85a44d56a3627fd",
+        "whole_code_equal": false,
+        "archived_instructions_checked": 2550,
+        "archived_direct_reads_checked": 24,
+        "references_equal": false,
+        "status": "code_size_changed",
+        "new_local_checks_performed": false
+      },
+      {
+        "signature": "() server_scene.vehicle_element.wheel.tick (server_scene.vehicle_element.wheel, server_scene.vehicle, server_scene.vehicle_component, server_scene, f64, f64)",
+        "old_offset": 58495995,
+        "new_offset": 58473401,
+        "old_code_sha256": "fa1b7bc1917f9111ef291f4d2fe56d6c3a785d90aa58cdbc0d55dc14eb6f6596",
+        "new_code_sha256": "de1e7d528d7950a452498748c04ad4c0aa540e801cb0655922ba97c452b9d54f",
+        "whole_code_equal": false,
+        "archived_instructions_checked": 3595,
+        "archived_direct_reads_checked": 48,
+        "references_equal": false,
+        "status": "code_size_changed",
+        "new_local_checks_performed": false
+      }
+    ],
+    "limits": "Compare archived reviewed GCL instructions/reads with a new indexed build.\n\nThis checks selected local bytes and operand metadata only. It does not copy\ndecompilations into a new reader or prove unchanged callees, bindings, globals,\naddress-taken data, reflection, native code, solver behavior or game mechanics."
+  },
+  "reflection": {
+    "descriptors": 8090,
+    "structures": 7639,
+    "enums": 451,
+    "ambiguous_names": {
+      "ptr<client_scene.creative_dome>": 2,
+      "ptr<client_scene.peer.inspection_data.microcontroller_element>": 2
+    },
+    "layouts": [
+      {
+        "name": "physics.e_motion_type",
+        "old": {
+          "name": "physics.e_motion_type",
+          "kind": 14,
+          "base": "",
+          "size": 4,
+          "alignment": 4,
+          "enum_labels": [
+            "dynamic",
+            "static",
+            "kinematic"
+          ],
+          "fields": []
+        },
+        "new": {
+          "name": "physics.e_motion_type",
+          "kind": 14,
+          "base": "",
+          "size": 4,
+          "alignment": 4,
+          "enum_labels": [
+            "dynamic",
+            "static",
+            "kinematic"
+          ],
+          "fields": []
+        }
+      },
+      {
+        "name": "server_scene.vehicle_element.wheel",
+        "old": {
+          "name": "server_scene.vehicle_element.wheel",
+          "kind": 13,
+          "base": "replication.master.composite",
+          "size": 736,
+          "alignment": 8,
+          "enum_labels": [],
+          "fields": [
+            {
+              "type": "ptr<vehicle_element_definition.wheel>",
+              "name": "m_definition",
+              "offset": 8
+            },
+            {
+              "type": "ptr<server_scene.vehicle_torque_node>",
+              "name": "m_torque_node",
+              "offset": 16
+            },
+            {
+              "type": "replication.master.property_f64_compressed_s8",
+              "name": "m_steering",
+              "offset": 24
+            },
+            {
+              "type": "replication.master.property_f64_compressed_s8",
+              "name": "m_wheel_rps",
+              "offset": 72
+            },
+            {
+              "type": "replication.master.property_bool",
+              "name": "m_is_skid",
+              "offset": 120
+            },
+            {
+              "type": "server_scene.vehicle_element.accessory",
+              "name": "m_accessory",
+              "offset": 152
+            },
+            {
+              "type": "physics.object",
+              "name": "m_contact_object",
+              "offset": 304
+            },
+            {
+              "type": "vec3",
+              "name": "m_contact_position",
+              "offset": 320
+            },
+            {
+              "type": "vec3",
+              "name": "m_contact_position_local",
+              "offset": 344
+            },
+            {
+              "type": "vec3",
+              "name": "m_contact_normal_smooth",
+              "offset": 368
+            },
+            {
+              "type": "physics.object",
+              "name": "m_memory_object",
+              "offset": 392
+            },
+            {
+              "type": "vec3",
+              "name": "m_memory_position",
+              "offset": 408
+            },
+            {
+              "type": "vec3",
+              "name": "m_memory_position_local",
+              "offset": 432
+            },
+            {
+              "type": "vec3",
+              "name": "m_memory_vector_prev",
+              "offset": 456
+            },
+            {
+              "type": "f64",
+              "name": "m_compression_factor",
+              "offset": 480
+            },
+            {
+              "type": "f64",
+              "name": "m_grip_load_average",
+              "offset": 488
+            },
+            {
+              "type": "f64",
+              "name": "m_value_steering",
+              "offset": 496
+            },
+            {
+              "type": "f64",
+              "name": "m_suspension_offset",
+              "offset": 504
+            },
+            {
+              "type": "physics_util.impulse_activator",
+              "name": "_m_impulse_activator",
+              "offset": 512
+            },
+            {
+              "type": "physics_util.impulse_activator",
+              "name": "_m_contact_impulse_activator",
+              "offset": 552
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_suspension_start",
+              "offset": 592
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_suspension_end",
+              "offset": 616
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_contact_velocity",
+              "offset": 640
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_front_dir",
+              "offset": 664
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_side_dir",
+              "offset": 688
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_wheel_force",
+              "offset": 712
+            }
+          ]
+        },
+        "new": {
+          "name": "server_scene.vehicle_element.wheel",
+          "kind": 13,
+          "base": "replication.master.composite",
+          "size": 744,
+          "alignment": 8,
+          "enum_labels": [],
+          "fields": [
+            {
+              "type": "ptr<vehicle_element_definition.wheel>",
+              "name": "m_definition",
+              "offset": 8
+            },
+            {
+              "type": "ptr<server_scene.vehicle_torque_node>",
+              "name": "m_torque_node",
+              "offset": 16
+            },
+            {
+              "type": "replication.master.property_f64_compressed_s8",
+              "name": "m_steering",
+              "offset": 24
+            },
+            {
+              "type": "replication.master.property_f64_compressed_s8",
+              "name": "m_wheel_rps",
+              "offset": 72
+            },
+            {
+              "type": "replication.master.property_bool",
+              "name": "m_is_skid",
+              "offset": 120
+            },
+            {
+              "type": "server_scene.vehicle_element.accessory",
+              "name": "m_accessory",
+              "offset": 152
+            },
+            {
+              "type": "physics.object",
+              "name": "m_contact_object",
+              "offset": 304
+            },
+            {
+              "type": "vec3",
+              "name": "m_contact_position",
+              "offset": 320
+            },
+            {
+              "type": "vec3",
+              "name": "m_contact_position_local",
+              "offset": 344
+            },
+            {
+              "type": "vec3",
+              "name": "m_contact_normal_smooth",
+              "offset": 368
+            },
+            {
+              "type": "physics.object",
+              "name": "m_memory_object",
+              "offset": 392
+            },
+            {
+              "type": "vec3",
+              "name": "m_memory_position",
+              "offset": 408
+            },
+            {
+              "type": "vec3",
+              "name": "m_memory_position_local",
+              "offset": 432
+            },
+            {
+              "type": "vec3",
+              "name": "m_memory_vector_prev",
+              "offset": 456
+            },
+            {
+              "type": "f64",
+              "name": "m_compression_factor",
+              "offset": 480
+            },
+            {
+              "type": "f64",
+              "name": "m_grip_load_average",
+              "offset": 488
+            },
+            {
+              "type": "f64",
+              "name": "m_value_steering",
+              "offset": 496
+            },
+            {
+              "type": "f64",
+              "name": "m_suspension_offset",
+              "offset": 504
+            },
+            {
+              "type": "bool",
+              "name": "m_is_rotation_locked",
+              "offset": 512
+            },
+            {
+              "type": "physics_util.impulse_activator",
+              "name": "_m_impulse_activator",
+              "offset": 520
+            },
+            {
+              "type": "physics_util.impulse_activator",
+              "name": "_m_contact_impulse_activator",
+              "offset": 560
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_suspension_start",
+              "offset": 600
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_suspension_end",
+              "offset": 624
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_contact_velocity",
+              "offset": 648
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_front_dir",
+              "offset": 672
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_side_dir",
+              "offset": 696
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_wheel_force",
+              "offset": 720
+            }
+          ]
+        }
+      },
+      {
+        "name": "server_scene.vehicle_component.roller_wheel_fixed",
+        "old": {
+          "name": "server_scene.vehicle_component.roller_wheel_fixed",
+          "kind": 13,
+          "base": "server_scene.vehicle_component",
+          "size": 984,
+          "alignment": 8,
+          "enum_labels": [],
+          "fields": [
+            {
+              "type": "replication.master.property_f64_compressed_s8",
+              "name": "m_wheel_rps",
+              "offset": 480
+            },
+            {
+              "type": "server_scene.vehicle_torque_data",
+              "name": "m_torque_data",
+              "offset": 528
+            },
+            {
+              "type": "server_scene.vehicle_data_node_group",
+              "name": "m_data_nodes",
+              "offset": 592
+            },
+            {
+              "type": "string",
+              "name": "m_user_defined_alias",
+              "offset": 632
+            },
+            {
+              "type": "physics.object",
+              "name": "m_contact_object",
+              "offset": 648
+            },
+            {
+              "type": "vec3",
+              "name": "m_contact_position",
+              "offset": 664
+            },
+            {
+              "type": "vec3",
+              "name": "m_contact_position_local",
+              "offset": 688
+            },
+            {
+              "type": "physics.object",
+              "name": "m_memory_object",
+              "offset": 712
+            },
+            {
+              "type": "vec3",
+              "name": "m_memory_position",
+              "offset": 728
+            },
+            {
+              "type": "vec3",
+              "name": "m_memory_position_local",
+              "offset": 752
+            },
+            {
+              "type": "vec3",
+              "name": "m_memory_vector_prev",
+              "offset": 776
+            },
+            {
+              "type": "f64",
+              "name": "m_compression_factor",
+              "offset": 800
+            },
+            {
+              "type": "physics_util.impulse_activator",
+              "name": "_m_impulse_activator",
+              "offset": 808
+            },
+            {
+              "type": "physics_util.impulse_activator",
+              "name": "_m_contact_impulse_activator",
+              "offset": 848
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_contact_velocity",
+              "offset": 888
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_front_dir",
+              "offset": 912
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_side_dir",
+              "offset": 936
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_wheel_force",
+              "offset": 960
+            }
+          ]
+        },
+        "new": {
+          "name": "server_scene.vehicle_component.roller_wheel_fixed",
+          "kind": 13,
+          "base": "server_scene.vehicle_component",
+          "size": 1720,
+          "alignment": 8,
+          "enum_labels": [],
+          "fields": [
+            {
+              "type": "replication.master.property_f64_compressed_s8",
+              "name": "m_wheel_rps",
+              "offset": 480
+            },
+            {
+              "type": "server_scene.vehicle_torque_data",
+              "name": "m_torque_data",
+              "offset": 528
+            },
+            {
+              "type": "server_scene.vehicle_data_node_group",
+              "name": "m_data_nodes",
+              "offset": 592
+            },
+            {
+              "type": "server_scene.vehicle_element.wheel",
+              "name": "m_element_wheel",
+              "offset": 632
+            },
+            {
+              "type": "vehicle_element_definition.wheel",
+              "name": "m_wheel_definition",
+              "offset": 1376
+            },
+            {
+              "type": "string",
+              "name": "m_user_defined_alias",
+              "offset": 1704
+            }
+          ]
+        }
+      },
+      {
+        "name": "server_scene.vehicle_component.roller_wheel_suspension",
+        "old": {
+          "name": "server_scene.vehicle_component.roller_wheel_suspension",
+          "kind": 13,
+          "base": "server_scene.vehicle_component",
+          "size": 1032,
+          "alignment": 8,
+          "enum_labels": [],
+          "fields": [
+            {
+              "type": "replication.master.property_f64_compressed_s8",
+              "name": "m_wheel_rps",
+              "offset": 480
+            },
+            {
+              "type": "server_scene.vehicle_torque_data",
+              "name": "m_torque_data",
+              "offset": 528
+            },
+            {
+              "type": "server_scene.vehicle_data_node_group",
+              "name": "m_data_nodes",
+              "offset": 592
+            },
+            {
+              "type": "string",
+              "name": "m_user_defined_alias",
+              "offset": 632
+            },
+            {
+              "type": "physics.object",
+              "name": "m_contact_object",
+              "offset": 648
+            },
+            {
+              "type": "vec3",
+              "name": "m_contact_position",
+              "offset": 664
+            },
+            {
+              "type": "vec3",
+              "name": "m_contact_position_local",
+              "offset": 688
+            },
+            {
+              "type": "physics.object",
+              "name": "m_memory_object",
+              "offset": 712
+            },
+            {
+              "type": "vec3",
+              "name": "m_memory_position",
+              "offset": 728
+            },
+            {
+              "type": "vec3",
+              "name": "m_memory_position_local",
+              "offset": 752
+            },
+            {
+              "type": "vec3",
+              "name": "m_memory_vector_prev",
+              "offset": 776
+            },
+            {
+              "type": "f64",
+              "name": "m_compression_factor",
+              "offset": 800
+            },
+            {
+              "type": "physics_util.impulse_activator",
+              "name": "_m_impulse_activator",
+              "offset": 808
+            },
+            {
+              "type": "physics_util.impulse_activator",
+              "name": "_m_contact_impulse_activator",
+              "offset": 848
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_suspension_start",
+              "offset": 888
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_suspension_end",
+              "offset": 912
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_contact_velocity",
+              "offset": 936
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_front_dir",
+              "offset": 960
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_side_dir",
+              "offset": 984
+            },
+            {
+              "type": "vec3",
+              "name": "m_debug_wheel_force",
+              "offset": 1008
+            }
+          ]
+        },
+        "new": {
+          "name": "server_scene.vehicle_component.roller_wheel_suspension",
+          "kind": 13,
+          "base": "server_scene.vehicle_component.roller_wheel_fixed",
+          "size": 1720,
+          "alignment": 8,
+          "enum_labels": [],
+          "fields": []
+        }
+      },
+      {
+        "name": "server_scene.vehicle_component.wheel",
+        "old": {
+          "name": "server_scene.vehicle_component.wheel",
+          "kind": 13,
+          "base": "server_scene.vehicle_component",
+          "size": 1504,
+          "alignment": 8,
+          "enum_labels": [],
+          "fields": [
+            {
+              "type": "server_scene.vehicle_element.wheel",
+              "name": "m_element_wheel",
+              "offset": 480
+            },
+            {
+              "type": "replication.master.property_f64_compressed_u8",
+              "name": "m_factor_temperature",
+              "offset": 1216
+            },
+            {
+              "type": "server_scene.vehicle_mechanical_node_in",
+              "name": "m_logic_steering_pos",
+              "offset": 1264
+            },
+            {
+              "type": "server_scene.vehicle_mechanical_node_in",
+              "name": "m_logic_steering_neg",
+              "offset": 1296
+            },
+            {
+              "type": "server_scene.vehicle_mechanical_node_in",
+              "name": "m_logic_brake",
+              "offset": 1328
+            },
+            {
+              "type": "server_scene.vehicle_torque_data",
+              "name": "m_torque_data",
+              "offset": 1360
+            },
+            {
+              "type": "server_scene.vehicle_data_node_group",
+              "name": "m_data_nodes",
+              "offset": 1424
+            },
+            {
+              "type": "string",
+              "name": "m_user_defined_alias",
+              "offset": 1464
+            },
+            {
+              "type": "f64",
+              "name": "m_stiffness",
+              "offset": 1480
+            },
+            {
+              "type": "f64",
+              "name": "m_damping",
+              "offset": 1488
+            },
+            {
+              "type": "bool",
+              "name": "m_is_pending_damage_accessory_release",
+              "offset": 1496
+            }
+          ]
+        },
+        "new": {
+          "name": "server_scene.vehicle_component.wheel",
+          "kind": 13,
+          "base": "server_scene.vehicle_component",
+          "size": 1512,
+          "alignment": 8,
+          "enum_labels": [],
+          "fields": [
+            {
+              "type": "server_scene.vehicle_element.wheel",
+              "name": "m_element_wheel",
+              "offset": 480
+            },
+            {
+              "type": "replication.master.property_f64_compressed_u8",
+              "name": "m_factor_temperature",
+              "offset": 1224
+            },
+            {
+              "type": "server_scene.vehicle_mechanical_node_in",
+              "name": "m_logic_steering_pos",
+              "offset": 1272
+            },
+            {
+              "type": "server_scene.vehicle_mechanical_node_in",
+              "name": "m_logic_steering_neg",
+              "offset": 1304
+            },
+            {
+              "type": "server_scene.vehicle_mechanical_node_in",
+              "name": "m_logic_brake",
+              "offset": 1336
+            },
+            {
+              "type": "server_scene.vehicle_torque_data",
+              "name": "m_torque_data",
+              "offset": 1368
+            },
+            {
+              "type": "server_scene.vehicle_data_node_group",
+              "name": "m_data_nodes",
+              "offset": 1432
+            },
+            {
+              "type": "string",
+              "name": "m_user_defined_alias",
+              "offset": 1472
+            },
+            {
+              "type": "f64",
+              "name": "m_stiffness",
+              "offset": 1488
+            },
+            {
+              "type": "f64",
+              "name": "m_damping",
+              "offset": 1496
+            },
+            {
+              "type": "bool",
+              "name": "m_is_pending_damage_accessory_release",
+              "offset": 1504
+            }
+          ]
+        }
+      },
+      {
+        "name": "server_scene.vehicle_component.landing_gear",
+        "old": {
+          "name": "server_scene.vehicle_component.landing_gear",
+          "kind": 13,
+          "base": "server_scene.vehicle_component",
+          "size": 1272,
+          "alignment": 8,
+          "enum_labels": [],
+          "fields": [
+            {
+              "type": "server_scene.vehicle_element.wheel",
+              "name": "m_element_wheel",
+              "offset": 480
+            },
+            {
+              "type": "server_scene.vehicle_mechanical_node_in",
+              "name": "m_logic_steering",
+              "offset": 1216
+            },
+            {
+              "type": "f64",
+              "name": "m_stiffness",
+              "offset": 1248
+            },
+            {
+              "type": "f64",
+              "name": "m_damping",
+              "offset": 1256
+            },
+            {
+              "type": "bool",
+              "name": "m_is_pending_damage_accessory_release",
+              "offset": 1264
+            }
+          ]
+        },
+        "new": {
+          "name": "server_scene.vehicle_component.landing_gear",
+          "kind": 13,
+          "base": "server_scene.vehicle_component",
+          "size": 1280,
+          "alignment": 8,
+          "enum_labels": [],
+          "fields": [
+            {
+              "type": "server_scene.vehicle_element.wheel",
+              "name": "m_element_wheel",
+              "offset": 480
+            },
+            {
+              "type": "server_scene.vehicle_mechanical_node_in",
+              "name": "m_logic_steering",
+              "offset": 1224
+            },
+            {
+              "type": "f64",
+              "name": "m_stiffness",
+              "offset": 1256
+            },
+            {
+              "type": "f64",
+              "name": "m_damping",
+              "offset": 1264
+            },
+            {
+              "type": "bool",
+              "name": "m_is_pending_damage_accessory_release",
+              "offset": 1272
+            }
+          ]
+        }
+      }
+    ],
+    "limits": "Observed kinds 13/14 only; flags and unknown zero-list meaning unresolved. Descriptor vtable/lifecycle names are declarations, not executed runtime calls or complete ABI recovery."
+  },
+  "reader": {
+    "schema": 1,
+    "tool_version": "1.1.0",
+    "tool_sha256": "503dd34b80e7292669640366b69b43e0b1828fac5ffb1756e34c48f925f40c71",
+    "source_sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22",
+    "counts": {
+      "functions": 12,
+      "identical_exports_deduplicated": 0,
+      "instructions_byte_checked": 8099,
+      "slot_derived_calls": 326,
+      "unresolved_calls": 415
+    },
+    "limits": [
+      "Approximate C is not original source or a recovered ABI.",
+      "Slot-derived call sites establish data dependency, not virtual target binding.",
+      "Full-text results and printable strings are investigative leads, not behavioral conclusions.",
+      "No game process, gameplay session, or external Python dependency is required."
+    ]
+  },
+  "current_exports": [
+    {
+      "signature": "() server_scene.vehicle.create_physics_from_shape (server_scene.vehicle, physics.scene, server_scene.environment_tile_container, physics.compound_shape)",
+      "offset": 52959384,
+      "code_sha256": "e36efb983ac5090635989f793a66d40b54268ce851c87cd595304e79fafa4408",
+      "instructions_checked": 433,
+      "instruction_bytes_checked": 2437,
+      "review_scope": "Full wrapper C and selected assembly read"
+    },
+    {
+      "signature": "() server_scene.vehicle.on_physics_contact_added (server_scene.vehicle, server_scene, physics.collision_data_object, physics.collision_data_object, const vector<physics.collision_estimation_impulse>, const ptr<application_physics_user_data>)",
+      "offset": 53210860,
+      "code_sha256": "a70c0b7699cfeda10429242e40fc5b6282dd6e6c1231a3faf2d6142b2b02f608",
+      "instructions_checked": 468,
+      "instruction_bytes_checked": 2817,
+      "review_scope": "Full wrapper C and selected assembly read"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.engine.tick (server_scene.vehicle_component.engine, server_scene.vehicle, server_scene)",
+      "offset": 54524323,
+      "code_sha256": "ad5facd81be54fd1150c137ab0863d44825416024e0db44a0e862a298d7bb304",
+      "instructions_checked": 1787,
+      "instruction_bytes_checked": 11612,
+      "review_scope": "Fresh byte-checked export; full current C review pending"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gearbox.tick (server_scene.vehicle_component.gearbox, server_scene.vehicle, server_scene)",
+      "offset": 55006267,
+      "code_sha256": "4a53c971701e9380b956e3941dbb7d1b649cc9fb7a5e1f120653b7fedf130bbb",
+      "instructions_checked": 316,
+      "instruction_bytes_checked": 1702,
+      "review_scope": "Fresh byte-checked export; full current C review pending"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.landing_gear.tick (server_scene.vehicle_component.landing_gear, server_scene.vehicle, server_scene)",
+      "offset": 56066043,
+      "code_sha256": "efe95806df0e3ce313b395ff853bd19c832532307c7c17f7a721bd1e5d978683",
+      "instructions_checked": 370,
+      "instruction_bytes_checked": 2168,
+      "review_scope": "Fresh byte-checked export; full current C review pending"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.radiator_fan.tick (server_scene.vehicle_component.radiator_fan, server_scene.vehicle, server_scene)",
+      "offset": 57204129,
+      "code_sha256": "0999d5741d36ed3a6303275e4f88c97176c6d2503d0e4d6097b00f82c10914c2",
+      "instructions_checked": 88,
+      "instruction_bytes_checked": 409,
+      "review_scope": "Fresh byte-checked export; full current C review pending"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.create (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle)",
+      "offset": 57349835,
+      "code_sha256": "47010cc892c0188c1fa1b6822f7cc662c7f1de1776c3a4869a589ce12d636e63",
+      "instructions_checked": 155,
+      "instruction_bytes_checked": 835,
+      "review_scope": "Full wrapper C and selected assembly read"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.parse_save_data (server_scene.vehicle_component.roller_wheel_fixed, server_scene.save_data.parser)",
+      "offset": 57361361,
+      "code_sha256": "3619fd4b48f5e169fbab24d00eea4bb922b7bda8d981300f195d6da0f6658ad3",
+      "instructions_checked": 87,
+      "instruction_bytes_checked": 481,
+      "review_scope": "Fresh byte-checked export; full current C review pending"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)",
+      "offset": 57365473,
+      "code_sha256": "600322891a025ac2e45f774a11c2f7facae09888aa26f131c85a44d56a3627fd",
+      "instructions_checked": 99,
+      "instruction_bytes_checked": 517,
+      "review_scope": "Full wrapper C and selected assembly read"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.wheel.create (server_scene.vehicle_component.wheel, server_scene.vehicle)",
+      "offset": 58008466,
+      "code_sha256": "8b0822a292a54cdc5442f3482f30e6e76d1f8157e166683fd34b2fdf7b24d331",
+      "instructions_checked": 140,
+      "instruction_bytes_checked": 733,
+      "review_scope": "Fresh byte-checked export; full current C review pending"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.wheel.tick (server_scene.vehicle_component.wheel, server_scene.vehicle, server_scene)",
+      "offset": 58031821,
+      "code_sha256": "87503ccc5a5de26b37b6747ecdad299d929a2012ce67d9b7b029005665e29ea4",
+      "instructions_checked": 522,
+      "instruction_bytes_checked": 3144,
+      "review_scope": "Full wrapper C and selected assembly read"
+    },
+    {
+      "signature": "() server_scene.vehicle_element.wheel.tick (server_scene.vehicle_element.wheel, server_scene.vehicle, server_scene.vehicle_component, server_scene, f64, f64)",
+      "offset": 58473401,
+      "code_sha256": "de1e7d528d7950a452498748c04ad4c0aa540e801cb0655922ba97c452b9d54f",
+      "instructions_checked": 3634,
+      "instruction_bytes_checked": 24174,
+      "review_scope": "Selected rotation-lock sections read; remainder open"
+    }
+  ],
+  "selected_gcl_instructions": [
+    {
+      "function_offset": 52959384,
+      "address": 52961554,
+      "bytes": "8b842400020000",
+      "assembly": "MOV EAX,dword ptr [RSP + 0x200]"
+    },
+    {
+      "function_offset": 52959384,
+      "address": 52961561,
+      "bytes": "3b0509010000",
+      "assembly": "CMP EAX,dword ptr [0x03282228]"
+    },
+    {
+      "function_offset": 52959384,
+      "address": 52961567,
+      "bytes": "0f94c0",
+      "assembly": "SETZ AL"
+    },
+    {
+      "function_offset": 52959384,
+      "address": 52961570,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 52959384,
+      "address": 52961572,
+      "bytes": "0f8488000000",
+      "assembly": "JZ 0x032821b2"
+    },
+    {
+      "function_offset": 52959384,
+      "address": 52961578,
+      "bytes": "488b4c2438",
+      "assembly": "MOV RCX,qword ptr [RSP + 0x38]"
+    },
+    {
+      "function_offset": 52959384,
+      "address": 52961583,
+      "bytes": "488d8110090000",
+      "assembly": "LEA RAX,[RCX + 0x910]"
+    },
+    {
+      "function_offset": 52959384,
+      "address": 52961590,
+      "bytes": "488d15eb000000",
+      "assembly": "LEA RDX,[0x3282228]"
+    },
+    {
+      "function_offset": 52959384,
+      "address": 52961597,
+      "bytes": "488b1dc4010000",
+      "assembly": "MOV RBX,qword ptr [0x03282308]"
+    },
+    {
+      "function_offset": 52959384,
+      "address": 52961604,
+      "bytes": "4889c1",
+      "assembly": "MOV RCX,RAX"
+    },
+    {
+      "function_offset": 52959384,
+      "address": 52961607,
+      "bytes": "ff13",
+      "assembly": "CALL qword ptr [RBX]"
+    },
+    {
+      "function_offset": 57365473,
+      "address": 57365629,
+      "bytes": "8a442470",
+      "assembly": "MOV AL,byte ptr [RSP + 0x70]"
+    },
+    {
+      "function_offset": 57365473,
+      "address": 57365633,
+      "bytes": "3a0562010000",
+      "assembly": "CMP AL,byte ptr [0x036b55e9]"
+    },
+    {
+      "function_offset": 57365473,
+      "address": 57365639,
+      "bytes": "488b8c2490000000",
+      "assembly": "MOV RCX,qword ptr [RSP + 0x90]"
+    },
+    {
+      "function_offset": 57365473,
+      "address": 57365647,
+      "bytes": "0f948178040000",
+      "assembly": "SETZ byte ptr [RCX + 0x478]"
+    },
+    {
+      "function_offset": 57365473,
+      "address": 57365780,
+      "bytes": "80b97804000000",
+      "assembly": "CMP byte ptr [RCX + 0x478],0x0"
+    },
+    {
+      "function_offset": 57365473,
+      "address": 57365787,
+      "bytes": "0f8416000000",
+      "assembly": "JZ 0x036b5537"
+    },
+    {
+      "function_offset": 57365473,
+      "address": 57365793,
+      "bytes": "f20f1005d0000000",
+      "assembly": "MOVSD XMM0,qword ptr [0x036b55f9]"
+    },
+    {
+      "function_offset": 57365473,
+      "address": 57365801,
+      "bytes": "f20f11842480000000",
+      "assembly": "MOVSD qword ptr [RSP + 0x80],XMM0"
+    },
+    {
+      "function_offset": 57365473,
+      "address": 57365810,
+      "bytes": "e946000000",
+      "assembly": "JMP 0x036b557d"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474019,
+      "bytes": "488b4c2438",
+      "assembly": "MOV RCX,qword ptr [RSP + 0x38]"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474024,
+      "bytes": "4883791000",
+      "assembly": "CMP qword ptr [RCX + 0x10],0x0"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474029,
+      "bytes": "0f95c0",
+      "assembly": "SETNZ AL"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474032,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474034,
+      "bytes": "0f8425000000",
+      "assembly": "JZ 0x037c3e5d"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474040,
+      "bytes": "8a8100020000",
+      "assembly": "MOV AL,byte ptr [RCX + 0x200]"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474046,
+      "bytes": "3a05e55b0000",
+      "assembly": "CMP AL,byte ptr [0x037c9a29]"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474052,
+      "bytes": "0f94c0",
+      "assembly": "SETZ AL"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474055,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474057,
+      "bytes": "0f8407000000",
+      "assembly": "JZ 0x037c3e56"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474063,
+      "bytes": "b001",
+      "assembly": "MOV AL,0x1"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474065,
+      "bytes": "e90e000000",
+      "assembly": "JMP 0x037c3e64"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474070,
+      "bytes": "b000",
+      "assembly": "MOV AL,0x0"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474072,
+      "bytes": "e907000000",
+      "assembly": "JMP 0x037c3e64"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474077,
+      "bytes": "b000",
+      "assembly": "MOV AL,0x0"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474079,
+      "bytes": "e900000000",
+      "assembly": "JMP 0x037c3e64"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474084,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58474086,
+      "bytes": "0f844f000000",
+      "assembly": "JZ 0x037c3ebb"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495345,
+      "bytes": "488b4c2438",
+      "assembly": "MOV RCX,qword ptr [RSP + 0x38]"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495350,
+      "bytes": "4883791000",
+      "assembly": "CMP qword ptr [RCX + 0x10],0x0"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495355,
+      "bytes": "0f95c0",
+      "assembly": "SETNZ AL"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495358,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495360,
+      "bytes": "0f8425000000",
+      "assembly": "JZ 0x037c91ab"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495366,
+      "bytes": "8a8100020000",
+      "assembly": "MOV AL,byte ptr [RCX + 0x200]"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495372,
+      "bytes": "3a0597080000",
+      "assembly": "CMP AL,byte ptr [0x037c9a29]"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495378,
+      "bytes": "0f94c0",
+      "assembly": "SETZ AL"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495381,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495383,
+      "bytes": "0f8407000000",
+      "assembly": "JZ 0x037c91a4"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495389,
+      "bytes": "b001",
+      "assembly": "MOV AL,0x1"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495391,
+      "bytes": "e90e000000",
+      "assembly": "JMP 0x037c91b2"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495396,
+      "bytes": "b000",
+      "assembly": "MOV AL,0x0"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495398,
+      "bytes": "e907000000",
+      "assembly": "JMP 0x037c91b2"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495403,
+      "bytes": "b000",
+      "assembly": "MOV AL,0x0"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495405,
+      "bytes": "e900000000",
+      "assembly": "JMP 0x037c91b2"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495410,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 58473401,
+      "address": 58495412,
+      "bytes": "0f84d7010000",
+      "assembly": "JZ 0x037c9391"
+    }
+  ],
+  "typed_scalars": [
+    {
+      "label": "roller false",
+      "offset": 57365993,
+      "width": 1,
+      "format": "B",
+      "bytes": "00",
+      "value": 0
+    },
+    {
+      "label": "roller shared tick argument",
+      "offset": 57366001,
+      "width": 8,
+      "format": "d",
+      "bytes": "000000000000e03f",
+      "value": 0.5
+    },
+    {
+      "label": "roller locked replicated RPS",
+      "offset": 57366009,
+      "width": 8,
+      "format": "d",
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "shared wheel false",
+      "offset": 58497577,
+      "width": 1,
+      "format": "B",
+      "bytes": "00",
+      "value": 0
+    },
+    {
+      "label": "shared wheel zero",
+      "offset": 58497585,
+      "width": 8,
+      "format": "d",
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "shared wheel RPS sign multiplier",
+      "offset": 58497593,
+      "width": 8,
+      "format": "d",
+      "bytes": "000000000000f0bf",
+      "value": -1.0
+    },
+    {
+      "label": "motion comparison",
+      "offset": 52961832,
+      "width": 4,
+      "format": "i",
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "angular damping address-taken argument",
+      "offset": 52961832,
+      "width": 8,
+      "format": "d",
+      "bytes": "000000000000e03f",
+      "value": 0.5
+    }
+  ],
+  "native_batches": [
+    {
+      "batch": "native-01",
+      "spans": [
+        {
+          "begin_rva": 1314096,
+          "end_rva": 1347955,
+          "va": 5370023216,
+          "file_offset": 1311024,
+          "size": 33859,
+          "unwind_rva": 5789172,
+          "bound_kind": "chained_unwind_group_not_complete_cfg_or_leaf_inventory",
+          "name": "native_140d30",
+          "span_sha256": "1fb1e014fae1217a0b58bf4e82ca2d13ba0ac09e70040f78dec09e9741e92b81",
+          "unwind_group": {
+            "primary": {
+              "begin_rva": 1314096,
+              "end_rva": 1347955,
+              "unwind_rva": 5789172,
+              "file_offset": 1311024,
+              "code_sha256": "1fb1e014fae1217a0b58bf4e82ca2d13ba0ac09e70040f78dec09e9741e92b81"
+            },
+            "ranges": [
+              {
+                "begin_rva": 1314096,
+                "end_rva": 1347955,
+                "unwind_rva": 5789172,
+                "file_offset": 1311024,
+                "code_sha256": "1fb1e014fae1217a0b58bf4e82ca2d13ba0ac09e70040f78dec09e9741e92b81"
+              }
+            ],
+            "unwind": [
+              {
+                "unwind_rva": 5789172,
+                "version": 1,
+                "flags": 2,
+                "code_slots": 13,
+                "parent": null,
+                "bytes": "11270d0027741401276413012734120127010c0118f016e014d012c0105000007c0e4000",
+                "sha256": "d7f9cec4fb891e519a799871c7e662011cf6fcc678506cce2b776c382fc98aa3"
+              }
+            ],
+            "contiguous": true,
+            "limits": "Metadata-linked ranges only; not all code, leaf functions, ABI, operations, handler semantics or a complete CFG."
+          }
+        }
+      ],
+      "verification": {
+        "schema": 1,
+        "source_sha256": "097e1167477587c51a3b93ab7e7843382d99d30010678c9bd89a2fee648fec23",
+        "spans": 1,
+        "instructions_byte_checked": 6790,
+        "instruction_bytes_checked": 33859,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof.",
+        "pseudocode_requested": false
+      }
+    },
+    {
+      "batch": "native-02",
+      "spans": [
+        {
+          "begin_rva": 1354352,
+          "end_rva": 1354586,
+          "va": 5370063472,
+          "file_offset": 1351280,
+          "size": 234,
+          "unwind_rva": 5791824,
+          "bound_kind": "chained_unwind_group_not_complete_cfg_or_leaf_inventory",
+          "name": "native_14aa70",
+          "span_sha256": "b6475c8f6ea8b883b16a6a909f60ac38d46edf5c279701da75e4552cb0e39738",
+          "unwind_group": {
+            "primary": {
+              "begin_rva": 1354352,
+              "end_rva": 1354586,
+              "unwind_rva": 5791824,
+              "file_offset": 1351280,
+              "code_sha256": "b6475c8f6ea8b883b16a6a909f60ac38d46edf5c279701da75e4552cb0e39738"
+            },
+            "ranges": [
+              {
+                "begin_rva": 1354352,
+                "end_rva": 1354586,
+                "unwind_rva": 5791824,
+                "file_offset": 1351280,
+                "code_sha256": "b6475c8f6ea8b883b16a6a909f60ac38d46edf5c279701da75e4552cb0e39738"
+              }
+            ],
+            "unwind": [
+              {
+                "unwind_rva": 5791824,
+                "version": 1,
+                "flags": 2,
+                "code_slots": 9,
+                "parent": null,
+                "bytes": "112309001a681d00127441001234400012013c000b5000007c0e4000",
+                "sha256": "fc54b0c294df8ca676030a06896b086ad34db6a4d61f0beaea31e8403b04750f"
+              }
+            ],
+            "contiguous": true,
+            "limits": "Metadata-linked ranges only; not all code, leaf functions, ABI, operations, handler semantics or a complete CFG."
+          }
+        },
+        {
+          "begin_rva": 1356992,
+          "end_rva": 1357213,
+          "va": 5370066112,
+          "file_offset": 1353920,
+          "size": 221,
+          "unwind_rva": 5792076,
+          "bound_kind": "chained_unwind_group_not_complete_cfg_or_leaf_inventory",
+          "name": "native_14b4c0",
+          "span_sha256": "b30367b6de58956d792b270e6b0f5589a2a9df3862c2ea1486b3e8a32e43e1a2",
+          "unwind_group": {
+            "primary": {
+              "begin_rva": 1356992,
+              "end_rva": 1357044,
+              "unwind_rva": 5792076,
+              "file_offset": 1353920,
+              "code_sha256": "dcee093d09df44efa0bd98964681fc87615c6277554b1e45c7fc180db18fa253"
+            },
+            "ranges": [
+              {
+                "begin_rva": 1356992,
+                "end_rva": 1357044,
+                "unwind_rva": 5792076,
+                "file_offset": 1353920,
+                "code_sha256": "dcee093d09df44efa0bd98964681fc87615c6277554b1e45c7fc180db18fa253"
+              },
+              {
+                "begin_rva": 1357044,
+                "end_rva": 1357191,
+                "unwind_rva": 5792096,
+                "file_offset": 1353972,
+                "code_sha256": "0f450a595d36489576624a29699eecf87ec70a6b36edc75bdff93a85dc902129"
+              },
+              {
+                "begin_rva": 1357191,
+                "end_rva": 1357213,
+                "unwind_rva": 5792116,
+                "file_offset": 1354119,
+                "code_sha256": "862854942e91d27f75ecadd7fff2c33b2caed72b8764ef0527f36d25b581fa78"
+              }
+            ],
+            "unwind": [
+              {
+                "unwind_rva": 5792076,
+                "version": 1,
+                "flags": 3,
+                "code_slots": 3,
+                "parent": null,
+                "bytes": "19180300090112000230000068fa3f00",
+                "sha256": "4b030ae91957289f7f07bbcc528d405321d06764d5d08cfbe32978a2c5556a83"
+              },
+              {
+                "unwind_rva": 5792096,
+                "version": 1,
+                "flags": 4,
+                "code_slots": 2,
+                "parent": [
+                  1356992,
+                  1357044,
+                  5792076
+                ],
+                "bytes": "2108020008680800c0b41400f4b414004c615800",
+                "sha256": "e10d9f18f2cf88b963f70a85da761b4cb5321667a8e7bbf4ecef654e9b4cf67b"
+              },
+              {
+                "unwind_rva": 5792116,
+                "version": 1,
+                "flags": 4,
+                "code_slots": 0,
+                "parent": [
+                  1356992,
+                  1357044,
+                  5792076
+                ],
+                "bytes": "21000000c0b41400f4b414004c615800",
+                "sha256": "c312f0655ab8ccee36bd99a8a8d40e7344f89a02323eeec0d71c3f42943cf9bb"
+              }
+            ],
+            "contiguous": true,
+            "limits": "Metadata-linked ranges only; not all code, leaf functions, ABI, operations, handler semantics or a complete CFG."
+          }
+        }
+      ],
+      "verification": {
+        "schema": 1,
+        "source_sha256": "097e1167477587c51a3b93ab7e7843382d99d30010678c9bd89a2fee648fec23",
+        "spans": 2,
+        "instructions_byte_checked": 116,
+        "instruction_bytes_checked": 455,
+        "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+      }
+    }
+  ],
+  "native_bindings": [
+    {
+      "signature": "(f64) physics.object.get_mass (const physics.object)",
+      "signature_rva": 5515896,
+      "target_rva": 1354352
+    },
+    {
+      "signature": "() physics.object.set_mass (physics.object, const f64)",
+      "signature_rva": 5517952,
+      "target_rva": 1356992
+    }
+  ],
+  "selected_native_instructions": [
+    {
+      "rva": 1334981,
+      "bytes": "0f1005accb3f00",
+      "assembly": "MOVUPS XMM0,xmmword ptr [0x140542a78]"
+    },
+    {
+      "rva": 1334988,
+      "bytes": "0f1101",
+      "assembly": "MOVUPS xmmword ptr [RCX],XMM0"
+    },
+    {
+      "rva": 1334991,
+      "bytes": "0f100db2cb3f00",
+      "assembly": "MOVUPS XMM1,xmmword ptr [0x140542a88]"
+    },
+    {
+      "rva": 1334998,
+      "bytes": "0f114910",
+      "assembly": "MOVUPS xmmword ptr [RCX + 0x10],XMM1"
+    },
+    {
+      "rva": 1335002,
+      "bytes": "0f1005b7cb3f00",
+      "assembly": "MOVUPS XMM0,xmmword ptr [0x140542a98]"
+    },
+    {
+      "rva": 1335009,
+      "bytes": "0f114120",
+      "assembly": "MOVUPS xmmword ptr [RCX + 0x20],XMM0"
+    },
+    {
+      "rva": 1335013,
+      "bytes": "8b05bdcb3f00",
+      "assembly": "MOV EAX,dword ptr [0x140542aa8]"
+    },
+    {
+      "rva": 1335019,
+      "bytes": "894130",
+      "assembly": "MOV dword ptr [RCX + 0x30],EAX"
+    },
+    {
+      "rva": 1335022,
+      "bytes": "0fb605b7cb3f00",
+      "assembly": "MOVZX EAX,byte ptr [0x140542aac]"
+    },
+    {
+      "rva": 1335029,
+      "bytes": "884134",
+      "assembly": "MOV byte ptr [RCX + 0x34],AL"
+    },
+    {
+      "rva": 1335116,
+      "bytes": "488d051d4b0000",
+      "assembly": "LEA RAX,[0x14014aa70]"
+    },
+    {
+      "rva": 1335123,
+      "bytes": "48894328",
+      "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+    },
+    {
+      "rva": 1335148,
+      "bytes": "488d05fd4a0000",
+      "assembly": "LEA RAX,[0x14014aa70]"
+    },
+    {
+      "rva": 1335155,
+      "bytes": "488901",
+      "assembly": "MOV qword ptr [RCX],RAX"
+    },
+    {
+      "rva": 1341620,
+      "bytes": "0f1005c5b93f00",
+      "assembly": "MOVUPS XMM0,xmmword ptr [0x140543280]"
+    },
+    {
+      "rva": 1341627,
+      "bytes": "0f1101",
+      "assembly": "MOVUPS xmmword ptr [RCX],XMM0"
+    },
+    {
+      "rva": 1341630,
+      "bytes": "0f100dcbb93f00",
+      "assembly": "MOVUPS XMM1,xmmword ptr [0x140543290]"
+    },
+    {
+      "rva": 1341637,
+      "bytes": "0f114910",
+      "assembly": "MOVUPS xmmword ptr [RCX + 0x10],XMM1"
+    },
+    {
+      "rva": 1341641,
+      "bytes": "0f1005d0b93f00",
+      "assembly": "MOVUPS XMM0,xmmword ptr [0x1405432a0]"
+    },
+    {
+      "rva": 1341648,
+      "bytes": "0f114120",
+      "assembly": "MOVUPS xmmword ptr [RCX + 0x20],XMM0"
+    },
+    {
+      "rva": 1341652,
+      "bytes": "8b05d6b93f00",
+      "assembly": "MOV EAX,dword ptr [0x1405432b0]"
+    },
+    {
+      "rva": 1341658,
+      "bytes": "894130",
+      "assembly": "MOV dword ptr [RCX + 0x30],EAX"
+    },
+    {
+      "rva": 1341661,
+      "bytes": "0fb705d0b93f00",
+      "assembly": "MOVZX EAX,word ptr [0x1405432b4]"
+    },
+    {
+      "rva": 1341668,
+      "bytes": "66894134",
+      "assembly": "MOV word ptr [RCX + 0x34],AX"
+    },
+    {
+      "rva": 1341672,
+      "bytes": "0fb605c7b93f00",
+      "assembly": "MOVZX EAX,byte ptr [0x1405432b6]"
+    },
+    {
+      "rva": 1341679,
+      "bytes": "884136",
+      "assembly": "MOV byte ptr [RCX + 0x36],AL"
+    },
+    {
+      "rva": 1341766,
+      "bytes": "488d05733b0000",
+      "assembly": "LEA RAX,[0x14014b4c0]"
+    },
+    {
+      "rva": 1341773,
+      "bytes": "48894328",
+      "assembly": "MOV qword ptr [RBX + 0x28],RAX"
+    },
+    {
+      "rva": 1341798,
+      "bytes": "488d05533b0000",
+      "assembly": "LEA RAX,[0x14014b4c0]"
+    },
+    {
+      "rva": 1341805,
+      "bytes": "488901",
+      "assembly": "MOV qword ptr [RCX],RAX"
+    },
+    {
+      "rva": 1354431,
+      "bytes": "f30f1030",
+      "assembly": "MOVSS XMM6,dword ptr [RAX]"
+    },
+    {
+      "rva": 1354435,
+      "bytes": "0f5af6",
+      "assembly": "CVTPS2PD XMM6,XMM6"
+    },
+    {
+      "rva": 1354547,
+      "bytes": "f20f1137",
+      "assembly": "MOVSD qword ptr [RDI],XMM6"
+    },
+    {
+      "rva": 1354551,
+      "bytes": "eb07",
+      "assembly": "JMP 0x14014ab40"
+    },
+    {
+      "rva": 1354553,
+      "bytes": "0f57c0",
+      "assembly": "XORPS XMM0,XMM0"
+    },
+    {
+      "rva": 1354556,
+      "bytes": "f20f1107",
+      "assembly": "MOVSD qword ptr [RDI],XMM0"
+    },
+    {
+      "rva": 1357052,
+      "bytes": "f20f1032",
+      "assembly": "MOVSD XMM6,qword ptr [RDX]"
+    },
+    {
+      "rva": 1357056,
+      "bytes": "488d542420",
+      "assembly": "LEA RDX,[RSP + 0x20]"
+    },
+    {
+      "rva": 1357061,
+      "bytes": "660f5af6",
+      "assembly": "CVTPD2PS XMM6,XMM6"
+    },
+    {
+      "rva": 1357065,
+      "bytes": "f30f11b088000000",
+      "assembly": "MOVSS dword ptr [RAX + 0x88],XMM6"
+    },
+    {
+      "rva": 1357084,
+      "bytes": "488b01",
+      "assembly": "MOV RAX,qword ptr [RCX]"
+    },
+    {
+      "rva": 1357087,
+      "bytes": "ff5038",
+      "assembly": "CALL qword ptr [RAX + 0x38]"
+    },
+    {
+      "rva": 1357090,
+      "bytes": "f30f104c2420",
+      "assembly": "MOVSS XMM1,dword ptr [RSP + 0x20]"
+    },
+    {
+      "rva": 1357096,
+      "bytes": "0f57c0",
+      "assembly": "XORPS XMM0,XMM0"
+    },
+    {
+      "rva": 1357099,
+      "bytes": "0f2fc8",
+      "assembly": "COMISS XMM1,XMM0"
+    },
+    {
+      "rva": 1357102,
+      "bytes": "f30f11742420",
+      "assembly": "MOVSS dword ptr [RSP + 0x20],XMM6"
+    },
+    {
+      "rva": 1357108,
+      "bytes": "7632",
+      "assembly": "JBE 0x14014b568"
+    },
+    {
+      "rva": 1357110,
+      "bytes": "0f28442430",
+      "assembly": "MOVAPS XMM0,xmmword ptr [RSP + 0x30]"
+    },
+    {
+      "rva": 1357115,
+      "bytes": "0f28d6",
+      "assembly": "MOVAPS XMM2,XMM6"
+    },
+    {
+      "rva": 1357118,
+      "bytes": "f30f5ed1",
+      "assembly": "DIVSS XMM2,XMM1"
+    },
+    {
+      "rva": 1357122,
+      "bytes": "0f284c2440",
+      "assembly": "MOVAPS XMM1,xmmword ptr [RSP + 0x40]"
+    },
+    {
+      "rva": 1357127,
+      "bytes": "0fc6d200",
+      "assembly": "SHUFPS XMM2,XMM2,0x0"
+    },
+    {
+      "rva": 1357131,
+      "bytes": "0f59c2",
+      "assembly": "MULPS XMM0,XMM2"
+    },
+    {
+      "rva": 1357134,
+      "bytes": "0f59ca",
+      "assembly": "MULPS XMM1,XMM2"
+    },
+    {
+      "rva": 1357137,
+      "bytes": "0f29442430",
+      "assembly": "MOVAPS xmmword ptr [RSP + 0x30],XMM0"
+    },
+    {
+      "rva": 1357142,
+      "bytes": "0f28442450",
+      "assembly": "MOVAPS XMM0,xmmword ptr [RSP + 0x50]"
+    },
+    {
+      "rva": 1357147,
+      "bytes": "0f59c2",
+      "assembly": "MULPS XMM0,XMM2"
+    },
+    {
+      "rva": 1357150,
+      "bytes": "0f294c2440",
+      "assembly": "MOVAPS xmmword ptr [RSP + 0x40],XMM1"
+    },
+    {
+      "rva": 1357155,
+      "bytes": "0f29442450",
+      "assembly": "MOVAPS xmmword ptr [RSP + 0x50],XMM0"
+    },
+    {
+      "rva": 1357160,
+      "bytes": "488b4308",
+      "assembly": "MOV RAX,qword ptr [RBX + 0x8]"
+    },
+    {
+      "rva": 1357164,
+      "bytes": "4c8d442420",
+      "assembly": "LEA R8,[RSP + 0x20]"
+    },
+    {
+      "rva": 1357169,
+      "bytes": "b23f",
+      "assembly": "MOV DL,0x3f"
+    },
+    {
+      "rva": 1357171,
+      "bytes": "488b08",
+      "assembly": "MOV RCX,qword ptr [RAX]"
+    },
+    {
+      "rva": 1357174,
+      "bytes": "488b4958",
+      "assembly": "MOV RCX,qword ptr [RCX + 0x58]"
+    },
+    {
+      "rva": 1357178,
+      "bytes": "e841430e00",
+      "assembly": "CALL 0x14022f8c0"
+    }
+  ],
+  "limits": "Source-bound selected static evidence. No complete equivalence, runtime dispatch, native solver, callee, address-taken data, save compatibility or gameplay validation. Full game code remains local."
+}
