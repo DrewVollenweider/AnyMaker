@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "build": "26113663",
+  "installed_code_and_definition_hashes_match": true,
+  "definition_files_checked": 2968,
+  "reader_functions": 95,
+  "reader_instructions_checked": 23570,
+  "reader_instruction_bytes": 141171,
+  "new_export_functions": 26,
+  "selected_full_C_read_functions": 24,
+  "available_full_C_review_pending": 2,
+  "typed_scalars": 20,
+  "selected_calls": 47,
+  "selected_instructions": 34,
+  "research_tool_tests_passed": 302,
+  "new_model_tests": 8,
+  "seeded_species_volume_temperature_cases": 300,
+  "test_log_sha256": "3be58b6b44c365364a32938a005800fc31e6cae3b5c959ccd1f026d5c8cf1ccb",
+  "model_constants_match_source": true,
+  "game_executed": false,
+  "installation_or_active_saves_edited": false,
+  "limits": "Model invariant checks do not establish gameplay acceptance or all shared-content/cross-body/cadence cases. Per-source capacity counterexample is an analytical reconstruction, not an observed running creation."
+}

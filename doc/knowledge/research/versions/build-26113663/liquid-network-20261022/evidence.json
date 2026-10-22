@@ -1,0 +1,2548 @@
+{
+  "schema": 1,
+  "date": "2026-10-22",
+  "build": "26113663",
+  "source_sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22",
+  "functions": [
+    {
+      "signature": "() server_scene.connections_manager.build (server_scene.connections_manager, server_scene.vehicle.container)",
+      "signature_offset": 44515497,
+      "code_offset": 44518264,
+      "code_size": 2096,
+      "code_sha256": "6f9d84ab964b3c3a7a7c8fccbb6d29fe1697a451339f16ea79e1d9d3296e5c13"
+    },
+    {
+      "signature": "() server_scene.connections_manager.gas.build (server_scene.connections_manager.gas)",
+      "signature_offset": 44545852,
+      "code_offset": 44547648,
+      "code_size": 784,
+      "code_sha256": "510171c5d01f1ed827d85368a81c5f6e3cab36e358b4d2308865344ff2dabdb7"
+    },
+    {
+      "signature": "() server_scene.connections_manager.liquid.build (server_scene.connections_manager.liquid)",
+      "signature_offset": 44555935,
+      "code_offset": 44557812,
+      "code_size": 784,
+      "code_sha256": "a3df9ad10a642f0fcf8ee01f481d8a7b932653f4a5a1779970a99d611867d063"
+    },
+    {
+      "signature": "() server_scene.vehicle.build (server_scene.vehicle, server_scene.connections_manager)",
+      "signature_offset": 52760148,
+      "code_offset": 52760559,
+      "code_size": 200,
+      "code_sha256": "242798fb71c5d222ad3e3b1dd5a2d20c301ea0046f3c8d89e75e92f0fe3a899c"
+    },
+    {
+      "signature": "() server_scene.vehicle.container.tick (server_scene.vehicle.container, server_scene, const bool)",
+      "signature_offset": 52950205,
+      "code_offset": 52951723,
+      "code_size": 1064,
+      "code_sha256": "a9e2bed824d2c33a4e47d72c648603cc2aacd7632bc0acccbe2fcc29884137ea"
+    },
+    {
+      "signature": "() server_scene.vehicle.post_build (server_scene.vehicle)",
+      "signature_offset": 53231935,
+      "code_offset": 53232551,
+      "code_size": 248,
+      "code_sha256": "78ef59022186d4b0278eef8acbc8b1640ad2b4288e1fc3a08a0935bfd0d65ee7"
+    },
+    {
+      "signature": "() server_scene.vehicle.pre_build (server_scene.vehicle, server_scene.connections_manager)",
+      "signature_offset": 53241123,
+      "code_offset": 53242197,
+      "code_size": 432,
+      "code_sha256": "1ed325f3dc54279a2f3c7054f06c081f7b799a49698990c00fd5a58cbb6104d5"
+    },
+    {
+      "signature": "() server_scene.vehicle.tick (server_scene.vehicle, server_scene, const bool)",
+      "signature_offset": 53342057,
+      "code_offset": 53344047,
+      "code_size": 1504,
+      "code_sha256": "853a67038d9011fcc6c06576bd0b61edb6e140d1b3558b3c35184ea7a546149d"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gas_pump.create (server_scene.vehicle_component.gas_pump, server_scene.vehicle)",
+      "signature_offset": 54838901,
+      "code_offset": 54839739,
+      "code_size": 416,
+      "code_sha256": "208853142e33823b34b482700dc0984331d0ffdc6118c8c893e8db0b04e48fa1"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gas_pump.get_properties (server_scene.vehicle_component.gas_pump, server_scene.peer.property_data)",
+      "signature_offset": 54843686,
+      "code_offset": 54844341,
+      "code_size": 344,
+      "code_sha256": "b5cefb559c281f8187627d215c81362d7e670152d4811fead704324a45995fca"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gas_pump.on_property_update (server_scene.vehicle_component.gas_pump, const e_localization_string)",
+      "signature_offset": 54845844,
+      "code_offset": 54846121,
+      "code_size": 72,
+      "code_sha256": "66d1dd8abd4ad369a655e2f4d93763e8a849ed1898826eca9f00de381f09f4aa"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gas_pump.parse_save_data (server_scene.vehicle_component.gas_pump, server_scene.save_data.parser)",
+      "signature_offset": 54846452,
+      "code_offset": 54847322,
+      "code_size": 1104,
+      "code_sha256": "cab609b64ff91bac43de73fafd6ebe5fdb4b65c31152bf71bc9095fd21a057f6"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_pump.create (server_scene.vehicle_component.liquid_pump, server_scene.vehicle)",
+      "signature_offset": 56377700,
+      "code_offset": 56378743,
+      "code_size": 608,
+      "code_sha256": "9f6c7a5565a6529dfd4f1d4d205bd60f7f46f1609373ad76fc6f91503d13999a"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_pump.get_properties (server_scene.vehicle_component.liquid_pump, server_scene.peer.property_data)",
+      "signature_offset": 56382936,
+      "code_offset": 56383597,
+      "code_size": 344,
+      "code_sha256": "49347b226342488a722e4b485aa793c09930c335b6a6c312959004f066cc357d"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_pump.on_property_update (server_scene.vehicle_component.liquid_pump, const e_localization_string)",
+      "signature_offset": 56385130,
+      "code_offset": 56385413,
+      "code_size": 72,
+      "code_sha256": "a11a25c4576ed88dea57e510b779cdb77bd5573370145edb388ac70f33099098"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_pump.parse_save_data (server_scene.vehicle_component.liquid_pump, server_scene.save_data.parser)",
+      "signature_offset": 56385750,
+      "code_offset": 56386646,
+      "code_size": 1104,
+      "code_sha256": "d682f8e35c41a53f73f725c8fcad9eb0387c05a4f1bc1af6628ccc780a498fce"
+    },
+    {
+      "signature": "() server_scene.vehicle_gas_node.container.post_build (server_scene.vehicle_gas_node.container)",
+      "signature_offset": 58594351,
+      "code_offset": 58596749,
+      "code_size": 2408,
+      "code_sha256": "21405a7be5c432f968e5b73a92b6311ed60cb43cc6636e57527c45ea901cb996"
+    },
+    {
+      "signature": "() server_scene.vehicle_gas_node.container.rebuild (server_scene.vehicle_gas_node.container)",
+      "signature_offset": 58615557,
+      "code_offset": 58615669,
+      "code_size": 25,
+      "code_sha256": "816dd44714f1827a54ea5b6a761732dcc7fbbd760e8848f2f85d7076cb32a75d"
+    },
+    {
+      "signature": "() server_scene.vehicle_liquid_node.container._flood_island (server_scene.vehicle_liquid_node.container, server_scene.vehicle, const s32, server_scene.vehicle_liquid_island, const array<s32>)",
+      "signature_offset": 58761658,
+      "code_offset": 58764552,
+      "code_size": 2352,
+      "code_sha256": "cba5576306c46f40843a961a48c34c2b5fe0c3332fcb84616a1f40d8415bb785"
+    },
+    {
+      "signature": "() server_scene.vehicle_liquid_node.container._split_island_groups (server_scene.vehicle_liquid_node.container)",
+      "signature_offset": 58768189,
+      "code_offset": 58770099,
+      "code_size": 560,
+      "code_sha256": "628f94dcd38472ef788cebe468684393e5e1599f377b01eeb653cd2467c6c018"
+    },
+    {
+      "signature": "() server_scene.vehicle_liquid_node.container.post_build (server_scene.vehicle_liquid_node.container)",
+      "signature_offset": 58792132,
+      "code_offset": 58795132,
+      "code_size": 4360,
+      "code_sha256": "2dd996624f49c7c70b5bf20ec6d288f9e531f2a1fae25c90e12995184f072292"
+    },
+    {
+      "signature": "() server_scene.vehicle_liquid_node.container.pre_build (server_scene.vehicle_liquid_node.container, server_scene.vehicle, server_scene.connections_manager)",
+      "signature_offset": 58802621,
+      "code_offset": 58808739,
+      "code_size": 8208,
+      "code_sha256": "0b8af548ca675e0cbed0da12180f4a6459aa678ebde41ab9db881e5405c10b40"
+    },
+    {
+      "signature": "() server_scene.vehicle_liquid_node.container.rebuild (server_scene.vehicle_liquid_node.container)",
+      "signature_offset": 58820916,
+      "code_offset": 58821034,
+      "code_size": 25,
+      "code_sha256": "816dd44714f1827a54ea5b6a761732dcc7fbbd760e8848f2f85d7076cb32a75d"
+    },
+    {
+      "signature": "() server_scene.vehicle_logic_node.mechanical.container.rebuild (server_scene.vehicle_logic_node.mechanical.container)",
+      "signature_offset": 58886110,
+      "code_offset": 58886248,
+      "code_size": 33,
+      "code_sha256": "dac62e19143fbb3508c85212bc47c130869f0549e8881cc12f47eba82ea605b1"
+    }
+  ],
+  "exports_not_yet_fully_read": [
+    {
+      "signature": "() server_scene.vehicle_gas_node.container.pre_build (server_scene.vehicle_gas_node.container, server_scene.vehicle, server_scene.connections_manager)",
+      "signature_offset": 58601157,
+      "code_offset": 58606241,
+      "code_size": 6208,
+      "code_sha256": "a015f86af9b077d61dbd9ae492506e37da7a48f707026b23cf11f17046e9938b"
+    },
+    {
+      "signature": "() server_scene.vehicle_logic_node.mechanical.container.pre_build (server_scene.vehicle_logic_node.mechanical.container, server_scene.vehicle)",
+      "signature_offset": 58866226,
+      "code_offset": 58872069,
+      "code_size": 9128,
+      "code_sha256": "b4aad536ba6b389b856c164905cf7af40f1c92f9097943a3f756da72b0465530"
+    }
+  ],
+  "typed_scalars": [
+    {
+      "label": "liquid candidate head coefficient",
+      "offset": 58799460,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000040",
+      "value": 2.0
+    },
+    {
+      "label": "liquid candidate transfer coefficient",
+      "offset": 58799468,
+      "format": "d",
+      "width": 8,
+      "bytes": "7b14ae47e17a843f",
+      "value": 0.01
+    },
+    {
+      "label": "liquid zero",
+      "offset": 58799476,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "liquid sort initial index",
+      "offset": 58799484,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "liquid sort backward step",
+      "offset": 58799488,
+      "format": "i",
+      "width": 4,
+      "bytes": "02000000",
+      "value": 2
+    },
+    {
+      "label": "pre-build zero/index",
+      "offset": 58816923,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "pre-build half-grid bound expansion",
+      "offset": 58816931,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000e03f",
+      "value": 0.5
+    },
+    {
+      "label": "liquid direct-pair unset",
+      "offset": 58816939,
+      "format": "i",
+      "width": 4,
+      "bytes": "ffffffff",
+      "value": -1
+    },
+    {
+      "label": "liquid flood no-pair",
+      "offset": 58766896,
+      "format": "i",
+      "width": 4,
+      "bytes": "ffffffff",
+      "value": -1
+    },
+    {
+      "label": "liquid rebuild flag",
+      "offset": 58821058,
+      "format": "B",
+      "width": 1,
+      "bytes": "01",
+      "value": 1
+    },
+    {
+      "label": "gas rebuild flag",
+      "offset": 58615693,
+      "format": "B",
+      "width": 1,
+      "bytes": "01",
+      "value": 1
+    },
+    {
+      "label": "mechanical rebuild flag",
+      "offset": 58886280,
+      "format": "B",
+      "width": 1,
+      "bytes": "01",
+      "value": 1
+    },
+    {
+      "label": "liquid pump flow factor default",
+      "offset": 56387742,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "gas pump flow factor default",
+      "offset": 54848418,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "liquid pump UI minimum",
+      "offset": 56383917,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "liquid pump UI maximum",
+      "offset": 56383925,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "liquid pump UI step",
+      "offset": 56383933,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999b93f",
+      "value": 0.1
+    },
+    {
+      "label": "gas pump UI minimum",
+      "offset": 54844661,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "gas pump UI maximum",
+      "offset": 54844669,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "gas pump UI step",
+      "offset": 54844677,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999b93f",
+      "value": 0.1
+    }
+  ],
+  "strings": [
+    {
+      "offset": 56387728,
+      "bytes": "666c6f775f666163746f7200",
+      "text": "flow_factor"
+    },
+    {
+      "offset": 54848404,
+      "bytes": "666c6f775f666163746f7200",
+      "text": "flow_factor"
+    }
+  ],
+  "selected_calls": [
+    {
+      "function_offset": 44518264,
+      "instruction": 44518318,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520360,
+      "loaded_at": 44518295,
+      "dependency_steps": [
+        {
+          "instruction": 44518295,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44518318,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() vector<server_scene.connections_manager.available_component>.clear (vector<server_scene.connections_manager.available_component>)",
+      "slot_offset": 2096,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 44518264,
+      "instruction": 44518339,
+      "bytes": "ff12",
+      "instruction_text": "CALL qword ptr [RDX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520360,
+      "loaded_at": 44518329,
+      "dependency_steps": [
+        {
+          "instruction": 44518329,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44518339,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() vector<server_scene.connections_manager.available_component>.clear (vector<server_scene.connections_manager.available_component>)",
+      "slot_offset": 2096,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 44518264,
+      "instruction": 44518363,
+      "bytes": "ff12",
+      "instruction_text": "CALL qword ptr [RDX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520360,
+      "loaded_at": 44518353,
+      "dependency_steps": [
+        {
+          "instruction": 44518353,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44518363,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() vector<server_scene.connections_manager.available_component>.clear (vector<server_scene.connections_manager.available_component>)",
+      "slot_offset": 2096,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 44518264,
+      "instruction": 44518387,
+      "bytes": "ff12",
+      "instruction_text": "CALL qword ptr [RDX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520360,
+      "loaded_at": 44518377,
+      "dependency_steps": [
+        {
+          "instruction": 44518377,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44518387,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() vector<server_scene.connections_manager.available_component>.clear (vector<server_scene.connections_manager.available_component>)",
+      "slot_offset": 2096,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 44518264,
+      "instruction": 44518411,
+      "bytes": "ff12",
+      "instruction_text": "CALL qword ptr [RDX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520360,
+      "loaded_at": 44518401,
+      "dependency_steps": [
+        {
+          "instruction": 44518401,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44518411,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() vector<server_scene.connections_manager.available_component>.clear (vector<server_scene.connections_manager.available_component>)",
+      "slot_offset": 2096,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 44518264,
+      "instruction": 44518435,
+      "bytes": "ff12",
+      "instruction_text": "CALL qword ptr [RDX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520360,
+      "loaded_at": 44518425,
+      "dependency_steps": [
+        {
+          "instruction": 44518425,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44518435,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() vector<server_scene.connections_manager.available_component>.clear (vector<server_scene.connections_manager.available_component>)",
+      "slot_offset": 2096,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 44518264,
+      "instruction": 44518459,
+      "bytes": "ff12",
+      "instruction_text": "CALL qword ptr [RDX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520360,
+      "loaded_at": 44518449,
+      "dependency_steps": [
+        {
+          "instruction": 44518449,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44518459,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() vector<server_scene.connections_manager.available_component>.clear (vector<server_scene.connections_manager.available_component>)",
+      "slot_offset": 2096,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 44518264,
+      "instruction": 44518483,
+      "bytes": "ff12",
+      "instruction_text": "CALL qword ptr [RDX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520360,
+      "loaded_at": 44518473,
+      "dependency_steps": [
+        {
+          "instruction": 44518473,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44518483,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() vector<server_scene.connections_manager.available_component>.clear (vector<server_scene.connections_manager.available_component>)",
+      "slot_offset": 2096,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 44518264,
+      "instruction": 44519025,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520416,
+      "loaded_at": 44519001,
+      "dependency_steps": [
+        {
+          "instruction": 44519001,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44519008,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 44519011,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 44519014,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.register_connections (server_scene.vehicle_component, server_scene.connections_manager)",
+      "slot_offset": 2152,
+      "target_record_candidate": {
+        "code_offset": 57341566,
+        "code_size": 18
+      }
+    },
+    {
+      "function_offset": 44518264,
+      "instruction": 44519651,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520464,
+      "loaded_at": 44519630,
+      "dependency_steps": [
+        {
+          "instruction": 44519630,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44519637,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 44519640,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 44519643,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.pre_build (server_scene.vehicle, server_scene.connections_manager)",
+      "slot_offset": 2200,
+      "target_record_candidate": {
+        "code_offset": 53242197,
+        "code_size": 432
+      }
+    },
+    {
+      "function_offset": 44518264,
+      "instruction": 44519947,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520472,
+      "loaded_at": 44519923,
+      "dependency_steps": [
+        {
+          "instruction": 44519923,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44519930,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 44519933,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 44519936,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.build (server_scene.vehicle, server_scene.connections_manager)",
+      "slot_offset": 2208,
+      "target_record_candidate": {
+        "code_offset": 52760559,
+        "code_size": 200
+      }
+    },
+    {
+      "function_offset": 44518264,
+      "instruction": 44520001,
+      "bytes": "ff12",
+      "instruction_text": "CALL qword ptr [RDX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520480,
+      "loaded_at": 44519991,
+      "dependency_steps": [
+        {
+          "instruction": 44519991,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44520001,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.connections_manager.mechanical.build (server_scene.connections_manager.mechanical)",
+      "slot_offset": 2216,
+      "target_record_candidate": {
+        "code_offset": 44567347,
+        "code_size": 224
+      }
+    },
+    {
+      "function_offset": 44518264,
+      "instruction": 44520025,
+      "bytes": "ff12",
+      "instruction_text": "CALL qword ptr [RDX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520488,
+      "loaded_at": 44520015,
+      "dependency_steps": [
+        {
+          "instruction": 44520015,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44520025,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.connections_manager.electric.build (server_scene.connections_manager.electric)",
+      "slot_offset": 2224,
+      "target_record_candidate": {
+        "code_offset": 44537263,
+        "code_size": 848
+      }
+    },
+    {
+      "function_offset": 44518264,
+      "instruction": 44520049,
+      "bytes": "ff12",
+      "instruction_text": "CALL qword ptr [RDX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520496,
+      "loaded_at": 44520039,
+      "dependency_steps": [
+        {
+          "instruction": 44520039,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44520049,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.connections_manager.liquid.build (server_scene.connections_manager.liquid)",
+      "slot_offset": 2232,
+      "target_record_candidate": {
+        "code_offset": 44557812,
+        "code_size": 784
+      }
+    },
+    {
+      "function_offset": 44518264,
+      "instruction": 44520073,
+      "bytes": "ff12",
+      "instruction_text": "CALL qword ptr [RDX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520504,
+      "loaded_at": 44520063,
+      "dependency_steps": [
+        {
+          "instruction": 44520063,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44520073,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.connections_manager.gas.build (server_scene.connections_manager.gas)",
+      "slot_offset": 2240,
+      "target_record_candidate": {
+        "code_offset": 44547648,
+        "code_size": 784
+      }
+    },
+    {
+      "function_offset": 44518264,
+      "instruction": 44520094,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520512,
+      "loaded_at": 44520087,
+      "dependency_steps": [
+        {
+          "instruction": 44520087,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44520094,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.connections_manager.data.build (server_scene.connections_manager.data)",
+      "slot_offset": 2248,
+      "target_record_candidate": {
+        "code_offset": 44525384,
+        "code_size": 1480
+      }
+    },
+    {
+      "function_offset": 44518264,
+      "instruction": 44520292,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44520520,
+      "loaded_at": 44520276,
+      "dependency_steps": [
+        {
+          "instruction": 44520276,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44520283,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 44520286,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 44520289,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.post_build (server_scene.vehicle)",
+      "slot_offset": 2256,
+      "target_record_candidate": {
+        "code_offset": 53232551,
+        "code_size": 248
+      }
+    },
+    {
+      "function_offset": 44547648,
+      "instruction": 44547782,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44548440,
+      "loaded_at": 44547767,
+      "dependency_steps": [
+        {
+          "instruction": 44547767,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44547782,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(uptr) vector<server_scene.connections_manager.gas.connection>.end (const vector<server_scene.connections_manager.gas.connection>)",
+      "slot_offset": 792,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 44547648,
+      "instruction": 44547828,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44548448,
+      "loaded_at": 44547800,
+      "dependency_steps": [
+        {
+          "instruction": 44547800,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44547828,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(ptr<server_scene.connections_manager.gas.connection>) vector<server_scene.connections_manager.gas.connection>.value (const vector<server_scene.connections_manager.gas.connection>, const uptr)",
+      "slot_offset": 800,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 44547648,
+      "instruction": 44548396,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44548528,
+      "loaded_at": 44548373,
+      "dependency_steps": [
+        {
+          "instruction": 44548373,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44548396,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(uptr) vector<server_scene.connections_manager.gas.connection>.next (const vector<server_scene.connections_manager.gas.connection>, const uptr)",
+      "slot_offset": 880,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 44557812,
+      "instruction": 44557946,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44558604,
+      "loaded_at": 44557931,
+      "dependency_steps": [
+        {
+          "instruction": 44557931,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44557946,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(uptr) vector<server_scene.connections_manager.liquid.connection>.end (const vector<server_scene.connections_manager.liquid.connection>)",
+      "slot_offset": 792,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 44557812,
+      "instruction": 44557992,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44558612,
+      "loaded_at": 44557964,
+      "dependency_steps": [
+        {
+          "instruction": 44557964,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44557992,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(ptr<server_scene.connections_manager.liquid.connection>) vector<server_scene.connections_manager.liquid.connection>.value (const vector<server_scene.connections_manager.liquid.connection>, const uptr)",
+      "slot_offset": 800,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 44557812,
+      "instruction": 44558560,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 44558692,
+      "loaded_at": 44558537,
+      "dependency_steps": [
+        {
+          "instruction": 44558537,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 44558560,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(uptr) vector<server_scene.connections_manager.liquid.connection>.next (const vector<server_scene.connections_manager.liquid.connection>, const uptr)",
+      "slot_offset": 880,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 52951723,
+      "instruction": 52951826,
+      "bytes": "ffd5",
+      "instruction_text": "CALL RBP",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 52952787,
+      "loaded_at": 52951781,
+      "dependency_steps": [
+        {
+          "instruction": 52951781,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 52951788,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 52951791,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 52951795,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.connections_manager.build (server_scene.connections_manager, server_scene.vehicle.container)",
+      "slot_offset": 1064,
+      "target_record_candidate": {
+        "code_offset": 44518264,
+        "code_size": 2096
+      }
+    },
+    {
+      "function_offset": 52951723,
+      "instruction": 52952105,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 52952819,
+      "loaded_at": 52952083,
+      "dependency_steps": [
+        {
+          "instruction": 52952083,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 52952090,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 52952093,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 52952096,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle.tick (server_scene.vehicle, server_scene, const bool)",
+      "slot_offset": 1096,
+      "target_record_candidate": {
+        "code_offset": 53344047,
+        "code_size": 1504
+      }
+    },
+    {
+      "function_offset": 53232551,
+      "instruction": 53232606,
+      "bytes": "ffd2",
+      "instruction_text": "CALL RDX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53232799,
+      "loaded_at": 53232582,
+      "dependency_steps": [
+        {
+          "instruction": 53232582,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53232589,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 53232592,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 53232595,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_electric_node.container.post_build (server_scene.vehicle_electric_node.container)",
+      "slot_offset": 248,
+      "target_record_candidate": {
+        "code_offset": 58234826,
+        "code_size": 2232
+      }
+    },
+    {
+      "function_offset": 53232551,
+      "instruction": 53232653,
+      "bytes": "ffd2",
+      "instruction_text": "CALL RDX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53232807,
+      "loaded_at": 53232634,
+      "dependency_steps": [
+        {
+          "instruction": 53232634,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53232641,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 53232644,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 53232647,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_liquid_node.container.post_build (server_scene.vehicle_liquid_node.container)",
+      "slot_offset": 256,
+      "target_record_candidate": {
+        "code_offset": 58795132,
+        "code_size": 4360
+      }
+    },
+    {
+      "function_offset": 53232551,
+      "instruction": 53232700,
+      "bytes": "ffd2",
+      "instruction_text": "CALL RDX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53232815,
+      "loaded_at": 53232681,
+      "dependency_steps": [
+        {
+          "instruction": 53232681,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53232688,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 53232691,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 53232694,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_gas_node.container.post_build (server_scene.vehicle_gas_node.container)",
+      "slot_offset": 264,
+      "target_record_candidate": {
+        "code_offset": 58596749,
+        "code_size": 2408
+      }
+    },
+    {
+      "function_offset": 53232551,
+      "instruction": 53232724,
+      "bytes": "ff12",
+      "instruction_text": "CALL qword ptr [RDX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53232823,
+      "loaded_at": 53232714,
+      "dependency_steps": [
+        {
+          "instruction": 53232714,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53232724,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_node_container.post_build (server_scene.vehicle_torque_node_container)",
+      "slot_offset": 272,
+      "target_record_candidate": {
+        "code_offset": 59243861,
+        "code_size": 1288
+      }
+    },
+    {
+      "function_offset": 53242197,
+      "instruction": 53242275,
+      "bytes": "ffd5",
+      "instruction_text": "CALL RBP",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53242629,
+      "loaded_at": 53242241,
+      "dependency_steps": [
+        {
+          "instruction": 53242241,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53242248,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 53242251,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 53242255,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_logic_node.mechanical.container.pre_build (server_scene.vehicle_logic_node.mechanical.container, server_scene.vehicle)",
+      "slot_offset": 432,
+      "target_record_candidate": {
+        "code_offset": 58872069,
+        "code_size": 9128
+      }
+    },
+    {
+      "function_offset": 53242197,
+      "instruction": 53242343,
+      "bytes": "ffd3",
+      "instruction_text": "CALL RBX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53242637,
+      "loaded_at": 53242319,
+      "dependency_steps": [
+        {
+          "instruction": 53242319,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53242326,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 53242329,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 53242332,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_electric_node.container.pre_build (server_scene.vehicle_electric_node.container, server_scene.vehicle, server_scene.connections_manager)",
+      "slot_offset": 440,
+      "target_record_candidate": {
+        "code_offset": 58245069,
+        "code_size": 6896
+      }
+    },
+    {
+      "function_offset": 53242197,
+      "instruction": 53242411,
+      "bytes": "ffd3",
+      "instruction_text": "CALL RBX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53242645,
+      "loaded_at": 53242387,
+      "dependency_steps": [
+        {
+          "instruction": 53242387,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53242394,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 53242397,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 53242400,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_liquid_node.container.pre_build (server_scene.vehicle_liquid_node.container, server_scene.vehicle, server_scene.connections_manager)",
+      "slot_offset": 448,
+      "target_record_candidate": {
+        "code_offset": 58808739,
+        "code_size": 8208
+      }
+    },
+    {
+      "function_offset": 53242197,
+      "instruction": 53242479,
+      "bytes": "ffd3",
+      "instruction_text": "CALL RBX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53242653,
+      "loaded_at": 53242455,
+      "dependency_steps": [
+        {
+          "instruction": 53242455,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53242462,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 53242465,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 53242468,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_gas_node.container.pre_build (server_scene.vehicle_gas_node.container, server_scene.vehicle, server_scene.connections_manager)",
+      "slot_offset": 456,
+      "target_record_candidate": {
+        "code_offset": 58606241,
+        "code_size": 6208
+      }
+    },
+    {
+      "function_offset": 53242197,
+      "instruction": 53242524,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53242661,
+      "loaded_at": 53242509,
+      "dependency_steps": [
+        {
+          "instruction": 53242509,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53242524,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_node_container.pre_build (server_scene.vehicle_torque_node_container, server_scene.vehicle, server_scene.connections_manager)",
+      "slot_offset": 464,
+      "target_record_candidate": {
+        "code_offset": 59247336,
+        "code_size": 224
+      }
+    },
+    {
+      "function_offset": 54847322,
+      "instruction": 54847591,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54848442,
+      "loaded_at": 54847573,
+      "dependency_steps": [
+        {
+          "instruction": 54847573,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54847591,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.save_data.parser.parse_value (server_scene.save_data.parser, const string, string, const string)",
+      "slot_offset": 1120,
+      "target_record_candidate": {
+        "code_offset": 51472165,
+        "code_size": 56
+      }
+    },
+    {
+      "function_offset": 54847322,
+      "instruction": 54848133,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54848466,
+      "loaded_at": 54848118,
+      "dependency_steps": [
+        {
+          "instruction": 54848118,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54848133,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.save_data.parser.parse_value (server_scene.save_data.parser, const string, bool, const bool)",
+      "slot_offset": 1144,
+      "target_record_candidate": {
+        "code_offset": 51471048,
+        "code_size": 56
+      }
+    },
+    {
+      "function_offset": 56386646,
+      "instruction": 56386915,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 56387766,
+      "loaded_at": 56386897,
+      "dependency_steps": [
+        {
+          "instruction": 56386897,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 56386915,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.save_data.parser.parse_value (server_scene.save_data.parser, const string, string, const string)",
+      "slot_offset": 1120,
+      "target_record_candidate": {
+        "code_offset": 51472165,
+        "code_size": 56
+      }
+    },
+    {
+      "function_offset": 56386646,
+      "instruction": 56387457,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 56387790,
+      "loaded_at": 56387442,
+      "dependency_steps": [
+        {
+          "instruction": 56387442,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 56387457,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.save_data.parser.parse_value (server_scene.save_data.parser, const string, bool, const bool)",
+      "slot_offset": 1144,
+      "target_record_candidate": {
+        "code_offset": 51471048,
+        "code_size": 56
+      }
+    },
+    {
+      "function_offset": 58764552,
+      "instruction": 58765094,
+      "bytes": "ffd7",
+      "instruction_text": "CALL RDI",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58766928,
+      "loaded_at": 58765059,
+      "dependency_steps": [
+        {
+          "instruction": 58765059,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58765066,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58765069,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58765072,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_liquid_node.container._flood_island (server_scene.vehicle_liquid_node.container, server_scene.vehicle, const s32, server_scene.vehicle_liquid_island, const array<s32>)",
+      "slot_offset": 2376,
+      "target_record_candidate": {
+        "code_offset": 58764552,
+        "code_size": 2352
+      }
+    },
+    {
+      "function_offset": 58764552,
+      "instruction": 58765779,
+      "bytes": "41ffd2",
+      "instruction_text": "CALL R10",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58766928,
+      "loaded_at": 58765749,
+      "dependency_steps": [
+        {
+          "instruction": 58765749,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58765756,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58765759,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58765762,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_liquid_node.container._flood_island (server_scene.vehicle_liquid_node.container, server_scene.vehicle, const s32, server_scene.vehicle_liquid_island, const array<s32>)",
+      "slot_offset": 2376,
+      "target_record_candidate": {
+        "code_offset": 58764552,
+        "code_size": 2352
+      }
+    },
+    {
+      "function_offset": 58764552,
+      "instruction": 58766278,
+      "bytes": "41ffd2",
+      "instruction_text": "CALL R10",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58766928,
+      "loaded_at": 58766248,
+      "dependency_steps": [
+        {
+          "instruction": 58766248,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58766255,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58766258,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58766261,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_liquid_node.container._flood_island (server_scene.vehicle_liquid_node.container, server_scene.vehicle, const s32, server_scene.vehicle_liquid_island, const array<s32>)",
+      "slot_offset": 2376,
+      "target_record_candidate": {
+        "code_offset": 58764552,
+        "code_size": 2352
+      }
+    },
+    {
+      "function_offset": 58764552,
+      "instruction": 58766443,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58767000,
+      "loaded_at": 58766427,
+      "dependency_steps": [
+        {
+          "instruction": 58766427,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58766434,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58766437,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58766440,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.get_liquid_flood_nodes (server_scene.vehicle_component, vector<ptr<server_scene.vehicle_liquid_node>>)",
+      "slot_offset": 2448,
+      "target_record_candidate": {
+        "code_offset": 55104226,
+        "code_size": 18
+      }
+    },
+    {
+      "function_offset": 58764552,
+      "instruction": 58766823,
+      "bytes": "ffd7",
+      "instruction_text": "CALL RDI",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58766928,
+      "loaded_at": 58766791,
+      "dependency_steps": [
+        {
+          "instruction": 58766791,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58766798,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58766801,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58766804,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_liquid_node.container._flood_island (server_scene.vehicle_liquid_node.container, server_scene.vehicle, const s32, server_scene.vehicle_liquid_island, const array<s32>)",
+      "slot_offset": 2376,
+      "target_record_candidate": {
+        "code_offset": 58764552,
+        "code_size": 2352
+      }
+    },
+    {
+      "function_offset": 58795132,
+      "instruction": 58796958,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58799652,
+      "loaded_at": 58796951,
+      "dependency_steps": [
+        {
+          "instruction": 58796951,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58796958,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(f64) math.min (const f64, const f64)",
+      "slot_offset": 4520,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 58795132,
+      "instruction": 58797243,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58799652,
+      "loaded_at": 58797236,
+      "dependency_steps": [
+        {
+          "instruction": 58797236,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58797243,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(f64) math.min (const f64, const f64)",
+      "slot_offset": 4520,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 58808739,
+      "instruction": 58811359,
+      "bytes": "ff12",
+      "instruction_text": "CALL qword ptr [RDX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58817139,
+      "loaded_at": 58811349,
+      "dependency_steps": [
+        {
+          "instruction": 58811349,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58811359,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.connections_manager.liquid.rebuild (server_scene.connections_manager.liquid)",
+      "slot_offset": 8400,
+      "target_record_candidate": {
+        "code_offset": 44559503,
+        "code_size": 25
+      }
+    },
+    {
+      "function_offset": 58808739,
+      "instruction": 58816354,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58817443,
+      "loaded_at": 58816322,
+      "dependency_steps": [
+        {
+          "instruction": 58816322,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58816329,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58816332,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58816335,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_liquid_node.container._flood_island (server_scene.vehicle_liquid_node.container, server_scene.vehicle, const s32, server_scene.vehicle_liquid_island, const array<s32>)",
+      "slot_offset": 8704,
+      "target_record_candidate": {
+        "code_offset": 58764552,
+        "code_size": 2352
+      }
+    }
+  ],
+  "selected_instructions": [
+    {
+      "function_offset": 58795132,
+      "offset": 58796936,
+      "bytes": "488d0b",
+      "assembly": "LEA RCX,[RBX]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58796939,
+      "bytes": "488d942428010000",
+      "assembly": "LEA RDX,[RSP + 0x128]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58796947,
+      "bytes": "4c8d4020",
+      "assembly": "LEA R8,[RAX + 0x20]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58796951,
+      "bytes": "488b05860a0000",
+      "assembly": "MOV RAX,qword ptr [0x03813624]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58796958,
+      "bytes": "ff10",
+      "assembly": "CALL qword ptr [RAX]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58796960,
+      "bytes": "488d8c2430010000",
+      "assembly": "LEA RCX,[RSP + 0x130]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58796968,
+      "bytes": "488d9424b8000000",
+      "assembly": "LEA RDX,[RSP + 0xb8]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58796976,
+      "bytes": "4c8d842408010000",
+      "assembly": "LEA R8,[RSP + 0x108]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58796984,
+      "bytes": "488b05450a0000",
+      "assembly": "MOV RAX,qword ptr [0x03813604]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58796991,
+      "bytes": "ff10",
+      "assembly": "CALL qword ptr [RAX]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797195,
+      "bytes": "488b00",
+      "assembly": "MOV RAX,qword ptr [RAX]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797198,
+      "bytes": "488b4018",
+      "assembly": "MOV RAX,qword ptr [RAX + 0x18]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797202,
+      "bytes": "f20f104328",
+      "assembly": "MOVSD XMM0,qword ptr [RBX + 0x28]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797207,
+      "bytes": "f20f5c4020",
+      "assembly": "SUBSD XMM0,qword ptr [RAX + 0x20]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797212,
+      "bytes": "488d0e",
+      "assembly": "LEA RCX,[RSI]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797215,
+      "bytes": "488d5500",
+      "assembly": "LEA RDX,[RBP]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797219,
+      "bytes": "f20f11842450010000",
+      "assembly": "MOVSD qword ptr [RSP + 0x150],XMM0"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797228,
+      "bytes": "4c8d842450010000",
+      "assembly": "LEA R8,[RSP + 0x150]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797236,
+      "bytes": "488b0569090000",
+      "assembly": "MOV RAX,qword ptr [0x03813624]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797243,
+      "bytes": "ff10",
+      "assembly": "CALL qword ptr [RAX]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797331,
+      "bytes": "f20f10842410010000",
+      "assembly": "MOVSD XMM0,qword ptr [RSP + 0x110]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797340,
+      "bytes": "660f2f0550080000",
+      "assembly": "COMISD XMM0,qword ptr [0x03813574]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797348,
+      "bytes": "0f97c0",
+      "assembly": "SETA AL"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797351,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797353,
+      "bytes": "0f84be070000",
+      "assembly": "JZ 0x038134ed"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797455,
+      "bytes": "f20f104328",
+      "assembly": "MOVSD XMM0,qword ptr [RBX + 0x28]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797460,
+      "bytes": "f20f5c4020",
+      "assembly": "SUBSD XMM0,qword ptr [RAX + 0x20]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797465,
+      "bytes": "f20f11842418010000",
+      "assembly": "MOVSD qword ptr [RSP + 0x118],XMM0"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797836,
+      "bytes": "488b842440010000",
+      "assembly": "MOV RAX,qword ptr [RSP + 0x140]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797844,
+      "bytes": "488b00",
+      "assembly": "MOV RAX,qword ptr [RAX]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797847,
+      "bytes": "488b4018",
+      "assembly": "MOV RAX,qword ptr [RAX + 0x18]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797851,
+      "bytes": "f20f1003",
+      "assembly": "MOVSD XMM0,qword ptr [RBX]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797855,
+      "bytes": "f20f5e4020",
+      "assembly": "DIVSD XMM0,qword ptr [RAX + 0x20]"
+    },
+    {
+      "function_offset": 58795132,
+      "offset": 58797860,
+      "bytes": "f20f11842430010000",
+      "assembly": "MOVSD qword ptr [RSP + 0x130],XMM0"
+    }
+  ],
+  "layouts": [
+    {
+      "name": "server_scene.vehicle_liquid_node",
+      "base": "",
+      "size": 80,
+      "fields": [
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "m_component",
+          "offset": 0
+        },
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "m_component_flood",
+          "offset": 8
+        },
+        {
+          "type": "s32",
+          "name": "m_component_id",
+          "offset": 16
+        },
+        {
+          "type": "s32",
+          "name": "m_node_index",
+          "offset": 20
+        },
+        {
+          "type": "ptr<server_scene.vehicle_liquid_content_volume>",
+          "name": "m_content",
+          "offset": 24
+        },
+        {
+          "type": "bool",
+          "name": "m_is_expandable",
+          "offset": 32
+        },
+        {
+          "type": "f64",
+          "name": "m_static_pressure",
+          "offset": 40
+        },
+        {
+          "type": "f64",
+          "name": "m_height",
+          "offset": 48
+        },
+        {
+          "type": "f64",
+          "name": "m_flow",
+          "offset": 56
+        },
+        {
+          "type": "ptr<server_scene.vehicle_liquid_island>",
+          "name": "m_island",
+          "offset": 64
+        },
+        {
+          "type": "s32",
+          "name": "m_vehicle_node_index",
+          "offset": 72
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_liquid_island",
+      "base": "",
+      "size": 56,
+      "fields": [
+        {
+          "type": "vector<ptr<server_scene.vehicle_liquid_node>>",
+          "name": "m_nodes",
+          "offset": 0
+        },
+        {
+          "type": "ref<server_scene.vehicle_liquid_island_group>",
+          "name": "m_group",
+          "offset": 40
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_liquid_island_group",
+      "base": "",
+      "size": 64,
+      "fields": [
+        {
+          "type": "vector<ptr<server_scene.vehicle_liquid_island>>",
+          "name": "m_islands",
+          "offset": 0
+        },
+        {
+          "type": "f64",
+          "name": "m_total_volume",
+          "offset": 40
+        },
+        {
+          "type": "f64",
+          "name": "m_total_capacity",
+          "offset": 48
+        },
+        {
+          "type": "s32",
+          "name": "m_inspection_stamp",
+          "offset": 56
+        },
+        {
+          "type": "s32",
+          "name": "m_inspection_group_index",
+          "offset": 60
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_gas_node",
+      "base": "",
+      "size": 64,
+      "fields": [
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "m_component",
+          "offset": 0
+        },
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "m_component_flood",
+          "offset": 8
+        },
+        {
+          "type": "s32",
+          "name": "m_component_id",
+          "offset": 16
+        },
+        {
+          "type": "s32",
+          "name": "m_node_index",
+          "offset": 20
+        },
+        {
+          "type": "ptr<server_scene.vehicle_gas_content>",
+          "name": "m_content",
+          "offset": 24
+        },
+        {
+          "type": "f64",
+          "name": "m_pressure",
+          "offset": 32
+        },
+        {
+          "type": "f64",
+          "name": "m_flow",
+          "offset": 40
+        },
+        {
+          "type": "ptr<server_scene.vehicle_gas_island>",
+          "name": "m_island",
+          "offset": 48
+        },
+        {
+          "type": "s32",
+          "name": "m_vehicle_node_index",
+          "offset": 56
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_gas_island_group",
+      "base": "",
+      "size": 56,
+      "fields": [
+        {
+          "type": "vector<ptr<server_scene.vehicle_gas_island>>",
+          "name": "m_islands",
+          "offset": 0
+        },
+        {
+          "type": "f64",
+          "name": "m_total_volume",
+          "offset": 40
+        },
+        {
+          "type": "f64",
+          "name": "m_total_capacity",
+          "offset": 48
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_pump",
+      "base": "server_scene.vehicle_component",
+      "size": 1152,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_liquid_content_volume",
+          "name": "m_content_0",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_liquid_content_volume",
+          "name": "m_content_1",
+          "offset": 712
+        },
+        {
+          "type": "server_scene.vehicle_liquid_node_group_pair",
+          "name": "m_liquid_nodes",
+          "offset": 944
+        },
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 984
+        },
+        {
+          "type": "server_scene.vehicle_torque_data",
+          "name": "m_torque_data",
+          "offset": 1024
+        },
+        {
+          "type": "bool",
+          "name": "m_is_reverse",
+          "offset": 1088
+        },
+        {
+          "type": "f64",
+          "name": "m_flow_factor",
+          "offset": 1096
+        },
+        {
+          "type": "f64",
+          "name": "m_pressure",
+          "offset": 1104
+        },
+        {
+          "type": "f64",
+          "name": "m_static_pressure",
+          "offset": 1112
+        },
+        {
+          "type": "f64",
+          "name": "m_flow",
+          "offset": 1120
+        },
+        {
+          "type": "f64",
+          "name": "m_display_power",
+          "offset": 1128
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 1136
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_pump",
+      "base": "server_scene.vehicle_component",
+      "size": 792,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_gas_content",
+          "name": "m_content_0",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_gas_content",
+          "name": "m_content_1",
+          "offset": 536
+        },
+        {
+          "type": "server_scene.vehicle_gas_node_group_pair",
+          "name": "m_gas_nodes",
+          "offset": 592
+        },
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 632
+        },
+        {
+          "type": "server_scene.vehicle_torque_data",
+          "name": "m_torque_data",
+          "offset": 672
+        },
+        {
+          "type": "bool",
+          "name": "m_is_reverse",
+          "offset": 736
+        },
+        {
+          "type": "f64",
+          "name": "m_flow_factor",
+          "offset": 744
+        },
+        {
+          "type": "f64",
+          "name": "m_pressure",
+          "offset": 752
+        },
+        {
+          "type": "f64",
+          "name": "m_display_power",
+          "offset": 760
+        },
+        {
+          "type": "f64",
+          "name": "m_flow",
+          "offset": 768
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 776
+        }
+      ]
+    }
+  ],
+  "reader": {
+    "schema": 1,
+    "tool_version": "1.1.0",
+    "tool_sha256": "503dd34b80e7292669640366b69b43e0b1828fac5ffb1756e34c48f925f40c71",
+    "source_sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22",
+    "counts": {
+      "functions": 95,
+      "identical_exports_deduplicated": 0,
+      "instructions_byte_checked": 23570,
+      "slot_derived_calls": 1083,
+      "unresolved_calls": 1034
+    },
+    "limits": [
+      "Approximate C is not original source or a recovered ABI.",
+      "Slot-derived call sites establish data dependency, not virtual target binding.",
+      "Full-text results and printable strings are investigative leads, not behavioral conclusions.",
+      "No game process, gameplay session, or external Python dependency is required."
+    ]
+  },
+  "instruction_bytes": 141171,
+  "model": {
+    "version": "1.0.0",
+    "examples": [
+      {
+        "name": "two sources with per-source room cap",
+        "inputs": [
+          {
+            "head": 0.0,
+            "amounts": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "capacity": 0.1,
+            "temperature": 20.0,
+            "expandable": false
+          },
+          {
+            "head": 10.0,
+            "amounts": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "capacity": 1.0,
+            "temperature": 20.0,
+            "expandable": false
+          },
+          {
+            "head": 20.0,
+            "amounts": [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "capacity": 1.0,
+            "temperature": 20.0,
+            "expandable": false
+          }
+        ],
+        "result": {
+          "ports": [
+            {
+              "amounts": [
+                0.1,
+                0.1,
+                0.0,
+                0.0
+              ],
+              "volume": 0.2,
+              "capacity": 0.1,
+              "temperature": 20.0,
+              "flow": 0.2
+            },
+            {
+              "amounts": [
+                0.9,
+                0.09999999999999998,
+                0.0,
+                0.0
+              ],
+              "volume": 1.0,
+              "capacity": 1.0,
+              "temperature": 20.0,
+              "flow": -2.7755575615628914e-17
+            },
+            {
+              "amounts": [
+                0.0,
+                0.8,
+                0.0,
+                0.0
+              ],
+              "volume": 0.8,
+              "capacity": 1.0,
+              "temperature": 20.0,
+              "flow": -0.19999999999999998
+            }
+          ],
+          "order": [
+            0,
+            1,
+            2
+          ],
+          "moves": [
+            {
+              "source": 1,
+              "destination": 0,
+              "amount": 0.1
+            },
+            {
+              "source": 2,
+              "destination": 0,
+              "amount": 0.1
+            },
+            {
+              "source": 2,
+              "destination": 1,
+              "amount": 0.09999999999999998
+            }
+          ]
+        }
+      },
+      {
+        "name": "lower sink consumes first",
+        "inputs": [
+          {
+            "head": 0.0,
+            "amounts": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "capacity": 2.0,
+            "temperature": 20.0,
+            "expandable": false
+          },
+          {
+            "head": 1.0,
+            "amounts": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "capacity": 2.0,
+            "temperature": 20.0,
+            "expandable": false
+          },
+          {
+            "head": 100.0,
+            "amounts": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "capacity": 1.0,
+            "temperature": 20.0,
+            "expandable": false
+          }
+        ],
+        "result": {
+          "ports": [
+            {
+              "amounts": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "volume": 1.0,
+              "capacity": 2.0,
+              "temperature": 20.0,
+              "flow": 1.0
+            },
+            {
+              "amounts": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "volume": 0.0,
+              "capacity": 2.0,
+              "temperature": 20.0,
+              "flow": 0.0
+            },
+            {
+              "amounts": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "volume": 0.0,
+              "capacity": 1.0,
+              "temperature": 20.0,
+              "flow": -1.0
+            }
+          ],
+          "order": [
+            0,
+            1,
+            2
+          ],
+          "moves": [
+            {
+              "source": 2,
+              "destination": 0,
+              "amount": 1.0
+            }
+          ]
+        }
+      },
+      {
+        "name": "equal head is not equalization",
+        "inputs": [
+          {
+            "head": 5.0,
+            "amounts": [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "capacity": 2.0,
+            "temperature": 20.0,
+            "expandable": false
+          },
+          {
+            "head": 5.0,
+            "amounts": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "capacity": 2.0,
+            "temperature": 20.0,
+            "expandable": false
+          }
+        ],
+        "result": {
+          "ports": [
+            {
+              "amounts": [
+                1.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "volume": 1.0,
+              "capacity": 2.0,
+              "temperature": 20.0,
+              "flow": 0.0
+            },
+            {
+              "amounts": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "volume": 0.0,
+              "capacity": 2.0,
+              "temperature": 20.0,
+              "flow": 0.0
+            }
+          ],
+          "order": [
+            0,
+            1
+          ],
+          "moves": []
+        }
+      }
+    ],
+    "limits": "One eligible group visit; explicit cached heads and distinct contents; initially non-overfull finite stocks. No null/shared-content aliases, geometry, topology, group revisit count, pumps, native units or full solver."
+  },
+  "limits": "Selected static identities/bytes and code interpretation. Full game exports remain local. No gameplay test, complete runtime dispatch/ABI, entire graph or update-count proof."
+}
