@@ -62,3 +62,5 @@ The separate current-build reader contains **12 freshly exported methods, 8,099 
 Ten comparison regression tests bring the research suite to **277 passing tests**. They cover rebasing, instruction/read/reference changes, unclassified bytes, size mismatch and rejection of invalid archived evidence. They validate the research tool, not gameplay.
 
 Next: finish current-build wheel/roller/contact interpretation, then follow complete powertrain, liquid/gas/thermal, electrical and driving-control chains. Continue plates, edges, attachment integrity and creation mass reconstruction where needed for reliable builds. Flight and marine systems remain in the vehicle queue. No game execution, installation edit or active-save modification occurred.
+
+The subsequent [contact/track checkpoint](CONTACT-TRACKS-20261022.md) reads the shared update in full and refines loop recognition: its two-entry dead-end exception can accept an open network depending on the starting endpoint. The current reader expands to 37 methods and the tool suite to 285 tests.

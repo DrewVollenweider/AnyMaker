@@ -1,0 +1,2550 @@
+{
+  "schema": 1,
+  "build": "26113663",
+  "date": "2026-10-22",
+  "source_sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22",
+  "functions": [
+    {
+      "signature": "() G_VEHICLE_GRID_SIZE.$ctor ()",
+      "signature_offset": 272113,
+      "code_offset": 272191,
+      "code_size": 32,
+      "code_sha256": "b8fe5f027019f2f3891444cce2e9a8919c0b0f21bd6b626950347b31aec5f04d"
+    },
+    {
+      "signature": "() ctor (vehicle_element_definition.wheel)",
+      "signature_offset": 24913824,
+      "code_offset": 24914183,
+      "code_size": 624,
+      "code_sha256": "a7780cfa0e3fd0ff0590a12c540bd8096f8e8011c4fb4129fddfa87970aac4bf"
+    },
+    {
+      "signature": "() g_server_delta_time.$ctor ()",
+      "signature_offset": 29097875,
+      "code_offset": 29097979,
+      "code_size": 40,
+      "code_sha256": "2980cba79cd1b6224ddad1c3e5d5bb55bb9c41eed5070dede8cd9cacb494571c"
+    },
+    {
+      "signature": "() g_server_tick_rate.$ctor ()",
+      "signature_offset": 29099539,
+      "code_offset": 29099645,
+      "code_size": 32,
+      "code_sha256": "82ec5503ad94f1805c2c740347edc0a14a1a93c4bf18c038a37e55159c2f7413"
+    },
+    {
+      "signature": "() g_server_tick_rate_s32.$ctor ()",
+      "signature_offset": 29099953,
+      "code_offset": 29100037,
+      "code_size": 24,
+      "code_sha256": "3afff7c838de536517d7a2ecd8a89fabefeaf0fde630a9e87f2a5463ccaab8ba"
+    },
+    {
+      "signature": "() math.pi.$ctor ()",
+      "signature_offset": 30302526,
+      "code_offset": 30302580,
+      "code_size": 32,
+      "code_sha256": "3aeeff4c3f5807e5c0391184865e595b3c3df036a7537d4cb73146c3b58e8b57"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.create (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle)",
+      "signature_offset": 57348365,
+      "code_offset": 57349835,
+      "code_size": 904,
+      "code_sha256": "47010cc892c0188c1fa1b6822f7cc662c7f1de1776c3a4869a589ce12d636e63"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.get_belt_track_data (const server_scene.vehicle_component.roller_wheel_fixed, f64, vec3)",
+      "signature_offset": 57353965,
+      "code_offset": 57354429,
+      "code_size": 152,
+      "code_sha256": "1b0f2f0d3de6ab19194f420e5d57116f91a4dd4f23015621db259a20873c697e"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_fixed.get_suspension_length (const server_scene.vehicle_component.roller_wheel_fixed)",
+      "signature_offset": 57357074,
+      "code_offset": 57357256,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(mat34) server_scene.vehicle_component.roller_wheel_fixed.get_wheel_transform (const server_scene.vehicle_component.roller_wheel_fixed)",
+      "signature_offset": 57358874,
+      "code_offset": 57359435,
+      "code_size": 376,
+      "code_sha256": "7ef7154bca7f2805f82d882c1ca3d475a78a12fd14492c045952918a3fba19bb"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.roller_wheel_fixed.tick (server_scene.vehicle_component.roller_wheel_fixed, server_scene.vehicle, server_scene)",
+      "signature_offset": 57364524,
+      "code_offset": 57365473,
+      "code_size": 544,
+      "code_sha256": "600322891a025ac2e45f774a11c2f7facae09888aa26f131c85a44d56a3627fd"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.roller_wheel_suspension.get_belt_track_data (const server_scene.vehicle_component.roller_wheel_suspension, f64, vec3)",
+      "signature_offset": 57373375,
+      "code_offset": 57373849,
+      "code_size": 152,
+      "code_sha256": "602fa0d8725da264ac9331cc6586dba12aa32310d626fafaf23dae308c1e16f2"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension)",
+      "signature_offset": 57374317,
+      "code_offset": 57374482,
+      "code_size": 48,
+      "code_sha256": "6008fa737668051eae83f517f4dfcbb79038ff28a4e34ac900d1e165bd0552ca"
+    },
+    {
+      "signature": "(mat34) server_scene.vehicle_component.roller_wheel_suspension.get_wheel_transform (const server_scene.vehicle_component.roller_wheel_suspension)",
+      "signature_offset": 57374755,
+      "code_offset": 57375386,
+      "code_size": 368,
+      "code_sha256": "b988a2d4a23052883cd389a85fd846f0baa4dc9fefc8496ad71c8b449305c744"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_large.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_large)",
+      "signature_offset": 57376565,
+      "code_offset": 57376769,
+      "code_size": 56,
+      "code_sha256": "4bf41e03ef3772db17c719866e3553ee8eac4fd5cac658d0950469bddd9d2128"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_large_narrow.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_large_narrow)",
+      "signature_offset": 57378125,
+      "code_offset": 57378343,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_large_wide.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_large_wide)",
+      "signature_offset": 57379730,
+      "code_offset": 57379944,
+      "code_size": 56,
+      "code_sha256": "4bf41e03ef3772db17c719866e3553ee8eac4fd5cac658d0950469bddd9d2128"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_small.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_small)",
+      "signature_offset": 57381300,
+      "code_offset": 57381504,
+      "code_size": 56,
+      "code_sha256": "561215a6cedd3cb2f648fc9c1ed406f0e73c3b9f9db401fac8fb7098dd9cdfca"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_small_narrow.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_small_narrow)",
+      "signature_offset": 57382860,
+      "code_offset": 57383078,
+      "code_size": 40,
+      "code_sha256": "e3abdaff8f9d35635bd4a07595e8ce9a232c264a807421c3623dbda89dd26a23"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_component.roller_wheel_suspension_small_wide.get_suspension_length (const server_scene.vehicle_component.roller_wheel_suspension_small_wide)",
+      "signature_offset": 57384465,
+      "code_offset": 57384679,
+      "code_size": 56,
+      "code_sha256": "561215a6cedd3cb2f648fc9c1ed406f0e73c3b9f9db401fac8fb7098dd9cdfca"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.wheel_hydraulic.tick (server_scene.vehicle_component.wheel_hydraulic, server_scene.vehicle, server_scene)",
+      "signature_offset": 58065295,
+      "code_offset": 58068012,
+      "code_size": 3040,
+      "code_sha256": "9c99725e71393b08ec6e574db4a6d2ba6b8b4293e4489ffacb1998f0a66cf19b"
+    },
+    {
+      "signature": "(const mat34) server_scene.vehicle_element.wheel.get_accessory_transform (const server_scene.vehicle_element.wheel)",
+      "signature_offset": 58460387,
+      "code_offset": 58461053,
+      "code_size": 1128,
+      "code_sha256": "71fae13b7b3b1791fd48c3e02f3baa6e2a3d64b1275fe8de73c96b11c137e593"
+    },
+    {
+      "signature": "(const mat34) server_scene.vehicle_element.wheel.get_suspension_steering_transform (const server_scene.vehicle_element.wheel)",
+      "signature_offset": 58462531,
+      "code_offset": 58463104,
+      "code_size": 568,
+      "code_sha256": "1e56e00f1bb4d40dac0454a0dfc4ed429fd4bff72ec07c99a5506984f322a979"
+    },
+    {
+      "signature": "(const mat34) server_scene.vehicle_element.wheel.get_transform (const server_scene.vehicle_element.wheel)",
+      "signature_offset": 58464249,
+      "code_offset": 58464543,
+      "code_size": 208,
+      "code_sha256": "bac349330ad4e366ceed405aeec5cd852385b7f7fc735b5aad6b434014ad6c91"
+    },
+    {
+      "signature": "() server_scene.vehicle_element.wheel.tick (server_scene.vehicle_element.wheel, server_scene.vehicle, server_scene.vehicle_component, server_scene, f64, f64)",
+      "signature_offset": 58468097,
+      "code_offset": 58473401,
+      "code_size": 24384,
+      "code_sha256": "de1e7d528d7950a452498748c04ad4c0aa540e801cb0655922ba97c452b9d54f"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle_torque_node.is_node_part_of_belt_loop (server_scene.vehicle_torque_node, vector<server_scene.vehicle_logic_link.node_id>)",
+      "signature_offset": 59197567,
+      "code_offset": 59200347,
+      "code_size": 6424,
+      "code_sha256": "339089b058d689ac01bcecd5614e0748b255b785f9f88be242eaede0996fb154"
+    },
+    {
+      "signature": "(f64) vehicle_element_definition.wheel.tyre_data.container.get_tyre_radius (const vehicle_element_definition.wheel.tyre_data.container, const string)",
+      "signature_offset": 63108642,
+      "code_offset": 63109465,
+      "code_size": 352,
+      "code_sha256": "6c57928251276ad58bc28d62dc47c6f675f8eb9f87107f12d974d582638a8813"
+    },
+    {
+      "signature": "(f64) vehicle_element_definition.wheel.tyre_data.container.get_tyre_thickness (const vehicle_element_definition.wheel.tyre_data.container, const string)",
+      "signature_offset": 63110235,
+      "code_offset": 63111061,
+      "code_size": 352,
+      "code_sha256": "784846db53bc4a2dd35816408698a1d0e1a4be9c0d450622e76e7697e7c4a5e9"
+    }
+  ],
+  "typed_scalars": [
+    {
+      "label": "grid size",
+      "offset": 272215,
+      "format": "d",
+      "width": 8,
+      "bytes": "7b14ae47e17ab43f",
+      "value": 0.08
+    },
+    {
+      "label": "server reciprocal numerator",
+      "offset": 29098011,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "initial server tick rate",
+      "offset": 29100053,
+      "format": "i",
+      "width": 4,
+      "bytes": "3c000000",
+      "value": 60
+    },
+    {
+      "label": "pi initializer",
+      "offset": 30302604,
+      "format": "d",
+      "width": 8,
+      "bytes": "182d4454fb210940",
+      "value": 3.141592653589793
+    },
+    {
+      "label": "damaged wheel RPS factor",
+      "offset": 58497601,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999c93f",
+      "value": 0.2
+    },
+    {
+      "label": "healthy wheel RPS factor",
+      "offset": 58497609,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "shared half angle",
+      "offset": 58497577,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000e03f",
+      "value": 0.5
+    },
+    {
+      "label": "shared false",
+      "offset": 58497577,
+      "format": "B",
+      "width": 1,
+      "bytes": "00",
+      "value": 0
+    },
+    {
+      "label": "zero",
+      "offset": 58497585,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "shaft sign",
+      "offset": 58497593,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f0bf",
+      "value": -1.0
+    },
+    {
+      "label": "damaged factor",
+      "offset": 58497601,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999c93f",
+      "value": 0.2
+    },
+    {
+      "label": "one",
+      "offset": 58497609,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "stiffness setting scale",
+      "offset": 58497617,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000001040",
+      "value": 4.0
+    },
+    {
+      "label": "damping setting scale",
+      "offset": 58497625,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000002040",
+      "value": 8.0
+    },
+    {
+      "label": "bare grip scale",
+      "offset": 58497633,
+      "format": "d",
+      "width": 8,
+      "bytes": "666666666666d63f",
+      "value": 0.35
+    },
+    {
+      "label": "bare mu scale",
+      "offset": 58497641,
+      "format": "d",
+      "width": 8,
+      "bytes": "333333333333e33f",
+      "value": 0.6
+    },
+    {
+      "label": "bare tether scale and normal interpolation",
+      "offset": 58497649,
+      "format": "d",
+      "width": 8,
+      "bytes": "333333333333d33f",
+      "value": 0.3
+    },
+    {
+      "label": "direct slip limit",
+      "offset": 58497657,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999d93f",
+      "value": 0.4
+    },
+    {
+      "label": "direct slip fade distance",
+      "offset": 58497665,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999b93f",
+      "value": 0.1
+    },
+    {
+      "label": "rope group",
+      "offset": 58497673,
+      "format": "i",
+      "width": 4,
+      "bytes": "09000000",
+      "value": 9
+    },
+    {
+      "label": "effect group",
+      "offset": 58497677,
+      "format": "i",
+      "width": 4,
+      "bytes": "07000000",
+      "value": 7
+    },
+    {
+      "label": "character group",
+      "offset": 58497681,
+      "format": "i",
+      "width": 4,
+      "bytes": "02000000",
+      "value": 2
+    },
+    {
+      "label": "ragdoll group",
+      "offset": 58497685,
+      "format": "i",
+      "width": 4,
+      "bytes": "06000000",
+      "value": 6
+    },
+    {
+      "label": "buoyancy group",
+      "offset": 58497689,
+      "format": "i",
+      "width": 4,
+      "bytes": "0a000000",
+      "value": 10
+    },
+    {
+      "label": "no-hit extension step",
+      "offset": 58497697,
+      "format": "d",
+      "width": 8,
+      "bytes": "7b14ae47e17a743f",
+      "value": 0.005
+    },
+    {
+      "label": "mass clamp maximum",
+      "offset": 58497705,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000408f40",
+      "value": 1000.0
+    },
+    {
+      "label": "load average lerp",
+      "offset": 58497713,
+      "format": "d",
+      "width": 8,
+      "bytes": "fa7e6abc7493683f",
+      "value": 0.003
+    },
+    {
+      "label": "load average minimum",
+      "offset": 58497721,
+      "format": "d",
+      "width": 8,
+      "bytes": "2d431cebe2361a3f",
+      "value": 0.0001
+    },
+    {
+      "label": "load variation maximum",
+      "offset": 58497729,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000840",
+      "value": 3.0
+    },
+    {
+      "label": "circumference factor",
+      "offset": 58497737,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000040",
+      "value": 2.0
+    },
+    {
+      "label": "direct slip coefficient",
+      "offset": 58497745,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000003440",
+      "value": 20.0
+    },
+    {
+      "label": "tether skid excess",
+      "offset": 58497753,
+      "format": "d",
+      "width": 8,
+      "bytes": "7b14ae47e17aa43f",
+      "value": 0.04
+    },
+    {
+      "label": "memory derivative coefficient",
+      "offset": 58497761,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000002440",
+      "value": 10.0
+    },
+    {
+      "label": "friction skid ratio",
+      "offset": 58497769,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f83f",
+      "value": 1.5
+    },
+    {
+      "label": "body contribution factor",
+      "offset": 58497777,
+      "format": "d",
+      "width": 8,
+      "bytes": "cdccccccccccec3f",
+      "value": 0.9
+    },
+    {
+      "label": "base radius/damping/arm length",
+      "offset": 24914695,
+      "format": "d",
+      "width": 8,
+      "bytes": "333333333333d33f",
+      "value": 0.3
+    },
+    {
+      "label": "base position zero",
+      "offset": 24914703,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "base position z",
+      "offset": 24914711,
+      "format": "d",
+      "width": 8,
+      "bytes": "b81e85eb51b8d63f",
+      "value": 0.355
+    },
+    {
+      "label": "base half angle",
+      "offset": 24914719,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000e03f",
+      "value": 0.5
+    },
+    {
+      "label": "base travel",
+      "offset": 24914727,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999b93f",
+      "value": 0.1
+    },
+    {
+      "label": "base stiffness",
+      "offset": 24914735,
+      "format": "d",
+      "width": 8,
+      "bytes": "333333333333c33f",
+      "value": 0.15
+    },
+    {
+      "label": "base steering degrees",
+      "offset": 24914743,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000004e40",
+      "value": 60.0
+    },
+    {
+      "label": "base negative sign",
+      "offset": 24914751,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f0bf",
+      "value": -1.0
+    },
+    {
+      "label": "base tether",
+      "offset": 24914759,
+      "format": "d",
+      "width": 8,
+      "bytes": "7b14ae47e17a943f",
+      "value": 0.02
+    },
+    {
+      "label": "base grip",
+      "offset": 24914767,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "base memory friction",
+      "offset": 24914775,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000002440",
+      "value": 10.0
+    },
+    {
+      "label": "base friction mu",
+      "offset": 24914783,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000040",
+      "value": 2.0
+    },
+    {
+      "label": "base load sensitivity",
+      "offset": 24914791,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000d03f",
+      "value": 0.25
+    },
+    {
+      "label": "base bump stop",
+      "offset": 24914799,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000001040",
+      "value": 4.0
+    },
+    {
+      "label": "base integral tread false",
+      "offset": 24914703,
+      "format": "B",
+      "width": 1,
+      "bytes": "00",
+      "value": 0
+    },
+    {
+      "label": "fixed integral tread true",
+      "offset": 57350675,
+      "format": "B",
+      "width": 1,
+      "bytes": "01",
+      "value": 1
+    },
+    {
+      "label": "fixed zero steering/roll damping",
+      "offset": 57350707,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "fixed tether",
+      "offset": 57350723,
+      "format": "d",
+      "width": 8,
+      "bytes": "7b14ae47e17ac43f",
+      "value": 0.16
+    },
+    {
+      "label": "fixed damping",
+      "offset": 57350731,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999b93f",
+      "value": 0.1
+    },
+    {
+      "label": "fixed bump stop",
+      "offset": 57350691,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "fixed belt mesh index",
+      "offset": 57354573,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "suspension belt mesh index",
+      "offset": 57373993,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "suspension transform mesh index",
+      "offset": 57375750,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "fixed transform surface",
+      "offset": 57359795,
+      "format": "i",
+      "width": 4,
+      "bytes": "04000000",
+      "value": 4
+    },
+    {
+      "label": "suspension transform surface",
+      "offset": 57375746,
+      "format": "i",
+      "width": 4,
+      "bytes": "04000000",
+      "value": 4
+    },
+    {
+      "label": "base suspension placeholder travel",
+      "offset": 57374522,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "large travel multiple",
+      "offset": 57376817,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000840",
+      "value": 3.0
+    },
+    {
+      "label": "large wide travel multiple",
+      "offset": 57379992,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000840",
+      "value": 3.0
+    },
+    {
+      "label": "small travel multiple",
+      "offset": 57381552,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000040",
+      "value": 2.0
+    },
+    {
+      "label": "small wide travel multiple",
+      "offset": 57384727,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000040",
+      "value": 2.0
+    },
+    {
+      "label": "loop false",
+      "offset": 59206755,
+      "format": "B",
+      "width": 1,
+      "bytes": "00",
+      "value": 0
+    },
+    {
+      "label": "loop true",
+      "offset": 59206756,
+      "format": "B",
+      "width": 1,
+      "bytes": "01",
+      "value": 1
+    },
+    {
+      "label": "loop zero",
+      "offset": 59206759,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "loop one",
+      "offset": 59206763,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "loop exceptional vector size",
+      "offset": 59206767,
+      "format": "i",
+      "width": 4,
+      "bytes": "02000000",
+      "value": 2
+    },
+    {
+      "label": "brake lower pressure",
+      "offset": 58071004,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000001040",
+      "value": 4.0
+    },
+    {
+      "label": "brake upper pressure",
+      "offset": 58071012,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000001840",
+      "value": 6.0
+    },
+    {
+      "label": "brake one",
+      "offset": 58070996,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "brake temperature speed coefficient",
+      "offset": 58071020,
+      "format": "d",
+      "width": 8,
+      "bytes": "fca9f1d24d62603f",
+      "value": 0.002
+    },
+    {
+      "label": "brake temperature retention",
+      "offset": 58071028,
+      "format": "d",
+      "width": 8,
+      "bytes": "2b8716d9cef7ef3f",
+      "value": 0.999
+    },
+    {
+      "label": "steering extension scale",
+      "offset": 58071036,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000040",
+      "value": 2.0
+    },
+    {
+      "label": "visual steering half",
+      "offset": 58463648,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000e03f",
+      "value": 0.5
+    },
+    {
+      "label": "visual offset sign",
+      "offset": 58463664,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f0bf",
+      "value": -1.0
+    }
+  ],
+  "selected_calls": [
+    {
+      "function_offset": 57349835,
+      "instruction": 57350329,
+      "bytes": "ffd3",
+      "instruction_text": "CALL RBX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 57350811,
+      "loaded_at": 57350310,
+      "dependency_steps": [
+        {
+          "instruction": 57350310,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 57350317,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 57350320,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 57350323,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "(mat34) server_scene.vehicle_component.roller_wheel_fixed.get_wheel_transform (const server_scene.vehicle_component.roller_wheel_fixed)",
+      "slot_offset": 976,
+      "target_record_candidate": {
+        "code_offset": 57359435,
+        "code_size": 376
+      }
+    },
+    {
+      "function_offset": 57349835,
+      "instruction": 57350475,
+      "bytes": "ffd3",
+      "instruction_text": "CALL RBX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 57350843,
+      "loaded_at": 57350456,
+      "dependency_steps": [
+        {
+          "instruction": 57350456,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 57350463,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 57350466,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 57350469,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "(f64) server_scene.vehicle_component.roller_wheel_fixed.get_suspension_length (const server_scene.vehicle_component.roller_wheel_fixed)",
+      "slot_offset": 1008,
+      "target_record_candidate": {
+        "code_offset": 57357256,
+        "code_size": 40
+      }
+    },
+    {
+      "function_offset": 57365473,
+      "instruction": 57365538,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 57366017,
+      "loaded_at": 57365504,
+      "dependency_steps": [
+        {
+          "instruction": 57365504,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 57365538,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() ctor (vector<server_scene.vehicle_logic_link.node_id>)",
+      "slot_offset": 544,
+      "target_record_candidate": {
+        "code_offset": 59190331,
+        "code_size": 128
+      }
+    },
+    {
+      "function_offset": 57365473,
+      "instruction": 57365627,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 57366033,
+      "loaded_at": 57365601,
+      "dependency_steps": [
+        {
+          "instruction": 57365601,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 57365627,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle_torque_node.is_node_part_of_belt_loop (server_scene.vehicle_torque_node, vector<server_scene.vehicle_logic_link.node_id>)",
+      "slot_offset": 560,
+      "target_record_candidate": {
+        "code_offset": 59200347,
+        "code_size": 6424
+      }
+    },
+    {
+      "function_offset": 57365473,
+      "instruction": 57365770,
+      "bytes": "ffd7",
+      "instruction_text": "CALL RDI",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 57366041,
+      "loaded_at": 57365738,
+      "dependency_steps": [
+        {
+          "instruction": 57365738,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 57365745,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 57365748,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 57365751,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_element.wheel.tick (server_scene.vehicle_element.wheel, server_scene.vehicle, server_scene.vehicle_component, server_scene, f64, f64)",
+      "slot_offset": 568,
+      "target_record_candidate": {
+        "code_offset": 58473401,
+        "code_size": 24384
+      }
+    },
+    {
+      "function_offset": 57365473,
+      "instruction": 57365976,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 57366065,
+      "loaded_at": 57365969,
+      "dependency_steps": [
+        {
+          "instruction": 57365969,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 57365976,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() dtor (vector<server_scene.vehicle_logic_link.node_id>)",
+      "slot_offset": 592,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 58068012,
+      "instruction": 58069318,
+      "bytes": "ff5500",
+      "instruction_text": "CALL qword ptr [RBP]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58071156,
+      "loaded_at": 58069295,
+      "dependency_steps": [
+        {
+          "instruction": 58069295,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58069318,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(vec3) physics.object.get_point_velocity (const physics.object, const vec3)",
+      "slot_offset": 3144,
+      "target_record_candidate": null
+    },
+    {
+      "function_offset": 58068012,
+      "instruction": 58070078,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58071220,
+      "loaded_at": 58070068,
+      "dependency_steps": [
+        {
+          "instruction": 58070068,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58070078,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_gas_content.get_pressure (const server_scene.vehicle_gas_content)",
+      "slot_offset": 3208,
+      "target_record_candidate": {
+        "code_offset": 58552066,
+        "code_size": 264
+      }
+    },
+    {
+      "function_offset": 58068012,
+      "instruction": 58070878,
+      "bytes": "ffd3",
+      "instruction_text": "CALL RBX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58071300,
+      "loaded_at": 58070859,
+      "dependency_steps": [
+        {
+          "instruction": 58070859,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58070866,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58070869,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58070872,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "(f64) server_scene.vehicle_element.hydraulic_cylinder.get_extension_factor (server_scene.vehicle_element.hydraulic_cylinder)",
+      "slot_offset": 3288,
+      "target_record_candidate": {
+        "code_offset": 58300806,
+        "code_size": 35
+      }
+    },
+    {
+      "function_offset": 58473401,
+      "instruction": 58495828,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58498393,
+      "loaded_at": 58495818,
+      "dependency_steps": [
+        {
+          "instruction": 58495818,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58495828,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_node.apply_torque (server_scene.vehicle_torque_node, const f64)",
+      "slot_offset": 24992,
+      "target_record_candidate": {
+        "code_offset": 59189362,
+        "code_size": 41
+      }
+    },
+    {
+      "function_offset": 58473401,
+      "instruction": 58496175,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58498409,
+      "loaded_at": 58496165,
+      "dependency_steps": [
+        {
+          "instruction": 58496165,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58496175,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() physics_util.impulse_activator.add_force (physics_util.impulse_activator, physics.object, const vec3, const vec3)",
+      "slot_offset": 25008,
+      "target_record_candidate": {
+        "code_offset": 31932310,
+        "code_size": 112
+      }
+    },
+    {
+      "function_offset": 58473401,
+      "instruction": 58496592,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58498409,
+      "loaded_at": 58496582,
+      "dependency_steps": [
+        {
+          "instruction": 58496582,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58496592,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() physics_util.impulse_activator.add_force (physics_util.impulse_activator, physics.object, const vec3, const vec3)",
+      "slot_offset": 25008,
+      "target_record_candidate": {
+        "code_offset": 31932310,
+        "code_size": 112
+      }
+    },
+    {
+      "function_offset": 59200347,
+      "instruction": 59205406,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 59206923,
+      "loaded_at": 59205380,
+      "dependency_steps": [
+        {
+          "instruction": 59205380,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 59205406,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) operator_eq (const server_scene.vehicle_logic_link.node_id, const server_scene.vehicle_logic_link.node_id)",
+      "slot_offset": 6576,
+      "target_record_candidate": {
+        "code_offset": 31309123,
+        "code_size": 456
+      }
+    },
+    {
+      "function_offset": 59200347,
+      "instruction": 59205571,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 59206923,
+      "loaded_at": 59205561,
+      "dependency_steps": [
+        {
+          "instruction": 59205561,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 59205571,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) operator_eq (const server_scene.vehicle_logic_link.node_id, const server_scene.vehicle_logic_link.node_id)",
+      "slot_offset": 6576,
+      "target_record_candidate": {
+        "code_offset": 31309123,
+        "code_size": 456
+      }
+    },
+    {
+      "function_offset": 59200347,
+      "instruction": 59205741,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 59206923,
+      "loaded_at": 59205731,
+      "dependency_steps": [
+        {
+          "instruction": 59205731,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 59205741,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) operator_eq (const server_scene.vehicle_logic_link.node_id, const server_scene.vehicle_logic_link.node_id)",
+      "slot_offset": 6576,
+      "target_record_candidate": {
+        "code_offset": 31309123,
+        "code_size": 456
+      }
+    },
+    {
+      "function_offset": 59200347,
+      "instruction": 59205906,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 59206923,
+      "loaded_at": 59205896,
+      "dependency_steps": [
+        {
+          "instruction": 59205896,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 59205906,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) operator_eq (const server_scene.vehicle_logic_link.node_id, const server_scene.vehicle_logic_link.node_id)",
+      "slot_offset": 6576,
+      "target_record_candidate": {
+        "code_offset": 31309123,
+        "code_size": 456
+      }
+    }
+  ],
+  "selected_instructions": [
+    {
+      "function_offset": 57349835,
+      "offset": 57350584,
+      "bytes": "8881a0060000",
+      "assembly": "MOV byte ptr [RCX + 0x6a0],AL"
+    },
+    {
+      "function_offset": 58473401,
+      "offset": 58475276,
+      "bytes": "80bc241016000000",
+      "assembly": "CMP byte ptr [RSP + 0x1610],0x0"
+    },
+    {
+      "function_offset": 58473401,
+      "offset": 58475284,
+      "bytes": "0f8530000000",
+      "assembly": "JNZ 0x037c434a"
+    },
+    {
+      "function_offset": 58473401,
+      "offset": 58475290,
+      "bytes": "488b4c2438",
+      "assembly": "MOV RCX,qword ptr [RSP + 0x38]"
+    },
+    {
+      "function_offset": 58473401,
+      "offset": 58475295,
+      "bytes": "488b4108",
+      "assembly": "MOV RAX,qword ptr [RCX + 0x8]"
+    },
+    {
+      "function_offset": 58473401,
+      "offset": 58475299,
+      "bytes": "80b84001000000",
+      "assembly": "CMP byte ptr [RAX + 0x140],0x0"
+    },
+    {
+      "function_offset": 58473401,
+      "offset": 58475306,
+      "bytes": "0f850d000000",
+      "assembly": "JNZ 0x037c433d"
+    },
+    {
+      "function_offset": 58473401,
+      "offset": 58475312,
+      "bytes": "c68424f815000000",
+      "assembly": "MOV byte ptr [RSP + 0x15f8],0x0"
+    },
+    {
+      "function_offset": 58473401,
+      "offset": 58475320,
+      "bytes": "e91f000000",
+      "assembly": "JMP 0x037c435c"
+    },
+    {
+      "function_offset": 58473401,
+      "offset": 58475325,
+      "bytes": "c68424f815000001",
+      "assembly": "MOV byte ptr [RSP + 0x15f8],0x1"
+    },
+    {
+      "function_offset": 58473401,
+      "offset": 58475333,
+      "bytes": "e912000000",
+      "assembly": "JMP 0x037c435c"
+    },
+    {
+      "function_offset": 58473401,
+      "offset": 58475338,
+      "bytes": "c68424f815000001",
+      "assembly": "MOV byte ptr [RSP + 0x15f8],0x1"
+    },
+    {
+      "function_offset": 58473401,
+      "offset": 58475346,
+      "bytes": "488b4c2438",
+      "assembly": "MOV RCX,qword ptr [RSP + 0x38]"
+    },
+    {
+      "function_offset": 58473401,
+      "offset": 58475351,
+      "bytes": "e900000000",
+      "assembly": "JMP 0x037c435c"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206067,
+      "bytes": "8b842438040000",
+      "assembly": "MOV EAX,dword ptr [RSP + 0x438]"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206074,
+      "bytes": "3b05ab020000",
+      "assembly": "CMP EAX,dword ptr [0x03876c6b]"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206080,
+      "bytes": "0f94c0",
+      "assembly": "SETZ AL"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206083,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206085,
+      "bytes": "0f8499010000",
+      "assembly": "JZ 0x03876b64"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206091,
+      "bytes": "488b842420040000",
+      "assembly": "MOV RAX,qword ptr [RSP + 0x420]"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206099,
+      "bytes": "4839842410040000",
+      "assembly": "CMP qword ptr [RSP + 0x410],RAX"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206107,
+      "bytes": "0f94c0",
+      "assembly": "SETZ AL"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206110,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206112,
+      "bytes": "0f8405000000",
+      "assembly": "JZ 0x038769eb"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206118,
+      "bytes": "e91e020000",
+      "assembly": "JMP 0x03876c09"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206500,
+      "bytes": "8b842438040000",
+      "assembly": "MOV EAX,dword ptr [RSP + 0x438]"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206507,
+      "bytes": "3b05f6000000",
+      "assembly": "CMP EAX,dword ptr [0x03876c67]"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206513,
+      "bytes": "0f94c0",
+      "assembly": "SETZ AL"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206516,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206518,
+      "bytes": "0f8462000000",
+      "assembly": "JZ 0x03876bde"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206524,
+      "bytes": "488d842448040000",
+      "assembly": "LEA RAX,[RSP + 0x448]"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206532,
+      "bytes": "4c8b8424a0020000",
+      "assembly": "MOV R8,qword ptr [RSP + 0x2a0]"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206540,
+      "bytes": "498d10",
+      "assembly": "LEA RDX,[R8]"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206543,
+      "bytes": "488b0d7d010000",
+      "assembly": "MOV RCX,qword ptr [0x03876d13]"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206550,
+      "bytes": "4889842478010000",
+      "assembly": "MOV qword ptr [RSP + 0x178],RAX"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206558,
+      "bytes": "48898c2498040000",
+      "assembly": "MOV qword ptr [RSP + 0x498],RCX"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206566,
+      "bytes": "488b842498040000",
+      "assembly": "MOV RAX,qword ptr [RSP + 0x498]"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206574,
+      "bytes": "488b8c2478010000",
+      "assembly": "MOV RCX,qword ptr [RSP + 0x178]"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206582,
+      "bytes": "ff10",
+      "assembly": "CALL qword ptr [RAX]"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206584,
+      "bytes": "8b842448040000",
+      "assembly": "MOV EAX,dword ptr [RSP + 0x448]"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206591,
+      "bytes": "3b05aa000000",
+      "assembly": "CMP EAX,dword ptr [0x03876c6f]"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206597,
+      "bytes": "0f94c0",
+      "assembly": "SETZ AL"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206600,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206602,
+      "bytes": "0f8407000000",
+      "assembly": "JZ 0x03876bd7"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206608,
+      "bytes": "b001",
+      "assembly": "MOV AL,0x1"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206610,
+      "bytes": "e90e000000",
+      "assembly": "JMP 0x03876be5"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206615,
+      "bytes": "b000",
+      "assembly": "MOV AL,0x0"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206617,
+      "bytes": "e907000000",
+      "assembly": "JMP 0x03876be5"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206622,
+      "bytes": "b000",
+      "assembly": "MOV AL,0x0"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206624,
+      "bytes": "e900000000",
+      "assembly": "JMP 0x03876be5"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206629,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206631,
+      "bytes": "0f8405000000",
+      "assembly": "JZ 0x03876bf2"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206637,
+      "bytes": "e917000000",
+      "assembly": "JMP 0x03876c09"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206642,
+      "bytes": "8a056b000000",
+      "assembly": "MOV AL,byte ptr [0x03876c63]"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206648,
+      "bytes": "88842418040000",
+      "assembly": "MOV byte ptr [RSP + 0x418],AL"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206655,
+      "bytes": "e905000000",
+      "assembly": "JMP 0x03876c09"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206660,
+      "bytes": "e979f9ffff",
+      "assembly": "JMP 0x03876582"
+    },
+    {
+      "function_offset": 59200347,
+      "offset": 59206665,
+      "bytes": "8a842418040000",
+      "assembly": "MOV AL,byte ptr [RSP + 0x418]"
+    }
+  ],
+  "layouts": [
+    {
+      "name": "vehicle_element_definition.wheel",
+      "base": "",
+      "size": 328,
+      "fields": [
+        {
+          "type": "f64",
+          "name": "m_radius",
+          "offset": 8
+        },
+        {
+          "type": "vec3",
+          "name": "m_position",
+          "offset": 16
+        },
+        {
+          "type": "mat33_s32",
+          "name": "m_rotation",
+          "offset": 40
+        },
+        {
+          "type": "vec3",
+          "name": "m_steering_position",
+          "offset": 80
+        },
+        {
+          "type": "mat33",
+          "name": "m_wheel_rotation",
+          "offset": 104
+        },
+        {
+          "type": "f64",
+          "name": "m_suspension_length",
+          "offset": 176
+        },
+        {
+          "type": "f64",
+          "name": "m_stiffness",
+          "offset": 184
+        },
+        {
+          "type": "f64",
+          "name": "m_damping",
+          "offset": 192
+        },
+        {
+          "type": "f64",
+          "name": "m_suspension_arm_length",
+          "offset": 200
+        },
+        {
+          "type": "f64",
+          "name": "m_steering_angle_min",
+          "offset": 208
+        },
+        {
+          "type": "f64",
+          "name": "m_steering_angle_max",
+          "offset": 216
+        },
+        {
+          "type": "f64",
+          "name": "m_memory_tether_range",
+          "offset": 224
+        },
+        {
+          "type": "f64",
+          "name": "m_grip_friction",
+          "offset": 232
+        },
+        {
+          "type": "f64",
+          "name": "m_memory_friction",
+          "offset": 240
+        },
+        {
+          "type": "f64",
+          "name": "m_friction_circle_mu",
+          "offset": 248
+        },
+        {
+          "type": "f64",
+          "name": "m_load_sensitivity",
+          "offset": 256
+        },
+        {
+          "type": "f64",
+          "name": "m_bump_stop_scale",
+          "offset": 264
+        },
+        {
+          "type": "f64",
+          "name": "m_roll_damping",
+          "offset": 272
+        },
+        {
+          "type": "vector<string>",
+          "name": "m_compatible_tyre_definitions",
+          "offset": 280
+        },
+        {
+          "type": "bool",
+          "name": "m_is_tread_integral",
+          "offset": 320
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_element.wheel",
+      "base": "replication.master.composite",
+      "size": 744,
+      "fields": [
+        {
+          "type": "ptr<vehicle_element_definition.wheel>",
+          "name": "m_definition",
+          "offset": 8
+        },
+        {
+          "type": "ptr<server_scene.vehicle_torque_node>",
+          "name": "m_torque_node",
+          "offset": 16
+        },
+        {
+          "type": "replication.master.property_f64_compressed_s8",
+          "name": "m_steering",
+          "offset": 24
+        },
+        {
+          "type": "replication.master.property_f64_compressed_s8",
+          "name": "m_wheel_rps",
+          "offset": 72
+        },
+        {
+          "type": "replication.master.property_bool",
+          "name": "m_is_skid",
+          "offset": 120
+        },
+        {
+          "type": "server_scene.vehicle_element.accessory",
+          "name": "m_accessory",
+          "offset": 152
+        },
+        {
+          "type": "physics.object",
+          "name": "m_contact_object",
+          "offset": 304
+        },
+        {
+          "type": "vec3",
+          "name": "m_contact_position",
+          "offset": 320
+        },
+        {
+          "type": "vec3",
+          "name": "m_contact_position_local",
+          "offset": 344
+        },
+        {
+          "type": "vec3",
+          "name": "m_contact_normal_smooth",
+          "offset": 368
+        },
+        {
+          "type": "physics.object",
+          "name": "m_memory_object",
+          "offset": 392
+        },
+        {
+          "type": "vec3",
+          "name": "m_memory_position",
+          "offset": 408
+        },
+        {
+          "type": "vec3",
+          "name": "m_memory_position_local",
+          "offset": 432
+        },
+        {
+          "type": "vec3",
+          "name": "m_memory_vector_prev",
+          "offset": 456
+        },
+        {
+          "type": "f64",
+          "name": "m_compression_factor",
+          "offset": 480
+        },
+        {
+          "type": "f64",
+          "name": "m_grip_load_average",
+          "offset": 488
+        },
+        {
+          "type": "f64",
+          "name": "m_value_steering",
+          "offset": 496
+        },
+        {
+          "type": "f64",
+          "name": "m_suspension_offset",
+          "offset": 504
+        },
+        {
+          "type": "bool",
+          "name": "m_is_rotation_locked",
+          "offset": 512
+        },
+        {
+          "type": "physics_util.impulse_activator",
+          "name": "_m_impulse_activator",
+          "offset": 520
+        },
+        {
+          "type": "physics_util.impulse_activator",
+          "name": "_m_contact_impulse_activator",
+          "offset": 560
+        },
+        {
+          "type": "vec3",
+          "name": "m_debug_suspension_start",
+          "offset": 600
+        },
+        {
+          "type": "vec3",
+          "name": "m_debug_suspension_end",
+          "offset": 624
+        },
+        {
+          "type": "vec3",
+          "name": "m_debug_contact_velocity",
+          "offset": 648
+        },
+        {
+          "type": "vec3",
+          "name": "m_debug_front_dir",
+          "offset": 672
+        },
+        {
+          "type": "vec3",
+          "name": "m_debug_side_dir",
+          "offset": 696
+        },
+        {
+          "type": "vec3",
+          "name": "m_debug_wheel_force",
+          "offset": 720
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.item_world.wheel",
+      "base": "server_scene.item_world.component_accessory",
+      "size": 176,
+      "fields": [
+        {
+          "type": "replication.master.property_bool",
+          "name": "m_is_damaged",
+          "offset": 144
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_component.wheel_hydraulic",
+      "base": "server_scene.vehicle_component",
+      "size": 2192,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_element.wheel",
+          "name": "m_element_wheel",
+          "offset": 480
+        },
+        {
+          "type": "replication.master.property_f64_compressed_u8",
+          "name": "m_factor_temperature",
+          "offset": 1224
+        },
+        {
+          "type": "server_scene.vehicle_element.hydraulic_cylinder",
+          "name": "m_element_hydraulic_cylinder",
+          "offset": 1272
+        },
+        {
+          "type": "server_scene.vehicle_gas_content",
+          "name": "m_content_gas",
+          "offset": 1760
+        },
+        {
+          "type": "server_scene.vehicle_liquid_node",
+          "name": "m_liquid_node_steering_positive",
+          "offset": 1816
+        },
+        {
+          "type": "server_scene.vehicle_liquid_node",
+          "name": "m_liquid_node_steering_negative",
+          "offset": 1896
+        },
+        {
+          "type": "server_scene.vehicle_gas_node",
+          "name": "m_gas_node_brake",
+          "offset": 1976
+        },
+        {
+          "type": "server_scene.vehicle_torque_data",
+          "name": "m_torque_data",
+          "offset": 2040
+        },
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 2104
+        },
+        {
+          "type": "f64",
+          "name": "m_hydraulic_factor",
+          "offset": 2144
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 2152
+        },
+        {
+          "type": "f64",
+          "name": "m_stiffness",
+          "offset": 2168
+        },
+        {
+          "type": "f64",
+          "name": "m_damping",
+          "offset": 2176
+        },
+        {
+          "type": "bool",
+          "name": "m_is_pending_damage_accessory_release",
+          "offset": 2184
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_torque_node",
+      "base": "",
+      "size": 104,
+      "fields": [
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "m_component",
+          "offset": 0
+        },
+        {
+          "type": "s32",
+          "name": "m_surface_index",
+          "offset": 8
+        },
+        {
+          "type": "f64",
+          "name": "m_rps",
+          "offset": 16
+        },
+        {
+          "type": "f64",
+          "name": "m_mass",
+          "offset": 24
+        },
+        {
+          "type": "f64",
+          "name": "m_vehicle_mass_factor",
+          "offset": 32
+        },
+        {
+          "type": "f64",
+          "name": "m_vehicle_mass_max",
+          "offset": 40
+        },
+        {
+          "type": "f64",
+          "name": "m_gear_ratio",
+          "offset": 48
+        },
+        {
+          "type": "f64",
+          "name": "m_clutch_factor",
+          "offset": 56
+        },
+        {
+          "type": "f64",
+          "name": "m_brake_factor",
+          "offset": 64
+        },
+        {
+          "type": "ptr<server_scene.vehicle_torque_node>",
+          "name": "m_adjacent",
+          "offset": 72
+        },
+        {
+          "type": "f64",
+          "name": "m_delta_rps",
+          "offset": 80
+        },
+        {
+          "type": "ptr<server_scene.vehicle_torque_node.island>",
+          "name": "m_island",
+          "offset": 88
+        },
+        {
+          "type": "f64",
+          "name": "m_island_gear_ratio",
+          "offset": 96
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_belt_link",
+      "base": "replication.master.object",
+      "size": 168,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_logic_link.node_id",
+          "name": "m_p0",
+          "offset": 24
+        },
+        {
+          "type": "server_scene.vehicle_logic_link.node_id",
+          "name": "m_p1",
+          "offset": 96
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "e_physics_group",
+      "base": "",
+      "size": 4,
+      "fields": [],
+      "enum_labels": [
+        "terrain",
+        "tree",
+        "character",
+        "vehicle",
+        "prop",
+        "item",
+        "ragdoll",
+        "effect",
+        "entity",
+        "rope",
+        "buoyancy_volume"
+      ]
+    },
+    {
+      "name": "e_vehicle_component_surface_dir",
+      "base": "",
+      "size": 4,
+      "fields": [],
+      "enum_labels": [
+        "x_neg",
+        "x_pos",
+        "y_neg",
+        "y_pos",
+        "z_neg",
+        "z_pos"
+      ]
+    }
+  ],
+  "roller_definitions": [
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/212",
+      "sha256": "fa5aadcd8ae43be5a89c06aec6142ef0ec7e24bd5ad9730b71e280676c50e262",
+      "selected_fields": {
+        "id": "roller_wheel_fixed_a",
+        "class": "roller_wheel_fixed_small_narrow",
+        "meshes_dynamic": [
+          {
+            "path": "meshes/components/roller_wheel_a.mesh"
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/213",
+      "sha256": "a49dfe74d67981b25c4b35466825c7c9c39c67a99ead7f42fff61786556cd5bb",
+      "selected_fields": {
+        "id": "roller_wheel_fixed_b",
+        "class": "roller_wheel_fixed_large_narrow",
+        "meshes_dynamic": [
+          {
+            "path": "meshes/components/roller_wheel_b.mesh"
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/214",
+      "sha256": "448159e3d7d9757a88c55ed637d5dc1a2b34bf7f68fa30cfb109c510253cff2b",
+      "selected_fields": {
+        "id": "roller_wheel_fixed_c",
+        "class": "roller_wheel_fixed_small",
+        "meshes_dynamic": [
+          {
+            "path": "meshes/components/roller_wheel_c.mesh"
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/215",
+      "sha256": "211252d84e07d79588ce71bb19814f2e335d00a1aa7fb473dcd9e9ffa3080fbe",
+      "selected_fields": {
+        "id": "roller_wheel_fixed_d",
+        "class": "roller_wheel_fixed_large",
+        "meshes_dynamic": [
+          {
+            "path": "meshes/components/roller_wheel_d.mesh"
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/216",
+      "sha256": "e6b033a79efb68e3b7853c9019ea0623267db58924394765a536514ec4df3dda",
+      "selected_fields": {
+        "id": "roller_wheel_fixed_e",
+        "class": "roller_wheel_fixed_small_wide",
+        "meshes_dynamic": [
+          {
+            "path": "meshes/components/roller_wheel_e.mesh"
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/217",
+      "sha256": "9867822c786124030a933e83b16fa6c8835dec8384187f3c3861a65cb46ab87b",
+      "selected_fields": {
+        "id": "roller_wheel_fixed_f",
+        "class": "roller_wheel_fixed_large_wide",
+        "meshes_dynamic": [
+          {
+            "path": "meshes/components/roller_wheel_f.mesh"
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/229",
+      "sha256": "620bd7420112b59cadfea0eed81fea94eb971f798eb718e1b0cbe72e4846cd03",
+      "selected_fields": {
+        "id": "roller_wheel_suspension_a",
+        "class": "roller_wheel_suspension_small_narrow",
+        "meshes_dynamic": [
+          {
+            "path": "meshes/components/roller_wheel_suspension_arm_a.mesh",
+            "pos": [
+              0.08,
+              -0.016,
+              0.0
+            ]
+          },
+          {
+            "path": "meshes/components/roller_wheel_a.mesh",
+            "pos": [
+              -0.0,
+              -0.016,
+              0.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/230",
+      "sha256": "c9dcd6cc651a316afb618eb4bca1a9114e0bf92825e932c34874b651cebcaf79",
+      "selected_fields": {
+        "id": "roller_wheel_suspension_b",
+        "class": "roller_wheel_suspension_large_narrow",
+        "meshes_dynamic": [
+          {
+            "path": "meshes/components/roller_wheel_suspension_arm_b.mesh",
+            "pos": [
+              0.0,
+              -0.032,
+              0.0
+            ]
+          },
+          {
+            "path": "meshes/components/roller_wheel_b.mesh",
+            "pos": [
+              -0.08,
+              -0.032,
+              0.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/231",
+      "sha256": "70013a29a0120c9e509c27372bfbcbca3bf7130730aa9edef7ed853d8041651d",
+      "selected_fields": {
+        "id": "roller_wheel_suspension_c",
+        "class": "roller_wheel_suspension_small",
+        "meshes_dynamic": [
+          {
+            "path": "meshes/components/roller_wheel_suspension_arm_c.mesh",
+            "pos": [
+              0.08,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "path": "meshes/components/roller_wheel_c.mesh"
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/232",
+      "sha256": "cb347d5f79c77545ae5662a3dd7500d67a77ebc9c30c02f38e5b6183af0b6a44",
+      "selected_fields": {
+        "id": "roller_wheel_suspension_d",
+        "class": "roller_wheel_suspension_large",
+        "meshes_dynamic": [
+          {
+            "path": "meshes/components/roller_wheel_suspension_arm_d.mesh",
+            "pos": [
+              0.08,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "path": "meshes/components/roller_wheel_d.mesh",
+            "pos": [
+              -0.16,
+              0.0,
+              0.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/233",
+      "sha256": "e017497c342ebf1fdcdbaa7f85fafc5f581709e1b72bffa8b9c9635d2e3cc17f",
+      "selected_fields": {
+        "id": "roller_wheel_suspension_e",
+        "class": "roller_wheel_suspension_small_wide",
+        "meshes_dynamic": [
+          {
+            "path": "meshes/components/roller_wheel_suspension_arm_e.mesh",
+            "pos": [
+              0.08,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "path": "meshes/components/roller_wheel_e.mesh",
+            "pos": [
+              -0.08,
+              0.0,
+              0.0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/234",
+      "sha256": "537926377a02b0676607dae4cc0be1bd8766a756144b05d4b0fa2cb0845edd7c",
+      "selected_fields": {
+        "id": "roller_wheel_suspension_f",
+        "class": "roller_wheel_suspension_large_wide",
+        "meshes_dynamic": [
+          {
+            "path": "meshes/components/roller_wheel_suspension_arm_f.mesh",
+            "pos": [
+              0.08,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "path": "meshes/components/roller_wheel_f.mesh",
+            "pos": [
+              -0.24,
+              0.0,
+              0.0
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reader": {
+    "schema": 1,
+    "tool_version": "1.1.0",
+    "tool_sha256": "503dd34b80e7292669640366b69b43e0b1828fac5ffb1756e34c48f925f40c71",
+    "source_sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22",
+    "counts": {
+      "functions": 37,
+      "identical_exports_deduplicated": 0,
+      "instructions_byte_checked": 10548,
+      "slot_derived_calls": 448,
+      "unresolved_calls": 507
+    },
+    "limits": [
+      "Approximate C is not original source or a recovered ABI.",
+      "Slot-derived call sites establish data dependency, not virtual target binding.",
+      "Full-text results and printable strings are investigative leads, not behavioral conclusions.",
+      "No game process, gameplay session, or external Python dependency is required."
+    ]
+  },
+  "instruction_bytes": 64882,
+  "topology_model": {
+    "version": "1.0.0",
+    "examples": [
+      {
+        "name": "single",
+        "input_links": [
+          [
+            0,
+            1
+          ]
+        ],
+        "start_side": 0,
+        "result": {
+          "accepted": true,
+          "reason": "two_entry_exception",
+          "nodes": [
+            0,
+            1
+          ],
+          "links": [
+            0
+          ],
+          "incident_other_links": 0
+        }
+      },
+      {
+        "name": "open forward",
+        "input_links": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "start_side": 0,
+        "result": {
+          "accepted": false,
+          "reason": "open_end",
+          "nodes": [
+            0,
+            1,
+            2
+          ],
+          "links": [
+            0,
+            1
+          ],
+          "incident_other_links": 0
+        }
+      },
+      {
+        "name": "first dead end",
+        "input_links": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "start_side": 0,
+        "result": {
+          "accepted": true,
+          "reason": "two_entry_exception",
+          "nodes": [
+            0,
+            1
+          ],
+          "links": [
+            0
+          ],
+          "incident_other_links": 0
+        }
+      },
+      {
+        "name": "same links opposite start",
+        "input_links": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "start_side": 1,
+        "result": {
+          "accepted": false,
+          "reason": "open_end",
+          "nodes": [
+            1,
+            0,
+            2
+          ],
+          "links": [
+            0,
+            1
+          ],
+          "incident_other_links": 0
+        }
+      },
+      {
+        "name": "triangle",
+        "input_links": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "start_side": 0,
+        "result": {
+          "accepted": true,
+          "reason": "closed_return",
+          "nodes": [
+            0,
+            1,
+            2,
+            0
+          ],
+          "links": [
+            0,
+            1,
+            2
+          ],
+          "incident_other_links": 1
+        }
+      },
+      {
+        "name": "branch",
+        "input_links": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "start_side": 0,
+        "result": {
+          "accepted": false,
+          "reason": "branch",
+          "nodes": [
+            0,
+            1
+          ],
+          "links": [
+            0
+          ],
+          "incident_other_links": 2
+        }
+      }
+    ],
+    "limits": "Start-link/side resolution and geometry excluded; fresh empty output vector; non-self links only. Not creation validity, physical closure, belt tension or full solver."
+  },
+  "limits": "Source-bound selected static evidence. Full C bodies read for exports03/04/05 and shared wheel tick, with explicit unresolved native and exceptional-input contracts. No game execution or complete runtime/ABI/solver proof."
+}

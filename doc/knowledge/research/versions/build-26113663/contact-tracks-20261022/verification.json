@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "build": "26113663",
+  "installed_source_and_definition_hashes_match": true,
+  "definition_files_checked": 2968,
+  "reader_functions": 37,
+  "reader_instructions_checked": 10548,
+  "reader_instruction_bytes": 64882,
+  "fresh_export_functions": 25,
+  "selected_functions": 28,
+  "typed_scalars": 78,
+  "selected_instructions": 58,
+  "selected_calls": 16,
+  "research_tool_tests_passed": 285,
+  "new_topology_tests": 8,
+  "independent_four_vertex_oracle_comparisons": 384,
+  "initial_test_failure": "The initial degree oracle wrongly required a one-link connected component for the two-entry exception. A first-dead-end counterexample corrected that interpretation and added a regression case; the source-shaped model already returned true.",
+  "test_log_sha256": "12f17ab05df3b61ee341bf1dc387f4c70c5aaa462e8b4e79909749482d1b5e8a",
+  "game_executed": false,
+  "installation_or_active_saves_edited": false,
+  "limits": "Tests establish the explicit model domain and tool behavior, not geometry resolution or in-game acceptance."
+}
