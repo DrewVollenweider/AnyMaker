@@ -1,0 +1,3777 @@
+{
+  "schema": 1,
+  "date": "2026-10-22",
+  "build": "26113663",
+  "source_sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22",
+  "functions": [
+    {
+      "signature": "() ctor (vehicle_component_definition.surface)",
+      "signature_offset": 24902898,
+      "code_offset": 24903087,
+      "code_size": 168,
+      "code_sha256": "74a0ab3c661966b66ead4addf5fa7e03b0fd801bd2bdb8324ad6116959610365",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle.find_mating_surfaces_adjacent (server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const vec3_s32, const e_vehicle_component_surface_dir, const string, const e_vehicle_component_surface_gender, const vehicle_component_definition, vector<vehicle_util.mating_surface_data<server_scene>>)",
+      "signature_offset": 53064665,
+      "code_offset": 53065361,
+      "code_size": 184,
+      "code_sha256": "0ee8f99b3aa004fb0cd7610fdfc97f23b87e01ba41c981bf15b6e68e44074890",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.clutch.create (server_scene.vehicle_component.clutch, server_scene.vehicle)",
+      "signature_offset": 54187446,
+      "code_offset": 54188397,
+      "code_size": 616,
+      "code_sha256": "d55b4dbd269a8cf6bc1a1a319cbdffa99db6d19d71a9d6dd1dc06d6b90a1073d",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.clutch.tick (server_scene.vehicle_component.clutch, server_scene.vehicle, server_scene)",
+      "signature_offset": 54198249,
+      "code_offset": 54198844,
+      "code_size": 232,
+      "code_sha256": "6c8ceaa88f0e98b6b531a98eceb06042d22b050aa4ffb2e502ee069f543b0f2a",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.create (server_scene.vehicle_component, server_scene.vehicle)",
+      "signature_offset": 54241471,
+      "code_offset": 54241586,
+      "code_size": 28,
+      "code_sha256": "01ed2acfd58cedc6848f72b596fd6b1ad72b109310d3263b0c5936d1b97be902",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.differential_gearbox.create (server_scene.vehicle_component.differential_gearbox, server_scene.vehicle)",
+      "signature_offset": 54356944,
+      "code_offset": 54358040,
+      "code_size": 2112,
+      "code_sha256": "6722832f18aee764778adc4e53bae821c9579562fc878db383b429bef6b2deeb",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.differential_gearbox.get_properties (server_scene.vehicle_component.differential_gearbox, server_scene.peer.property_data)",
+      "signature_offset": 54364251,
+      "code_offset": 54364587,
+      "code_size": 248,
+      "code_sha256": "a1ade4c5d748b46b86b34859e2a9447c0d10adbf0ee164f0475d30dc95d5a398",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.differential_gearbox.parse_save_data (server_scene.vehicle_component.differential_gearbox, server_scene.save_data.parser)",
+      "signature_offset": 54365590,
+      "code_offset": 54366081,
+      "code_size": 384,
+      "code_sha256": "58c5fa704e25b4f5725f719e9cd00cf661d781ddebb2a9fbc44c8c54ea8a570d",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.differential_gearbox.tick (server_scene.vehicle_component.differential_gearbox, server_scene.vehicle, server_scene)",
+      "signature_offset": 54367601,
+      "code_offset": 54368562,
+      "code_size": 648,
+      "code_sha256": "72d97c87119f80418a6d13af16b3d87dab9cdae1317f054745dead0ba9ff244b",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.electric_port.add_mating_component (server_scene.vehicle_component.electric_port, server_scene.vehicle, const s32, server_scene.vehicle_component, const s32)",
+      "signature_offset": 54401297,
+      "code_offset": 54401786,
+      "code_size": 320,
+      "code_sha256": "faada77404500424bed07693c1e80bc5f004d7f658d457dfd96905fbf4d591e0",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.electric_port.create (server_scene.vehicle_component.electric_port, server_scene.vehicle)",
+      "signature_offset": 54403591,
+      "code_offset": 54404073,
+      "code_size": 168,
+      "code_sha256": "873c0de4a9017792c02d4d675e21c87bda40ce030ca768edfbbb600bf5579999",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.electric_port.remove_mating_component (server_scene.vehicle_component.electric_port, server_scene.vehicle, const s32, server_scene.vehicle_component, const s32)",
+      "signature_offset": 54405944,
+      "code_offset": 54406158,
+      "code_size": 85,
+      "code_sha256": "a6519234a786015a4cb73c239bb769e61d4505334959f1c77abe92857600f1f3",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "(s32) server_scene.vehicle_component.gearbox_b.get_gear_count (const server_scene.vehicle_component.gearbox_b)",
+      "signature_offset": 55028904,
+      "code_offset": 55029233,
+      "code_size": 168,
+      "code_sha256": "8b7ceb14c5938ebeb53b9b5c2feb7f06726cf08fd3c9f3976758c25824fc4a9f",
+      "review": "reused previous current-build review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gearbox_b.tick (server_scene.vehicle_component.gearbox_b, server_scene.vehicle, server_scene)",
+      "signature_offset": 55041983,
+      "code_offset": 55043103,
+      "code_size": 2280,
+      "code_sha256": "5f84d39cd5c9ba5f7d260e43f93153654bf1f5394ac150325615db79f1d1a9bc",
+      "review": "reused previous current-build review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gearbox_c.add_mating_component (server_scene.vehicle_component.gearbox_c, server_scene.vehicle, const s32, server_scene.vehicle_component, const s32)",
+      "signature_offset": 55052569,
+      "code_offset": 55053983,
+      "code_size": 856,
+      "code_sha256": "d2ab8befe8a97d15307374d4d623dbbf1434c84c244ff5e0da3bc183abe90771",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gearbox_fixed_ratio.create (server_scene.vehicle_component.gearbox_fixed_ratio, server_scene.vehicle)",
+      "signature_offset": 55061275,
+      "code_offset": 55062035,
+      "code_size": 536,
+      "code_sha256": "4fc8ca593fc2e435d36792d79a1c1cbc223934e6d64c8a41d474f8f7ee724e8e",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gearbox_fixed_ratio.get_properties (server_scene.vehicle_component.gearbox_fixed_ratio, server_scene.peer.property_data)",
+      "signature_offset": 55064791,
+      "code_offset": 55065449,
+      "code_size": 416,
+      "code_sha256": "313a06a1307b9d9034f3b78c1ab18cd39619b015c7e5d38d09f7053bea9a7dfc",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gearbox_fixed_ratio.parse_save_data (server_scene.vehicle_component.gearbox_fixed_ratio, server_scene.save_data.parser)",
+      "signature_offset": 55067806,
+      "code_offset": 55068531,
+      "code_size": 904,
+      "code_sha256": "4f96ae9da74bac4871bb3f7b73037785d1cb7f5965621e94a96ae0e7c635f468",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gearbox_fixed_ratio.tick (server_scene.vehicle_component.gearbox_fixed_ratio, server_scene.vehicle, server_scene)",
+      "signature_offset": 55071393,
+      "code_offset": 55071784,
+      "code_size": 320,
+      "code_sha256": "87f8a3c8e1a05d86bb18539504408513dfd09258489ff125c5f6ab431f7a55e6",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.get_surface_bounds_voxel_local_to_grid (const server_scene.vehicle_component, const vehicle_component_definition.surface, vec3_s32, vec3_s32, vec2_s32)",
+      "signature_offset": 55110606,
+      "code_offset": 55111338,
+      "code_size": 384,
+      "code_sha256": "f3e8428d4a5f3bf5132ab5a7ed3f520f949c364bb6dd3e9eb9bd9f290812b30d",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.motor.create (server_scene.vehicle_component.motor, server_scene.vehicle)",
+      "signature_offset": 56992214,
+      "code_offset": 56992879,
+      "code_size": 344,
+      "code_sha256": "8152ce425144b2ae7fca51c0c94c6a27d0565a931c972081fa3d22238a3bb25d",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.motor.get_properties (server_scene.vehicle_component.motor, server_scene.peer.property_data)",
+      "signature_offset": 56996988,
+      "code_offset": 56997637,
+      "code_size": 336,
+      "code_sha256": "50cd59cc3efbc05b1b8ba7d177520e4e68a96af1ebd77d6cd08ddb0f7b14644b",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.motor.parse_save_data (server_scene.vehicle_component.motor, server_scene.save_data.parser)",
+      "signature_offset": 56999698,
+      "code_offset": 57000395,
+      "code_size": 720,
+      "code_sha256": "6327794fb073b1742d81ed2e2a00b25e3d856581de7cfc57947b8918aebd391f",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.motor.tick (server_scene.vehicle_component.motor, server_scene.vehicle, server_scene)",
+      "signature_offset": 57004149,
+      "code_offset": 57005387,
+      "code_size": 1640,
+      "code_sha256": "003eae7929e37cadee249b53267f60a248b11f7af71cf7135647785486b67e62",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.post_place (server_scene.vehicle_component, server_scene)",
+      "signature_offset": 57136756,
+      "code_offset": 57136867,
+      "code_size": 18,
+      "code_sha256": "ce519e9121741d8a81f8d1037d5c04d6fd9edf7b5cf967e3243e7ce5a4d63e9d",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_electric_node.consume_factor (server_scene.vehicle_electric_node, const f64)",
+      "signature_offset": 58208433,
+      "code_offset": 58208601,
+      "code_size": 344,
+      "code_sha256": "a37d7aad64e5c5b2a1034f707db3da17c3a810e3f4f5e860369399e5a4900f67",
+      "review": "reused previous current-build review"
+    },
+    {
+      "signature": "() server_scene.vehicle_grid.build_component_mating_surfaces (server_scene.vehicle_grid, server_scene.vehicle, server_scene.vehicle_component)",
+      "signature_offset": 58630511,
+      "code_offset": 58630996,
+      "code_size": 168,
+      "code_sha256": "dcded34e8334ccb358d93fa823be859fc464840973ddb97ea20c49a3173f93da",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_grid.build_component_mating_surfaces (server_scene.vehicle_grid, server_scene.vehicle, server_scene.vehicle_component, const vector<ptr<server_scene.vehicle_component>>)",
+      "signature_offset": 58631557,
+      "code_offset": 58635096,
+      "code_size": 1976,
+      "code_sha256": "548efc758b8a3166eed79a3db88c9d4b96c5dc1819f87323b58f7b6cbc2e1f30",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_mechanical_node_in.read (const server_scene.vehicle_mechanical_node_in)",
+      "signature_offset": 58889409,
+      "code_offset": 58889527,
+      "code_size": 32,
+      "code_sha256": "de364133812107b782a73a789603324e3cf13d53e181470b463b4e7a164dee3f",
+      "review": "reused previous current-build review"
+    },
+    {
+      "signature": "() server_scene.vehicle_torque_data.connect_link (server_scene.vehicle_torque_data, const server_scene.vehicle, const s32, const s32, const s32)",
+      "signature_offset": 59171945,
+      "code_offset": 59172333,
+      "code_size": 224,
+      "code_sha256": "ccd87879e3ef9faa42a8314a6b201e8569ce4ad8704a32bf5722ed880f46ad41",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_torque_data.disconnect_link (server_scene.vehicle_torque_data, const server_scene.vehicle, const s32)",
+      "signature_offset": 59183704,
+      "code_offset": 59184073,
+      "code_size": 192,
+      "code_sha256": "a7c18cd13947ae8333271f774d5aec939a65497b5106096fd8e95b2c49761f8e",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_torque_node_container._flood_island (server_scene.vehicle_torque_node_container, server_scene.vehicle_torque_node, server_scene.vehicle_torque_node.island, server_scene.vehicle, server_scene.connections_manager, const f64)",
+      "signature_offset": 59214110,
+      "code_offset": 59217869,
+      "code_size": 3216,
+      "code_sha256": "975230c24ac5561e9fa054d83f917a9f182d7ddde7952ac0ae6a912634c7609c",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_torque_node_container.build (server_scene.vehicle_torque_node_container, server_scene.vehicle, server_scene.connections_manager, const f64)",
+      "signature_offset": 59226315,
+      "code_offset": 59227875,
+      "code_size": 1304,
+      "code_sha256": "b39be16b010ea64198609531e6a7ab512ffbefeff524b4c74ba4f2947cee478d",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() server_scene.vehicle_torque_node_container.post_build (server_scene.vehicle_torque_node_container)",
+      "signature_offset": 59242276,
+      "code_offset": 59243861,
+      "code_size": 1288,
+      "code_sha256": "92a8f95bce675ae56e7f98ba5fc64be20cd0b859e871d6f8759c5267fbb6be5e",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "(vec3_s32) vehicle_component.get_surface_dir_normal (const e_vehicle_component_surface_dir)",
+      "signature_offset": 62392827,
+      "code_offset": 62393023,
+      "code_size": 520,
+      "code_sha256": "7235ac84097167d7a71ef15afafec588d40464f5fd4767cac64d9f88c9ef7c83",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "(e_vehicle_component_surface_dir) vehicle_component.get_surface_dir_opposite (const e_vehicle_component_surface_dir)",
+      "signature_offset": 62393889,
+      "code_offset": 62394025,
+      "code_size": 216,
+      "code_sha256": "771f680ce3f0eadc2e932c0650edc3c2496c595c329042ba58eae3e62ab43279",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() vehicle_component.get_surface_min_max (const e_vehicle_component_surface_dir, const vec3_s32, const vec2_s32, const vec3_s32, const vec3, vec3_s32, vec3_s32, vec2_s32)",
+      "signature_offset": 62400488,
+      "code_offset": 62401233,
+      "code_size": 5400,
+      "code_sha256": "4a6f05de041592c08b36d1c1e6924d4b9ce77d33c9b0b7e63fc88e625cbfdacb",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "() vehicle_component_util.get_component_surface_bounds_voxel_local_to_grid (const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const vehicle_component_definition.surface, vec3_s32, vec3_s32, vec2_s32)",
+      "signature_offset": 62924499,
+      "code_offset": 62925248,
+      "code_size": 816,
+      "code_sha256": "29175fcad24340dabe180271d1cd384e8d2838d80c99e63d4f53c9f5ff68b4f0",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "(bool) vehicle_component_util.is_surface_type_gender_compatible (const vehicle_component_definition, const string, const e_vehicle_component_surface_gender, const vehicle_component_definition, const string, const e_vehicle_component_surface_gender)",
+      "signature_offset": 62949315,
+      "code_offset": 62949879,
+      "code_size": 2816,
+      "code_sha256": "1f52d8ff3ad1fbb51f45907702258f339c29d01b2517eab3c703472fa7124cd1",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "(bool) vehicle_component_util.test_surfaces_matable (const vec3_s32, const vec3_s32, const e_vehicle_component_surface_dir, const string, const e_vehicle_component_surface_gender, const vehicle_component_definition, const vec3_s32, const vec3_s32, const e_vehicle_component_surface_dir, const string, const e_vehicle_component_surface_gender, const vehicle_component_definition)",
+      "signature_offset": 62980441,
+      "code_offset": 62982050,
+      "code_size": 3728,
+      "code_sha256": "7afbacf44663ad62eb0e62ef5df5ec9e4d8b8622412a6ff0cf2211a32acd93d6",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "(bool) vehicle_util.test_voxel_bounds_encompassing (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)",
+      "signature_offset": 63688094,
+      "code_offset": 63688229,
+      "code_size": 289,
+      "code_sha256": "e49677be58c1ca532823ca6cfe6ae46443b37abffbacc67eaa1bc2fff310eab1",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "(bool) vehicle_util.test_voxel_bounds_overlapping (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)",
+      "signature_offset": 63688785,
+      "code_offset": 63688919,
+      "code_size": 289,
+      "code_sha256": "1dbbda9315e5436dcccd0543f29b36807a24ce12953963385ff2088a67d11207",
+      "review": "new complete C-body review"
+    },
+    {
+      "signature": "(bool) vehicle_util.thresholded_input (bool, const f64)",
+      "signature_offset": 63690246,
+      "code_offset": 63690321,
+      "code_size": 288,
+      "code_sha256": "0208a75eef2484ba3a1f04f5f04d39e3b433b0aed4d7eed5afae4f88187aad28",
+      "review": "reused previous current-build review"
+    },
+    {
+      "signature": "() vehicle_util.find_mating_surfaces_adjacent<server_scene> (server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const vec3_s32, const e_vehicle_component_surface_dir, const string, const e_vehicle_component_surface_gender, const vehicle_component_definition, vector<vehicle_util.mating_surface_data<server_scene>>)",
+      "signature_offset": 65566829,
+      "code_offset": 65570527,
+      "code_size": 2136,
+      "code_sha256": "e768ccfcb7328c18d48758693c4a42937ed2afdf69f504fc2286241c9ccf71ec",
+      "review": "new complete C-body review"
+    }
+  ],
+  "typed_scalars": [
+    {
+      "label": "surface constructor direction/gender zero",
+      "offset": 24903247,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "surface constructor size",
+      "offset": 24903251,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "mating none gender",
+      "offset": 62985706,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "mating true / male reverse branch",
+      "offset": 62985710,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "mating male",
+      "offset": 62985714,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "mating female",
+      "offset": 62985718,
+      "format": "i",
+      "width": 4,
+      "bytes": "02000000",
+      "value": 2
+    },
+    {
+      "label": "compatible male",
+      "offset": 62952679,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "compatible none/zero",
+      "offset": 62952683,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "compatible female",
+      "offset": 62952687,
+      "format": "i",
+      "width": 4,
+      "bytes": "02000000",
+      "value": 2
+    },
+    {
+      "label": "surface quarter deadband",
+      "offset": 62406593,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000d03f",
+      "value": 0.25
+    },
+    {
+      "label": "surface integer zero at same address",
+      "offset": 62406593,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "surface half voxel",
+      "offset": 62406609,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000e03f",
+      "value": 0.5
+    },
+    {
+      "label": "surface integer one",
+      "offset": 62406601,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "normal calibration 0",
+      "offset": 62393519,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "normal calibration 1",
+      "offset": 62393523,
+      "format": "i",
+      "width": 4,
+      "bytes": "ffffffff",
+      "value": -1
+    },
+    {
+      "label": "normal calibration 2",
+      "offset": 62393527,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "normal calibration 3",
+      "offset": 62393531,
+      "format": "i",
+      "width": 4,
+      "bytes": "02000000",
+      "value": 2
+    },
+    {
+      "label": "normal calibration 4",
+      "offset": 62393535,
+      "format": "i",
+      "width": 4,
+      "bytes": "03000000",
+      "value": 3
+    },
+    {
+      "label": "normal calibration 5",
+      "offset": 62393539,
+      "format": "i",
+      "width": 4,
+      "bytes": "04000000",
+      "value": 4
+    },
+    {
+      "label": "motor negative sign",
+      "offset": 57007003,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f0bf",
+      "value": -1.0
+    },
+    {
+      "label": "motor node index same address",
+      "offset": 57007003,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "motor zero",
+      "offset": 57007011,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "motor one",
+      "offset": 57007019,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "motor output factor UI minimum/step",
+      "offset": 56997957,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999b93f",
+      "value": 0.1
+    },
+    {
+      "label": "motor output factor UI maximum",
+      "offset": 56997965,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "motor output factor saved default",
+      "offset": 57001107,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "fixed ratio reverse sign",
+      "offset": 55072088,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f0bf",
+      "value": -1.0
+    },
+    {
+      "label": "fixed ratio normal sign",
+      "offset": 55072096,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "fixed ratio saved factors default",
+      "offset": 55069415,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "fixed ratio UI minimum",
+      "offset": 55065845,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "fixed ratio UI maximum",
+      "offset": 55065849,
+      "format": "i",
+      "width": 4,
+      "bytes": "08000000",
+      "value": 8
+    },
+    {
+      "label": "differential ratio sign create",
+      "offset": 54360136,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f0bf",
+      "value": -1.0
+    },
+    {
+      "label": "differential ratio sign update",
+      "offset": 54369202,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f0bf",
+      "value": -1.0
+    },
+    {
+      "label": "differential factors default",
+      "offset": 54366449,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "differential UI minimum",
+      "offset": 54364823,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "differential UI maximum",
+      "offset": 54364827,
+      "format": "i",
+      "width": 4,
+      "bytes": "08000000",
+      "value": 8
+    },
+    {
+      "label": "differential input index",
+      "offset": 54360088,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "differential missing out surface",
+      "offset": 54360096,
+      "format": "i",
+      "width": 4,
+      "bytes": "ffffffff",
+      "value": -1
+    },
+    {
+      "label": "differential three nodes",
+      "offset": 54360100,
+      "format": "i",
+      "width": 4,
+      "bytes": "03000000",
+      "value": 3
+    },
+    {
+      "label": "differential right index / two links",
+      "offset": 54360104,
+      "format": "i",
+      "width": 4,
+      "bytes": "02000000",
+      "value": 2
+    },
+    {
+      "label": "differential left index",
+      "offset": 54360120,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "differential four nodes",
+      "offset": 54360144,
+      "format": "i",
+      "width": 4,
+      "bytes": "04000000",
+      "value": 4
+    },
+    {
+      "label": "differential link 0",
+      "offset": 54369186,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "differential link 1",
+      "offset": 54369190,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "differential right node",
+      "offset": 54369194,
+      "format": "i",
+      "width": 4,
+      "bytes": "02000000",
+      "value": 2
+    },
+    {
+      "label": "disconnected link endpoint",
+      "offset": 59184257,
+      "format": "i",
+      "width": 4,
+      "bytes": "ffffffff",
+      "value": -1
+    },
+    {
+      "label": "torque flood lower index",
+      "offset": 59221053,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "torque flood sign same address",
+      "offset": 59221053,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f0bf",
+      "value": -1.0
+    },
+    {
+      "label": "torque retention",
+      "offset": 59229171,
+      "format": "d",
+      "width": 8,
+      "bytes": "3c4ed1915cfeef3f",
+      "value": 0.9998
+    },
+    {
+      "label": "torque post zero",
+      "offset": 59245133,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "torque post one",
+      "offset": 59245141,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    }
+  ],
+  "strings": [
+    {
+      "offset": 62952671,
+      "text": "port"
+    },
+    {
+      "offset": 62952675,
+      "text": ""
+    },
+    {
+      "offset": 62985722,
+      "text": "port"
+    },
+    {
+      "offset": 54402098,
+      "text": "port"
+    },
+    {
+      "offset": 54360092,
+      "text": "out"
+    },
+    {
+      "offset": 54360108,
+      "text": "in"
+    },
+    {
+      "offset": 54360124,
+      "text": "left"
+    },
+    {
+      "offset": 54360129,
+      "text": "right"
+    },
+    {
+      "offset": 54366441,
+      "text": "input"
+    },
+    {
+      "offset": 54366453,
+      "text": "output"
+    },
+    {
+      "offset": 55054816,
+      "text": "torque_engine_c"
+    },
+    {
+      "offset": 57001086,
+      "text": "is_reverse"
+    },
+    {
+      "offset": 57001097,
+      "text": "power"
+    }
+  ],
+  "selected_calls": [
+    {
+      "function_offset": 53065361,
+      "instruction": 53065526,
+      "bytes": "41ff12",
+      "instruction_text": "CALL qword ptr [R10]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53065545,
+      "loaded_at": 53065494,
+      "dependency_steps": [
+        {
+          "instruction": 53065494,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53065526,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() vehicle_util.find_mating_surfaces_adjacent<server_scene> (server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const vec3_s32, const e_vehicle_component_surface_dir, const string, const e_vehicle_component_surface_gender, const vehicle_component_definition, vector<vehicle_util.mating_surface_data<server_scene>>)",
+      "slot_offset": 184,
+      "target_record_candidate": {
+        "code_offset": 65570527,
+        "code_size": 2136
+      }
+    },
+    {
+      "function_offset": 54198844,
+      "instruction": 54198935,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54199084,
+      "loaded_at": 54198925,
+      "dependency_steps": [
+        {
+          "instruction": 54198925,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54198935,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.thresholded_input (bool, const f64)",
+      "slot_offset": 240,
+      "target_record_candidate": {
+        "code_offset": 63690321,
+        "code_size": 288
+      }
+    },
+    {
+      "function_offset": 54198844,
+      "instruction": 54198997,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54199092,
+      "loaded_at": 54198990,
+      "dependency_steps": [
+        {
+          "instruction": 54198990,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54198997,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_data.disconnect_link (server_scene.vehicle_torque_data, const server_scene.vehicle, const s32)",
+      "slot_offset": 248,
+      "target_record_candidate": {
+        "code_offset": 59184073,
+        "code_size": 192
+      }
+    },
+    {
+      "function_offset": 54198844,
+      "instruction": 54199052,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54199100,
+      "loaded_at": 54199040,
+      "dependency_steps": [
+        {
+          "instruction": 54199040,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54199052,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_data.connect_link (server_scene.vehicle_torque_data, const server_scene.vehicle, const s32, const s32, const s32)",
+      "slot_offset": 256,
+      "target_record_candidate": {
+        "code_offset": 59172333,
+        "code_size": 224
+      }
+    },
+    {
+      "function_offset": 54364587,
+      "instruction": 54364693,
+      "bytes": "ffd6",
+      "instruction_text": "CALL RSI",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54364835,
+      "loaded_at": 54364656,
+      "dependency_steps": [
+        {
+          "instruction": 54364656,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54364663,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 54364666,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 54364669,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.peer.property_data.add_property_s32 (server_scene.peer.property_data, const e_localization_string, const ptr<s32>, const s32, const s32)",
+      "slot_offset": 248,
+      "target_record_candidate": {
+        "code_offset": 50582565,
+        "code_size": 512
+      }
+    },
+    {
+      "function_offset": 54368562,
+      "instruction": 54368657,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54369218,
+      "loaded_at": 54368647,
+      "dependency_steps": [
+        {
+          "instruction": 54368647,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54368657,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.thresholded_input (bool, const f64)",
+      "slot_offset": 656,
+      "target_record_candidate": {
+        "code_offset": 63690321,
+        "code_size": 288
+      }
+    },
+    {
+      "function_offset": 54368562,
+      "instruction": 54368725,
+      "bytes": "ff5500",
+      "instruction_text": "CALL qword ptr [RBP]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54369226,
+      "loaded_at": 54368712,
+      "dependency_steps": [
+        {
+          "instruction": 54368712,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54368725,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_data.disconnect_link (server_scene.vehicle_torque_data, const server_scene.vehicle, const s32)",
+      "slot_offset": 664,
+      "target_record_candidate": {
+        "code_offset": 59184073,
+        "code_size": 192
+      }
+    },
+    {
+      "function_offset": 54368562,
+      "instruction": 54368768,
+      "bytes": "ff5500",
+      "instruction_text": "CALL qword ptr [RBP]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54369226,
+      "loaded_at": 54368755,
+      "dependency_steps": [
+        {
+          "instruction": 54368755,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54368768,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_data.disconnect_link (server_scene.vehicle_torque_data, const server_scene.vehicle, const s32)",
+      "slot_offset": 664,
+      "target_record_candidate": {
+        "code_offset": 59184073,
+        "code_size": 192
+      }
+    },
+    {
+      "function_offset": 54368562,
+      "instruction": 54368830,
+      "bytes": "ff16",
+      "instruction_text": "CALL qword ptr [RSI]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54369234,
+      "loaded_at": 54368812,
+      "dependency_steps": [
+        {
+          "instruction": 54368812,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54368830,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_data.connect_link (server_scene.vehicle_torque_data, const server_scene.vehicle, const s32, const s32, const s32)",
+      "slot_offset": 672,
+      "target_record_candidate": {
+        "code_offset": 59172333,
+        "code_size": 224
+      }
+    },
+    {
+      "function_offset": 54368562,
+      "instruction": 54368891,
+      "bytes": "ff16",
+      "instruction_text": "CALL qword ptr [RSI]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54369234,
+      "loaded_at": 54368873,
+      "dependency_steps": [
+        {
+          "instruction": 54368873,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54368891,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_data.connect_link (server_scene.vehicle_torque_data, const server_scene.vehicle, const s32, const s32, const s32)",
+      "slot_offset": 672,
+      "target_record_candidate": {
+        "code_offset": 59172333,
+        "code_size": 224
+      }
+    },
+    {
+      "function_offset": 55043103,
+      "instruction": 55044698,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 55045455,
+      "loaded_at": 55044688,
+      "dependency_steps": [
+        {
+          "instruction": 55044688,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 55044698,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_node.set_gear_ratio (server_scene.vehicle_torque_node, const f64)",
+      "slot_offset": 2352,
+      "target_record_candidate": {
+        "code_offset": 59213143,
+        "code_size": 27
+      }
+    },
+    {
+      "function_offset": 55043103,
+      "instruction": 55044982,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 55045463,
+      "loaded_at": 55044975,
+      "dependency_steps": [
+        {
+          "instruction": 55044975,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 55044982,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_node.set_clutch_factor (server_scene.vehicle_torque_node, const f64)",
+      "slot_offset": 2360,
+      "target_record_candidate": {
+        "code_offset": 59212798,
+        "code_size": 27
+      }
+    },
+    {
+      "function_offset": 55065449,
+      "instruction": 55065635,
+      "bytes": "ffd6",
+      "instruction_text": "CALL RSI",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 55065873,
+      "loaded_at": 55065608,
+      "dependency_steps": [
+        {
+          "instruction": 55065608,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 55065615,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 55065618,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 55065621,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.peer.property_data.add_property_s32 (server_scene.peer.property_data, const e_localization_string, const ptr<s32>, const s32, const s32)",
+      "slot_offset": 424,
+      "target_record_candidate": {
+        "code_offset": 50582565,
+        "code_size": 512
+      }
+    },
+    {
+      "function_offset": 55065449,
+      "instruction": 55065725,
+      "bytes": "ffd6",
+      "instruction_text": "CALL RSI",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 55065873,
+      "loaded_at": 55065698,
+      "dependency_steps": [
+        {
+          "instruction": 55065698,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 55065705,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 55065708,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 55065711,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.peer.property_data.add_property_s32 (server_scene.peer.property_data, const e_localization_string, const ptr<s32>, const s32, const s32)",
+      "slot_offset": 424,
+      "target_record_candidate": {
+        "code_offset": 50582565,
+        "code_size": 512
+      }
+    },
+    {
+      "function_offset": 57005387,
+      "instruction": 57006279,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 57007075,
+      "loaded_at": 57006250,
+      "dependency_steps": [
+        {
+          "instruction": 57006250,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 57006257,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 57006260,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 57006263,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "(f64) server_scene.vehicle_electric_node.consume_factor (server_scene.vehicle_electric_node, const f64)",
+      "slot_offset": 1688,
+      "target_record_candidate": {
+        "code_offset": 58208601,
+        "code_size": 344
+      }
+    },
+    {
+      "function_offset": 58635096,
+      "instruction": 58635666,
+      "bytes": "ffd6",
+      "instruction_text": "CALL RSI",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58637120,
+      "loaded_at": 58635623,
+      "dependency_steps": [
+        {
+          "instruction": 58635623,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58635630,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58635633,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58635636,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.get_surface_bounds_voxel_local_to_grid (const server_scene.vehicle_component, const vehicle_component_definition.surface, vec3_s32, vec3_s32, vec2_s32)",
+      "slot_offset": 2024,
+      "target_record_candidate": {
+        "code_offset": 55111338,
+        "code_size": 384
+      }
+    },
+    {
+      "function_offset": 58635096,
+      "instruction": 58636052,
+      "bytes": "41ff1424",
+      "instruction_text": "CALL qword ptr [R12]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58637160,
+      "loaded_at": 58636011,
+      "dependency_steps": [
+        {
+          "instruction": 58636011,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58636052,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle.find_mating_surfaces_adjacent (server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const vec3_s32, const e_vehicle_component_surface_dir, const string, const e_vehicle_component_surface_gender, const vehicle_component_definition, vector<vehicle_util.mating_surface_data<server_scene>>)",
+      "slot_offset": 2064,
+      "target_record_candidate": {
+        "code_offset": 53065361,
+        "code_size": 184
+      }
+    },
+    {
+      "function_offset": 58635096,
+      "instruction": 58636673,
+      "bytes": "ffd7",
+      "instruction_text": "CALL RDI",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58637224,
+      "loaded_at": 58636643,
+      "dependency_steps": [
+        {
+          "instruction": 58636643,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58636650,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58636653,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58636656,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.add_mating_component (server_scene.vehicle_component, server_scene.vehicle, const s32, server_scene.vehicle_component, const s32)",
+      "slot_offset": 2128,
+      "target_record_candidate": {
+        "code_offset": 53487508,
+        "code_size": 38
+      }
+    },
+    {
+      "function_offset": 58635096,
+      "instruction": 58636771,
+      "bytes": "ffd3",
+      "instruction_text": "CALL RBX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58637224,
+      "loaded_at": 58636741,
+      "dependency_steps": [
+        {
+          "instruction": 58636741,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58636748,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58636751,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58636754,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.add_mating_component (server_scene.vehicle_component, server_scene.vehicle, const s32, server_scene.vehicle_component, const s32)",
+      "slot_offset": 2128,
+      "target_record_candidate": {
+        "code_offset": 53487508,
+        "code_size": 38
+      }
+    },
+    {
+      "function_offset": 59217869,
+      "instruction": 59218178,
+      "bytes": "41ff5500",
+      "instruction_text": "CALL qword ptr [R13]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 59221093,
+      "loaded_at": 59218149,
+      "dependency_steps": [
+        {
+          "instruction": 59218149,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 59218178,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_node_container._flood_island (server_scene.vehicle_torque_node_container, server_scene.vehicle_torque_node, server_scene.vehicle_torque_node.island, server_scene.vehicle, server_scene.connections_manager, const f64)",
+      "slot_offset": 3224,
+      "target_record_candidate": {
+        "code_offset": 59217869,
+        "code_size": 3216
+      }
+    },
+    {
+      "function_offset": 59217869,
+      "instruction": 59219030,
+      "bytes": "41ff1424",
+      "instruction_text": "CALL qword ptr [R12]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 59221093,
+      "loaded_at": 59219004,
+      "dependency_steps": [
+        {
+          "instruction": 59219004,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 59219030,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_node_container._flood_island (server_scene.vehicle_torque_node_container, server_scene.vehicle_torque_node, server_scene.vehicle_torque_node.island, server_scene.vehicle, server_scene.connections_manager, const f64)",
+      "slot_offset": 3224,
+      "target_record_candidate": {
+        "code_offset": 59217869,
+        "code_size": 3216
+      }
+    },
+    {
+      "function_offset": 59217869,
+      "instruction": 59219290,
+      "bytes": "41ff1424",
+      "instruction_text": "CALL qword ptr [R12]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 59221093,
+      "loaded_at": 59219264,
+      "dependency_steps": [
+        {
+          "instruction": 59219264,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 59219290,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_node_container._flood_island (server_scene.vehicle_torque_node_container, server_scene.vehicle_torque_node, server_scene.vehicle_torque_node.island, server_scene.vehicle, server_scene.connections_manager, const f64)",
+      "slot_offset": 3224,
+      "target_record_candidate": {
+        "code_offset": 59217869,
+        "code_size": 3216
+      }
+    },
+    {
+      "function_offset": 59217869,
+      "instruction": 59219727,
+      "bytes": "41ff1424",
+      "instruction_text": "CALL qword ptr [R12]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 59221093,
+      "loaded_at": 59219691,
+      "dependency_steps": [
+        {
+          "instruction": 59219691,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 59219727,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_node_container._flood_island (server_scene.vehicle_torque_node_container, server_scene.vehicle_torque_node, server_scene.vehicle_torque_node.island, server_scene.vehicle, server_scene.connections_manager, const f64)",
+      "slot_offset": 3224,
+      "target_record_candidate": {
+        "code_offset": 59217869,
+        "code_size": 3216
+      }
+    },
+    {
+      "function_offset": 59217869,
+      "instruction": 59219913,
+      "bytes": "41ff1424",
+      "instruction_text": "CALL qword ptr [R12]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 59221093,
+      "loaded_at": 59219877,
+      "dependency_steps": [
+        {
+          "instruction": 59219877,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 59219913,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_node_container._flood_island (server_scene.vehicle_torque_node_container, server_scene.vehicle_torque_node, server_scene.vehicle_torque_node.island, server_scene.vehicle, server_scene.connections_manager, const f64)",
+      "slot_offset": 3224,
+      "target_record_candidate": {
+        "code_offset": 59217869,
+        "code_size": 3216
+      }
+    },
+    {
+      "function_offset": 59217869,
+      "instruction": 59220952,
+      "bytes": "41ff16",
+      "instruction_text": "CALL qword ptr [R14]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 59221093,
+      "loaded_at": 59220910,
+      "dependency_steps": [
+        {
+          "instruction": 59220910,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 59220952,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_node_container._flood_island (server_scene.vehicle_torque_node_container, server_scene.vehicle_torque_node, server_scene.vehicle_torque_node.island, server_scene.vehicle, server_scene.connections_manager, const f64)",
+      "slot_offset": 3224,
+      "target_record_candidate": {
+        "code_offset": 59217869,
+        "code_size": 3216
+      }
+    },
+    {
+      "function_offset": 62925248,
+      "instruction": 62925595,
+      "bytes": "ff17",
+      "instruction_text": "CALL qword ptr [RDI]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 62926072,
+      "loaded_at": 62925527,
+      "dependency_steps": [
+        {
+          "instruction": 62925527,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 62925595,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() vehicle_component.get_surface_min_max (const e_vehicle_component_surface_dir, const vec3_s32, const vec2_s32, const vec3_s32, const vec3, vec3_s32, vec3_s32, vec2_s32)",
+      "slot_offset": 824,
+      "target_record_candidate": {
+        "code_offset": 62401233,
+        "code_size": 5400
+      }
+    },
+    {
+      "function_offset": 62982050,
+      "instruction": 62982449,
+      "bytes": "ff5500",
+      "instruction_text": "CALL qword ptr [RBP]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 62985786,
+      "loaded_at": 62982386,
+      "dependency_steps": [
+        {
+          "instruction": 62982386,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 62982449,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) vehicle_component_util.is_surface_type_gender_compatible (const vehicle_component_definition, const string, const e_vehicle_component_surface_gender, const vehicle_component_definition, const string, const e_vehicle_component_surface_gender)",
+      "slot_offset": 3736,
+      "target_record_candidate": {
+        "code_offset": 62949879,
+        "code_size": 2816
+      }
+    },
+    {
+      "function_offset": 62982050,
+      "instruction": 62982867,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 62985818,
+      "loaded_at": 62982852,
+      "dependency_steps": [
+        {
+          "instruction": 62982852,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 62982867,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_voxel_bounds_overlapping (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)",
+      "slot_offset": 3768,
+      "target_record_candidate": {
+        "code_offset": 63688919,
+        "code_size": 289
+      }
+    },
+    {
+      "function_offset": 62982050,
+      "instruction": 62983165,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 62985834,
+      "loaded_at": 62983150,
+      "dependency_steps": [
+        {
+          "instruction": 62983150,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 62983165,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_voxel_bounds_encompassing (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)",
+      "slot_offset": 3784,
+      "target_record_candidate": {
+        "code_offset": 63688229,
+        "code_size": 289
+      }
+    },
+    {
+      "function_offset": 62982050,
+      "instruction": 62983345,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 62985834,
+      "loaded_at": 62983333,
+      "dependency_steps": [
+        {
+          "instruction": 62983333,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 62983345,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_voxel_bounds_encompassing (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)",
+      "slot_offset": 3784,
+      "target_record_candidate": {
+        "code_offset": 63688229,
+        "code_size": 289
+      }
+    },
+    {
+      "function_offset": 62982050,
+      "instruction": 62983815,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 62985834,
+      "loaded_at": 62983800,
+      "dependency_steps": [
+        {
+          "instruction": 62983800,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 62983815,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_voxel_bounds_encompassing (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)",
+      "slot_offset": 3784,
+      "target_record_candidate": {
+        "code_offset": 63688229,
+        "code_size": 289
+      }
+    },
+    {
+      "function_offset": 62982050,
+      "instruction": 62984280,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 62985834,
+      "loaded_at": 62984268,
+      "dependency_steps": [
+        {
+          "instruction": 62984268,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 62984280,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.test_voxel_bounds_encompassing (const vec3_s32, const vec3_s32, const vec3_s32, const vec3_s32)",
+      "slot_offset": 3784,
+      "target_record_candidate": {
+        "code_offset": 63688229,
+        "code_size": 289
+      }
+    },
+    {
+      "function_offset": 65570527,
+      "instruction": 65572393,
+      "bytes": "41ff17",
+      "instruction_text": "CALL qword ptr [R15]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 65572823,
+      "loaded_at": 65572298,
+      "dependency_steps": [
+        {
+          "instruction": 65572298,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 65572393,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) vehicle_component_util.test_surfaces_matable (const vec3_s32, const vec3_s32, const e_vehicle_component_surface_dir, const string, const e_vehicle_component_surface_gender, const vehicle_component_definition, const vec3_s32, const vec3_s32, const e_vehicle_component_surface_dir, const string, const e_vehicle_component_surface_gender, const vehicle_component_definition)",
+      "slot_offset": 2296,
+      "target_record_candidate": {
+        "code_offset": 62982050,
+        "code_size": 3728
+      }
+    }
+  ],
+  "selected_instructions": [
+    {
+      "function_offset": 54368562,
+      "offset": 54368671,
+      "bytes": "488b4c2458",
+      "assembly": "MOV RCX,qword ptr [RSP + 0x58]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368676,
+      "bytes": "8a8140020000",
+      "assembly": "MOV AL,byte ptr [RCX + 0x240]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368682,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368684,
+      "bytes": "0f8456000000",
+      "assembly": "JZ 0x033d9a08"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368690,
+      "bytes": "488d8100020000",
+      "assembly": "LEA RAX,[RCX + 0x200]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368697,
+      "bytes": "488b542460",
+      "assembly": "MOV RDX,qword ptr [RSP + 0x60]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368702,
+      "bytes": "488d1a",
+      "assembly": "LEA RBX,[RDX]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368705,
+      "bytes": "4c8d05da010000",
+      "assembly": "LEA R8,[0x33d9ba2]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368712,
+      "bytes": "488b2dfb010000",
+      "assembly": "MOV RBP,qword ptr [0x033d9bca]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368719,
+      "bytes": "4889c1",
+      "assembly": "MOV RCX,RAX"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368722,
+      "bytes": "4889da",
+      "assembly": "MOV RDX,RBX"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368725,
+      "bytes": "ff5500",
+      "assembly": "CALL qword ptr [RBP]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368728,
+      "bytes": "488b4c2458",
+      "assembly": "MOV RCX,qword ptr [RSP + 0x58]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368733,
+      "bytes": "488d8100020000",
+      "assembly": "LEA RAX,[RCX + 0x200]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368740,
+      "bytes": "488b542460",
+      "assembly": "MOV RDX,qword ptr [RSP + 0x60]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368745,
+      "bytes": "488d1a",
+      "assembly": "LEA RBX,[RDX]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368748,
+      "bytes": "4c8d05b3010000",
+      "assembly": "LEA R8,[0x33d9ba6]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368755,
+      "bytes": "488b2dd0010000",
+      "assembly": "MOV RBP,qword ptr [0x033d9bca]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368762,
+      "bytes": "4889c1",
+      "assembly": "MOV RCX,RAX"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368765,
+      "bytes": "4889da",
+      "assembly": "MOV RDX,RBX"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368768,
+      "bytes": "ff5500",
+      "assembly": "CALL qword ptr [RBP]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368771,
+      "bytes": "e975000000",
+      "assembly": "JMP 0x033d9a7d"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368925,
+      "bytes": "488b4c2458",
+      "assembly": "MOV RCX,qword ptr [RSP + 0x58]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368930,
+      "bytes": "f20f2a8148020000",
+      "assembly": "CVTSI2SD XMM0,dword ptr [RCX + 0x248]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368938,
+      "bytes": "f20f2a8944020000",
+      "assembly": "CVTSI2SD XMM1,dword ptr [RCX + 0x244]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368946,
+      "bytes": "f20f5ec1",
+      "assembly": "DIVSD XMM0,XMM1"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368950,
+      "bytes": "f20f11442448",
+      "assembly": "MOVSD qword ptr [RSP + 0x48],XMM0"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368956,
+      "bytes": "f20f10442448",
+      "assembly": "MOVSD XMM0,qword ptr [RSP + 0x48]"
+    },
+    {
+      "function_offset": 54368562,
+      "offset": 54368962,
+      "bytes": "f20f5905e8000000",
+      "assembly": "MULSD XMM0,qword ptr [0x033d9bb2]"
+    },
+    {
+      "function_offset": 55071784,
+      "offset": 55071818,
+      "bytes": "f20f100506010000",
+      "assembly": "MOVSD XMM0,qword ptr [0x03485558]"
+    },
+    {
+      "function_offset": 55071784,
+      "offset": 55071826,
+      "bytes": "f20f11442438",
+      "assembly": "MOVSD qword ptr [RSP + 0x38],XMM0"
+    },
+    {
+      "function_offset": 55071784,
+      "offset": 55071832,
+      "bytes": "e90e000000",
+      "assembly": "JMP 0x0348546b"
+    },
+    {
+      "function_offset": 55071784,
+      "offset": 55071837,
+      "bytes": "f20f1005fb000000",
+      "assembly": "MOVSD XMM0,qword ptr [0x03485560]"
+    },
+    {
+      "function_offset": 55071784,
+      "offset": 55071845,
+      "bytes": "f20f11442438",
+      "assembly": "MOVSD qword ptr [RSP + 0x38],XMM0"
+    },
+    {
+      "function_offset": 55071784,
+      "offset": 55071851,
+      "bytes": "f20f2a8154020000",
+      "assembly": "CVTSI2SD XMM0,dword ptr [RCX + 0x254]"
+    },
+    {
+      "function_offset": 55071784,
+      "offset": 55071859,
+      "bytes": "f20f2a8950020000",
+      "assembly": "CVTSI2SD XMM1,dword ptr [RCX + 0x250]"
+    },
+    {
+      "function_offset": 55071784,
+      "offset": 55071867,
+      "bytes": "f20f5ec1",
+      "assembly": "DIVSD XMM0,XMM1"
+    },
+    {
+      "function_offset": 55071784,
+      "offset": 55071871,
+      "bytes": "f20f59442438",
+      "assembly": "MULSD XMM0,qword ptr [RSP + 0x38]"
+    },
+    {
+      "function_offset": 55071784,
+      "offset": 55071877,
+      "bytes": "f20f11442440",
+      "assembly": "MOVSD qword ptr [RSP + 0x40],XMM0"
+    },
+    {
+      "function_offset": 59184073,
+      "offset": 59184140,
+      "bytes": "488b5c2438",
+      "assembly": "MOV RBX,qword ptr [RSP + 0x38]"
+    },
+    {
+      "function_offset": 59184073,
+      "offset": 59184145,
+      "bytes": "8b056a000000",
+      "assembly": "MOV EAX,dword ptr [0x03871481]"
+    },
+    {
+      "function_offset": 59184073,
+      "offset": 59184151,
+      "bytes": "8903",
+      "assembly": "MOV dword ptr [RBX],EAX"
+    },
+    {
+      "function_offset": 59184073,
+      "offset": 59184214,
+      "bytes": "488b4c2438",
+      "assembly": "MOV RCX,qword ptr [RSP + 0x38]"
+    },
+    {
+      "function_offset": 59184073,
+      "offset": 59184219,
+      "bytes": "8b0520000000",
+      "assembly": "MOV EAX,dword ptr [0x03871481]"
+    },
+    {
+      "function_offset": 59184073,
+      "offset": 59184225,
+      "bytes": "894104",
+      "assembly": "MOV dword ptr [RCX + 0x4],EAX"
+    }
+  ],
+  "layouts": [
+    {
+      "name": "vehicle_component_definition.surface",
+      "base": "",
+      "size": 72,
+      "fields": [
+        {
+          "type": "string",
+          "name": "m_id",
+          "offset": 0
+        },
+        {
+          "type": "vec3_s32",
+          "name": "m_position",
+          "offset": 16
+        },
+        {
+          "type": "vec2_s32",
+          "name": "m_size",
+          "offset": 28
+        },
+        {
+          "type": "e_vehicle_component_surface_dir",
+          "name": "m_direction",
+          "offset": 36
+        },
+        {
+          "type": "s32",
+          "name": "m_rotation",
+          "offset": 40
+        },
+        {
+          "type": "e_vehicle_component_surface_rotation_mode",
+          "name": "m_rotation_mode",
+          "offset": 44
+        },
+        {
+          "type": "e_vehicle_component_surface_gender",
+          "name": "m_gender",
+          "offset": 48
+        },
+        {
+          "type": "string",
+          "name": "m_type",
+          "offset": 56
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "e_vehicle_component_surface_dir",
+      "base": "",
+      "size": 4,
+      "fields": [],
+      "enum_labels": [
+        "x_neg",
+        "x_pos",
+        "y_neg",
+        "y_pos",
+        "z_neg",
+        "z_pos"
+      ]
+    },
+    {
+      "name": "e_vehicle_component_surface_gender",
+      "base": "",
+      "size": 4,
+      "fields": [],
+      "enum_labels": [
+        "none",
+        "male",
+        "female"
+      ]
+    },
+    {
+      "name": "vehicle_component_definition.e_mateable_port_type",
+      "base": "",
+      "size": 4,
+      "fields": [],
+      "enum_labels": [
+        "electric",
+        "data",
+        "liquid",
+        "gas",
+        "air",
+        "fuel",
+        "exhaust",
+        "oil",
+        "coolant"
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_component.gearbox_c",
+      "base": "server_scene.vehicle_component.gearbox_b",
+      "size": 824,
+      "fields": [],
+      "enum_labels": [],
+      "selected_virtuals": [
+        "() server_scene.vehicle_component.create_island_links (server_scene.vehicle_component, server_scene.vehicle)",
+        "() server_scene.vehicle_component.gearbox_b.create (server_scene.vehicle_component.gearbox_b, server_scene.vehicle)",
+        "() server_scene.vehicle_component.gearbox_b.tick (server_scene.vehicle_component.gearbox_b, server_scene.vehicle, server_scene)",
+        "(s32) server_scene.vehicle_component.gearbox_b.get_gear_count (const server_scene.vehicle_component.gearbox_b)"
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_component.gearbox_b",
+      "base": "server_scene.vehicle_component",
+      "size": 824,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_torque_data",
+          "name": "m_torque_data",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_gas_content",
+          "name": "m_content_shift_up",
+          "offset": 544
+        },
+        {
+          "type": "server_scene.vehicle_gas_content",
+          "name": "m_content_shift_down",
+          "offset": 600
+        },
+        {
+          "type": "server_scene.vehicle_gas_node_group_pair",
+          "name": "m_gas_nodes",
+          "offset": 656
+        },
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 696
+        },
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "m_mated_component",
+          "offset": 736
+        },
+        {
+          "type": "s32",
+          "name": "m_final_drive_ratio",
+          "offset": 744
+        },
+        {
+          "type": "array<s32>",
+          "name": "m_gear_ratios",
+          "offset": 752
+        },
+        {
+          "type": "s32",
+          "name": "m_current_gear",
+          "offset": 784
+        },
+        {
+          "type": "s32",
+          "name": "m_target_gear",
+          "offset": 788
+        },
+        {
+          "type": "f64",
+          "name": "m_clutch_factor",
+          "offset": 792
+        },
+        {
+          "type": "bool",
+          "name": "m_shift_up_triggered",
+          "offset": 800
+        },
+        {
+          "type": "bool",
+          "name": "m_shift_down_triggered",
+          "offset": 801
+        },
+        {
+          "type": "bool",
+          "name": "m_property_is_reverse",
+          "offset": 802
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 808
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_component.motor",
+      "base": "server_scene.vehicle_component",
+      "size": 744,
+      "fields": [
+        {
+          "type": "replication.master.property_f64_compressed_u8",
+          "name": "m_factor",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_torque_data",
+          "name": "m_torque_data",
+          "offset": 528
+        },
+        {
+          "type": "server_scene.vehicle_electric_node_group",
+          "name": "m_electric_nodes",
+          "offset": 592
+        },
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 640
+        },
+        {
+          "type": "bool",
+          "name": "m_is_reverse",
+          "offset": 680
+        },
+        {
+          "type": "bool",
+          "name": "m_is_reverse_data",
+          "offset": 681
+        },
+        {
+          "type": "f64",
+          "name": "m_output_power_factor",
+          "offset": 688
+        },
+        {
+          "type": "f64",
+          "name": "m_target_rps",
+          "offset": 696
+        },
+        {
+          "type": "f64",
+          "name": "m_power_factor",
+          "offset": 704
+        },
+        {
+          "type": "f64",
+          "name": "m_display_electric_consumption",
+          "offset": 712
+        },
+        {
+          "type": "f64",
+          "name": "m_consume_electric_factor",
+          "offset": 720
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 728
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_component.clutch",
+      "base": "server_scene.vehicle_component",
+      "size": 640,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_mechanical_node_in",
+          "name": "m_logic_clutch",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_torque_data",
+          "name": "m_torque_data",
+          "offset": 512
+        },
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 576
+        },
+        {
+          "type": "bool",
+          "name": "m_is_disengaged",
+          "offset": 616
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 624
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_component.differential_gearbox",
+      "base": "server_scene.vehicle_component",
+      "size": 592,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_mechanical_node_in",
+          "name": "m_logic_lock",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_torque_data",
+          "name": "m_torque_data",
+          "offset": 512
+        },
+        {
+          "type": "bool",
+          "name": "m_is_locked",
+          "offset": 576
+        },
+        {
+          "type": "s32",
+          "name": "m_input_factor",
+          "offset": 580
+        },
+        {
+          "type": "s32",
+          "name": "m_output_factor",
+          "offset": 584
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_component.gearbox_fixed_ratio",
+      "base": "server_scene.vehicle_component",
+      "size": 624,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_torque_data",
+          "name": "m_torque_data",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 544
+        },
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "m_mated_component",
+          "offset": 584
+        },
+        {
+          "type": "s32",
+          "name": "m_input_factor",
+          "offset": 592
+        },
+        {
+          "type": "s32",
+          "name": "m_output_factor",
+          "offset": 596
+        },
+        {
+          "type": "bool",
+          "name": "m_is_reverse",
+          "offset": 600
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 608
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_torque_link",
+      "base": "",
+      "size": 16,
+      "fields": [
+        {
+          "type": "s32",
+          "name": "m_index_0",
+          "offset": 0
+        },
+        {
+          "type": "s32",
+          "name": "m_index_1",
+          "offset": 4
+        },
+        {
+          "type": "f64",
+          "name": "m_gear_ratio",
+          "offset": 8
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_torque_node",
+      "base": "",
+      "size": 104,
+      "fields": [
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "m_component",
+          "offset": 0
+        },
+        {
+          "type": "s32",
+          "name": "m_surface_index",
+          "offset": 8
+        },
+        {
+          "type": "f64",
+          "name": "m_rps",
+          "offset": 16
+        },
+        {
+          "type": "f64",
+          "name": "m_mass",
+          "offset": 24
+        },
+        {
+          "type": "f64",
+          "name": "m_vehicle_mass_factor",
+          "offset": 32
+        },
+        {
+          "type": "f64",
+          "name": "m_vehicle_mass_max",
+          "offset": 40
+        },
+        {
+          "type": "f64",
+          "name": "m_gear_ratio",
+          "offset": 48
+        },
+        {
+          "type": "f64",
+          "name": "m_clutch_factor",
+          "offset": 56
+        },
+        {
+          "type": "f64",
+          "name": "m_brake_factor",
+          "offset": 64
+        },
+        {
+          "type": "ptr<server_scene.vehicle_torque_node>",
+          "name": "m_adjacent",
+          "offset": 72
+        },
+        {
+          "type": "f64",
+          "name": "m_delta_rps",
+          "offset": 80
+        },
+        {
+          "type": "ptr<server_scene.vehicle_torque_node.island>",
+          "name": "m_island",
+          "offset": 88
+        },
+        {
+          "type": "f64",
+          "name": "m_island_gear_ratio",
+          "offset": 96
+        }
+      ],
+      "enum_labels": []
+    }
+  ],
+  "definitions": [
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/8",
+      "id": "battery_a",
+      "sha256": "1d29c71b2e8e70516c9207606ba463d04a1127b83a4db8b9c699e01b700c9ddb",
+      "selected_fields": {
+        "id": "battery_a",
+        "class": "battery",
+        "mateable_port_types": 3,
+        "surfaces": [
+          {
+            "dir": 2,
+            "gender": 2,
+            "size": [
+              2,
+              2
+            ],
+            "type": "port"
+          },
+          {
+            "gender": 2,
+            "size": [
+              2,
+              1
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 1,
+            "gender": 2,
+            "pos": [
+              1,
+              0,
+              0
+            ],
+            "size": [
+              2,
+              1
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 4,
+            "gender": 2,
+            "size": [
+              2,
+              1
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 5,
+            "gender": 2,
+            "pos": [
+              0,
+              0,
+              1
+            ],
+            "size": [
+              2,
+              1
+            ],
+            "type": "port"
+          }
+        ],
+        "zones": [
+          {
+            "bounds_max": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/51",
+      "id": "differential_gearbox_a",
+      "sha256": "8f627c44d8c2baa6dcefe0de21f90ae5a49a7b72100f75429c4c9744527b194f",
+      "selected_fields": {
+        "id": "differential_gearbox_a",
+        "class": "differential_gearbox",
+        "mateable_port_types": 2,
+        "surfaces": [
+          {
+            "dir": 2,
+            "gender": 2,
+            "pos": [
+              0,
+              -1,
+              0
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 3,
+            "gender": 2,
+            "pos": [
+              0,
+              1,
+              0
+            ],
+            "size": [
+              1,
+              3
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 5,
+            "id": "in",
+            "pos": [
+              0,
+              0,
+              2
+            ],
+            "type": "torque"
+          },
+          {
+            "id": "left",
+            "pos": [
+              -1,
+              0,
+              0
+            ],
+            "type": "torque"
+          },
+          {
+            "dir": 1,
+            "id": "right",
+            "pos": [
+              1,
+              0,
+              0
+            ],
+            "type": "torque"
+          },
+          {
+            "dir": 4,
+            "gender": 2,
+            "pos": [
+              0,
+              0,
+              -1
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 5,
+            "gender": 2,
+            "pos": [
+              0,
+              1,
+              2
+            ],
+            "type": "mechanical"
+          }
+        ],
+        "zones": [
+          {
+            "bounds_max": [
+              1,
+              1,
+              2
+            ],
+            "bounds_min": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/55",
+      "id": "gearbox_c",
+      "sha256": "5b1a72c3693bc38bffe17eb69826158a7534edc252061889dbe1548720fcddf1",
+      "selected_fields": {
+        "id": "gearbox_c",
+        "class": "gearbox_c",
+        "mateable_port_types": 10,
+        "surfaces": [
+          {
+            "dir": 2,
+            "gender": 2,
+            "pos": [
+              -1,
+              -3,
+              2
+            ],
+            "size": [
+              3,
+              3
+            ],
+            "type": "port"
+          },
+          {
+            "gender": 2,
+            "pos": [
+              -3,
+              -1,
+              2
+            ],
+            "size": [
+              3,
+              3
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 1,
+            "gender": 2,
+            "pos": [
+              3,
+              -1,
+              2
+            ],
+            "size": [
+              3,
+              3
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 3,
+            "gender": 2,
+            "pos": [
+              -1,
+              3,
+              2
+            ],
+            "size": [
+              3,
+              3
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 4,
+            "gender": 2,
+            "pos": [
+              -1,
+              -1,
+              -4
+            ],
+            "size": [
+              3,
+              1
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 4,
+            "id": "torque",
+            "pos": [
+              0,
+              0,
+              -4
+            ],
+            "type": "torque"
+          },
+          {
+            "dir": 5,
+            "gender": 2,
+            "id": "torque_engine",
+            "pos": [
+              0,
+              0,
+              4
+            ],
+            "type": "torque_engine_c"
+          },
+          {
+            "dir": 4,
+            "gender": 2,
+            "pos": [
+              -1,
+              0,
+              -4
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 4,
+            "gender": 2,
+            "pos": [
+              1,
+              0,
+              -4
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 4,
+            "gender": 2,
+            "pos": [
+              -1,
+              1,
+              -4
+            ],
+            "size": [
+              3,
+              1
+            ],
+            "type": "port"
+          }
+        ],
+        "zones": [
+          {
+            "bounds_max": [
+              3,
+              3,
+              4
+            ],
+            "bounds_min": [
+              -3,
+              -3,
+              -4
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/129",
+      "id": "electric_motor_a",
+      "sha256": "69a15a8817a031f59222c11679da838b011f5799de1c00d44614051dbab1b138",
+      "selected_fields": {
+        "id": "electric_motor_a",
+        "class": "motor",
+        "mateable_port_types": 3,
+        "surfaces": [
+          {
+            "dir": 4,
+            "gender": 2,
+            "type": "port"
+          },
+          {
+            "dir": 2,
+            "gender": 2,
+            "size": [
+              1,
+              2
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 1,
+            "gender": 2,
+            "size": [
+              2,
+              1
+            ],
+            "type": "port"
+          },
+          {
+            "gender": 2,
+            "size": [
+              2,
+              1
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 3,
+            "gender": 2,
+            "size": [
+              1,
+              2
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 5,
+            "id": "torque",
+            "pos": [
+              0,
+              0,
+              1
+            ],
+            "type": "torque"
+          }
+        ],
+        "zones": [
+          {
+            "bounds_max": [
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "motor_wattage": 10000.0,
+        "motor_max_output_rps": 30.0
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/130",
+      "id": "electric_motor_b",
+      "sha256": "e9443810f75b333458512f53b576737f28ee5c6a452d8faa344dc1e4601b2751",
+      "selected_fields": {
+        "id": "electric_motor_b",
+        "class": "motor",
+        "mateable_port_types": 3,
+        "surfaces": [
+          {
+            "gender": 2,
+            "pos": [
+              0,
+              0,
+              -1
+            ],
+            "size": [
+              3,
+              2
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 1,
+            "gender": 2,
+            "pos": [
+              1,
+              0,
+              -1
+            ],
+            "size": [
+              3,
+              2
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 3,
+            "gender": 2,
+            "pos": [
+              0,
+              1,
+              -1
+            ],
+            "size": [
+              2,
+              3
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 2,
+            "gender": 2,
+            "pos": [
+              0,
+              0,
+              -1
+            ],
+            "size": [
+              2,
+              3
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 4,
+            "gender": 2,
+            "pos": [
+              0,
+              0,
+              -1
+            ],
+            "size": [
+              2,
+              2
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 5,
+            "gender": 2,
+            "pos": [
+              1,
+              0,
+              1
+            ],
+            "size": [
+              1,
+              2
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 5,
+            "gender": 2,
+            "pos": [
+              0,
+              1,
+              1
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 5,
+            "id": "torque",
+            "pos": [
+              0,
+              0,
+              1
+            ],
+            "type": "torque"
+          }
+        ],
+        "zones": [
+          {
+            "bounds_max": [
+              1,
+              1,
+              1
+            ],
+            "bounds_min": [
+              0,
+              0,
+              -1
+            ]
+          }
+        ],
+        "motor_wattage": 60000.0,
+        "motor_max_output_rps": 30.0
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/131",
+      "id": "electric_motor_c",
+      "sha256": "77c51c8dd72702017cb92fdda58c8490bfd753ba2de9ffa01275abc05fb9dae8",
+      "selected_fields": {
+        "id": "electric_motor_c",
+        "class": "motor",
+        "mateable_port_types": 3,
+        "surfaces": [
+          {
+            "gender": 2,
+            "pos": [
+              -1,
+              0,
+              -1
+            ],
+            "size": [
+              3,
+              1
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 3,
+            "gender": 2,
+            "pos": [
+              0,
+              1,
+              -1
+            ],
+            "size": [
+              1,
+              3
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 1,
+            "gender": 2,
+            "pos": [
+              1,
+              0,
+              -1
+            ],
+            "size": [
+              3,
+              1
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 2,
+            "gender": 2,
+            "pos": [
+              0,
+              -1,
+              -1
+            ],
+            "size": [
+              1,
+              3
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 5,
+            "gender": 2,
+            "pos": [
+              0,
+              1,
+              1
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 5,
+            "gender": 2,
+            "pos": [
+              0,
+              -1,
+              1
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 5,
+            "gender": 2,
+            "pos": [
+              -1,
+              -1,
+              1
+            ],
+            "size": [
+              1,
+              3
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 4,
+            "gender": 2,
+            "pos": [
+              -1,
+              -1,
+              -1
+            ],
+            "size": [
+              3,
+              3
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 5,
+            "id": "torque",
+            "pos": [
+              0,
+              0,
+              1
+            ],
+            "type": "torque"
+          },
+          {
+            "dir": 5,
+            "gender": 2,
+            "pos": [
+              1,
+              -1,
+              1
+            ],
+            "size": [
+              1,
+              3
+            ],
+            "type": "port"
+          }
+        ],
+        "zones": [
+          {
+            "bounds_max": [
+              1,
+              1,
+              1
+            ],
+            "bounds_min": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        ],
+        "motor_wattage": 120000.0,
+        "motor_max_output_rps": 30.0
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/150",
+      "id": "differential_gearbox_b",
+      "sha256": "490c81153fe3803734e1c4aeee60f663f1c04f79cc4de6575206d1c147dac2b6",
+      "selected_fields": {
+        "id": "differential_gearbox_b",
+        "class": "differential_gearbox",
+        "mateable_port_types": 2,
+        "surfaces": [
+          {
+            "dir": 3,
+            "gender": 2,
+            "pos": [
+              0,
+              1,
+              0
+            ],
+            "size": [
+              1,
+              3
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 2,
+            "gender": 2,
+            "pos": [
+              0,
+              -1,
+              0
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 4,
+            "id": "in",
+            "pos": [
+              0,
+              0,
+              -2
+            ],
+            "type": "torque"
+          },
+          {
+            "id": "left",
+            "pos": [
+              -1,
+              0,
+              0
+            ],
+            "type": "torque"
+          },
+          {
+            "dir": 1,
+            "id": "right",
+            "pos": [
+              1,
+              0,
+              0
+            ],
+            "type": "torque"
+          },
+          {
+            "dir": 5,
+            "id": "out",
+            "pos": [
+              0,
+              0,
+              2
+            ],
+            "type": "torque"
+          },
+          {
+            "dir": 5,
+            "gender": 2,
+            "pos": [
+              0,
+              1,
+              2
+            ],
+            "type": "mechanical"
+          }
+        ],
+        "zones": [
+          {
+            "bounds_max": [
+              1,
+              1,
+              2
+            ],
+            "bounds_min": [
+              -1,
+              -1,
+              -2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/169",
+      "id": "battery_b",
+      "sha256": "93812cb3a6e966b2a42e005f2c5bfc515b0dd4ea0a5b37c078eb66190fe22974",
+      "selected_fields": {
+        "id": "battery_b",
+        "class": "battery",
+        "mateable_port_types": 3,
+        "surfaces": [
+          {
+            "dir": 2,
+            "gender": 2,
+            "size": [
+              2,
+              1
+            ],
+            "type": "port"
+          },
+          {
+            "gender": 2,
+            "type": "port"
+          },
+          {
+            "dir": 1,
+            "gender": 2,
+            "pos": [
+              1,
+              0,
+              0
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 4,
+            "gender": 2,
+            "size": [
+              2,
+              1
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 5,
+            "gender": 2,
+            "size": [
+              2,
+              1
+            ],
+            "type": "port"
+          }
+        ],
+        "zones": [
+          {
+            "bounds_max": [
+              1,
+              1,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/170",
+      "id": "electric_port_straight",
+      "sha256": "9d157bd79558e8847802936f0ed13b313a4cbe29af5d14ecedfad6fd23be8be1",
+      "selected_fields": {
+        "id": "electric_port_straight",
+        "class": "electric_port",
+        "mateable_port_types": 1,
+        "surfaces": [
+          {
+            "dir": 2,
+            "gender": 1,
+            "type": "port"
+          }
+        ],
+        "zones": [
+          {}
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/171",
+      "id": "electric_port_angle",
+      "sha256": "927e407e1c740ab6147180bff02fc42cdfb362cd2de6d67bba21d812f4737aeb",
+      "selected_fields": {
+        "id": "electric_port_angle",
+        "class": "electric_port",
+        "mateable_port_types": 1,
+        "surfaces": [
+          {
+            "dir": 2,
+            "gender": 1,
+            "type": "port"
+          }
+        ],
+        "zones": [
+          {}
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/498",
+      "id": "clutch",
+      "sha256": "1d284fae688981a50e8416179edebc55d506a313512a66a4df54bf273e6e3833",
+      "selected_fields": {
+        "id": "clutch",
+        "class": "clutch",
+        "mateable_port_types": 2,
+        "surfaces": [
+          {
+            "dir": 4,
+            "id": "torque_0",
+            "type": "torque"
+          },
+          {
+            "dir": 5,
+            "id": "torque_1",
+            "type": "torque"
+          },
+          {
+            "gender": 2,
+            "type": "port"
+          },
+          {
+            "dir": 1,
+            "gender": 2,
+            "type": "port"
+          },
+          {
+            "dir": 2
+          },
+          {
+            "dir": 3,
+            "gender": 2,
+            "type": "mechanical"
+          }
+        ],
+        "zones": [
+          {}
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/499",
+      "id": "gearbox_fixed_ratio",
+      "sha256": "e8912de67f778b836e8e1ea8a45b894396cef5205704ca2f9a76a329da269c4a",
+      "selected_fields": {
+        "id": "gearbox_fixed_ratio",
+        "class": "gearbox_fixed_ratio",
+        "mateable_port_types": 2,
+        "surfaces": [
+          {
+            "dir": 4,
+            "id": "torque_0",
+            "pos": [
+              1,
+              0,
+              0
+            ],
+            "type": "torque"
+          },
+          {
+            "dir": 5,
+            "id": "torque_1",
+            "pos": [
+              -1,
+              0,
+              0
+            ],
+            "type": "torque"
+          },
+          {
+            "gender": 2,
+            "pos": [
+              -1,
+              0,
+              0
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 1,
+            "gender": 2,
+            "pos": [
+              1,
+              0,
+              0
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 2,
+            "gender": 2,
+            "pos": [
+              -1,
+              0,
+              0
+            ],
+            "size": [
+              3,
+              1
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 3,
+            "gender": 2,
+            "pos": [
+              0,
+              1,
+              0
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 5,
+            "gender": 2,
+            "size": [
+              2,
+              2
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 4,
+            "gender": 2,
+            "size": [
+              1,
+              2
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 4,
+            "gender": 2,
+            "pos": [
+              -1,
+              0,
+              0
+            ],
+            "type": "port"
+          },
+          {
+            "dir": 4,
+            "gender": 2,
+            "pos": [
+              1,
+              1,
+              0
+            ],
+            "type": "port"
+          }
+        ],
+        "zones": [
+          {
+            "bounds_max": [
+              1,
+              1,
+              0
+            ],
+            "bounds_min": [
+              -1,
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "reader": {
+    "schema": 1,
+    "tool_version": "1.1.0",
+    "tool_sha256": "503dd34b80e7292669640366b69b43e0b1828fac5ffb1756e34c48f925f40c71",
+    "source_sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22",
+    "counts": {
+      "functions": 179,
+      "identical_exports_deduplicated": 0,
+      "instructions_byte_checked": 36031,
+      "slot_derived_calls": 1646,
+      "unresolved_calls": 1383
+    },
+    "limits": [
+      "Approximate C is not original source or a recovered ABI.",
+      "Slot-derived call sites establish data dependency, not virtual target binding.",
+      "Full-text results and printable strings are investigative leads, not behavioral conclusions.",
+      "No game process, gameplay session, or external Python dependency is required."
+    ]
+  },
+  "instruction_bytes": 207688,
+  "model": {
+    "version": "1.0.0",
+    "normals": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "examples": [
+      {
+        "name": "socket contains plug",
+        "a": {
+          "lower": [
+            0,
+            0,
+            0
+          ],
+          "upper": [
+            0,
+            1,
+            1
+          ],
+          "direction": 0,
+          "interface": "port",
+          "gender": 2,
+          "port_mask": 3
+        },
+        "b": {
+          "lower": [
+            -1,
+            0,
+            0
+          ],
+          "upper": [
+            -1,
+            0,
+            0
+          ],
+          "direction": 1,
+          "interface": "port",
+          "gender": 1,
+          "port_mask": 1
+        },
+        "compatible": true,
+        "matable": true
+      },
+      {
+        "name": "second independent socket face",
+        "a": {
+          "lower": [
+            1,
+            0,
+            0
+          ],
+          "upper": [
+            1,
+            1,
+            1
+          ],
+          "direction": 1,
+          "interface": "port",
+          "gender": 2,
+          "port_mask": 3
+        },
+        "b": {
+          "lower": [
+            2,
+            0,
+            0
+          ],
+          "upper": [
+            2,
+            0,
+            0
+          ],
+          "direction": 0,
+          "interface": "port",
+          "gender": 1,
+          "port_mask": 1
+        },
+        "compatible": true,
+        "matable": true
+      },
+      {
+        "name": "male overlap without containment",
+        "a": {
+          "lower": [
+            0,
+            0,
+            0
+          ],
+          "upper": [
+            2,
+            2,
+            0
+          ],
+          "direction": 5,
+          "interface": "torque",
+          "gender": 1,
+          "port_mask": 0
+        },
+        "b": {
+          "lower": [
+            2,
+            2,
+            1
+          ],
+          "upper": [
+            4,
+            4,
+            1
+          ],
+          "direction": 4,
+          "interface": "torque",
+          "gender": 2,
+          "port_mask": 0
+        },
+        "compatible": true,
+        "matable": false
+      }
+    ],
+    "motor_examples": [
+      {
+        "actual_rps": 0,
+        "target_rps": 30,
+        "result": [
+          1.0,
+          166.66666666666666
+        ]
+      },
+      {
+        "actual_rps": 40,
+        "target_rps": 30,
+        "result": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "actual_rps": 10,
+        "target_rps": 0,
+        "result": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "actual_rps": -10,
+        "target_rps": 0,
+        "result": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "limits": "Resolved local mating predicates and selected drivetrain paths only. No complete placement/collision/authority certificate, valid shared-storage reachability, native bitset/ABI, full differential handling, or gameplay result. Surface model uses explicit bounds/masks; no save edit or exploit creation."
+  },
+  "limits": "Resolved local mating predicates and selected drivetrain paths only. No complete placement/collision/authority certificate, valid shared-storage reachability, native bitset/ABI, full differential handling, or gameplay result. Surface model uses explicit bounds/masks; no save edit or exploit creation."
+}
