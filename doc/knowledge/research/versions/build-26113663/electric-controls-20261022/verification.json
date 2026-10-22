@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "build": "26113663",
+  "installed_code_and_definition_hashes_match": true,
+  "definition_files_checked": 2968,
+  "reader_functions": 140,
+  "reader_instructions_checked": 29559,
+  "reader_instruction_bytes": 172331,
+  "new_export_functions": 45,
+  "previously_pending_full_body_reviews_completed": 2,
+  "selected_full_C_read_functions": 47,
+  "typed_scalars": 46,
+  "selected_calls": 29,
+  "selected_instructions": 117,
+  "research_tool_tests_passed": 317,
+  "new_model_tests": 15,
+  "seeded_distinct_store_cases": 500,
+  "test_log_sha256": "610561f38931e34ee36d6a06a0a101933c505406b4dedb2aab414f18aacb7db1",
+  "model_constants_match_source": true,
+  "game_executed": false,
+  "installation_or_active_saves_edited": false,
+  "limits": "Selected static code interpretation; bounded analytical models, not gameplay acceptance. Repeated references are explicit synthetic inputs; valid placement/reachability, whole graph/dispatch, exceptional arithmetic, native units and complete electrical simulation are unproven."
+}

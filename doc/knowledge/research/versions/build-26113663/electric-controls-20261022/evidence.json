@@ -1,0 +1,2954 @@
+{
+  "schema": 1,
+  "date": "2026-10-22",
+  "build": "26113663",
+  "source_sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22",
+  "functions": [
+    {
+      "signature": "() ctor (server_scene.vehicle_component.alternator)",
+      "signature_offset": 24405037,
+      "code_offset": 24405567,
+      "code_size": 272,
+      "code_sha256": "fba9fce4041f00ac945fa362ad6753bab9f732acf91575b8ae5de284ed714db9"
+    },
+    {
+      "signature": "() ctor (server_scene.vehicle_component.battery)",
+      "signature_offset": 24413529,
+      "code_offset": 24413963,
+      "code_size": 240,
+      "code_sha256": "de6ee8ea644925a2233985dadc8329eff533f38ed97d0064d0126e8ef98ec068"
+    },
+    {
+      "signature": "() ctor (server_scene.vehicle_electric_content)",
+      "signature_offset": 24604474,
+      "code_offset": 24604541,
+      "code_size": 72,
+      "code_sha256": "49cd0388e4f85b49dcf720f87f3962515818ce2679d8d8786451d083c1f3b2e9"
+    },
+    {
+      "signature": "() ctor (server_scene.vehicle_electric_node_group)",
+      "signature_offset": 24607669,
+      "code_offset": 24607804,
+      "code_size": 56,
+      "code_sha256": "fe46e623be0b5119255f988b07853cce999822a8958ea305c4a116a79c6f706d"
+    },
+    {
+      "signature": "() ctor (server_scene.vehicle_electric_node_group, const s32)",
+      "signature_offset": 24608046,
+      "code_offset": 24608192,
+      "code_size": 80,
+      "code_sha256": "e64baf6d3854c0163d735e4aac07900b01cf943317aa80bf07080caf346b6f56"
+    },
+    {
+      "signature": "() server_scene.connections_manager.electric.build (server_scene.connections_manager.electric)",
+      "signature_offset": 44535332,
+      "code_offset": 44537263,
+      "code_size": 848,
+      "code_sha256": "583f60aec8e41917cd7fd19c872cde67a2812cd208027ea052596d88fe572e68"
+    },
+    {
+      "signature": "() server_scene.connections_manager.mechanical.build (server_scene.connections_manager.mechanical)",
+      "signature_offset": 44566160,
+      "code_offset": 44567347,
+      "code_size": 224,
+      "code_sha256": "0728873a0974ec959cfe3db52bcfa99ced16dfa71087103ebf62eeb188ad1e2d"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.alternator.add_mating_component (server_scene.vehicle_component.alternator, server_scene.vehicle, const s32, server_scene.vehicle_component, const s32)",
+      "signature_offset": 53530641,
+      "code_offset": 53531646,
+      "code_size": 448,
+      "code_sha256": "c3e911e7abc05b7f479ca30d2d759bd88811332ebdb3249b7622f7ba9ce099fc"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.alternator.create (server_scene.vehicle_component.alternator, server_scene.vehicle)",
+      "signature_offset": 53534324,
+      "code_offset": 53535113,
+      "code_size": 416,
+      "code_sha256": "b8a470c1cd57fd2bf5cd0537bc6254ecdc5d72f58f33b187eadc791b52edb381"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.alternator.tick (server_scene.vehicle_component.alternator, server_scene.vehicle, server_scene)",
+      "signature_offset": 53544399,
+      "code_offset": 53545222,
+      "code_size": 816,
+      "code_sha256": "3099d970c4dbfb50b7157267ae119c99a9fc6ce680e7a614c0acc9c654f90f18"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.battery.add_mating_component (server_scene.vehicle_component.battery, server_scene.vehicle, const s32, server_scene.vehicle_component, const s32)",
+      "signature_offset": 53813727,
+      "code_offset": 53814726,
+      "code_size": 448,
+      "code_sha256": "946bb2d5ba3004728aafc8ba74df5ed6c10809ee7df4c6221e34b7beec4f9cab"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.battery.build_accessory (server_scene.vehicle_component.battery, const s32)",
+      "signature_offset": 53816132,
+      "code_offset": 53817251,
+      "code_size": 520,
+      "code_sha256": "1d20834db8b65d69ee5566344b34619cbd4a637dea4da952f60eb0da68be9524"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.battery.create (server_scene.vehicle_component.battery, server_scene.vehicle)",
+      "signature_offset": 53819891,
+      "code_offset": 53820228,
+      "code_size": 80,
+      "code_sha256": "8e6853dbe9309782f9667438e721a01d624402be6c9b6eed86fe5c87e052be61"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.battery.post_load (server_scene.vehicle_component.battery, server_scene)",
+      "signature_offset": 53829150,
+      "code_offset": 53830062,
+      "code_size": 456,
+      "code_sha256": "e2ffdd80a4c2537017c56fb34d320382d9ed1026d0d3d54bce676ef6111c17ac"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.battery.tick (server_scene.vehicle_component.battery, server_scene.vehicle, server_scene)",
+      "signature_offset": 53836197,
+      "code_offset": 53837293,
+      "code_size": 688,
+      "code_sha256": "e27a724e84807bc07f3bb2c22532159df177e2d42114c6cfa1bb05f4f2010f9f"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.electric_relay.create (server_scene.vehicle_component.electric_relay, server_scene.vehicle)",
+      "signature_offset": 54410691,
+      "code_offset": 54411156,
+      "code_size": 152,
+      "code_sha256": "5e9fe40e4dcb2ffa82674a2d3201949af6c09b1d546c56cab5fbf213e7db165b"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.electric_relay.get_electric_flood_nodes (server_scene.vehicle_component.electric_relay, vector<ptr<server_scene.vehicle_electric_node>>)",
+      "signature_offset": 54413299,
+      "code_offset": 54413902,
+      "code_size": 200,
+      "code_sha256": "7d27460916b1da23d962280cc7b2cddb5c5b900b39352dd44738e8fdc356a84d"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.electric_relay.tick (server_scene.vehicle_component.electric_relay, server_scene.vehicle, server_scene)",
+      "signature_offset": 54422162,
+      "code_offset": 54422712,
+      "code_size": 272,
+      "code_sha256": "ec085a1c18782eb3cb399abfa8d8dfa8a8fc8ec5f1dd2eed86d945785b3e8c86"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.microcontroller.create (server_scene.vehicle_component.microcontroller, server_scene.vehicle)",
+      "signature_offset": 56739732,
+      "code_offset": 56740229,
+      "code_size": 168,
+      "code_sha256": "d53f20d4206e1c8eb61be5d157878aa38d7360881d8c216a924bfa0671f35c17"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.microcontroller.tick (server_scene.vehicle_component.microcontroller, server_scene.vehicle, server_scene)",
+      "signature_offset": 56827003,
+      "code_offset": 56830604,
+      "code_size": 2896,
+      "code_sha256": "439bf3d3249753338320df1f4d669f635fca0f2d268a523c258c46199c5890c8"
+    },
+    {
+      "signature": "() server_scene.vehicle_data_analogue.reset (server_scene.vehicle_data_analogue)",
+      "signature_offset": 58105377,
+      "code_offset": 58105477,
+      "code_size": 56,
+      "code_sha256": "75c97a1b700b2696c8554527f02bdbf65cf666ed732237332ea755cf077cdfd5"
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_content.parse_save_data (server_scene.vehicle_electric_content, server_scene.save_data.parser)",
+      "signature_offset": 58195923,
+      "code_offset": 58196265,
+      "code_size": 328,
+      "code_sha256": "fbbe0ad6cc2b7483a55c47901ad98f9dbcc541d2171ee5b0b46b225a59fa3ffa"
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_content.set (server_scene.vehicle_electric_content, const f64)",
+      "signature_offset": 58196866,
+      "code_offset": 58196981,
+      "code_size": 35,
+      "code_sha256": "6c35c2e35a52c1d4e3d1bee8fe97a1a83e1fe96955ab6d33acaaba64ac541964"
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_content.set (server_scene.vehicle_electric_content, const f64, const f64)",
+      "signature_offset": 58197225,
+      "code_offset": 58197351,
+      "code_size": 41,
+      "code_sha256": "926b5797cfd559af14032d4d413e5452d6954006647b19b5466982f56767a2bf"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle_electric_node.consume_binary (server_scene.vehicle_electric_node, const f64)",
+      "signature_offset": 58207718,
+      "code_offset": 58207842,
+      "code_size": 249,
+      "code_sha256": "140e5d93ea8ef841e7832d8fc752098aafede086ba226a081eecebe8e3567558"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_electric_node.consume_factor (server_scene.vehicle_electric_node, const f64)",
+      "signature_offset": 58208433,
+      "code_offset": 58208601,
+      "code_size": 344,
+      "code_sha256": "a37d7aad64e5c5b2a1034f707db3da17c3a810e3f4f5e860369399e5a4900f67"
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_node.container._flood_island (server_scene.vehicle_electric_node.container, server_scene.vehicle, const s32, server_scene.vehicle_electric_island, const array<s32>)",
+      "signature_offset": 58209379,
+      "code_offset": 58212351,
+      "code_size": 2496,
+      "code_sha256": "738b1f09947776ae8c1463de3b99f3c60e377bdbbd5c5529f61e46d93fbae236"
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_node.container._split_island_groups (server_scene.vehicle_electric_node.container)",
+      "signature_offset": 58216186,
+      "code_offset": 58218154,
+      "code_size": 560,
+      "code_sha256": "eb99a68f82ba3a2b4d18c00d727f35187319a6da2718d33223f24b9b075d843b"
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_node.container.post_build (server_scene.vehicle_electric_node.container)",
+      "signature_offset": 58232596,
+      "code_offset": 58234826,
+      "code_size": 2232,
+      "code_sha256": "d3b1f27c8f5198d966327b91dca8aa64c9b451ef504a9156675cb40fdd2eb720"
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_node.container.pre_build (server_scene.vehicle_electric_node.container, server_scene.vehicle, server_scene.connections_manager)",
+      "signature_offset": 58238916,
+      "code_offset": 58245069,
+      "code_size": 6896,
+      "code_sha256": "2a3d82f1e5b373e699fee2cc73845a0ff344b518b9c35f234277787f9eddeb0a"
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_node.set_content (server_scene.vehicle_electric_node, const ptr<server_scene.vehicle_electric_content>)",
+      "signature_offset": 58255678,
+      "code_offset": 58255834,
+      "code_size": 25,
+      "code_sha256": "0983254edfd57d9b834fead8f86b3d48ad1e978012cbbaf6188d3d07cf775275"
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_node_group._create (server_scene.vehicle_electric_node_group, server_scene.vehicle, const ptr<server_scene.vehicle_electric_content>, const ptr<server_scene.vehicle_component>)",
+      "signature_offset": 58256510,
+      "code_offset": 58257539,
+      "code_size": 1056,
+      "code_sha256": "001ea5f4c58b84c869761b366a8f5df2e339053ea4f64bcc3f4edc697647f321"
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_node_group._release (server_scene.vehicle_electric_node_group, server_scene.vehicle)",
+      "signature_offset": 58259233,
+      "code_offset": 58260141,
+      "code_size": 400,
+      "code_sha256": "9f373f30795110bc3b33067eee1b2e3d48f54fdfd0825af7dcdf78d9e078ab2d"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle_electric_node_group.is_fully_connected (server_scene.vehicle_electric_node_group)",
+      "signature_offset": 58262515,
+      "code_offset": 58262766,
+      "code_size": 88,
+      "code_sha256": "5e84bae766c533447d1158d05d8b4cb0dd38aa5e677f01782f2c76a7ab42c28d"
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_node_group.pop (server_scene.vehicle_electric_node_group, server_scene.vehicle, server_scene.vehicle_electric_node, const ptr<server_scene.vehicle_electric_content>, const ptr<server_scene.vehicle_component>)",
+      "signature_offset": 58263069,
+      "code_offset": 58264359,
+      "code_size": 440,
+      "code_sha256": "3f04061a60fc9d4628147f906f7a13902c411419af12147af64ccb0ff9d1b0ac"
+    },
+    {
+      "signature": "() server_scene.vehicle_electric_node_group.push (server_scene.vehicle_electric_node_group, server_scene.vehicle, server_scene.vehicle_electric_node, server_scene.vehicle_component, const ptr<server_scene.vehicle_electric_content>, const ptr<server_scene.vehicle_component>)",
+      "signature_offset": 58265400,
+      "code_offset": 58266885,
+      "code_size": 496,
+      "code_sha256": "76e1842659469a77d50e9bb618cac8de4ce6ba025fd5558a2ed08b323a492626"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_gas_island_group.get_temperature (server_scene.vehicle_gas_island_group)",
+      "signature_offset": 58566326,
+      "code_offset": 58567788,
+      "code_size": 744,
+      "code_sha256": "a5c0232bde46311a154eec390a84294e9cb10f9fe20063d0d23081610d74635f"
+    },
+    {
+      "signature": "() server_scene.vehicle_gas_node.container._flood_island (server_scene.vehicle_gas_node.container, server_scene.vehicle, const s32, server_scene.vehicle_gas_island, const array<s32>)",
+      "signature_offset": 58572040,
+      "code_offset": 58574929,
+      "code_size": 2960,
+      "code_sha256": "899761a51d80ad7a2fb55cb4ab8b5a32320355918a2286a8cb2a314eb5075af9"
+    },
+    {
+      "signature": "() server_scene.vehicle_gas_node.container.pre_build (server_scene.vehicle_gas_node.container, server_scene.vehicle, server_scene.connections_manager)",
+      "signature_offset": 58601157,
+      "code_offset": 58606241,
+      "code_size": 6208,
+      "code_sha256": "a015f86af9b077d61dbd9ae492506e37da7a48f707026b23cf11f17046e9938b"
+    },
+    {
+      "signature": "() server_scene.vehicle_logic_node.mechanical.container._flood_node_in (server_scene.vehicle_logic_node.mechanical.container, server_scene.vehicle, server_scene.vehicle_mechanical_node_out, const s32, array<bool>, const array<s32>, const array<s32>)",
+      "signature_offset": 58832939,
+      "code_offset": 58834949,
+      "code_size": 888,
+      "code_sha256": "d9fdbbaa9a66b5e867025955b44824c181fe6a12edded298210349b9d50f1df6"
+    },
+    {
+      "signature": "() server_scene.vehicle_logic_node.mechanical.container._flood_node_out (server_scene.vehicle_logic_node.mechanical.container, server_scene.vehicle, server_scene.vehicle_mechanical_node_out, const s32, array<bool>, const array<s32>, const array<s32>)",
+      "signature_offset": 58836917,
+      "code_offset": 58838982,
+      "code_size": 1432,
+      "code_sha256": "ab9656574fc3da3c69c7cdaa216cecf3693e9d6c040b1f467ce0875db11ca39e"
+    },
+    {
+      "signature": "() server_scene.vehicle_logic_node.mechanical.container.pre_build (server_scene.vehicle_logic_node.mechanical.container, server_scene.vehicle)",
+      "signature_offset": 58866226,
+      "code_offset": 58872069,
+      "code_size": 9128,
+      "code_sha256": "b4aad536ba6b389b856c164905cf7af40f1c92f9097943a3f756da72b0465530"
+    },
+    {
+      "signature": "() server_scene.vehicle_mechanical_node_in.container_set_value (server_scene.vehicle_mechanical_node_in, const f64)",
+      "signature_offset": 58889037,
+      "code_offset": 58889172,
+      "code_size": 27,
+      "code_sha256": "0502a959f06fec9898b828658b9f4988ee1273393282f5f973b41ca709d43378"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_mechanical_node_out.container_get_value (const server_scene.vehicle_mechanical_node_out)",
+      "signature_offset": 58889737,
+      "code_offset": 58889872,
+      "code_size": 32,
+      "code_sha256": "a842aac00d56034e36aa4a9c3cfcdf00a7dc4c57d8750504bba4628a57465d63"
+    },
+    {
+      "signature": "() server_scene.vehicle_mechanical_node_out.write (server_scene.vehicle_mechanical_node_out, const f64)",
+      "signature_offset": 58890099,
+      "code_offset": 58890222,
+      "code_size": 27,
+      "code_sha256": "8531097c313a52fe0e199f26d01370ec7bb8ddbb69a5037dee16779400c1ad5c"
+    },
+    {
+      "signature": "(bool) vehicle_util.thresholded_input (f64, const f64)",
+      "signature_offset": 63689430,
+      "code_offset": 63689504,
+      "code_size": 352,
+      "code_sha256": "c1165ceed17252ba8e30064155743f3402811403b714f4eaaf84bff304db9ce2"
+    },
+    {
+      "signature": "(bool) vehicle_util.thresholded_input (bool, const f64)",
+      "signature_offset": 63690246,
+      "code_offset": 63690321,
+      "code_size": 288,
+      "code_sha256": "0208a75eef2484ba3a1f04f5f04d39e3b433b0aed4d7eed5afae4f88187aad28"
+    }
+  ],
+  "typed_scalars": [
+    {
+      "label": "default share rate",
+      "offset": 24604605,
+      "format": "d",
+      "width": 8,
+      "bytes": "fca9f1d24d62503f",
+      "value": 0.001
+    },
+    {
+      "label": "default content energy/capacity",
+      "offset": 24604597,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "default group required nodes",
+      "offset": 24607852,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "explicit group initial required nodes",
+      "offset": 24608264,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "alternator required nodes",
+      "offset": 24405831,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "alternator share rate",
+      "offset": 53535521,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "alternator efficiency",
+      "offset": 53546022,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000e83f",
+      "value": 0.75
+    },
+    {
+      "label": "alternator opposing shaft multiplier",
+      "offset": 53546030,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f0bf",
+      "value": -1.0
+    },
+    {
+      "label": "group create all-nodes sentinel",
+      "offset": 58258587,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "group sort start",
+      "offset": 58258579,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "group sort backward step",
+      "offset": 58258583,
+      "format": "i",
+      "width": 4,
+      "bytes": "02000000",
+      "value": 2
+    },
+    {
+      "label": "group release all-nodes sentinel",
+      "offset": 58260525,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "mechanical reset pair count",
+      "offset": 58881173,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "mechanical no direct pair",
+      "offset": 58881177,
+      "format": "i",
+      "width": 4,
+      "bytes": "ffffffff",
+      "value": -1
+    },
+    {
+      "label": "mechanical maximum retained pair count",
+      "offset": 58881181,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "mechanical input reset value",
+      "offset": 58881189,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "mechanical terminal pair increment",
+      "offset": 58835829,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "mechanical flood unvisited",
+      "offset": 58840406,
+      "format": "B",
+      "width": 1,
+      "bytes": "00",
+      "value": 0
+    },
+    {
+      "label": "mechanical flood visited",
+      "offset": 58840407,
+      "format": "B",
+      "width": 1,
+      "bytes": "01",
+      "value": 1
+    },
+    {
+      "label": "gas node pressure zero",
+      "offset": 58612433,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "electrical debit zero",
+      "offset": 58251941,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "electrical debit clamp maximum",
+      "offset": 58251949,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "electrical redistribution zero",
+      "offset": 58237050,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "binary consumer zero",
+      "offset": 58208082,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "binary consumer success",
+      "offset": 58208090,
+      "format": "B",
+      "width": 1,
+      "bytes": "01",
+      "value": 1
+    },
+    {
+      "label": "fractional consumer zero",
+      "offset": 58208937,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "bool input release lower",
+      "offset": 63690569,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000d0bf",
+      "value": -0.25
+    },
+    {
+      "label": "bool input release upper",
+      "offset": 63690577,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000d03f",
+      "value": 0.25
+    },
+    {
+      "label": "bool input activate lower",
+      "offset": 63690593,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000e8bf",
+      "value": -0.75
+    },
+    {
+      "label": "bool input activate upper",
+      "offset": 63690601,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000e83f",
+      "value": 0.75
+    },
+    {
+      "label": "signed input neutral",
+      "offset": 63689792,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "signed input negative release",
+      "offset": 63689800,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000d0bf",
+      "value": -0.25
+    },
+    {
+      "label": "signed input positive release",
+      "offset": 63689816,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000d03f",
+      "value": 0.25
+    },
+    {
+      "label": "signed input negative activate",
+      "offset": 63689824,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000e8bf",
+      "value": -0.75
+    },
+    {
+      "label": "signed input negative state",
+      "offset": 63689832,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f0bf",
+      "value": -1.0
+    },
+    {
+      "label": "signed input positive activate",
+      "offset": 63689840,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000e83f",
+      "value": 0.75
+    },
+    {
+      "label": "signed input positive state",
+      "offset": 63689848,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "controller requested wattage",
+      "offset": 56833468,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000002440",
+      "value": 10.0
+    },
+    {
+      "label": "controller initial supply factor",
+      "offset": 56833476,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "controller minimum supply factor strict",
+      "offset": 56833484,
+      "format": "d",
+      "width": 8,
+      "bytes": "7b14ae47e17a843f",
+      "value": 0.01
+    },
+    {
+      "label": "controller analogue type",
+      "offset": 56833496,
+      "format": "i",
+      "width": 4,
+      "bytes": "05000000",
+      "value": 5
+    },
+    {
+      "label": "analogue reset type",
+      "offset": 58105517,
+      "format": "i",
+      "width": 4,
+      "bytes": "ffffffff",
+      "value": -1
+    },
+    {
+      "label": "analogue reset numeric value",
+      "offset": 58105525,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "battery empty contents",
+      "offset": 53817763,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "battery create contents",
+      "offset": 53820300,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "battery damage energy",
+      "offset": 53837973,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    }
+  ],
+  "strings": [
+    {
+      "offset": 58196561,
+      "bytes": "656e6572677900",
+      "text": "energy"
+    },
+    {
+      "offset": 58196577,
+      "bytes": "636170616369747900",
+      "text": "capacity"
+    }
+  ],
+  "selected_calls": [
+    {
+      "function_offset": 53531646,
+      "instruction": 53531866,
+      "bytes": "41ff12",
+      "instruction_text": "CALL qword ptr [R10]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53532102,
+      "loaded_at": 53531840,
+      "dependency_steps": [
+        {
+          "instruction": 53531840,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53531866,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_electric_node_group.push (server_scene.vehicle_electric_node_group, server_scene.vehicle, server_scene.vehicle_electric_node, server_scene.vehicle_component, const ptr<server_scene.vehicle_electric_content>, const ptr<server_scene.vehicle_component>)",
+      "slot_offset": 456,
+      "target_record_candidate": {
+        "code_offset": 58266885,
+        "code_size": 496
+      }
+    },
+    {
+      "function_offset": 53531646,
+      "instruction": 53532063,
+      "bytes": "ff5500",
+      "instruction_text": "CALL qword ptr [RBP]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53532118,
+      "loaded_at": 53532027,
+      "dependency_steps": [
+        {
+          "instruction": 53532027,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53532063,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_data_node_group.push (server_scene.vehicle_data_node_group, server_scene.vehicle, server_scene.vehicle_data_node, server_scene.vehicle_component, const ptr<server_scene.vehicle_component>, const bool)",
+      "slot_offset": 472,
+      "target_record_candidate": {
+        "code_offset": 58173267,
+        "code_size": 496
+      }
+    },
+    {
+      "function_offset": 53535113,
+      "instruction": 53535459,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53535585,
+      "loaded_at": 53535433,
+      "dependency_steps": [
+        {
+          "instruction": 53535433,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53535459,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_electric_content.set (server_scene.vehicle_electric_content, const f64, const f64)",
+      "slot_offset": 472,
+      "target_record_candidate": {
+        "code_offset": 58197351,
+        "code_size": 41
+      }
+    },
+    {
+      "function_offset": 53814726,
+      "instruction": 53814946,
+      "bytes": "41ff12",
+      "instruction_text": "CALL qword ptr [R10]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53815182,
+      "loaded_at": 53814920,
+      "dependency_steps": [
+        {
+          "instruction": 53814920,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53814946,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_electric_node_group.push (server_scene.vehicle_electric_node_group, server_scene.vehicle, server_scene.vehicle_electric_node, server_scene.vehicle_component, const ptr<server_scene.vehicle_electric_content>, const ptr<server_scene.vehicle_component>)",
+      "slot_offset": 456,
+      "target_record_candidate": {
+        "code_offset": 58266885,
+        "code_size": 496
+      }
+    },
+    {
+      "function_offset": 53814726,
+      "instruction": 53815143,
+      "bytes": "ff5500",
+      "instruction_text": "CALL qword ptr [RBP]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53815198,
+      "loaded_at": 53815107,
+      "dependency_steps": [
+        {
+          "instruction": 53815107,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53815143,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_data_node_group.push (server_scene.vehicle_data_node_group, server_scene.vehicle, server_scene.vehicle_data_node, server_scene.vehicle_component, const ptr<server_scene.vehicle_component>, const bool)",
+      "slot_offset": 472,
+      "target_record_candidate": {
+        "code_offset": 58173267,
+        "code_size": 496
+      }
+    },
+    {
+      "function_offset": 53817251,
+      "instruction": 53817708,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53817827,
+      "loaded_at": 53817701,
+      "dependency_steps": [
+        {
+          "instruction": 53817701,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53817708,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_electric_content.set (server_scene.vehicle_electric_content, const f64, const f64)",
+      "slot_offset": 576,
+      "target_record_candidate": {
+        "code_offset": 58197351,
+        "code_size": 41
+      }
+    },
+    {
+      "function_offset": 53817251,
+      "instruction": 53817741,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53817835,
+      "loaded_at": 53817734,
+      "dependency_steps": [
+        {
+          "instruction": 53817734,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53817741,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_electric_content.set (server_scene.vehicle_electric_content, const f64)",
+      "slot_offset": 584,
+      "target_record_candidate": {
+        "code_offset": 58196981,
+        "code_size": 35
+      }
+    },
+    {
+      "function_offset": 53820228,
+      "instruction": 53820292,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53820316,
+      "loaded_at": 53820285,
+      "dependency_steps": [
+        {
+          "instruction": 53820285,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53820292,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_electric_content.set (server_scene.vehicle_electric_content, const f64)",
+      "slot_offset": 88,
+      "target_record_candidate": {
+        "code_offset": 58196981,
+        "code_size": 35
+      }
+    },
+    {
+      "function_offset": 53830062,
+      "instruction": 53830496,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53830566,
+      "loaded_at": 53830489,
+      "dependency_steps": [
+        {
+          "instruction": 53830489,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53830496,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_electric_content.set (server_scene.vehicle_electric_content, const f64, const f64)",
+      "slot_offset": 504,
+      "target_record_candidate": {
+        "code_offset": 58197351,
+        "code_size": 41
+      }
+    },
+    {
+      "function_offset": 53837293,
+      "instruction": 53837373,
+      "bytes": "ff5500",
+      "instruction_text": "CALL qword ptr [RBP]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 53837981,
+      "loaded_at": 53837350,
+      "dependency_steps": [
+        {
+          "instruction": 53837350,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 53837373,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_electric_content.set (server_scene.vehicle_electric_content, const f64, const f64)",
+      "slot_offset": 688,
+      "target_record_candidate": {
+        "code_offset": 58197351,
+        "code_size": 41
+      }
+    },
+    {
+      "function_offset": 54422712,
+      "instruction": 54422803,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54422992,
+      "loaded_at": 54422793,
+      "dependency_steps": [
+        {
+          "instruction": 54422793,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54422803,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) vehicle_util.thresholded_input (bool, const f64)",
+      "slot_offset": 280,
+      "target_record_candidate": {
+        "code_offset": 63690321,
+        "code_size": 288
+      }
+    },
+    {
+      "function_offset": 56830604,
+      "instruction": 56830705,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 56833500,
+      "loaded_at": 56830690,
+      "dependency_steps": [
+        {
+          "instruction": 56830690,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 56830705,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle_electric_node_group.is_fully_connected (server_scene.vehicle_electric_node_group)",
+      "slot_offset": 2896,
+      "target_record_candidate": {
+        "code_offset": 58262766,
+        "code_size": 88
+      }
+    },
+    {
+      "function_offset": 58212351,
+      "instruction": 58214386,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58214943,
+      "loaded_at": 58214370,
+      "dependency_steps": [
+        {
+          "instruction": 58214370,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58214377,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58214380,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58214383,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.get_electric_flood_nodes (server_scene.vehicle_component, vector<ptr<server_scene.vehicle_electric_node>>)",
+      "slot_offset": 2592,
+      "target_record_candidate": {
+        "code_offset": 55095496,
+        "code_size": 18
+      }
+    },
+    {
+      "function_offset": 58257539,
+      "instruction": 58258285,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58258619,
+      "loaded_at": 58258275,
+      "dependency_steps": [
+        {
+          "instruction": 58258275,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58258285,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle_electric_node_group.is_fully_connected (server_scene.vehicle_electric_node_group)",
+      "slot_offset": 1080,
+      "target_record_candidate": {
+        "code_offset": 58262766,
+        "code_size": 88
+      }
+    },
+    {
+      "function_offset": 58257539,
+      "instruction": 58258461,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58258627,
+      "loaded_at": 58258445,
+      "dependency_steps": [
+        {
+          "instruction": 58258445,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58258452,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58258455,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58258458,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_electric_node.set_content (server_scene.vehicle_electric_node, const ptr<server_scene.vehicle_electric_content>)",
+      "slot_offset": 1088,
+      "target_record_candidate": {
+        "code_offset": 58255834,
+        "code_size": 25
+      }
+    },
+    {
+      "function_offset": 58260141,
+      "instruction": 58260188,
+      "bytes": "ff5500",
+      "instruction_text": "CALL qword ptr [RBP]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58260541,
+      "loaded_at": 58260165,
+      "dependency_steps": [
+        {
+          "instruction": 58260165,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58260188,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(bool) server_scene.vehicle_electric_node_group.is_fully_connected (server_scene.vehicle_electric_node_group)",
+      "slot_offset": 400,
+      "target_record_candidate": {
+        "code_offset": 58262766,
+        "code_size": 88
+      }
+    },
+    {
+      "function_offset": 58260141,
+      "instruction": 58260358,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58260565,
+      "loaded_at": 58260342,
+      "dependency_steps": [
+        {
+          "instruction": 58260342,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58260349,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58260352,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58260355,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_electric_node.set_content (server_scene.vehicle_electric_node, const ptr<server_scene.vehicle_electric_content>)",
+      "slot_offset": 424,
+      "target_record_candidate": {
+        "code_offset": 58255834,
+        "code_size": 25
+      }
+    },
+    {
+      "function_offset": 58264359,
+      "instruction": 58264450,
+      "bytes": "ff16",
+      "instruction_text": "CALL qword ptr [RSI]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58264799,
+      "loaded_at": 58264408,
+      "dependency_steps": [
+        {
+          "instruction": 58264408,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58264450,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_electric_node_group._release (server_scene.vehicle_electric_node_group, server_scene.vehicle)",
+      "slot_offset": 440,
+      "target_record_candidate": {
+        "code_offset": 58260141,
+        "code_size": 400
+      }
+    },
+    {
+      "function_offset": 58264359,
+      "instruction": 58264782,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58264847,
+      "loaded_at": 58264775,
+      "dependency_steps": [
+        {
+          "instruction": 58264775,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58264782,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_electric_node_group._create (server_scene.vehicle_electric_node_group, server_scene.vehicle, const ptr<server_scene.vehicle_electric_content>, const ptr<server_scene.vehicle_component>)",
+      "slot_offset": 488,
+      "target_record_candidate": {
+        "code_offset": 58257539,
+        "code_size": 1056
+      }
+    },
+    {
+      "function_offset": 58266885,
+      "instruction": 58267262,
+      "bytes": "ff17",
+      "instruction_text": "CALL qword ptr [RDI]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58267421,
+      "loaded_at": 58267249,
+      "dependency_steps": [
+        {
+          "instruction": 58267249,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58267262,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_electric_node_group._release (server_scene.vehicle_electric_node_group, server_scene.vehicle)",
+      "slot_offset": 536,
+      "target_record_candidate": {
+        "code_offset": 58260141,
+        "code_size": 400
+      }
+    },
+    {
+      "function_offset": 58266885,
+      "instruction": 58267367,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58267437,
+      "loaded_at": 58267360,
+      "dependency_steps": [
+        {
+          "instruction": 58267360,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58267367,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_electric_node_group._create (server_scene.vehicle_electric_node_group, server_scene.vehicle, const ptr<server_scene.vehicle_electric_content>, const ptr<server_scene.vehicle_component>)",
+      "slot_offset": 552,
+      "target_record_candidate": {
+        "code_offset": 58257539,
+        "code_size": 1056
+      }
+    },
+    {
+      "function_offset": 58574929,
+      "instruction": 58577408,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58577993,
+      "loaded_at": 58577392,
+      "dependency_steps": [
+        {
+          "instruction": 58577392,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58577399,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58577402,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58577405,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.get_gas_flood_nodes (server_scene.vehicle_component, vector<ptr<server_scene.vehicle_gas_node>>)",
+      "slot_offset": 3064,
+      "target_record_candidate": {
+        "code_offset": 55096524,
+        "code_size": 18
+      }
+    },
+    {
+      "function_offset": 58834949,
+      "instruction": 58835247,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58835853,
+      "loaded_at": 58835231,
+      "dependency_steps": [
+        {
+          "instruction": 58835231,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58835238,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58835241,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58835244,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_component.get_mechanical_flood_nodes (server_scene.vehicle_component, vector<ptr<server_scene.vehicle_mechanical_node_out>>)",
+      "slot_offset": 904,
+      "target_record_candidate": {
+        "code_offset": 55104637,
+        "code_size": 18
+      }
+    },
+    {
+      "function_offset": 58834949,
+      "instruction": 58835564,
+      "bytes": "41ffd2",
+      "instruction_text": "CALL R10",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58835885,
+      "loaded_at": 58835522,
+      "dependency_steps": [
+        {
+          "instruction": 58835522,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58835529,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58835532,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58835535,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_logic_node.mechanical.container._flood_node_out (server_scene.vehicle_logic_node.mechanical.container, server_scene.vehicle, server_scene.vehicle_mechanical_node_out, const s32, array<bool>, const array<s32>, const array<s32>)",
+      "slot_offset": 936,
+      "target_record_candidate": {
+        "code_offset": 58838982,
+        "code_size": 1432
+      }
+    },
+    {
+      "function_offset": 58838982,
+      "instruction": 58839630,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58840438,
+      "loaded_at": 58839591,
+      "dependency_steps": [
+        {
+          "instruction": 58839591,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58839598,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58839601,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58839604,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_logic_node.mechanical.container._flood_node_in (server_scene.vehicle_logic_node.mechanical.container, server_scene.vehicle, server_scene.vehicle_mechanical_node_out, const s32, array<bool>, const array<s32>, const array<s32>)",
+      "slot_offset": 1456,
+      "target_record_candidate": {
+        "code_offset": 58834949,
+        "code_size": 888
+      }
+    },
+    {
+      "function_offset": 58838982,
+      "instruction": 58840335,
+      "bytes": "41ffd6",
+      "instruction_text": "CALL R14",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58840438,
+      "loaded_at": 58840295,
+      "dependency_steps": [
+        {
+          "instruction": 58840295,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58840302,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58840305,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58840308,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_logic_node.mechanical.container._flood_node_in (server_scene.vehicle_logic_node.mechanical.container, server_scene.vehicle, server_scene.vehicle_mechanical_node_out, const s32, array<bool>, const array<s32>, const array<s32>)",
+      "slot_offset": 1456,
+      "target_record_candidate": {
+        "code_offset": 58834949,
+        "code_size": 888
+      }
+    },
+    {
+      "function_offset": 58872069,
+      "instruction": 58879789,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58881541,
+      "loaded_at": 58879747,
+      "dependency_steps": [
+        {
+          "instruction": 58879747,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58879754,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 58879757,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 58879760,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "() server_scene.vehicle_logic_node.mechanical.container._flood_node_out (server_scene.vehicle_logic_node.mechanical.container, server_scene.vehicle, server_scene.vehicle_mechanical_node_out, const s32, array<bool>, const array<s32>, const array<s32>)",
+      "slot_offset": 9472,
+      "target_record_candidate": {
+        "code_offset": 58838982,
+        "code_size": 1432
+      }
+    },
+    {
+      "function_offset": 58872069,
+      "instruction": 58881097,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58881629,
+      "loaded_at": 58881090,
+      "dependency_steps": [
+        {
+          "instruction": 58881090,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58881097,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_mechanical_node_out.container_get_value (const server_scene.vehicle_mechanical_node_out)",
+      "slot_offset": 9560,
+      "target_record_candidate": {
+        "code_offset": 58889872,
+        "code_size": 32
+      }
+    },
+    {
+      "function_offset": 58872069,
+      "instruction": 58881117,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 58881621,
+      "loaded_at": 58881110,
+      "dependency_steps": [
+        {
+          "instruction": 58881110,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 58881117,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_mechanical_node_in.container_set_value (server_scene.vehicle_mechanical_node_in, const f64)",
+      "slot_offset": 9552,
+      "target_record_candidate": {
+        "code_offset": 58889172,
+        "code_size": 27
+      }
+    }
+  ],
+  "selected_instructions": [
+    {
+      "function_offset": 24604541,
+      "offset": 24604549,
+      "bytes": "f20f100528000000",
+      "assembly": "MOVSD XMM0,qword ptr [0x01776fb5]"
+    },
+    {
+      "function_offset": 24604541,
+      "offset": 24604557,
+      "bytes": "f20f1101",
+      "assembly": "MOVSD qword ptr [RCX],XMM0"
+    },
+    {
+      "function_offset": 24604541,
+      "offset": 24604561,
+      "bytes": "f20f10051c000000",
+      "assembly": "MOVSD XMM0,qword ptr [0x01776fb5]"
+    },
+    {
+      "function_offset": 24604541,
+      "offset": 24604569,
+      "bytes": "f20f114108",
+      "assembly": "MOVSD qword ptr [RCX + 0x8],XMM0"
+    },
+    {
+      "function_offset": 24604541,
+      "offset": 24604574,
+      "bytes": "f20f100517000000",
+      "assembly": "MOVSD XMM0,qword ptr [0x01776fbd]"
+    },
+    {
+      "function_offset": 24604541,
+      "offset": 24604582,
+      "bytes": "f20f114110",
+      "assembly": "MOVSD qword ptr [RCX + 0x10],XMM0"
+    },
+    {
+      "function_offset": 53837293,
+      "offset": 53837908,
+      "bytes": "f20f1081f8020000",
+      "assembly": "MOVSD XMM0,qword ptr [RCX + 0x2f8]"
+    },
+    {
+      "function_offset": 53837293,
+      "offset": 53837916,
+      "bytes": "f20f5c81e0010000",
+      "assembly": "SUBSD XMM0,qword ptr [RCX + 0x1e0]"
+    },
+    {
+      "function_offset": 53837293,
+      "offset": 53837924,
+      "bytes": "488b0572000000",
+      "assembly": "MOV RAX,qword ptr [0x033580dd]"
+    },
+    {
+      "function_offset": 53837293,
+      "offset": 53837931,
+      "bytes": "f20f5900",
+      "assembly": "MULSD XMM0,qword ptr [RAX]"
+    },
+    {
+      "function_offset": 53837293,
+      "offset": 53837935,
+      "bytes": "f20f118100030000",
+      "assembly": "MOVSD qword ptr [RCX + 0x300],XMM0"
+    },
+    {
+      "function_offset": 53837293,
+      "offset": 53837943,
+      "bytes": "f20f1081e0010000",
+      "assembly": "MOVSD XMM0,qword ptr [RCX + 0x1e0]"
+    },
+    {
+      "function_offset": 53837293,
+      "offset": 53837951,
+      "bytes": "f20f1181f8020000",
+      "assembly": "MOVSD qword ptr [RCX + 0x2f8],XMM0"
+    },
+    {
+      "function_offset": 56830604,
+      "offset": 56830929,
+      "bytes": "f20f10842418010000",
+      "assembly": "MOVSD XMM0,qword ptr [RSP + 0x118]"
+    },
+    {
+      "function_offset": 56830604,
+      "offset": 56830938,
+      "bytes": "660f2f05ea090000",
+      "assembly": "COMISD XMM0,qword ptr [0x036335cc]"
+    },
+    {
+      "function_offset": 56830604,
+      "offset": 56830946,
+      "bytes": "0f97c0",
+      "assembly": "SETA AL"
+    },
+    {
+      "function_offset": 56830604,
+      "offset": 56830949,
+      "bytes": "488d91e0010000",
+      "assembly": "LEA RDX,[RCX + 0x1e0]"
+    },
+    {
+      "function_offset": 56830604,
+      "offset": 56831027,
+      "bytes": "f20f10842418010000",
+      "assembly": "MOVSD XMM0,qword ptr [RSP + 0x118]"
+    },
+    {
+      "function_offset": 56830604,
+      "offset": 56831036,
+      "bytes": "660f2f0588090000",
+      "assembly": "COMISD XMM0,qword ptr [0x036335cc]"
+    },
+    {
+      "function_offset": 56830604,
+      "offset": 56831044,
+      "bytes": "0f97c0",
+      "assembly": "SETA AL"
+    },
+    {
+      "function_offset": 56830604,
+      "offset": 56831047,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 56830604,
+      "offset": 56831049,
+      "bytes": "0f8407000000",
+      "assembly": "JZ 0x03632c56"
+    },
+    {
+      "function_offset": 58105477,
+      "offset": 58105485,
+      "bytes": "8b051a000000",
+      "assembly": "MOV EAX,dword ptr [0x03769ead]"
+    },
+    {
+      "function_offset": 58105477,
+      "offset": 58105491,
+      "bytes": "8901",
+      "assembly": "MOV dword ptr [RCX],EAX"
+    },
+    {
+      "function_offset": 58105477,
+      "offset": 58105493,
+      "bytes": "f20f100518000000",
+      "assembly": "MOVSD XMM0,qword ptr [0x03769eb5]"
+    },
+    {
+      "function_offset": 58105477,
+      "offset": 58105501,
+      "bytes": "f20f114108",
+      "assembly": "MOVSD qword ptr [RCX + 0x8],XMM0"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236103,
+      "bytes": "f20f104008",
+      "assembly": "MOVSD XMM0,qword ptr [RAX + 0x8]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236108,
+      "bytes": "f20f59842438010000",
+      "assembly": "MULSD XMM0,qword ptr [RSP + 0x138]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236117,
+      "bytes": "488b842470010000",
+      "assembly": "MOV RAX,qword ptr [RSP + 0x170]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236125,
+      "bytes": "488b00",
+      "assembly": "MOV RAX,qword ptr [RAX]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236128,
+      "bytes": "488b4018",
+      "assembly": "MOV RAX,qword ptr [RAX + 0x18]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236132,
+      "bytes": "f20f5c00",
+      "assembly": "SUBSD XMM0,qword ptr [RAX]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236136,
+      "bytes": "f20f11842480010000",
+      "assembly": "MOVSD qword ptr [RSP + 0x180],XMM0"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236173,
+      "bytes": "488b842470010000",
+      "assembly": "MOV RAX,qword ptr [RSP + 0x170]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236181,
+      "bytes": "488b00",
+      "assembly": "MOV RAX,qword ptr [RAX]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236184,
+      "bytes": "488b4018",
+      "assembly": "MOV RAX,qword ptr [RAX + 0x18]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236188,
+      "bytes": "f20f108c2480010000",
+      "assembly": "MOVSD XMM1,qword ptr [RSP + 0x180]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236197,
+      "bytes": "f20f594810",
+      "assembly": "MULSD XMM1,qword ptr [RAX + 0x10]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236202,
+      "bytes": "f20f10842440010000",
+      "assembly": "MOVSD XMM0,qword ptr [RSP + 0x140]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236211,
+      "bytes": "f20f5cc1",
+      "assembly": "SUBSD XMM0,XMM1"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236215,
+      "bytes": "f20f11842440010000",
+      "assembly": "MOVSD qword ptr [RSP + 0x140],XMM0"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236646,
+      "bytes": "f20f104008",
+      "assembly": "MOVSD XMM0,qword ptr [RAX + 0x8]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236651,
+      "bytes": "f20f59842438010000",
+      "assembly": "MULSD XMM0,qword ptr [RSP + 0x138]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236660,
+      "bytes": "488b842478010000",
+      "assembly": "MOV RAX,qword ptr [RSP + 0x178]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236668,
+      "bytes": "488b00",
+      "assembly": "MOV RAX,qword ptr [RAX]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236671,
+      "bytes": "488b4018",
+      "assembly": "MOV RAX,qword ptr [RAX + 0x18]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236675,
+      "bytes": "f20f5c00",
+      "assembly": "SUBSD XMM0,qword ptr [RAX]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236679,
+      "bytes": "f20f11842488010000",
+      "assembly": "MOVSD qword ptr [RSP + 0x188],XMM0"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236733,
+      "bytes": "488b842478010000",
+      "assembly": "MOV RAX,qword ptr [RSP + 0x178]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236741,
+      "bytes": "488b00",
+      "assembly": "MOV RAX,qword ptr [RAX]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236744,
+      "bytes": "488b4018",
+      "assembly": "MOV RAX,qword ptr [RAX + 0x18]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236748,
+      "bytes": "f20f10842488010000",
+      "assembly": "MOVSD XMM0,qword ptr [RSP + 0x188]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236757,
+      "bytes": "f20f594010",
+      "assembly": "MULSD XMM0,qword ptr [RAX + 0x10]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236762,
+      "bytes": "f20f11842490010000",
+      "assembly": "MOVSD qword ptr [RSP + 0x190],XMM0"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236771,
+      "bytes": "e945000000",
+      "assembly": "JMP 0x03789fad"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236776,
+      "bytes": "f20f10842448010000",
+      "assembly": "MOVSD XMM0,qword ptr [RSP + 0x148]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236785,
+      "bytes": "660f2f0501010000",
+      "assembly": "COMISD XMM0,qword ptr [0x0378a07a]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236793,
+      "bytes": "0f97c0",
+      "assembly": "SETA AL"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236796,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236798,
+      "bytes": "0f8429000000",
+      "assembly": "JZ 0x03789fad"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236804,
+      "bytes": "f20f10842488010000",
+      "assembly": "MOVSD XMM0,qword ptr [RSP + 0x188]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236813,
+      "bytes": "f20f59842440010000",
+      "assembly": "MULSD XMM0,qword ptr [RSP + 0x140]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236822,
+      "bytes": "f20f5e842448010000",
+      "assembly": "DIVSD XMM0,qword ptr [RSP + 0x148]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236831,
+      "bytes": "f20f11842490010000",
+      "assembly": "MOVSD qword ptr [RSP + 0x190],XMM0"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236845,
+      "bytes": "488b842478010000",
+      "assembly": "MOV RAX,qword ptr [RSP + 0x178]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236853,
+      "bytes": "488b00",
+      "assembly": "MOV RAX,qword ptr [RAX]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236856,
+      "bytes": "488b4818",
+      "assembly": "MOV RCX,qword ptr [RAX + 0x18]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236860,
+      "bytes": "488b842478010000",
+      "assembly": "MOV RAX,qword ptr [RSP + 0x178]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236868,
+      "bytes": "488b00",
+      "assembly": "MOV RAX,qword ptr [RAX]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236871,
+      "bytes": "488b4018",
+      "assembly": "MOV RAX,qword ptr [RAX + 0x18]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236875,
+      "bytes": "f20f1000",
+      "assembly": "MOVSD XMM0,qword ptr [RAX]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236879,
+      "bytes": "f20f58842490010000",
+      "assembly": "ADDSD XMM0,qword ptr [RSP + 0x190]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236888,
+      "bytes": "f20f1101",
+      "assembly": "MOVSD qword ptr [RCX],XMM0"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236892,
+      "bytes": "488b842478010000",
+      "assembly": "MOV RAX,qword ptr [RSP + 0x178]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236900,
+      "bytes": "488b08",
+      "assembly": "MOV RCX,qword ptr [RAX]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236903,
+      "bytes": "488b842478010000",
+      "assembly": "MOV RAX,qword ptr [RSP + 0x178]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236911,
+      "bytes": "488b00",
+      "assembly": "MOV RAX,qword ptr [RAX]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236914,
+      "bytes": "f20f104028",
+      "assembly": "MOVSD XMM0,qword ptr [RAX + 0x28]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236919,
+      "bytes": "f20f58842490010000",
+      "assembly": "ADDSD XMM0,qword ptr [RSP + 0x190]"
+    },
+    {
+      "function_offset": 58234826,
+      "offset": 58236928,
+      "bytes": "f20f114128",
+      "assembly": "MOVSD qword ptr [RCX + 0x28],XMM0"
+    },
+    {
+      "function_offset": 58257539,
+      "offset": 58258299,
+      "bytes": "488b4c2428",
+      "assembly": "MOV RCX,qword ptr [RSP + 0x28]"
+    },
+    {
+      "function_offset": 58257539,
+      "offset": 58258304,
+      "bytes": "8b4128",
+      "assembly": "MOV EAX,dword ptr [RCX + 0x28]"
+    },
+    {
+      "function_offset": 58257539,
+      "offset": 58258307,
+      "bytes": "3b0512010000",
+      "assembly": "CMP EAX,dword ptr [0x0378f49b]"
+    },
+    {
+      "function_offset": 58257539,
+      "offset": 58258313,
+      "bytes": "0f94c0",
+      "assembly": "SETZ AL"
+    },
+    {
+      "function_offset": 58257539,
+      "offset": 58258316,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 58257539,
+      "offset": 58258318,
+      "bytes": "0f8419000000",
+      "assembly": "JZ 0x0378f3ad"
+    },
+    {
+      "function_offset": 58257539,
+      "offset": 58258349,
+      "bytes": "8b4128",
+      "assembly": "MOV EAX,dword ptr [RCX + 0x28]"
+    },
+    {
+      "function_offset": 58257539,
+      "offset": 58258352,
+      "bytes": "89442460",
+      "assembly": "MOV dword ptr [RSP + 0x60],EAX"
+    },
+    {
+      "function_offset": 58257539,
+      "offset": 58258356,
+      "bytes": "8b05e1000000",
+      "assembly": "MOV EAX,dword ptr [0x0378f49b]"
+    },
+    {
+      "function_offset": 58257539,
+      "offset": 58258362,
+      "bytes": "89442464",
+      "assembly": "MOV dword ptr [RSP + 0x64],EAX"
+    },
+    {
+      "function_offset": 58257539,
+      "offset": 58258366,
+      "bytes": "8b5c2460",
+      "assembly": "MOV EBX,dword ptr [RSP + 0x60]"
+    },
+    {
+      "function_offset": 58262766,
+      "offset": 58262816,
+      "bytes": "8b442430",
+      "assembly": "MOV EAX,dword ptr [RSP + 0x30]"
+    },
+    {
+      "function_offset": 58262766,
+      "offset": 58262820,
+      "bytes": "488b542440",
+      "assembly": "MOV RDX,qword ptr [RSP + 0x40]"
+    },
+    {
+      "function_offset": 58262766,
+      "offset": 58262825,
+      "bytes": "3b4228",
+      "assembly": "CMP EAX,dword ptr [RDX + 0x28]"
+    },
+    {
+      "function_offset": 58262766,
+      "offset": 58262828,
+      "bytes": "488b4c2438",
+      "assembly": "MOV RCX,qword ptr [RSP + 0x38]"
+    },
+    {
+      "function_offset": 58262766,
+      "offset": 58262833,
+      "bytes": "0f9d01",
+      "assembly": "SETGE byte ptr [RCX]"
+    },
+    {
+      "function_offset": 58606241,
+      "offset": 58606669,
+      "bytes": "f20f104028",
+      "assembly": "MOVSD XMM0,qword ptr [RAX + 0x28]"
+    },
+    {
+      "function_offset": 58606241,
+      "offset": 58606674,
+      "bytes": "660f2f0577160000",
+      "assembly": "COMISD XMM0,qword ptr [0x037e5ad1]"
+    },
+    {
+      "function_offset": 58606241,
+      "offset": 58606682,
+      "bytes": "0f97c0",
+      "assembly": "SETA AL"
+    },
+    {
+      "function_offset": 58606241,
+      "offset": 58606685,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 58606241,
+      "offset": 58606687,
+      "bytes": "0f8432000000",
+      "assembly": "JZ 0x037e4497"
+    },
+    {
+      "function_offset": 58606241,
+      "offset": 58606723,
+      "bytes": "f20f104320",
+      "assembly": "MOVSD XMM0,qword ptr [RBX + 0x20]"
+    },
+    {
+      "function_offset": 58606241,
+      "offset": 58606728,
+      "bytes": "f20f5e4028",
+      "assembly": "DIVSD XMM0,qword ptr [RAX + 0x28]"
+    },
+    {
+      "function_offset": 58606241,
+      "offset": 58606733,
+      "bytes": "f20f114520",
+      "assembly": "MOVSD qword ptr [RBP + 0x20],XMM0"
+    },
+    {
+      "function_offset": 58606241,
+      "offset": 58606738,
+      "bytes": "e90d000000",
+      "assembly": "JMP 0x037e44a4"
+    },
+    {
+      "function_offset": 58606241,
+      "offset": 58606743,
+      "bytes": "f20f100532160000",
+      "assembly": "MOVSD XMM0,qword ptr [0x037e5ad1]"
+    },
+    {
+      "function_offset": 58606241,
+      "offset": 58606751,
+      "bytes": "f20f114520",
+      "assembly": "MOVSD qword ptr [RBP + 0x20],XMM0"
+    },
+    {
+      "function_offset": 58872069,
+      "offset": 58880013,
+      "bytes": "488b8424b0090000",
+      "assembly": "MOV RAX,qword ptr [RSP + 0x9b0]"
+    },
+    {
+      "function_offset": 58872069,
+      "offset": 58880021,
+      "bytes": "488b4008",
+      "assembly": "MOV RAX,qword ptr [RAX + 0x8]"
+    },
+    {
+      "function_offset": 58872069,
+      "offset": 58880025,
+      "bytes": "8b4010",
+      "assembly": "MOV EAX,dword ptr [RAX + 0x10]"
+    },
+    {
+      "function_offset": 58872069,
+      "offset": 58880028,
+      "bytes": "3b057b040000",
+      "assembly": "CMP EAX,dword ptr [0x0382749d]"
+    },
+    {
+      "function_offset": 58872069,
+      "offset": 58880034,
+      "bytes": "0f9fc0",
+      "assembly": "SETG AL"
+    },
+    {
+      "function_offset": 58872069,
+      "offset": 58880037,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 58872069,
+      "offset": 58880039,
+      "bytes": "0f8405000000",
+      "assembly": "JZ 0x03827032"
+    },
+    {
+      "function_offset": 58872069,
+      "offset": 58880045,
+      "bytes": "e921000000",
+      "assembly": "JMP 0x03827053"
+    },
+    {
+      "function_offset": 58889172,
+      "offset": 58889185,
+      "bytes": "f20f1002",
+      "assembly": "MOVSD XMM0,qword ptr [RDX]"
+    },
+    {
+      "function_offset": 58889172,
+      "offset": 58889189,
+      "bytes": "f20f114118",
+      "assembly": "MOVSD qword ptr [RCX + 0x18],XMM0"
+    }
+  ],
+  "layouts": [
+    {
+      "name": "server_scene.vehicle_electric_content",
+      "base": "",
+      "size": 24,
+      "fields": [
+        {
+          "type": "f64",
+          "name": "m_energy",
+          "offset": 0
+        },
+        {
+          "type": "f64",
+          "name": "m_capacity",
+          "offset": 8
+        },
+        {
+          "type": "f64",
+          "name": "m_share_rate",
+          "offset": 16
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_electric_node",
+      "base": "",
+      "size": 64,
+      "fields": [
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "m_component",
+          "offset": 8
+        },
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "m_component_flood",
+          "offset": 16
+        },
+        {
+          "type": "ptr<server_scene.vehicle_electric_content>",
+          "name": "m_content",
+          "offset": 24
+        },
+        {
+          "type": "s32",
+          "name": "m_component_id",
+          "offset": 32
+        },
+        {
+          "type": "s32",
+          "name": "m_node_index",
+          "offset": 36
+        },
+        {
+          "type": "f64",
+          "name": "m_energy_delta",
+          "offset": 40
+        },
+        {
+          "type": "ptr<server_scene.vehicle_electric_island>",
+          "name": "m_island",
+          "offset": 48
+        },
+        {
+          "type": "s32",
+          "name": "m_vehicle_node_index",
+          "offset": 56
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_electric_island",
+      "base": "",
+      "size": 104,
+      "fields": [
+        {
+          "type": "s32",
+          "name": "m_island_index",
+          "offset": 0
+        },
+        {
+          "type": "ref<server_scene.vehicle_electric_island_group>",
+          "name": "m_group",
+          "offset": 8
+        },
+        {
+          "type": "vector<ptr<server_scene.vehicle_electric_node>>",
+          "name": "m_nodes",
+          "offset": 24
+        },
+        {
+          "type": "vector<ptr<server_scene.vehicle_electric_node>>",
+          "name": "m_producers",
+          "offset": 64
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_electric_island_group",
+      "base": "",
+      "size": 64,
+      "fields": [
+        {
+          "type": "vector<ptr<server_scene.vehicle_electric_island>>",
+          "name": "m_islands",
+          "offset": 0
+        },
+        {
+          "type": "f64",
+          "name": "m_total_energy",
+          "offset": 40
+        },
+        {
+          "type": "f64",
+          "name": "m_total_capacity",
+          "offset": 48
+        },
+        {
+          "type": "f64",
+          "name": "m_energy_delta",
+          "offset": 56
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_electric_node_group",
+      "base": "",
+      "size": 48,
+      "fields": [
+        {
+          "type": "vector<ptr<server_scene.vehicle_electric_node>>",
+          "name": "_m_nodes",
+          "offset": 0
+        },
+        {
+          "type": "s32",
+          "name": "m_required_nodes",
+          "offset": 40
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_mechanical_node_in",
+      "base": "",
+      "size": 32,
+      "fields": [
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "m_component",
+          "offset": 0
+        },
+        {
+          "type": "s32",
+          "name": "m_component_id",
+          "offset": 8
+        },
+        {
+          "type": "s32",
+          "name": "m_node_index",
+          "offset": 12
+        },
+        {
+          "type": "s32",
+          "name": "m_pair_count",
+          "offset": 16
+        },
+        {
+          "type": "f64",
+          "name": "_m_value",
+          "offset": 24
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_mechanical_node_out",
+      "base": "",
+      "size": 32,
+      "fields": [
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "m_component",
+          "offset": 0
+        },
+        {
+          "type": "s32",
+          "name": "m_component_id",
+          "offset": 8
+        },
+        {
+          "type": "s32",
+          "name": "m_node_index",
+          "offset": 12
+        },
+        {
+          "type": "f64",
+          "name": "_m_value",
+          "offset": 16
+        },
+        {
+          "type": "s32",
+          "name": "m_vehicle_node_index",
+          "offset": 24
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_component.battery",
+      "base": "server_scene.vehicle_component",
+      "size": 784,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_electric_content",
+          "name": "m_electric_content",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_electric_node_group",
+          "name": "m_electric_nodes",
+          "offset": 504
+        },
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 552
+        },
+        {
+          "type": "server_scene.vehicle_element.accessory",
+          "name": "m_accessory",
+          "offset": 592
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 744
+        },
+        {
+          "type": "f64",
+          "name": "m_energy_prev",
+          "offset": 760
+        },
+        {
+          "type": "f64",
+          "name": "m_energy_consumption",
+          "offset": 768
+        },
+        {
+          "type": "bool",
+          "name": "m_is_pending_damage_accessory",
+          "offset": 776
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_component.alternator",
+      "base": "server_scene.vehicle_component",
+      "size": 736,
+      "fields": [
+        {
+          "type": "replication.master.property_f64_compressed_u8",
+          "name": "m_factor",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_torque_data",
+          "name": "m_torque_data",
+          "offset": 528
+        },
+        {
+          "type": "server_scene.vehicle_electric_content",
+          "name": "m_electric_content",
+          "offset": 592
+        },
+        {
+          "type": "server_scene.vehicle_electric_node_group",
+          "name": "m_electric_nodes",
+          "offset": 616
+        },
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 664
+        },
+        {
+          "type": "f64",
+          "name": "m_display_rps",
+          "offset": 704
+        },
+        {
+          "type": "f64",
+          "name": "m_display_power",
+          "offset": 712
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 720
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_component.electric_relay",
+      "base": "server_scene.vehicle_component",
+      "size": 624,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_mechanical_node_in",
+          "name": "m_activate",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_electric_node_group",
+          "name": "m_electric_nodes",
+          "offset": 512
+        },
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 560
+        },
+        {
+          "type": "bool",
+          "name": "m_is_on",
+          "offset": 600
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 608
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_component.microcontroller",
+      "base": "server_scene.vehicle_component",
+      "size": 1408,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_electric_node_group",
+          "name": "m_electric_nodes",
+          "offset": 520
+        },
+        {
+          "type": "s32",
+          "name": "_m_element_id_counter",
+          "offset": 568
+        },
+        {
+          "type": "ref<server_scene_script.element_root>",
+          "name": "m_root",
+          "offset": 576
+        },
+        {
+          "type": "bool",
+          "name": "m_is_compile_error",
+          "offset": 592
+        },
+        {
+          "type": "bool",
+          "name": "m_is_load_error",
+          "offset": 593
+        },
+        {
+          "type": "bool",
+          "name": "m_is_pending_connection_update",
+          "offset": 594
+        },
+        {
+          "type": "bool",
+          "name": "m_is_load_from_save",
+          "offset": 595
+        },
+        {
+          "type": "f64",
+          "name": "m_display_electric_consumption",
+          "offset": 600
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 608
+        },
+        {
+          "type": "s32",
+          "name": "_m_variable_id_counter",
+          "offset": 624
+        },
+        {
+          "type": "s32",
+          "name": "_m_member_id_counter",
+          "offset": 628
+        },
+        {
+          "type": "s32",
+          "name": "_m_type_id_counter",
+          "offset": 632
+        },
+        {
+          "type": "s32",
+          "name": "_m_parameter_id_counter",
+          "offset": 636
+        },
+        {
+          "type": "s32",
+          "name": "_m_function_id_counter",
+          "offset": 640
+        },
+        {
+          "type": "vector<server_scene.vehicle_component.microcontroller_data_value>",
+          "name": "m_connected_bool_outputs",
+          "offset": 648
+        },
+        {
+          "type": "vector<server_scene.vehicle_component.microcontroller_data_value>",
+          "name": "m_connected_bool_inputs",
+          "offset": 688
+        },
+        {
+          "type": "vector<server_scene.vehicle_component.microcontroller_data_value>",
+          "name": "m_connected_s32_outputs",
+          "offset": 728
+        },
+        {
+          "type": "vector<server_scene.vehicle_component.microcontroller_data_value>",
+          "name": "m_connected_s32_inputs",
+          "offset": 768
+        },
+        {
+          "type": "vector<server_scene.vehicle_component.microcontroller_data_value>",
+          "name": "m_connected_f64_outputs",
+          "offset": 808
+        },
+        {
+          "type": "vector<server_scene.vehicle_component.microcontroller_data_value>",
+          "name": "m_connected_f64_inputs",
+          "offset": 848
+        },
+        {
+          "type": "vector<server_scene.vehicle_component.microcontroller_data_value>",
+          "name": "m_connected_analogue_outputs",
+          "offset": 888
+        },
+        {
+          "type": "vector<server_scene.vehicle_component.microcontroller_data_value>",
+          "name": "m_connected_analogue_inputs",
+          "offset": 928
+        },
+        {
+          "type": "ptr<server_scene_script.element>",
+          "name": "m_step_element",
+          "offset": 968
+        },
+        {
+          "type": "bool",
+          "name": "m_is_step",
+          "offset": 976
+        },
+        {
+          "type": "bool",
+          "name": "m_is_pending_pause",
+          "offset": 977
+        },
+        {
+          "type": "bool",
+          "name": "m_is_pending_resume",
+          "offset": 978
+        },
+        {
+          "type": "bool",
+          "name": "m_is_pending_step_over",
+          "offset": 979
+        },
+        {
+          "type": "bool",
+          "name": "m_is_pending_step_in",
+          "offset": 980
+        },
+        {
+          "type": "bool",
+          "name": "m_is_pending_step_out",
+          "offset": 981
+        },
+        {
+          "type": "server_scene.vehicle_component.microcontroller_execution_context",
+          "name": "m_execute_context",
+          "offset": 984
+        },
+        {
+          "type": "vector<vehicle_component_definition.vehicle_data_descriptor>",
+          "name": "m_global_descriptors",
+          "offset": 1280
+        },
+        {
+          "type": "bool",
+          "name": "m_is_pending_undo_action",
+          "offset": 1320
+        },
+        {
+          "type": "bool",
+          "name": "m_is_pending_redo_action",
+          "offset": 1321
+        },
+        {
+          "type": "vector<ref<server_scene_script.action>>",
+          "name": "_m_undo_queue",
+          "offset": 1328
+        },
+        {
+          "type": "vector<ref<server_scene_script.action>>",
+          "name": "_m_redo_queue",
+          "offset": 1368
+        },
+        {
+          "type": "server_scene_script.parser",
+          "name": "_m_script_parser",
+          "offset": 1408
+        }
+      ]
+    },
+    {
+      "name": "server_scene.vehicle_data_analogue",
+      "base": "",
+      "size": 16,
+      "fields": [
+        {
+          "type": "s32",
+          "name": "m_peer_id",
+          "offset": 0
+        },
+        {
+          "type": "f64",
+          "name": "m_signal",
+          "offset": 8
+        }
+      ]
+    }
+  ],
+  "reader": {
+    "schema": 1,
+    "tool_version": "1.1.0",
+    "tool_sha256": "503dd34b80e7292669640366b69b43e0b1828fac5ffb1756e34c48f925f40c71",
+    "source_sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22",
+    "counts": {
+      "functions": 140,
+      "identical_exports_deduplicated": 0,
+      "instructions_byte_checked": 29559,
+      "slot_derived_calls": 1383,
+      "unresolved_calls": 1158
+    },
+    "limits": [
+      "Approximate C is not original source or a recovered ABI.",
+      "Slot-derived call sites establish data dependency, not virtual target binding.",
+      "Full-text results and printable strings are investigative leads, not behavioral conclusions.",
+      "No game process, gameplay session, or external Python dependency is required."
+    ]
+  },
+  "instruction_bytes": 172331,
+  "model": {
+    "version": "1.0.0",
+    "examples": [
+      {
+        "name": "distinct default share",
+        "result": {
+          "initial_total": 100.0,
+          "total_capacity": 200.0,
+          "target_ratio": 0.5,
+          "released": 0.05,
+          "demand": 50.0,
+          "delta": [
+            -0.05,
+            0.05
+          ],
+          "energies": [
+            99.95,
+            0.05
+          ]
+        }
+      },
+      {
+        "name": "distinct unit share",
+        "result": {
+          "initial_total": 60.0,
+          "total_capacity": 120.0,
+          "target_ratio": 0.5,
+          "released": 30.0,
+          "demand": 30.0,
+          "delta": [
+            -30.0,
+            10.0,
+            20.0
+          ],
+          "energies": [
+            30.0,
+            10.0,
+            20.0
+          ]
+        }
+      },
+      {
+        "name": "repeated donor analytical counterexample",
+        "inputs": {
+          "contents": [
+            {
+              "energy": 100,
+              "capacity": 100,
+              "share_rate": 1
+            },
+            {
+              "energy": 0,
+              "capacity": 100,
+              "share_rate": 0.001
+            }
+          ],
+          "producer_indices": [
+            0,
+            0,
+            1
+          ]
+        },
+        "result": {
+          "initial_total": 200.0,
+          "total_capacity": 300.0,
+          "target_ratio": 0.6666666666666666,
+          "released": 66.66666666666669,
+          "demand": 66.66666666666666,
+          "delta": [
+            -33.33333333333334,
+            0.0,
+            66.66666666666669
+          ],
+          "energies": [
+            66.66666666666666,
+            66.66666666666669
+          ]
+        }
+      },
+      {
+        "name": "repeated debit analytical counterexample",
+        "inputs": {
+          "contents": [
+            {
+              "energy": 100,
+              "capacity": 100
+            }
+          ],
+          "producer_indices": [
+            0,
+            0
+          ],
+          "previous_available": 200,
+          "pending": 100
+        },
+        "result": {
+          "fraction": 0.5,
+          "energies": [
+            25.0
+          ],
+          "delta": [
+            -50.0,
+            -25.0
+          ],
+          "pending_after": 0.0,
+          "available_after": 0.0,
+          "capacity_cache_after": 0.0
+        }
+      }
+    ],
+    "limits": "Selected static code interpretation; bounded analytical models, not gameplay acceptance. Repeated references are explicit synthetic inputs; valid placement/reachability, whole graph/dispatch, exceptional arithmetic, native units and complete electrical simulation are unproven."
+  },
+  "limits": "Selected static code interpretation; bounded analytical models, not gameplay acceptance. Repeated references are explicit synthetic inputs; valid placement/reachability, whole graph/dispatch, exceptional arithmetic, native units and complete electrical simulation are unproven."
+}
