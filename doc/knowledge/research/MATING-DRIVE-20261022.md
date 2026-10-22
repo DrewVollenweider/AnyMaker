@@ -1,5 +1,7 @@
 # Functional mating, storage ports and drivetrain variants
 
+Continuation: [placement checks and differential clarification](PLACEMENT-20261022.md) resolves the shipped differential intent as coupled outputs with mechanical disconnection. It also preserves the placement work and its pending review states. The earlier internal-link trace below remains valid; its uncertainty about intended behavior is superseded.
+
 Build 26113663; researched offline on 2026-10-22. GCL SHA-256: `a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22`. Installed GCL, executable and 2,968 cataloged definition files match the isolated baseline. The game was not executed or attached to, and installation files and active saves were untouched.
 
 The preceding [electrical/control checkpoint](ELECTRIC-CONTROLS-20261022.md) exposed shared-content accounting boundaries. This continuation traces functional mating and finds that two separate resolved battery-face candidates can satisfy the local mating predicates without their explicit voxel boxes overlapping the battery or each other. Full placement, collision, authority and valid shared-storage reachability remain unproven. This is a narrower result than a usable creation certificate.

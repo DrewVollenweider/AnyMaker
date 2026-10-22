@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "build": 26113663,
+  "source_sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22",
+  "reader": {
+    "schema": 1,
+    "tool_version": "1.1.0",
+    "tool_sha256": "503dd34b80e7292669640366b69b43e0b1828fac5ffb1756e34c48f925f40c71",
+    "source_sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22",
+    "counts": {
+      "functions": 196,
+      "identical_exports_deduplicated": 0,
+      "instructions_byte_checked": 44180,
+      "slot_derived_calls": 2001,
+      "unresolved_calls": 1794
+    },
+    "limits": [
+      "Approximate C is not original source or a recovered ABI.",
+      "Slot-derived call sites establish data dependency, not virtual target binding.",
+      "Full-text results and printable strings are investigative leads, not behavioral conclusions.",
+      "No game process, gameplay session, or external Python dependency is required."
+    ]
+  },
+  "reader_instruction_bytes_checked": 257171,
+  "new_exports": 17,
+  "semantic_review_counts": {
+    "full_body": 10,
+    "partial": 3,
+    "pending": 4
+  },
+  "latest_executable_tool_suite": {
+    "passing": 327,
+    "rerun_for_this_documentation_checkpoint": false,
+    "log": "mating-drive-tests-v1.log",
+    "reason": "No executable research-tool changes since that passing run."
+  },
+  "game_execution": false,
+  "active_saves_modified": false,
+  "full_audit_complete": false
+}

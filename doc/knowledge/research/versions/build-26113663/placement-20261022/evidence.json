@@ -1,0 +1,973 @@
+{
+  "schema": 1,
+  "build": 26113663,
+  "source_sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22",
+  "functions": [
+    {
+      "signature": "(bool) vehicle_util.test_component_overlaps_vehicle<server_scene> (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const ptr<vehicle_util.blocking_hit_data>, const s32)",
+      "code_offset": 65688365,
+      "code_size": 13032,
+      "code_sha256": "87ffd1bd04c74be5deca9fe10ba2391e8570f07128731a82cc6fc6f47a58d957",
+      "instructions_exported": 2092,
+      "instruction_bytes_checked": 13004,
+      "assembly_sha256": "9b572a264265bcf17de63f2c28510d2240d61bf434ff7bbc4ac64640a581b043",
+      "pseudocode_sha256": "82129d1be37293ad855d3362a47cc6954fad590db5b0a33c47953fb09efd5e50",
+      "export_batch": 24,
+      "semantic_review": "full approximate-C body reviewed"
+    },
+    {
+      "signature": "(bool) vehicle_util.test_component_attaches_to_vehicle<server_scene> (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const ptr<vehicle_util.attach_component_hit_data>)",
+      "code_offset": 65642100,
+      "code_size": 24032,
+      "code_sha256": "3ab1b49f2efa9a00cbb68a1cc77726f9b1ffc2e1b09359c0c14fbb7b8731285c",
+      "instructions_exported": 3761,
+      "instruction_bytes_checked": 24001,
+      "assembly_sha256": "97e3057749939316476ed2da00da05606d549aaa1400b23ea7ce68864ba60df3",
+      "pseudocode_sha256": "2c39c00ddba0d24e162b9c3d06e6c7d96ec9b92aa6ed9fbfc31f485923257158",
+      "export_batch": 24,
+      "semantic_review": "partial; reviewed through line 665; plate branch pending"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.differential_gearbox.build_tooltip_data (server_scene.vehicle_component.differential_gearbox, server_scene.peer.inspection_data.vehicle)",
+      "code_offset": 54355158,
+      "code_size": 1184,
+      "code_sha256": "b41a4cb1f2ad24a39031c77eb5959cd012e261c91826c8cae42d1b132a15b086",
+      "instructions_exported": 194,
+      "instruction_bytes_checked": 1153,
+      "assembly_sha256": "230432f5e60d2f54ae9c872b78f016069b9b5c909414706e5a5d64527cc4d1db",
+      "pseudocode_sha256": "e328680bfa17148d2790327baf8f1b7fb6002da8bda9801f48ff2dd032331282",
+      "export_batch": 24,
+      "semantic_review": "full approximate-C body reviewed"
+    },
+    {
+      "signature": "(ptr<server_scene.vehicle_torque_data>) server_scene.vehicle_component.differential_gearbox.get_torque_data (server_scene.vehicle_component.differential_gearbox)",
+      "code_offset": 54365310,
+      "code_size": 33,
+      "code_sha256": "6a2671632bee55ed7a48c1007d93578227177e90435515ddbc10d641746282d5",
+      "instructions_exported": 8,
+      "instruction_bytes_checked": 33,
+      "assembly_sha256": "73b0ceaf801a5c16ed4305b2a61c35cc76977c49eba7b96bcceab13b810631e5",
+      "pseudocode_sha256": "b219a2bcd7406c7c572a31787d16867b9028c33c8810ef72a218f80a0c14ad8e",
+      "export_batch": 24,
+      "semantic_review": "full approximate-C body reviewed"
+    },
+    {
+      "signature": "(bool) vehicle_util.can_add_component<server_scene> (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const ptr<vehicle_util.blocking_hit_data>)",
+      "code_offset": 65498541,
+      "code_size": 512,
+      "code_sha256": "8adaead3480b78f49db73100380062e556fd2de0143d3fb3daab9afec6941bff",
+      "instructions_exported": 106,
+      "instruction_bytes_checked": 497,
+      "assembly_sha256": "516b3c9c028feaccfb35eed3b04a41c60e5789450997f8bcbc78a4929e4c3069",
+      "pseudocode_sha256": "5c5cb3664a6131f35239d4614cdb2814e033a1f700458d5403bcff493ac5577e",
+      "export_batch": 25,
+      "semantic_review": "full approximate-C body reviewed"
+    },
+    {
+      "signature": "(bool) vehicle_util.can_add_component_multibody<server_scene> (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const ptr<vehicle_util.blocking_hit_data>, const vehicle_component_definition)",
+      "code_offset": 65500235,
+      "code_size": 240,
+      "code_sha256": "57044b4f3c2135c6902fe4198f1c176e485bae605dc8f321843324b691e3f4ee",
+      "instructions_exported": 48,
+      "instruction_bytes_checked": 229,
+      "assembly_sha256": "925029d8038a0fd8c8b689581568482814a3c2fa45524d98be741ebd6b60f08b",
+      "pseudocode_sha256": "d64cbe6edbe1d3f809d3dea23e7754563b8021c23b8a71ca747e4aad596eb58d",
+      "export_batch": 25,
+      "semantic_review": "full approximate-C body reviewed"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle.test_component_attaches_to_vehicle (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition)",
+      "code_offset": 53337570,
+      "code_size": 152,
+      "code_sha256": "7f406e6613deb077bf65a283e4f9b3c24d3c2183fbb0c51ccd83929eb6ad8517",
+      "instructions_exported": 36,
+      "instruction_bytes_checked": 138,
+      "assembly_sha256": "0ccc6a1e6ce7dda9a7d5f0f5fa077d8c20ae06212d07ad0fb1cd6514b8c013e9",
+      "pseudocode_sha256": "003dcba1f16b0cc507af91ceaf8d289f5cb81b4938d63326b25ec9dc489645cb",
+      "export_batch": 25,
+      "semantic_review": "full approximate-C body reviewed"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle.test_component_attaches_to_vehicle (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const ptr<vehicle_util.attach_component_hit_data>)",
+      "code_offset": 53338650,
+      "code_size": 160,
+      "code_sha256": "9da12e3523e1ca3d37e87d49c36eadb1bca91d3061d40de57769982f71b3c14e",
+      "instructions_exported": 38,
+      "instruction_bytes_checked": 153,
+      "assembly_sha256": "aed820cfe06d23f82241c04957502bc57b27230e262ac9d89a474455b5ac846b",
+      "pseudocode_sha256": "ea15be5cf3948ae16a272f3551e569aa539a675ac595c124141b5c49ea4fa846",
+      "export_batch": 25,
+      "semantic_review": "full approximate-C body reviewed"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle.test_component_overlaps_vehicle (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition)",
+      "code_offset": 53339759,
+      "code_size": 176,
+      "code_sha256": "12c141995706a091faa38da0fbb54acf22594db5e28f9719c5c6c5695ae36cae",
+      "instructions_exported": 38,
+      "instruction_bytes_checked": 161,
+      "assembly_sha256": "483c898e738b319619241edf0113df1578431ae8c221e0985d7b95b34e6b740b",
+      "pseudocode_sha256": "3f4994b8a65423dc3590b2c8abd98e67992611b6a72e8825caf90c10b9424770",
+      "export_batch": 25,
+      "semantic_review": "full approximate-C body reviewed"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle.test_component_overlaps_vehicle (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const ptr<vehicle_util.blocking_hit_data>)",
+      "code_offset": 53340849,
+      "code_size": 184,
+      "code_sha256": "14261447c52262b9d546af847af473f4c33a4d12d696452019b35c20d55b0257",
+      "instructions_exported": 40,
+      "instruction_bytes_checked": 173,
+      "assembly_sha256": "7116970dbd5719beb064b774047153b79ce1f9272100904e59a326a9517b2bf1",
+      "pseudocode_sha256": "dd85a7bf9ccc9d5d24125e8cbe2909fec31b2b18bfd5f66655be7d6d36543ec7",
+      "export_batch": 25,
+      "semantic_review": "full approximate-C body reviewed"
+    },
+    {
+      "signature": "() ctor (server_scene.vehicle_component.differential_gearbox)",
+      "code_offset": 24438595,
+      "code_size": 144,
+      "code_sha256": "96984c7c375fa0db4462e4eff59a261267762a6d66efab24be384be9bd893688",
+      "instructions_exported": 28,
+      "instruction_bytes_checked": 133,
+      "assembly_sha256": "49bb60385186dc6e4719b2c3e3cc3e4f34bd9cdcadd4258f03d7427d84f4de43",
+      "pseudocode_sha256": "59ebd53fdc9930404b6fd397ff1561d685e34e63500c8a970d63a69939b75910",
+      "export_batch": 25,
+      "semantic_review": "full approximate-C body reviewed"
+    },
+    {
+      "signature": "() server.on_event (server, server_peer.data, client_peer.data.event.vehicle_add_component)",
+      "code_offset": 39630587,
+      "code_size": 3528,
+      "code_sha256": "14f589960c49bd662926706aeda8c7f986f4eaa72ecef4fc0a3fe9c2f5b01e15",
+      "instructions_exported": 628,
+      "instruction_bytes_checked": 3507,
+      "assembly_sha256": "567ecd4b5e4a59b33c08fa17b109c686d0e024017528069b50ad82f18d7b4e69",
+      "pseudocode_sha256": "0555cf2e05d700c039f60427a0881d65baf0e667ad737f06c384d9e6b377b175",
+      "export_batch": 26,
+      "semantic_review": "partial; combined terminal output truncated; reread required"
+    },
+    {
+      "signature": "() server.on_event (server, server_peer.data, client_peer.data.event.vehicle_add_component_multibody)",
+      "code_offset": 39642756,
+      "code_size": 4440,
+      "code_sha256": "3ad7133a80d6739984bc1f5a9dcda979c691a6b54d375a2a0005b55ce561a817",
+      "instructions_exported": 756,
+      "instruction_bytes_checked": 4422,
+      "assembly_sha256": "c551ef086a18b3cdad27b5101ad824275e6c542fd3c9a0eee114ad7c59215f2a",
+      "pseudocode_sha256": "2d58e60fbbbae44bb362e4b1ecf28bd01afa13e514563b3351bdbb4de55618c2",
+      "export_batch": 26,
+      "semantic_review": "partial; combined terminal output truncated; reread required"
+    },
+    {
+      "signature": "() server_scene.item_world.vehicle_editor_add_building_component.on_use_vehicle (server_scene.item_world.vehicle_editor_add_building_component, server_scene, server_scene.actor, const s32, bool, server_scene.vehicle, ptr<server_scene.vehicle_component>, const vec3, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const s32)",
+      "code_offset": 48284313,
+      "code_size": 792,
+      "code_sha256": "41b7913188bb2ea89f3193e6f8b3af1b44adcf6e8372da6686b498dcd747dbf9",
+      "instructions_exported": 159,
+      "instruction_bytes_checked": 786,
+      "assembly_sha256": "24ae1c9dcb61d95014449f7773f5d65c4af6f461d83c8b4f119841778e3d3c7a",
+      "pseudocode_sha256": "7638c2a33bfa31fdbbf11613cbc65525eb1121191c1ad6c912bc59d2a50ac993",
+      "export_batch": 26,
+      "semantic_review": "exported; semantic review pending"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle.can_add_component (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition)",
+      "code_offset": 52810984,
+      "code_size": 152,
+      "code_sha256": "7f406e6613deb077bf65a283e4f9b3c24d3c2183fbb0c51ccd83929eb6ad8517",
+      "instructions_exported": 36,
+      "instruction_bytes_checked": 138,
+      "assembly_sha256": "045cc317a509af9c297161898f2dc98e0982bd56a33b3801e16fa0b64692d993",
+      "pseudocode_sha256": "c6db0e9e6c30cb26bd7b0f291661688f085f3bcdde3ab662e690b649491316ae",
+      "export_batch": 26,
+      "semantic_review": "exported; semantic review pending"
+    },
+    {
+      "signature": "(bool) server_scene.vehicle.can_add_component (const server_scene.vehicle, const vehicle_util.grid_origin_dir, const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const ptr<vehicle_util.blocking_hit_data>)",
+      "code_offset": 52811997,
+      "code_size": 160,
+      "code_sha256": "9da12e3523e1ca3d37e87d49c36eadb1bca91d3061d40de57769982f71b3c14e",
+      "instructions_exported": 38,
+      "instruction_bytes_checked": 153,
+      "assembly_sha256": "0d4ae56a4d142cd756181fc2e9ef72a413c610222732faaf617f0ae6bae4f0cd",
+      "pseudocode_sha256": "03df58f8d2cfc90689905cba553881b9b751f6af1bf6669b77e7f3ae8b31bc43",
+      "export_batch": 26,
+      "semantic_review": "exported; semantic review pending"
+    },
+    {
+      "signature": "(bool) vehicle_component_util.test_component_overlaps_vehicle_bounds_local_to_grid (const vec3_s32, const mat33_s32, const vec3_s32, const vehicle_component_definition, const vec3_s32, const vec3_s32)",
+      "code_offset": 62978896,
+      "code_size": 816,
+      "code_sha256": "fa3053c4ffa24f6e8afc48d8b956b336faa70be6763bd506d35a634d77b7f92d",
+      "instructions_exported": 143,
+      "instruction_bytes_checked": 802,
+      "assembly_sha256": "6ee2c86332a6f1fee5d7f6dea8ffb97547f2e20335baaf5f4022dbdaca57e3d0",
+      "pseudocode_sha256": "9fedb2fb7f6db1ecb1381e3b0a5bce774ecc114ac9862cedaadd3c6d53c8f1d6",
+      "export_batch": 26,
+      "semantic_review": "exported; semantic review pending"
+    }
+  ],
+  "typed_scalars": [
+    {
+      "label": "placement true",
+      "offset": 65499045,
+      "format": "B",
+      "bytes": "01",
+      "value": 1
+    },
+    {
+      "label": "placement false",
+      "offset": 65499046,
+      "format": "B",
+      "bytes": "00",
+      "value": 0
+    },
+    {
+      "label": "multibody false comparison",
+      "offset": 65500467,
+      "format": "B",
+      "bytes": "00",
+      "value": 0
+    },
+    {
+      "label": "overlap false",
+      "offset": 65701373,
+      "format": "B",
+      "bytes": "00",
+      "value": 0
+    },
+    {
+      "label": "broadphase one voxel",
+      "offset": 65701377,
+      "format": "i",
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "candidate margin fraction",
+      "offset": 65701381,
+      "format": "d",
+      "bytes": "7b14ae47e17a843f",
+      "value": 0.01
+    },
+    {
+      "label": "voxel half width",
+      "offset": 65701389,
+      "format": "d",
+      "bytes": "000000000000e03f",
+      "value": 0.5
+    },
+    {
+      "label": "overlap wrapper zero",
+      "offset": 53339927,
+      "format": "i",
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "differential initial control state",
+      "offset": 24438731,
+      "format": "B",
+      "bytes": "00",
+      "value": 0
+    },
+    {
+      "label": "differential initial factors",
+      "offset": 24438735,
+      "format": "i",
+      "bytes": "01000000",
+      "value": 1
+    }
+  ],
+  "definition_layout": {
+    "name": "vehicle_component_definition",
+    "size": 1912,
+    "fields": [
+      {
+        "type": "string",
+        "name": "m_id",
+        "offset": 0
+      },
+      {
+        "type": "string",
+        "name": "m_display_name",
+        "offset": 16
+      },
+      {
+        "type": "string",
+        "name": "m_description",
+        "offset": 32
+      },
+      {
+        "type": "string",
+        "name": "m_class",
+        "offset": 48
+      },
+      {
+        "type": "vector<vehicle_component_definition.zone>",
+        "name": "m_zones",
+        "offset": 64
+      },
+      {
+        "type": "vector<vehicle_component_definition.interaction_zone>",
+        "name": "m_interaction_zones",
+        "offset": 104
+      },
+      {
+        "type": "vector<vehicle_component_definition.surface>",
+        "name": "m_surfaces",
+        "offset": 144
+      },
+      {
+        "type": "vector<vehicle_component_definition.logic_node>",
+        "name": "m_logic_nodes",
+        "offset": 184
+      },
+      {
+        "type": "vehicle_component_definition.mesh_composite",
+        "name": "m_mesh_static",
+        "offset": 224
+      },
+      {
+        "type": "vector<vehicle_component_definition.mesh_dynamic>",
+        "name": "m_meshes_dynamic",
+        "offset": 296
+      },
+      {
+        "type": "e_vehicle_component_array_mode",
+        "name": "m_mode_x",
+        "offset": 336
+      },
+      {
+        "type": "e_vehicle_component_array_mode",
+        "name": "m_mode_y",
+        "offset": 340
+      },
+      {
+        "type": "e_vehicle_component_array_mode",
+        "name": "m_mode_z",
+        "offset": 344
+      },
+      {
+        "type": "vec3_s32",
+        "name": "m_edge_size",
+        "offset": 348
+      },
+      {
+        "type": "vec3_s32",
+        "name": "m_interval",
+        "offset": 360
+      },
+      {
+        "type": "vec3_s32",
+        "name": "m_extend_max",
+        "offset": 372
+      },
+      {
+        "type": "vec3",
+        "name": "m_center_stretch_grid",
+        "offset": 384
+      },
+      {
+        "type": "vec3_s32",
+        "name": "m_bounds_outer_min",
+        "offset": 408
+      },
+      {
+        "type": "vec3_s32",
+        "name": "m_bounds_outer_max",
+        "offset": 420
+      },
+      {
+        "type": "bool",
+        "name": "m_is_surface_component",
+        "offset": 432
+      },
+      {
+        "type": "bool",
+        "name": "m_is_building_component",
+        "offset": 433
+      },
+      {
+        "type": "bool",
+        "name": "m_is_building_furniture",
+        "offset": 434
+      },
+      {
+        "type": "bool",
+        "name": "m_is_devolvable_component",
+        "offset": 435
+      },
+      {
+        "type": "string",
+        "name": "m_category",
+        "offset": 440
+      },
+      {
+        "type": "s32",
+        "name": "m_category_index",
+        "offset": 456
+      },
+      {
+        "type": "string",
+        "name": "m_tags",
+        "offset": 464
+      },
+      {
+        "type": "string",
+        "name": "m_tags_generated",
+        "offset": 480
+      },
+      {
+        "type": "vector<s32>",
+        "name": "m_tag_indices",
+        "offset": 496
+      },
+      {
+        "type": "vector<vehicle_component_definition.inspection_geometry>",
+        "name": "m_inspection_geometry",
+        "offset": 536
+      },
+      {
+        "type": "s32",
+        "name": "m_inventory_stack_capacity",
+        "offset": 576
+      },
+      {
+        "type": "s32",
+        "name": "m_inventory_default_stack_size",
+        "offset": 580
+      },
+      {
+        "type": "f64",
+        "name": "m_density",
+        "offset": 584
+      },
+      {
+        "type": "string",
+        "name": "m_definition_id_remove_tool",
+        "offset": 592
+      },
+      {
+        "type": "bitset",
+        "name": "m_mateable_port_types",
+        "offset": 608
+      },
+      {
+        "type": "vector<vehicle_component_definition.vehicle_data_descriptor>",
+        "name": "m_data_descriptors",
+        "offset": 616
+      },
+      {
+        "type": "s32",
+        "name": "m_assigned_id",
+        "offset": 656
+      },
+      {
+        "type": "vec3_s32",
+        "name": "m_bounds_min",
+        "offset": 660
+      },
+      {
+        "type": "vec3_s32",
+        "name": "m_bounds_max",
+        "offset": 672
+      },
+      {
+        "type": "ptr<const vehicle_component_definition>",
+        "name": "m_definition_remove_tool",
+        "offset": 688
+      },
+      {
+        "type": "vec4",
+        "name": "m_atlas_subregion",
+        "offset": 696
+      },
+      {
+        "type": "s32",
+        "name": "m_tech_tier",
+        "offset": 728
+      },
+      {
+        "type": "f64",
+        "name": "m_spawn_probability",
+        "offset": 736
+      },
+      {
+        "type": "e_loot_group",
+        "name": "m_loot_group",
+        "offset": 744
+      },
+      {
+        "type": "e_loot_mask",
+        "name": "m_inventory_loot_mask",
+        "offset": 748
+      },
+      {
+        "type": "vec3_s32",
+        "name": "m_constraint_position",
+        "offset": 752
+      },
+      {
+        "type": "vec3",
+        "name": "m_constraint_offset",
+        "offset": 768
+      },
+      {
+        "type": "vector<mat33_s32>",
+        "name": "m_constraint_orientations",
+        "offset": 792
+      },
+      {
+        "type": "f64",
+        "name": "m_alternator_wattage",
+        "offset": 832
+      },
+      {
+        "type": "f64",
+        "name": "m_alternator_max_output_rps",
+        "offset": 840
+      },
+      {
+        "type": "vec3",
+        "name": "m_antenna_physics_offset",
+        "offset": 848
+      },
+      {
+        "type": "f64",
+        "name": "m_antenna_physics_length",
+        "offset": 872
+      },
+      {
+        "type": "f64",
+        "name": "m_antenna_physics_width",
+        "offset": 880
+      },
+      {
+        "type": "vec3",
+        "name": "m_control_surface_force_direction",
+        "offset": 888
+      },
+      {
+        "type": "vec3",
+        "name": "m_control_surface_axis_normal",
+        "offset": 912
+      },
+      {
+        "type": "vec3",
+        "name": "m_control_surface_axis_side",
+        "offset": 936
+      },
+      {
+        "type": "f64",
+        "name": "m_control_surface_rotation_limit",
+        "offset": 960
+      },
+      {
+        "type": "f64",
+        "name": "m_control_surface_actuation_speed",
+        "offset": 968
+      },
+      {
+        "type": "vehicle_element_definition.rotor",
+        "name": "m_force_emitter_element_rotor",
+        "offset": 976
+      },
+      {
+        "type": "string",
+        "name": "m_hinge_definition_id_other",
+        "offset": 1056
+      },
+      {
+        "type": "e_vehicle_component_surface_dir",
+        "name": "m_hinge_direction",
+        "offset": 1072
+      },
+      {
+        "type": "e_vehicle_component_surface_dir",
+        "name": "m_hinge_constraint_axis",
+        "offset": 1076
+      },
+      {
+        "type": "f64",
+        "name": "m_hinge_constraint_limit_min",
+        "offset": 1080
+      },
+      {
+        "type": "f64",
+        "name": "m_hinge_constraint_limit_max",
+        "offset": 1088
+      },
+      {
+        "type": "ptr<const vehicle_component_definition>",
+        "name": "m_hinge_definition_other",
+        "offset": 1096
+      },
+      {
+        "type": "vec3",
+        "name": "m_landing_gear_dual_hinge_pos_a",
+        "offset": 1104
+      },
+      {
+        "type": "vec3",
+        "name": "m_landing_gear_dual_hinge_pos_b",
+        "offset": 1128
+      },
+      {
+        "type": "vec3",
+        "name": "m_landing_gear_retractable_hinge_pos_a",
+        "offset": 1152
+      },
+      {
+        "type": "vec3",
+        "name": "m_landing_gear_retractable_hinge_pos_b",
+        "offset": 1176
+      },
+      {
+        "type": "f64",
+        "name": "m_landing_gear_retractable_joint_length_a",
+        "offset": 1200
+      },
+      {
+        "type": "f64",
+        "name": "m_landing_gear_retractable_joint_length_b",
+        "offset": 1208
+      },
+      {
+        "type": "vec3",
+        "name": "m_landing_gear_retractable_fold_direction",
+        "offset": 1216
+      },
+      {
+        "type": "vec3",
+        "name": "m_landing_gear_retractable_hinge_pos_c",
+        "offset": 1240
+      },
+      {
+        "type": "vec3",
+        "name": "m_landing_gear_retractable_hinge_pos_d",
+        "offset": 1264
+      },
+      {
+        "type": "vec3",
+        "name": "m_landing_gear_hinge_pos_a",
+        "offset": 1288
+      },
+      {
+        "type": "vec3",
+        "name": "m_landing_gear_hinge_pos_b",
+        "offset": 1312
+      },
+      {
+        "type": "string",
+        "name": "m_latch_handle_definition_id_other",
+        "offset": 1336
+      },
+      {
+        "type": "e_vehicle_component_surface_dir",
+        "name": "m_latch_handle_direction",
+        "offset": 1352
+      },
+      {
+        "type": "ptr<const vehicle_component_definition>",
+        "name": "m_latch_handle_definition_other",
+        "offset": 1360
+      },
+      {
+        "type": "string",
+        "name": "m_latch_knuckle_definition_id_other",
+        "offset": 1368
+      },
+      {
+        "type": "e_vehicle_component_surface_dir",
+        "name": "m_latch_knuckle_direction",
+        "offset": 1384
+      },
+      {
+        "type": "ptr<const vehicle_component_definition>",
+        "name": "m_latch_knuckle_definition_other",
+        "offset": 1392
+      },
+      {
+        "type": "string",
+        "name": "m_latch_pin_definition_id_other",
+        "offset": 1400
+      },
+      {
+        "type": "e_vehicle_component_surface_dir",
+        "name": "m_latch_pin_direction",
+        "offset": 1416
+      },
+      {
+        "type": "ptr<const vehicle_component_definition>",
+        "name": "m_latch_pin_definition_other",
+        "offset": 1424
+      },
+      {
+        "type": "vec3",
+        "name": "m_light_direction",
+        "offset": 1432
+      },
+      {
+        "type": "f64",
+        "name": "m_motor_wattage",
+        "offset": 1456
+      },
+      {
+        "type": "f64",
+        "name": "m_motor_max_output_rps",
+        "offset": 1464
+      },
+      {
+        "type": "string",
+        "name": "m_mounting_knuckle_definition_id_other",
+        "offset": 1472
+      },
+      {
+        "type": "ptr<const vehicle_component_definition>",
+        "name": "m_mounting_knuckle_definition_other",
+        "offset": 1488
+      },
+      {
+        "type": "string",
+        "name": "m_mounting_pin_definition_id_other",
+        "offset": 1496
+      },
+      {
+        "type": "ptr<const vehicle_component_definition>",
+        "name": "m_mounting_pin_definition_other",
+        "offset": 1512
+      },
+      {
+        "type": "array<vehicle_component_definition.mesh>",
+        "name": "m_pipe_meshes",
+        "offset": 1520
+      },
+      {
+        "type": "string",
+        "name": "m_rail_ballscrew_slider_definition_id_other",
+        "offset": 1552
+      },
+      {
+        "type": "bool",
+        "name": "m_rail_ballscrew_slider_is_parent",
+        "offset": 1568
+      },
+      {
+        "type": "ptr<const vehicle_component_definition>",
+        "name": "m_rail_ballscrew_slider_definition_other",
+        "offset": 1576
+      },
+      {
+        "type": "string",
+        "name": "m_rail_ballscrew_definition_id_other",
+        "offset": 1584
+      },
+      {
+        "type": "bool",
+        "name": "m_rail_ballscrew_is_parent",
+        "offset": 1600
+      },
+      {
+        "type": "ptr<const vehicle_component_definition>",
+        "name": "m_rail_ballscrew_definition_other",
+        "offset": 1608
+      },
+      {
+        "type": "string",
+        "name": "m_rail_slider_definition_id_other",
+        "offset": 1616
+      },
+      {
+        "type": "bool",
+        "name": "m_rail_slider_is_parent",
+        "offset": 1632
+      },
+      {
+        "type": "ptr<const vehicle_component_definition>",
+        "name": "m_rail_slider_definition_other",
+        "offset": 1640
+      },
+      {
+        "type": "string",
+        "name": "m_rail_definition_id_other",
+        "offset": 1648
+      },
+      {
+        "type": "bool",
+        "name": "m_rail_is_parent",
+        "offset": 1664
+      },
+      {
+        "type": "ptr<const vehicle_component_definition>",
+        "name": "m_rail_definition_other",
+        "offset": 1672
+      },
+      {
+        "type": "vec3_s32",
+        "name": "m_seat_position",
+        "offset": 1680
+      },
+      {
+        "type": "f64",
+        "name": "m_throttle_slide_render_max",
+        "offset": 1696
+      },
+      {
+        "type": "f64",
+        "name": "m_throttle_slide_value_min",
+        "offset": 1704
+      },
+      {
+        "type": "f64",
+        "name": "m_throttle_render_max",
+        "offset": 1712
+      },
+      {
+        "type": "f64",
+        "name": "m_throttle_value_min",
+        "offset": 1720
+      },
+      {
+        "type": "string",
+        "name": "m_tow_hitch_definition_id_other",
+        "offset": 1728
+      },
+      {
+        "type": "bool",
+        "name": "m_tow_hitch_is_parent",
+        "offset": 1744
+      },
+      {
+        "type": "e_vehicle_component_surface_dir",
+        "name": "m_tow_hitch_direction",
+        "offset": 1748
+      },
+      {
+        "type": "f64",
+        "name": "m_tow_hitch_constraint_dot_min",
+        "offset": 1752
+      },
+      {
+        "type": "ptr<const vehicle_component_definition>",
+        "name": "m_tow_hitch_definition_other",
+        "offset": 1760
+      },
+      {
+        "type": "f64",
+        "name": "m_dial_min",
+        "offset": 1768
+      },
+      {
+        "type": "f64",
+        "name": "m_dial_max",
+        "offset": 1776
+      },
+      {
+        "type": "f64",
+        "name": "m_liquid_pump_wattage",
+        "offset": 1784
+      },
+      {
+        "type": "f64",
+        "name": "m_liquid_pump_max_output_rps",
+        "offset": 1792
+      },
+      {
+        "type": "f64",
+        "name": "m_gas_pump_wattage",
+        "offset": 1800
+      },
+      {
+        "type": "f64",
+        "name": "m_gas_pump_max_output_rps",
+        "offset": 1808
+      },
+      {
+        "type": "vec3",
+        "name": "m_door_physics_min",
+        "offset": 1816
+      },
+      {
+        "type": "vec3",
+        "name": "m_door_physics_max",
+        "offset": 1840
+      },
+      {
+        "type": "vec3",
+        "name": "m_door_hinge_constraint_pos",
+        "offset": 1864
+      },
+      {
+        "type": "f64",
+        "name": "m_door_hinge_range_of_motion",
+        "offset": 1888
+      },
+      {
+        "type": "vec2_s32",
+        "name": "m_inventory_ui_grid_size",
+        "offset": 1896
+      },
+      {
+        "type": "bool",
+        "name": "m_inventory_ui_is_single_item",
+        "offset": 1904
+      }
+    ]
+  },
+  "differential_definitions": [
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/51",
+      "id": "differential_gearbox_a",
+      "sha256": "8f627c44d8c2baa6dcefe0de21f90ae5a49a7b72100f75429c4c9744527b194f",
+      "description_sha256": "e14955b47d6a7e84d89924fd969db4ed9af9220fbef3f11473ec569e98744faf",
+      "description_interpretation": "Coupled lateral outputs; mechanical control disconnects them.",
+      "selected_fields": {
+        "class": "differential_gearbox",
+        "data_descriptors": [],
+        "logic_nodes": [
+          {
+            "direction": 5,
+            "pos": [
+              0,
+              1,
+              2
+            ],
+            "type": "mechanical_in"
+          }
+        ]
+      }
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/150",
+      "id": "differential_gearbox_b",
+      "sha256": "490c81153fe3803734e1c4aeee60f663f1c04f79cc4de6575206d1c147dac2b6",
+      "description_sha256": "fe3198791f5781e7fed0cfbfe56f4d9f9abd2c55cea30097fe0dab4f5a66a303",
+      "description_interpretation": "Coupled lateral outputs; mechanical control disconnects them. Rear output is a 1:1 input pass-through.",
+      "selected_fields": {
+        "class": "differential_gearbox",
+        "data_descriptors": [],
+        "logic_nodes": [
+          {
+            "direction": 5,
+            "pos": [
+              0,
+              1,
+              2
+            ],
+            "type": "mechanical_in"
+          }
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "No complete vendor decompilations or binaries published.",
+    "Byte verification is separate from semantic review.",
+    "Description interpretation is a paraphrase, with source identity retained.",
+    "Complete placement and shared-storage operating reachability remain unproven."
+  ]
+}
