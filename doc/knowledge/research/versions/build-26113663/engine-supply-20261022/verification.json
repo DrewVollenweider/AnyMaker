@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "build": "26113663",
+  "installed_code_and_definition_hashes_match": true,
+  "definition_files_checked": 2968,
+  "reader_functions": 69,
+  "reader_instructions_checked": 16045,
+  "reader_instruction_bytes": 97326,
+  "fresh_methods": 32,
+  "selected_methods": 35,
+  "typed_scalars": 79,
+  "selected_calls": 35,
+  "selected_current_instructions": 14,
+  "selected_archived_instructions": 14,
+  "research_tool_tests_passed": 294,
+  "new_model_tests": 9,
+  "seeded_stock_energy_cases": 500,
+  "test_log_sha256": "8e2c48a7c6b43c9d34174de8135afbda1dd7d8e33497c49b3ff807efe3d1cb1a",
+  "model_constants_match_current_source": true,
+  "game_executed": false,
+  "installation_or_active_saves_edited": false,
+  "limits": "Tests verify bounded analytical models and tools, not gameplay or complete engine/network/native behavior. No percent semantic completion."
+}

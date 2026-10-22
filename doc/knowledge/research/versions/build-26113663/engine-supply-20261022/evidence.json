@@ -1,0 +1,2864 @@
+{
+  "schema": 1,
+  "build": "26113663",
+  "date": "2026-10-22",
+  "source_sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22",
+  "functions": [
+    {
+      "signature": "() g_degree_celcius_per_joule_water.$ctor ()",
+      "signature_offset": 29054513,
+      "code_offset": 29054617,
+      "code_size": 48,
+      "code_sha256": "067a6aeb71985cf2152695e8549c4f17bbdaa346fb8b1255c536e8bbf119acfe"
+    },
+    {
+      "signature": "() g_litres_per_voxel.$ctor ()",
+      "signature_offset": 29081373,
+      "code_offset": 29081449,
+      "code_size": 32,
+      "code_sha256": "75d70596855935cae3912c880870ebe14428a8ffb5a8f09d5863a1e64f915840"
+    },
+    {
+      "signature": "() g_standard_acceleration_of_gravity.$ctor ()",
+      "signature_offset": 29104085,
+      "code_offset": 29104193,
+      "code_size": 32,
+      "code_sha256": "9fa34d8ac059aff9589e89234fccb3c4830d4fcba3e1e6ffa5267db4c166f2d9"
+    },
+    {
+      "signature": "() g_torque_system_newtons_per_joule.$ctor ()",
+      "signature_offset": 29117439,
+      "code_offset": 29117545,
+      "code_size": 32,
+      "code_sha256": "463d0cf3f686c3c108146d8eb7280e3d1903b3723f581b1170c2c99532c10848"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.air_manifold.create (server_scene.vehicle_component.air_manifold, server_scene.vehicle)",
+      "signature_offset": 53511406,
+      "code_offset": 53512390,
+      "code_size": 456,
+      "code_sha256": "b3e0e3d19f4e7934b71d07d73b91670a34b9c0060923c6185bba4e53fcca6090"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.coolant_manifold.create (server_scene.vehicle_component.coolant_manifold, server_scene.vehicle)",
+      "signature_offset": 54237276,
+      "code_offset": 54237528,
+      "code_size": 40,
+      "code_sha256": "8323a60fba918773f955665d201ec13feba90f6c15a2b2390df65b5def41e5be"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.engine.add_mating_component (server_scene.vehicle_component.engine, server_scene.vehicle, const s32, server_scene.vehicle_component, const s32)",
+      "signature_offset": 54474554,
+      "code_offset": 54477706,
+      "code_size": 1680,
+      "code_sha256": "f434d648cf5bf7fe7eca0e4da475d031d22aa6868f8fc3dedd2773706f64bbe5"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.engine.create (server_scene.vehicle_component.engine, server_scene.vehicle)",
+      "signature_offset": 54492181,
+      "code_offset": 54492873,
+      "code_size": 416,
+      "code_sha256": "3df6bb0ea2878e596c59cd51cb27535793c833f4067b5f1fb81cc5084d1f4571"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.engine.tick (server_scene.vehicle_component.engine, server_scene.vehicle, server_scene)",
+      "signature_offset": 54515889,
+      "code_offset": 54524323,
+      "code_size": 11856,
+      "code_sha256": "ad5facd81be54fd1150c137ab0863d44825416024e0db44a0e862a298d7bb304"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.exhaust_manifold.create (server_scene.vehicle_component.exhaust_manifold, server_scene.vehicle)",
+      "signature_offset": 54593484,
+      "code_offset": 54594169,
+      "code_size": 264,
+      "code_sha256": "a3091c1516988aa66772d96fe2f216cfbbb722869f8a1026ca803ec61049a311"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.fuel_manifold.create (server_scene.vehicle_component.fuel_manifold, server_scene.vehicle)",
+      "signature_offset": 54769512,
+      "code_offset": 54770421,
+      "code_size": 376,
+      "code_sha256": "3a73a38383b77af534ebc43dd160f5e79f1dd3a40e6c094ae914438e560f0ac1"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.fuel_manifold.tick (server_scene.vehicle_component.fuel_manifold, server_scene.vehicle, server_scene)",
+      "signature_offset": 54776094,
+      "code_offset": 54776494,
+      "code_size": 128,
+      "code_sha256": "9e0ca35f631ae58a35a6a7e3ae4b474bbc8cffd48b89149f1cc3e527f750fec3"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gas_pump.tick (server_scene.vehicle_component.gas_pump, server_scene.vehicle, server_scene)",
+      "signature_offset": 54850934,
+      "code_offset": 54852083,
+      "code_size": 2240,
+      "code_sha256": "e8d807fcc834901d565438dc1c33da45284179bdcee0034071eb734670e2ed71"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gas_pump_centrifugal.tick (server_scene.vehicle_component.gas_pump_centrifugal, server_scene.vehicle, server_scene)",
+      "signature_offset": 54871857,
+      "code_offset": 54872836,
+      "code_size": 1264,
+      "code_sha256": "572afaaf0ca87cd2e8b726d61ba2bc95231ed56f076e93f11c4955cc3c20e7db"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gearbox.create (server_scene.vehicle_component.gearbox, server_scene.vehicle)",
+      "signature_offset": 54985797,
+      "code_offset": 54986625,
+      "code_size": 480,
+      "code_sha256": "18ca3c6a0225b6b753fed1b23247a0eafb993b84d006ae9446d740afdbba27ad"
+    },
+    {
+      "signature": "(s32) server_scene.vehicle_component.gearbox.get_gear_count (const server_scene.vehicle_component.gearbox)",
+      "signature_offset": 54991152,
+      "code_offset": 54991477,
+      "code_size": 168,
+      "code_sha256": "8b7ceb14c5938ebeb53b9b5c2feb7f06726cf08fd3c9f3976758c25824fc4a9f"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gearbox.tick (server_scene.vehicle_component.gearbox, server_scene.vehicle, server_scene)",
+      "signature_offset": 55005401,
+      "code_offset": 55006267,
+      "code_size": 1784,
+      "code_sha256": "4a53c971701e9380b956e3941dbb7d1b649cc9fb7a5e1f120653b7fedf130bbb"
+    },
+    {
+      "signature": "(s32) server_scene.vehicle_component.gearbox_b.get_gear_count (const server_scene.vehicle_component.gearbox_b)",
+      "signature_offset": 55028904,
+      "code_offset": 55029233,
+      "code_size": 168,
+      "code_sha256": "8b7ceb14c5938ebeb53b9b5c2feb7f06726cf08fd3c9f3976758c25824fc4a9f"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.gearbox_b.tick (server_scene.vehicle_component.gearbox_b, server_scene.vehicle, server_scene)",
+      "signature_offset": 55041983,
+      "code_offset": 55043103,
+      "code_size": 2280,
+      "code_sha256": "5f84d39cd5c9ba5f7d260e43f93153654bf1f5394ac150325615db79f1d1a9bc"
+    },
+    {
+      "signature": "(s32) server_scene.vehicle_component.get_volume (const server_scene.vehicle_component)",
+      "signature_offset": 55115661,
+      "code_offset": 55116804,
+      "code_size": 1152,
+      "code_sha256": "81d866f00475601b765b9ec45c3cac600dfaa22f9eb6181f84a2acee9a8fa664"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.liquid_pump.tick (server_scene.vehicle_component.liquid_pump, server_scene.vehicle, server_scene)",
+      "signature_offset": 56390345,
+      "code_offset": 56391923,
+      "code_size": 3016,
+      "code_sha256": "007840c05a6c421e6367e6087acb677a0cf5395285ab7d046023f84317a2ba55"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.oil_filter.tick (server_scene.vehicle_component.oil_filter, server_scene.vehicle, server_scene)",
+      "signature_offset": 57104534,
+      "code_offset": 57106068,
+      "code_size": 1352,
+      "code_sha256": "6d94df407d7efd145ad13bd27efe86a9c52c02577ed3741b3764e9c31cfe1137"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.oil_manifold.create (server_scene.vehicle_component.oil_manifold, server_scene.vehicle)",
+      "signature_offset": 57110223,
+      "code_offset": 57110467,
+      "code_size": 40,
+      "code_sha256": "8323a60fba918773f955665d201ec13feba90f6c15a2b2390df65b5def41e5be"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.radiator.tick (server_scene.vehicle_component.radiator, server_scene.vehicle, server_scene)",
+      "signature_offset": 57188183,
+      "code_offset": 57190229,
+      "code_size": 1272,
+      "code_sha256": "650d21b90ea6277e99328b607682af07f7520f9013db1f4c56108c3dcfa813ec"
+    },
+    {
+      "signature": "() server_scene.vehicle_component.radiator_fan.tick (server_scene.vehicle_component.radiator_fan, server_scene.vehicle, server_scene)",
+      "signature_offset": 57203476,
+      "code_offset": 57204129,
+      "code_size": 448,
+      "code_sha256": "0999d5741d36ed3a6303275e4f88c97176c6d2503d0e4d6097b00f82c10914c2"
+    },
+    {
+      "signature": "() server_scene.vehicle_gas_content.equalize_contents (vector<ptr<server_scene.vehicle_gas_content>>)",
+      "signature_offset": 58545840,
+      "code_offset": 58546882,
+      "code_size": 1296,
+      "code_sha256": "6f1c7a62be077806c692ee5137c01cb42cf256b462e33650c1b4bffa4b83179f"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_gas_content.get_pressure (const server_scene.vehicle_gas_content)",
+      "signature_offset": 58551844,
+      "code_offset": 58552066,
+      "code_size": 264,
+      "code_sha256": "8fa9804dad88bba14b71fbc328ed79b77adc7231b5392a73047b3b961d34f80f"
+    },
+    {
+      "signature": "() server_scene.vehicle_gas_content.move_content (server_scene.vehicle_gas_content, server_scene.vehicle_gas_content, const f64)",
+      "signature_offset": 58553514,
+      "code_offset": 58553863,
+      "code_size": 568,
+      "code_sha256": "861b82d394f693f60dd50dd7d399547be6a132333244a066eb38d71183623362"
+    },
+    {
+      "signature": "() server_scene.vehicle_liquid_content.equalize_contents (vector<ptr<server_scene.vehicle_liquid_content>>)",
+      "signature_offset": 58705543,
+      "code_offset": 58706576,
+      "code_size": 1488,
+      "code_sha256": "9f4bd08e3993bcc6ef34635b904baeb955826621ab7c3aa532cbd3208515b77c"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_liquid_content.get_pressure (const server_scene.vehicle_liquid_content)",
+      "signature_offset": 58713088,
+      "code_offset": 58713206,
+      "code_size": 96,
+      "code_sha256": "c598407dfaa3ec81c0f461b0e309eb5e8ee15990519b45e1feae8177dba3e907"
+    },
+    {
+      "signature": "() server_scene.vehicle_liquid_content.modify_content (server_scene.vehicle_liquid_content, const server_scene.e_vehicle_liquid_type, const f64)",
+      "signature_offset": 58713512,
+      "code_offset": 58713736,
+      "code_size": 192,
+      "code_sha256": "684fbe026b3010c873384c0bbc6493a9db84688fb0764fa747d23199298a2e1c"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_liquid_content.move_content (server_scene.vehicle_liquid_content, server_scene.vehicle_liquid_content, const f64)",
+      "signature_offset": 58714212,
+      "code_offset": 58714576,
+      "code_size": 976,
+      "code_sha256": "d0768d17ebad01128cf5c8a122d7cde0a02df673d4e67fca316f0b109a3f4776"
+    },
+    {
+      "signature": "() server_scene.vehicle_liquid_content_volume.create (server_scene.vehicle_liquid_content_volume, server_scene.vehicle, server_scene.vehicle_component, const vehicle_util.grid_origin_dir, const s32, const f64)",
+      "signature_offset": 58717518,
+      "code_offset": 58720245,
+      "code_size": 7688,
+      "code_sha256": "5940ec277b6bbb2dce830cbb7135654afa7ed00636e2b0ebc06380e38aa3da54"
+    },
+    {
+      "signature": "() server_scene.vehicle_liquid_content_volume.tick (server_scene.vehicle_liquid_content_volume, server_scene.vehicle, const f64)",
+      "signature_offset": 58733991,
+      "code_offset": 58735657,
+      "code_size": 3896,
+      "code_sha256": "d5f57d52c76ff3f3d5016801926667fc75d803c5dcdb61431bce329a7a7b9d47"
+    },
+    {
+      "signature": "(f64) server_scene.vehicle_mechanical_node_in.read (const server_scene.vehicle_mechanical_node_in)",
+      "signature_offset": 58889409,
+      "code_offset": 58889527,
+      "code_size": 32,
+      "code_sha256": "de364133812107b782a73a789603324e3cf13d53e181470b463b4e7a164dee3f"
+    }
+  ],
+  "typed_scalars": [
+    {
+      "label": "engine zero",
+      "offset": 54535939,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "engine coupling mass per volume",
+      "offset": 54535947,
+      "format": "d",
+      "width": 8,
+      "bytes": "7b14ae47e17a943f",
+      "value": 0.02
+    },
+    {
+      "label": "shaft sign",
+      "offset": 54535963,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f0bf",
+      "value": -1.0
+    },
+    {
+      "label": "manifold active speed coefficient and damaged energy factor",
+      "offset": 54535971,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000e03f",
+      "value": 0.5
+    },
+    {
+      "label": "one",
+      "offset": 54535979,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "intake pressure upper",
+      "offset": 54535987,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000002440",
+      "value": 10.0
+    },
+    {
+      "label": "intake boost upper",
+      "offset": 54535995,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000040",
+      "value": 2.0
+    },
+    {
+      "label": "exhaust pressure lower",
+      "offset": 54536003,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000001040",
+      "value": 4.0
+    },
+    {
+      "label": "exhaust pressure upper",
+      "offset": 54536011,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000003440",
+      "value": 20.0
+    },
+    {
+      "label": "fuel energy",
+      "offset": 54536019,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000080847e41",
+      "value": 32000000.0
+    },
+    {
+      "label": "efficiency",
+      "offset": 54536027,
+      "format": "d",
+      "width": 8,
+      "bytes": "333333333333d33f",
+      "value": 0.3
+    },
+    {
+      "label": "max rpm",
+      "offset": 54536043,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000040bf40",
+      "value": 8000.0
+    },
+    {
+      "label": "rpm conversion",
+      "offset": 54536051,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000004e40",
+      "value": 60.0
+    },
+    {
+      "label": "speed offset",
+      "offset": 54536059,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999c93f",
+      "value": 0.2
+    },
+    {
+      "label": "fuel cutoff minimum rps",
+      "offset": 54536067,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000001840",
+      "value": 6.0
+    },
+    {
+      "label": "air coefficient A",
+      "offset": 54536075,
+      "format": "d",
+      "width": 8,
+      "bytes": "cdcccccccccc2540",
+      "value": 10.9
+    },
+    {
+      "label": "air coefficient B",
+      "offset": 54536083,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000008940",
+      "value": 800.0
+    },
+    {
+      "label": "engine thermal weight per volume",
+      "offset": 54536091,
+      "format": "d",
+      "width": 8,
+      "bytes": "7b14ae47e17aa43f",
+      "value": 0.04
+    },
+    {
+      "label": "exhaust temperature",
+      "offset": 54536107,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000c07240",
+      "value": 300.0
+    },
+    {
+      "label": "oil aging coefficient",
+      "offset": 54536115,
+      "format": "d",
+      "width": 8,
+      "bytes": "f168e388b5f8e43e",
+      "value": 1e-05
+    },
+    {
+      "label": "wear and damage leak coefficient",
+      "offset": 54536131,
+      "format": "d",
+      "width": 8,
+      "bytes": "2d431cebe2361a3f",
+      "value": 0.0001
+    },
+    {
+      "label": "engine ambient coefficient",
+      "offset": 54536139,
+      "format": "d",
+      "width": 8,
+      "bytes": "8dedb5a0f7c6b03e",
+      "value": 1e-06
+    },
+    {
+      "label": "damage temperature",
+      "offset": 54536147,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000006440",
+      "value": 160.0
+    },
+    {
+      "label": "speed damping coefficient",
+      "offset": 54536171,
+      "format": "d",
+      "width": 8,
+      "bytes": "7b14ae47e17ab43f",
+      "value": 0.08
+    },
+    {
+      "label": "fuel suction coefficient",
+      "offset": 54776614,
+      "format": "d",
+      "width": 8,
+      "bytes": "00000000000018c0",
+      "value": -6.0
+    },
+    {
+      "label": "engine volume scale",
+      "offset": 54493273,
+      "format": "d",
+      "width": 8,
+      "bytes": "b81e85eb51b8ce3f",
+      "value": 0.24
+    },
+    {
+      "label": "petrol species",
+      "offset": 54535955,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "power per volume",
+      "offset": 54536035,
+      "format": "i",
+      "width": 4,
+      "bytes": "90010000",
+      "value": 400
+    },
+    {
+      "label": "oil species and maximum damage stage",
+      "offset": 54536099,
+      "format": "i",
+      "width": 4,
+      "bytes": "02000000",
+      "value": 2
+    },
+    {
+      "label": "pollutant species",
+      "offset": 54536123,
+      "format": "i",
+      "width": 4,
+      "bytes": "03000000",
+      "value": 3
+    },
+    {
+      "label": "lubricant inspection layer",
+      "offset": 54493265,
+      "format": "i",
+      "width": 4,
+      "bytes": "00000000",
+      "value": 0
+    },
+    {
+      "label": "coolant inspection layer",
+      "offset": 54493281,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "gearbox minimum/base",
+      "offset": 54991637,
+      "format": "i",
+      "width": 4,
+      "bytes": "02000000",
+      "value": 2
+    },
+    {
+      "label": "gearbox maximum",
+      "offset": 54991641,
+      "format": "i",
+      "width": 4,
+      "bytes": "08000000",
+      "value": 8
+    },
+    {
+      "label": "gearbox_b minimum/base",
+      "offset": 55029393,
+      "format": "i",
+      "width": 4,
+      "bytes": "02000000",
+      "value": 2
+    },
+    {
+      "label": "gearbox_b maximum",
+      "offset": 55029397,
+      "format": "i",
+      "width": 4,
+      "bytes": "08000000",
+      "value": 8
+    },
+    {
+      "label": "gearbox_b reverse gear",
+      "offset": 55045343,
+      "format": "i",
+      "width": 4,
+      "bytes": "ffffffff",
+      "value": -1
+    },
+    {
+      "label": "gearbox_b increment",
+      "offset": 55045339,
+      "format": "i",
+      "width": 4,
+      "bytes": "01000000",
+      "value": 1
+    },
+    {
+      "label": "gearbox positive threshold",
+      "offset": 55007971,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000e83f",
+      "value": 0.75
+    },
+    {
+      "label": "gearbox negative threshold",
+      "offset": 55007987,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000e8bf",
+      "value": -0.75
+    },
+    {
+      "label": "gearbox reset lower",
+      "offset": 55008003,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000d0bf",
+      "value": -0.25
+    },
+    {
+      "label": "gearbox reset upper",
+      "offset": 55008011,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000d03f",
+      "value": 0.25
+    },
+    {
+      "label": "gearbox zero clutch",
+      "offset": 55008019,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "gearbox clutch step",
+      "offset": 55008027,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999a93f",
+      "value": 0.05
+    },
+    {
+      "label": "gearbox full clutch",
+      "offset": 55008035,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "gearbox_b activation pressure",
+      "offset": 55045319,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000840",
+      "value": 3.0
+    },
+    {
+      "label": "gearbox_b reset pressure",
+      "offset": 55045327,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000040",
+      "value": 2.0
+    },
+    {
+      "label": "gearbox_b clutch step",
+      "offset": 55045359,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999a93f",
+      "value": 0.05
+    },
+    {
+      "label": "liquid pump efficiency",
+      "offset": 56394891,
+      "format": "d",
+      "width": 8,
+      "bytes": "333333333333e33f",
+      "value": 0.6
+    },
+    {
+      "label": "liquid pump head coefficient",
+      "offset": 56394915,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999b93f",
+      "value": 0.1
+    },
+    {
+      "label": "liquid pump head minimum divisor",
+      "offset": 56394923,
+      "format": "d",
+      "width": 8,
+      "bytes": "2d431cebe2361a3f",
+      "value": 0.0001
+    },
+    {
+      "label": "liquid pump flow coefficient",
+      "offset": 56394931,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999d93f",
+      "value": 0.4
+    },
+    {
+      "label": "gas pump efficiency",
+      "offset": 54854275,
+      "format": "d",
+      "width": 8,
+      "bytes": "333333333333e33f",
+      "value": 0.6
+    },
+    {
+      "label": "gas pump head coefficient",
+      "offset": 54854299,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999c93f",
+      "value": 0.2
+    },
+    {
+      "label": "gas pump head minimum divisor",
+      "offset": 54854307,
+      "format": "d",
+      "width": 8,
+      "bytes": "2d431cebe2361a3f",
+      "value": 0.0001
+    },
+    {
+      "label": "gas pump flow coefficient",
+      "offset": 54854315,
+      "format": "d",
+      "width": 8,
+      "bytes": "7b14ae47e17aa43f",
+      "value": 0.04
+    },
+    {
+      "label": "centrifugal efficiency",
+      "offset": 54874044,
+      "format": "d",
+      "width": 8,
+      "bytes": "333333333333e33f",
+      "value": 0.6
+    },
+    {
+      "label": "centrifugal head coefficient",
+      "offset": 54874052,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999b93f",
+      "value": 0.1
+    },
+    {
+      "label": "centrifugal flow coefficient",
+      "offset": 54874060,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999d93f",
+      "value": 0.4
+    },
+    {
+      "label": "filter condition cost",
+      "offset": 57107388,
+      "format": "d",
+      "width": 8,
+      "bytes": "9a9999999999b93f",
+      "value": 0.1
+    },
+    {
+      "label": "filter maximum removed per update",
+      "offset": 57107396,
+      "format": "d",
+      "width": 8,
+      "bytes": "2d431cebe2361a3f",
+      "value": 0.0001
+    },
+    {
+      "label": "radiator base coefficient",
+      "offset": 57191469,
+      "format": "d",
+      "width": 8,
+      "bytes": "2d431cebe2362a3f",
+      "value": 0.0002
+    },
+    {
+      "label": "radiator fan coefficient",
+      "offset": 57191477,
+      "format": "d",
+      "width": 8,
+      "bytes": "2d431cebe2363a3f",
+      "value": 0.0004
+    },
+    {
+      "label": "radiator leak per update",
+      "offset": 57191493,
+      "format": "d",
+      "width": 8,
+      "bytes": "2d431cebe2361a3f",
+      "value": 0.0001
+    },
+    {
+      "label": "fan energy per component volume per second",
+      "offset": 57204553,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000002440",
+      "value": 10.0
+    },
+    {
+      "label": "fan activation factor",
+      "offset": 57204561,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000e03f",
+      "value": 0.5
+    },
+    {
+      "label": "gas capacity guard",
+      "offset": 58552266,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "liquid pressure base",
+      "offset": 58713294,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "heat numerator",
+      "offset": 29054649,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "heat denominator",
+      "offset": 29054657,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000058b040",
+      "value": 4184.0
+    },
+    {
+      "label": "litres per voxel",
+      "offset": 29081473,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000e03f",
+      "value": 0.5
+    },
+    {
+      "label": "gravity initializer",
+      "offset": 29104217,
+      "format": "d",
+      "width": 8,
+      "bytes": "1f85eb51b89e2340",
+      "value": 9.81
+    },
+    {
+      "label": "torque energy conversion initializer",
+      "offset": 29117569,
+      "format": "d",
+      "width": 8,
+      "bytes": "7b14ae47e17aa43f",
+      "value": 0.04
+    },
+    {
+      "label": "volume box inclusive addition",
+      "offset": 58727829,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000f03f",
+      "value": 1.0
+    },
+    {
+      "label": "volume zero stretch",
+      "offset": 58727821,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000000",
+      "value": 0.0
+    },
+    {
+      "label": "volume half",
+      "offset": 58727837,
+      "format": "d",
+      "width": 8,
+      "bytes": "000000000000e03f",
+      "value": 0.5
+    },
+    {
+      "label": "capsule sphere numerator",
+      "offset": 58727853,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000001040",
+      "value": 4.0
+    },
+    {
+      "label": "capsule sphere denominator",
+      "offset": 58727861,
+      "format": "d",
+      "width": 8,
+      "bytes": "0000000000000840",
+      "value": 3.0
+    },
+    {
+      "label": "filter removed species",
+      "offset": 57107404,
+      "format": "i",
+      "width": 4,
+      "bytes": "03000000",
+      "value": 3
+    }
+  ],
+  "selected_calls": [
+    {
+      "function_offset": 54492873,
+      "instruction": 54492969,
+      "bytes": "ffd3",
+      "instruction_text": "CALL RBX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54493297,
+      "loaded_at": 54492950,
+      "dependency_steps": [
+        {
+          "instruction": 54492950,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54492957,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 54492960,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 54492963,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "(s32) server_scene.vehicle_component.get_volume (const server_scene.vehicle_component)",
+      "slot_offset": 424,
+      "target_record_candidate": {
+        "code_offset": 55116804,
+        "code_size": 1152
+      }
+    },
+    {
+      "function_offset": 54492873,
+      "instruction": 54493109,
+      "bytes": "ff16",
+      "instruction_text": "CALL qword ptr [RSI]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54493313,
+      "loaded_at": 54493084,
+      "dependency_steps": [
+        {
+          "instruction": 54493084,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54493109,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_liquid_content_volume.create (server_scene.vehicle_liquid_content_volume, server_scene.vehicle, server_scene.vehicle_component, const vehicle_util.grid_origin_dir, const s32, const f64)",
+      "slot_offset": 440,
+      "target_record_candidate": {
+        "code_offset": 58720245,
+        "code_size": 7688
+      }
+    },
+    {
+      "function_offset": 54492873,
+      "instruction": 54493246,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54493313,
+      "loaded_at": 54493224,
+      "dependency_steps": [
+        {
+          "instruction": 54493224,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54493246,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_liquid_content_volume.create (server_scene.vehicle_liquid_content_volume, server_scene.vehicle, server_scene.vehicle_component, const vehicle_util.grid_origin_dir, const s32, const f64)",
+      "slot_offset": 440,
+      "target_record_candidate": {
+        "code_offset": 58720245,
+        "code_size": 7688
+      }
+    },
+    {
+      "function_offset": 54524323,
+      "instruction": 54530001,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54536555,
+      "loaded_at": 54529959,
+      "dependency_steps": [
+        {
+          "instruction": 54529959,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54530001,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_gas_content.modify_content (server_scene.vehicle_gas_content, const server_scene.e_vehicle_gas_type, const f64, const f64)",
+      "slot_offset": 12232,
+      "target_record_candidate": {
+        "code_offset": 58552857,
+        "code_size": 320
+      }
+    },
+    {
+      "function_offset": 54524323,
+      "instruction": 54530557,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54536563,
+      "loaded_at": 54530515,
+      "dependency_steps": [
+        {
+          "instruction": 54530515,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54530557,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_liquid_content.modify_content (server_scene.vehicle_liquid_content, const server_scene.e_vehicle_liquid_type, const f64)",
+      "slot_offset": 12240,
+      "target_record_candidate": {
+        "code_offset": 58713736,
+        "code_size": 192
+      }
+    },
+    {
+      "function_offset": 54524323,
+      "instruction": 54531273,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54536555,
+      "loaded_at": 54531231,
+      "dependency_steps": [
+        {
+          "instruction": 54531231,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54531273,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_gas_content.modify_content (server_scene.vehicle_gas_content, const server_scene.e_vehicle_gas_type, const f64, const f64)",
+      "slot_offset": 12232,
+      "target_record_candidate": {
+        "code_offset": 58552857,
+        "code_size": 320
+      }
+    },
+    {
+      "function_offset": 54524323,
+      "instruction": 54533548,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54536683,
+      "loaded_at": 54533538,
+      "dependency_steps": [
+        {
+          "instruction": 54533538,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54533548,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_liquid_content.move_content (server_scene.vehicle_liquid_content, server_scene.vehicle_liquid_content, const f64)",
+      "slot_offset": 12360,
+      "target_record_candidate": {
+        "code_offset": 58714576,
+        "code_size": 976
+      }
+    },
+    {
+      "function_offset": 54524323,
+      "instruction": 54533595,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54536683,
+      "loaded_at": 54533585,
+      "dependency_steps": [
+        {
+          "instruction": 54533585,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54533595,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_liquid_content.move_content (server_scene.vehicle_liquid_content, server_scene.vehicle_liquid_content, const f64)",
+      "slot_offset": 12360,
+      "target_record_candidate": {
+        "code_offset": 58714576,
+        "code_size": 976
+      }
+    },
+    {
+      "function_offset": 54770421,
+      "instruction": 54770612,
+      "bytes": "ff16",
+      "instruction_text": "CALL qword ptr [RSI]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54770813,
+      "loaded_at": 54770587,
+      "dependency_steps": [
+        {
+          "instruction": 54770587,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54770612,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_liquid_content_volume.create (server_scene.vehicle_liquid_content_volume, server_scene.vehicle, server_scene.vehicle_component, const vehicle_util.grid_origin_dir, const s32, const f64)",
+      "slot_offset": 392,
+      "target_record_candidate": {
+        "code_offset": 58720245,
+        "code_size": 7688
+      }
+    },
+    {
+      "function_offset": 54776494,
+      "instruction": 54776594,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54776630,
+      "loaded_at": 54776587,
+      "dependency_steps": [
+        {
+          "instruction": 54776587,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54776594,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_liquid_node.set_static_pressure (server_scene.vehicle_liquid_node, const f64)",
+      "slot_offset": 136,
+      "target_record_candidate": {
+        "code_offset": 58821364,
+        "code_size": 27
+      }
+    },
+    {
+      "function_offset": 54872836,
+      "instruction": 54873612,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54874164,
+      "loaded_at": 54873602,
+      "dependency_steps": [
+        {
+          "instruction": 54873602,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54873612,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_gas_content.move_content (server_scene.vehicle_gas_content, server_scene.vehicle_gas_content, const f64)",
+      "slot_offset": 1328,
+      "target_record_candidate": {
+        "code_offset": 58553863,
+        "code_size": 568
+      }
+    },
+    {
+      "function_offset": 54872836,
+      "instruction": 54873813,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 54874164,
+      "loaded_at": 54873803,
+      "dependency_steps": [
+        {
+          "instruction": 54873803,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 54873813,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_gas_content.move_content (server_scene.vehicle_gas_content, server_scene.vehicle_gas_content, const f64)",
+      "slot_offset": 1328,
+      "target_record_candidate": {
+        "code_offset": 58553863,
+        "code_size": 568
+      }
+    },
+    {
+      "function_offset": 55006267,
+      "instruction": 55006333,
+      "bytes": "ffd3",
+      "instruction_text": "CALL RBX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 55008051,
+      "loaded_at": 55006309,
+      "dependency_steps": [
+        {
+          "instruction": 55006309,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 55006316,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 55006319,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 55006322,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "(s32) server_scene.vehicle_component.gearbox.get_gear_count (const server_scene.vehicle_component.gearbox)",
+      "slot_offset": 1784,
+      "target_record_candidate": {
+        "code_offset": 54991477,
+        "code_size": 168
+      }
+    },
+    {
+      "function_offset": 55006267,
+      "instruction": 55007655,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 55008099,
+      "loaded_at": 55007648,
+      "dependency_steps": [
+        {
+          "instruction": 55007648,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 55007655,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_node.set_clutch_factor (server_scene.vehicle_torque_node, const f64)",
+      "slot_offset": 1832,
+      "target_record_candidate": {
+        "code_offset": 59212798,
+        "code_size": 27
+      }
+    },
+    {
+      "function_offset": 55043103,
+      "instruction": 55043203,
+      "bytes": "ffd5",
+      "instruction_text": "CALL RBP",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 55045383,
+      "loaded_at": 55043158,
+      "dependency_steps": [
+        {
+          "instruction": 55043158,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 55043165,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 55043168,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 55043172,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "(s32) server_scene.vehicle_component.gearbox_b.get_gear_count (const server_scene.vehicle_component.gearbox_b)",
+      "slot_offset": 2280,
+      "target_record_candidate": {
+        "code_offset": 55029233,
+        "code_size": 168
+      }
+    },
+    {
+      "function_offset": 55043103,
+      "instruction": 55043738,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 55045423,
+      "loaded_at": 55043728,
+      "dependency_steps": [
+        {
+          "instruction": 55043728,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 55043738,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_gas_content.get_pressure (const server_scene.vehicle_gas_content)",
+      "slot_offset": 2320,
+      "target_record_candidate": {
+        "code_offset": 58552066,
+        "code_size": 264
+      }
+    },
+    {
+      "function_offset": 55043103,
+      "instruction": 55043770,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 55045423,
+      "loaded_at": 55043760,
+      "dependency_steps": [
+        {
+          "instruction": 55043760,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 55043770,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_gas_content.get_pressure (const server_scene.vehicle_gas_content)",
+      "slot_offset": 2320,
+      "target_record_candidate": {
+        "code_offset": 58552066,
+        "code_size": 264
+      }
+    },
+    {
+      "function_offset": 55043103,
+      "instruction": 55044698,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 55045455,
+      "loaded_at": 55044688,
+      "dependency_steps": [
+        {
+          "instruction": 55044688,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 55044698,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_node.set_gear_ratio (server_scene.vehicle_torque_node, const f64)",
+      "slot_offset": 2352,
+      "target_record_candidate": {
+        "code_offset": 59213143,
+        "code_size": 27
+      }
+    },
+    {
+      "function_offset": 55043103,
+      "instruction": 55044982,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 55045463,
+      "loaded_at": 55044975,
+      "dependency_steps": [
+        {
+          "instruction": 55044975,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 55044982,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_torque_node.set_clutch_factor (server_scene.vehicle_torque_node, const f64)",
+      "slot_offset": 2360,
+      "target_record_candidate": {
+        "code_offset": 59212798,
+        "code_size": 27
+      }
+    },
+    {
+      "function_offset": 56391923,
+      "instruction": 56392509,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 56394979,
+      "loaded_at": 56392499,
+      "dependency_steps": [
+        {
+          "instruction": 56392499,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 56392509,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_liquid_content.get_pressure (const server_scene.vehicle_liquid_content)",
+      "slot_offset": 3056,
+      "target_record_candidate": {
+        "code_offset": 58713206,
+        "code_size": 96
+      }
+    },
+    {
+      "function_offset": 56391923,
+      "instruction": 56392541,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 56394979,
+      "loaded_at": 56392531,
+      "dependency_steps": [
+        {
+          "instruction": 56392531,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 56392541,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_liquid_content.get_pressure (const server_scene.vehicle_liquid_content)",
+      "slot_offset": 3056,
+      "target_record_candidate": {
+        "code_offset": 58713206,
+        "code_size": 96
+      }
+    },
+    {
+      "function_offset": 56391923,
+      "instruction": 56393493,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 56395051,
+      "loaded_at": 56393483,
+      "dependency_steps": [
+        {
+          "instruction": 56393483,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 56393493,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_liquid_node.set_static_pressure (server_scene.vehicle_liquid_node, const f64)",
+      "slot_offset": 3128,
+      "target_record_candidate": {
+        "code_offset": 58821364,
+        "code_size": 27
+      }
+    },
+    {
+      "function_offset": 56391923,
+      "instruction": 56393528,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 56395051,
+      "loaded_at": 56393518,
+      "dependency_steps": [
+        {
+          "instruction": 56393518,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 56393528,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_liquid_node.set_static_pressure (server_scene.vehicle_liquid_node, const f64)",
+      "slot_offset": 3128,
+      "target_record_candidate": {
+        "code_offset": 58821364,
+        "code_size": 27
+      }
+    },
+    {
+      "function_offset": 56391923,
+      "instruction": 56393601,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 56395059,
+      "loaded_at": 56393591,
+      "dependency_steps": [
+        {
+          "instruction": 56393591,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 56393601,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_liquid_content.move_content (server_scene.vehicle_liquid_content, server_scene.vehicle_liquid_content, const f64)",
+      "slot_offset": 3136,
+      "target_record_candidate": {
+        "code_offset": 58714576,
+        "code_size": 976
+      }
+    },
+    {
+      "function_offset": 56391923,
+      "instruction": 56393643,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 56394979,
+      "loaded_at": 56393633,
+      "dependency_steps": [
+        {
+          "instruction": 56393633,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 56393643,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_liquid_content.get_pressure (const server_scene.vehicle_liquid_content)",
+      "slot_offset": 3056,
+      "target_record_candidate": {
+        "code_offset": 58713206,
+        "code_size": 96
+      }
+    },
+    {
+      "function_offset": 56391923,
+      "instruction": 56393675,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 56394979,
+      "loaded_at": 56393665,
+      "dependency_steps": [
+        {
+          "instruction": 56393665,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 56393675,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_liquid_content.get_pressure (const server_scene.vehicle_liquid_content)",
+      "slot_offset": 3056,
+      "target_record_candidate": {
+        "code_offset": 58713206,
+        "code_size": 96
+      }
+    },
+    {
+      "function_offset": 56391923,
+      "instruction": 56394571,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 56395051,
+      "loaded_at": 56394561,
+      "dependency_steps": [
+        {
+          "instruction": 56394561,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 56394571,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_liquid_node.set_static_pressure (server_scene.vehicle_liquid_node, const f64)",
+      "slot_offset": 3128,
+      "target_record_candidate": {
+        "code_offset": 58821364,
+        "code_size": 27
+      }
+    },
+    {
+      "function_offset": 56391923,
+      "instruction": 56394606,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 56395051,
+      "loaded_at": 56394596,
+      "dependency_steps": [
+        {
+          "instruction": 56394596,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 56394606,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_liquid_node.set_static_pressure (server_scene.vehicle_liquid_node, const f64)",
+      "slot_offset": 3128,
+      "target_record_candidate": {
+        "code_offset": 58821364,
+        "code_size": 27
+      }
+    },
+    {
+      "function_offset": 56391923,
+      "instruction": 56394679,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 56395059,
+      "loaded_at": 56394669,
+      "dependency_steps": [
+        {
+          "instruction": 56394669,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 56394679,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_liquid_content.move_content (server_scene.vehicle_liquid_content, server_scene.vehicle_liquid_content, const f64)",
+      "slot_offset": 3136,
+      "target_record_candidate": {
+        "code_offset": 58714576,
+        "code_size": 976
+      }
+    },
+    {
+      "function_offset": 57106068,
+      "instruction": 57107335,
+      "bytes": "ff10",
+      "instruction_text": "CALL qword ptr [RAX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 57107516,
+      "loaded_at": 57107328,
+      "dependency_steps": [
+        {
+          "instruction": 57107328,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 57107335,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "() server_scene.vehicle_liquid_content.equalize_contents (vector<ptr<server_scene.vehicle_liquid_content>>)",
+      "slot_offset": 1448,
+      "target_record_candidate": {
+        "code_offset": 58706576,
+        "code_size": 1488
+      }
+    },
+    {
+      "function_offset": 57190229,
+      "instruction": 57190676,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 57191541,
+      "loaded_at": 57190660,
+      "dependency_steps": [
+        {
+          "instruction": 57190660,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 57190667,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 57190670,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 57190673,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "(s32) server_scene.vehicle_component.get_volume (const server_scene.vehicle_component)",
+      "slot_offset": 1312,
+      "target_record_candidate": {
+        "code_offset": 55116804,
+        "code_size": 1152
+      }
+    },
+    {
+      "function_offset": 57190229,
+      "instruction": 57190753,
+      "bytes": "ffd3",
+      "instruction_text": "CALL RBX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 57191541,
+      "loaded_at": 57190725,
+      "dependency_steps": [
+        {
+          "instruction": 57190725,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 57190732,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 57190735,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 57190738,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "(s32) server_scene.vehicle_component.get_volume (const server_scene.vehicle_component)",
+      "slot_offset": 1312,
+      "target_record_candidate": {
+        "code_offset": 55116804,
+        "code_size": 1152
+      }
+    },
+    {
+      "function_offset": 57190229,
+      "instruction": 57191231,
+      "bytes": "ff13",
+      "instruction_text": "CALL qword ptr [RBX]",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 57191613,
+      "loaded_at": 57191221,
+      "dependency_steps": [
+        {
+          "instruction": 57191221,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 57191231,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 4,
+      "symbol": "(f64) server_scene.vehicle_liquid_content.move_content (server_scene.vehicle_liquid_content, server_scene.vehicle_liquid_content, const f64)",
+      "slot_offset": 1384,
+      "target_record_candidate": {
+        "code_offset": 58714576,
+        "code_size": 976
+      }
+    },
+    {
+      "function_offset": 57204129,
+      "instruction": 57204299,
+      "bytes": "ffd3",
+      "instruction_text": "CALL RBX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 57204593,
+      "loaded_at": 57204280,
+      "dependency_steps": [
+        {
+          "instruction": 57204280,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 57204287,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 57204290,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 57204293,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "(s32) server_scene.vehicle_component.get_volume (const server_scene.vehicle_component)",
+      "slot_offset": 464,
+      "target_record_candidate": {
+        "code_offset": 55116804,
+        "code_size": 1152
+      }
+    },
+    {
+      "function_offset": 57204129,
+      "instruction": 57204392,
+      "bytes": "ffd0",
+      "instruction_text": "CALL RAX",
+      "opcode": "CALLIND",
+      "resolution": "slot-derived-in-local-block",
+      "slot_address": 57204609,
+      "loaded_at": 57204376,
+      "dependency_steps": [
+        {
+          "instruction": 57204376,
+          "operation": "read-slot"
+        },
+        {
+          "instruction": 57204383,
+          "operation": "INT_ADD"
+        },
+        {
+          "instruction": 57204386,
+          "operation": "LOAD"
+        },
+        {
+          "instruction": 57204389,
+          "operation": "LOAD"
+        }
+      ],
+      "kind": 6,
+      "symbol": "(f64) server_scene.vehicle_electric_node.consume_factor (server_scene.vehicle_electric_node, const f64)",
+      "slot_offset": 480,
+      "target_record_candidate": {
+        "code_offset": 58208601,
+        "code_size": 344
+      }
+    }
+  ],
+  "selected_instructions": [
+    {
+      "function_offset": 58552066,
+      "offset": 58552066,
+      "bytes": "53",
+      "assembly": "PUSH RBX"
+    },
+    {
+      "function_offset": 58552066,
+      "offset": 58552067,
+      "bytes": "4883ec70",
+      "assembly": "SUB RSP,0x70"
+    },
+    {
+      "function_offset": 58552066,
+      "offset": 58552071,
+      "bytes": "48894c2420",
+      "assembly": "MOV qword ptr [RSP + 0x20],RCX"
+    },
+    {
+      "function_offset": 58552066,
+      "offset": 58552076,
+      "bytes": "4889542428",
+      "assembly": "MOV qword ptr [RSP + 0x28],RDX"
+    },
+    {
+      "function_offset": 58552066,
+      "offset": 58552081,
+      "bytes": "f20f104228",
+      "assembly": "MOVSD XMM0,qword ptr [RDX + 0x28]"
+    },
+    {
+      "function_offset": 58552066,
+      "offset": 58552086,
+      "bytes": "660f2e05ac000000",
+      "assembly": "UCOMISD XMM0,qword ptr [0x037d6fca]"
+    },
+    {
+      "function_offset": 58552066,
+      "offset": 58552094,
+      "bytes": "9f",
+      "assembly": "LAHF"
+    },
+    {
+      "function_offset": 58552066,
+      "offset": 58552095,
+      "bytes": "f6c444",
+      "assembly": "TEST AH,0x44"
+    },
+    {
+      "function_offset": 58552066,
+      "offset": 58552098,
+      "bytes": "0f8a07000000",
+      "assembly": "JP 0x037d6f2f"
+    },
+    {
+      "function_offset": 58552066,
+      "offset": 58552104,
+      "bytes": "b001",
+      "assembly": "MOV AL,0x1"
+    },
+    {
+      "function_offset": 58552066,
+      "offset": 58552106,
+      "bytes": "e902000000",
+      "assembly": "JMP 0x037d6f31"
+    },
+    {
+      "function_offset": 58552066,
+      "offset": 58552111,
+      "bytes": "b000",
+      "assembly": "MOV AL,0x0"
+    },
+    {
+      "function_offset": 58552066,
+      "offset": 58552113,
+      "bytes": "3c00",
+      "assembly": "CMP AL,0x0"
+    },
+    {
+      "function_offset": 58552066,
+      "offset": 58552115,
+      "bytes": "0f8477000000",
+      "assembly": "JZ 0x037d6fb0"
+    }
+  ],
+  "layouts": [
+    {
+      "name": "server_scene.vehicle_component.engine",
+      "base": "server_scene.vehicle_component",
+      "size": 1560,
+      "fields": [
+        {
+          "type": "replication.master.property_f64_compressed_u8",
+          "name": "m_factor_speed",
+          "offset": 480
+        },
+        {
+          "type": "replication.master.property_f64_compressed_u8",
+          "name": "m_factor_power",
+          "offset": 528
+        },
+        {
+          "type": "replication.master.property_s32",
+          "name": "_m_sound_index",
+          "offset": 576
+        },
+        {
+          "type": "replication.master.property_bool",
+          "name": "m_is_damage",
+          "offset": 608
+        },
+        {
+          "type": "replication.master.property_bool",
+          "name": "m_is_leak",
+          "offset": 640
+        },
+        {
+          "type": "server_scene.vehicle_liquid_content_volume",
+          "name": "m_content_lubricant",
+          "offset": 672
+        },
+        {
+          "type": "server_scene.vehicle_liquid_content_volume",
+          "name": "m_content_coolant",
+          "offset": 904
+        },
+        {
+          "type": "vector<ptr<server_scene.vehicle_component.gearbox>>",
+          "name": "m_gearboxes",
+          "offset": 1136
+        },
+        {
+          "type": "vector<ptr<server_scene.vehicle_component.gearbox_b>>",
+          "name": "m_gearboxes_b",
+          "offset": 1176
+        },
+        {
+          "type": "vector<ptr<server_scene.vehicle_component.engine_wheel>>",
+          "name": "m_engine_wheels",
+          "offset": 1216
+        },
+        {
+          "type": "vector<ptr<server_scene.vehicle_component.air_manifold>>",
+          "name": "m_air_manifolds",
+          "offset": 1256
+        },
+        {
+          "type": "vector<ptr<server_scene.vehicle_component.fuel_manifold>>",
+          "name": "m_fuel_manifolds",
+          "offset": 1296
+        },
+        {
+          "type": "vector<ptr<server_scene.vehicle_component.exhaust_manifold>>",
+          "name": "m_exhaust_manifolds",
+          "offset": 1336
+        },
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 1376
+        },
+        {
+          "type": "s32",
+          "name": "m_volume",
+          "offset": 1416
+        },
+        {
+          "type": "f64",
+          "name": "m_rps",
+          "offset": 1424
+        },
+        {
+          "type": "f64",
+          "name": "m_temperature",
+          "offset": 1432
+        },
+        {
+          "type": "s32",
+          "name": "m_manifold_count_coolant",
+          "offset": 1440
+        },
+        {
+          "type": "s32",
+          "name": "m_manifold_count_lubricant",
+          "offset": 1444
+        },
+        {
+          "type": "s32",
+          "name": "m_damage",
+          "offset": 1448
+        },
+        {
+          "type": "f64",
+          "name": "m_damage_factor",
+          "offset": 1456
+        },
+        {
+          "type": "bool",
+          "name": "m_is_apply_damage",
+          "offset": 1464
+        },
+        {
+          "type": "bool",
+          "name": "m_is_clear_damage",
+          "offset": 1465
+        },
+        {
+          "type": "f64",
+          "name": "m_display_throttle",
+          "offset": 1472
+        },
+        {
+          "type": "f64",
+          "name": "m_display_air_factor",
+          "offset": 1480
+        },
+        {
+          "type": "f64",
+          "name": "m_display_air_flow",
+          "offset": 1488
+        },
+        {
+          "type": "f64",
+          "name": "m_display_air_pressure_factor",
+          "offset": 1496
+        },
+        {
+          "type": "f64",
+          "name": "m_display_fuel_factor",
+          "offset": 1504
+        },
+        {
+          "type": "f64",
+          "name": "m_display_fuel_flow",
+          "offset": 1512
+        },
+        {
+          "type": "f64",
+          "name": "m_display_exhaust_factor",
+          "offset": 1520
+        },
+        {
+          "type": "f64",
+          "name": "m_display_exhaust_flow",
+          "offset": 1528
+        },
+        {
+          "type": "f64",
+          "name": "m_display_torque",
+          "offset": 1536
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 1544
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_component.fuel_manifold",
+      "base": "server_scene.vehicle_component",
+      "size": 808,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_liquid_node",
+          "name": "m_liquid_node",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_liquid_content_volume",
+          "name": "m_content_liquid",
+          "offset": 560
+        },
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "m_mated_component",
+          "offset": 792
+        },
+        {
+          "type": "f64",
+          "name": "m_active_factor",
+          "offset": 800
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_component.air_manifold",
+      "base": "server_scene.vehicle_component",
+      "size": 640,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_mechanical_node_in",
+          "name": "m_throttle",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_gas_node",
+          "name": "m_gas_node",
+          "offset": 512
+        },
+        {
+          "type": "server_scene.vehicle_gas_content",
+          "name": "m_content_gas",
+          "offset": 576
+        },
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "m_mated_component",
+          "offset": 632
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_component.gearbox",
+      "base": "server_scene.vehicle_component",
+      "size": 704,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_torque_data",
+          "name": "m_torque_data",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_mechanical_node_in",
+          "name": "m_logic_node_gear_shift",
+          "offset": 544
+        },
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 576
+        },
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "m_mated_component",
+          "offset": 616
+        },
+        {
+          "type": "s32",
+          "name": "m_input_factor",
+          "offset": 624
+        },
+        {
+          "type": "s32",
+          "name": "m_output_factor",
+          "offset": 628
+        },
+        {
+          "type": "array<s32>",
+          "name": "m_gear_ratios",
+          "offset": 632
+        },
+        {
+          "type": "s32",
+          "name": "m_current_gear",
+          "offset": 664
+        },
+        {
+          "type": "s32",
+          "name": "m_target_gear",
+          "offset": 668
+        },
+        {
+          "type": "f64",
+          "name": "m_clutch_factor",
+          "offset": 672
+        },
+        {
+          "type": "s32",
+          "name": "m_gear_shift_state",
+          "offset": 680
+        },
+        {
+          "type": "bool",
+          "name": "m_property_is_reverse",
+          "offset": 684
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 688
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_component.gearbox_b",
+      "base": "server_scene.vehicle_component",
+      "size": 824,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_torque_data",
+          "name": "m_torque_data",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_gas_content",
+          "name": "m_content_shift_up",
+          "offset": 544
+        },
+        {
+          "type": "server_scene.vehicle_gas_content",
+          "name": "m_content_shift_down",
+          "offset": 600
+        },
+        {
+          "type": "server_scene.vehicle_gas_node_group_pair",
+          "name": "m_gas_nodes",
+          "offset": 656
+        },
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 696
+        },
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "m_mated_component",
+          "offset": 736
+        },
+        {
+          "type": "s32",
+          "name": "m_final_drive_ratio",
+          "offset": 744
+        },
+        {
+          "type": "array<s32>",
+          "name": "m_gear_ratios",
+          "offset": 752
+        },
+        {
+          "type": "s32",
+          "name": "m_current_gear",
+          "offset": 784
+        },
+        {
+          "type": "s32",
+          "name": "m_target_gear",
+          "offset": 788
+        },
+        {
+          "type": "f64",
+          "name": "m_clutch_factor",
+          "offset": 792
+        },
+        {
+          "type": "bool",
+          "name": "m_shift_up_triggered",
+          "offset": 800
+        },
+        {
+          "type": "bool",
+          "name": "m_shift_down_triggered",
+          "offset": 801
+        },
+        {
+          "type": "bool",
+          "name": "m_property_is_reverse",
+          "offset": 802
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 808
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_component.liquid_pump",
+      "base": "server_scene.vehicle_component",
+      "size": 1152,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_liquid_content_volume",
+          "name": "m_content_0",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_liquid_content_volume",
+          "name": "m_content_1",
+          "offset": 712
+        },
+        {
+          "type": "server_scene.vehicle_liquid_node_group_pair",
+          "name": "m_liquid_nodes",
+          "offset": 944
+        },
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 984
+        },
+        {
+          "type": "server_scene.vehicle_torque_data",
+          "name": "m_torque_data",
+          "offset": 1024
+        },
+        {
+          "type": "bool",
+          "name": "m_is_reverse",
+          "offset": 1088
+        },
+        {
+          "type": "f64",
+          "name": "m_flow_factor",
+          "offset": 1096
+        },
+        {
+          "type": "f64",
+          "name": "m_pressure",
+          "offset": 1104
+        },
+        {
+          "type": "f64",
+          "name": "m_static_pressure",
+          "offset": 1112
+        },
+        {
+          "type": "f64",
+          "name": "m_flow",
+          "offset": 1120
+        },
+        {
+          "type": "f64",
+          "name": "m_display_power",
+          "offset": 1128
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 1136
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_pump",
+      "base": "server_scene.vehicle_component",
+      "size": 792,
+      "fields": [
+        {
+          "type": "server_scene.vehicle_gas_content",
+          "name": "m_content_0",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_gas_content",
+          "name": "m_content_1",
+          "offset": 536
+        },
+        {
+          "type": "server_scene.vehicle_gas_node_group_pair",
+          "name": "m_gas_nodes",
+          "offset": 592
+        },
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 632
+        },
+        {
+          "type": "server_scene.vehicle_torque_data",
+          "name": "m_torque_data",
+          "offset": 672
+        },
+        {
+          "type": "bool",
+          "name": "m_is_reverse",
+          "offset": 736
+        },
+        {
+          "type": "f64",
+          "name": "m_flow_factor",
+          "offset": 744
+        },
+        {
+          "type": "f64",
+          "name": "m_pressure",
+          "offset": 752
+        },
+        {
+          "type": "f64",
+          "name": "m_display_power",
+          "offset": 760
+        },
+        {
+          "type": "f64",
+          "name": "m_flow",
+          "offset": 768
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 776
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_component.gas_pump_centrifugal",
+      "base": "server_scene.vehicle_component",
+      "size": 920,
+      "fields": [
+        {
+          "type": "replication.master.property_f64_compressed_u8",
+          "name": "m_factor_speed",
+          "offset": 480
+        },
+        {
+          "type": "server_scene.vehicle_gas_content",
+          "name": "m_content_0",
+          "offset": 528
+        },
+        {
+          "type": "server_scene.vehicle_gas_content",
+          "name": "m_content_1",
+          "offset": 584
+        },
+        {
+          "type": "server_scene.vehicle_gas_node",
+          "name": "m_gas_node_a",
+          "offset": 640
+        },
+        {
+          "type": "server_scene.vehicle_gas_node",
+          "name": "m_gas_node_b",
+          "offset": 704
+        },
+        {
+          "type": "server_scene.vehicle_data_node_group",
+          "name": "m_data_nodes",
+          "offset": 768
+        },
+        {
+          "type": "server_scene.vehicle_torque_data",
+          "name": "m_torque_data",
+          "offset": 808
+        },
+        {
+          "type": "f64",
+          "name": "m_pressure",
+          "offset": 872
+        },
+        {
+          "type": "f64",
+          "name": "m_voxel_scale",
+          "offset": 880
+        },
+        {
+          "type": "f64",
+          "name": "m_display_power",
+          "offset": 888
+        },
+        {
+          "type": "f64",
+          "name": "m_flow",
+          "offset": 896
+        },
+        {
+          "type": "string",
+          "name": "m_user_defined_alias",
+          "offset": 904
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_liquid_content",
+      "base": "",
+      "size": 56,
+      "fields": [
+        {
+          "type": "array<f64>",
+          "name": "m_amounts",
+          "offset": 0
+        },
+        {
+          "type": "f64",
+          "name": "m_volume",
+          "offset": 32
+        },
+        {
+          "type": "f64",
+          "name": "m_capacity",
+          "offset": 40
+        },
+        {
+          "type": "f64",
+          "name": "m_temperature",
+          "offset": 48
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_gas_content",
+      "base": "",
+      "size": 56,
+      "fields": [
+        {
+          "type": "array<f64>",
+          "name": "m_amounts",
+          "offset": 0
+        },
+        {
+          "type": "f64",
+          "name": "m_volume",
+          "offset": 32
+        },
+        {
+          "type": "f64",
+          "name": "m_capacity",
+          "offset": 40
+        },
+        {
+          "type": "f64",
+          "name": "m_temperature",
+          "offset": 48
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.vehicle_liquid_content_volume",
+      "base": "server_scene.vehicle_liquid_content",
+      "size": 232,
+      "fields": [
+        {
+          "type": "ptr<server_scene.vehicle_component>",
+          "name": "_m_component_inspection",
+          "offset": 56
+        },
+        {
+          "type": "vehicle_util.grid_origin_dir",
+          "name": "m_grid_origin_dir",
+          "offset": 64
+        },
+        {
+          "type": "vec3",
+          "name": "_m_local_min",
+          "offset": 88
+        },
+        {
+          "type": "vec3",
+          "name": "_m_local_max",
+          "offset": 112
+        },
+        {
+          "type": "vec4",
+          "name": "m_pressure_plane",
+          "offset": 136
+        },
+        {
+          "type": "vec3",
+          "name": "m_pendulum_position",
+          "offset": 168
+        },
+        {
+          "type": "vec3",
+          "name": "m_pendulum_velocity",
+          "offset": 192
+        },
+        {
+          "type": "f64",
+          "name": "m_turbulence",
+          "offset": 216
+        },
+        {
+          "type": "s32",
+          "name": "m_inspection_stamp",
+          "offset": 224
+        },
+        {
+          "type": "s32",
+          "name": "m_inspection_group_index",
+          "offset": 228
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.item_world.oil_filter",
+      "base": "server_scene.item_world.component_accessory",
+      "size": 152,
+      "fields": [
+        {
+          "type": "f64",
+          "name": "m_condition",
+          "offset": 144
+        }
+      ],
+      "enum_labels": []
+    },
+    {
+      "name": "server_scene.e_vehicle_liquid_type",
+      "base": "",
+      "size": 4,
+      "fields": [],
+      "enum_labels": [
+        "water",
+        "petrol",
+        "oil",
+        "pollutant"
+      ]
+    },
+    {
+      "name": "server_scene.e_vehicle_gas_type",
+      "base": "",
+      "size": 4,
+      "fields": [],
+      "enum_labels": [
+        "air",
+        "exhaust"
+      ]
+    }
+  ],
+  "reader": {
+    "schema": 1,
+    "tool_version": "1.1.0",
+    "tool_sha256": "503dd34b80e7292669640366b69b43e0b1828fac5ffb1756e34c48f925f40c71",
+    "source_sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22",
+    "counts": {
+      "functions": 69,
+      "identical_exports_deduplicated": 0,
+      "instructions_byte_checked": 16045,
+      "slot_derived_calls": 694,
+      "unresolved_calls": 724
+    },
+    "limits": [
+      "Approximate C is not original source or a recovered ABI.",
+      "Slot-derived call sites establish data dependency, not virtual target binding.",
+      "Full-text results and printable strings are investigative leads, not behavioral conclusions.",
+      "No game process, gameplay session, or external Python dependency is required."
+    ]
+  },
+  "instruction_bytes": 97326,
+  "model": {
+    "version": "1.0.0",
+    "examples": [
+      {
+        "name": "full supply",
+        "result": {
+          "gas": 8.72,
+          "fresh_air": 8.72,
+          "fuel": 0.001,
+          "air_factor": 1.0,
+          "fuel_factor": 1.0,
+          "energy": 9600.0
+        }
+      },
+      {
+        "name": "half fresh-air stock",
+        "result": {
+          "gas": 4.36,
+          "fresh_air": 4.36,
+          "fuel": 0.001,
+          "air_factor": 0.5,
+          "fuel_factor": 1.0,
+          "energy": 4800.0
+        }
+      },
+      {
+        "name": "half petrol stock",
+        "result": {
+          "gas": 8.72,
+          "fresh_air": 8.72,
+          "fuel": 0.0005,
+          "air_factor": 1.0,
+          "fuel_factor": 0.5,
+          "energy": 4800.0
+        }
+      },
+      {
+        "name": "damage stage2",
+        "result": {
+          "gas": 8.72,
+          "fresh_air": 8.72,
+          "fuel": 0.001,
+          "air_factor": 1.0,
+          "fuel_factor": 1.0,
+          "energy": 0.0
+        }
+      }
+    ],
+    "limits": "Explicit positive ordinary stocks and volume. No topology, shaft dynamics, zero-stock exceptional arithmetic, scheduling, complete heat/wear or native torque units."
+  },
+  "archived_guard_correction": {
+    "build": "25904830",
+    "source_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "function_offset": 58574484,
+    "signature": "(f64) server_scene.vehicle_gas_content.get_pressure (const server_scene.vehicle_gas_content)",
+    "code_sha256": "8fa9804dad88bba14b71fbc328ed79b77adc7231b5392a73047b3b961d34f80f",
+    "zero_literal_offset": 58574684,
+    "zero_literal_bytes": "0000000000000000",
+    "selected_instructions": [
+      {
+        "offset": 58574484,
+        "bytes": "53",
+        "assembly": "PUSH RBX"
+      },
+      {
+        "offset": 58574485,
+        "bytes": "4883ec70",
+        "assembly": "SUB RSP,0x70"
+      },
+      {
+        "offset": 58574489,
+        "bytes": "48894c2420",
+        "assembly": "MOV qword ptr [RSP + 0x20],RCX"
+      },
+      {
+        "offset": 58574494,
+        "bytes": "4889542428",
+        "assembly": "MOV qword ptr [RSP + 0x28],RDX"
+      },
+      {
+        "offset": 58574499,
+        "bytes": "f20f104228",
+        "assembly": "MOVSD XMM0,qword ptr [RDX + 0x28]"
+      },
+      {
+        "offset": 58574504,
+        "bytes": "660f2e05ac000000",
+        "assembly": "UCOMISD XMM0,qword ptr [0x037dc75c]"
+      },
+      {
+        "offset": 58574512,
+        "bytes": "9f",
+        "assembly": "LAHF"
+      },
+      {
+        "offset": 58574513,
+        "bytes": "f6c444",
+        "assembly": "TEST AH,0x44"
+      },
+      {
+        "offset": 58574516,
+        "bytes": "0f8a07000000",
+        "assembly": "JP 0x037dc6c1"
+      },
+      {
+        "offset": 58574522,
+        "bytes": "b001",
+        "assembly": "MOV AL,0x1"
+      },
+      {
+        "offset": 58574524,
+        "bytes": "e902000000",
+        "assembly": "JMP 0x037dc6c3"
+      },
+      {
+        "offset": 58574529,
+        "bytes": "b000",
+        "assembly": "MOV AL,0x0"
+      },
+      {
+        "offset": 58574531,
+        "bytes": "3c00",
+        "assembly": "CMP AL,0x0"
+      },
+      {
+        "offset": 58574533,
+        "bytes": "0f8477000000",
+        "assembly": "JZ 0x037dc742"
+      }
+    ],
+    "correction": "Ordered zero-capacity guard, not a general nonpositive-capacity guard. Current 26113663 has the same selected comparison form."
+  },
+  "limits": "Selected source-bound arithmetic and fields; full vendor exports stay local. Native solver/ABI and complete network scheduling/geometry remain unresolved."
+}

@@ -50,7 +50,7 @@ Actual large and small roller/sprocket variants use shared radius globals of **0
 
 The declared gas species are air and exhaust. Liquid labels are water, petrol, oil and pollutant. The earlier engine path's conversion from species 2 to 3 is therefore oil to the declared pollutant species; its role in that path is contaminated oil, not a reason to rename the enum globally.
 
-Gas pressure is quantity/capacity, with a nonpositive-capacity guard returning zero. `move_content` **58576281** caps a requested positive movement by source quantity, but has no destination-capacity cap in this helper. Species move proportionally; destination temperature mixes by incoming quantity and source temperature remains. `modify_content` **58575275** adds its signed amount without a lower clamp in this helper; positive additions invoke temperature mixing. Caller validation and ordinary-state assumptions must remain separate.
+Gas pressure is quantity/capacity, with an ordered zero-capacity guard returning zero. `move_content` **58576281** caps a requested positive movement by source quantity, but has no destination-capacity cap in this helper. Species move proportionally; destination temperature mixes by incoming quantity and source temperature remains. `modify_content` **58575275** adds its signed amount without a lower clamp in this helper; positive additions invoke temperature mixing. Caller validation and ordinary-state assumptions must remain separate.
 
 Two gas equalization overloads differ:
 
@@ -112,3 +112,5 @@ The production native exporter checked ten selected spans, **4,303 instructions 
 One constraint scalar was also recovered: `g_constraint_break_force` initializes to **100000**. `hinge_pin.tick` compares native position/rotation lambda lengths strictly above this threshold before disconnecting. Without the native solver contract, this is not an established 100000-newton breaking strength. Other actuator exports are available but still require semantic review.
 
 Continue with full track contact and moving-body/actuator ownership, then complete controls/sensors/data, script/compiler/native physics, world/actors/combat, save/multiplayer authority and assets/UI/audio. Existing edge/plate, engine and historical creation findings remain in scope. Neither the reader count nor a passing schema audit establishes that a creation, every class or the whole game is understood.
+
+Correction, 2026-10-22: the earlier description above said “nonpositive-capacity guard.” Rereading the archived and current bodies confirms a zero-capacity equality test; general negative-capacity protection was not established. The [current engine/supply report](ENGINE-SUPPLY-20261022.md) retains selected comparison evidence.
