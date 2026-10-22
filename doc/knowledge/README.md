@@ -1,6 +1,6 @@
 # Anymaker engineering knowledge — start here
 
-Latest vehicle checkpoint: [hull integration and structure weights](research/HULL-MASS-20261021.md). Traced signed hull volume/centre and centred inertia; new closed-boundary integration helper and full-tensor compound support. Derived eligible plate-slab and edge-capsule mass examples. All 239 research-tool tests pass; complete hull generation and creation mass reconstruction remain unfinished.
+Installed build is now [26113663](research/BUILD-TRANSITION-20261022.md). The hull findings below target archived 25904830; new-build mechanics transfer is unproven. Latest vehicle checkpoint: [hull construction and linked native ranges](research/HULL-BUILDING-20261022.md). Traced seed tolerances, planar/3D paths and face references; added metadata-based export grouping to avoid prefix-only evidence. The full research suite passes 267 tests. Complete hull/margin equivalence and creation mass reconstruction remain unfinished.
 
 Latest vehicle checkpoint: [plate placement, perimeter strips and native angles](research/PLATE-PLACEMENT-20261021.md). Client/server placement adds boundary, turn-consistency, window/opening and same-facing shared-edge checks. Native vec3 angle projection/sign/fallback and 1 cm frame/4 cm inset now have selected evidence. Eleven new model tests; full suite 204. Complete validity/authority and native physics remain open.
 

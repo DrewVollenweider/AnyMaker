@@ -1,0 +1,150 @@
+{
+  "schema": 1,
+  "date": "2026-10-22",
+  "old_build": "25904830",
+  "installed_build": "26113663",
+  "old_sources": [
+    {
+      "path": "bin/game.gcl",
+      "bytes": 82528301,
+      "sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355"
+    },
+    {
+      "path": "game.exe",
+      "bytes": 6636544,
+      "sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0"
+    }
+  ],
+  "new_sources": [
+    {
+      "path": "bin/game.gcl",
+      "bytes": 82572920,
+      "sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22"
+    },
+    {
+      "path": "game.exe",
+      "bytes": 6625792,
+      "sha256": "097e1167477587c51a3b93ab7e7843382d99d30010678c9bd89a2fee648fec23"
+    }
+  ],
+  "new_inventory_files": 10820,
+  "new_inventory_sha256": "65aca02eba8dd652d469b482e8404a6ed9b7afa95af90cd74eda30d966532162",
+  "snapshot_consistency": "all files identical on independent second hash pass; selected copies hash matched",
+  "file_changes": {
+    "added": 8,
+    "removed": 1,
+    "changed": 1526,
+    "unchanged": 9286
+  },
+  "definition_records_compared": 1737,
+  "definition_key": "source#JSON_pointer",
+  "definition_changes": {
+    "added": 0,
+    "removed": 0,
+    "changed": 9,
+    "unchanged": 1728
+  },
+  "changed_definitions": [
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/481",
+      "id": "liquid_pressure_sensor",
+      "old_sha256": "c6a52d87b1632058cfe450cb4abefc32449f50cc96ddd9494e0b95491fd7bdfc",
+      "new_sha256": "16f4366d01c9f39780aa469aa336797c4c68f97a03760853e076ab7f6c7fa613",
+      "field": "tech_tier",
+      "old": 2,
+      "new": 3
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/482",
+      "id": "gas_pressure_sensor",
+      "old_sha256": "686fb3a9d60824ed95843b0405f3c43ef0d8be95e41f288f36023a64e042b80d",
+      "new_sha256": "c23df36bb1e3cae97701abebd32bf5bece256245f60cbb2a167eba11b456b48c",
+      "field": "tech_tier",
+      "old": 2,
+      "new": 3
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/483",
+      "id": "liquid_temperature_sensor",
+      "old_sha256": "941d628ea570ee44041146f6135f5981689c4059c42c85e2d90b6b8f22c6b4df",
+      "new_sha256": "fb60e3a8c1f7a8d7519afeb3726f0e1db5f723a1e85954e0108528f5affce979",
+      "field": "tech_tier",
+      "old": 2,
+      "new": 3
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/484",
+      "id": "gas_temperature_sensor",
+      "old_sha256": "786fc67e53589bcb0a0d21f3a039f6eb9953f687b12c410752cfd5ddf2ab8956",
+      "new_sha256": "44e5546b4d41ce3cf065108557ff27ef1ed63dbe13bd848ce3f494a7955fc707",
+      "field": "tech_tier",
+      "old": 2,
+      "new": 3
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/568",
+      "id": "acceleration_sensor",
+      "old_sha256": "87f62325c077785d3865ce4e02d30ec43ee4fc3c91ed55068c526179d97356b2",
+      "new_sha256": "08ad3022680b377cedf95b6ebbe32e053abde73442a12bb54f77231de45075fb",
+      "field": "tech_tier",
+      "old": 2,
+      "new": 3
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/569",
+      "id": "altitude_sensor",
+      "old_sha256": "e23f936ab98f52f4796b4c9591b31dafc72fe137b77e143be9f31400d986e698",
+      "new_sha256": "8c73c5258ee0f33e68f85d80e204d9610ca46c8e404a8594720d000505057c74",
+      "field": "tech_tier",
+      "old": 2,
+      "new": 3
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/570",
+      "id": "tilt_sensor",
+      "old_sha256": "d7a55e491e3dc4c2c0295327209e221727e7847d7dba2766c1e6316f755c494a",
+      "new_sha256": "44cfe4339571d99433245520cbc0487e3c30711e51f18144fb0889f7b5828527",
+      "field": "tech_tier",
+      "old": 2,
+      "new": 3
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/571",
+      "id": "compass_sensor",
+      "old_sha256": "cc7267e9a8c2eb76fce1623de898de99b02c5b19a9bc1f3c248e3ac30584998a",
+      "new_sha256": "97c3ecc36bd4dbfda3008adda4e361efa67516805a6ea3dd246cd631dd7b214b",
+      "field": "tech_tier",
+      "old": 2,
+      "new": 3
+    },
+    {
+      "source": "rom/data/vehicle_component_definitions.json",
+      "pointer": "/definitions/572",
+      "id": "gyro_rotation_sensor",
+      "old_sha256": "6adeb15c5b631c17955b7f478e49147f644b95dbad3274c2de6211110869663d",
+      "new_sha256": "c3b5c0d434ef52e6e6be2357a2b554f737bb4ac784f0333d10836522a2127200",
+      "field": "tech_tier",
+      "old": 2,
+      "new": 3
+    }
+  ],
+  "gcl_function_group_changes": {
+    "added": 72,
+    "removed": 37,
+    "changed": 2271,
+    "unchanged": 34832
+  },
+  "old_gcl_records": 37140,
+  "new_gcl_records": 37175,
+  "game_executed": false,
+  "installation_or_active_saves_edited": false,
+  "limits": "Changed hash groups are not semantic changes; unchanged bytes do not prove unchanged bindings/constants/callers or mechanics. Older findings remain scoped to25904830 until revalidated. Mesh asset changes do not establish new playable components."
+}

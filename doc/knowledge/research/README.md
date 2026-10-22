@@ -1,6 +1,6 @@
 # Whole-game research
 
-Latest vehicle research: [hull mass integration and structure weights](HULL-MASS-20261021.md). Cached hull mass is now tied to signed volume and centred second moments. New polyhedral_mass.py 1.0.0 and mass_properties.py 1.1.0 preserve full tensors; 239 tests pass. Reader remains 1,543 functions/233,869 instructions/1,329,154 bytes. Full audit active/incomplete, vehicles first.
+Installed build is now [26113663](BUILD-TRANSITION-20261022.md). The hull findings below target archived 25904830; new-build mechanics transfer is unproven. Latest vehicle research: [hull construction, face references and native range grouping](HULL-BUILDING-20261022.md). New hull_geometry.py 1.0.0, native_unwind.py 1.0.0, native_export.py 1.2.0 and polyhedral_mass.py 1.1.0. All 267 tests pass. Reader remains 1,543 functions / 233,869 instructions / 1,329,154 bytes. Full audit active and incomplete; vehicle engineering first.
 
 Latest vehicle research: [plate placement, perimeter strips and native angles](PLATE-PLACEMENT-20261021.md). Traced both placement predicates, signed-turn limits, window/opening suitability and orientation-specific strips; followed selected native vec3 angles through registration and their mathematical callee. Reader: 1,530 functions/229,223 instructions/1,301,220 bytes. All 204 research-tool tests pass. Full audit remains active and incomplete; vehicles are the priority.
 

@@ -12,7 +12,14 @@ def mapping_diff(a,b):
 
 def definitions(dbpath):
  db=sqlite3.connect(dbpath.resolve().as_uri()+'?mode=ro',uri=True)
- return {source+'#'+ident:json.loads(raw) for source,ident,raw in db.execute('SELECT source,id,json FROM definitions')}
+ try:
+  rows={}
+  for source,pointer,raw in db.execute('SELECT source,pointer,json FROM definitions'):
+   key=source+'#'+pointer
+   if key in rows:raise ValueError('Ambiguous duplicate source/JSON pointer')
+   rows[key]=json.loads(raw)
+  return rows
+ finally:db.close()
 
 def functions(dbpath):
  db=sqlite3.connect(dbpath.resolve().as_uri()+'?mode=ro',uri=True)
@@ -24,7 +31,7 @@ def functions(dbpath):
 
 def compare(old,new,out,old_definitions=None,new_definitions=None,old_functions=None,new_functions=None):
  a=json.loads(old.read_text(encoding='utf-8'));b=json.loads(new.read_text(encoding='utf-8'))
- result={'schema':1,'old_build':a['steam'],'new_build':b['steam'],
+ result={'schema':2,'definition_key':'source#JSON_pointer','old_build':a['steam'],'new_build':b['steam'],
    'files':mapping_diff({r['path']:(r['sha256'],r['bytes']) for r in a['files']},
                        {r['path']:(r['sha256'],r['bytes']) for r in b['files']}),
    'limits':'Semantic JSON changes preserve missing versus present fields. Same machine-code bytes do not establish unchanged bindings, constants, callers or runtime behavior.'}

@@ -127,6 +127,11 @@ class PolyhedralMassTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             surface_mass_properties(TETRA,TETRA_FACES,math.inf)
 
+    def test_face_iterator_remains_usable_for_native_reference_construction(self):
+        expected = surface_mass_properties(TETRA,TETRA_FACES,480)
+        actual = surface_mass_properties(TETRA,(list(f) for f in TETRA_FACES),480)
+        self.assertEqual(actual,expected)
+
 
 if __name__ == '__main__':
     unittest.main()

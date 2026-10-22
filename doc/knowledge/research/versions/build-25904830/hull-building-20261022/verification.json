@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "date": "2026-10-22",
+  "source_check": {
+    "schema": 1,
+    "date": "2026-10-22",
+    "archived_build": "25904830",
+    "archived_gcl_sha256": "626a994be960b7218409d9ca416d2664450231d1fc3295036fc77c81b8449355",
+    "archived_definition_files_checked": 2968,
+    "installed_build": "26113663",
+    "installed_sources_rechecked": [
+      {
+        "path": "bin/game.gcl",
+        "sha256": "a3fd2df2fd62e38b629f6a0df824269a34d77d57caf66d596362d7e5e53c3b22"
+      },
+      {
+        "path": "game.exe",
+        "sha256": "097e1167477587c51a3b93ab7e7843382d99d30010678c9bd89a2fee648fec23"
+      }
+    ],
+    "installed_definition_files_checked": 2968,
+    "scope": "Archived mechanics evidence only; changed installation is not semantically revalidated."
+  },
+  "pe_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+  "native_export_checks": [
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 2,
+      "instructions_byte_checked": 363,
+      "instruction_bytes_checked": 1310,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 1,
+      "instructions_byte_checked": 1597,
+      "instruction_bytes_checked": 7185,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 1,
+      "instructions_byte_checked": 125,
+      "instruction_bytes_checked": 462,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 2,
+      "instructions_byte_checked": 1716,
+      "instruction_bytes_checked": 6272,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 6,
+      "instructions_byte_checked": 901,
+      "instruction_bytes_checked": 3331,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 4,
+      "instructions_byte_checked": 859,
+      "instruction_bytes_checked": 3154,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 1,
+      "instructions_byte_checked": 6,
+      "instruction_bytes_checked": 21,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    },
+    {
+      "schema": 1,
+      "source_sha256": "5c46cd34a3b00889ff36154976428ba43f6475430e92a2d113a360a78161a7d0",
+      "spans": 3,
+      "instructions_byte_checked": 319,
+      "instruction_bytes_checked": 1198,
+      "limits": "Exact selected bytes/bounds and artifact consistency only; not a complete CFG, ABI, native binding or semantic proof."
+    }
+  ],
+  "native_f32_scalars_checked": 6,
+  "helper_constants_match_native": true,
+  "unwind_records_rechecked": 12669,
+  "unwind_metadata_groups": 8834,
+  "reader_counts": {
+    "functions": 1543,
+    "identical_exports_deduplicated": 7,
+    "instructions_byte_checked": 233869,
+    "slot_derived_calls": 11442,
+    "unresolved_calls": 9256
+  },
+  "reader_instruction_bytes": 1329154,
+  "selected_counts": {
+    "native_spans": 20,
+    "native_instructions": 5886,
+    "native_bytes": 22933,
+    "selected_instructions": 88,
+    "scalars": 6
+  },
+  "research_tool_tests_passed": 267,
+  "new_tests_since_previous_checkpoint": 28,
+  "tests_rerun_this_checkpoint": true,
+  "test_log_sha256": "dc47064912076a222e5cb800ccf962fe3cc870cd197542d51ba475a41e9d6e31",
+  "game_executed": false,
+  "installation_and_active_saves_edited": false,
+  "limits": "Selected hull seed/reference construction and metadata-linked export bounds. No complete native hull equivalence, support/margins, ABI/CFG, geometry validity certificate or creation mass reconstruction."
+}

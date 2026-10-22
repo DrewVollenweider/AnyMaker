@@ -9,8 +9,9 @@ from collections import Counter
 import math
 
 from mass_properties import CompoundProperties,_scalar,_vector,_f32
+from hull_geometry import hull_reference
 
-VERSION = '1.0.0'
+VERSION = '1.1.0'
 DIAGONAL_MOMENT = _f32(0x3c888889)
 CROSS_MOMENT = _f32(0x3c088889)
 CENTER_SUM_THRESHOLD = _f32(0x34000000)
@@ -42,21 +43,23 @@ def surface_mass_properties(vertices,faces,density):
         raise ValueError('Model requires at least four supplied vertices')
     edges = Counter()
     triangles = []
+    face_loops = []
     for face in faces:
         face = tuple(face)
         if len(face)<3 or any(type(i) is not int or not 0<=i<len(vertices) for i in face):
             raise ValueError('Expected face loops of at least three valid vertex indices')
         if len(set(face))!=len(face):
             raise ValueError('Repeated face vertex')
+        face_loops.append(face)
         for a,b in zip(face,face[1:]+face[:1]):
             edges[(a,b)] += 1
         triangles.extend((face[0],face[i],face[i+1]) for i in range(1,len(face)-1))
     if not triangles or any(count!=1 or edges[(b,a)]!=1 for (a,b),count in list(edges.items())):
         raise ValueError('Model requires opposite pairs of oriented boundary edges')
-    # An arbitrary interior reference gives the same nondegenerate integral.
-    # Native code uses a mean of per-face stored vectors; that construction is
-    # not duplicated here. Exact f32 rounding may therefore differ as well.
-    reference = tuple(sum(p[i] for p in vertices)/len(vertices) for i in range(3))
+    # The native face field is the mean of that face's vertices; the hull helper
+    # averages these face fields without area weights. Accumulation still uses
+    # Python floats rather than native f32 operations.
+    reference = hull_reference(tuple(tuple(vertices[i] for i in face) for face in face_loops))
     determinants = []
     weighted = [0.]*3
     for indices in triangles:

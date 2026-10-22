@@ -1,6 +1,6 @@
 # Full-game audit register
 
-Latest selected vehicle findings: [hull mass integration and structure weights](HULL-MASS-20261021.md). Signed volume/centre, native second-moment coefficients and cached hull density scaling traced. Source-derived plate-slab and edge-capsule contributions supplement primitive/compound calculations. Full native hull generation/degeneracy/margins, geometry eligibility and creation transforms remain unfinished. Vehicle systems stay ahead of parked combat/AI subjects.
+Installed build is now [26113663](BUILD-TRANSITION-20261022.md). The hull findings below target archived 25904830; new-build mechanics transfer is unproven. Latest selected vehicle findings: [hull construction thresholds, face references and grouped native exports](HULL-BUILDING-20261022.md). Planar/3D seed paths and constructor status handling now have selected assembly evidence. Face-reference construction is resolved; metadata grouping strengthens prior prefix bounds. No final hull generator, complete native validity certificate, creation mass pipeline or semantic completion percentage is claimed.
 
 Latest selected vehicle findings: [plate placement/strips/native angles](PLATE-PLACEMENT-20261021.md). Both placement utility branches, turn-consistency limits, shared ordered-edge conflicts, frame suitability and perimeter variants are traced. Two native vec3 angle bindings have selected registration/body evidence; complete loader ABI and exceptional inputs remain open. Continue vehicle systems; combat/projectiles/AI remain parked.
 

@@ -9,15 +9,22 @@ from pathlib import Path
 from baseline import resources,sha,write
 from native_image import Image
 
-VERSION='1.1.0'
+VERSION='1.2.0'
 
 
-def select(raw,selections,assembly_only=False):
+def select(raw,selections,assembly_only=False,chained=False):
     if type(assembly_only) is not bool:raise ValueError('Boolean assembly-only selector required')
+    if type(chained) is not bool:raise ValueError('Boolean chained selector required')
     image=Image(raw);rows=[]
+    groups=None
+    if chained:
+        from native_unwind import UnwindGroups
+        groups=UnwindGroups(image)
     if not 1<=len(selections)<=64:raise ValueError('Select 1..64 bounded native spans')
     for selection in selections:
+        group=None
         if ':' in selection:
+            if chained:raise ValueError('Chained selection requires a declared runtime RVA')
             parts=selection.split(':')
             if len(parts)!=2:raise ValueError('Manual span requires begin:end RVA')
             begin,end=(int(x,0) for x in parts);kind='manual_span_not_recovered_boundary';unwind=None
@@ -26,12 +33,19 @@ def select(raw,selections,assembly_only=False):
             if len(found)!=1:raise ValueError('Missing/ambiguous runtime-function range; specify a reviewed manual span explicitly')
             row=found[0];begin,end,unwind=row['begin_rva'],row['end_rva'],row['unwind_rva']
             kind='exception_directory_range_not_complete_function_inventory'
+            if chained:
+                group=groups.group(int(selection,0))
+                if not group['contiguous']:raise ValueError('Noncontiguous chained group; select separate reviewed spans')
+                begin,end=group['ranges'][0]['begin_rva'],group['ranges'][-1]['end_rva']
+                unwind=group['primary']['unwind_rva']
+                kind='chained_unwind_group_not_complete_cfg_or_leaf_inventory'
         if not 0<end-begin<=65536:raise ValueError('Native span must be 1..65536 bytes')
         offset=image.file_offset(begin,end-begin)
         if not image.section_for_rva(begin)['flags']&0x20000000:raise ValueError('Native span outside executable section')
         rows.append(dict(begin_rva=begin,end_rva=end,va=image.image_base+begin,file_offset=offset,
                          size=end-begin,unwind_rva=unwind,bound_kind=kind,name=f'native_{begin:x}',
                          span_sha256=hashlib.sha256(raw[offset:offset+end-begin]).hexdigest()))
+        if group is not None:rows[-1]['unwind_group']=group
     ordered=sorted(rows,key=lambda x:x['begin_rva'])
     if any(a['end_rva']>b['begin_rva'] for a,b in zip(ordered,ordered[1:])):raise ValueError('Selected native spans overlap')
     return dict(schema=1,tool_version=VERSION,mode='assembly-only' if assembly_only else 'decompile',source_sha256=hashlib.sha256(raw).hexdigest(),image_base=image.image_base,
@@ -45,8 +59,16 @@ def check(source,plan,output):
     if plan.get('schema')!=1 or plan.get('source_sha256')!=hashlib.sha256(raw).hexdigest() or plan.get('image_base')!=image.image_base:
         raise ValueError('Native export/source identity mismatch')
     selections=[f"{r['begin_rva']}:{r['end_rva']}" for r in plan['spans']]
-    bounded=select(raw,selections)['spans'];instructions=total=0
+    bounded=select(raw,selections)['spans'];instructions=total=0;chained_groups=None
     for row,expected in zip(plan['spans'],bounded):
+        grouped=row.get('bound_kind')=='chained_unwind_group_not_complete_cfg_or_leaf_inventory'
+        if grouped!=('unwind_group' in row):raise ValueError('Missing or mislabeled chained unwind group')
+        if 'unwind_group' in row:
+            from native_unwind import UnwindGroups
+            if chained_groups is None:chained_groups=UnwindGroups(image)
+            group=chained_groups.group(row['begin_rva'])
+            if group!=row['unwind_group'] or not group['contiguous'] or group['ranges'][0]['begin_rva']!=row['begin_rva'] or group['ranges'][-1]['end_rva']!=row['end_rva']:
+                raise ValueError('Changed chained unwind group')
         for key in ['begin_rva','end_rva','va','file_offset','size','name','span_sha256']:
             if row[key]!=expected[key]:raise ValueError('Changed native selected range')
         path=output/row['name']
@@ -82,7 +104,7 @@ def check(source,plan,output):
     return report
 
 
-def run(source,output,runtime,project,selections,assembly_only=False):
+def run(source,output,runtime,project,selections,assembly_only=False,chained=False):
     source=source.resolve();output=output.resolve();runtime=runtime.resolve();project=project.resolve()
     if output.exists() or project.exists():raise FileExistsError('Use new output and project directories')
     if any(p.startswith('.') or any(c in p for c in '{}') for p in project.parts):raise ValueError('Use a plain Ghidra-compatible project path')
@@ -90,7 +112,7 @@ def run(source,output,runtime,project,selections,assembly_only=False):
     if budget.get('memory_available_bytes',10**10)<4*1024**3:raise MemoryError('Require 4 GiB available')
     ghidras=list((runtime/'ghidra').glob('ghidra_*'));jdks=list((runtime/'jdk').glob('*/bin/java.exe'))
     if len(ghidras)!=1 or len(jdks)!=1:raise ValueError('Missing/ambiguous existing Ghidra/JDK runtime')
-    ghidra,java=ghidras[0],jdks[0];plan=select(source.read_bytes(),selections,assembly_only)
+    ghidra,java=ghidras[0],jdks[0];plan=select(source.read_bytes(),selections,assembly_only,chained)
     output.mkdir(parents=True);project.mkdir(parents=True);state=output/'runtime-state';state.mkdir()
     write(output/'plan.json',plan)
     (output/'plan.tsv').write_text(''.join(f"F\t{r['va']}\t{r['size']}\t{r['name']}\tPE selected span; {r['bound_kind']}; signature unresolved\n" for r in plan['spans']),encoding='utf-8')
@@ -120,4 +142,5 @@ if __name__=='__main__':
     for name in ['source','output','runtime','project']:p.add_argument(name,type=Path)
     p.add_argument('selections',nargs='+',help='RVA inside one exception range, or explicit begin:end RVA')
     p.add_argument('--assembly-only',action='store_true',help='Explicitly skip pseudocode; still check selected disassembly/facts/source bytes')
-    a=p.parse_args();run(a.source,a.output,a.runtime,a.project,a.selections,a.assembly_only)
+    p.add_argument('--chained',action='store_true',help='Resolve contiguous version-1 unwind-linked runtime ranges; reject gaps instead of including unrelated code')
+    a=p.parse_args();run(a.source,a.output,a.runtime,a.project,a.selections,a.assembly_only,a.chained)
